@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-08-08T11:59:37.459Z</updated>
+  <updated>2020-08-10T17:14:24.861Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>자바스크립트 개요</title>
+    <link href="http://mjae404.github.io/2020/08/11/js-overview/"/>
+    <id>http://mjae404.github.io/2020/08/11/js-overview/</id>
+    <published>2020-08-10T17:13:52.000Z</published>
+    <updated>2020-08-10T17:14:24.861Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;자바스크립트란?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;1.인터프리터 언어이다.&lt;br&gt;2.동적 프로토타입 기반 객체 지향 언어이다.&lt;br&gt;3. 동적 타입 언어이다.&lt;br&gt;4. 함수가 일급 객체다.&lt;br&gt;5. 함수가 클로저를 정의한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
