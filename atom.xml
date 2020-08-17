@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-08-16T14:32:06.303Z</updated>
+  <updated>2020-08-17T13:56:08.940Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 스코프</title>
+    <link href="http://mjae404.github.io/2020/08/17/js-scope/"/>
+    <id>http://mjae404.github.io/2020/08/17/js-scope/</id>
+    <published>2020-08-17T13:52:44.000Z</published>
+    <updated>2020-08-17T13:56:08.940Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;식별자가 유효한 범위&lt;/strong&gt; 를 말한다. 모든 식별자(변수 이름, 함수 이름, 클래스 이름 등)는 자신이 선언된 위치에 의해 다른 코드가 식별자 자신을 참조할 수 있는 유효범위가 결정된다. 자바스크립트 엔진이 &lt;strong&gt;식별자를 검색할 때 사용하는 규칙&lt;/strong&gt; 이라고도 할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="scope" scheme="http://mjae404.github.io/tags/scope/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS 객체</title>
+    <link href="http://mjae404.github.io/2020/08/17/js-object/"/>
+    <id>http://mjae404.github.io/2020/08/17/js-object/</id>
+    <published>2020-08-17T13:51:11.000Z</published>
+    <updated>2020-08-17T13:58:07.492Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;자바스크립트는 객체 기반의 프로그래밍 언어이다. 원시 타입을 제외한 나머지 값들은 모두 객체이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;프로퍼티&lt;/strong&gt;: 객체의 상태를 나타내는 값(data).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;메소드&lt;/strong&gt;: 프로퍼티를 참조하고 조작할 수 있는 동작(behavior). 프로퍼티의 값이 함수일 경우에 일반 함수와 구분하기 위해 메소드라 부름.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 함수</title>
