@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-08-17T13:56:08.940Z</updated>
+  <updated>2020-08-17T16:01:57.329Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 전역 변수의 문제점</title>
+    <link href="http://mjae404.github.io/2020/08/18/js-global-variable/"/>
+    <id>http://mjae404.github.io/2020/08/18/js-global-variable/</id>
+    <published>2020-08-17T16:01:02.000Z</published>
+    <updated>2020-08-17T16:01:57.329Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;전역 변수의 무분별한 사용은 위험하다. 전역 변수를 반드시 사용할 이유가 없다면 지역 변수를 사용하는 것이 좋다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="global variable" scheme="http://mjae404.github.io/tags/global-variable/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS let, const와 블록 레벨 스코프</title>
+    <link href="http://mjae404.github.io/2020/08/18/js-block-level-scope/"/>
+    <id>http://mjae404.github.io/2020/08/18/js-block-level-scope/</id>
+    <published>2020-08-17T16:00:00.000Z</published>
+    <updated>2020-08-17T16:00:32.026Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ES5까지 변수를 선언할 수 있는 유일한 방법은 var 키워드를 사용하는 것이었다. var 키워드로 선언된 변수는 몇가지 특징이 있다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;변수 중복 선언 허용&lt;/li&gt;
+&lt;li&gt;함수 레벨 스코프&lt;/li&gt;
+&lt;li&gt;변수 호이스팅&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="scope" scheme="http://mjae404.github.io/tags/scope/"/>
+    
+      <category term="block level scope" scheme="http://mjae404.github.io/tags/block-level-scope/"/>
+    
+      <category term="let" scheme="http://mjae404.github.io/tags/let/"/>
+    
+      <category term="const" scheme="http://mjae404.github.io/tags/const/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 스코프</title>
