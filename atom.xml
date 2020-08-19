@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-08-17T16:01:57.329Z</updated>
+  <updated>2020-08-19T12:21:45.543Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 제어문</title>
+    <link href="http://mjae404.github.io/2020/08/19/js-control-flow-statuement/"/>
+    <id>http://mjae404.github.io/2020/08/19/js-control-flow-statuement/</id>
+    <published>2020-08-19T12:21:30.000Z</published>
+    <updated>2020-08-19T12:21:45.543Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;순차적으로 진행되는 실행 흐름을 변화시키는 문장을 제어문이라고 하며, 주어진 조건에 따라 코드 블록을 실행하거나 반복할 때 사용된다. 조건문과 반복문, 점프문이 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 전역 변수의 문제점</title>
