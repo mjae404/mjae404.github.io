@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-08-21T13:36:33.777Z</updated>
+  <updated>2020-08-22T09:41:43.270Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SCSS 기본 연산</title>
+    <link href="http://mjae404.github.io/2020/08/22/scss-operations/"/>
+    <id>http://mjae404.github.io/2020/08/22/scss-operations/</id>
+    <published>2020-08-22T09:41:08.000Z</published>
+    <updated>2020-08-22T09:41:43.270Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Sass는 기본적으로 연산 기능을 지원하며, 레이아웃 작업시 상황에 맞게 크기를 계산하거나 정해진 값을 나눠서 작업할 경우 유용하게 사용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Sass &amp; SCSS" scheme="http://mjae404.github.io/categories/Sass-SCSS/"/>
+    
+    
+      <category term="SASS" scheme="http://mjae404.github.io/tags/SASS/"/>
+    
+      <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
+    
+      <category term="operation" scheme="http://mjae404.github.io/tags/operation/"/>
+    
+  </entry>
   
   <entry>
     <title>Sass &amp; SCSS 개요</title>
