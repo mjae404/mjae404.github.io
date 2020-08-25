@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-08-22T09:41:43.270Z</updated>
+  <updated>2020-08-25T12:27:08.481Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SCSS 함수</title>
+    <link href="http://mjae404.github.io/2020/08/25/scss-function/"/>
+    <id>http://mjae404.github.io/2020/08/25/scss-function/</id>
+    <published>2020-08-25T12:24:41.000Z</published>
+    <updated>2020-08-25T12:27:08.481Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;자신의 함수를 정의하여 사용할 수 있다. 함수와 Mixins는 거의 유사하지만, 반환되는 내용이 다르다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Sass &amp; SCSS" scheme="http://mjae404.github.io/categories/Sass-SCSS/"/>
+    
+    
+      <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
+    
+      <category term="SASS" scheme="http://mjae404.github.io/tags/SASS/"/>
+    
+      <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
+    
+  </entry>
   
   <entry>
     <title>SCSS 기본 연산</title>
