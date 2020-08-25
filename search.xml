@@ -1490,4 +1490,145 @@
         <tag>SCSS</tag>
       </tags>
   </entry>
+  <entry>
+    <title>SCSS Mixins</title>
+    <url>/2020/08/26/scss-mixins/</url>
+    <content><![CDATA[<p>스타일 시트 전체에서 <strong>재사용할 CSS 선언 그룹을 정의</strong> 해준다. 약간의 Mixin으로 다양한 스타일을 만들 수  있다.</p>
+<ul>
+<li>선언하기: @mixin (만들어서)</li>
+<li>포함하기: @include (사용하기)</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="mixin"><a href="#mixin" class="headerlink" title="mixin"></a>mixin</h2><p>Mixin은 선택자를 포함가능하고 상위 요소 참조(&amp; 등)도 가능하다.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="comment">// SCSS</span></span><br><span class="line"><span class="keyword">@mixin</span> 믹스인이름 &#123;</span><br><span class="line">  스타일;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Sass</span></span><br><span class="line">=믹스인이름</span><br><span class="line">  스타일</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="comment">// SCSS</span></span><br><span class="line"><span class="keyword">@mixin</span> large-text &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">22px</span>;</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="attribute">font-family</span>: sans-serif;</span><br><span class="line">  <span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Sass</span></span><br><span class="line">=large-text</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">22px</span></span><br><span class="line">  font-weight: bold</span><br><span class="line">  font-family: sans-serif</span><br><span class="line">  color: orange</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="include"><a href="#include" class="headerlink" title="@include"></a>@include</h2><p>선언된 Mixin을 사용하기 위해서는 <code>@include</code>가 필요하다.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="comment">// SCSS</span></span><br><span class="line"><span class="keyword">@include</span> 믹스인이름;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Sass</span></span><br><span class="line">+믹스인이름</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="comment">// SCSS</span></span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> large-text;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> large-text;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Sass</span></span><br><span class="line"><span class="selector-tag">h1</span></span><br><span class="line">  +large-text</span><br><span class="line"><span class="selector-tag">div</span></span><br><span class="line">  +large-text</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">22px</span>;</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="attribute">font-family</span>: sans-serif;</span><br><span class="line">  <span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">22px</span>;</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="attribute">font-family</span>: sans-serif;</span><br><span class="line">  <span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="인수-Arguments"><a href="#인수-Arguments" class="headerlink" title="인수 (Arguments)"></a>인수 (Arguments)</h2><p>Minxin은 함수처럼 인수(Arguments)를 가질 수 있으며, 하나의 Mixin으로 다양한 결과를 만들 수 있다.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="comment">// SCSS</span></span><br><span class="line"><span class="keyword">@mixin</span> 믹스인이름($매개변수) &#123;</span><br><span class="line">  스타일;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@include</span> 믹스인이름(인수);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Sass</span></span><br><span class="line">=믹스인이름($매개변수)</span><br><span class="line">  스타일</span><br><span class="line">+믹스인이름(인수)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> dash-line(<span class="variable">$width</span>, <span class="variable">$color</span>) &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="variable">$width</span> dashed <span class="variable">$color</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box1</span> &#123; <span class="keyword">@include</span> dash-line(<span class="number">1px</span>, black); &#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123; <span class="keyword">@include</span> dash-line(<span class="number">2px</span>, orange); &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> dashed black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> dashed orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="인수의-기본값-설정"><a href="#인수의-기본값-설정" class="headerlink" title="인수의 기본값 설정"></a>인수의 기본값 설정</h3><p>인수는 기본값을 가질 수 있다.<code>@include</code> 포함 단계에서 별도의 인수가 전달되지 않으면 기본값이 사용된다.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> 믹스인이름($매개변수: 기본값) &#123;</span><br><span class="line">  스타일;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> dash-line(<span class="variable">$width</span>: <span class="number">1px</span>, <span class="variable">$color</span>: black) &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="variable">$width</span> dashed <span class="variable">$color</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box1</span> &#123; <span class="keyword">@include</span> dash-line; &#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123; <span class="keyword">@include</span> dash-line(<span class="number">2px</span>); &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> dashed black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> dashed black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="키워드-인수"><a href="#키워드-인수" class="headerlink" title="키워드 인수"></a>키워드 인수</h3><p>Mixin에 전달할 인수를 입력할 때 <strong>명시적으로 키워드(변수)를 입력하여 작성</strong> 할 수 있다. 별도의 입력 순서를 필요로 하지 않기 때문에 편리하지만 작성하지 않은 인수가 적용될 수 있도록 기본값을 설정해주는 것이 좋다.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> 믹스인이름($매개변수A: 기본값, $매개변수B: 기본값) &#123;</span><br><span class="line">  스타일;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@include</span> 믹스인이름($매개변수B: 인수);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> position(</span><br><span class="line">  <span class="variable">$p</span>: absolute,</span><br><span class="line">  <span class="variable">$t</span>: null,</span><br><span class="line">  <span class="variable">$b</span>: null,</span><br><span class="line">  <span class="variable">$l</span>: null,</span><br><span class="line">  <span class="variable">$r</span>: null</span><br><span class="line">) &#123;</span><br><span class="line">  <span class="attribute">position</span>: <span class="variable">$p</span>;</span><br><span class="line">  <span class="attribute">top</span>: <span class="variable">$t</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="variable">$b</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="variable">$l</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="variable">$r</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.absolute</span> &#123;</span><br><span class="line">  <span class="comment">// 키워드 인수로 설정할 값만 전달</span></span><br><span class="line">  <span class="keyword">@include</span> position(<span class="variable">$b</span>: <span class="number">10px</span>, <span class="variable">$r</span>: <span class="number">20px</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fixed</span> &#123;</span><br><span class="line">  <span class="comment">// 인수가 많아짐에 따라 가독성을 확보하기 위해 줄바꿈</span></span><br><span class="line">  <span class="keyword">@include</span> position(</span><br><span class="line">    fixed,</span><br><span class="line">    <span class="variable">$t</span>: <span class="number">30px</span>,</span><br><span class="line">    <span class="variable">$r</span>: <span class="number">40px</span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.absolute</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fixed</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">40px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="가변-인수-Variable-Arguments"><a href="#가변-인수-Variable-Arguments" class="headerlink" title="가변 인수(Variable Arguments)"></a>가변 인수(Variable Arguments)</h3><p><strong>입력할 인수의 개수가 불확실</strong> 할 때 <strong>가변인수</strong> 를 사용한다. 가변인수는 매개변수 뒤에 <code>...</code>을 붙여준다.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> 믹스인이름($매개변수...) &#123;</span><br><span class="line">  스타일;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@include</span> 믹스인이름(인수A, 인수B, 인수C);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 인수를 순서대로 하나씩 전달 받다가,</span></span><br><span class="line"><span class="comment">// 3번째 매개변수($bg-values)는 인수의 개수에 상관없이 받음</span></span><br><span class="line"><span class="keyword">@mixin</span> bg(<span class="variable">$width</span>, <span class="variable">$height</span>, <span class="variable">$bg-values</span>...) &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">$width</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="variable">$height</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$bg-values</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">// 위의 Mixin(bg) 설정에 맞게 인수를 순서대로 전달하다가</span></span><br><span class="line">  <span class="comment">//3번째 이후부터는 개수에 상관없이 전달</span></span><br><span class="line">  <span class="keyword">@include</span> bg(</span><br><span class="line">    <span class="number">100px</span>,</span><br><span class="line">    <span class="number">200px</span>,</span><br><span class="line">    url(<span class="string">&quot;/images/a.png&quot;</span>) no-repeat <span class="number">10px</span> <span class="number">20px</span>,</span><br><span class="line">    url(<span class="string">&quot;/images/b.png&quot;</span>) no-repeat,</span><br><span class="line">    url(<span class="string">&quot;/images/c.png&quot;</span>)</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">&quot;/images/a.png&quot;</span>) no-repeat <span class="number">10px</span> <span class="number">20px</span>,</span><br><span class="line">              <span class="built_in">url</span>(<span class="string">&quot;/images/b.png&quot;</span>) no-repeat,</span><br><span class="line">              <span class="built_in">url</span>(<span class="string">&quot;/images/c.png&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><em>가변 인수를 전달할 값으로 사용한 경우</em></p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> font(</span><br><span class="line">  <span class="variable">$style</span>: normal,</span><br><span class="line">  <span class="variable">$weight</span>: normal,</span><br><span class="line">  <span class="variable">$size</span>: <span class="number">16px</span>,</span><br><span class="line">  <span class="variable">$family</span>: sans-serif</span><br><span class="line">) &#123;</span><br><span class="line">  <span class="attribute">font</span>: &#123;</span><br><span class="line">    style: <span class="variable">$style</span>;</span><br><span class="line">    weight: <span class="variable">$weight</span>;</span><br><span class="line">    size: <span class="variable">$size</span>;</span><br><span class="line">    family: <span class="variable">$family</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">// 매개변수 순서와 개수에 맞게 전달</span></span><br><span class="line">  <span class="variable">$font-values</span>: italic, bold, <span class="number">16px</span>, sans-serif;</span><br><span class="line">  <span class="keyword">@include</span> font(<span class="variable">$font-values</span>...);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">span</span> &#123;</span><br><span class="line">  <span class="comment">// 필요한 값만 키워드 인수로 변수에 담아 전달</span></span><br><span class="line">  <span class="variable">$font-values</span>: (style: italic, size: <span class="number">22px</span>);</span><br><span class="line">  <span class="keyword">@include</span> font(<span class="variable">$font-values</span>...);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="comment">// 필요한 값만 키워드 인수로 전달</span></span><br><span class="line">  <span class="keyword">@include</span> font((weight: <span class="number">900</span>, family: monospace)...);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">font-family</span>: sans-serif;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">span</span> &#123;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: normal;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">22px</span>;</span><br><span class="line">  <span class="attribute">font-family</span>: sans-serif;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">900</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">font-family</span>: monospace;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="content"><a href="#content" class="headerlink" title="content"></a>content</h3><p>선언된 Mixin에 <code>@content</code>가 포함되어 있으면 해당 부분에 원하는 스타일 블록을 전달할 수 있다. 이 방식으로 <strong>Mixin이 가지고 있는 기능에 선택자나 속성을 추가</strong> 할 수 있다. Mixin에게 전달된 스타일 블록은 Mixin의 범위가 아니라 스타일 블록이 정의된 범위에서 평가된다. Mixin의 매개변수는 전달된 스타일 블록 안에서 사용되지 않고, <strong>전역 값으로 해석</strong> 된다.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> 믹스인이름() &#123;</span><br><span class="line">  스타일;</span><br><span class="line">  <span class="keyword">@content</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@include</span> 믹스인이름() &#123;</span><br><span class="line">  <span class="comment">// 스타일 블록</span></span><br><span class="line">  스타일;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="variable">$color</span>: red;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@mixin</span> colors(<span class="variable">$color</span>: blue) &#123;</span><br><span class="line">  <span class="comment">// Mixin의 범위</span></span><br><span class="line">  <span class="keyword">@content</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="variable">$color</span>;</span><br><span class="line">  <span class="attribute">border-color</span>: <span class="variable">$color</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> colors() &#123;</span><br><span class="line">    <span class="comment">// 스타일 블록이 정의된 범위</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="variable">$color</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">  <span class="attribute">background-color</span>: blue;</span><br><span class="line">  <span class="attribute">border-color</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="확장-Extend"><a href="#확장-Extend" class="headerlink" title="확장 (Extend)"></a>확장 (Extend)</h2><p><strong>특정 선택자가 다른 선택자의 모든 스타일을 가져야 하는 경우</strong> 에 확장 기능을 사용할 수 있지만 다음과 같은 문제를 고려해야 한다.</p>
+<ul>
+<li>내 현재 선택자가 어디에 첨부될 것인가?</li>
+<li>원하지 않는 부작용이 초래될 수 있는가?</li>
+<li>한 번의 확장으로 얼마나 큰 CSS가 생성되는가?</li>
+</ul>
+<p>이러한 이유로 확장은 권하지 않으며 <strong>Mixin을 대체 기능으로 사용</strong> 하는 것이 좋다.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@extend</span> 선택자;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.btn</span> &#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.btn-danger</span> &#123;</span><br><span class="line">  <span class="keyword">@extend</span> .btn;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.btn</span>, <span class="selector-class">.btn-danger</span> &#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.btn-danger</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://heropy.blog/2018/01/31/sass/">https://heropy.blog/2018/01/31/sass/</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Sass &amp; SCSS</category>
+      </categories>
+      <tags>
+        <tag>SASS</tag>
+        <tag>SCSS</tag>
+        <tag>mixins</tag>
+      </tags>
+  </entry>
 </search>

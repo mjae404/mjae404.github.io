@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-08-25T12:27:08.481Z</updated>
+  <updated>2020-08-25T15:34:29.587Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SCSS Mixins</title>
+    <link href="http://mjae404.github.io/2020/08/26/scss-mixins/"/>
+    <id>http://mjae404.github.io/2020/08/26/scss-mixins/</id>
+    <published>2020-08-25T15:33:33.000Z</published>
+    <updated>2020-08-25T15:34:29.587Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;스타일 시트 전체에서 &lt;strong&gt;재사용할 CSS 선언 그룹을 정의&lt;/strong&gt; 해준다. 약간의 Mixin으로 다양한 스타일을 만들 수  있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;선언하기: @mixin (만들어서)&lt;/li&gt;
+&lt;li&gt;포함하기: @include (사용하기)&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Sass &amp; SCSS" scheme="http://mjae404.github.io/categories/Sass-SCSS/"/>
+    
+    
+      <category term="SASS" scheme="http://mjae404.github.io/tags/SASS/"/>
+    
+      <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
+    
+      <category term="mixins" scheme="http://mjae404.github.io/tags/mixins/"/>
+    
+  </entry>
   
   <entry>
     <title>SCSS 함수</title>
