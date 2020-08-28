@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-08-25T15:34:29.587Z</updated>
+  <updated>2020-08-28T11:33:39.383Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git 브랜치</title>
+    <link href="http://mjae404.github.io/2020/08/28/git-branch/"/>
+    <id>http://mjae404.github.io/2020/08/28/git-branch/</id>
+    <published>2020-08-28T11:33:09.000Z</published>
+    <updated>2020-08-28T11:33:39.383Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;똑같은 코드를 동시에 고칠 가능성이 있기 때문에, 브랜치를 분기를 나누어 작업을 진행한다. 분기를 나누어 작업한 후에, 추후에 합친다. 충돌이 일어난다고 하더라도 명시적으로 충돌을 해결할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
+    
+      <category term="github" scheme="http://mjae404.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>SCSS Mixins</title>
