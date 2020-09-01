@@ -1703,4 +1703,147 @@
         <tag>github</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Git &amp; GitHub 개요</title>
+    <url>/2020/09/02/git-overview/</url>
+    <content><![CDATA[<p>현대 개발 팀 프로젝트에서 버전관리와 클라우드 저장소는 꼭 필요한 것이며, 버전관리를 위해서 Git, 클라우드 저장을 위해서 Github를 익히면 팀프로젝트 때 효율적인 개발 협업을 할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="다수의-개발자가-하나의-서비스를-만드려면"><a href="#다수의-개발자가-하나의-서비스를-만드려면" class="headerlink" title="다수의 개발자가 하나의 서비스를 만드려면?"></a>다수의 개발자가 하나의 서비스를 만드려면?</h2><ol>
+<li>각자 개발하다가 메일이나 USB 등으로 보내서 합친다.</li>
+<li>에러를 대비해 백업본을 만들어둔다.</li>
+<li>상대방의 파일을 수정시에 따로 언급한다.</li>
+<li>코드를 합칠 때 내 코드에도 반영한다.</li>
+</ol>
+<p>→ <strong>따로 작업하다가 내가 원할 때 코드를 합칠 수 있는 방법</strong>: 깃 (분산 버전 관리 시스템)</p>
+<h2 id="버전-관리-시스템-Git"><a href="#버전-관리-시스템-Git" class="headerlink" title="버전 관리 시스템 Git"></a>버전 관리 시스템 Git</h2><p>내가 만든 버전과 동료가 만든 버전을 비교해서 최신본으로 코드를 업데이트할 수 있다. 저장할 공간만 있다면 어디서나 사용이 가능하다. <strong>CLI</strong>(Command-line interface), <strong>GUI</strong>(graphical user interface)를 사용할 수 있다.</p>
+<h2 id="Github에-코드를-올리는-과정"><a href="#Github에-코드를-올리는-과정" class="headerlink" title="Github에 코드를 올리는 과정"></a>Github에 코드를 올리는 과정</h2><ol>
+<li>해당 프로젝트 폴더에서 사용할 것이라고 명령</li>
+<li>작업 후 변경한 파일중 올리고 싶은 것을 선택</li>
+<li>선택한 파일을 하나의 버전으로 만들어주고 설명을 기재</li>
+<li>GitHub 사이트에서 프로젝트 저장소 생성</li>
+<li>내 컴퓨터에서 만들었던 덩어리 작업물 GitHub에 업데이트</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 처음 배우는 Git &amp; GitHub _ 진유림 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>overview</tag>
+        <tag>git</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub 버전 생성</title>
+    <url>/2020/09/02/git-process/</url>
+    <content><![CDATA[<p><a href="https://github.com/">GitHub</a>는 오픈 소스에서 비즈니스에 이르기까지 4천만 명의 개발자와 함께 코드를 호스트하고 검토하고 프로젝트를 관리하며 소프트웨어를 구축할 수 있는 개발 플랫폼이다.</p>
+<a id="more"></a>
+
+<h2 id="GitHub-버전-생성"><a href="#GitHub-버전-생성" class="headerlink" title="GitHub 버전 생성"></a>GitHub 버전 생성</h2><p><em>Git 초기화와 로컬 저장소</em></p>
+<ol>
+<li><strong>원하는 폴더에서 Git 초기화를 하면 버전 관리를 할 수 있다.</strong><ul>
+<li>Git 초기화를 하면 .git이라는 숨겨진 폴더(로컬 저장소)가 만들어진다.</li>
+<li>로컬 저장소에 내가 만든 버전 정보, 원격 저장소 주소 등이 저장된다.</li>
+<li>원격 저장소에서 내 컴퓨터로 코드를 받아오면 로컬 저장소가 자동으로 생긴다.</li>
+<li>한 폴더 하나의 로컬 저장소만 유지해야 한다.</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p><em>첫번째 버전 만들기</em></p>
+<ol start="2">
+<li><strong>코딩을 진행한 후, 내가 변경한 파일중에 올리기를 원하는 것만 선택한다.</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>선택한 파일들을 하나의 버전으로 만들고 설명을 라벨링한다.</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m&quot;설명 라벨링&quot;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>생성한 커밋을 확인한다.</strong><ul>
+<li>커밋은 ‘의미 있는 변동사항’을 묶어야 한다.</li>
+<li>추후 수정할 때 어떤 파일을 수정했는지 쉽게 파악이 가능하다.</li>
+<li>커밋 메시지는 바로 어떤 내용을 작업했는지 파악할 수 있도록 최소한이라도 기재해준다.</li>
+<li>Git에서 커밋이란 변경 사항이 아니라 최종 코드의 모음이다.</li>
+<li>변경되지 않은 파일은 ‘변경되지 않았다’라고만 저장되어 용량을 크게 차지하지 않는다.</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+
+<p><em>만든 버전 GitHub에 올리기</em></p>
+<ol start="5">
+<li><p><strong>GitHub 사이트에서 프로젝트 저장소를 생성한다.</strong></p>
+<ul>
+<li><strong>New repository</strong>: 새로운 저장소 만들기</li>
+<li><strong>Import repository</strong>: 저장소 가져오기</li>
+<li><strong>New gist</strong>: 코드 조각을 올리고 싶을 때 사용</li>
+<li><strong>New organization</strong>: 팀프로젝트를 할 때 진행</li>
+<li><strong>New project</strong></li>
+</ul>
+</li>
+<li><p><strong>내 컴퓨터 프로젝트 폴더에 GitHub 저장소 주소를 알려준다.</strong></p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin https:&#x2F;&#x2F;github.com&#x2F;&#x2F;아이디&#x2F;이름.git</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li><strong>내컴퓨터에 만들었던 커밋을 GitHub에 올린다.</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push master</span><br></pre></td></tr></table></figure>
+
+<h2 id="타인의-저장소-활용"><a href="#타인의-저장소-활용" class="headerlink" title="타인의 저장소 활용"></a>타인의 저장소 활용</h2><p><em>Clone</em></p>
+<ul>
+<li>내 컴퓨터에 폴더를 생성하고 GitHub의 저장소를 받아온다.<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;아이디&#x2F;이름.git</span><br></pre></td></tr></table></figure></li>
+<li>app.js 파일 생성 후 add → commit → push</li>
+<li>GitHub에서 새 커밋을 확인한다.</li>
+</ul>
+<p><em>pull</em></p>
+<ul>
+<li>원격 저장소의 데이터를 가져온다.<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="깃-명령어"><a href="#깃-명령어" class="headerlink" title="깃 명령어"></a>깃 명령어</h2><ul>
+<li><strong>git init</strong>: 이제부터 깃을 시작하겠다 선언</li>
+<li><strong>git status</strong>: 현재 깃 상태</li>
+<li><strong>git add</strong>: 깃에 파일 추가<ul>
+<li>ex) git add 파일명 : 파일추가</li>
+<li>ex) git add . : 폴더+파일 추가</li>
+</ul>
+</li>
+<li><strong>git remote (주소)</strong>: 데이터 전송</li>
+<li><strong>git remote</strong>: 전송되었는지 확인 가능</li>
+<li><strong>git commit</strong>: 라벨링<ul>
+<li>첫줄이 제목, 다다음줄이 내용</li>
+<li>제목은 현재형으로, 구나 절로 적용(문장말고)</li>
+<li>git commit -m “docs: edit” → vim 열지 않고 내용 넣을 수 있음</li>
+</ul>
+</li>
+<li><strong>git push { } master</strong>: 보내기</li>
+<li><strong>git push -u { } master</strong>:맨처음 보낼 때 -u master 넣어주어야 함</li>
+<li><strong>git remote remove { }</strong>: 리모트 삭제</li>
+<li><strong>git clone</strong>: 서버에서 로컬로 가져오기</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 처음 배우는 Git &amp; GitHub _ 진유림 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
 </search>
