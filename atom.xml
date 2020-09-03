@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-01T16:14:08.245Z</updated>
+  <updated>2020-09-03T13:19:12.613Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 배열 메소드</title>
+    <link href="http://mjae404.github.io/2020/09/03/js-array-method/"/>
+    <id>http://mjae404.github.io/2020/09/03/js-array-method/</id>
+    <published>2020-09-03T13:18:49.000Z</published>
+    <updated>2020-09-03T13:19:12.613Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;배열 메소드가 결과물을 반환하는 패턴&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;원본 배열(this가 가리키는 객체)을 직접 변경하는 메소드(mutator method)&lt;/li&gt;
+&lt;li&gt;원본 배열을 직접 변경하지 않고 배열을생성하여 반환하는 메소드(accessor method)&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
+    
+      <category term="method" scheme="http://mjae404.github.io/tags/method/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub 버전 생성</title>
