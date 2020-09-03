@@ -2058,4 +2058,62 @@
         <tag>method</tag>
       </tags>
   </entry>
+  <entry>
+    <title>마크다운</title>
+    <url>/2020/09/04/markdown/</url>
+    <content><![CDATA[<p>마크다운(markdown)은 일반 텍스트 문서를 편집하는 문법이다. 사용법이 쉽고 빠르게 문서를 정리할 수 있다. 엔터키 한 번은 제대로 적용되지 않기 때문에 문장이 연달아서 적용된다. 줄바꿈은 엔터 두 번으로 구분한다.</p>
+<a id="more"></a>
+
+<h2 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h2><ol>
+<li>문법이 쉽다.</li>
+<li>관리하기가 쉽다.</li>
+<li>지원 가능한 플랫폼과 프로그램이 다양하다.</li>
+</ol>
+<h2 id="단점"><a href="#단점" class="headerlink" title="단점"></a>단점</h2><ol>
+<li>표준이 없어 사용자마다 문법이 상이하다.</li>
+<li>모든 HTML 마크업을 대신할 수 없다.</li>
+</ol>
+<h2 id="제목-Heading"><a href="#제목-Heading" class="headerlink" title="제목 (Heading)"></a>제목 (Heading)</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 제목 1</span></span><br><span class="line"><span class="section">## 제목 2</span></span><br><span class="line"><span class="section">### 제목 3</span></span><br><span class="line"><span class="section">#### 제목 4</span></span><br><span class="line"><span class="section">##### 제목 5</span></span><br><span class="line"><span class="section">###### 제목 6</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>h1과 h2는 다음과 같이도 표현 가능하다.</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">제목 1</span><br><span class="line">======</span><br><span class="line"></span><br><span class="line">제목 2</span><br><span class="line">------</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="강조-Emphasis"><a href="#강조-Emphasis" class="headerlink" title="강조(Emphasis)"></a>강조(Emphasis)</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*이텔릭체*</span>, <span class="emphasis">_이텔릭체_</span></span><br><span class="line"><span class="strong">**볼드**</span>, <span class="strong">__볼드__</span></span><br><span class="line">~~취소선~~</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>밑줄<span class="xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="윗첨자-아랫첨자"><a href="#윗첨자-아랫첨자" class="headerlink" title="윗첨자, 아랫첨자"></a>윗첨자, 아랫첨자</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">^ 윗첨자 ^</span><br><span class="line">~ 아랫첨자 ~</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>호환이 되지 않는 경우에는 <code>&lt;sup&gt;</code>, <code>&lt;sub&gt;</code> 태그를 사용하면 적용할 수 있다.</p>
+</blockquote>
+<h2 id="리스트-List"><a href="#리스트-List" class="headerlink" title="리스트 (List)"></a>리스트 (List)</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 순서가 필요한 목록</span><br><span class="line"><span class="bullet">1.</span> 순서가 필요한 목록</span><br><span class="line"><span class="bullet">  -</span> 순서가 필요하지 않은 목록(서브)</span><br><span class="line"><span class="bullet">  -</span> 순서가 필요하지 않은 목록(서브)</span><br><span class="line"><span class="bullet">1.</span> 순서가 필요한 목록</span><br><span class="line"><span class="bullet">  1.</span> 순서가 필요한 목록(서브)</span><br><span class="line"><span class="bullet">  1.</span> 순서가 필요한 목록(서브)</span><br><span class="line"><span class="bullet">1.</span> 순서가 필요한 목록</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 순서가 필요하지 않은 목록에 사용 가능한 기호</span><br><span class="line"><span class="bullet">  -</span> 대쉬(hyphen)</span><br><span class="line"><span class="bullet">  *</span> 별표(asterisks)</span><br><span class="line"><span class="bullet">  +</span> 더하기(plus sign)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="링크-Links"><a href="#링크-Links" class="headerlink" title="링크(Links)"></a>링크(Links)</h2>  <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GOOGLE</span>](<span class="link">https://google.com</span>)</span><br><span class="line">[<span class="string">GOOGLE</span>](<span class="link">https://google.com &quot;링크 설명(title</span>)을 작성하세요.&quot;)</span><br><span class="line">[<span class="string">상대적 참조</span>](<span class="link">../users/login</span>)</span><br><span class="line"></span><br><span class="line">구글 홈페이지: https://google.com</span><br><span class="line">구글 홈페이지:  <span class="xml"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">google.com</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="이미지-링크-Images-Link"><a href="#이미지-링크-Images-Link" class="headerlink" title="이미지 링크 (Images Link)"></a>이미지 링크 (Images Link)</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">이미지 설명</span>](<span class="link">이미지 링크</span>)</span><br><span class="line">[<span class="string">![이미지 설명</span>](<span class="link">이미지 링크</span>)](<span class="link">연결하고자하는 url &quot;마우스 오버 시 나타낼 링크 title&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="체크박스-Checkbox"><a href="#체크박스-Checkbox" class="headerlink" title="체크박스(Checkbox)"></a>체크박스(Checkbox)</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [ ] 체크박스</span><br><span class="line"><span class="bullet">-</span> [x] 체크박스</span><br><span class="line"><span class="bullet">*</span> [x] 체크박스</span><br><span class="line"><span class="bullet">+</span> [x] 체크박스</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="인용문-blockquote"><a href="#인용문-blockquote" class="headerlink" title="인용문 (blockquote)"></a>인용문 (blockquote)</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="quote">&gt; 작성할 내용</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong></p>
+</blockquote>
+<ul>
+<li><a href="https://heropy.blog/2017/09/30/markdown/">https://heropy.blog/2017/09/30/markdown/</a></li>
+<li><a href="https://velog.io/@yuuuye/velog-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4MarkDown-%EC%9E%91%EC%84%B1%EB%B2%95">https://velog.io/@yuuuye/velog-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4MarkDown-%EC%9E%91%EC%84%B1%EB%B2%95</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-03T13:19:12.613Z</updated>
+  <updated>2020-09-03T15:10:32.530Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>마크다운</title>
+    <link href="http://mjae404.github.io/2020/09/04/markdown/"/>
+    <id>http://mjae404.github.io/2020/09/04/markdown/</id>
+    <published>2020-09-03T15:10:16.000Z</published>
+    <updated>2020-09-03T15:10:32.530Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;마크다운(markdown)은 일반 텍스트 문서를 편집하는 문법이다. 사용법이 쉽고 빠르게 문서를 정리할 수 있다. 엔터키 한 번은 제대로 적용되지 않기 때문에 문장이 연달아서 적용된다. 줄바꿈은 엔터 두 번으로 구분한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="http://mjae404.github.io/categories/blog/"/>
+    
+    
+      <category term="blog" scheme="http://mjae404.github.io/tags/blog/"/>
+    
+      <category term="markdown" scheme="http://mjae404.github.io/tags/markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 배열 메소드</title>
