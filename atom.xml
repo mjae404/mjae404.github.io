@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-08T12:44:16.388Z</updated>
+  <updated>2020-09-12T12:49:06.585Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 데이터 타입</title>
+    <link href="http://mjae404.github.io/2020/09/12/python-datatype/"/>
+    <id>http://mjae404.github.io/2020/09/12/python-datatype/</id>
+    <published>2020-09-12T12:48:37.000Z</published>
+    <updated>2020-09-12T12:49:06.585Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;자료형에는 숫자(Number), 문자(String), 불린(Boolean)이 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;숫자: 정수(Integer), 소수(Floating Point)&lt;/li&gt;
+&lt;li&gt;문자: “Hello” + “World” → “HelloWorld”&lt;/li&gt;
+&lt;li&gt;불린: True, False&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="datatype" scheme="http://mjae404.github.io/tags/datatype/"/>
+    
+  </entry>
   
   <entry>
     <title>git stash</title>
@@ -493,27 +521,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://mjae404.github.io/2020/08/08/hello-world/"/>
-    <id>http://mjae404.github.io/2020/08/08/hello-world/</id>
-    <published>2020-08-08T14:26:09.000Z</published>
-    <updated>2020-08-16T14:34:03.137Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="blog" scheme="http://mjae404.github.io/categories/blog/"/>
-    
-    
-      <category term="blog" scheme="http://mjae404.github.io/tags/blog/"/>
     
   </entry>
   
