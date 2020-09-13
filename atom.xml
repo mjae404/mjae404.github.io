@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-12T12:49:06.585Z</updated>
+  <updated>2020-09-13T12:26:48.455Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PYTHON 추상화</title>
+    <link href="http://mjae404.github.io/2020/09/13/python-abstraction/"/>
+    <id>http://mjae404.github.io/2020/09/13/python-abstraction/</id>
+    <published>2020-09-13T12:26:32.000Z</published>
+    <updated>2020-09-13T12:26:48.455Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;추상화 (Abstraction)&lt;/strong&gt;&lt;br&gt;복잡한 세부 사항은 숨기면서 주요한 기능에만 집중할 수  있게 해주는 개념이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;변수 (Variable): 값을 저장&lt;/li&gt;
+&lt;li&gt;함수 (Function): 명령을 저장&lt;/li&gt;
+&lt;li&gt;객체 (Class)&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="abstraction" scheme="http://mjae404.github.io/tags/abstraction/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PYTHON 데이터 타입</title>
     <link href="http://mjae404.github.io/2020/09/12/python-datatype/"/>
     <id>http://mjae404.github.io/2020/09/12/python-datatype/</id>
     <published>2020-09-12T12:48:37.000Z</published>
-    <updated>2020-09-12T12:49:06.585Z</updated>
+    <updated>2020-09-13T12:27:28.611Z</updated>
     
     <summary type="html">
     
@@ -95,7 +123,7 @@
     <link href="http://mjae404.github.io/2020/09/03/js-array-method/"/>
     <id>http://mjae404.github.io/2020/09/03/js-array-method/</id>
     <published>2020-09-03T13:18:49.000Z</published>
-    <updated>2020-09-03T13:19:12.613Z</updated>
+    <updated>2020-09-13T12:28:29.147Z</updated>
     
     <summary type="html">
     
@@ -495,32 +523,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>자바스크립트 개요</title>
-    <link href="http://mjae404.github.io/2020/08/11/js-overview/"/>
-    <id>http://mjae404.github.io/2020/08/11/js-overview/</id>
-    <published>2020-08-10T17:13:52.000Z</published>
-    <updated>2020-08-10T17:14:24.861Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;자바스크립트란?&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;1.인터프리터 언어이다.&lt;br&gt;2.동적 프로토타입 기반 객체 지향 언어이다.&lt;br&gt;3. 동적 타입 언어이다.&lt;br&gt;4. 함수가 일급 객체다.&lt;br&gt;5. 함수가 클로저를 정의한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
     
   </entry>
   
