@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-13T12:26:48.455Z</updated>
+  <updated>2020-09-13T15:20:33.456Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 배열 고차 함수</title>
+    <link href="http://mjae404.github.io/2020/09/14/js-array-higher-order-function/"/>
+    <id>http://mjae404.github.io/2020/09/14/js-array-higher-order-function/</id>
+    <published>2020-09-13T15:19:46.000Z</published>
+    <updated>2020-09-13T15:20:33.456Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;고차함수&lt;/em&gt;&lt;br&gt;함수를 인자로 받거나 함수를 반환하는 함수 → 필요한 시점에 호출하거나 클로저를 생성하여 반환&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
+    
+      <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
+    
+      <category term="HOF" scheme="http://mjae404.github.io/tags/HOF/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 추상화</title>
@@ -498,31 +525,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 변수</title>
-    <link href="http://mjae404.github.io/2020/08/16/js-variable/"/>
-    <id>http://mjae404.github.io/2020/08/16/js-variable/</id>
-    <published>2020-08-16T14:24:47.000Z</published>
-    <updated>2020-08-16T14:25:14.149Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;하나의 값을 저장할 수 있는 메모리 공간 자체 또는 그 메모리 공간을 식별하기 위해 붙인 이름을 말한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
     
   </entry>
   
