@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-15T12:05:36.778Z</updated>
+  <updated>2020-09-16T14:34:34.740Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 타입변환과 단축평가</title>
+    <link href="http://mjae404.github.io/2020/09/16/js-type-casting/"/>
+    <id>http://mjae404.github.io/2020/09/16/js-type-casting/</id>
+    <published>2020-09-16T14:33:59.000Z</published>
+    <updated>2020-09-16T14:34:34.740Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;명시적 타입 변환 / 타입 캐스팅&lt;/strong&gt;: 개발자가 의도적으로 값의 타입을 변환하는 것&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;암묵적 타입 변환 / 타입 강제 변환&lt;/strong&gt;: 개발자의 의도와는 관계 없이 자바스크립트에 의해 암묵적으로 타입이 자동 변환되는 것&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="type casting" scheme="http://mjae404.github.io/tags/type-casting/"/>
+    
+      <category term="Short-Circuit evaluation" scheme="http://mjae404.github.io/tags/Short-Circuit-evaluation/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 이터러블</title>
@@ -498,33 +528,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="scope" scheme="http://mjae404.github.io/tags/scope/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 객체</title>
-    <link href="http://mjae404.github.io/2020/08/17/js-object/"/>
-    <id>http://mjae404.github.io/2020/08/17/js-object/</id>
-    <published>2020-08-17T13:51:11.000Z</published>
-    <updated>2020-08-17T13:58:07.492Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;자바스크립트는 객체 기반의 프로그래밍 언어이다. 원시 타입을 제외한 나머지 값들은 모두 객체이다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;프로퍼티&lt;/strong&gt;: 객체의 상태를 나타내는 값(data).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;메소드&lt;/strong&gt;: 프로퍼티를 참조하고 조작할 수 있는 동작(behavior). 프로퍼티의 값이 함수일 경우에 일반 함수와 구분하기 위해 메소드라 부름.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
     
   </entry>
   
