@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-16T14:34:34.740Z</updated>
+  <updated>2020-09-16T15:46:02.823Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 실행 컨텍스트</title>
+    <link href="http://mjae404.github.io/2020/09/17/js-execution-context/"/>
+    <id>http://mjae404.github.io/2020/09/17/js-execution-context/</id>
+    <published>2020-09-16T15:45:10.000Z</published>
+    <updated>2020-09-16T15:46:02.823Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;실행 컨텍스트는 식별자, 스코프, 호이스팅, 클로저 등의 동작 원리를 담고 있는 자바스크립트의 핵심 개념이다. 동적 언어로서의 자바스크림트 성격을 잘 파악할 수 있다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;실행 컨텍스트&lt;/strong&gt;: 실행할 코드에 제공할 환경 정보들을 모아놓은 객체.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="execution context" scheme="http://mjae404.github.io/tags/execution-context/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 타입변환과 단축평가</title>
@@ -505,29 +531,6 @@
       <category term="let" scheme="http://mjae404.github.io/tags/let/"/>
     
       <category term="const" scheme="http://mjae404.github.io/tags/const/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 스코프</title>
-    <link href="http://mjae404.github.io/2020/08/17/js-scope/"/>
-    <id>http://mjae404.github.io/2020/08/17/js-scope/</id>
-    <published>2020-08-17T13:52:44.000Z</published>
-    <updated>2020-08-17T13:56:08.940Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;식별자가 유효한 범위&lt;/strong&gt; 를 말한다. 모든 식별자(변수 이름, 함수 이름, 클래스 이름 등)는 자신이 선언된 위치에 의해 다른 코드가 식별자 자신을 참조할 수 있는 유효범위가 결정된다. 자바스크립트 엔진이 &lt;strong&gt;식별자를 검색할 때 사용하는 규칙&lt;/strong&gt; 이라고도 할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="scope" scheme="http://mjae404.github.io/tags/scope/"/>
     
   </entry>
   
