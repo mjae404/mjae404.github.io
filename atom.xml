@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-16T15:46:02.823Z</updated>
+  <updated>2020-09-18T14:00:41.228Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 엄격모드</title>
+    <link href="http://mjae404.github.io/2020/09/18/js-strict-mode/"/>
+    <id>http://mjae404.github.io/2020/09/18/js-strict-mode/</id>
+    <published>2020-09-18T13:59:38.000Z</published>
+    <updated>2020-09-18T14:00:41.228Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;code&gt;strict mode&lt;/code&gt;&lt;/strong&gt; 는 자바스크립트 언어의 문법을 보다 엄격히 적용하여 기존에는 무시되던 오류를 발생시킬 가능성이 높거나 자바스크립트 엔진의 최적화 작업에 문제를 일으킬 수 있는 코드에 대해 명시적인 에러를 발생시킨다. &lt;a href=&quot;https://eslint.org/&quot;&gt;ESLint&lt;/a&gt;와 같은 린트 도구를 사용하여도 &lt;code&gt;strict mode&lt;/code&gt;와 유사한 효과를 얻을 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="strict mode" scheme="http://mjae404.github.io/tags/strict-mode/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 실행 컨텍스트</title>
@@ -497,40 +520,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="global variable" scheme="http://mjae404.github.io/tags/global-variable/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS let, const와 블록 레벨 스코프</title>
-    <link href="http://mjae404.github.io/2020/08/18/js-block-level-scope/"/>
-    <id>http://mjae404.github.io/2020/08/18/js-block-level-scope/</id>
-    <published>2020-08-17T16:00:00.000Z</published>
-    <updated>2020-08-17T16:00:32.026Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ES5까지 변수를 선언할 수 있는 유일한 방법은 var 키워드를 사용하는 것이었다. var 키워드로 선언된 변수는 몇가지 특징이 있다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;변수 중복 선언 허용&lt;/li&gt;
-&lt;li&gt;함수 레벨 스코프&lt;/li&gt;
-&lt;li&gt;변수 호이스팅&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="scope" scheme="http://mjae404.github.io/tags/scope/"/>
-    
-      <category term="block level scope" scheme="http://mjae404.github.io/tags/block-level-scope/"/>
-    
-      <category term="let" scheme="http://mjae404.github.io/tags/let/"/>
-    
-      <category term="const" scheme="http://mjae404.github.io/tags/const/"/>
     
   </entry>
   
