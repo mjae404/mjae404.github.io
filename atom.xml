@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-18T14:00:41.228Z</updated>
+  <updated>2020-09-19T10:34:10.968Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 생성자 함수에 의한 객체 생성</title>
+    <link href="http://mjae404.github.io/2020/09/19/js-constructor/"/>
+    <id>http://mjae404.github.io/2020/09/19/js-constructor/</id>
+    <published>2020-09-19T10:33:09.000Z</published>
+    <updated>2020-09-19T10:34:10.968Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;__&lt;u&gt;생성자(constructor) 함수&lt;/u&gt;__란 __new 연산자와 함께 호출하여 인스턴스 객체를 생성하는 함수__를 말한다. 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라 한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="constructor" scheme="http://mjae404.github.io/tags/constructor/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 엄격모드</title>
@@ -497,29 +520,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 전역 변수의 문제점</title>
-    <link href="http://mjae404.github.io/2020/08/18/js-global-variable/"/>
-    <id>http://mjae404.github.io/2020/08/18/js-global-variable/</id>
-    <published>2020-08-17T16:01:02.000Z</published>
-    <updated>2020-08-17T16:01:57.329Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;전역 변수의 무분별한 사용은 위험하다. 전역 변수를 반드시 사용할 이유가 없다면 지역 변수를 사용하는 것이 좋다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="global variable" scheme="http://mjae404.github.io/tags/global-variable/"/>
     
   </entry>
   
