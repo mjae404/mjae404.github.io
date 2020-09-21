@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-20T13:32:44.846Z</updated>
+  <updated>2020-09-21T14:19:35.874Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS this</title>
+    <link href="http://mjae404.github.io/2020/09/21/js-this/"/>
+    <id>http://mjae404.github.io/2020/09/21/js-this/</id>
+    <published>2020-09-21T14:19:18.000Z</published>
+    <updated>2020-09-21T14:19:35.874Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;this&lt;/code&gt;는 객체 자신의 프로퍼티나 메소드를 참조하기 위한 자기 참조 변수(Self-referencing variable)이다. this 바인딩은 함수 호출 방식에 의해 동적으로 결정된다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;바인딩(Binding)&lt;/strong&gt;&lt;br&gt;식별자와 값을 연결하는 과정. (ex. 변수는 할당에 의해 값에 바인딩)&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="this" scheme="http://mjae404.github.io/tags/this/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 프로토타입</title>
@@ -497,29 +523,6 @@
       <category term="SASS" scheme="http://mjae404.github.io/tags/SASS/"/>
     
       <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 배열</title>
-    <link href="http://mjae404.github.io/2020/08/20/js-array/"/>
-    <id>http://mjae404.github.io/2020/08/20/js-array/</id>
-    <published>2020-08-20T13:51:10.000Z</published>
-    <updated>2020-08-20T13:51:26.591Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;순서가 있는 값들의 연속적인 나열. 자바스크립트의 배열은 엄밀하게 말하면 배열의 동작을 흉내낸 특수한 객체이다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
     
   </entry>
   
