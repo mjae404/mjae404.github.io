@@ -153,7 +153,7 @@ ga('send', 'pageview');
 
 <h2 id="Array-prototype-push-마지막-요소-추가"><a href="#Array-prototype-push-마지막-요소-추가" class="headerlink" title="Array.prototype.push (마지막 요소 추가)"></a>Array.prototype.push (마지막 요소 추가)</h2><ul>
 <li>인수로 전달받은 모든 값을 원본 배열(this)의 마지막 요소로 추가하고 변경된 <code>length</code> 값을 반환</li>
-<li>__원본 배열(this)을 직접 변경__하는 부수 효과가 있다.</li>
+<li><strong>원본 배열(this)을 직접 변경</strong> 하는 부수 효과가 있다.</li>
 <li>성능면에서 좋지 않음.</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">let</span> result = arr.push(<span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line"><span class="built_in">console</span>.log(result); <span class="comment">// 5</span></span><br><span class="line"><span class="built_in">console</span>.log(arr); <span class="comment">// [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
