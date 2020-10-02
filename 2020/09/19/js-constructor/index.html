@@ -94,7 +94,7 @@ ga('send', 'pageview');
       
 
       
-      <p>__<u>생성자(constructor) 함수</u>__란 __new 연산자와 함께 호출하여 인스턴스 객체를 생성하는 함수__를 말한다. 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라 한다.</p>
+      <p><strong><u>생성자(constructor) 함수</u></strong> 란 <strong>new 연산자와 함께 호출하여 인스턴스 객체를 생성하는 함수</strong> 를 말한다. 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라 한다.</p>
 <a id="more"></a>
 
 <h2 id="Object-생성자-함수"><a href="#Object-생성자-함수" class="headerlink" title="Object 생성자 함수"></a>Object 생성자 함수</h2><p><code>new</code> 연산자와 함께 Object 생성자 함수를 호출하면 빈 객체를 생성 후 반환. 이후에 프로퍼티나 메소드를 추가할 수 있다. <code>Object</code> 생성자 함수 방식은 특별한 이유가 없다면 그다지 유용하지 않음.</p>
@@ -112,7 +112,7 @@ ga('send', 'pageview');
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Circle</span>(<span class="params">radius</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.radius = radius;</span><br><span class="line">  <span class="built_in">this</span>.getDiameter = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">2</span> * <span class="built_in">this</span>.radius;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> circle1 = <span class="keyword">new</span> Circle(<span class="number">2</span>);</span><br><span class="line"><span class="comment">// 반지름이 2인 Circle 객체를 생성</span></span><br><span class="line"><span class="keyword">const</span> circle2 = <span class="keyword">new</span> Circle(<span class="number">4</span>);</span><br><span class="line"><span class="comment">// 반지름이 4인 Circle 객체를 생성</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(circle1.getDiameter()); <span class="comment">// 4</span></span><br><span class="line"><span class="built_in">console</span>.log(circle2.getDiameter()); <span class="comment">// 8</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><a target="_blank" rel="noopener" href="https://mjaedot.github.io/2020/01/18/js-this/">this</a><br><code>this</code>가 가리키는 값, 즉 this 바인딩은 함수 호출 방식에 따라 동적으로 결정된다.</p>
+<p><a href="https://mjae404.github.io/2020/09/21/js-this/">this</a><br><code>this</code>가 가리키는 값, 즉 this 바인딩은 함수 호출 방식에 따라 동적으로 결정된다.</p>
 </blockquote>
 <h3 id="내부-메소드-Call-과-Construct"><a href="#내부-메소드-Call-과-Construct" class="headerlink" title="내부 메소드 [[Call]]과 [[Construct]]"></a>내부 메소드 [[Call]]과 [[Construct]]</h3><ul>
 <li>함수가 <strong>일반적인 함수로 호출되면 <code>[[Call]]</code> 호출</strong> 되고, <code>new</code>(또는 <code>super</code>) 연산자와 함께 <strong>생성자 함수로서 호출되면 <code>[[Construct]]</code>가 호출</strong> 된다.</li>

@@ -2940,7 +2940,7 @@
   <entry>
     <title>JS 생성자 함수에 의한 객체 생성</title>
     <url>/2020/09/19/js-constructor/</url>
-    <content><![CDATA[<p>__<u>생성자(constructor) 함수</u>__란 __new 연산자와 함께 호출하여 인스턴스 객체를 생성하는 함수__를 말한다. 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라 한다.</p>
+    <content><![CDATA[<p><strong><u>생성자(constructor) 함수</u></strong> 란 <strong>new 연산자와 함께 호출하여 인스턴스 객체를 생성하는 함수</strong> 를 말한다. 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라 한다.</p>
 <a id="more"></a>
 
 <h2 id="Object-생성자-함수"><a href="#Object-생성자-함수" class="headerlink" title="Object 생성자 함수"></a>Object 생성자 함수</h2><p><code>new</code> 연산자와 함께 Object 생성자 함수를 호출하면 빈 객체를 생성 후 반환. 이후에 프로퍼티나 메소드를 추가할 수 있다. <code>Object</code> 생성자 함수 방식은 특별한 이유가 없다면 그다지 유용하지 않음.</p>
@@ -2958,7 +2958,7 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Circle</span>(<span class="params">radius</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.radius = radius;</span><br><span class="line">  <span class="built_in">this</span>.getDiameter = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">2</span> * <span class="built_in">this</span>.radius;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> circle1 = <span class="keyword">new</span> Circle(<span class="number">2</span>);</span><br><span class="line"><span class="comment">// 반지름이 2인 Circle 객체를 생성</span></span><br><span class="line"><span class="keyword">const</span> circle2 = <span class="keyword">new</span> Circle(<span class="number">4</span>);</span><br><span class="line"><span class="comment">// 반지름이 4인 Circle 객체를 생성</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(circle1.getDiameter()); <span class="comment">// 4</span></span><br><span class="line"><span class="built_in">console</span>.log(circle2.getDiameter()); <span class="comment">// 8</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><a href="https://mjaedot.github.io/2020/01/18/js-this/">this</a><br><code>this</code>가 가리키는 값, 즉 this 바인딩은 함수 호출 방식에 따라 동적으로 결정된다.</p>
+<p><a href="https://mjae404.github.io/2020/09/21/js-this/">this</a><br><code>this</code>가 가리키는 값, 즉 this 바인딩은 함수 호출 방식에 따라 동적으로 결정된다.</p>
 </blockquote>
 <h3 id="내부-메소드-Call-과-Construct"><a href="#내부-메소드-Call-과-Construct" class="headerlink" title="내부 메소드 [[Call]]과 [[Construct]]"></a>내부 메소드 [[Call]]과 [[Construct]]</h3><ul>
 <li>함수가 <strong>일반적인 함수로 호출되면 <code>[[Call]]</code> 호출</strong> 되고, <code>new</code>(또는 <code>super</code>) 연산자와 함께 <strong>생성자 함수로서 호출되면 <code>[[Construct]]</code>가 호출</strong> 된다.</li>
@@ -3408,6 +3408,58 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>this</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS 디스트럭처링 할당</title>
+    <url>/2020/10/02/js-destructuring/</url>
+    <content><![CDATA[<p><strong>디스트럭처링 할당(구조 분해 할당, Destructuring assignment)</strong> 은 구조화된 배열 또는 객체를 Destructuring(비구조화, 구조파괴)하여 1개 이상의 변수에 개별적으로 할당하는 것을 말한다. 배열 또는 객체 리터럴에서 필요한 값만을 추출하여 변수에 할당할 때 주로 사용한다.</p>
+<a id="more"></a>
+
+<h2 id="배열-디스트럭처링-할당"><a href="#배열-디스트럭처링-할당" class="headerlink" title="배열 디스트럭처링 할당"></a>배열 디스트럭처링 할당</h2><h3 id="ES5-디스트럭처링-할당"><a href="#ES5-디스트럭처링-할당" class="headerlink" title="ES5 디스트럭처링 할당"></a>ES5 디스트럭처링 할당</h3><p>ES5에서 구조화된 배열을 디스트럭처링하여 1개 이상의 변수에 할당하기 위해서는 아래와 같다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> one   = arr[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">var</span> two   = arr[<span class="number">1</span>];</span><br><span class="line"><span class="keyword">var</span> three = arr[<span class="number">2</span>];</span><br><span class="line"><span class="built_in">console</span>.log(one, two, three); <span class="comment">// 1 2 3</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="ES6의-배열-디스트럭처링-할당"><a href="#ES6의-배열-디스트럭처링-할당" class="headerlink" title="ES6의 배열 디스트럭처링 할당"></a>ES6의 배열 디스트럭처링 할당</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">const</span> [one, two, three] = arr;</span><br><span class="line"><span class="built_in">console</span>.log(one, two, three); <span class="comment">// 1 2 3</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>배열의 각 요소를 배열로부터 추출하여 1개 이상의 변수에 할당한다.</li>
+<li>할당 기준은 배열의 인덱스이다. (순서대로 할당됨)</li>
+<li>배열 디스트럭처링 할당을 위해서는 할당 연산자 왼쪽에 값을 할당 받을 변수를 선언해야 한다. 이때 여러 개의 변수를 배열 리터럴 형태로 선언한다.</li>
+<li>배열 디스트럭처링 할당을 위한 변수에 기본값을 설정할 수 있다.</li>
+<li>배열 디스트럭처링 할당은 배열에서 필요한 요소만 추출하여 변수에 할당하고 싶을 때 유용하다.</li>
+<li>배열 디스트럭처링 할당을 위한 변수에 Rest 파라미터와 유사하게 Rest 요소(Rest element) …을 사용할 수 있다. Rest 요소는 Rest 파라미터와 마찬가지로 반드시 마지막에 위치해야 한다.</li>
+</ul>
+<h3 id="Date-객체에서-년도-월-일을-추출하는-예제"><a href="#Date-객체에서-년도-월-일을-추출하는-예제" class="headerlink" title="Date 객체에서 년도, 월, 일을 추출하는 예제"></a>Date 객체에서 년도, 월, 일을 추출하는 예제</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="comment">// Mon Sep 16 2019 02:03:42 GMT+0900 (한국 표준시)</span></span><br><span class="line"><span class="keyword">const</span> formattedDate = today.toISOString().substring(<span class="number">0</span>, <span class="number">10</span>);</span><br><span class="line"><span class="comment">// &quot;2019-09-15&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 문자열을 분리하여 배열로 변환한 후</span></span><br><span class="line"><span class="comment">// 배열 디스트럭처링 할당을 통해 필요한 요소를 취득한다.</span></span><br><span class="line"><span class="keyword">const</span> [year, month, day] = formattedDate.split(<span class="string">&#x27;-&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log([year, month, day]); <span class="comment">// [&#x27;2019&#x27;, &#x27;09&#x27;, &#x27;15&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="객체-디스트럭처링-할당"><a href="#객체-디스트럭처링-할당" class="headerlink" title="객체 디스트럭처링 할당"></a>객체 디스트럭처링 할당</h2><h3 id="ES5-디스트럭처링-할당-1"><a href="#ES5-디스트럭처링-할당-1" class="headerlink" title="ES5 디스트럭처링 할당"></a>ES5 디스트럭처링 할당</h3><p>ES5에서 객체의 각 프로퍼티를 객체로부터 디스트럭처링하여 변수에 할당하기 위해서는 <strong>프로퍼티 키를 사용</strong> 해야 한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> user = &#123; <span class="attr">firstName</span>: <span class="string">&#x27;Minjee&#x27;</span>, <span class="attr">lastName</span>: <span class="string">&#x27;Kim&#x27;</span> &#125;;</span><br><span class="line"><span class="keyword">var</span> firstName = user.firstName;</span><br><span class="line"><span class="keyword">var</span> lastName  = user.lastName;</span><br><span class="line"><span class="built_in">console</span>.log(firstName, lastName); <span class="comment">// Minjee Kim</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="ES6의-객체-디스트럭처링-할당"><a href="#ES6의-객체-디스트럭처링-할당" class="headerlink" title="ES6의 객체 디스트럭처링 할당"></a>ES6의 객체 디스트럭처링 할당</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> user = &#123; <span class="attr">firstName</span>: <span class="string">&#x27;Minjee&#x27;</span>, <span class="attr">lastName</span>: <span class="string">&#x27;Kim&#x27;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> &#123; lastName, firstName &#125; = user;</span><br><span class="line"><span class="built_in">console</span>.log(firstName, lastName); <span class="comment">// Minjee Kim</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>객체의 각 프로퍼티를 객체로부터 추출하여 1개 이상의 변수에 할당한다.</li>
+<li>할당 연산자 왼쪽에 값을 할당 받을 변수를 선언해야 한다.</li>
+<li>여러 개의 변수를 객체 리터럴 형태로 선언한다. 순서는 의미가 없으며 변수 이름과 프로퍼티 키가 일치하면 할당된다.</li>
+<li>객체의 프로퍼티 키와 다른 변수 이름으로 프로퍼티 값을 할당 받으려면 아래와 같이 변수를 선언한다.<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> user = &#123; <span class="attr">firstName</span>: <span class="string">&#x27;Minjee&#x27;</span>, <span class="attr">lastName</span>: <span class="string">&#x27;Kim&#x27;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> &#123; <span class="attr">lastName</span>: ln, <span class="attr">firstName</span>: fn &#125; = user;</span><br><span class="line"><span class="built_in">console</span>.log(fn, ln); <span class="comment">// Minjee Kim</span></span><br></pre></td></tr></table></figure></li>
+<li>객체 디스트럭처링 할당을 위한 변수에 기본값을 설정할 수 있다.</li>
+<li>프로퍼티 키로 객체에서 필요한 프로퍼티 값만을 추출할 수 있다.</li>
+<li>객체를 인수로 전달받는 함수의 매개변수에도 사용할 수 있다.</li>
+<li>보다 간단하고 가독성 좋게 표현이 가능하다.</li>
+<li>배열의 요소가 객체인 경우, 배열 디스트럭처링 할당과 객체 디스트럭처링 할당을 혼용할 수 있다.</li>
+<li>객체 디스트럭처링 할당을 위한 변수에 Rest 파라미터와 유사하게 Rest 프로퍼티 <code>…</code>을 사용할 수 있다. Rest 프로퍼티는 Rest 파라미터와 마찬가지로 반드시 마지막에 위치해야 한다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>destructuring</tag>
       </tags>
   </entry>
 </search>

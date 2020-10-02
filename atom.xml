@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-09-21T14:19:35.874Z</updated>
+  <updated>2020-10-02T07:49:54.307Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 디스트럭처링 할당</title>
+    <link href="http://mjae404.github.io/2020/10/02/js-destructuring/"/>
+    <id>http://mjae404.github.io/2020/10/02/js-destructuring/</id>
+    <published>2020-10-02T07:49:16.000Z</published>
+    <updated>2020-10-02T07:49:54.307Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;디스트럭처링 할당(구조 분해 할당, Destructuring assignment)&lt;/strong&gt; 은 구조화된 배열 또는 객체를 Destructuring(비구조화, 구조파괴)하여 1개 이상의 변수에 개별적으로 할당하는 것을 말한다. 배열 또는 객체 리터럴에서 필요한 값만을 추출하여 변수에 할당할 때 주로 사용한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="destructuring" scheme="http://mjae404.github.io/tags/destructuring/"/>
+    
+  </entry>
   
   <entry>
     <title>JS this</title>
@@ -70,11 +93,11 @@
     <link href="http://mjae404.github.io/2020/09/19/js-constructor/"/>
     <id>http://mjae404.github.io/2020/09/19/js-constructor/</id>
     <published>2020-09-19T10:33:09.000Z</published>
-    <updated>2020-09-19T10:34:10.968Z</updated>
+    <updated>2020-09-21T14:22:25.646Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;__&lt;u&gt;생성자(constructor) 함수&lt;/u&gt;__란 __new 연산자와 함께 호출하여 인스턴스 객체를 생성하는 함수__를 말한다. 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라 한다.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;u&gt;생성자(constructor) 함수&lt;/u&gt;&lt;/strong&gt; 란 &lt;strong&gt;new 연산자와 함께 호출하여 인스턴스 객체를 생성하는 함수&lt;/strong&gt; 를 말한다. 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라 한다.&lt;/p&gt;
     
     </summary>
     
@@ -495,34 +518,6 @@
       <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
     
       <category term="operation" scheme="http://mjae404.github.io/tags/operation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sass &amp; SCSS 개요</title>
-    <link href="http://mjae404.github.io/2020/08/21/scss-overview/"/>
-    <id>http://mjae404.github.io/2020/08/21/scss-overview/</id>
-    <published>2020-08-21T13:36:05.000Z</published>
-    <updated>2020-08-21T13:36:33.777Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;CSS Preprocessor&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;CSS가 동작하기 전에 사용할 수 있는 기능. Sass, Less, Stylus 등이 있다. CSS 문법과 흡사하지만 __선택자의 중첩, 조건문, 반복문, 단위의 연산등 표준 CSS보다 훨씬 많은 기능을 사용__하여 편하게 작성할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Sass &amp; SCSS" scheme="http://mjae404.github.io/categories/Sass-SCSS/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="SASS" scheme="http://mjae404.github.io/tags/SASS/"/>
-    
-      <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
     
   </entry>
   
