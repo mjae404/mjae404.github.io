@@ -3528,4 +3528,64 @@
         <tag>built-in object</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 스프레드 문법</title>
+    <url>/2020/10/04/js-spread-syntax/</url>
+    <content><![CDATA[<p>ES6에서 새롭게 도입된 <strong>스프레드 문법(Spread syntax, 전개 문법) <code>…</code></strong> 은 하나로 뭉쳐 있는 여러 값들의 집합을 펼쳐서(전개, 분산하여, spread) 개별적인 값들의 목록으로 만든다. 스프레드 문법을 사용할 수 있는 대상은 Array, String, Map, Set, DOM 컬렉션(NodeList, HTMLCollection), Arguments와 같이 for…of 문으로 <strong>순회할 수 있는 이터러블에 한정</strong> 된다.</p>
+<a id="more"></a>
+
+<p>스프레드 문법의 결과물은 단독으로 사용할 수 없고, 아래와 같이 쉼표로 구분한 값의 목록을 사용하는 문에서 사용한다.</p>
+<ul>
+<li>함수 호출문의 인수 목록</li>
+<li>배열 리터럴의 요소 목록</li>
+<li>객체 리터럴의 프로퍼티 목록 (2019년 11월 현재 Stage 4 제안)</li>
+</ul>
+<blockquote>
+<p><em>Rest 파라미터와 스프레드 문법의 차이</em><br>Rest 파라미터는 함수에 전달된 인수들의 목록을 배열로 전달받기 위해 매개변수 이름 앞에 …을 붙이는 것이다. 스프레드 문법은 여러 개의 값이 하나로 뭉쳐 있는 배열과 같은 이터러블을 펼쳐서 개별적인 값들의 목록을 만드는 것이다. 따라서 Rest 파라미터와 스프레드 문법은 서로 반대의 개념이다.</p>
+</blockquote>
+<h2 id="함수-호출문의-인수-목록에서-사용하는-경우"><a href="#함수-호출문의-인수-목록에서-사용하는-경우" class="headerlink" title="함수 호출문의 인수 목록에서 사용하는 경우"></a>함수 호출문의 인수 목록에서 사용하는 경우</h2><p>요소값들의 집합인 배열을 펼쳐서 개별적인 값들의 목록으로 만든 후, 이를 함수의 인수 목록으로 전달해야 하는 경우가 있다. <strong><code>Math.max</code> 메소드는 매개변수 개수를 확정할 수 없는 가변 인자 함수</strong> 이다. 아래와 같이 개수가 정해져 있지 않은 여러 개의 숫자를 인수로 전달받아 인수 중에서 최대값을 반환한다. 숫자가 아닌 배열을 인수로 전달하면 최대값을 구할 수 없으므로 <code>NaN</code>을 반환하기 때문에 <strong>배열을 펼쳐서 요소값들을 개별적인 값들의 목록으로 만든 후 <code>Math.max</code> 메소드의 인수로 전달해야 한다.</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="comment">// 스프레드 문법을 사용하여 배열 arr을 1, 2, 3으로 펼쳐서 `Math.max`에 전달한다.</span></span><br><span class="line"><span class="keyword">const</span> maxValue = <span class="built_in">Math</span>.max(...arr);</span><br><span class="line"><span class="built_in">console</span>.log(maxValue); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="배열-리터럴-내부에서-사용하는-경우"><a href="#배열-리터럴-내부에서-사용하는-경우" class="headerlink" title="배열 리터럴 내부에서 사용하는 경우"></a>배열 리터럴 내부에서 사용하는 경우</h2><p>스프레드 문법을 배열 리터럴에서 사용하면 보다 간결하고 가독성이 좋게 표현할 수 있다. ES5에서 사용하던 방식과 비교해본다.</p>
+<h3 id="concat"><a href="#concat" class="headerlink" title="concat"></a>concat</h3><p>기존의 배열 요소들을 새로운 배열의 일부로 만들고 싶은 경우 스프레드 문법을 사용하면 별도의 메소드를 사용하지 않고 <strong>배열 리터럴 만으로 기존의 배열 요소들을 새로운 배열의 일부로 만들 수 있다.</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>].concat([<span class="number">3</span>, <span class="number">4</span>]);</span><br><span class="line"><span class="built_in">console</span>.log(arr); <span class="comment">// [1, 2, 3, 4]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">const</span> arr = [...[<span class="number">1</span>, <span class="number">2</span>], <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr); <span class="comment">// [1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="push"><a href="#push" class="headerlink" title="push"></a>push</h3><p>ES5에서 기존의 배열에 다른 배열의 요소들을 push하는 경우</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">var</span> arr2 = [<span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="built_in">Array</span>.prototype.push.apply(arr1, arr2);</span><br><span class="line"><span class="built_in">console</span>.log(arr1); <span class="comment">// [1, 2, 3, 4]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">const</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">const</span> arr2 = [<span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="comment">// arr1.push(3, 4)와 같다.</span></span><br><span class="line">arr1.push(...arr2);</span><br><span class="line"><span class="built_in">console</span>.log(arr1); <span class="comment">// [1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="splice"><a href="#splice" class="headerlink" title="splice"></a>splice</h3><p>기존의 배열에 다른 배열의 요소들을 삽입하는 경우</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>, <span class="number">4</span>];</span><br><span class="line"><span class="keyword">var</span> arr2 = [<span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="built_in">Array</span>.prototype.splice.apply(arr1, [<span class="number">1</span>, <span class="number">0</span>].concat(arr2));</span><br><span class="line"><span class="built_in">console</span>.log(arr1); <span class="comment">// [1, 2, 3, 4]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">const</span> arr1 = [<span class="number">1</span>, <span class="number">4</span>];</span><br><span class="line"><span class="keyword">const</span> arr2 = [<span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr1.splice(<span class="number">1</span>, <span class="number">0</span>, ...arr2);</span><br><span class="line"><span class="built_in">console</span>.log(arr1); <span class="comment">// [1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="배열-복사-slice"><a href="#배열-복사-slice" class="headerlink" title="배열 복사(slice)"></a>배열 복사(slice)</h3><p>기존의 배열을 복사하고 싶은 경우</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> origin = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">var</span> copy = origin.slice();</span><br><span class="line"><span class="built_in">console</span>.log(copy); <span class="comment">// [1, 2]</span></span><br><span class="line"><span class="built_in">console</span>.log(copy === origin); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">const</span> origin = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">const</span> copy = [...origin];</span><br><span class="line"><span class="built_in">console</span>.log(copy); <span class="comment">// [1, 2]</span></span><br><span class="line"><span class="built_in">console</span>.log(copy === origin); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>이때 원본 배열의 각 요소를 얕은 복사(shallow copy)하여 새로운 복사본을 생성한다. 이는 slice 메소드도 마찬가지.</p>
+</blockquote>
+<h3 id="유사-배열-객체를-배열로-변환-slice-메소드를-apply-함수로-호출"><a href="#유사-배열-객체를-배열로-변환-slice-메소드를-apply-함수로-호출" class="headerlink" title="유사 배열 객체를 배열로 변환 (slice 메소드를 apply 함수로 호출)"></a>유사 배열 객체를 배열로 변환 (slice 메소드를 apply 함수로 호출)</h3><p>유사 배열 객체(Array-like object)를 배열로 변환하려는 경우 스프레드 문법을 사용하면 보다 <strong>간편하게 유사 배열 객체를 배열로 변환할 수 있다.</strong> 유사 배열 객체인 arguments 객체는 이터러블이다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.apply(<span class="built_in">arguments</span>);</span><br><span class="line">  <span class="keyword">return</span> args.reduce(<span class="function"><span class="keyword">function</span> (<span class="params">pre, cur</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> pre + cur;</span><br><span class="line">  &#125;, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)); <span class="comment">// 6</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> args = [...arguments];</span><br><span class="line">  <span class="keyword">return</span> args.reduce(<span class="function">(<span class="params">pre, cur</span>) =&gt;</span> pre + cur, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="객체-리터럴-내부에서-사용하는-경우"><a href="#객체-리터럴-내부에서-사용하는-경우" class="headerlink" title="객체 리터럴 내부에서 사용하는 경우"></a>객체 리터럴 내부에서 사용하는 경우</h2><ul>
+<li>스프레드 문법의 대상은 이터러블이어야 하지만 <strong>스프레드 프로퍼티 제안은 일반 객체를 대상으로도 스프레드 문법의 사용을 허용</strong> 한다.</li>
+<li>스프레드 프로퍼티가 도입되기 이전에는 ES6에서 도입된 <code>Object.assign</code> 메소드를 사용하여 <strong>여러 개의 객체를 병합하거나 특정 프로퍼티를 변경 또는 추가</strong> 하였다. 스프레드 프로퍼티는 <code>Object.assign</code> 메소드를 대체할 수 있다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> n = &#123; <span class="attr">x</span>: <span class="number">1</span>, <span class="attr">y</span>: <span class="number">2</span>, ...&#123; <span class="attr">a</span>: <span class="number">3</span>, <span class="attr">b</span>: <span class="number">4</span> &#125; &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(n); <span class="comment">// &#123; x: 1, y: 2, a: 3, b: 4 &#125;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>spread syntax</tag>
+      </tags>
+  </entry>
 </search>

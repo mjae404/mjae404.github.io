@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-03T14:11:54.941Z</updated>
+  <updated>2020-10-03T15:11:42.844Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 스프레드 문법</title>
+    <link href="http://mjae404.github.io/2020/10/04/js-spread-syntax/"/>
+    <id>http://mjae404.github.io/2020/10/04/js-spread-syntax/</id>
+    <published>2020-10-03T15:04:37.000Z</published>
+    <updated>2020-10-03T15:11:42.844Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ES6에서 새롭게 도입된 &lt;strong&gt;스프레드 문법(Spread syntax, 전개 문법) &lt;code&gt;…&lt;/code&gt;&lt;/strong&gt; 은 하나로 뭉쳐 있는 여러 값들의 집합을 펼쳐서(전개, 분산하여, spread) 개별적인 값들의 목록으로 만든다. 스프레드 문법을 사용할 수 있는 대상은 Array, String, Map, Set, DOM 컬렉션(NodeList, HTMLCollection), Arguments와 같이 for…of 문으로 &lt;strong&gt;순회할 수 있는 이터러블에 한정&lt;/strong&gt; 된다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="spread syntax" scheme="http://mjae404.github.io/tags/spread-syntax/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 표준 빌트인 객체와 래퍼 객체</title>
@@ -498,31 +521,6 @@
       <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
     
       <category term="mixins" scheme="http://mjae404.github.io/tags/mixins/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SCSS 함수</title>
-    <link href="http://mjae404.github.io/2020/08/25/scss-function/"/>
-    <id>http://mjae404.github.io/2020/08/25/scss-function/</id>
-    <published>2020-08-25T12:24:41.000Z</published>
-    <updated>2020-08-25T12:27:08.481Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;자신의 함수를 정의하여 사용할 수 있다. 함수와 Mixins는 거의 유사하지만, 반환되는 내용이 다르다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Sass &amp; SCSS" scheme="http://mjae404.github.io/categories/Sass-SCSS/"/>
-    
-    
-      <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
-    
-      <category term="SASS" scheme="http://mjae404.github.io/tags/SASS/"/>
-    
-      <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
     
   </entry>
   
