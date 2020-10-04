@@ -3588,4 +3588,68 @@
         <tag>spread syntax</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 수학 상수와 함수를 위한 Math 객체</title>
+    <url>/2020/10/05/js-math-object/</url>
+    <content><![CDATA[<p>Math 객체는 수학 상수와 함수를 위한 프로퍼티와 메소드를 제공하는 빌트인 객체이다. Math 객체는 생성자 함수가 아니다. 따라서 Math 객체는 정적(static) 프로퍼티와 메소드만을 제공한다.</p>
+<a id="more"></a>
+
+<h2 id="Math-Property"><a href="#Math-Property" class="headerlink" title="Math Property"></a>Math Property</h2><h3 id="Math-PI"><a href="#Math-PI" class="headerlink" title="Math.PI"></a>Math.PI</h3><p>PI 값(π ≈ 3.141592653589793)을 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.PI; <span class="comment">// 3.141592653589793</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Math-Method"><a href="#Math-Method" class="headerlink" title="Math Method"></a>Math Method</h2><h3 id="Math-abs-x-number-number-ES1"><a href="#Math-abs-x-number-number-ES1" class="headerlink" title="Math.abs(x: number): number ES1"></a>Math.abs(x: number): number <sup>ES1</sup></h3><p>인수의 절댓값(absolute value)을 반환한다. 절댓값은 반드시 0 또는 양수이어야 한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.abs(<span class="number">-1</span>);       <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="string">&#x27;-1&#x27;</span>);     <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="string">&#x27;&#x27;</span>);       <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Math</span>.abs([]);       <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="literal">null</span>);     <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="literal">undefined</span>);<span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.abs(&#123;&#125;);       <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="string">&#x27;string&#x27;</span>); <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.abs();         <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-round-x-number-number-ES1"><a href="#Math-round-x-number-number-ES1" class="headerlink" title="Math.round(x: number): number ES1"></a>Math.round(x: number): number <sup>ES1</sup></h3><p>인수의 소수점 이하를 반올림한 정수를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.round(<span class="number">1.4</span>);  <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.round(<span class="number">1.6</span>);  <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">Math</span>.round(<span class="number">-1.4</span>); <span class="comment">// -1</span></span><br><span class="line"><span class="built_in">Math</span>.round(<span class="number">-1.6</span>); <span class="comment">// -2</span></span><br><span class="line"><span class="built_in">Math</span>.round(<span class="number">1</span>);    <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.round();     <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-ceil-x-number-number-ES1"><a href="#Math-ceil-x-number-number-ES1" class="headerlink" title="Math.ceil(x: number): number ES1"></a>Math.ceil(x: number): number <sup>ES1</sup></h3><p>인수의 소수점 이하를 올림한 정수를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.ceil(<span class="number">1.4</span>);  <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(<span class="number">1.6</span>);  <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(<span class="number">-1.4</span>); <span class="comment">// -1</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(<span class="number">-1.6</span>); <span class="comment">// -1</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(<span class="number">1</span>);    <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.ceil();     <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-floor-x-number-number-ES1"><a href="#Math-floor-x-number-number-ES1" class="headerlink" title="Math.floor(x: number): number ES1"></a>Math.floor(x: number): number <sup>ES1</sup></h3><p>인수의 소수점 이하를 내림한 정수를 반환한다. Math.ceil의 반대 개념이다.</p>
+<ul>
+<li>양수인 경우, 소수점 이하를 떼어 버린 다음 정수를 반환한다.</li>
+<li>음수인 경우, 소수점 이하를 떼어 버린 다음 -1을 한 정수를 반환한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.floor(<span class="number">1.9</span>);  <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.floor(<span class="number">9.1</span>);  <span class="comment">// 9</span></span><br><span class="line"><span class="built_in">Math</span>.floor(<span class="number">-1.9</span>); <span class="comment">// -2</span></span><br><span class="line"><span class="built_in">Math</span>.floor(<span class="number">-9.1</span>); <span class="comment">// -10</span></span><br><span class="line"><span class="built_in">Math</span>.floor(<span class="number">1</span>);    <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.floor();     <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-sqrt-x-number-number-ES1"><a href="#Math-sqrt-x-number-number-ES1" class="headerlink" title="Math.sqrt(x: number): number ES1"></a>Math.sqrt(x: number): number <sup>ES1</sup></h3><p>인수의 제곱근을 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">9</span>);  <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">-9</span>); <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">2</span>);  <span class="comment">// 1.414213562373095</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">1</span>);  <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">0</span>);  <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt();   <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-random-number-ES1"><a href="#Math-random-number-ES1" class="headerlink" title="Math.random(): number ES1"></a>Math.random(): number <sup>ES1</sup></h3><p>임의의 부동 소수점을 반환한다. 반환된 부동 소수점은 0부터 1 미만이다. 즉, 0은 포함되지만 1은 포함되지 않는다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.random(); <span class="comment">// 0 ~ 1 미만의 부동 소수점 (0.8208720231391746)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> random = <span class="built_in">Math</span>.floor((<span class="built_in">Math</span>.random() * <span class="number">10</span>) + <span class="number">1</span>);</span><br><span class="line"><span class="built_in">console</span>.log(random); <span class="comment">// 1 ~ 10까지의 정수</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-pow-x-number-y-number-number-ES1"><a href="#Math-pow-x-number-y-number-number-ES1" class="headerlink" title="Math.pow(x: number, y: number): number ES1"></a>Math.pow(x: number, y: number): number <sup>ES1</sup></h3><p>첫번째 인수를 밑(base), 두번째 인수를 지수(exponent)로하여 거듭제곱을 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.pow(<span class="number">2</span>, <span class="number">8</span>);  <span class="comment">// 256</span></span><br><span class="line"><span class="built_in">Math</span>.pow(<span class="number">2</span>, <span class="number">-1</span>); <span class="comment">// 0.5</span></span><br><span class="line"><span class="built_in">Math</span>.pow(<span class="number">2</span>);     <span class="comment">// NaN</span></span><br><span class="line"></span><br><span class="line"><span class="number">2</span> ** <span class="number">8</span>; <span class="comment">// 256</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-max-…values-number-number-ES1"><a href="#Math-max-…values-number-number-ES1" class="headerlink" title="Math.max(…values: number[]): number ES1"></a>Math.max(…values: number[]): number <sup>ES1</sup></h3><p>인수 중에서 가장 큰 수를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.max(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 배열 요소 중에서 최대값 취득</span></span><br><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">const</span> max = <span class="built_in">Math</span>.max.apply(<span class="literal">null</span>, arr); <span class="comment">// 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 Spread operator</span></span><br><span class="line"><span class="built_in">Math</span>.max(...arr); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-min-…values-number-number-ES1"><a href="#Math-min-…values-number-number-ES1" class="headerlink" title="Math.min(…values: number[]): number ES1"></a>Math.min(…values: number[]): number <sup>ES1</sup></h3><p>인수 중에서 가장 작은 수를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.min(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 배열 요소 중에서 최소값 취득</span></span><br><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">const</span> min = <span class="built_in">Math</span>.min.apply(<span class="literal">null</span>, arr); <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 Spread operator</span></span><br><span class="line"><span class="built_in">Math</span>.min(...arr); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>object</tag>
+        <tag>built-in object</tag>
+        <tag>math object</tag>
+        <tag>wrapper object</tag>
+      </tags>
+  </entry>
 </search>
