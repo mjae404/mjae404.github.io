@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-04T15:51:33.651Z</updated>
+  <updated>2020-10-05T22:15:44.041Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS number 래퍼 객체</title>
+    <link href="http://mjae404.github.io/2020/10/06/js-number-wrapper-object/"/>
+    <id>http://mjae404.github.io/2020/10/06/js-number-wrapper-object/</id>
+    <published>2020-10-05T22:13:59.000Z</published>
+    <updated>2020-10-05T22:15:44.041Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Number 객체는 원시 타입 number를 다룰 때 유용한 프로퍼티와 메소드를 제공하는 레퍼(wrapper) 객체이다. 변수 또는 객체의 프로퍼티가 숫자를 값으로 가지고 있다면 Number 객체의 별도 생성없이 Number 객체의 프로퍼티와 메소드를 사용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
+    
+      <category term="built-in object" scheme="http://mjae404.github.io/tags/built-in-object/"/>
+    
+      <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
+    
+      <category term="number wrapper object" scheme="http://mjae404.github.io/tags/number-wrapper-object/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 수학 상수와 함수를 위한 Math 객체</title>
@@ -494,29 +523,6 @@
     
     
       <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
-    
-      <category term="github" scheme="http://mjae404.github.io/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 브랜치</title>
-    <link href="http://mjae404.github.io/2020/08/28/git-branch/"/>
-    <id>http://mjae404.github.io/2020/08/28/git-branch/</id>
-    <published>2020-08-28T11:33:09.000Z</published>
-    <updated>2020-08-28T11:33:39.383Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;똑같은 코드를 동시에 고칠 가능성이 있기 때문에, 브랜치를 분기를 나누어 작업을 진행한다. 분기를 나누어 작업한 후에, 추후에 합친다. 충돌이 일어난다고 하더라도 명시적으로 충돌을 해결할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
-    
     
       <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
     

@@ -3652,4 +3652,99 @@
         <tag>wrapper object</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS number 래퍼 객체</title>
+    <url>/2020/10/06/js-number-wrapper-object/</url>
+    <content><![CDATA[<p>Number 객체는 원시 타입 number를 다룰 때 유용한 프로퍼티와 메소드를 제공하는 레퍼(wrapper) 객체이다. 변수 또는 객체의 프로퍼티가 숫자를 값으로 가지고 있다면 Number 객체의 별도 생성없이 Number 객체의 프로퍼티와 메소드를 사용할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="Number-Constructor"><a href="#Number-Constructor" class="headerlink" title="Number Constructor"></a>Number Constructor</h2><p>Number 객체는 Number() 생성자 함수를 통해 생성할 수 있다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="built_in">Number</span>(value);</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>만일 인자가 숫자로 변환될 수 없다면 NaN을 반환한다.</li>
+<li>Number() 생성자 함수를 new 연산자를 붙이지 않아 생성자로 사용하지 않으면 Number 객체를 반환하지 않고 원시 타입 숫자를 반환한다. (형변환이 발생할 수 있음)</li>
+<li>일반적으로 숫자를 사용할 때는 원시 타입 숫자를 사용한다.</li>
+</ul>
+<h2 id="Number-Property"><a href="#Number-Property" class="headerlink" title="Number Property"></a>Number Property</h2><p>정적(static) 프로퍼티로 Number 객체를 생성할 필요없이 <code>Number.propertyName</code>의 형태로 사용한다.</p>
+<h3 id="Number-EPSILON-ES6"><a href="#Number-EPSILON-ES6" class="headerlink" title="Number.EPSILON ES6"></a>Number.EPSILON <sup>ES6</sup></h3><p><code>Number.EPSILON</code>은 JavaScript에서 표현할 수 있는 가장 작은 수이다. 부동소수점의 비교는 <code>Number.EPSILON</code>을 사용하여 비교 기능을 갖는 함수를 작성하여야 한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">0.1</span> + <span class="number">0.2</span>);        <span class="comment">// 0.30000000000000004</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">0.1</span> + <span class="number">0.2</span> == <span class="number">0.3</span>); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isEqual</span>(<span class="params">a, b</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Math</span>.abs(a - b) &lt; <span class="built_in">Number</span>.EPSILON;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(isEqual(<span class="number">0.1</span> + <span class="number">0.2</span>, <span class="number">0.3</span>));</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-MAX-VALUE-ES1"><a href="#Number-MAX-VALUE-ES1" class="headerlink" title="Number.MAX_VALUE ES1"></a>Number.MAX_VALUE <sup>ES1</sup></h3><p>자바스크립트에서 사용 가능한 가장 큰 숫자(1.7976931348623157e+308)를 반환한다. <code>MAX_VALUE</code>보다 큰 숫자는 <code>Infinity</code>이다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Number</span>.MAX_VALUE; <span class="comment">// 1.7976931348623157e+308</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</span><br><span class="line">num.MAX_VALUE;    <span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="literal">Infinity</span> &gt; <span class="built_in">Number</span>.MAX_VALUE); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-MIN-VALUE-ES1"><a href="#Number-MIN-VALUE-ES1" class="headerlink" title="Number.MIN_VALUE ES1"></a>Number.MIN_VALUE <sup>ES1</sup></h3><p>자바스크립트에서 사용 가능한 가장 작은 숫자(5e-324)를 반환한다. MIN_VALUE는 0에 가장 가까운 양수 값이다. <code>MIN_VALUE</code>보다 작은 숫자는 0으로 변환된다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Number</span>.MIN_VALUE; <span class="comment">// 5e-324</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</span><br><span class="line">num.MIN_VALUE;    <span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Number</span>.MIN_VALUE &gt; <span class="number">0</span>); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-POSITIVE-INFINITY-ES1"><a href="#Number-POSITIVE-INFINITY-ES1" class="headerlink" title="Number.POSITIVE_INFINITY ES1"></a>Number.POSITIVE_INFINITY <sup>ES1</sup></h3><p>양의 무한대 <code>Infinity</code>를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Number</span>.POSITIVE_INFINITY <span class="comment">// Infinity</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</span><br><span class="line">num.POSITIVE_INFINITY;   <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-NEGATIVE-INFINITY-ES1"><a href="#Number-NEGATIVE-INFINITY-ES1" class="headerlink" title="Number.NEGATIVE_INFINITY ES1"></a>Number.NEGATIVE_INFINITY <sup>ES1</sup></h3><p>음의 무한대 <code>-Infinity</code>를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Number</span>.NEGATIVE_INFINITY <span class="comment">// -Infinity</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</span><br><span class="line">num.NEGATIVE_INFINITY;   <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-NaN-ES1"><a href="#Number-NaN-ES1" class="headerlink" title="Number.NaN ES1"></a>Number.NaN <sup>ES1</sup></h3><p>숫자가 아님(Not-a-Number)을 나타내는 숫자값이다. <code>Number.NaN</code> 프로퍼티는 <code>window.NaN</code> 프로퍼티와 같다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Number</span>(<span class="string">&#x27;xyz&#x27;</span>)); <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span> * <span class="string">&#x27;string&#x27;</span>);  <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">NaN</span>);    <span class="comment">// number</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Number-Method"><a href="#Number-Method" class="headerlink" title="Number Method"></a>Number Method</h2><h3 id="Number-isFinite-testValue-number-boolean-ES6"><a href="#Number-isFinite-testValue-number-boolean-ES6" class="headerlink" title="Number.isFinite(testValue: number): boolean ES6"></a>Number.isFinite(testValue: number): boolean <sup>ES6</sup></h3><p>매개변수에 전달된 값이 정상적인 유한수인지를 검사하여 그 결과를 Boolean으로 반환한다.</p>
+<blockquote>
+<p><code>Number.isFinite()</code>는 전역 함수 <code>isFinite()</code>와 차이가 있다. 전역 함수 <code>isFinite()</code>는 인수를 숫자로 변환하여 검사를 수행하지만 <code>Number.isFinite()</code>는 인수를 변환하지 않는다. 따라서 숫자가 아닌 인수가 주어졌을 때 반환값은 언제나 false가 된다.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Number</span>.isFinite(testValue)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-isInteger-testValue-number-boolean-ES6"><a href="#Number-isInteger-testValue-number-boolean-ES6" class="headerlink" title="Number.isInteger(testValue: number): boolean ES6"></a>Number.isInteger(testValue: number): boolean <sup>ES6</sup></h3><p>매개변수에 전달된 값이 정수(Integer)인지 검사하여 그 결과를 Boolean으로 반환한다. 검사전에 인수를 숫자로 변환하지 않는다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Number</span>.isInteger(testValue)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-isNaN-testValue-number-boolean-ES6"><a href="#Number-isNaN-testValue-number-boolean-ES6" class="headerlink" title="Number.isNaN(testValue: number): boolean ES6"></a>Number.isNaN(testValue: number): boolean <sup>ES6</sup></h3><p>매개변수에 전달된 값이 NaN인지를 검사하여 그 결과를 Boolean으로 반환한다.</p>
+<blockquote>
+<p><code>Number.isNaN()</code>는 전역 함수 <code>isNaN()</code>와 차이가 있다. 전역 함수 <code>isNaN()</code>는 인수를 숫자로 변환하여 검사를 수행하지만 <code>Number.isNaN()</code>는 인수를 변환하지 않는다. 따라서 숫자가 아닌 인수가 주어졌을 때 반환값은 언제나 false가 된다.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Number</span>.isNaN(testValue)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-isSafeInteger-testValue-number-boolean-ES6"><a href="#Number-isSafeInteger-testValue-number-boolean-ES6" class="headerlink" title="Number.isSafeInteger(testValue: number): boolean ES6"></a>Number.isSafeInteger(testValue: number): boolean <sup>ES6</sup></h3><p>매개변수에 전달된 값이 안전한(safe) 정수값인지 검사하여 그 결과를 Boolean으로 반환한다. 검사전에 인수를 숫자로 변환하지 않는다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Number</span>.isSafeInteger(testValue)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-prototype-toExponential-fractionDigits-number-string-ES3"><a href="#Number-prototype-toExponential-fractionDigits-number-string-ES3" class="headerlink" title="Number.prototype.toExponential(fractionDigits?: number): string ES3"></a>Number.prototype.toExponential(fractionDigits?: number): string <sup>ES3</sup></h3><p>대상을 지수 표기법으로 변환하여 문자열로 반환한다. 지수 표기법이란 매우 큰 숫자를 표기할 때 주로 사용하며 e(Exponent) 앞에 있는 숫자에 10의 n승이 곱하는 형식으로 수를 나타내는 방식이다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">numObj.toExponential([fractionDigits])</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-prototype-toFixed-fractionDigits-number-string-ES3"><a href="#Number-prototype-toFixed-fractionDigits-number-string-ES3" class="headerlink" title="Number.prototype.toFixed(fractionDigits?: number): string ES3"></a>Number.prototype.toFixed(fractionDigits?: number): string <sup>ES3</sup></h3><p>매개변수로 지정된 소숫점자리를 반올림하여 문자열로 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">numObj.toFixed([fractionDigits])</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-prototype-toPrecision-precision-number-string-ES3"><a href="#Number-prototype-toPrecision-precision-number-string-ES3" class="headerlink" title="Number.prototype.toPrecision(precision?: number): string ES3"></a>Number.prototype.toPrecision(precision?: number): string <sup>ES3</sup></h3><p>매개변수로 지정된 전체 자릿수까지 유효하도록 나머지 자릿수를 반올림하여 문자열로 반환한다. 지정된 전체 자릿수로 표현할 수 없는 경우 지수 표기법으로 결과를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">numObj.toPrecision([precision])</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-prototype-toString-radix-number-string-ES1"><a href="#Number-prototype-toString-radix-number-string-ES1" class="headerlink" title="Number.prototype.toString(radix?: number): string ES1"></a>Number.prototype.toString(radix?: number): string <sup>ES1</sup></h3><p>숫자를 문자열로 변환하여 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">numObj.toString([radix])</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Number-prototype-valueOf-number-ES1"><a href="#Number-prototype-valueOf-number-ES1" class="headerlink" title="Number.prototype.valueOf(): number ES1"></a>Number.prototype.valueOf(): number <sup>ES1</sup></h3><p>Number 객체의 원시 타입 값(primitive value)을 반환한다.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>object</tag>
+        <tag>built-in object</tag>
+        <tag>wrapper object</tag>
+        <tag>number wrapper object</tag>
+      </tags>
+  </entry>
 </search>
