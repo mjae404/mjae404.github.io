@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-05T22:15:44.041Z</updated>
+  <updated>2020-10-07T12:14:45.976Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS String 래퍼 객체</title>
+    <link href="http://mjae404.github.io/2020/10/07/js-string-wrapper-object/"/>
+    <id>http://mjae404.github.io/2020/10/07/js-string-wrapper-object/</id>
+    <published>2020-10-07T12:13:53.000Z</published>
+    <updated>2020-10-07T12:14:45.976Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;String 객체는 원시 타입인 문자열을 다룰 때 유용한 프로퍼티와 메소드를 제공하는 래퍼(wrapper) 객체이다. 변수 또는 객체 프로퍼티가 문자열을 값으로 가지고 있다면 String 객체의 별도 생성없이 String 객체의 프로퍼티와 메소드를 사용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
+    
+      <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
+    
+      <category term="string wrapper object" scheme="http://mjae404.github.io/tags/string-wrapper-object/"/>
+    
+  </entry>
   
   <entry>
     <title>JS number 래퍼 객체</title>
@@ -498,31 +525,6 @@
     
       <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
     
-    
-      <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
-    
-      <category term="github" scheme="http://mjae404.github.io/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git &amp; GitHub 개요</title>
-    <link href="http://mjae404.github.io/2020/09/02/git-overview/"/>
-    <id>http://mjae404.github.io/2020/09/02/git-overview/</id>
-    <published>2020-09-01T16:13:12.000Z</published>
-    <updated>2020-09-01T16:13:31.714Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;현대 개발 팀 프로젝트에서 버전관리와 클라우드 저장소는 꼭 필요한 것이며, 버전관리를 위해서 Git, 클라우드 저장을 위해서 Github를 익히면 팀프로젝트 때 효율적인 개발 협업을 할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
     
       <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
     
