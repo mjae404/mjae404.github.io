@@ -4075,4 +4075,44 @@
         <tag>date object</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 모듈</title>
+    <url>/2020/10/10/js-module/</url>
+    <content><![CDATA[<p>모듈이란 애플리케이션을 구성하는 개별적 요소로서 재사용 가능한 코드 조각을 말한다. 모듈은 세부 사항을 캡슐화하고 공개가 필요한 API만을 외부에 노출한다. 일반적으로 모듈은 파일 단위로 분리되어 있으며 애플리케이션은 필요에 따라 명시적으로 모듈을 로드하여 재사용한다.</p>
+<a id="more"></a>
+
+<p>script 태그에 <code>type=&quot;module&quot;</code> 어트리뷰트를 추가하면 로드된 자바스크립트 파일은 모듈로서 동작한다. ES6 모듈의 파일 확장자는 모듈임을 명확히 하기 위해 mjs를 사용하도록 권장한다.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;module&quot;</span> <span class="attr">src</span>=<span class="string">&quot;lib.mjs&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;module&quot;</span> <span class="attr">src</span>=<span class="string">&quot;app.mjs&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="브라우저가-지원하는-ES6-모듈-기능보다는-Webpack-등의-모듈-번들러를-사용하는-이유"><a href="#브라우저가-지원하는-ES6-모듈-기능보다는-Webpack-등의-모듈-번들러를-사용하는-이유" class="headerlink" title="브라우저가 지원하는 ES6 모듈 기능보다는 Webpack 등의 모듈 번들러를 사용하는 이유"></a>브라우저가 지원하는 ES6 모듈 기능보다는 Webpack 등의 모듈 번들러를 사용하는 이유</h3><ul>
+<li>IE를 포함한 구형 브라우저는 ES6 모듈을 지원하지 않는다.</li>
+<li>브라우저의 ES6 모듈 기능을 사용하더라도 트랜스파일링이나 번들링이 필요하다.</li>
+<li>아직 지원하지 않는 기능(Bare import 등)이 있다.</li>
+<li>점차 해결되고는 있지만 아직 몇가지 이슈가 있다.</li>
+</ul>
+<h2 id="모듈-스코프"><a href="#모듈-스코프" class="headerlink" title="모듈 스코프"></a>모듈 스코프</h2><p>ES6 모듈 기능을 사용하지 않으면 분리된 자바스크립트 파일에 독자적인 스코프를 갖지 않고 하나의 전역을 공유한다. ES6 모듈은 독자적인 모듈 스코프를 갖는다. 따라서, 모듈 내에서 <code>var</code> 키워드로 선언한 변수는 더 이상 전역 변수가 아니며 window 객체의 프로퍼티도 아니다.</p>
+<h2 id="export-키워드"><a href="#export-키워드" class="headerlink" title="export 키워드"></a>export 키워드</h2><p>듈 안에 선언한 식별자를 외부에 공개하여 다른 모듈들이 참조할 수 있게 하고 싶다면 export 키워드를 사용한다. 선언된 변수, 함수, 클래스 모두 export할 수 있다. export 대상을 모아 하나의 객체로 구성하여 한번에 export할 수도 있다.</p>
+<h2 id="import-키워드"><a href="#import-키워드" class="headerlink" title="import 키워드"></a>import 키워드</h2><p>모듈에서 공개(export)한 대상을 로드하려면 import 키워드를 사용한다. 모듈이 export한 식별자로 import하며 ES6 모듈의 파일 확장자를 생략할 수 없다.</p>
+<ul>
+<li>모듈이 export한 식별자를 각각 지정하지 않고 하나의 이름으로 한꺼번에 import할 수도 있다.</li>
+<li>이름을 변경하여 import할 수 있다.</li>
+<li>모듈에서 하나만을 export할 때는 <code>default</code> 키워드를 사용할 수 있다.</li>
+<li><code>default</code>를 사용하는 경우, <code>var</code>, <code>let</code>, <code>const</code>는 사용할 수 없다.</li>
+<li><code>default</code> 키워드와 함께 export한 모듈은 <code>&#123;&#125;</code> 없이 임의의 이름으로 import한다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>module</tag>
+        <tag>es6</tag>
+      </tags>
+  </entry>
 </search>

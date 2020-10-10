@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-09T12:33:55.551Z</updated>
+  <updated>2020-10-10T13:13:52.272Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 모듈</title>
+    <link href="http://mjae404.github.io/2020/10/10/js-module/"/>
+    <id>http://mjae404.github.io/2020/10/10/js-module/</id>
+    <published>2020-10-10T13:13:28.000Z</published>
+    <updated>2020-10-10T13:13:52.272Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;모듈이란 애플리케이션을 구성하는 개별적 요소로서 재사용 가능한 코드 조각을 말한다. 모듈은 세부 사항을 캡슐화하고 공개가 필요한 API만을 외부에 노출한다. 일반적으로 모듈은 파일 단위로 분리되어 있으며 애플리케이션은 필요에 따라 명시적으로 모듈을 로드하여 재사용한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="module" scheme="http://mjae404.github.io/tags/module/"/>
+    
+      <category term="es6" scheme="http://mjae404.github.io/tags/es6/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 날짜와 시간을 위한 Date 객체</title>
@@ -507,35 +532,6 @@
       <category term="blog" scheme="http://mjae404.github.io/tags/blog/"/>
     
       <category term="markdown" scheme="http://mjae404.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 배열 메소드</title>
-    <link href="http://mjae404.github.io/2020/09/03/js-array-method/"/>
-    <id>http://mjae404.github.io/2020/09/03/js-array-method/</id>
-    <published>2020-09-03T13:18:49.000Z</published>
-    <updated>2020-10-02T07:57:20.544Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;배열 메소드가 결과물을 반환하는 패턴&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;원본 배열(this가 가리키는 객체)을 직접 변경하는 메소드(mutator method)&lt;/li&gt;
-&lt;li&gt;원본 배열을 직접 변경하지 않고 배열을생성하여 반환하는 메소드(accessor method)&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
-    
-      <category term="method" scheme="http://mjae404.github.io/tags/method/"/>
     
   </entry>
   
