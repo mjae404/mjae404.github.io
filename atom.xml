@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-13T12:47:56.059Z</updated>
+  <updated>2020-10-13T15:31:21.721Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 7번째 데이터 타입 symbol</title>
+    <link href="http://mjae404.github.io/2020/10/14/js-symbol/"/>
+    <id>http://mjae404.github.io/2020/10/14/js-symbol/</id>
+    <published>2020-10-13T15:30:57.000Z</published>
+    <updated>2020-10-13T15:31:21.721Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;심볼(symbol)은 ES6에서 새롭게 추가된 7번째 타입으로 변경 불가능한 원시 타입의 값이다. 심볼 값은 다른 값과 중복되지 않는 유일무이한 값이다. 따라서 주로 이름의 충돌 위험이 없는 유일한 프로퍼티 키를 만들기 위해 사용한다. 심볼은 중복되지 않는 상수 값을 생성하는 것은 물론 기존에 작성된 코드에 영향을 주지 않고 새로운 프로퍼티를 추가하기 위해, 즉 하위 호환성을 보장하기 위해 도입되었다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="es6" scheme="http://mjae404.github.io/tags/es6/"/>
+    
+      <category term="symbol" scheme="http://mjae404.github.io/tags/symbol/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 클래스</title>
@@ -517,34 +542,6 @@
       <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
     
       <category term="HOF" scheme="http://mjae404.github.io/tags/HOF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 추상화</title>
-    <link href="http://mjae404.github.io/2020/09/13/python-abstraction/"/>
-    <id>http://mjae404.github.io/2020/09/13/python-abstraction/</id>
-    <published>2020-09-13T12:26:32.000Z</published>
-    <updated>2020-10-02T07:56:15.733Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;추상화 (Abstraction)&lt;/strong&gt;&lt;br&gt;복잡한 세부 사항은 숨기면서 주요한 기능에만 집중할 수  있게 해주는 개념이다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;변수 (Variable): 값을 저장&lt;/li&gt;
-&lt;li&gt;함수 (Function): 명령을 저장&lt;/li&gt;
-&lt;li&gt;객체 (Class)&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-      <category term="abstraction" scheme="http://mjae404.github.io/tags/abstraction/"/>
     
   </entry>
   
