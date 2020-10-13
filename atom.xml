@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-11T15:02:53.420Z</updated>
+  <updated>2020-10-13T12:47:56.059Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 클래스</title>
+    <link href="http://mjae404.github.io/2020/10/13/js-class/"/>
+    <id>http://mjae404.github.io/2020/10/13/js-class/</id>
+    <published>2020-10-13T12:45:08.000Z</published>
+    <updated>2020-10-13T12:47:56.059Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;클래스는 생성자 함수와 매우 유사하게 동작하지만 아래와 같이 몇가지 차이가 있다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;클래스는 new 연산자를 사용하지 않고 호출하면 에러가 발행한다. 하지만 생성자 함수는 new 연산자를 사용하지 않고 호출하면 일반 함수로서 호출된다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;클래스는 상속을 지원하는 extentds와 super 키워드를 제공한다. 하지만 생성자 함수는 extentds와 super 키워드를 지원하지 않는다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;클래스는 호이스팅이 발생하지 않는 것처럼 동작한다. 하지만 함수 선언문으로 정의된 생성자 함수는 함수 호이스팅이 발생한다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;클래스의 모든 코드는 암묵적으로 strict 모드가 지정되어 실행되며 strict 모드를 해지할 수 없다. 하지만 생성자 함수는 암묵적으로 strict 모드가 지정되지 않는다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;클래스의 constructor, 프로토타입 메소드, 정적 메소드는 모두 프로퍼티 어트리뷰트 &lt;code&gt;[[Enumerable]]&lt;/code&gt;의 값이 false이다. 다시 말해, 열거되지 않는다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="es6" scheme="http://mjae404.github.io/tags/es6/"/>
+    
+      <category term="class" scheme="http://mjae404.github.io/tags/class/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 정규표현식</title>
@@ -508,34 +545,6 @@
       <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
       <category term="abstraction" scheme="http://mjae404.github.io/tags/abstraction/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 데이터 타입</title>
-    <link href="http://mjae404.github.io/2020/09/12/python-datatype/"/>
-    <id>http://mjae404.github.io/2020/09/12/python-datatype/</id>
-    <published>2020-09-12T12:48:37.000Z</published>
-    <updated>2020-09-13T12:27:28.611Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;자료형에는 숫자(Number), 문자(String), 불린(Boolean)이 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;숫자: 정수(Integer), 소수(Floating Point)&lt;/li&gt;
-&lt;li&gt;문자: “Hello” + “World” → “HelloWorld”&lt;/li&gt;
-&lt;li&gt;불린: True, False&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-      <category term="datatype" scheme="http://mjae404.github.io/tags/datatype/"/>
     
   </entry>
   
