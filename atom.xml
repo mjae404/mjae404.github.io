@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-13T15:31:21.721Z</updated>
+  <updated>2020-10-17T17:04:59.016Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 클로저</title>
+    <link href="http://mjae404.github.io/2020/10/18/js-closure/"/>
+    <id>http://mjae404.github.io/2020/10/18/js-closure/</id>
+    <published>2020-10-17T17:02:07.000Z</published>
+    <updated>2020-10-17T17:04:59.016Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;“A closure is the combination of a function and the lexical environment within which that function was declared.”&lt;br&gt;클로저는 함수와 그 &lt;strong&gt;&lt;u&gt;함수가 선언된 렉시컬 환경(Lexical environment)&lt;/u&gt;&lt;/strong&gt; 과의 조합이다.&lt;br&gt;─ &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures&quot;&gt;MDN&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;→  “그 함수가 선언된 렉시컬 환경(Lexical environment)”란 함수가 정의된 위치의 스코프, 즉 상위 스코프를 의미하는 실행 컨텍스트의 렉시컬 환경을 말한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="closure" scheme="http://mjae404.github.io/tags/closure/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 7번째 데이터 타입 symbol</title>
@@ -515,33 +541,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="iterable" scheme="http://mjae404.github.io/tags/iterable/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 배열 고차 함수</title>
-    <link href="http://mjae404.github.io/2020/09/14/js-array-higher-order-function/"/>
-    <id>http://mjae404.github.io/2020/09/14/js-array-higher-order-function/</id>
-    <published>2020-09-13T15:19:46.000Z</published>
-    <updated>2020-09-13T15:20:33.456Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;고차함수&lt;/em&gt;&lt;br&gt;함수를 인자로 받거나 함수를 반환하는 함수 → 필요한 시점에 호출하거나 클로저를 생성하여 반환&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
-    
-      <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
-    
-      <category term="HOF" scheme="http://mjae404.github.io/tags/HOF/"/>
     
   </entry>
   
