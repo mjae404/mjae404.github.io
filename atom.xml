@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-17T17:04:59.016Z</updated>
+  <updated>2020-10-18T15:09:32.898Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 모듈</title>
+    <link href="http://mjae404.github.io/2020/10/19/python-module/"/>
+    <id>http://mjae404.github.io/2020/10/19/python-module/</id>
+    <published>2020-10-18T15:09:03.000Z</published>
+    <updated>2020-10-18T15:09:32.898Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;모듈&lt;/strong&gt; 은 바로 실행하는 용도가 아니라, 나중에 사용할 함수나 클래스 등을 미리 정의해둔 파일이다. 정보를 한번만 정의해두고 import하면 여러 프로그램에서 손쉽게 사용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="module" scheme="http://mjae404.github.io/tags/module/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 클로저</title>
@@ -518,29 +541,6 @@
       <category term="type casting" scheme="http://mjae404.github.io/tags/type-casting/"/>
     
       <category term="Short-Circuit evaluation" scheme="http://mjae404.github.io/tags/Short-Circuit-evaluation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 이터러블</title>
-    <link href="http://mjae404.github.io/2020/09/15/js-iterable/"/>
-    <id>http://mjae404.github.io/2020/09/15/js-iterable/</id>
-    <published>2020-09-15T12:05:03.000Z</published>
-    <updated>2020-09-15T12:05:36.778Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;이터러블 프로토콜을 준수한 객체를 이터러블(iterable)라 한다. 이터러블은 for…of 문으로 순회할 수 있으며 스프레드 문법과 디스트럭처링 할당의 대상으로 사용할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="iterable" scheme="http://mjae404.github.io/tags/iterable/"/>
     
   </entry>
   
