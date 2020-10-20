@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-18T15:09:32.898Z</updated>
+  <updated>2020-10-20T14:05:15.399Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 리스트</title>
+    <link href="http://mjae404.github.io/2020/10/20/python-list/"/>
+    <id>http://mjae404.github.io/2020/10/20/python-list/</id>
+    <published>2020-10-20T14:03:50.000Z</published>
+    <updated>2020-10-20T14:05:15.399Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;변수에 여러가지 값을 저장하고 싶다면 리스트(list)라는 자료형을 사용하면 된다. 리스트 안에는 또 다른 리스트가 있을 수 있으며, &lt;strong&gt;nested list&lt;/strong&gt; 라고 부른다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="list" scheme="http://mjae404.github.io/tags/list/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 모듈</title>
@@ -511,36 +534,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="execution context" scheme="http://mjae404.github.io/tags/execution-context/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 타입변환과 단축평가</title>
-    <link href="http://mjae404.github.io/2020/09/16/js-type-casting/"/>
-    <id>http://mjae404.github.io/2020/09/16/js-type-casting/</id>
-    <published>2020-09-16T14:33:59.000Z</published>
-    <updated>2020-09-16T14:34:34.740Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;명시적 타입 변환 / 타입 캐스팅&lt;/strong&gt;: 개발자가 의도적으로 값의 타입을 변환하는 것&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;암묵적 타입 변환 / 타입 강제 변환&lt;/strong&gt;: 개발자의 의도와는 관계 없이 자바스크립트에 의해 암묵적으로 타입이 자동 변환되는 것&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="type casting" scheme="http://mjae404.github.io/tags/type-casting/"/>
-    
-      <category term="Short-Circuit evaluation" scheme="http://mjae404.github.io/tags/Short-Circuit-evaluation/"/>
     
   </entry>
   

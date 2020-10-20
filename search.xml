@@ -441,8 +441,12 @@
 <li>객체는 프로퍼티(property)들의 집합</li>
 <li>프로퍼티는 키(key)와 값(value)로 구성되어 있으며 쉼표로 구분한다. (맨 마지막 프로퍼티에는 사용해도, 하지 않아도 괜찮다.)</li>
 <li>프로퍼티 키와 프로퍼티 값으로 사용할 수 있는 값<ul>
-<li><strong>프로퍼티 키</strong>: 빈 문자열을 포함한 모든 문자열 또는 심볼값. 식별자 네이밍 규칙을 따르지 않는 이름에는 반드시 따옴표를 사용하여야 한다. 따옴표를 쓰지 않을 시 SyntaxError.</li>
-<li><strong>프로퍼티 값</strong>: 자바스크립트에서 사용할 수 있는 모든 값</li>
+<li><strong>프로퍼티 키</strong>: 빈 문자열을 포함한 모든 문자열(string) 또는 심볼값. 식별자 네이밍 규칙을 따르지 않는 이름에는 반드시 따옴표를 사용하여야 한다. 따옴표를 쓰지 않을 시 SyntaxError.<ol>
+<li>첫번째 글자는 반드시 문자, 밑줄(<code>_</code>), 달러 기호 (<code>$</code>)중 하나로 시작한다.</li>
+<li>띄어쓰기나 하이픈(<code>-</code>)을 사용하면 안 된다.</li>
+</ol>
+</li>
+<li><strong>프로퍼티 값</strong>: 자바스크립트에서 사용할 수 있는 모든 자료형이 들어갈 수 있다.</li>
 </ul>
 </li>
 <li><strong>프로퍼티 키에 문자열이나 심볼값 이외의 값을 사용하면 암묵적 타입 변환이 되어 <u>문자열</u></strong> 이 된다.</li>
@@ -462,21 +466,31 @@
 
 
 <h2 id="프로퍼티-접근"><a href="#프로퍼티-접근" class="headerlink" title="프로퍼티 접근"></a>프로퍼티 접근</h2><ul>
-<li>프로퍼티 값에 접근하는 방법<ul>
-<li>마침표 표기법: ex) aniaml.name</li>
+<li>객체에서 데이터 접근하는 방법<ul>
+<li>마침표 표기법(점표기법): ex) <code>animal.name</code></li>
 <li>대괄호 표기법: <strong>대괄호 내부에 지정하는 프로퍼티키는 반드시 따옴표로 감싼 문자열</strong> 이어야 한다.  단 <strong>프로퍼티 키가 숫자로 이루져 있는 경우 따옴표 생략 가능.</strong> ex) <code>animal[&#39;name&#39;]</code> → 자바스크립트 엔진은 대괄호 안에 이름이 따옴표로 감싸져 있지 않으면 식별자로 취급하기 때문.</li>
 </ul>
 </li>
 <li>프로퍼티 키가 식별자 네이밍 규칙을 따르는 이름이면 마침표 / 대괄호 표기법 둘다 사용 가능하다.</li>
 <li><strong>마침표 또는 대괄호 좌측</strong>: 객체로 평가할 수 있는 표현식 / <strong>우측&amp;대괄호 내부</strong>: 프로퍼티 키를 지정한다.</li>
-<li>존재하지 않는 프로퍼티에 접근하면 undeifned 반환.</li>
+<li>존재하지 않는 프로퍼티에 접근하면 <code>undeifned</code> 반환.</li>
 </ul>
-<h2 id="프로퍼티-값-갱신"><a href="#프로퍼티-값-갱신" class="headerlink" title="프로퍼티 값 갱신"></a>프로퍼티 값 갱신</h2><p>이미 존재하고 있는 프로퍼티에 값을 할당하면 갱신된다.</p>
+<h2 id="프로퍼티-값-갱신"><a href="#프로퍼티-값-갱신" class="headerlink" title="프로퍼티 값 갱신"></a>프로퍼티 값 갱신</h2><p>이미 존재하고 있는 프로퍼티에 값을 할당하면 갱신된다. (변수에 재할당하는 것과 비슷하다.)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;snowball&#x27;</span>,</span><br><span class="line">  animal: <span class="string">&#x27;bunny&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal.name); <span class="comment">// snowball</span></span><br><span class="line">animal.name = <span class="string">&#x27;cute&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(animal.name); <span class="comment">// cute</span></span><br></pre></td></tr></table></figure>
+
 <h2 id="프로퍼티-동적-생성"><a href="#프로퍼티-동적-생성" class="headerlink" title="프로퍼티 동적 생성"></a>프로퍼티 동적 생성</h2><p>존재하고 있지 않은 프로퍼티에 값을 할당하면 동적으로 생성되어 추가된 후에 할당까지 된다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;snowball&#x27;</span>,</span><br><span class="line">  animal: <span class="string">&#x27;bunny&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal.like); <span class="comment">// undefined</span></span><br><span class="line">animal.like = <span class="string">&#x27;love&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(animal.name); <span class="comment">// love</span></span><br></pre></td></tr></table></figure>
+
+
 <h2 id="프로퍼티-삭제"><a href="#프로퍼티-삭제" class="headerlink" title="프로퍼티 삭제"></a>프로퍼티 삭제</h2><ul>
 <li>delete 연산자가 객체의 연산자를 삭제한다. 이때 delete 연산자의 피연산자는 프로퍼티 값에 접근이 가능한 표현식이어야 한다.</li>
 <li>피연산자의 프로퍼티가 존재하지 않으면 무시됨.</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;snowball&#x27;</span>,</span><br><span class="line">  animal: <span class="string">&#x27;bunny&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal.animal); <span class="comment">// bunny</span></span><br><span class="line"><span class="keyword">delete</span> animal.animal;</span><br><span class="line"><span class="built_in">console</span>.log(animal.animal); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="프로퍼티-존재-여부-확인"><a href="#프로퍼티-존재-여부-확인" class="headerlink" title="프로퍼티 존재 여부 확인"></a>프로퍼티 존재 여부 확인</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(animal.name !== <span class="literal">undefined</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;name&#x27;</span> <span class="keyword">in</span> animal);</span><br><span class="line"><span class="comment">// 프로퍼티 in 객체이름 → 불리언값 리턴</span></span><br><span class="line"><span class="comment">// 프로퍼티 값에 undefined가 할당될 수 있으므로 in 연산자를 사용하는 것이 좋다.</span></span><br></pre></td></tr></table></figure>
+
+
 <h2 id="ES6에서-추가된-객체-리터럴의-확장-기능"><a href="#ES6에서-추가된-객체-리터럴의-확장-기능" class="headerlink" title="ES6에서 추가된 객체 리터럴의 확장 기능"></a>ES6에서 추가된 객체 리터럴의 확장 기능</h2><h3 id="프로퍼티-축약-표현"><a href="#프로퍼티-축약-표현" class="headerlink" title="프로퍼티 축약 표현"></a>프로퍼티 축약 표현</h3><p>ES6에서는 프로퍼티 값으로 변수를 사용하는 경우 변수와 프로퍼티 키의 이름이 동일하면 프로퍼티 키 생략 가능하다.</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> bunny = <span class="string">&#x27;cute&#x27;</span>, puppy = <span class="string">&#x27;sweet&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> obj = &#123; bunny, puppy &#125;;</span><br><span class="line"><span class="comment">// bunny:bunny, puppy:puppy와 동일</span></span><br><span class="line"><span class="built_in">console</span>.log(obj); <span class="comment">// &#123;bunny: &#x27;cute&#x27;, puppy:&#x27;sweet&#x27;&#125;</span></span><br></pre></td></tr></table></figure>
 
@@ -5037,6 +5051,63 @@
       <tags>
         <tag>Python</tag>
         <tag>module</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PYTHON 리스트</title>
+    <url>/2020/10/20/python-list/</url>
+    <content><![CDATA[<p>변수에 여러가지 값을 저장하고 싶다면 리스트(list)라는 자료형을 사용하면 된다. 리스트 안에는 또 다른 리스트가 있을 수 있으며, <strong>nested list</strong> 라고 부른다.</p>
+<a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">리스트[인덱스]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">alphabets = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>]</span><br><span class="line">grades = [[<span class="number">62</span>, <span class="number">75</span>, <span class="number">77</span>], [<span class="number">78</span>, <span class="number">81</span>, <span class="number">86</span>], [<span class="number">85</span>, <span class="number">91</span>, <span class="number">89</span>]]</span><br><span class="line"></span><br><span class="line">print(numbers) <span class="comment"># [1, 2, 3, 4]</span></span><br><span class="line">print(alphabets) <span class="comment"># [&#x27;A&#x27;, &#x27;B&#x27;, &#x27;C&#x27;, &#x27;D&#x27;]</span></span><br><span class="line">print(grades[<span class="number">0</span>]) <span class="comment"># [62, 75, 77]</span></span><br><span class="line">print(grades[<span class="number">2</span>][<span class="number">1</span>]) <span class="comment"># 91</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="인덱싱"><a href="#인덱싱" class="headerlink" title="인덱싱"></a>인덱싱</h2><p>인덱스를 사용하면 리스트에서 몇번째 자리에 어떤 값이 있는지 알 수 있다.</p>
+<ul>
+<li>인덱스는 0부터 시작한다.</li>
+<li>없는 인덱스를 찾으면 오류가 발생한다.</li>
+<li>음수의 인덱스도 가능하다. (ex.-1일 경우 제일 마지막 원소)</li>
+<li><code>numbers[a:b]</code>: 인덱스 a부터 인덱스 b-1까지의 원소를 불러온다.</li>
+<li><code>numbers[a:]</code>: 인덱스 a부터 마지막 인덱스까지의 원소를 불러온다.</li>
+<li><code>numbers[:b]</code>: 첫번째 인덱스[0]부터 인덱스 b-1까지의 원소를 불러온다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line">print(numbers[<span class="number">1</span>]) <span class="comment"># 2</span></span><br><span class="line">print(numbers[<span class="number">-1</span>]) <span class="comment"># 4</span></span><br><span class="line">print(numbers[<span class="number">10</span>]) <span class="comment">#  list index out of range</span></span><br><span class="line"></span><br><span class="line">print(numbers[<span class="number">0</span>] + numbers[<span class="number">1</span>]) <span class="comment"># 3</span></span><br><span class="line">print(numbers[<span class="number">0</span>:<span class="number">2</span>]) <span class="comment"># [1, 2]</span></span><br><span class="line">print(numbers[<span class="number">2</span>:]) <span class="comment"># [3, 4]</span></span><br><span class="line">print(numbers[:<span class="number">2</span>]) <span class="comment"># [1, 2]</span></span><br><span class="line"></span><br><span class="line">numbers[<span class="number">0</span>] = <span class="number">5</span></span><br><span class="line">print(numbers) <span class="comment"># [7, 2, 3, 4]</span></span><br><span class="line"></span><br><span class="line">numbers[<span class="number">0</span>] = numbers[<span class="number">2</span>] + numbers[<span class="number">3</span>]</span><br><span class="line">print(numbers) <span class="comment"># [7, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="리스트-함수"><a href="#리스트-함수" class="headerlink" title="리스트 함수"></a>리스트 함수</h2><h3 id="len-함수"><a href="#len-함수" class="headerlink" title="len 함수"></a>len 함수</h3><p>리스트 안의 원소 개수를 알려준다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">alphabet = [<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>, <span class="string">&quot;d&quot;</span>]</span><br><span class="line">print(<span class="string">&quot;리스트 길이: %d&quot;</span> % len(alphabet)) <span class="comment"># 리스트 길이: 4</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="원소-추가하기"><a href="#원소-추가하기" class="headerlink" title="원소 추가하기"></a>원소 추가하기</h3><p><code>insert</code>와 <code>append</code>를 사용하여 리스트에 원소를 추가한다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = []</span><br><span class="line"></span><br><span class="line"><span class="comment"># 마지막 위치에 5 추가</span></span><br><span class="line">numbers.append(<span class="number">5</span>)</span><br><span class="line">print(numbers) <span class="comment"># [5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 마지막 위치에 8 추가</span></span><br><span class="line">numbers.append(<span class="number">8</span>)</span><br><span class="line">print(numbers) <span class="comment"># [5, 8]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 마지막 위치에 10 추가</span></span><br><span class="line">numbers.append(<span class="number">10</span>)</span><br><span class="line">print(numbers) <span class="comment"># [5, 8, 10]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 인덱스 0 자리에 0 추가</span></span><br><span class="line">numbers.insert(<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">print(numbers) <span class="comment"># [0, 5, 8, 10]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 인덱스 3 자리에 12 추가</span></span><br><span class="line">numbers.insert(<span class="number">3</span>, <span class="number">12</span>)</span><br><span class="line">print(numbers) <span class="comment">#[0, 5, 8, 12, 10]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="원소-삭제하기"><a href="#원소-삭제하기" class="headerlink" title="원소 삭제하기"></a>원소 삭제하기</h3><p><code>del</code> 함수를 사용하여 원하는 리스트의 원소를 삭제할 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 인덱스 3에 있는 값 삭제</span></span><br><span class="line"><span class="keyword">del</span> numbers[<span class="number">3</span>]</span><br><span class="line">print(numbers) <span class="comment"># [1, 2, 3, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 인덱스 2부터 마지막 값까지 삭제</span></span><br><span class="line"><span class="keyword">del</span> numbers[<span class="number">2</span>:]</span><br><span class="line">print(numbers) <span class="comment"># [1, 2]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="리스트-연결하기"><a href="#리스트-연결하기" class="headerlink" title="리스트 연결하기"></a>리스트 연결하기</h3><p><code>+</code>로 리스트들을 연결할 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num1 = [<span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line">num2 = [<span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">num = num1 + num2</span><br><span class="line"></span><br><span class="line">print(num) <span class="comment">#[1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="리스트에서-값의-존재-확인하기"><a href="#리스트에서-값의-존재-확인하기" class="headerlink" title="리스트에서 값의 존재 확인하기"></a>리스트에서 값의 존재 확인하기</h3><p><code>in</code>이라는 키워드로 리스트에 값의 존재를 확인할 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">print(<span class="number">3</span> <span class="keyword">in</span> num) <span class="comment"># True</span></span><br><span class="line">print(<span class="number">8</span> <span class="keyword">in</span> num) <span class="comment"># False</span></span><br><span class="line"></span><br><span class="line">print(<span class="number">5</span> <span class="keyword">not</span> <span class="keyword">in</span> num) <span class="comment"># True</span></span><br><span class="line">print(<span class="number">2</span> <span class="keyword">not</span> <span class="keyword">in</span> num) <span class="comment"># False</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="sorted-함수"><a href="#sorted-함수" class="headerlink" title="sorted 함수"></a>sorted 함수</h3><p><code>sorted</code> 함수는 리스트의 원소들을 <strong>오름차순으로 정렬한 새로운 리스트를 리턴</strong> 해준다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">numbers = [<span class="number">6</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">1</span>, <span class="number">3</span>]</span><br><span class="line">numbers = sorted(numbers)</span><br><span class="line"></span><br><span class="line">print(numbers) <span class="comment"># [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="sort-메소드"><a href="#sort-메소드" class="headerlink" title="sort 메소드"></a>sort 메소드</h3><p><code>some_list.sort()</code>는 새로운 리스트를 생성하지 않고 정렬된 상태로 바꿔주기만 한다. (새로운 리스트를 리턴하지 않는다.)</p>
+<h3 id="reverse-메소드"><a href="#reverse-메소드" class="headerlink" title="reverse 메소드"></a>reverse 메소드</h3><p><code>some_list.reverse()</code>는 리스트에서 원소들을 뒤집어진 순서로 배치한다.</p>
+<h3 id="index-메소드"><a href="#index-메소드" class="headerlink" title="index 메소드"></a>index 메소드</h3><p><code>some_list.index(x)</code>는 리스트에서 x의 값을 갖고 있는 원소의 인덱스를 리턴한다.</p>
+<h3 id="remove-메소드"><a href="#remove-메소드" class="headerlink" title="remove 메소드"></a>remove 메소드</h3><p><code>some_list.remove(x)</code>는 리스트에서 첫 번째로 x의 값을 갖고 있는 원소를 삭제한다.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>list</tag>
       </tags>
   </entry>
 </search>
