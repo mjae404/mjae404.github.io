@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-20T14:05:15.399Z</updated>
+  <updated>2020-10-21T11:34:42.459Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 삼각형 출력하기0</title>
+    <link href="http://mjae404.github.io/2020/10/21/js-exercise001/"/>
+    <id>http://mjae404.github.io/2020/10/21/js-exercise001/</id>
+    <published>2020-10-21T11:31:48.000Z</published>
+    <updated>2020-10-21T11:34:42.459Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;다음을 참고하여 *(별)로  삼각형을 문자열로 완성하라. 개행문자(‘\n’)를 사용하여 개행한다. 완성된 문자열의 마지막은 개행문자(‘\n’)로 끝나도 관계없다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 리스트</title>
@@ -508,32 +535,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="strict mode" scheme="http://mjae404.github.io/tags/strict-mode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 실행 컨텍스트</title>
-    <link href="http://mjae404.github.io/2020/09/17/js-execution-context/"/>
-    <id>http://mjae404.github.io/2020/09/17/js-execution-context/</id>
-    <published>2020-09-16T15:45:10.000Z</published>
-    <updated>2020-10-02T07:55:27.157Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;실행 컨텍스트는 식별자, 스코프, 호이스팅, 클로저 등의 동작 원리를 담고 있는 자바스크립트의 핵심 개념이다. 동적 언어로서의 자바스크림트 성격을 잘 파악할 수 있다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;실행 컨텍스트&lt;/strong&gt;: 실행할 코드에 제공할 환경 정보들을 모아놓은 객체.&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="execution context" scheme="http://mjae404.github.io/tags/execution-context/"/>
     
   </entry>
   
