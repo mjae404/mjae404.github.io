@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-21T11:35:46.964Z</updated>
+  <updated>2020-10-22T15:19:20.923Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,114 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS Grid</title>
+    <link href="http://mjae404.github.io/2020/10/23/css-grid/"/>
+    <id>http://mjae404.github.io/2020/10/23/css-grid/</id>
+    <published>2020-10-22T15:17:20.000Z</published>
+    <updated>2020-10-22T15:19:20.923Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSS 그리드는 더 복잡한 레이아웃을 위해 2치원 레이아웃 시스템을 제공한다. 다양한 레이아웃 대체 방식들을 해결하기 위해 만들어진 CSS 모듈이다. 효율적으로 학습하기 위해서는 파이어폭스 브라우저를 사용하는 것이 좋다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="grid" scheme="http://mjae404.github.io/tags/grid/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PYTHON 거스름돈 계산기</title>
+    <link href="http://mjae404.github.io/2020/10/23/python-exercise001/"/>
+    <id>http://mjae404.github.io/2020/10/23/python-exercise001/</id>
+    <published>2020-10-22T15:16:16.000Z</published>
+    <updated>2020-10-22T15:16:55.989Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;현명하게 거스름돈을 계산해주는 프로그램을 만드려고 합니다. 예를 들어 33,000원짜리 물건을 사기 위해 100,000원을 냈다면, 50,000원 1장, 10,000원 1장, 5,000원 1장, 1,000원 2장과 같이 ‘가장 적은 수’의 지폐를 거슬러 주는 방식입니다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS 팩토리얼</title>
+    <link href="http://mjae404.github.io/2020/10/23/js-exercise003-factorial/"/>
+    <id>http://mjae404.github.io/2020/10/23/js-exercise003-factorial/</id>
+    <published>2020-10-22T15:14:42.000Z</published>
+    <updated>2020-10-22T15:15:24.755Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;자바스크립트로 팩토리얼을 구현하라.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="recursive function" scheme="http://mjae404.github.io/tags/recursive-function/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS 두 날짜의 차이</title>
+    <link href="http://mjae404.github.io/2020/10/22/js-exercise002/"/>
+    <id>http://mjae404.github.io/2020/10/22/js-exercise002/</id>
+    <published>2020-10-21T15:02:49.000Z</published>
+    <updated>2020-10-22T15:24:56.799Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;두 날짜 간의 차이를 구해라.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
+    
+      <category term="built-in object" scheme="http://mjae404.github.io/tags/built-in-object/"/>
+    
+      <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
+    
+      <category term="date object" scheme="http://mjae404.github.io/tags/date-object/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 삼각형 출력하기</title>
@@ -440,101 +548,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="destructuring" scheme="http://mjae404.github.io/tags/destructuring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS this</title>
-    <link href="http://mjae404.github.io/2020/09/21/js-this/"/>
-    <id>http://mjae404.github.io/2020/09/21/js-this/</id>
-    <published>2020-09-21T14:19:18.000Z</published>
-    <updated>2020-09-21T14:19:35.874Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;this&lt;/code&gt;는 객체 자신의 프로퍼티나 메소드를 참조하기 위한 자기 참조 변수(Self-referencing variable)이다. this 바인딩은 함수 호출 방식에 의해 동적으로 결정된다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;바인딩(Binding)&lt;/strong&gt;&lt;br&gt;식별자와 값을 연결하는 과정. (ex. 변수는 할당에 의해 값에 바인딩)&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="this" scheme="http://mjae404.github.io/tags/this/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 프로토타입</title>
-    <link href="http://mjae404.github.io/2020/09/20/js-prototype/"/>
-    <id>http://mjae404.github.io/2020/09/20/js-prototype/</id>
-    <published>2020-09-20T13:28:03.000Z</published>
-    <updated>2020-09-20T13:32:44.846Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;자바스크립트&lt;/strong&gt; 는 명령형(Imperative), 함수형(Functional), 프로토타입 기반(Prototype-based) 객체지향 프로그래밍(OOP, Object Oriented Programming)을 지원하는 프로그래밍 언어다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="prototype" scheme="http://mjae404.github.io/tags/prototype/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 생성자 함수에 의한 객체 생성</title>
-    <link href="http://mjae404.github.io/2020/09/19/js-constructor/"/>
-    <id>http://mjae404.github.io/2020/09/19/js-constructor/</id>
-    <published>2020-09-19T10:33:09.000Z</published>
-    <updated>2020-10-02T07:53:01.799Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;u&gt;생성자(constructor) 함수&lt;/u&gt;&lt;/strong&gt; 란 &lt;strong&gt;new 연산자와 함께 호출하여 인스턴스 객체를 생성하는 함수&lt;/strong&gt; 를 말한다. 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라 한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="constructor" scheme="http://mjae404.github.io/tags/constructor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 엄격모드</title>
-    <link href="http://mjae404.github.io/2020/09/18/js-strict-mode/"/>
-    <id>http://mjae404.github.io/2020/09/18/js-strict-mode/</id>
-    <published>2020-09-18T13:59:38.000Z</published>
-    <updated>2020-09-18T14:00:41.228Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;code&gt;strict mode&lt;/code&gt;&lt;/strong&gt; 는 자바스크립트 언어의 문법을 보다 엄격히 적용하여 기존에는 무시되던 오류를 발생시킬 가능성이 높거나 자바스크립트 엔진의 최적화 작업에 문제를 일으킬 수 있는 코드에 대해 명시적인 에러를 발생시킨다. &lt;a href=&quot;https://eslint.org/&quot;&gt;ESLint&lt;/a&gt;와 같은 린트 도구를 사용하여도 &lt;code&gt;strict mode&lt;/code&gt;와 유사한 효과를 얻을 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="strict mode" scheme="http://mjae404.github.io/tags/strict-mode/"/>
     
   </entry>
   
