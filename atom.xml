@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-24T05:40:37.984Z</updated>
+  <updated>2020-10-24T18:05:13.748Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 제어문</title>
+    <link href="http://mjae404.github.io/2020/10/25/python-control-flow-statement/"/>
+    <id>http://mjae404.github.io/2020/10/25/python-control-flow-statement/</id>
+    <published>2020-10-24T18:04:58.000Z</published>
+    <updated>2020-10-24T18:05:13.748Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;제어문을 활용하면 조건에 따라 동작을 나눌 수 있다. 그리고 반복문을 활용하면 우리가 하나하나 힘겹게 하던 일들을 컴퓨터에게 자동으로 반복시킬 수 있다. 반복문은 원하는 명령들을 한번만 기재하고 반복적으로 실행 가능한 문이다. PYTHON에는 while 반복문과 for 반복문이 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+    
+      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVG 개요</title>
+    <link href="http://mjae404.github.io/2020/10/25/svg-overview/"/>
+    <id>http://mjae404.github.io/2020/10/25/svg-overview/</id>
+    <published>2020-10-24T17:27:15.000Z</published>
+    <updated>2020-10-24T18:03:31.776Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SVG란 확장 가능한 벡터 그래픽(Scalable Vector Graphics)이자 XML 기반의 2차원 그래픽이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DOM의 일부로서 각 객체별로 HTML 엘리먼트가 추가된다.&lt;/li&gt;
+&lt;li&gt;모양이 복잡하지 않을 경우 파일 사이즈도 작다.&lt;/li&gt;
+&lt;li&gt;포인트가 많으면 많을 수록 계산해서 그려지기 때문에 성능이 떨어진다.&lt;/li&gt;
+&lt;li&gt;CSS와 자바스크립트를 사용해서 조작이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML 콘텐츠 모델</title>
@@ -497,59 +549,6 @@
       <category term="math object" scheme="http://mjae404.github.io/tags/math-object/"/>
     
       <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 스프레드 문법</title>
-    <link href="http://mjae404.github.io/2020/10/04/js-spread-syntax/"/>
-    <id>http://mjae404.github.io/2020/10/04/js-spread-syntax/</id>
-    <published>2020-10-03T15:04:37.000Z</published>
-    <updated>2020-10-03T15:11:42.844Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ES6에서 새롭게 도입된 &lt;strong&gt;스프레드 문법(Spread syntax, 전개 문법) &lt;code&gt;…&lt;/code&gt;&lt;/strong&gt; 은 하나로 뭉쳐 있는 여러 값들의 집합을 펼쳐서(전개, 분산하여, spread) 개별적인 값들의 목록으로 만든다. 스프레드 문법을 사용할 수 있는 대상은 Array, String, Map, Set, DOM 컬렉션(NodeList, HTMLCollection), Arguments와 같이 for…of 문으로 &lt;strong&gt;순회할 수 있는 이터러블에 한정&lt;/strong&gt; 된다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="spread syntax" scheme="http://mjae404.github.io/tags/spread-syntax/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 표준 빌트인 객체와 래퍼 객체</title>
-    <link href="http://mjae404.github.io/2020/10/03/js-standard-built-in-object/"/>
-    <id>http://mjae404.github.io/2020/10/03/js-standard-built-in-object/</id>
-    <published>2020-10-03T14:11:27.000Z</published>
-    <updated>2020-10-03T14:11:54.941Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;자바스크립트는 크게 3가지 객체로 분류할 수 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;표준 빌트인 객체&lt;/li&gt;
-&lt;li&gt;호스트 객체&lt;/li&gt;
-&lt;li&gt;사용자 정의 객체&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="standard built-in object" scheme="http://mjae404.github.io/tags/standard-built-in-object/"/>
-    
-      <category term="built-in object" scheme="http://mjae404.github.io/tags/built-in-object/"/>
     
   </entry>
   

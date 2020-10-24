@@ -5911,4 +5911,102 @@
         <tag>Content Model</tag>
       </tags>
   </entry>
+  <entry>
+    <title>SVG 개요</title>
+    <url>/2020/10/25/svg-overview/</url>
+    <content><![CDATA[<p>SVG란 확장 가능한 벡터 그래픽(Scalable Vector Graphics)이자 XML 기반의 2차원 그래픽이다.</p>
+<ul>
+<li>DOM의 일부로서 각 객체별로 HTML 엘리먼트가 추가된다.</li>
+<li>모양이 복잡하지 않을 경우 파일 사이즈도 작다.</li>
+<li>포인트가 많으면 많을 수록 계산해서 그려지기 때문에 성능이 떨어진다.</li>
+<li>CSS와 자바스크립트를 사용해서 조작이 가능하다.</li>
+</ul>
+<a id="more"></a>
+
+<p><strong><em>캔버스</em></strong></p>
+<ul>
+<li>비트맵 기반의 그래픽이다.</li>
+<li>게임 등 퍼포먼스가 중요한 이미지 조작등에 사용된다.</li>
+<li>단일 태그 <code>&lt;canvas&gt;</code>로 표현한다.</li>
+<li>픽셀 단위로 조작이 가능하다.</li>
+<li>low-level API로 코딩량이 많고 까다롭다.</li>
+</ul>
+<h2 id="HTML-문서에-SVG를-넣는-방법"><a href="#HTML-문서에-SVG를-넣는-방법" class="headerlink" title="HTML 문서에 SVG를 넣는 방법"></a>HTML 문서에 SVG를 넣는 방법</h2><ul>
+<li><code>&lt;img&gt;</code> 태그</li>
+<li>CSS Background</li>
+<li>SVG 요소들을 직접 inline으로 삽입</li>
+<li><code>&lt;object&gt;</code> 태그</li>
+<li><code>&lt;embed&gt;</code> 태그 (사용하지 않음)</li>
+<li><code>&lt;iframe&gt;</code> 태그 (사용하지 않음)</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">//object 태그</span><br><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">&quot;images/icon.svg&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/svg+xml&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="크기-설정"><a href="#크기-설정" class="headerlink" title="크기 설정"></a>크기 설정</h2><ul>
+<li>인라인으로 적용</li>
+<li><code>css</code>로 적용</li>
+<li><code>viewbox</code>로 적용: 상대적인 비율로 안의 내용 크기가 변경된다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- x 0, y 0 위치에 가로 500 세로 500의 크기 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">viewBox</span>=<span class="string">&quot;0 0 500 500&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">&quot;0&quot;</span> <span class="attr">y</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="SVG-압축하기"><a href="#SVG-압축하기" class="headerlink" title="SVG 압축하기"></a>SVG 압축하기</h2><p><a href="https://jakearchibald.github.io/svgomg/">SVGOMG</a>에서 압축할 수 있다.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>인프런 SVG 마스터</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>SVG</category>
+      </categories>
+      <tags>
+        <tag>overview</tag>
+        <tag>SVG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PYTHON 제어문</title>
+    <url>/2020/10/25/python-control-flow-statement/</url>
+    <content><![CDATA[<p>제어문을 활용하면 조건에 따라 동작을 나눌 수 있다. 그리고 반복문을 활용하면 우리가 하나하나 힘겹게 하던 일들을 컴퓨터에게 자동으로 반복시킬 수 있다. 반복문은 원하는 명령들을 한번만 기재하고 반복적으로 실행 가능한 문이다. PYTHON에는 while 반복문과 for 반복문이 있다.</p>
+<a id="more"></a>
+
+<h2 id="while문"><a href="#while문" class="headerlink" title="while문"></a>while문</h2><p>결과값이 false가 나올 때까지 조건부분을 반복수행한다.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">while 조건부분(결과값이 불리언 값으로 나오는 식):</span><br><span class="line">    수행부분(반복적으로 실행하고 싶은 명령들)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> i=&lt;<span class="number">3</span>:</span><br><span class="line">    print(<span class="string">&quot;I can code too!&quot;</span>)</span><br><span class="line">    i = i + <span class="number">1</span></span><br><span class="line">    <span class="comment"># I can code too!를 3번 반복한다</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="if문"><a href="#if문" class="headerlink" title="if문"></a>if문</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if 조건부분(결과값이 불리언 값으로 나오는 식):</span><br><span class="line">    수행부분(조건이 True일 때 실행하고 싶은 명령들)</span><br><span class="line">else:</span><br><span class="line">    수행부분(조건이 False일 때 실행하고 싶은 명령들)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">temperature = <span class="number">15</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> temperautre &lt;= <span class="number">10</span>:</span><br><span class="line">    print(<span class="string">&quot;자켓을 입는다.&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    pirnt(<span class="string">&quot;자켓을 입지 않는다&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 자켓을 입지 않는다</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="elif문"><a href="#elif문" class="headerlink" title="elif문"></a>elif문</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if 조건부분(결과값이 불리언 값으로 나오는 식):</span><br><span class="line">    수행부분(첫번째 조건이 True일 때 실행하고 싶은 명령들)</span><br><span class="line">elif 조건부분(결과값이 불리언 값으로 나오는 식):</span><br><span class="line">    수행부분(첫번째 조건은 False, 두번째 조건이 True일 때 실행하고 싶은 명령들)</span><br><span class="line">else:</span><br><span class="line">    수행부분(조건이 모두 False일 때 실행하고 싶은 명령들)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">5</span></span><br><span class="line">b = <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> a &lt; b:</span><br><span class="line">    print(<span class="string">&quot;a는 b보다 작습니다.&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> a == b:</span><br><span class="line">    print(<span class="string">&quot;a와 b는 같습니다.&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">&quot;a는 b보다 큽니다.&quot;</span>)<span class="string">&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># a는 b보다 큽니다.</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="for문"><a href="#for문" class="headerlink" title="for문"></a>for문</h2><p>for문은 while문과 달리 인덱싱을 위한 i 변수가 필요 없다. 변수의 이름은 임의로 정할 수 있으며, 의미 있는 이름을 정해주는 것이 좋다. 프로그래밍 언어에서 동일한 기능을 깔끔하게 만들어 놓은 것을 ‘syntactic sugar’(꿀)라고 부른다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> 변수 <span class="keyword">in</span> 리스트/range/문자열:</span><br><span class="line">    &lt;첫번째 실행할 줄&gt;</span><br><span class="line">    &lt;두번째 실행할 줄&gt;</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
+
+<h3 id="range-함수"><a href="#range-함수" class="headerlink" title="range 함수"></a>range 함수</h3><p>간편하며 깔끔하다. 리스트를 만들지 않아도 동일한 효과를 낼 수 있다. 또한 메모리가 효율적이다.</p>
+<p><strong><em>파라미터가 2개 있는 range 함수</em></strong></p>
+<p>range(n, m)은 n부터 m - 1까지의 수들을 의미한다.</p>
+<p><strong><em>파라미터가 1개 있는 range 함수</em></strong></p>
+<p>range(m)은 0부터 m - 1까지의 수들을 의미한다.</p>
+<p><strong><em>파라미터가 3개 있는 range 함수</em></strong><br>range(n, m, s)은 n부터 m - 1까지의 수 중 간격이 s인 수들을 의미한다.</p>
+<h2 id="break문"><a href="#break문" class="headerlink" title="break문"></a>break문</h2><p>만약 while문의 조건부분과 상관 없이 반복문에서 나오고 싶으면 break문을 사용한다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i = <span class="number">100</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="comment"># i가 23의 배수면 반복문을 끝냄</span></span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">23</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    i = i + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(i)</span><br></pre></td></tr></table></figure>
+
+<h2 id="continue문"><a href="#continue문" class="headerlink" title="continue문"></a>continue문</h2><p>만약 현재 진행되고 있는 수행부분을 중단시키고 바로 조건부분을 다시 확인하고 싶으면 continue문을 사용한다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="number">15</span>:</span><br><span class="line">    i = i + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># i가 홀수면 print(i) 안하고 바로 조건부분으로 돌아감</span></span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>control flow</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>
