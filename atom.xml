@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-22T15:19:20.923Z</updated>
+  <updated>2020-10-24T05:40:37.984Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML 콘텐츠 모델</title>
+    <link href="http://mjae404.github.io/2020/10/24/html-content-model/"/>
+    <id>http://mjae404.github.io/2020/10/24/html-content-model/</id>
+    <published>2020-10-24T05:40:10.000Z</published>
+    <updated>2020-10-24T05:40:37.984Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;HTML5의 요소는 0개 이상의 카테고리에 속하며, 각 카테고리는 특성이 비슷한 요소끼리 묶어둔 분류이다. 특정 요소는 폼 관련 요소로 따로 분류하여 다양한 폼 관리 처리 모델에서 세부적으로 분류된다. 어떤 요소들은 특정 요소만의 요구사항을 가지고 있고, 아무 카테고리에도 해당되지 않는 경우가 있다. 기본 규칙은 Base HTML Element에 나온 규칙을 따른다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+      <category term="HTML5" scheme="http://mjae404.github.io/tags/HTML5/"/>
+    
+      <category term="Content Model" scheme="http://mjae404.github.io/tags/Content-Model/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS Grid</title>
@@ -525,29 +550,6 @@
       <category term="standard built-in object" scheme="http://mjae404.github.io/tags/standard-built-in-object/"/>
     
       <category term="built-in object" scheme="http://mjae404.github.io/tags/built-in-object/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 디스트럭처링 할당</title>
-    <link href="http://mjae404.github.io/2020/10/02/js-destructuring/"/>
-    <id>http://mjae404.github.io/2020/10/02/js-destructuring/</id>
-    <published>2020-10-02T07:49:16.000Z</published>
-    <updated>2020-10-02T07:49:54.307Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;디스트럭처링 할당(구조 분해 할당, Destructuring assignment)&lt;/strong&gt; 은 구조화된 배열 또는 객체를 Destructuring(비구조화, 구조파괴)하여 1개 이상의 변수에 개별적으로 할당하는 것을 말한다. 배열 또는 객체 리터럴에서 필요한 값만을 추출하여 변수에 할당할 때 주로 사용한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="destructuring" scheme="http://mjae404.github.io/tags/destructuring/"/>
     
   </entry>
   

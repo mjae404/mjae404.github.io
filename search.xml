@@ -5844,4 +5844,71 @@
         <tag>exercise</tag>
       </tags>
   </entry>
+  <entry>
+    <title>HTML 콘텐츠 모델</title>
+    <url>/2020/10/24/html-content-model/</url>
+    <content><![CDATA[<p>HTML5의 요소는 0개 이상의 카테고리에 속하며, 각 카테고리는 특성이 비슷한 요소끼리 묶어둔 분류이다. 특정 요소는 폼 관련 요소로 따로 분류하여 다양한 폼 관리 처리 모델에서 세부적으로 분류된다. 어떤 요소들은 특정 요소만의 요구사항을 가지고 있고, 아무 카테고리에도 해당되지 않는 경우가 있다. 기본 규칙은 Base HTML Element에 나온 규칙을 따른다.</p>
+<a id="more"></a>
+
+<p><img src="/images/content-model.jpg" alt="HTML5 Content Model"></p>
+<h2 id="메타데이터-콘텐츠-Metadata-Content"><a href="#메타데이터-콘텐츠-Metadata-Content" class="headerlink" title="메타데이터 콘텐츠 (Metadata Content)"></a>메타데이터 콘텐츠 (Metadata Content)</h2><ul>
+<li>메타데이터는 나머지 내용의 표현 및 행동을 설정함</li>
+<li>다른 문서와의 관계를 설정하거나, 미분류 정보들을 포함한다.</li>
+</ul>
+<blockquote>
+<p>base, command, link, meta, noscript, script, style, title</p>
+</blockquote>
+<h2 id="플로우-콘텐츠-Flow-Content"><a href="#플로우-콘텐츠-Flow-Content" class="headerlink" title="플로우 콘텐츠 (Flow Content)"></a>플로우 콘텐츠 (Flow Content)</h2><ul>
+<li>문서 및 어플리케이션의 Body에서 사용되는 대부분의 요소는 플로우 콘텐츠로 분류.</li>
+<li>플로우 콘텐츠 모델을 포함할 수 있는 콘텐츠 모델은 최소한 하나의 공백이 아닌 텍스트 노드를 포함하거나, 최소한 하나의 임베디드 콘텐츠를 포함하여야 한다. 이러한 결과로 del요소 및 그 자식 요소들은 del요소의 부모 엘리먼트가 될 수 없다. (강력하게 지켜야 할 내용은 아님)</li>
+<li>스크립트로 데이터를 채우기 위해 자리를 잡아 두는 목적 등의 정당한 이유로 요소가 비어 있을 수 있다.</li>
+</ul>
+<blockquote>
+<p>a, abbr, address, area (map 요소의 자식 요소인 경우), article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas,  cite, code, command, datalist, del, details, dfn, div, dl, em, embed, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, i, iframe, img, input, ins, kbd, keygen, label, map, mark, math, menu, meter, nav, noscript, object, ol, output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span, strong, style (scoped 속성이 있으면), sub, sup, svg, table, textarea, time, ul, var, video, wbr, text</p>
+</blockquote>
+<h2 id="섹션-콘텐츠-Section-Conetnt"><a href="#섹션-콘텐츠-Section-Conetnt" class="headerlink" title="섹션 콘텐츠 (Section Conetnt)"></a>섹션 콘텐츠 (Section Conetnt)</h2><ul>
+<li>헤딩과 푸터의 유효범위를 지정함</li>
+<li>제목과 그 내용을 포함하는 범위를 지정함</li>
+<li>헤딩과 아웃라인을 포함할 수 있다.</li>
+</ul>
+<blockquote>
+<p>article, aside, nav, section</p>
+</blockquote>
+<h2 id="헤딩-콘텐츠-Heading-Content"><a href="#헤딩-콘텐츠-Heading-Content" class="headerlink" title="헤딩 콘텐츠 (Heading Content)"></a>헤딩 콘텐츠 (Heading Content)</h2><p>섹션(섹션 콘텐츠나 또는 헤딩 콘텐츠에 의해 암시적으로 마크업 된 영역)의 헤더를 정의한다.</p>
+<blockquote>
+<p>h1, h2, h3, h4, h5, h6, hgroup</p>
+</blockquote>
+<h2 id="프레이징-콘텐츠-Phrasing-Content"><a href="#프레이징-콘텐츠-Phrasing-Content" class="headerlink" title="프레이징 콘텐츠 (Phrasing Content)"></a>프레이징 콘텐츠 (Phrasing Content)</h2><ul>
+<li>문서의 텍스트이며, 그 텍스트를 단락 내부레벨에서 마크업을 하는 요소</li>
+<li>프레이징 콘텐츠가 모여 문단을 구성한다.</li>
+</ul>
+<blockquote>
+<p>a (프레이징 콘텐츠만을 포함하는 경우), abbr, area (map 요소의 자식요소인 경우), audio, b, bdi, bdo, br, button, canvas, cite, code, command, datalist, del (프레이징 콘텐츠을 포함하는 경우), dfn, em, embed, i, iframe, img, input, ins (프레이징 콘텐츠만을 포함하는 경우), kbd, keygen, label, map (프레이징 콘텐츠만을 포함하는 경우), mark, math, meter, noscript, object, output, progress, q, ruby, s, samp, script, select, small, span, strong, sub, sup, svg, textarea, time, var, video, wbr, text</p>
+</blockquote>
+<h2 id="임베디드-콘텐츠-Embedded-Content"><a href="#임베디드-콘텐츠-Embedded-Content" class="headerlink" title="임베디드 콘텐츠 (Embedded Content)"></a>임베디드 콘텐츠 (Embedded Content)</h2><ul>
+<li>다른 리소스(음악, 영상 등)를 문서에 삽입하는 콘텐츠나, 문서에 삽입된 다른 형태에서 유래한 콘텐츠</li>
+<li>HTML의 네임스페이스에 속하지 않으면서, 콘텐츠를 포함하고 있지만 메타데이터가 아닌 것들을 임베디드 콘텐츠라 한다. (SVG등)</li>
+<li>임베디드 콘텐츠 요소 중 일부는 외부 리소스가 사용이 불가능 할때 사용할 대체 콘텐츠를 갖는다.</li>
+</ul>
+<blockquote>
+<p>audio, canvas, embed, iframe, img, math, object, svg, video</p>
+</blockquote>
+<h2 id="인터랙티브-콘텐츠-Interactive-Content"><a href="#인터랙티브-콘텐츠-Interactive-Content" class="headerlink" title="인터랙티브 콘텐츠 (Interactive Content)"></a>인터랙티브 콘텐츠 (Interactive Content)</h2><p>사용자와의 상호작용을 위해 사용되는 콘텐츠</p>
+<blockquote>
+<p>a, audio (controls 속성이 있으면), button, details, embed, iframe, img (usemap 속성이 있으면), input (type 속성이 hidden 상태가 아니면), keygen, label, menu (type 속성이 toolbar 상태면), object (usemap 속성이 있으면), select, textarea, video (controls 속성이 있으면)</p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="http://darum.daum.net/convention/html/html5_elements">http://darum.daum.net/convention/html/html5_elements</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>HTML5</tag>
+        <tag>Content Model</tag>
+      </tags>
+  </entry>
 </search>
