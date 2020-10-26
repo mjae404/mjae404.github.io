@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-24T18:05:13.748Z</updated>
+  <updated>2020-10-26T14:57:25.317Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 수박수박수박수박수박수?</title>
+    <link href="http://mjae404.github.io/2020/10/26/js-exercise004-watermelon/"/>
+    <id>http://mjae404.github.io/2020/10/26/js-exercise004-watermelon/</id>
+    <published>2020-10-26T14:57:12.000Z</published>
+    <updated>2020-10-26T14:57:25.317Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;길이가 n이고, 수박수박수박수….와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;제한 조건&lt;br&gt;n은 길이 10,000이하인 자연수입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="algorism" scheme="http://mjae404.github.io/tags/algorism/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 제어문</title>
@@ -520,35 +552,6 @@
       <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
     
       <category term="number wrapper object" scheme="http://mjae404.github.io/tags/number-wrapper-object/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 수학 상수와 함수를 위한 Math 객체</title>
-    <link href="http://mjae404.github.io/2020/10/05/js-math-object/"/>
-    <id>http://mjae404.github.io/2020/10/05/js-math-object/</id>
-    <published>2020-10-04T15:51:17.000Z</published>
-    <updated>2020-10-04T15:51:33.651Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Math 객체는 수학 상수와 함수를 위한 프로퍼티와 메소드를 제공하는 빌트인 객체이다. Math 객체는 생성자 함수가 아니다. 따라서 Math 객체는 정적(static) 프로퍼티와 메소드만을 제공한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
-    
-      <category term="built-in object" scheme="http://mjae404.github.io/tags/built-in-object/"/>
-    
-      <category term="math object" scheme="http://mjae404.github.io/tags/math-object/"/>
-    
-      <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
     
   </entry>
   

@@ -6009,4 +6009,39 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 수박수박수박수박수박수?</title>
+    <url>/2020/10/26/js-exercise004-watermelon/</url>
+    <content><![CDATA[<p>길이가 n이고, 수박수박수박수….와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다.</p>
+<blockquote>
+<p>제한 조건<br>n은 길이 10,000이하인 자연수입니다.</p>
+</blockquote>
+<a id="more"></a>
+
+<p><strong><em>개인풀이</em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> result = <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; n ; i++) &#123;</span><br><span class="line">        result += i % <span class="number">2</span> == <span class="number">0</span> ? <span class="string">&quot;수&quot;</span> : <span class="string">&quot;박&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>다른사람 풀이</em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> waterMelon = <span class="function"><span class="params">n</span> =&gt;</span> <span class="string">&quot;수박&quot;</span>.repeat(n).slice(<span class="number">0</span>,n);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (<span class="string">&quot;수박&quot;</span>).repeat(n/<span class="number">2</span>) + ((n%<span class="number">2</span>) ? <span class="string">&#x27;수&#x27;</span> : <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> result = <span class="string">&quot;&quot;</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= n ; i++)&#123;</span><br><span class="line">    <span class="keyword">if</span> (i % <span class="number">2</span> === <span class="number">1</span>)&#123;</span><br><span class="line">        result += <span class="string">&#x27;수&#x27;</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        result += <span class="string">&#x27;박&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>[문제] <a href="https://programmers.co.kr/learn/courses/30/lessons/12922">https://programmers.co.kr/learn/courses/30/lessons/12922</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>exercise</tag>
+        <tag>algorism</tag>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>
