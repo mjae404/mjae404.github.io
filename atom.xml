@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-26T14:57:25.317Z</updated>
+  <updated>2020-10-27T13:39:48.466Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 짝수와 홀수</title>
+    <link href="http://mjae404.github.io/2020/10/27/js-exercise005-odd-even/"/>
+    <id>http://mjae404.github.io/2020/10/27/js-exercise005-odd-even/</id>
+    <published>2020-10-27T13:39:35.000Z</published>
+    <updated>2020-10-27T13:39:48.466Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;num&lt;/code&gt;이 짝수일 경우 &lt;code&gt;Even&lt;/code&gt;을 반환하고 홀수인 경우 &lt;code&gt;Odd&lt;/code&gt;를 반환하는 함수, solution을 완성해주세요.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;제한 조건&lt;br&gt;&lt;code&gt;num&lt;/code&gt;은 &lt;code&gt;int&lt;/code&gt; 범위의 정수입니다.&lt;br&gt;&lt;code&gt;0&lt;/code&gt;은 짝수입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="algorism" scheme="http://mjae404.github.io/tags/algorism/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 수박수박수박수박수박수?</title>
@@ -523,35 +555,6 @@
       <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
     
       <category term="string wrapper object" scheme="http://mjae404.github.io/tags/string-wrapper-object/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS number 래퍼 객체</title>
-    <link href="http://mjae404.github.io/2020/10/06/js-number-wrapper-object/"/>
-    <id>http://mjae404.github.io/2020/10/06/js-number-wrapper-object/</id>
-    <published>2020-10-05T22:13:59.000Z</published>
-    <updated>2020-10-05T22:15:44.041Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Number 객체는 원시 타입 number를 다룰 때 유용한 프로퍼티와 메소드를 제공하는 레퍼(wrapper) 객체이다. 변수 또는 객체의 프로퍼티가 숫자를 값으로 가지고 있다면 Number 객체의 별도 생성없이 Number 객체의 프로퍼티와 메소드를 사용할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
-    
-      <category term="built-in object" scheme="http://mjae404.github.io/tags/built-in-object/"/>
-    
-      <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
-    
-      <category term="number wrapper object" scheme="http://mjae404.github.io/tags/number-wrapper-object/"/>
     
   </entry>
   

@@ -6044,4 +6044,35 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 짝수와 홀수</title>
+    <url>/2020/10/27/js-exercise005-odd-even/</url>
+    <content><![CDATA[<p>정수 <code>num</code>이 짝수일 경우 <code>Even</code>을 반환하고 홀수인 경우 <code>Odd</code>를 반환하는 함수, solution을 완성해주세요.</p>
+<blockquote>
+<p>제한 조건<br><code>num</code>은 <code>int</code> 범위의 정수입니다.<br><code>0</code>은 짝수입니다.</p>
+</blockquote>
+<a id="more"></a>
+
+<p><strong><em>개인 풀이</em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(num%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Even&quot;</span></span><br><span class="line">    &#125; <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Odd&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> answer = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>다른 사람 풀이</em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">evenOrOdd</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> num % <span class="number">2</span> ? <span class="string">&quot;Odd&quot;</span> : <span class="string">&quot;Even&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>[문제] <a href="https://programmers.co.kr/learn/courses/30/lessons/12937?language=javascript">https://programmers.co.kr/learn/courses/30/lessons/12937?language=javascript</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>exercise</tag>
+        <tag>algorism</tag>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>
