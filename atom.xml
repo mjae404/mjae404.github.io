@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-27T13:39:48.466Z</updated>
+  <updated>2020-10-28T11:53:32.197Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 데이터 분석</title>
+    <link href="http://mjae404.github.io/2020/10/28/python-data-analysis/"/>
+    <id>http://mjae404.github.io/2020/10/28/python-data-analysis/</id>
+    <published>2020-10-28T11:53:20.000Z</published>
+    <updated>2020-10-28T11:53:32.197Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;파이썬으로는 데이터 분석을 할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="data analysis" scheme="http://mjae404.github.io/tags/data-analysis/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 짝수와 홀수</title>
@@ -84,8 +107,8 @@
     <title>PYTHON 제어문</title>
     <link href="http://mjae404.github.io/2020/10/25/python-control-flow-statement/"/>
     <id>http://mjae404.github.io/2020/10/25/python-control-flow-statement/</id>
-    <published>2020-10-24T18:04:58.000Z</published>
-    <updated>2020-10-24T18:05:13.748Z</updated>
+    <published>2020-10-25T11:52:20.000Z</published>
+    <updated>2020-10-28T11:52:57.910Z</updated>
     
     <summary type="html">
     
@@ -528,33 +551,6 @@
       <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
     
       <category term="date object" scheme="http://mjae404.github.io/tags/date-object/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS String 래퍼 객체</title>
-    <link href="http://mjae404.github.io/2020/10/07/js-string-wrapper-object/"/>
-    <id>http://mjae404.github.io/2020/10/07/js-string-wrapper-object/</id>
-    <published>2020-10-07T12:13:53.000Z</published>
-    <updated>2020-10-07T12:14:45.976Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;String 객체는 원시 타입인 문자열을 다룰 때 유용한 프로퍼티와 메소드를 제공하는 래퍼(wrapper) 객체이다. 변수 또는 객체 프로퍼티가 문자열을 값으로 가지고 있다면 String 객체의 별도 생성없이 String 객체의 프로퍼티와 메소드를 사용할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
-    
-      <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
-    
-      <category term="string wrapper object" scheme="http://mjae404.github.io/tags/string-wrapper-object/"/>
     
   </entry>
   
