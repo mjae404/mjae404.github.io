@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-28T11:53:32.197Z</updated>
+  <updated>2020-10-29T14:37:03.196Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 셀렉터</title>
+    <link href="http://mjae404.github.io/2020/10/29/css-selecter/"/>
+    <id>http://mjae404.github.io/2020/10/29/css-selecter/</id>
+    <published>2020-10-29T14:36:51.000Z</published>
+    <updated>2020-10-29T14:37:03.196Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;style을 적용하고자 하는 HTML 요소를 선택할 때 셀렉터를 사용하며 선택한 요소에 스타일을 정의한다. 여러개의 셀렉터를 함께 사용할 수 있고 쉼표(&lt;code&gt;,&lt;/code&gt;)로 구분한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="selector" scheme="http://mjae404.github.io/tags/selector/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 데이터 분석</title>
@@ -521,36 +546,6 @@
       <category term="module" scheme="http://mjae404.github.io/tags/module/"/>
     
       <category term="es6" scheme="http://mjae404.github.io/tags/es6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 날짜와 시간을 위한 Date 객체</title>
-    <link href="http://mjae404.github.io/2020/10/09/js-date-object/"/>
-    <id>http://mjae404.github.io/2020/10/09/js-date-object/</id>
-    <published>2020-10-09T12:33:28.000Z</published>
-    <updated>2020-10-21T14:43:18.712Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Date 객체는 날짜와 시간(년, 월, 시, 분, 초, 밀리초)을 위한 메소드를 제공하는 &lt;strong&gt;빌트인 객체이면서 생성자 함수&lt;/strong&gt; 이다. &lt;strong&gt;내부적으로 숫자값을 가지며&lt;/strong&gt;, 1970년 1월 1일 00:00(UTC)를 기점으로 현재 시간까지의 밀리초를 나타낸다.&lt;/p&gt;
-&lt;p&gt;현재 날짜와 시간은 &lt;strong&gt;자바스크립트 코드가 동작한 시스템의 시계에 의해 결정&lt;/strong&gt; 된다. 시스템 시계의 설정에 따라 서로 다른 값을 가질 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
-    
-      <category term="built-in object" scheme="http://mjae404.github.io/tags/built-in-object/"/>
-    
-      <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
-    
-      <category term="date object" scheme="http://mjae404.github.io/tags/date-object/"/>
     
   </entry>
   
