@@ -6434,4 +6434,97 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS 박스모델</title>
+    <url>/2020/10/31/css-boxmodel/</url>
+    <content><![CDATA[<p>모든 HTML 요소는 Box 형태의 영역을 가지고 있다. Content, Padding, Border, Margin으로 구성되어 있으며 브라우저는 박스 모델 크기(dimension)와 프로퍼티(색, 배경, 모양 등) 위치를 근거로 렌더링한다. <strong>모든 박스모델 관련 프로퍼티는 상속되지 않는다.</strong></p>
+<a id="more"></a>
+
+<p><img src="/images/css3-box-model.jpg" alt="CSS3 BOX MODEL"></p>
+<p><strong><em>Box 모델을 구성하는 Content, Padding, Border, Margin</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>명칭</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content</td>
+<td>요소의 텍스트나 이미지 등 실제 내용이 위치하는 영역.</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>Border 안쪽에 위치하는 요소의 내부 여백 영역.</td>
+</tr>
+<tr>
+<td>Border</td>
+<td>테두리 영역으로 border의 프로퍼티 값은 테두리 두께를 의미한다.</td>
+</tr>
+<tr>
+<td>Margin</td>
+<td>Border 바깥에 위치하는 요소의 외부 여백 영역. 배경색을 지정할 수 없다.</td>
+</tr>
+</tbody></table>
+<h2 id="width-height-프로퍼티"><a href="#width-height-프로퍼티" class="headerlink" title="width / height 프로퍼티"></a>width / height 프로퍼티</h2><ul>
+<li>요소의 너비와 높이를 지정하기 위해 사용된다. 이때 지정되는 요소의 너비와 요소는 Contents 영역을 대상으로 한다.</li>
+<li>지정한 영역보다 실제 내용물이 더 크다면 넘치게 된다.</li>
+<li><code>overflow: hidden;</code>을 지정하면 넘친 콘텐츠를 감출 수 있다.</li>
+<li>width와 height 프로퍼티의 초기값은 <code>auto</code>이다. 상황에 따라 브라우저가 적당한 width와 height 값을 계산한다.</li>
+<li>명시적으로 높이나 너비값을 지정하기 위해서는 px, % 등의 크기단위를 사용한다.</li>
+</ul>
+<h2 id="margin-padding-프로퍼티"><a href="#margin-padding-프로퍼티" class="headerlink" title="margin / padding 프로퍼티"></a>margin / padding 프로퍼티</h2><ul>
+<li>top, right, left, bottom 4개의 방향에 대해서 지정할 수 있다.</li>
+<li>margin 프로퍼티에 <code>auto</code> 키워드를 설정하면 해당 요소를 브라우저 중앙에 위치시킬 수 있다.</li>
+<li>브라우저의 너비보다 요소가 더 크면 스크롤바가 생성되기 때문에 <code>max-width</code> 프로퍼티를 사용할 수 있다. 이 프로퍼티를 사용하게 되면브라우저 너비가 요소의 너비보다 좁아질 때 자동으로 요소의 너비가 줄어든다. (<code>min-width</code>: 요소 너비의 최소값 지정)</li>
+</ul>
+<h2 id="border-프로퍼티"><a href="#border-프로퍼티" class="headerlink" title="border 프로퍼티"></a>border 프로퍼티</h2><h3 id="border-style"><a href="#border-style" class="headerlink" title="border-style"></a>border-style</h3><p>테두리선 스타일을 지정한다. 프로퍼티 값의 갯수에 따라 top, right, left, bottom에 지정 가능하다.</p>
+<blockquote>
+<p>dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden</p>
+</blockquote>
+<h3 id="border-width"><a href="#border-width" class="headerlink" title="border-width"></a>border-width</h3><p>테두리의 두께를 지정한다. 프로퍼티 값의 갯수에 따라 top, right, left, bottom에 지정 가능하다. <code>border-style</code>과 함께 사용하지 않으면 적용되지 않는다.</p>
+<h3 id="border-color"><a href="#border-color" class="headerlink" title="border-color"></a>border-color</h3><p>테두리의 색상을 지정한다. 프로퍼티 값의 갯수에 따라 top, right, left, bottom에 지정 가능하다. <code>border-style</code>과 함께 사용하지 않으면 적용되지 않는다.</p>
+<h3 id="border-radius"><a href="#border-radius" class="headerlink" title="border-radius"></a>border-radius</h3><p>테두리 모서리를 둥글게 표현하도록 지정한다. 값의 길이를 나타내는 단위(px, em 등)와 %를 사용한다. 각각의 모서리에 개별로 지정할 수도 있고, 한번에 지정할 수도 있다. 타원형도 가능하다.</p>
+<p><strong><em>각각의 모서리에 타원형 둥근 모서리 축약 설정</em></strong></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.border-rounded</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50px</span> <span class="number">50px</span> <span class="number">0</span> <span class="number">0</span> / <span class="number">25px</span> <span class="number">25px</span> <span class="number">0</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/css3-border-radius.jpg" alt="각각의 모서리에 타원형 둥근 모서리 축약 설정"></p>
+<h3 id="border"><a href="#border" class="headerlink" title="border"></a>border</h3><p><code>border-width</code>, <code>border-style</code>, <code>border-color</code>를 한번에 설정하기 위한 shorthand 프로퍼티이다.</p>
+<h2 id="box-sizing-프로퍼티"><a href="#box-sizing-프로퍼티" class="headerlink" title="box-sizing 프로퍼티"></a>box-sizing 프로퍼티</h2><p>width, height 프로퍼티의 대상 영역을 변경할 수 있다. 기본값은 content-box이다. box-sizing 프로퍼티는 상속되지 않는다.</p>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>content-box</td>
+<td>width, height 프로퍼티 값은 content 영역을 의미한다. (기본값)</td>
+</tr>
+<tr>
+<td>border-box</td>
+<td>width, height 프로퍼티 값은 content 영역, padding, border가 포함된 값을 의미한다.</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>box-sizing 프로퍼티는 <strong>상속되지 않으므로</strong> box-sizing 프로퍼티를 사용하도록 하려면 아래와 같이 정의하여야 한다.</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line">*, *<span class="selector-pseudo">:before</span>, *<span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: inherit;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://poiemaweb.com/css3-box-model">https://poiemaweb.com/css3-box-model</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>CSS3</tag>
+        <tag>box model</tag>
+      </tags>
+  </entry>
 </search>

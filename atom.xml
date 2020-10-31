@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-10-30T14:03:07.260Z</updated>
+  <updated>2020-10-31T12:36:00.788Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 박스모델</title>
+    <link href="http://mjae404.github.io/2020/10/31/css-boxmodel/"/>
+    <id>http://mjae404.github.io/2020/10/31/css-boxmodel/</id>
+    <published>2020-10-31T12:35:45.000Z</published>
+    <updated>2020-10-31T12:36:00.788Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;모든 HTML 요소는 Box 형태의 영역을 가지고 있다. Content, Padding, Border, Margin으로 구성되어 있으며 브라우저는 박스 모델 크기(dimension)와 프로퍼티(색, 배경, 모양 등) 위치를 근거로 렌더링한다. &lt;strong&gt;모든 박스모델 관련 프로퍼티는 상속되지 않는다.&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="box model" scheme="http://mjae404.github.io/tags/box-model/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 객체</title>
@@ -517,33 +542,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="regexp" scheme="http://mjae404.github.io/tags/regexp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 문서 객체 모델</title>
-    <link href="http://mjae404.github.io/2020/10/11/js-dom/"/>
-    <id>http://mjae404.github.io/2020/10/11/js-dom/</id>
-    <published>2020-10-11T09:23:54.000Z</published>
-    <updated>2020-10-11T09:30:55.577Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;텍스트 파일로 만들어져 있는 웹문서는 브라우저가 이해할 수 있는 구조이어야 한다. 브라우저의 렌더링 엔진은 문서를 로드하고 파싱하여 웹문서를 브라우저가 이해할 수 있는 구조로 구성한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="Document Object Model" scheme="http://mjae404.github.io/tags/Document-Object-Model/"/>
-    
-      <category term="DOM" scheme="http://mjae404.github.io/tags/DOM/"/>
-    
-      <category term="DOM tree" scheme="http://mjae404.github.io/tags/DOM-tree/"/>
     
   </entry>
   
