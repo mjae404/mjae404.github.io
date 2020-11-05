@@ -6803,4 +6803,122 @@
         <tag>event</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS 필터</title>
+    <url>/2020/11/05/css-filter/</url>
+    <content><![CDATA[<p>filter 속성은 흐림 효과, 색상 변형 등 이미지 비주얼 효과를 정의한다. CSS 표준은 미리 정의된 효과를 내는 몇가지 함수를 포함하고 있으며, SVG 필터 요소에 대한 URL 참조를 사용하여 SVG 필터를 적용할 수도 있다. <code>hue-rotate()</code>는 0deg-360deg까지 표현한다.</p>
+<a id="more"></a>
+
+<table>
+<thead>
+<tr>
+<th>특징</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>기본값</td>
+<td>filter: none</td>
+</tr>
+<tr>
+<td>상속</td>
+<td>안됨</td>
+</tr>
+<tr>
+<td>애니메이션</td>
+<td>안됨</td>
+</tr>
+<tr>
+<td>적용</td>
+<td>─</td>
+</tr>
+<tr>
+<td>버전</td>
+<td>CSS3</td>
+</tr>
+</tbody></table>
+<h2 id="문법"><a href="#문법" class="headerlink" title="문법"></a>문법</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">filter</span> :</span><br><span class="line">none | blur() | brightness() | contrast() | drop-shadow() | grayscale() |</span><br><span class="line">hue-rotate() | invert() | opacity() | saturate() | sepia() | url()</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="속성"><a href="#속성" class="headerlink" title="속성"></a>속성</h2><table>
+<thead>
+<tr>
+<th>속성값</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>아무런 효과를 주지 않는다.</td>
+</tr>
+<tr>
+<td>blur(px)</td>
+<td>이미지의 블러 효과 설정</td>
+</tr>
+<tr>
+<td>brightness(%)</td>
+<td>이미지의 밝고 어두움 정도를 설정</td>
+</tr>
+<tr>
+<td>contrast(%)</td>
+<td>이미지의 대비를 설정</td>
+</tr>
+<tr>
+<td>drop-shadow()</td>
+<td>이미지의 그림자를 설정</td>
+</tr>
+<tr>
+<td>grayscale(%)</td>
+<td>이미지의 그레이스케일을 설정</td>
+</tr>
+<tr>
+<td>hue-rotate(deg)</td>
+<td>이미지의 색조를 설정</td>
+</tr>
+<tr>
+<td>invert(%)</td>
+<td>이미지를 반전</td>
+</tr>
+<tr>
+<td>opacity(%)</td>
+<td>이미지의 투명도를 설정</td>
+</tr>
+<tr>
+<td>saturate(%)</td>
+<td>이미지의 채도를 설정</td>
+</tr>
+<tr>
+<td>sepia(%)</td>
+<td>이미지의 세피아 효과를 설정</td>
+</tr>
+<tr>
+<td>url()</td>
+<td>이미지의 경로를 설정</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>filter의 속성 값을 상위요소한테 상속받는다.</td>
+</tr>
+</tbody></table>
+<h3 id="속성-조합"><a href="#속성-조합" class="headerlink" title="속성 조합"></a>속성 조합</h3><p>여러 개의 속성을 조합하여 랜더링을 조작할 수 있다.</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 이미지의 대비와 밝기를 높인다</span><br><span class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">contrast</span>(175%) <span class="selector-tag">brightness</span>(103%);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong></p>
+</blockquote>
+<ul>
+<li><a href="https://webzz.tistory.com/444">https://webzz.tistory.com/444</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">https://developer.mozilla.org/en-US/docs/Web/CSS/filter</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>CSS3</tag>
+        <tag>filter</tag>
+      </tags>
+  </entry>
 </search>

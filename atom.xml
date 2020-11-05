@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-01T03:28:05.806Z</updated>
+  <updated>2020-11-05T14:54:14.403Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 필터</title>
+    <link href="http://mjae404.github.io/2020/11/05/css-filter/"/>
+    <id>http://mjae404.github.io/2020/11/05/css-filter/</id>
+    <published>2020-11-05T14:54:02.000Z</published>
+    <updated>2020-11-05T14:54:14.403Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;filter 속성은 흐림 효과, 색상 변형 등 이미지 비주얼 효과를 정의한다. CSS 표준은 미리 정의된 효과를 내는 몇가지 함수를 포함하고 있으며, SVG 필터 요소에 대한 URL 참조를 사용하여 SVG 필터를 적용할 수도 있다. &lt;code&gt;hue-rotate()&lt;/code&gt;는 0deg-360deg까지 표현한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="filter" scheme="http://mjae404.github.io/tags/filter/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 이벤트</title>
@@ -506,43 +531,6 @@
       <category term="es6" scheme="http://mjae404.github.io/tags/es6/"/>
     
       <category term="symbol" scheme="http://mjae404.github.io/tags/symbol/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 클래스</title>
-    <link href="http://mjae404.github.io/2020/10/13/js-class/"/>
-    <id>http://mjae404.github.io/2020/10/13/js-class/</id>
-    <published>2020-10-13T12:45:08.000Z</published>
-    <updated>2020-10-13T12:47:56.059Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;클래스는 생성자 함수와 매우 유사하게 동작하지만 아래와 같이 몇가지 차이가 있다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;클래스는 new 연산자를 사용하지 않고 호출하면 에러가 발행한다. 하지만 생성자 함수는 new 연산자를 사용하지 않고 호출하면 일반 함수로서 호출된다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;클래스는 상속을 지원하는 extentds와 super 키워드를 제공한다. 하지만 생성자 함수는 extentds와 super 키워드를 지원하지 않는다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;클래스는 호이스팅이 발생하지 않는 것처럼 동작한다. 하지만 함수 선언문으로 정의된 생성자 함수는 함수 호이스팅이 발생한다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;클래스의 모든 코드는 암묵적으로 strict 모드가 지정되어 실행되며 strict 모드를 해지할 수 없다. 하지만 생성자 함수는 암묵적으로 strict 모드가 지정되지 않는다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;클래스의 constructor, 프로토타입 메소드, 정적 메소드는 모두 프로퍼티 어트리뷰트 &lt;code&gt;[[Enumerable]]&lt;/code&gt;의 값이 false이다. 다시 말해, 열거되지 않는다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="es6" scheme="http://mjae404.github.io/tags/es6/"/>
-    
-      <category term="class" scheme="http://mjae404.github.io/tags/class/"/>
     
   </entry>
   
