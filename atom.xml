@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-05T14:54:14.403Z</updated>
+  <updated>2020-11-05T15:06:15.611Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS flex</title>
+    <link href="http://mjae404.github.io/2020/11/06/css-flex/"/>
+    <id>http://mjae404.github.io/2020/11/06/css-flex/</id>
+    <published>2020-11-05T15:06:01.000Z</published>
+    <updated>2020-11-05T15:06:15.611Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;대부분의 사이트는 수직적으로 레이아웃이 구성되어 있으며 위아래로 스크롤하여 사용하게 된다. 수평 구조의  경우 &lt;code&gt;table&lt;/code&gt;, &lt;code&gt;float&lt;/code&gt;, &lt;code&gt;inline-block&lt;/code&gt;을 주로 사용하고 있으나 주로 차선책일 뿐이며 &lt;code&gt;flex&lt;/code&gt;로 레이아웃을 쉽게 구성할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="flex" scheme="http://mjae404.github.io/tags/flex/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 필터</title>
@@ -506,31 +531,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="closure" scheme="http://mjae404.github.io/tags/closure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 7번째 데이터 타입 symbol</title>
-    <link href="http://mjae404.github.io/2020/10/14/js-symbol/"/>
-    <id>http://mjae404.github.io/2020/10/14/js-symbol/</id>
-    <published>2020-10-13T15:30:57.000Z</published>
-    <updated>2020-10-13T15:31:21.721Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;심볼(symbol)은 ES6에서 새롭게 추가된 7번째 타입으로 변경 불가능한 원시 타입의 값이다. 심볼 값은 다른 값과 중복되지 않는 유일무이한 값이다. 따라서 주로 이름의 충돌 위험이 없는 유일한 프로퍼티 키를 만들기 위해 사용한다. 심볼은 중복되지 않는 상수 값을 생성하는 것은 물론 기존에 작성된 코드에 영향을 주지 않고 새로운 프로퍼티를 추가하기 위해, 즉 하위 호환성을 보장하기 위해 도입되었다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="es6" scheme="http://mjae404.github.io/tags/es6/"/>
-    
-      <category term="symbol" scheme="http://mjae404.github.io/tags/symbol/"/>
     
   </entry>
   
