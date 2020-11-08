@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-08T06:24:16.514Z</updated>
+  <updated>2020-11-08T17:21:43.878Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS BEM 방법론</title>
+    <link href="http://mjae404.github.io/2020/11/09/css-ben-methodology/"/>
+    <id>http://mjae404.github.io/2020/11/09/css-ben-methodology/</id>
+    <published>2020-11-08T17:21:00.000Z</published>
+    <updated>2020-11-08T17:21:43.878Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSS 구조를 개선시키기 위한 CSS 개발 방법론은 여러가지가 있다. OOCSS, SMACSS, BEM 등이 있으며 BEM은 Block Element Modifier의 약자이다. BEM 방법론은 &lt;strong&gt;ID에는 사용할 수 없고, 오직 클래스명에만 활용할 수 있다&lt;/strong&gt;. 필요하다면 클래스명은 BEM 방식의 이름을 여러번 반복하여 재사용할 수 있도록 한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="BEM" scheme="http://mjae404.github.io/tags/BEM/"/>
+    
+      <category term="methodology" scheme="http://mjae404.github.io/tags/methodology/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 미디어쿼리</title>
@@ -508,29 +533,6 @@
       <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
     
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 리스트</title>
-    <link href="http://mjae404.github.io/2020/10/20/python-list/"/>
-    <id>http://mjae404.github.io/2020/10/20/python-list/</id>
-    <published>2020-10-20T14:03:50.000Z</published>
-    <updated>2020-10-20T14:05:15.399Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;변수에 여러가지 값을 저장하고 싶다면 리스트(list)라는 자료형을 사용하면 된다. 리스트 안에는 또 다른 리스트가 있을 수 있으며, &lt;strong&gt;nested list&lt;/strong&gt; 라고 부른다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-      <category term="list" scheme="http://mjae404.github.io/tags/list/"/>
     
   </entry>
   
