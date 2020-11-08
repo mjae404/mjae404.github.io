@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-07T03:45:09.225Z</updated>
+  <updated>2020-11-08T06:24:16.514Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 미디어쿼리</title>
+    <link href="http://mjae404.github.io/2020/11/08/css-mediaquery/"/>
+    <id>http://mjae404.github.io/2020/11/08/css-mediaquery/</id>
+    <published>2020-11-08T06:23:57.000Z</published>
+    <updated>2020-11-08T06:24:16.514Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;다양한 미디어 유형이나 장치에 따라 서로 다른 스타일 규칙을 적용할 수 있다.&lt;/p&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;media&lt;/span&gt; 미디어타입 &lt;span class=&quot;selector-tag&quot;&gt;and&lt;/span&gt; (미디어특성) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    CSS 코드&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="media query" scheme="http://mjae404.github.io/tags/media-query/"/>
+    
+      <category term="responsive" scheme="http://mjae404.github.io/tags/responsive/"/>
+    
+  </entry>
   
   <entry>
     <title>Git cherry-pick</title>
@@ -505,29 +531,6 @@
       <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
       <category term="list" scheme="http://mjae404.github.io/tags/list/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 모듈</title>
-    <link href="http://mjae404.github.io/2020/10/19/python-module/"/>
-    <id>http://mjae404.github.io/2020/10/19/python-module/</id>
-    <published>2020-10-18T15:09:03.000Z</published>
-    <updated>2020-10-18T15:09:32.898Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;모듈&lt;/strong&gt; 은 바로 실행하는 용도가 아니라, 나중에 사용할 함수나 클래스 등을 미리 정의해둔 파일이다. 정보를 한번만 정의해두고 import하면 여러 프로그램에서 손쉽게 사용할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-      <category term="module" scheme="http://mjae404.github.io/tags/module/"/>
     
   </entry>
   

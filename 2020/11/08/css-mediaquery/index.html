@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjaedot.github.io">
   <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/>
   <title>
-    Git cherry-pick |  404 Not Found
+    CSS 미디어쿼리 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -46,7 +46,7 @@ ga('send', 'pageview');
 
   
 
-  <link rel="canonical" href="http://mjae404.github.io/2020/11/07/git-cherry-pick/"/>
+  <link rel="canonical" href="http://mjae404.github.io/2020/11/08/css-mediaquery/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -56,7 +56,7 @@ ga('send', 'pageview');
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-git-cherry-pick" class="article article-type-post" itemscope
+  <article id="post-css-mediaquery" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -64,7 +64,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Git cherry-pick
+  CSS 미디어쿼리
 </h1>
   
 
@@ -73,12 +73,12 @@ ga('send', 'pageview');
 
     
     <div class="article-meta">
-      <a href="/2020/11/07/git-cherry-pick/" class="article-date">
-  <time datetime="2020-11-07T03:44:59.000Z" itemprop="datePublished">2020-11-07</time>
+      <a href="/2020/11/08/css-mediaquery/" class="article-date">
+  <time datetime="2020-11-08T06:23:57.000Z" itemprop="datePublished">2020-11-08</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/git/">git</a>
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a>
   </div>
 
       
@@ -94,26 +94,110 @@ ga('send', 'pageview');
       
 
       
-      <p>코드 관리를 하다 보면 커밋을 다른 브랜치에 잘못 하거나 코드 의존성 때문에 다른 사람의 커밋중 일부를 가져와야 하는 경우가 생긴다. <code>git rebase</code>나 <code>git cherry-pick</code>을 사용한다.</p>
+      <p>다양한 미디어 유형이나 장치에 따라 서로 다른 스타일 규칙을 적용할 수 있다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">media</span> 미디어타입 <span class="selector-tag">and</span> (미디어특성) &#123;</span><br><span class="line">    CSS 코드</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
 
-<h2 id="git-cherry-pick"><a href="#git-cherry-pick" class="headerlink" title="git cherry-pick"></a>git cherry-pick</h2><p>다른 브랜치에 있는 커밋을 선택적으로 내 브랜치에 적용시킬 때 사용하는 명령어이다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick &lt;commit_hash_1&gt; &lt;commit_hash_2&gt;…</span><br></pre></td></tr></table></figure>
-
-<h2 id="–continue-or-–abort"><a href="#–continue-or-–abort" class="headerlink" title="–continue or –abort"></a>–continue or –abort</h2><p>cherry-pick하려는 커밋과 내 브랜치 사이에 conflict가 발생하는 경우 두가지 옵션이 있다.</p>
-<ol>
-<li><p>Conflict를 해결하고 cherry-pick을 진행시킨다. 코드를 수정하고 <code>git add &lt;path&gt;</code> 명령어로 수정된 코드를 올린다. <code>git cherry-pick --continue</code> 명령어를 사용하면 다시 진행이 시작된다.</p>
-</li>
-<li><p>cherry-pick을 중단한다. <code>git cherry-pick --abort</code> 명령어를  사용해 cherry-pick을 중단하면 cherry-pick을 하기 전 상태로 돌아갈 수 있다.</p>
-</li>
-</ol>
-<h2 id="chery-pick-merge"><a href="#chery-pick-merge" class="headerlink" title="chery-pick merge"></a>chery-pick merge</h2><p>merge commit을 cherry-pick 하고 싶을 때 사용한다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick -m 1 &lt;merge_commit_hash&gt;</span><br></pre></td></tr></table></figure>
-
+<h2 id="미디어-타입"><a href="#미디어-타입" class="headerlink" title="미디어 타입"></a>미디어 타입</h2><table>
+<thead>
+<tr>
+<th>타입</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>all</code></td>
+<td>모든 미디어 타입에 적용</td>
+<td>all</td>
+</tr>
+<tr>
+<td><code>screen</code></td>
+<td>컴퓨터 화면, 태블릿, 스마트폰 등</td>
+<td></td>
+</tr>
+<tr>
+<td><code>print</code></td>
+<td>인쇄 전용</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="미디어-특성"><a href="#미디어-특성" class="headerlink" title="미디어 특성"></a>미디어 특성</h2><table>
+<thead>
+<tr>
+<th>특성</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>width</code></td>
+<td>뷰포트 가로 너비</td>
+</tr>
+<tr>
+<td><code>max-width</code></td>
+<td>뷰포트 최대 가로 너비(이하)</td>
+</tr>
+<tr>
+<td><code>min-width</code></td>
+<td>뷰포트 최소 가로 너비(이상)</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>뷰포트 세로 너비</td>
+</tr>
+<tr>
+<td><code>max-height</code></td>
+<td>뷰포트 최대 세로 너비(이하)</td>
+</tr>
+<tr>
+<td><code>min-height</code></td>
+<td>뷰포트 최대 세로 너비(이상)</td>
+</tr>
+<tr>
+<td><code>orientation</code></td>
+<td>뷰포트 방향(<code>portrait</code>, <code>landscape</code>)</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>다른 특성들</td>
+</tr>
+</tbody></table>
+<h2 id="Miead-Grid-options"><a href="#Miead-Grid-options" class="headerlink" title="Miead(Grid) options"></a>Miead(Grid) options</h2><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>디바이스</th>
+<th>단위(px)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Large Devices</td>
+<td>Desktops</td>
+<td>1024px 이상</td>
+</tr>
+<tr>
+<td>Medium Devices</td>
+<td>Desktops + Tablets</td>
+<td>1024px 이하</td>
+</tr>
+<tr>
+<td>Small evices</td>
+<td>Tablets</td>
+<td>992px 이하</td>
+</tr>
+<tr>
+<td>Extra Small Devices</td>
+<td>Phones</td>
+<td>768px 이하</td>
+</tr>
+</tbody></table>
+<h2 id="미디어쿼리-파일-관리"><a href="#미디어쿼리-파일-관리" class="headerlink" title="미디어쿼리 파일 관리"></a>미디어쿼리 파일 관리</h2><p>미디어쿼리는 파일을 분리하여 관리할 수 있다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">media</span>=<span class="string">&quot;미디어타입 and (미디어특성)&quot;</span> <span class="attr">href</span>=<span class="string">&quot;파일명&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <hr>
 <blockquote>
-<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://imasoftwareengineer.tistory.com/7">https://imasoftwareengineer.tistory.com/7</a></p>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 HTML &amp; CSS _ 박영웅 강사님</p>
 </blockquote>
 
       
@@ -121,10 +205,10 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/11/07/git-cherry-pick/" data-id="ckh75a85m0000nktv7kh1g5ht"
+      <a data-url="http://mjae404.github.io/2020/11/08/css-mediaquery/" data-id="ckh8qetya0000lgtvhu4i0xy5"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cherry-pick/" rel="tag">cherry-pick</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/media-query/" rel="tag">media query</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/responsive/" rel="tag">responsive</a></li></ul>
 
     </footer>
 
@@ -134,19 +218,10 @@ ga('send', 'pageview');
   
   <nav class="article-nav">
     
-      <a href="/2020/11/08/css-mediaquery/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">
-          
-            CSS 미디어쿼리
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/11/06/css-flex/" class="article-nav-link">
+      <a href="/2020/11/07/git-cherry-pick/" class="article-nav-link">
         <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">CSS flex</div>
+        <div class="article-nav-title">Git cherry-pick</div>
       </a>
     
   </nav>
