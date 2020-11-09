@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-08T17:21:43.878Z</updated>
+  <updated>2020-11-09T16:02:18.941Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CSS OOCSS 방법론</title>
+    <link href="http://mjae404.github.io/2020/11/10/css-oocss-methodology/"/>
+    <id>http://mjae404.github.io/2020/11/10/css-oocss-methodology/</id>
+    <published>2020-11-09T16:01:35.000Z</published>
+    <updated>2020-11-09T16:02:18.941Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Object Oriented CSS의 약자이며 Nicole Sullivan에 의해 개발된 프레임워크이다. CSS를 모듈 방식으로 코딩하여 중복을 최소화하는 기법이다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="methodology" scheme="http://mjae404.github.io/tags/methodology/"/>
+    
+      <category term="OOCSS" scheme="http://mjae404.github.io/tags/OOCSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CSS BEM 방법론</title>
     <link href="http://mjae404.github.io/2020/11/09/css-ben-methodology/"/>
     <id>http://mjae404.github.io/2020/11/09/css-ben-methodology/</id>
     <published>2020-11-08T17:21:00.000Z</published>
-    <updated>2020-11-08T17:21:43.878Z</updated>
+    <updated>2020-11-08T17:22:07.461Z</updated>
     
     <summary type="html">
     
@@ -95,7 +120,7 @@
     <link href="http://mjae404.github.io/2020/11/06/css-flex/"/>
     <id>http://mjae404.github.io/2020/11/06/css-flex/</id>
     <published>2020-11-05T15:06:01.000Z</published>
-    <updated>2020-11-05T15:06:15.611Z</updated>
+    <updated>2020-11-08T17:22:22.706Z</updated>
     
     <summary type="html">
     
@@ -504,33 +529,6 @@
       <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
     
       <category term="date object" scheme="http://mjae404.github.io/tags/date-object/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 삼각형 출력하기</title>
-    <link href="http://mjae404.github.io/2020/10/21/js-exercise001/"/>
-    <id>http://mjae404.github.io/2020/10/21/js-exercise001/</id>
-    <published>2020-10-21T11:31:48.000Z</published>
-    <updated>2020-10-21T11:35:46.964Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;다음을 참고하여 *(별)로  삼각형을 문자열로 완성하라. 개행문자(‘\n’)를 사용하여 개행한다. 완성된 문자열의 마지막은 개행문자(‘\n’)로 끝나도 관계없다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
     
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
