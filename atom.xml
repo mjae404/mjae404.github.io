@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-09T16:02:18.941Z</updated>
+  <updated>2020-11-10T15:58:51.730Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS SMACSS 방법론</title>
+    <link href="http://mjae404.github.io/2020/11/11/css-smacss-methodology/"/>
+    <id>http://mjae404.github.io/2020/11/11/css-smacss-methodology/</id>
+    <published>2020-11-10T15:57:48.000Z</published>
+    <updated>2020-11-10T15:58:51.730Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SMACSS(스메스)는 대규모 프로젝트를 위한 스타일링 지침이다. 스타일을 다섯가지로 분류하고 각 유형에 맞는 선택자(selector)와 작명법(naming convention), 코딩 기법을 제시한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="methodology" scheme="http://mjae404.github.io/tags/methodology/"/>
+    
+      <category term="SMACSS" scheme="http://mjae404.github.io/tags/SMACSS/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS OOCSS 방법론</title>
@@ -498,39 +523,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="recursive function" scheme="http://mjae404.github.io/tags/recursive-function/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 두 날짜의 차이</title>
-    <link href="http://mjae404.github.io/2020/10/22/js-exercise002/"/>
-    <id>http://mjae404.github.io/2020/10/22/js-exercise002/</id>
-    <published>2020-10-21T15:02:49.000Z</published>
-    <updated>2020-10-22T15:24:56.799Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;두 날짜 간의 차이를 구해라.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
-    
-      <category term="built-in object" scheme="http://mjae404.github.io/tags/built-in-object/"/>
-    
-      <category term="wrapper object" scheme="http://mjae404.github.io/tags/wrapper-object/"/>
-    
-      <category term="date object" scheme="http://mjae404.github.io/tags/date-object/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
   </entry>
   
