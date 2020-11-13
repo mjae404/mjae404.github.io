@@ -7727,4 +7727,42 @@
         <tag>SMACSS</tag>
       </tags>
   </entry>
+  <entry>
+    <title>HTML5 섹션 요소</title>
+    <url>/2020/11/13/html-sections-and-outlines/</url>
+    <content><![CDATA[<p>HTML5 규격에는 문서를 구성하는 데 도움이 되는 몇 가지 의미 요소가 포함되어 있다. 의미 요소는 특히 브라우저, 개발자, 판독기 및 문서를 해석하는 다른 기술(예: 음성 보조자)에 의미를 전달하도록 설계된다. 예를 들어 <code>&lt;div&gt;</code>는 그 내용에 대한 어떤 의미도 담고 있지 않지만 <code>&lt;figcaption&gt;</code>은 그 내용을 명확하게 기술하고 있다.</p>
+<p>HTML5에 새로운 의미 요소를 추가하여 웹 사이트의 구획을 개선하였다. 개발자는 이러한 의미적 요소를 명시적 목적 이외의 목적으로 사용하지 않는 것이 중요하다. 많은 접근성 도구는 의미론적 HTML5 요소에 의존한다.</p>
+<a id="more"></a>
+
+<h2 id="HTML5의-섹션-요소"><a href="#HTML5의-섹션-요소" class="headerlink" title="HTML5의 섹션 요소"></a>HTML5의 섹션 요소</h2><ul>
+<li><code>&lt;nav&gt;</code>는 사이트에 자주 나타나는 탐색 링크를 포함하는 섹션을 정의한다. 기본 및 보조 메뉴를 사용할 수 있지만, 중첩하거나 삽입할 수 없다. <code>&lt;nav&gt;</code> 요소 안에 <code>&lt;nav&gt;</code> 요소를 넣지 않는다.</li>
+<li><code>&lt;article&gt;</code>는 자체 콘텐츠의 한 부분을 정의한다. 주요 내용만을 언급하지는 않으며, 코멘트나 위젯에 사용할 수 있다.</li>
+<li><code>&lt;section&gt;</code>는 의미적 의미의 관련 그룹을 나타내는 문서의 섹션을 정의한다. 상위 요소로부터 추가 컨텍스트를 제공하는 단면 요소를 활용하는 것이 좋다.</li>
+<li><code>&lt;aside&gt;</code>는 설명 상자나 광고처럼 기본 흐름에 속하지 않는 부분을 정의한다. 그것은 그 자체의 윤곽을 가지고 있지만, 주요한 것에 속하지는 않는다.</li>
+<li><code>&lt;body&gt;</code>는 문서의 모든 내용을 정의한다. 모든 컨텐츠와 HTML태그를 포함하고 있다.</li>
+<li><code>&lt;header&gt;</code>는 일반적으로 로고, 제목 및 내비게이션을 포함하는 페이지를 정의한다. <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>는 그들만의 <code>&lt;header&gt;</code>를 가질 수 있다. 이름에도 불구하고 반드시 페이지나 섹션의 시작 부분에 위치하지 않는다.</li>
+<li><code>&lt;footer&gt;</code>는 일반적으로 저작권, 법적 고지 및 때로는 섹션 바닥글을 포함하는 페이지 바닥글을 정의하고 있으며, 여기에는 섹션의 출판 날짜, 라이센스 정보 등이 포함될 수 있다. <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>는 그들 자신의 <code>&lt;footer&gt;</code>를 가질 수 있다. 반드시 페이지 끝이나 섹션에 위치하지 않는다.</li>
+</ul>
+<h2 id="모던-브라우저-이외에서-HTML5요소-사용"><a href="#모던-브라우저-이외에서-HTML5요소-사용" class="headerlink" title="모던 브라우저 이외에서 HTML5요소 사용"></a>모던 브라우저 이외에서 HTML5요소 사용</h2><p>특정 대상 중 상당한 비율이 InternetExplorer8 이하를 사용하는 경우 다음 지침에 따라 예상대로 작동하도록 할 수 있다. HTML5의미 요소에는 특별한 DOM인터페이스가 필요하지 않지만 명시적으로 지원하지 않는 이전 브라우저에서 특정 CSS스타일이 필요하다.</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">article</span>, <span class="selector-tag">aside</span>, <span class="selector-tag">footer</span>, <span class="selector-tag">header</span>, <span class="selector-tag">nav</span>, <span class="selector-tag">section</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>DOM에서 지원되지 않는 요소의 인스턴스를 만들지 않는 한 이전 IE버전에서는 지원되지 않는 요소의 스타일 지정을 허용하지 않는다. 다음과 같이 특정 스크립트를 추가하여 이를 허용할 수 있다.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;article&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;aside&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;footer&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;header&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;nav&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;section&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;time&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><code>[head]</code>요소에 명시적인<code>&lt;noscript&gt;</code>요소를 추가하여 JavaScript가 비활성화된 사용자에게 페이지가 JavaScript에 의존함을 경고할 수 있다.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">noscript</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>This web page requires JavaScript to be enabled.<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>JavaScript is an object-oriented computer programming language </span><br><span class="line">    commonly used to create interactive effects within web browsers.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://goo.gl/koeeaJ&quot;</span>&gt;</span>How to enable JavaScript?<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>sections</tag>
+      </tags>
+  </entry>
 </search>
