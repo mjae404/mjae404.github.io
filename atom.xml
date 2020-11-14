@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-13T14:24:48.909Z</updated>
+  <updated>2020-11-14T13:13:26.137Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS overflow</title>
+    <link href="http://mjae404.github.io/2020/11/14/css-overflow/"/>
+    <id>http://mjae404.github.io/2020/11/14/css-overflow/</id>
+    <published>2020-11-14T13:13:14.000Z</published>
+    <updated>2020-11-14T13:13:26.137Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;text-overflow&lt;/code&gt; CSS 속성은 숨겨진 오버플로우 콘텐츠가 사용자에게 어떻게 보여지는지 설정한다. 잘라내거나, 줄임표(‘…’)로 표시하거나, 맞춤 문자열을 표시할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="overflow" scheme="http://mjae404.github.io/tags/overflow/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML5 섹션 요소</title>
@@ -495,31 +518,6 @@
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="grid" scheme="http://mjae404.github.io/tags/grid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 거스름돈 계산기</title>
-    <link href="http://mjae404.github.io/2020/10/23/python-exercise001/"/>
-    <id>http://mjae404.github.io/2020/10/23/python-exercise001/</id>
-    <published>2020-10-22T15:16:16.000Z</published>
-    <updated>2020-10-22T15:16:55.989Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;현명하게 거스름돈을 계산해주는 프로그램을 만드려고 합니다. 예를 들어 33,000원짜리 물건을 사기 위해 100,000원을 냈다면, 50,000원 1장, 10,000원 1장, 5,000원 1장, 1,000원 2장과 같이 ‘가장 적은 수’의 지폐를 거슬러 주는 방식입니다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
   </entry>
   
