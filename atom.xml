@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-14T13:13:26.137Z</updated>
+  <updated>2020-11-15T10:59:13.911Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 홀수짝수</title>
+    <link href="http://mjae404.github.io/2020/11/15/python-exercise002/"/>
+    <id>http://mjae404.github.io/2020/11/15/python-exercise002/</id>
+    <published>2020-11-15T10:58:52.000Z</published>
+    <updated>2020-11-15T10:59:13.911Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;짝수인지 홀수인지 판단해주는 &lt;code&gt;is_evenly_divisible&lt;/code&gt; 함수를 쓰세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS overflow</title>
@@ -495,29 +520,6 @@
       <category term="HTML5" scheme="http://mjae404.github.io/tags/HTML5/"/>
     
       <category term="Content Model" scheme="http://mjae404.github.io/tags/Content-Model/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS Grid</title>
-    <link href="http://mjae404.github.io/2020/10/23/css-grid/"/>
-    <id>http://mjae404.github.io/2020/10/23/css-grid/</id>
-    <published>2020-10-22T15:17:20.000Z</published>
-    <updated>2020-10-22T15:19:20.923Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CSS 그리드는 더 복잡한 레이아웃을 위해 2치원 레이아웃 시스템을 제공한다. 다양한 레이아웃 대체 방식들을 해결하기 위해 만들어진 CSS 모듈이다. 효율적으로 학습하기 위해서는 파이어폭스 브라우저를 사용하는 것이 좋다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="grid" scheme="http://mjae404.github.io/tags/grid/"/>
     
   </entry>
   

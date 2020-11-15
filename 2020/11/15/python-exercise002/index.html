@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjaedot.github.io">
   <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/>
   <title>
-    CSS overflow |  404 Not Found
+    PYTHON 홀수짝수 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -46,7 +46,7 @@ ga('send', 'pageview');
 
   
 
-  <link rel="canonical" href="http://mjae404.github.io/2020/11/14/css-overflow/"/>
+  <link rel="canonical" href="http://mjae404.github.io/2020/11/15/python-exercise002/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -56,7 +56,7 @@ ga('send', 'pageview');
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-css-overflow" class="article article-type-post" itemscope
+  <article id="post-python-exercise002" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -64,7 +64,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  CSS overflow
+  PYTHON 홀수짝수
 </h1>
   
 
@@ -73,12 +73,12 @@ ga('send', 'pageview');
 
     
     <div class="article-meta">
-      <a href="/2020/11/14/css-overflow/" class="article-date">
-  <time datetime="2020-11-14T13:13:14.000Z" itemprop="datePublished">2020-11-14</time>
+      <a href="/2020/11/15/python-exercise002/" class="article-date">
+  <time datetime="2020-11-15T10:58:52.000Z" itemprop="datePublished">2020-11-15</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a>
+    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/Python/">Python</a>
   </div>
 
       
@@ -94,29 +94,20 @@ ga('send', 'pageview');
       
 
       
-      <p><code>text-overflow</code> CSS 속성은 숨겨진 오버플로우 콘텐츠가 사용자에게 어떻게 보여지는지 설정한다. 잘라내거나, 줄임표(‘…’)로 표시하거나, 맞춤 문자열을 표시할 수 있다.</p>
+      <p>짝수인지 홀수인지 판단해주는 <code>is_evenly_divisible</code> 함수를 쓰세요.</p>
 <a id="more"></a>
 
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">clip</span>;</span><br><span class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">ellipsis</span>;</span><br><span class="line"><span class="selector-tag">text-overflow</span>: &quot;<span class="selector-tag">-</span>&quot;;</span><br><span class="line"><span class="selector-tag">text-overflow</span>: &quot;&quot;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><code>text-overflow</code> 속성으로는 오버플로우가 발생하지 않는다.  텍스트가 컨테이너에 넘치게 하려면 다른 CSS 속성(오버플로 및 화이트 스페이스)을 설정해야 한다. 인라인 진행 방향으로 블록 컨테이너 요소를 넘치고 있는 내용에만 영향을 미친다(예: 상자 하단에 텍스트가 넘치는 것은 아님).</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="selector-tag">white-space</span>: <span class="selector-tag">nowrap</span>;</span><br></pre></td></tr></table></figure>
+<p><code>is_evenly_divisible</code>는 <code>number</code>(수)를 파라미터로 받습니다. 짝수인 경우에는, 즉 <code>number</code>가 2로 나누어 떨어질 경우에는 True를 리턴해줍니다. 홀수인 경우에는, 즉 <code>number</code>가 2로 나누어 떨어지지 않을 경우에는 False를 리턴해줍니다. 함수 안에는 <code>print</code>문을 사용하면 안 되고, return문을 사용하여야 합니다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_evenly_divisible</span>(<span class="params">number</span>):</span></span><br><span class="line">    <span class="comment"># 코드를 작성하세요</span></span><br><span class="line"></span><br><span class="line">print(is_evenly_divisible(<span class="number">3</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">7</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">8</span>))</span><br></pre></td></tr></table></figure>
 
-<h2 id="문법"><a href="#문법" class="headerlink" title="문법"></a>문법</h2><p>하나 또는 두 개의 값을 사용하여 지정할 수 있다. 하나의 값이 주어지면, 선의 끝에 대해 오버플로우 동작을 지정한다.</p>
-<h3 id="값"><a href="#값" class="headerlink" title="값"></a>값</h3><p><strong><em>clip</em></strong></p>
-<p>속성의 기본값. 키워드 값은 내용 영역의 한도에서 텍스트를 잘라서 문자 중간에 잘릴 수 있다. 문자 간 전환 시 클립으로 텍스트 오버플로(<code>text-overflow: &#39;&#39;;</code>)를 대상 브라우저에서 지원하는 경우 빈 문자열로 지정할 수 있다.</p>
-<p><strong><em>ellipsis</em></strong><br>이 키워드 값은 잘린 텍스트를 나타내는 줄임표(‘…’, U+2026 수평 줄임표)를 표시한다. 내용 영역 내에 줄임표가 표시되어 표시되는 텍스트의 양을 감소시킨다. 타원을 표시할 공간이 충분하지 않으면 잘린다.</p>
-<p><strong><em>string</em></strong></p>
-<p>잘린 텍스트를 나타내는 데 사용된다. 문자열은 내용 영역 내에 표시되며, 표시되는 텍스트의 크기를 줄인다. 문자열 자체를 표시할 공간이 부족하면 잘린다.</p>
-<p><strong><em>fade</em></strong></p>
-<p>넘쳐나는 인라인 콘텐츠를 클립하고 가장자리에 완전한 투명도를 가진 라인 박스 가장자리 근처에 페이드 아웃 효과를 적용한다.</p>
-<p><strong><em>fade(<code>&lt;length&gt;</code>/<code>&lt;percentage&gt;</code>)</em></strong></p>
-<p>넘치는 인라인 콘텐츠를 클립으로 고정하고 가장자리에 완전한 투명도를 가진 라인 박스 가장자리 근처에 페이드 아웃 효과를 적용한다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ clip | ellipsis | &lt;string&gt; ]&#123;1,2&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
 
+<p><em>개인 풀이</em></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_evenly_divisible</span>(<span class="params">number</span>):</span></span><br><span class="line">    <span class="comment"># 코드를 작성하세요</span></span><br><span class="line">    <span class="keyword">return</span> number%<span class="number">2</span>==<span class="number">0</span></span><br><span class="line"></span><br><span class="line">print(is_evenly_divisible(<span class="number">3</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">7</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">8</span>))</span><br></pre></td></tr></table></figure>
 <hr>
 <blockquote>
-<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow#fade(%20%3Clength%3E%20|%20%3Cpercentage%3E%20)">https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow#fade(%20%3Clength%3E%20|%20%3Cpercentage%3E%20)</a></p>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
 </blockquote>
 
       
@@ -124,10 +115,10 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/11/14/css-overflow/" data-id="ckhhpo2uv0000qktv74zcfrbu"
+      <a data-url="http://mjae404.github.io/2020/11/15/python-exercise002/" data-id="ckhj0b8070000fwtvbixmg5ta"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overflow/" rel="tag">overflow</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exercise/" rel="tag">exercise</a></li></ul>
 
     </footer>
 
@@ -137,19 +128,10 @@ ga('send', 'pageview');
   
   <nav class="article-nav">
     
-      <a href="/2020/11/15/python-exercise002/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">
-          
-            PYTHON 홀수짝수
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/11/13/html-sections-and-outlines/" class="article-nav-link">
+      <a href="/2020/11/14/css-overflow/" class="article-nav-link">
         <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">HTML5 섹션 요소</div>
+        <div class="article-nav-title">CSS overflow</div>
       </a>
     
   </nav>

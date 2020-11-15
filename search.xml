@@ -7801,4 +7801,32 @@
         <tag>overflow</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PYTHON 홀수짝수</title>
+    <url>/2020/11/15/python-exercise002/</url>
+    <content><![CDATA[<p>짝수인지 홀수인지 판단해주는 <code>is_evenly_divisible</code> 함수를 쓰세요.</p>
+<a id="more"></a>
+
+
+<p><code>is_evenly_divisible</code>는 <code>number</code>(수)를 파라미터로 받습니다. 짝수인 경우에는, 즉 <code>number</code>가 2로 나누어 떨어질 경우에는 True를 리턴해줍니다. 홀수인 경우에는, 즉 <code>number</code>가 2로 나누어 떨어지지 않을 경우에는 False를 리턴해줍니다. 함수 안에는 <code>print</code>문을 사용하면 안 되고, return문을 사용하여야 합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_evenly_divisible</span>(<span class="params">number</span>):</span></span><br><span class="line">    <span class="comment"># 코드를 작성하세요</span></span><br><span class="line"></span><br><span class="line">print(is_evenly_divisible(<span class="number">3</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">7</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">8</span>))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<p><em>개인 풀이</em></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_evenly_divisible</span>(<span class="params">number</span>):</span></span><br><span class="line">    <span class="comment"># 코드를 작성하세요</span></span><br><span class="line">    <span class="keyword">return</span> number%<span class="number">2</span>==<span class="number">0</span></span><br><span class="line"></span><br><span class="line">print(is_evenly_divisible(<span class="number">3</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">7</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">8</span>))</span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>exercise</tag>
+      </tags>
+  </entry>
 </search>
