@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-16T13:29:50.972Z</updated>
+  <updated>2020-11-16T16:16:12.584Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 2 또는 3의 배수가 아닌 수의 총합</title>
+    <link href="http://mjae404.github.io/2020/11/17/js-exercise007/"/>
+    <id>http://mjae404.github.io/2020/11/17/js-exercise007/</id>
+    <published>2020-11-16T16:16:04.000Z</published>
+    <updated>2020-11-16T16:16:12.584Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1부터 20 미만의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 2 또는 3의 배수인 수의 총합</title>
@@ -493,35 +520,6 @@
       <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
     
       <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVG 개요</title>
-    <link href="http://mjae404.github.io/2020/10/25/svg-overview/"/>
-    <id>http://mjae404.github.io/2020/10/25/svg-overview/</id>
-    <published>2020-10-24T17:27:15.000Z</published>
-    <updated>2020-10-24T18:03:31.776Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SVG란 확장 가능한 벡터 그래픽(Scalable Vector Graphics)이자 XML 기반의 2차원 그래픽이다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DOM의 일부로서 각 객체별로 HTML 엘리먼트가 추가된다.&lt;/li&gt;
-&lt;li&gt;모양이 복잡하지 않을 경우 파일 사이즈도 작다.&lt;/li&gt;
-&lt;li&gt;포인트가 많으면 많을 수록 계산해서 그려지기 때문에 성능이 떨어진다.&lt;/li&gt;
-&lt;li&gt;CSS와 자바스크립트를 사용해서 조작이 가능하다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
     
   </entry>
   
