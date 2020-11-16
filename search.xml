@@ -7829,4 +7829,24 @@
         <tag>exercise</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 2 또는 3의 배수인 수의 총합</title>
+    <url>/2020/11/16/js-exercise006/</url>
+    <content><![CDATA[<p>1부터 20 미만의 정수 중에서 2 또는 3의 배수인 수의 총합을 구하시오.</p>
+<a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">117</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>개인풀이</em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="number">20</span>; i++) &#123;</span><br><span class="line">  <span class="keyword">if</span> (i % <span class="number">2</span> === <span class="number">0</span> || i % <span class="number">3</span> === <span class="number">0</span>) sum += i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(sum);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>control flow</tag>
+        <tag>exercise</tag>
+      </tags>
+  </entry>
 </search>
