@@ -7869,4 +7869,21 @@
         <tag>exercise</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 윤년인지 확인하는 함수</title>
+    <url>/2020/11/18/js-exercise008/</url>
+    <content><![CDATA[<p>특정 연도가 윤년인지 확인하는 함수. 윤년은 4로 나누어 떨어지고 100으로는 나누어 떨어지지는 않지만 400으로는 나누어 떨어지는 해이다.</p>
+<a id="more"></a>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isLeapYear</span>(<span class="params">year</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>( year % <span class="number">400</span> == <span class="number">00</span> || ((year % <span class="number">4</span> == <span class="number">0</span> &amp;&amp; (year % <span class="number">100</span> != <span class="number">0</span>))) )&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>control flow</tag>
+        <tag>exercise</tag>
+      </tags>
+  </entry>
 </search>

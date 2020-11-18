@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-16T16:16:12.584Z</updated>
+  <updated>2020-11-18T13:34:35.945Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 윤년인지 확인하는 함수</title>
+    <link href="http://mjae404.github.io/2020/11/18/js-exercise008/"/>
+    <id>http://mjae404.github.io/2020/11/18/js-exercise008/</id>
+    <published>2020-11-18T13:34:26.000Z</published>
+    <updated>2020-11-18T13:34:35.945Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;특정 연도가 윤년인지 확인하는 함수. 윤년은 4로 나누어 떨어지고 100으로는 나누어 떨어지지는 않지만 400으로는 나누어 떨어지는 해이다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 2 또는 3의 배수가 아닌 수의 총합</title>
@@ -497,29 +524,6 @@
       <category term="algorism" scheme="http://mjae404.github.io/tags/algorism/"/>
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 제어문</title>
-    <link href="http://mjae404.github.io/2020/10/25/python-control-flow-statement/"/>
-    <id>http://mjae404.github.io/2020/10/25/python-control-flow-statement/</id>
-    <published>2020-10-25T11:52:20.000Z</published>
-    <updated>2020-10-28T11:52:57.910Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;제어문을 활용하면 조건에 따라 동작을 나눌 수 있다. 그리고 반복문을 활용하면 우리가 하나하나 힘겹게 하던 일들을 컴퓨터에게 자동으로 반복시킬 수 있다. 반복문은 원하는 명령들을 한번만 기재하고 반복적으로 실행 가능한 문이다. PYTHON에는 while 반복문과 for 반복문이 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
