@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-18T13:34:35.945Z</updated>
+  <updated>2020-11-18T15:47:15.282Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS html 생성</title>
+    <link href="http://mjae404.github.io/2020/11/19/js-exercise009/"/>
+    <id>http://mjae404.github.io/2020/11/19/js-exercise009/</id>
+    <published>2020-11-18T15:46:53.000Z</published>
+    <updated>2020-11-18T15:47:15.282Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;아래 배열을 사용하여 html을 생성하는 함수를 작성하라.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="array HOF" scheme="http://mjae404.github.io/tags/array-HOF/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 윤년인지 확인하는 함수</title>
@@ -475,38 +504,6 @@
       &lt;p&gt;정수 &lt;code&gt;num&lt;/code&gt;이 짝수일 경우 &lt;code&gt;Even&lt;/code&gt;을 반환하고 홀수인 경우 &lt;code&gt;Odd&lt;/code&gt;를 반환하는 함수, solution을 완성해주세요.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;제한 조건&lt;br&gt;&lt;code&gt;num&lt;/code&gt;은 &lt;code&gt;int&lt;/code&gt; 범위의 정수입니다.&lt;br&gt;&lt;code&gt;0&lt;/code&gt;은 짝수입니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="algorism" scheme="http://mjae404.github.io/tags/algorism/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 수박수박수박수박수박수?</title>
-    <link href="http://mjae404.github.io/2020/10/26/js-exercise004-watermelon/"/>
-    <id>http://mjae404.github.io/2020/10/26/js-exercise004-watermelon/</id>
-    <published>2020-10-26T14:57:12.000Z</published>
-    <updated>2020-10-26T14:57:25.317Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;길이가 n이고, 수박수박수박수….와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;제한 조건&lt;br&gt;n은 길이 10,000이하인 자연수입니다.&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>

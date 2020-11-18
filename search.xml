@@ -7886,4 +7886,29 @@
         <tag>exercise</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS html 생성</title>
+    <url>/2020/11/19/js-exercise009/</url>
+    <content><![CDATA[<p>아래 배열을 사용하여 html을 생성하는 함수를 작성하라.</p>
+<a id="more"></a>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">content</span>: <span class="string">&#x27;HTML&#x27;</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">content</span>: <span class="string">&#x27;CSS&#x27;</span>, <span class="attr">completed</span>: <span class="literal">true</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">content</span>: <span class="string">&#x27;Javascript&#x27;</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">render</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> html = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  todos.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">todo</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 작성하시오</span></span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(render());</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>출력</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;li id&#x3D;&quot;3&quot;&gt;</span><br><span class="line">    &lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot;&gt;HTML&lt;&#x2F;label&gt;</span><br><span class="line">&lt;&#x2F;li&gt;</span><br><span class="line">&lt;li id&#x3D;&quot;2&quot;&gt;</span><br><span class="line">    &lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot; checked&gt;CSS&lt;&#x2F;label&gt;</span><br><span class="line">&lt;&#x2F;li&gt;</span><br><span class="line">&lt;li id&#x3D;&quot;1&quot;&gt;</span><br><span class="line">    &lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot;&gt;Javascript&lt;&#x2F;label&gt;</span><br><span class="line">&lt;&#x2F;li&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>풀이</em></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">content</span>: <span class="string">&#x27;HTML&#x27;</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">content</span>: <span class="string">&#x27;CSS&#x27;</span>, <span class="attr">completed</span>: <span class="literal">true</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">content</span>: <span class="string">&#x27;Javascript&#x27;</span>, <span class="attr">completed</span>: <span class="literal">false</span>&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">render</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> html = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  todos.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">todo</span>) </span>&#123;</span><br><span class="line">    html +=</span><br><span class="line">    <span class="string">`&lt;li id =&quot;<span class="subst">$&#123;todo.id&#125;</span>&quot;&gt;</span></span><br><span class="line"><span class="string">      &lt;label&gt;</span></span><br><span class="line"><span class="string">        &lt;input type=&quot;checkbox&quot;<span class="subst">$&#123;todo.completed ? <span class="string">&#x27; checked&#x27;</span> : <span class="string">&#x27;&#x27;</span>&#125;</span>&gt;</span></span><br><span class="line"><span class="string">        <span class="subst">$&#123;todo.content&#125;</span></span></span><br><span class="line"><span class="string">      &lt;/label&gt;</span></span><br><span class="line"><span class="string">    &lt;/li&gt;`</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(render());</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>arry</tag>
+        <tag>exercise</tag>
+        <tag>array HOF</tag>
+      </tags>
+  </entry>
 </search>
