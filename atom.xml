@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-18T15:47:15.282Z</updated>
+  <updated>2020-11-19T16:01:23.241Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SCSS 내장 함수</title>
+    <link href="http://mjae404.github.io/2020/11/20/scss-built-in-function/"/>
+    <id>http://mjae404.github.io/2020/11/20/scss-built-in-function/</id>
+    <published>2020-11-19T16:01:06.000Z</published>
+    <updated>2020-11-19T16:01:23.241Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://sass-lang.com/documentation/modules&quot;&gt;Sass에서 기본적으로 제공하는 내장함수&lt;/a&gt;는 종류가 많다. 필요할 수 있는 함수만 정리.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Sass &amp; SCSS" scheme="http://mjae404.github.io/categories/Sass-SCSS/"/>
+    
+    
+      <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
+    
+      <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
+    
+      <category term="Sass" scheme="http://mjae404.github.io/tags/Sass/"/>
+    
+      <category term="built-in Function" scheme="http://mjae404.github.io/tags/built-in-Function/"/>
+    
+  </entry>
   
   <entry>
     <title>JS html 생성</title>
@@ -489,38 +516,6 @@
       <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
       <category term="data analysis" scheme="http://mjae404.github.io/tags/data-analysis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 짝수와 홀수</title>
-    <link href="http://mjae404.github.io/2020/10/27/js-exercise005-odd-even/"/>
-    <id>http://mjae404.github.io/2020/10/27/js-exercise005-odd-even/</id>
-    <published>2020-10-27T13:39:35.000Z</published>
-    <updated>2020-10-27T13:39:48.466Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 &lt;code&gt;num&lt;/code&gt;이 짝수일 경우 &lt;code&gt;Even&lt;/code&gt;을 반환하고 홀수인 경우 &lt;code&gt;Odd&lt;/code&gt;를 반환하는 함수, solution을 완성해주세요.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;제한 조건&lt;br&gt;&lt;code&gt;num&lt;/code&gt;은 &lt;code&gt;int&lt;/code&gt; 범위의 정수입니다.&lt;br&gt;&lt;code&gt;0&lt;/code&gt;은 짝수입니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="algorism" scheme="http://mjae404.github.io/tags/algorism/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
     
   </entry>
   

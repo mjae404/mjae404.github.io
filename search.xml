@@ -7911,4 +7911,78 @@
         <tag>array HOF</tag>
       </tags>
   </entry>
+  <entry>
+    <title>SCSS 내장 함수</title>
+    <url>/2020/11/20/scss-built-in-function/</url>
+    <content><![CDATA[<p><a href="https://sass-lang.com/documentation/modules">Sass에서 기본적으로 제공하는 내장함수</a>는 종류가 많다. 필요할 수 있는 함수만 정리.</p>
+<a id="more"></a>
+
+<h2 id="색상-RGB-HSL-Opacity-함수"><a href="#색상-RGB-HSL-Opacity-함수" class="headerlink" title="색상(RGB / HSL / Opacity) 함수"></a>색상(RGB / HSL / Opacity) 함수</h2><ul>
+<li><strong>mix($color1, $color2)</strong> : 두 개의 색을 섞음</li>
+<li><strong>lighten($color, $amount)</strong> : 더 밝은색으로 만듦</li>
+<li><strong>darken($color, $amount)</strong> : 더 어두운색을 만듦</li>
+<li><strong>saturate($color, $amount)</strong> : 색상의 채도를 올림</li>
+<li><strong>desaturate($color, $amount)</strong> : 색상의 채도를 낮춤</li>
+<li><strong>grayscale($color)</strong> : 색상을 회색으로 변환</li>
+<li><strong>invert($color)</strong> : 색상을 반전</li>
+<li><strong>rgba($color, $alpha</strong>) : 색상의 투명도를 변경</li>
+<li><strong>opacify($color, $amount) / fade-in($color, $amount)</strong> : 색상을 더 불투명하게 만듦</li>
+<li><strong>transparentize($color, $amount) / fade-out($color, $amount)</strong> : 색상을 더 투명하게 만듦</li>
+</ul>
+<h2 id="문자-String-함수"><a href="#문자-String-함수" class="headerlink" title="문자 (String) 함수"></a>문자 (String) 함수</h2><ul>
+<li><strong>unquote($string)</strong> : 문자에서 따옴표를 제거</li>
+<li><strong>quote($string)</strong> : 문자에 따옴표를 추가</li>
+<li><strong>str-insert($string, $insert, $index)</strong> : 문자의 index번째에 특정 문자를 삽입</li>
+<li><strong>str-index($string, $substring)</strong> : 문자에서 특정 문자의 첫 index를 반환</li>
+<li><strong>str-slice($string, $start-at, [$end-at])</strong> : 문자에서 특정 문자(몇 번째 글자부터 몇 번째 글자까지)를 추출</li>
+<li><strong>to-upper-case($string)</strong> : 문자를 대문자를 변환</li>
+<li><strong>to-lower-case($string)</strong> : 문자를 소문자로 변환</li>
+</ul>
+<h2 id="숫자-Number-함수"><a href="#숫자-Number-함수" class="headerlink" title="숫자 (Number) 함수"></a>숫자 (Number) 함수</h2><ul>
+<li><strong>percentage($number)</strong> : 숫자(단위 무시)를 백분율로 변환</li>
+<li><strong>round($number)</strong> : 정수로 반올림</li>
+<li><strong>ceil($number)</strong> : 정수로 올림</li>
+<li><strong>floor($number)</strong> : 정수로 내림(버림)</li>
+<li><strong>abs($number)</strong> : 숫자의 절대 값을 반환</li>
+<li><strong>min($numbers…)</strong> : 숫자 중 최소 값을 찾음</li>
+<li><strong>max($numbers…)</strong> : 숫자 중 최대 값을 찾음</li>
+<li><strong>random()</strong> : 0 부터 1 사이의 난수를 반환</li>
+</ul>
+<h2 id="List-함수"><a href="#List-함수" class="headerlink" title="List 함수"></a>List 함수</h2><p>모든 List 내장 함수는 __기존 List 데이터를 갱신하지 않고 새 List 데이터를 반환__한다. __Map 데이터에서도 사용 가능__하다.</p>
+<ul>
+<li><strong>length($list)</strong> : List의 개수를 반환</li>
+<li><strong>nth($list, $n)</strong> : List에서 n번째 값을 반환</li>
+<li>set-nth($list, $n, $value) : List에서 n번째 값을 다른 값으로 변경</li>
+<li><strong>join($list1, $list2, [$separator])</strong> : 두 개의 List를 하나로 결합</li>
+<li><strong>zip($lists…)</strong> : 여러 List들을 하나의 다차원 List로 결합</li>
+<li><strong>index($list, $value)</strong> : List에서 특정 값의 index를 반환</li>
+</ul>
+<h2 id="Map-함수"><a href="#Map-함수" class="headerlink" title="Map 함수"></a>Map 함수</h2><p>모든 Map 내장 함수는 __기존 Map 데이터를 갱신하지 않고 새 Map 데이터를 반환__한다.</p>
+<ul>
+<li><strong>map-get($map, $key)</strong> : Map에서 특정 key의 value를 반환</li>
+<li><strong>map-merge($map1, $map2)</strong> : 두 개의 Map을 병합하여 새로운 Map를 만듦</li>
+<li><strong>map-keys($map)</strong> : Map에서 모든 key를 List로 반환</li>
+<li><strong>map-values($map)</strong> : Map에서 모든 value를 List로 반환</li>
+</ul>
+<h2 id="관리-Introspection-함수"><a href="#관리-Introspection-함수" class="headerlink" title="관리(Introspection) 함수"></a>관리(Introspection) 함수</h2><ul>
+<li><strong>variable-exists(name)</strong> : 변수가 현재 범위에 존재하는지 여부를 반환 (인수는 $없이 변수의 이름만 사용)</li>
+<li><strong>unit($number)</strong> : 숫자의 단위를 반환</li>
+<li><strong>unitless($number)</strong> : 숫자에 단위가 있는지 여부를 반환</li>
+<li><strong>comparable($number1, $number2)</strong> : 두 개의 숫자가 연산 가능한지 여부를 반환</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://heropy.blog/2018/01/31/sass/">https://heropy.blog/2018/01/31/sass/</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Sass &amp; SCSS</category>
+      </categories>
+      <tags>
+        <tag>function</tag>
+        <tag>SCSS</tag>
+        <tag>Sass</tag>
+        <tag>built-in Function</tag>
+      </tags>
+  </entry>
 </search>
