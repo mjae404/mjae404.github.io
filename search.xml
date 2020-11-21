@@ -7948,16 +7948,16 @@
 <li><strong>max($numbers…)</strong> : 숫자 중 최대 값을 찾음</li>
 <li><strong>random()</strong> : 0 부터 1 사이의 난수를 반환</li>
 </ul>
-<h2 id="List-함수"><a href="#List-함수" class="headerlink" title="List 함수"></a>List 함수</h2><p>모든 List 내장 함수는 __기존 List 데이터를 갱신하지 않고 새 List 데이터를 반환__한다. __Map 데이터에서도 사용 가능__하다.</p>
+<h2 id="List-함수"><a href="#List-함수" class="headerlink" title="List 함수"></a>List 함수</h2><p>모든 List 내장 함수는 <strong>기존 List 데이터를 갱신하지 않고 새 List 데이터를 반환</strong> 한다. <strong>Map 데이터에서도 사용 가능</strong> 하다.</p>
 <ul>
 <li><strong>length($list)</strong> : List의 개수를 반환</li>
 <li><strong>nth($list, $n)</strong> : List에서 n번째 값을 반환</li>
-<li>set-nth($list, $n, $value) : List에서 n번째 값을 다른 값으로 변경</li>
+<li><strong>set-nth($list, $n, $value)</strong> : List에서 n번째 값을 다른 값으로 변경</li>
 <li><strong>join($list1, $list2, [$separator])</strong> : 두 개의 List를 하나로 결합</li>
 <li><strong>zip($lists…)</strong> : 여러 List들을 하나의 다차원 List로 결합</li>
 <li><strong>index($list, $value)</strong> : List에서 특정 값의 index를 반환</li>
 </ul>
-<h2 id="Map-함수"><a href="#Map-함수" class="headerlink" title="Map 함수"></a>Map 함수</h2><p>모든 Map 내장 함수는 __기존 Map 데이터를 갱신하지 않고 새 Map 데이터를 반환__한다.</p>
+<h2 id="Map-함수"><a href="#Map-함수" class="headerlink" title="Map 함수"></a>Map 함수</h2><p>모든 Map 내장 함수는 <strong>기존 Map 데이터를 갱신하지 않고 새 Map 데이터를 반환</strong> 한다.</p>
 <ul>
 <li><strong>map-get($map, $key)</strong> : Map에서 특정 key의 value를 반환</li>
 <li><strong>map-merge($map1, $map2)</strong> : 두 개의 Map을 병합하여 새로운 Map를 만듦</li>
@@ -7983,6 +7983,35 @@
         <tag>SCSS</tag>
         <tag>Sass</tag>
         <tag>built-in Function</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PYTHON 학점 계산기</title>
+    <url>/2020/11/21/python-exercise003/</url>
+    <content><![CDATA[<p>성적표를 기다리는 학생들을 위해서 학점 계산기를 만들어보세요.</p>
+<a id="more"></a>
+
+<p>절대 평가 방식으로 총 점수가 90점 이상이면 A를, 80점 이상 90점 미만이면 B를, 70점 이상 80점 미만이면 C를, 60점 이상 70점 미만이면 D를, 60점 미만이면 F를 부과하는 수업입니다.</p>
+<p>성적이 A일 경우 “You get an A”를, B일 경우 “You get a B”를, C일 경우 “You get a C”를, D일 경우 “You get a D”를, F일 경우 “You fail”을 출력하는 함수를 쓰세요.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_grade</span>(<span class="params">midterm, final</span>):</span></span><br><span class="line">    total = midterm + final</span><br><span class="line">    <span class="comment"># 코드를 쓰세요.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 테스트</span></span><br><span class="line">print_grade(<span class="number">40</span>, <span class="number">45</span>)</span><br><span class="line">print_grade(<span class="number">20</span>, <span class="number">35</span>)</span><br><span class="line">print_grade(<span class="number">30</span>, <span class="number">32</span>)</span><br><span class="line">print_grade(<span class="number">50</span>, <span class="number">45</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">You get a B</span><br><span class="line">You fail</span><br><span class="line">You get a D</span><br><span class="line">You get an A</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>개인 풀이</em></strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_grade</span>(<span class="params">midterm, final</span>):</span></span><br><span class="line">    total = midterm + final</span><br><span class="line">    <span class="comment"># 코드를 쓰세요.</span></span><br><span class="line">    <span class="keyword">if</span> total&gt;=<span class="number">90</span>:</span><br><span class="line">        print(<span class="string">&quot;you get an A&quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> total&gt;= <span class="number">80</span>:</span><br><span class="line">        print(<span class="string">&quot;you get a B&quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> total&gt;= <span class="number">70</span>:</span><br><span class="line">        print(<span class="string">&quot;you get a C&quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> total&gt;= <span class="number">60</span>:</span><br><span class="line">        print(<span class="string">&quot;you get a D&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&quot;You fail&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 테스트</span></span><br><span class="line">print_grade(<span class="number">40</span>, <span class="number">45</span>)</span><br><span class="line">print_grade(<span class="number">20</span>, <span class="number">35</span>)</span><br><span class="line">print_grade(<span class="number">30</span>, <span class="number">32</span>)</span><br><span class="line">print_grade(<span class="number">50</span>, <span class="number">45</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>exercise</tag>
       </tags>
   </entry>
 </search>
