@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-21T04:46:47.771Z</updated>
+  <updated>2020-11-21T13:59:28.962Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SVG 도형과 텍스트</title>
+    <link href="http://mjae404.github.io/2020/11/21/svg-basic/"/>
+    <id>http://mjae404.github.io/2020/11/21/svg-basic/</id>
+    <published>2020-11-21T13:30:46.000Z</published>
+    <updated>2020-11-21T13:59:28.962Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;svg&lt;/code&gt;의 기본 구성 태그는 아래와 같으며 &lt;code&gt;xmlns&lt;/code&gt;는 생략 가능하다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;svg&lt;/code&gt; 안에 style을 인라인으로 넣어둘 수도 있다.&lt;/li&gt;
+&lt;li&gt;기본 CSS와 같이 클래스를 사용하여 작업하는 것이 바람직하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;http:/www.w3.org/2000/svg&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;svg&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+      <category term="drawing" scheme="http://mjae404.github.io/tags/drawing/"/>
+    
+      <category term="text" scheme="http://mjae404.github.io/tags/text/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 학점 계산기</title>
@@ -493,31 +521,6 @@
       <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
     
       <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 셀렉터</title>
-    <link href="http://mjae404.github.io/2020/10/29/css-selecter/"/>
-    <id>http://mjae404.github.io/2020/10/29/css-selecter/</id>
-    <published>2020-10-29T14:36:51.000Z</published>
-    <updated>2020-10-29T14:37:03.196Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;style을 적용하고자 하는 HTML 요소를 선택할 때 셀렉터를 사용하며 선택한 요소에 스타일을 정의한다. 여러개의 셀렉터를 함께 사용할 수 있고 쉼표(&lt;code&gt;,&lt;/code&gt;)로 구분한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="selector" scheme="http://mjae404.github.io/tags/selector/"/>
     
   </entry>
   
