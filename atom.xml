@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-22T14:21:07.311Z</updated>
+  <updated>2020-11-22T15:36:02.637Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 이상한 수학 문제 II</title>
+    <link href="http://mjae404.github.io/2020/11/23/python-exercise005/"/>
+    <id>http://mjae404.github.io/2020/11/23/python-exercise005/</id>
+    <published>2020-11-22T15:35:51.000Z</published>
+    <updated>2020-11-22T15:36:02.637Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;10보다 작은 2 또는 3의 배수는 2, 3, 4, 6, 8, 9이며, 이들의 합은 32입니다. while문과 if문을 활용하여, 1000보다 작은 자연수 중 2 또는 3의 배수의 합을 출력하는 프로그램을 써보세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 이상한 수학 문제 I</title>
@@ -500,31 +525,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="event" scheme="http://mjae404.github.io/tags/event/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 박스모델</title>
-    <link href="http://mjae404.github.io/2020/10/31/css-boxmodel/"/>
-    <id>http://mjae404.github.io/2020/10/31/css-boxmodel/</id>
-    <published>2020-10-31T12:35:45.000Z</published>
-    <updated>2020-10-31T12:36:00.788Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;모든 HTML 요소는 Box 형태의 영역을 가지고 있다. Content, Padding, Border, Margin으로 구성되어 있으며 브라우저는 박스 모델 크기(dimension)와 프로퍼티(색, 배경, 모양 등) 위치를 근거로 렌더링한다. &lt;strong&gt;모든 박스모델 관련 프로퍼티는 상속되지 않는다.&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="box model" scheme="http://mjae404.github.io/tags/box-model/"/>
     
   </entry>
   
