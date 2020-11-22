@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-21T13:59:28.962Z</updated>
+  <updated>2020-11-22T14:21:07.311Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PYTHON 이상한 수학 문제 I</title>
+    <link href="http://mjae404.github.io/2020/11/22/python-exercise004/"/>
+    <id>http://mjae404.github.io/2020/11/22/python-exercise004/</id>
+    <published>2020-11-22T14:20:51.000Z</published>
+    <updated>2020-11-22T14:21:07.311Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;while문과 if문을 활용하여 100이하의 자연수 중 8의 배수이지만, 12의 배수는 아닌 것을 모두 출력하세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SVG 도형과 텍스트</title>
     <link href="http://mjae404.github.io/2020/11/21/svg-basic/"/>
     <id>http://mjae404.github.io/2020/11/21/svg-basic/</id>
     <published>2020-11-21T13:30:46.000Z</published>
-    <updated>2020-11-21T13:59:28.962Z</updated>
+    <updated>2020-11-21T14:01:03.499Z</updated>
     
     <summary type="html">
     
@@ -34,6 +59,8 @@
     
     </summary>
     
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
     
     
       <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
@@ -498,29 +525,6 @@
       <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
     
       <category term="box model" scheme="http://mjae404.github.io/tags/box-model/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 객체</title>
-    <link href="http://mjae404.github.io/2020/10/30/python-object/"/>
-    <id>http://mjae404.github.io/2020/10/30/python-object/</id>
-    <published>2020-10-30T14:02:56.000Z</published>
-    <updated>2020-10-30T14:03:07.260Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;속성과 행동을 떠올릴 수 있다면 모두 객체이다. 객체는 속성과 행동으로 이루어져 있다. 속성은 변수로 나타내며, 행동은 함수(메소드)로 나타낸다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="object" scheme="http://mjae404.github.io/tags/object/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   

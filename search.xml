@@ -8106,10 +8106,39 @@
 <p><strong>REFERENCE</strong><br>인프런 SVG 마스터<br><a href="https://www.inflearn.com/course/mastering-svg">https://www.inflearn.com/course/mastering-svg</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>SVG</category>
+      </categories>
       <tags>
         <tag>SVG</tag>
         <tag>drawing</tag>
         <tag>text</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PYTHON 이상한 수학 문제 I</title>
+    <url>/2020/11/22/python-exercise004/</url>
+    <content><![CDATA[<p>while문과 if문을 활용하여 100이하의 자연수 중 8의 배수이지만, 12의 배수는 아닌 것을 모두 출력하세요.</p>
+<a id="more"></a>
+
+<p>실행하면 아래의 내용이 콘솔에 출력되어야 합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">8</span></span><br><span class="line"><span class="number">16</span></span><br><span class="line"><span class="number">32</span></span><br><span class="line"><span class="number">40</span></span><br><span class="line"><span class="number">56</span></span><br><span class="line"><span class="number">64</span></span><br><span class="line"><span class="number">80</span></span><br><span class="line"><span class="number">88</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><em>개인풀이</em></strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">100</span>:</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">8</span> == <span class="number">0</span> <span class="keyword">and</span> i % <span class="number">12</span> != <span class="number">0</span>:</span><br><span class="line">        print(i)</span><br><span class="line">    i += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>exercise</tag>
       </tags>
   </entry>
 </search>
