@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-22T15:36:02.637Z</updated>
+  <updated>2020-11-23T17:02:54.115Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 택이의 우승상금</title>
+    <link href="http://mjae404.github.io/2020/11/24/python-exercise006/"/>
+    <id>http://mjae404.github.io/2020/11/24/python-exercise006/</id>
+    <published>2020-11-23T17:02:43.000Z</published>
+    <updated>2020-11-23T17:02:54.115Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1988년 쌍문동에 사는 택이는 바둑대회 우승 상금으로 5000만원을 받았습니다. 하지만 바둑 외에는 아는게 없으니, 이웃 어른들에게 이 돈으로 무엇을 해야할지 물어보기로 하였습니다. 동일 아저씨나 미란 아주머니 중 누구의 말을 듣는 것이 좋을지 판단해보세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 이상한 수학 문제 II</title>
@@ -35,9 +60,9 @@
       <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
     
     
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
@@ -60,9 +85,9 @@
       <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
     
     
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
@@ -115,9 +140,9 @@
       <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
     
     
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
@@ -140,9 +165,9 @@
     
       <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
     
-      <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
-    
       <category term="Sass" scheme="http://mjae404.github.io/tags/Sass/"/>
+    
+      <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
     
       <category term="built-in Function" scheme="http://mjae404.github.io/tags/built-in-Function/"/>
     
@@ -277,9 +302,9 @@
       <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
     
     
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
@@ -501,30 +526,6 @@
       <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
     
       <category term="filter" scheme="http://mjae404.github.io/tags/filter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 이벤트</title>
-    <link href="http://mjae404.github.io/2020/11/01/js-event/"/>
-    <id>http://mjae404.github.io/2020/11/01/js-event/</id>
-    <published>2020-11-01T03:27:19.000Z</published>
-    <updated>2020-11-01T03:28:05.806Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;브라우저에서 이벤트란 사용자가 버튼을 클릭했을 때나 웹페이지가 로드되었을 때 등을 의미한다. DOM 요소와 관련이 있다. 이벤트 발생 시점이나 순서를 미리 알 수 없으므로 이벤트가 발생했을 때를 감지하고 그에 대응하는 처리를 호출할 수 있어야 한다.&lt;/p&gt;
-&lt;p&gt;브라우저가 이벤트를 감지하고 통지해주는 과정을 통해 사용자와 웹페이지는 상호작용(Interaction)이 가능해진다. 이벤트가 발생하면 그에 맞는 반응을 해주어야 하기 때문에 이벤트는 일반 함수에 연결된다. 이 함수는 이벤트가 발생되면 실행된다. 이런 함수를 &lt;strong&gt;이벤트 핸들러&lt;/strong&gt; 라고 한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="event" scheme="http://mjae404.github.io/tags/event/"/>
     
   </entry>
   
