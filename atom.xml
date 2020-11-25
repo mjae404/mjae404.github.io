@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-25T12:16:42.131Z</updated>
+  <updated>2020-11-25T18:00:50.506Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>제이쿼리 개요</title>
+    <link href="http://mjae404.github.io/2020/11/26/jquery-overview/"/>
+    <id>http://mjae404.github.io/2020/11/26/jquery-overview/</id>
+    <published>2020-11-25T17:58:56.000Z</published>
+    <updated>2020-11-25T18:00:50.506Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;라이브러리(library)&lt;/em&gt;&lt;br&gt;자주 사용하는 코드들을 재사용할 수 있는 형태로 가공해서 프로그래밍 효율을 높여주는 코드&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;jQuery란&lt;/em&gt;&lt;br&gt;엘리먼트를 선택하는 강력한 방법과 선택된 엘리먼트들을 효율적으로 제어할 수 있는 다양한 수단을 제공하는 자바스크립트 라이브러리&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="jQuery" scheme="http://mjae404.github.io/categories/jQuery/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="jQuery" scheme="http://mjae404.github.io/tags/jQuery/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 구구단</title>
@@ -501,31 +525,6 @@
       <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
     
       <category term="cherry-pick" scheme="http://mjae404.github.io/tags/cherry-pick/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS flex</title>
-    <link href="http://mjae404.github.io/2020/11/06/css-flex/"/>
-    <id>http://mjae404.github.io/2020/11/06/css-flex/</id>
-    <published>2020-11-05T15:06:01.000Z</published>
-    <updated>2020-11-08T17:22:22.706Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;대부분의 사이트는 수직적으로 레이아웃이 구성되어 있으며 위아래로 스크롤하여 사용하게 된다. 수평 구조의  경우 &lt;code&gt;table&lt;/code&gt;, &lt;code&gt;float&lt;/code&gt;, &lt;code&gt;inline-block&lt;/code&gt;을 주로 사용하고 있으나 주로 차선책일 뿐이며 &lt;code&gt;flex&lt;/code&gt;로 레이아웃을 쉽게 구성할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="flex" scheme="http://mjae404.github.io/tags/flex/"/>
     
   </entry>
   
