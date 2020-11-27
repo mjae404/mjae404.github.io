@@ -8458,4 +8458,76 @@
         <tag>jQuery</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS 애니메이션</title>
+    <url>/2020/11/28/css-animation/</url>
+    <content><![CDATA[<p>애니메이션 속성은 콘텐츠를 움직이게 할 수 있으며, 애니메이션을 나타내는 CSS 스타일과 애니메이션의 중간 상태를 나타내는 키프레임들로 이루어진다. 움직이는 시간, 움직이는 방향, 움직이는 상태 등 여러가지 속성을 설정할 수 있다. </p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">animation: name | duration | timing-function | delay |</span><br><span class="line">iteration-count | direction | fill-mode | play-state</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="자바스크립트-애니메이션과의-차이점"><a href="#자바스크립트-애니메이션과의-차이점" class="headerlink" title="자바스크립트 애니메이션과의 차이점"></a>자바스크립트 애니메이션과의 차이점</h2><ol>
+<li>자바스크립트를 모르더라도 간단하게 애니메이션을 만들 수 있다.</li>
+<li>자바스크립트를 이용한 애니메이션은 잘 만들어졌더라도 성능이 좋지 못할 때가 있다. CSS 애니메이션은 frame-skipping 같은 여러 기술을 이용하여 최대한 부드럽게 렌더링된다.</li>
+<li>브라우저는 애니메이션의 성능을 효율적으로 최적화할 수 있다.</li>
+</ol>
+<h2 id="속성"><a href="#속성" class="headerlink" title="속성"></a>속성</h2><table>
+<thead>
+<tr>
+<th>속성값</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>애니메이션 keyframe 이름을 설정</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>애니메이션 움직임 시간을 설정</td>
+</tr>
+<tr>
+<td>timing-function</td>
+<td>애니메이션 움직임 속도를 정의</td>
+</tr>
+<tr>
+<td>delay</td>
+<td>애니메이션이 로드된 후 애니메이션이 시작될 때 까지의 시간을 나타냄</td>
+</tr>
+<tr>
+<td>iteration-count</td>
+<td>애니메이션 반복 횟수 설정</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>애니메이션 움직임 방향을 설정</td>
+</tr>
+<tr>
+<td>fill-mode</td>
+<td>애니메이션이 끝난 후의 상태를 설정</td>
+</tr>
+<tr>
+<td>play-state</td>
+<td>애니메이션 진행상태를 설정</td>
+</tr>
+</tbody></table>
+<h2 id="키프레임"><a href="#키프레임" class="headerlink" title="키프레임"></a>키프레임</h2><p><code>@keyframes</code> 규칙을 이용해서 두개 이상의 중간 상태를 표현한다. 각 중간 상태는 특정 시점에 엘리먼트가 어떻게 보일지 나타낸다. CSS 스타일을 이용해 중간 상태에 어떻게 보일지 정의했다면 이 중간 상태가 전체 애니메이션에서 언제 등장할지 <code>&lt;percentage&gt;</code>를 이용해 지정한다. 이 두 시점은 기재되어야 브라우저가 언제 애니메이션이 시작되고 끝나는지 알 수 있다. 0%와 100% 대신 from과 to로 사용할 수도 있다.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong></p>
+</blockquote>
+<ul>
+<li><a href="https://webzz.tistory.com/365">https://webzz.tistory.com/365</a></li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations">https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>CSS3</tag>
+        <tag>animation</tag>
+      </tags>
+  </entry>
 </search>
