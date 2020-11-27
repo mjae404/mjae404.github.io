@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-25T18:00:50.506Z</updated>
+  <updated>2020-11-27T16:03:43.308Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>제이쿼리 메소드</title>
+    <link href="http://mjae404.github.io/2020/11/28/jquery-method/"/>
+    <id>http://mjae404.github.io/2020/11/28/jquery-method/</id>
+    <published>2020-11-27T16:01:44.000Z</published>
+    <updated>2020-11-27T16:03:43.308Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;document-ready&quot;&gt;&lt;a href=&quot;#document-ready&quot; class=&quot;headerlink&quot; title=&quot;$(document).ready()&quot;&gt;&lt;/a&gt;$(document).ready()&lt;/h2&gt;&lt;p&gt;제이쿼리를 사용한 모든 웹페이지는 다음과 같은 코드로 시작한다.&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;).ready(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    …&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="jQuery" scheme="http://mjae404.github.io/categories/jQuery/"/>
+    
+    
+      <category term="method" scheme="http://mjae404.github.io/tags/method/"/>
+    
+      <category term="jQuery" scheme="http://mjae404.github.io/tags/jQuery/"/>
+    
+  </entry>
+  
+  <entry>
     <title>제이쿼리 개요</title>
     <link href="http://mjae404.github.io/2020/11/26/jquery-overview/"/>
     <id>http://mjae404.github.io/2020/11/26/jquery-overview/</id>
     <published>2020-11-25T17:58:56.000Z</published>
-    <updated>2020-11-25T18:00:50.506Z</updated>
+    <updated>2020-11-27T16:03:30.235Z</updated>
     
     <summary type="html">
     
@@ -502,29 +526,6 @@
       <category term="media query" scheme="http://mjae404.github.io/tags/media-query/"/>
     
       <category term="responsive" scheme="http://mjae404.github.io/tags/responsive/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git cherry-pick</title>
-    <link href="http://mjae404.github.io/2020/11/07/git-cherry-pick/"/>
-    <id>http://mjae404.github.io/2020/11/07/git-cherry-pick/</id>
-    <published>2020-11-07T03:44:59.000Z</published>
-    <updated>2020-11-07T03:45:09.225Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;코드 관리를 하다 보면 커밋을 다른 브랜치에 잘못 하거나 코드 의존성 때문에 다른 사람의 커밋중 일부를 가져와야 하는 경우가 생긴다. &lt;code&gt;git rebase&lt;/code&gt;나 &lt;code&gt;git cherry-pick&lt;/code&gt;을 사용한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
-    
-    
-      <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
-    
-      <category term="cherry-pick" scheme="http://mjae404.github.io/tags/cherry-pick/"/>
     
   </entry>
   
