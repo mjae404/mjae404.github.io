@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-29T12:47:05.862Z</updated>
+  <updated>2020-11-29T15:25:31.932Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 웹폰트</title>
+    <link href="http://mjae404.github.io/2020/11/30/css-webfont/"/>
+    <id>http://mjae404.github.io/2020/11/30/css-webfont/</id>
+    <published>2020-11-29T15:24:20.000Z</published>
+    <updated>2020-11-29T15:25:31.932Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;웹브라우저는 로컬 소프트웨어이므로 로컬 환경의 리소스만 사용 가능하다. 로컬 환경에 존재하는 폰트는 사용할 수 없다. 사용자가 어떤 디바이스, 어떤 OS를 사용하여 웹페이지에 접근하는지 알 수 없다. 웹페이지와 같이 폰트도 서버에서 클라이언트로 다운로드되어 실행될 수 있다면 문제는 해결 가능하다. 이러한 문제를 해결할 수 있는 방법이 웹폰트이다. (클라이언트에 해당 폰트가 존재하지 않을 경우 전송되는 방식)&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="font" scheme="http://mjae404.github.io/tags/font/"/>
+    
+      <category term="web font" scheme="http://mjae404.github.io/tags/web-font/"/>
+    
+      <category term="typography" scheme="http://mjae404.github.io/tags/typography/"/>
+    
+  </entry>
   
   <entry>
     <title>SVG 효과</title>
@@ -503,31 +532,6 @@
       <category term="methodology" scheme="http://mjae404.github.io/tags/methodology/"/>
     
       <category term="SMACSS" scheme="http://mjae404.github.io/tags/SMACSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS OOCSS 방법론</title>
-    <link href="http://mjae404.github.io/2020/11/10/css-oocss-methodology/"/>
-    <id>http://mjae404.github.io/2020/11/10/css-oocss-methodology/</id>
-    <published>2020-11-09T16:01:35.000Z</published>
-    <updated>2020-11-09T16:02:18.941Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Object Oriented CSS의 약자이며 Nicole Sullivan에 의해 개발된 프레임워크이다. CSS를 모듈 방식으로 코딩하여 중복을 최소화하는 기법이다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="methodology" scheme="http://mjae404.github.io/tags/methodology/"/>
-    
-      <category term="OOCSS" scheme="http://mjae404.github.io/tags/OOCSS/"/>
     
   </entry>
   
