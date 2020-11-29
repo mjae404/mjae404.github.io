@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-27T16:12:06.162Z</updated>
+  <updated>2020-11-29T12:47:05.862Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SVG 효과</title>
+    <link href="http://mjae404.github.io/2020/11/29/svg-effect/"/>
+    <id>http://mjae404.github.io/2020/11/29/svg-effect/</id>
+    <published>2020-11-29T11:49:00.000Z</published>
+    <updated>2020-11-29T12:47:05.862Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;svg&lt;/code&gt;에 그라디언트, 패턴, 마스크 효과를 줄 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+      <category term="gradient" scheme="http://mjae404.github.io/tags/gradient/"/>
+    
+      <category term="pattern" scheme="http://mjae404.github.io/tags/pattern/"/>
+    
+      <category term="mask" scheme="http://mjae404.github.io/tags/mask/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 애니메이션</title>
@@ -501,31 +528,6 @@
       <category term="methodology" scheme="http://mjae404.github.io/tags/methodology/"/>
     
       <category term="OOCSS" scheme="http://mjae404.github.io/tags/OOCSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS BEM 방법론</title>
-    <link href="http://mjae404.github.io/2020/11/09/css-ben-methodology/"/>
-    <id>http://mjae404.github.io/2020/11/09/css-ben-methodology/</id>
-    <published>2020-11-08T17:21:00.000Z</published>
-    <updated>2020-11-08T17:22:07.461Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CSS 구조를 개선시키기 위한 CSS 개발 방법론은 여러가지가 있다. OOCSS, SMACSS, BEM 등이 있으며 BEM은 Block Element Modifier의 약자이다. BEM 방법론은 &lt;strong&gt;ID에는 사용할 수 없고, 오직 클래스명에만 활용할 수 있다&lt;/strong&gt;. 필요하다면 클래스명은 BEM 방식의 이름을 여러번 반복하여 재사용할 수 있도록 한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="BEM" scheme="http://mjae404.github.io/tags/BEM/"/>
-    
-      <category term="methodology" scheme="http://mjae404.github.io/tags/methodology/"/>
     
   </entry>
   
