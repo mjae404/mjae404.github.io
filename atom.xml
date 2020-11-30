@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-29T15:25:31.932Z</updated>
+  <updated>2020-11-30T15:21:32.936Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>운영체제 개요</title>
+    <link href="http://mjae404.github.io/2020/12/01/os-overview/"/>
+    <id>http://mjae404.github.io/2020/12/01/os-overview/</id>
+    <published>2020-11-30T15:21:19.000Z</published>
+    <updated>2020-11-30T15:21:32.936Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;운영체제 역할&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;시스템 자원(System Resource) 관리자&lt;/li&gt;
+&lt;li&gt;사용과 컴퓨터간의 커뮤니케이션 지원&lt;/li&gt;
+&lt;li&gt;컴퓨터 하드웨어와 응용 프로그램을 제어&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="Computer Science" scheme="http://mjae404.github.io/categories/Computer-Science/"/>
+    
+      <category term="Operating System" scheme="http://mjae404.github.io/categories/Computer-Science/Operating-System/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="Computer Science" scheme="http://mjae404.github.io/tags/Computer-Science/"/>
+    
+      <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 웹폰트</title>
@@ -507,31 +539,6 @@
       <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
     
       <category term="sections" scheme="http://mjae404.github.io/tags/sections/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS SMACSS 방법론</title>
-    <link href="http://mjae404.github.io/2020/11/11/css-smacss-methodology/"/>
-    <id>http://mjae404.github.io/2020/11/11/css-smacss-methodology/</id>
-    <published>2020-11-10T15:57:48.000Z</published>
-    <updated>2020-11-10T15:58:51.730Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SMACSS(스메스)는 대규모 프로젝트를 위한 스타일링 지침이다. 스타일을 다섯가지로 분류하고 각 유형에 맞는 선택자(selector)와 작명법(naming convention), 코딩 기법을 제시한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="methodology" scheme="http://mjae404.github.io/tags/methodology/"/>
-    
-      <category term="SMACSS" scheme="http://mjae404.github.io/tags/SMACSS/"/>
     
   </entry>
   

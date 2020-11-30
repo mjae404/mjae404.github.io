@@ -8674,4 +8674,98 @@
         <tag>typography</tag>
       </tags>
   </entry>
+  <entry>
+    <title>운영체제 개요</title>
+    <url>/2020/12/01/os-overview/</url>
+    <content><![CDATA[<p><em>운영체제 역할</em></p>
+<ol>
+<li>시스템 자원(System Resource) 관리자</li>
+<li>사용과 컴퓨터간의 커뮤니케이션 지원</li>
+<li>컴퓨터 하드웨어와 응용 프로그램을 제어</li>
+</ol>
+<a id="more"></a>
+
+<blockquote>
+<p><strong>컴퓨터 하드웨어는 스스로 할 수 있는 것이 없다. 그래서 운영체제가 필요하다.</strong></p>
+</blockquote>
+<ol>
+<li>CPU: 각 프로그램이 얼마나 CPU를 사용할지를 결정할 수는 없다.</li>
+<li>Memory: 각 프로그램이 어떤 주소에 저장되어야 하는지, 어느 정도의 메모리 공간을 확보해주어야 하는지 결정할 수는 없다.</li>
+<li>저장매체(HDD, SSD): 어떻게, 어디에 저장할지 결정할 수 없다.</li>
+<li>키보드/마우스: 스스로 표시할 수 없다.</li>
+</ol>
+<ul>
+<li>운영체제, Operating System 또는 OS</li>
+<li>시스템 자원(System Resource) = 컴퓨터 하드웨어<ul>
+<li>CPU(중앙처리장치), Memory(DRAM, RAM)</li>
+<li>I/O Devices(입출력장치)<ul>
+<li>Monitor, Mouse,Keyboard, Network</li>
+<li>저장매체: SSD, HDD(하드디스크)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="대표적인-운영체제"><a href="#대표적인-운영체제" class="headerlink" title="대표적인 운영체제"></a>대표적인 운영체제</h2><ul>
+<li>Windows OS</li>
+<li>Mac OS</li>
+<li>UNIX(유닉스)<ul>
+<li>UNIX 계열 OS: LINUX(리눅스) OS<ul>
+<li>UNIX와 사용법이나 OS 구조가 유사</li>
+</ul>
+</li>
+<li>LINUX(리눅스) OS<ul>
+<li>프로그래머나 전공자는 필수적으로 알고 있어야 한다.</li>
+<li>서버 환경에서 주로 작업 및 사용한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="응용-프로그램"><a href="#응용-프로그램" class="headerlink" title="응용 프로그램"></a>응용 프로그램</h2><ul>
+<li>프로그램 = 소프트웨어</li>
+<li>소프트웨어 = 운영체제, 응용 프로그램(엑셀, 파워포인트 etc)</li>
+<li>응용 프로그램 = Application = App<ul>
+<li>Application: 일반 PC에서의 응용 프로그램</li>
+<li>App: 스마트폰에서의 응용 프로그램</li>
+</ul>
+</li>
+</ul>
+<h2 id="운영체제와-응용프로그램간의-관계"><a href="#운영체제와-응용프로그램간의-관계" class="headerlink" title="운영체제와 응용프로그램간의 관계"></a>운영체제와 응용프로그램간의 관계</h2><ul>
+<li>응용 프로그램을 관리한다<ul>
+<li>응용프로그램을 실행</li>
+<li>응용 프로그램 간의 권한을 관리 (ex. 관리자 권한 실행)</li>
+<li>응용프로그램 사용자 관리 (ex. 로그인)</li>
+</ul>
+</li>
+<li>응용 프로그램은 누구나 만들 수 있기 때문에 생기는 문제, 비정상적으로 작동하는 문제를 막거나 해결<ul>
+<li>예시1. 무한 반복문을 넣었을 경우 끝나지 않고 계속 컴퓨터 자원을 잡아먹으며 실행되는 경우</li>
+<li>예시2. 응용 프로그램을 잘못 작성했을 시에 프로그램이 다운되는 경우</li>
+<li>예시3. 모든 파일 삭제하라는 코드를 삽입했을 경우 (권한/사용자 관리)</li>
+<li>예시4. 응용 프로그램이 CPU 전체를 강제적으로 사용하려고 시도하는 경우</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>운영체제의 목표</strong><br>사용자가 사용하는 응용 프로그램이 효율적으로 적절하게 동작하도록 지원한다.</p>
+</blockquote>
+<blockquote>
+<p><strong>운영체제</strong><br>응용 프로그램이 요청하는 시스템 리소스를 <u>효율적으로 분배하고 지원</u>하는 소프트웨어</p>
+</blockquote>
+<h2 id="컴퓨터-구조"><a href="#컴퓨터-구조" class="headerlink" title="컴퓨터 구조"></a>컴퓨터 구조</h2><p>컴퓨터를 키면 운영체제는 Memory에 올라가게 된다.<br>(참고: 폰노이만 구조)</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 컴퓨터 공학 전공 필수 _ 운영체제</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Computer Science</category>
+        <category>Operating System</category>
+      </categories>
+      <tags>
+        <tag>overview</tag>
+        <tag>Computer Science</tag>
+        <tag>Operating System</tag>
+      </tags>
+  </entry>
 </search>
