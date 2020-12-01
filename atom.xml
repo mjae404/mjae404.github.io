@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-11-30T15:21:32.936Z</updated>
+  <updated>2020-12-01T15:47:29.660Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>운영체제 역사와 핵심기술</title>
+    <link href="http://mjae404.github.io/2020/12/02/os-history/"/>
+    <id>http://mjae404.github.io/2020/12/02/os-history/</id>
+    <published>2020-12-01T15:47:16.000Z</published>
+    <updated>2020-12-01T15:47:29.660Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;1950년대: 제일 처음 만들어진 컴퓨터, ENIAC&lt;/li&gt;
+&lt;li&gt;1960년대: 배치 처리 시스템&lt;/li&gt;
+&lt;li&gt;1970년대: 시분할 시스템/멀티태스킹 시스템과 UNIX OS&lt;/li&gt;
+&lt;li&gt;1980년대: GUI, 개인용 컴퓨터&lt;/li&gt;
+&lt;li&gt;1990년대: 다양한 응용프로그램 및 인터넷 발달, 오픈&lt;/li&gt;
+&lt;li&gt;2000년대: 오픈소스  활성화, 가상머신, 대용량 병렬처리&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Computer Science" scheme="http://mjae404.github.io/categories/Computer-Science/"/>
+    
+      <category term="Operating System" scheme="http://mjae404.github.io/categories/Computer-Science/Operating-System/"/>
+    
+    
+      <category term="Computer Science" scheme="http://mjae404.github.io/tags/Computer-Science/"/>
+    
+      <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
+    
+      <category term="history" scheme="http://mjae404.github.io/tags/history/"/>
+    
+  </entry>
   
   <entry>
     <title>운영체제 개요</title>
@@ -515,30 +549,6 @@
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="overflow" scheme="http://mjae404.github.io/tags/overflow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML5 섹션 요소</title>
-    <link href="http://mjae404.github.io/2020/11/13/html-sections-and-outlines/"/>
-    <id>http://mjae404.github.io/2020/11/13/html-sections-and-outlines/</id>
-    <published>2020-11-13T14:24:38.000Z</published>
-    <updated>2020-11-13T14:24:48.909Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;HTML5 규격에는 문서를 구성하는 데 도움이 되는 몇 가지 의미 요소가 포함되어 있다. 의미 요소는 특히 브라우저, 개발자, 판독기 및 문서를 해석하는 다른 기술(예: 음성 보조자)에 의미를 전달하도록 설계된다. 예를 들어 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;는 그 내용에 대한 어떤 의미도 담고 있지 않지만 &lt;code&gt;&amp;lt;figcaption&amp;gt;&lt;/code&gt;은 그 내용을 명확하게 기술하고 있다.&lt;/p&gt;
-&lt;p&gt;HTML5에 새로운 의미 요소를 추가하여 웹 사이트의 구획을 개선하였다. 개발자는 이러한 의미적 요소를 명시적 목적 이외의 목적으로 사용하지 않는 것이 중요하다. 많은 접근성 도구는 의미론적 HTML5 요소에 의존한다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
-    
-      <category term="sections" scheme="http://mjae404.github.io/tags/sections/"/>
     
   </entry>
   

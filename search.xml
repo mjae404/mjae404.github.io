@@ -8768,4 +8768,139 @@
         <tag>Operating System</tag>
       </tags>
   </entry>
+  <entry>
+    <title>운영체제 역사와 핵심기술</title>
+    <url>/2020/12/02/os-history/</url>
+    <content><![CDATA[<ul>
+<li>1950년대: 제일 처음 만들어진 컴퓨터, ENIAC</li>
+<li>1960년대: 배치 처리 시스템</li>
+<li>1970년대: 시분할 시스템/멀티태스킹 시스템과 UNIX OS</li>
+<li>1980년대: GUI, 개인용 컴퓨터</li>
+<li>1990년대: 다양한 응용프로그램 및 인터넷 발달, 오픈</li>
+<li>2000년대: 오픈소스  활성화, 가상머신, 대용량 병렬처리</li>
+</ul>
+<a id="more"></a>
+
+
+<h2 id="1950년대"><a href="#1950년대" class="headerlink" title="1950년대"></a>1950년대</h2><ul>
+<li><strong>ENIAC</strong>: 첫번째 컴퓨터</li>
+<li>운영체제가 없음<ul>
+<li>한번에 하나의 응용 프로그램을 실행</li>
+<li>응용 프로그램이 시스템 자원을 제어</li>
+</ul>
+</li>
+</ul>
+<h2 id="1960년대-초반"><a href="#1960년대-초반" class="headerlink" title="1960년대 초반"></a>1960년대 초반</h2><ul>
+<li>프로그램 종류도 많아지고 사용자도 많아지기 시작</li>
+<li>배치 처리 시스템 (batch processing system) 출현<ul>
+<li>여러 응용 프로그램을 순서를 포함하여 등록시켜두면 자동으로 순차적으로 실행하는 시스템</li>
+<li>배치 처리 시스템을 기반으로 운영체제가 출현</li>
+<li>컴퓨터 응답 시간(response time)이 오래 걸릴 수 있다.</li>
+<li>CPU가 필요 없음에도 프로그램이 CPU를 점유할 수 있기 때문에 <strong>실행 시간이 오래 걸릴 수 있다.</strong></li>
+</ul>
+</li>
+</ul>
+<p><em>배치 처리 시스템</em></p>
+<p>프로그램이 각각 걸리는 시간이 12시간, 1시간일 경우 프로그램1을 먼저 실행시키고 프로그램2를 실행시킨다면 프로그램1이 걸리는 시간은 12시간, 프로그램2가 걸리는 시간은 13시간이다. 프로그램2를 먼저 실행시키면 프로그램2의 실행시간은 1시간, 프로그램1의 실행시간은 13시간이다.</p>
+<h2 id="1960년대-후반"><a href="#1960년대-후반" class="headerlink" title="1960년대 후반"></a>1960년대 후반</h2><p>__시분할 시스템 / 멀티 태스킹(멀티 프로그래밍)__이라는 새로운 개념이 제안되었다. 운영체제로 구현되지는 않았다. 시분할 시스템과 멀티태스킹을 동일하게 보는 시각도 있다. 결과적으로 __핵심 기술은 시간을 잘게 쪼개 여러 응용 프로그램 실행한다는 것__이다.</p>
+<ul>
+<li><strong>시분할 시스템(Time Sharing System)</strong><ul>
+<li>응용 프로그램이 CPU를 사용하는 시간을 쪼개 여러개의 응용 프로그램을 동시에 실행.</li>
+<li><u>다중 사용자를 지원하고, 컴퓨터 응답시간을 최소화</u>하는 시스템.</li>
+</ul>
+</li>
+<li><strong>멀티 태스킹 (Multi Tasking)</strong><ul>
+<li><u>단일 CPU에서 여러 응용 프로그램의 병렬 실행을 가능</u>케 하는 시스템.</li>
+<li>결과적으로 사용자가 느낄 때에는 여러 응용 프로그램이 동시에 실행되는 것처럼 보인다.</li>
+</ul>
+</li>
+<li><strong>멀티 프로그래밍</strong><ul>
+<li>가능한 CPU를 많이 활용하도록 하는 시스템</li>
+<li>시간 대비 CPU 사용률↑</li>
+<li>전체 응용 프로그램의 실행 시간을 줄일 수 있다.</li>
+<li>A프로그램을 읽어들이는 동안 B프로그램을 실행하고, A프로그램을 읽는 것을 완료했다면 B프로그램을 멈추고 A프로그램을 실행하기 시작한다.</li>
+</ul>
+</li>
+</ul>
+<p><em>컴퓨터 응답 시간</em><br>A, B 프로그램이 순차적으로 진행되고 있다. A 프로그램은 3시간이 걸리고 B 프로그램은 키보드를 눌렀을 때 화면에 출력하는 프로그램이라면, A 프로그램이 실행중에 키보드를 눌렀다고 하더라도 A 프로그램이 실행 완료되어야(3시간) 화면에 출력된다. 이때 <u>컴퓨터가 반응하는 시간(화면에 출력되기까지 걸리는 시간)</u>을 __컴퓨터 응답 시간__이라고 한다.</p>
+<h2 id="1970대"><a href="#1970대" class="headerlink" title="1970대"></a>1970대</h2><p>본격적으로 운영체제 중요성이 부각되어 현대 운영체제 기술이 확립되었다. 제대로 된 운영체제인 UNIX OS가 최초로 구현되었다.</p>
+<h3 id="UNIX-유닉스-OS-특징"><a href="#UNIX-유닉스-OS-특징" class="headerlink" title="UNIX(유닉스) OS 특징"></a>UNIX(유닉스) OS 특징</h3><ul>
+<li>미국 AT&amp;T사의 벨 연구소</li>
+<li>켄톰슨, 데니스 리치(C언어 개발)</li>
+<li>현대 운영체제의 기본 기술을 모두 포함한 최초의 운영체제</li>
+<li>멀티 태스킹, 시분할 시스템, 멀티 프로그래밍, 다중 사용자 지원</li>
+</ul>
+<h3 id="운영체제-개발에-C언어가-필요했던-이유"><a href="#운영체제-개발에-C언어가-필요했던-이유" class="headerlink" title="운영체제 개발에 C언어가 필요했던 이유"></a>운영체제 개발에 C언어가 필요했던 이유</h3><ul>
+<li>1970년대 이전: Assembly 언어로 개발<ul>
+<li>CPU(명령어), Memory(물리적 주소)를 직접 작성</li>
+<li>컴퓨터마다 CPU나 Memory 등이 다를 수 있기 때문에 각각 다시 개발해주어야 하는 단점이 있다.</li>
+<li>프로그래밍 복잡도 높음.</li>
+</ul>
+</li>
+<li>1970년대 이후: C언어가 개발됨<ul>
+<li>컴파일러: 다시 작성할 필요가 없음</li>
+<li>프로그래밍 복잡도 다소 낮아짐</li>
+</ul>
+</li>
+</ul>
+<h2 id="1980년대"><a href="#1980년대" class="headerlink" title="1980년대"></a>1980년대</h2><ul>
+<li>1980년대 이전<ul>
+<li>대형 컴퓨터를 여러 명이 접속해서 사용 (UNIX)</li>
+</ul>
+</li>
+<li>1980년대 이후<ul>
+<li>Personal Computer (PC)</li>
+<li>CLI에서 GUI로 변화.</li>
+<li><strong>80년대 초반</strong>: CLI 환경</li>
+<li><strong>89년대 중후반</strong>: GUI 환경 (마우스 사용)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>CLI(Command Line Interface)</strong>: 터미널 환경<br><strong>GUI(graphical User Interface)</strong>: GUI 환경</p>
+</blockquote>
+<h2 id="1990년대"><a href="#1990년대" class="headerlink" title="1990년대"></a>1990년대</h2><ul>
+<li>GUI 환경과 개인용 컴퓨터로 인해 사용자가 증대되어 응용프로그램 시대가 도래<ul>
+<li>엑셀, 워드 프로세서 등등</li>
+<li>Windows OS 대중화</li>
+</ul>
+</li>
+<li>네트워크 기술 발전<ul>
+<li>월드와이드웹 (WWW) 인터넷 대중화</li>
+</ul>
+</li>
+<li>오픈 소스 운동 활성화 시작<ul>
+<li>UNIX 계열 OS + 응용 프로그램 자체 개발, 소스 오픈</li>
+<li>LINUX(리눅스) 운영체제가 만들어지게 되며 LINUX(리눅스)는 소스가 오픈되어 있으며 무료</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong><u>Killer Application</u></strong><br>해당 기기에서만 플레이할 수 있는 어플리케이션<br><em>ex1</em> 플레이스테이션에서만 플레이 가능한 <strong>위닝 게임</strong><br><em>ex2</em> Windows OS에서만 사용 가능한 <strong>엑셀 프로그램</strong></p>
+</blockquote>
+<h2 id="2000년대-이후"><a href="#2000년대-이후" class="headerlink" title="2000년대 이후"></a>2000년대 이후</h2><ul>
+<li>오픈 소스 활성화<ul>
+<li>LINUX(리눅스) 운영 체제</li>
+<li>Apache(아파치, 웹서버)</li>
+<li>MySQL(데이터베이스)</li>
+<li>안드로이드, 딥러닝, 데이터 사이언스, IoT 관련</li>
+</ul>
+</li>
+<li>가상 머신, 대용량 병렬 처리등 활성화</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 컴퓨터 공학 전공 필수 _ 운영체제</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Computer Science</category>
+        <category>Operating System</category>
+      </categories>
+      <tags>
+        <tag>Computer Science</tag>
+        <tag>Operating System</tag>
+        <tag>history</tag>
+      </tags>
+  </entry>
 </search>
