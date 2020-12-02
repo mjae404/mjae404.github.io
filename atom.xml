@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-01T15:47:29.660Z</updated>
+  <updated>2020-12-02T17:05:22.732Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>운영체제 구조</title>
+    <link href="http://mjae404.github.io/2020/12/03/os-operating-system-structure/"/>
+    <id>http://mjae404.github.io/2020/12/03/os-operating-system-structure/</id>
+    <published>2020-12-02T17:04:01.000Z</published>
+    <updated>2020-12-02T17:05:22.732Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;em&gt;응용 프로그램, 운영체제, 컴퓨터 하드웨어(시스템 리소스)의 관계&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;운영 체제는 응용 프로그램이 요청하는 메모리를 허가하고 분배한다.&lt;/li&gt;
+&lt;li&gt;운영 체제는 응용 프로그램이 요청하는 CPU 시간을 제공한다.&lt;/li&gt;
+&lt;li&gt;운영 체제는 응용 프로그램이 요청하는 IO Devices 사용을 허가/제어한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;운영체제&lt;/strong&gt;: 도서관 / &lt;strong&gt;응용프로그램&lt;/strong&gt;: 시민 / &lt;strong&gt;컴퓨터 하드웨어&lt;/strong&gt;: 책&lt;br&gt;시민이 도서관에 원하는 책(자원)을 요청하면 도서관(운영체제)은 적절한 책(자원)을 찾아서 빌려준다. 기한이 지나면 도서관(운영체제)는 해당 책(자원)을 회수한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Computer Science" scheme="http://mjae404.github.io/categories/Computer-Science/"/>
+    
+      <category term="Operating System" scheme="http://mjae404.github.io/categories/Computer-Science/Operating-System/"/>
+    
+    
+      <category term="Computer Science" scheme="http://mjae404.github.io/tags/Computer-Science/"/>
+    
+      <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
+    
+      <category term="structure" scheme="http://mjae404.github.io/tags/structure/"/>
+    
+  </entry>
   
   <entry>
     <title>운영체제 역사와 핵심기술</title>
@@ -526,29 +561,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS overflow</title>
-    <link href="http://mjae404.github.io/2020/11/14/css-overflow/"/>
-    <id>http://mjae404.github.io/2020/11/14/css-overflow/</id>
-    <published>2020-11-14T13:13:14.000Z</published>
-    <updated>2020-11-14T13:13:26.137Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;text-overflow&lt;/code&gt; CSS 속성은 숨겨진 오버플로우 콘텐츠가 사용자에게 어떻게 보여지는지 설정한다. 잘라내거나, 줄임표(‘…’)로 표시하거나, 맞춤 문자열을 표시할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="overflow" scheme="http://mjae404.github.io/tags/overflow/"/>
     
   </entry>
   
