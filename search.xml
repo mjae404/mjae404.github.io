@@ -8987,4 +8987,143 @@
         <tag>structure</tag>
       </tags>
   </entry>
+  <entry>
+    <title>HTML &amp; CSS 개요</title>
+    <url>/2020/10/20/html-css-overview/</url>
+    <content><![CDATA[<p>HTML(Hyper Text Markup Language)는 페이지에 제목, 문단, 표 등을 정의하고 의미를 부여하는 정적 언어이다. CSS(Cascading Style Sheets)는 콘텐츠 구조를 꾸며주는 정적 언어로 웹의 시각적 표현을 담당한다.</p>
+<a id="more"></a>
+
+<h2 id="웹접근성"><a href="#웹접근성" class="headerlink" title="웹접근성"></a>웹접근성</h2><p>[웹 접근성 연구소] <a href="https://www.wah.or.kr:444/">https://www.wah.or.kr:444/</a><br>[한국형 웹 콘텐츠 접근성 지침 2.1] <a href="https://www.wah.or.kr:444/Participation/guide.asp">https://www.wah.or.kr:444/Participation/guide.asp</a><br>[웹 콘텐츠 제작기법] <a href="https://www.wah.or.kr:444/Participation/technique.asp">https://www.wah.or.kr:444/Participation/technique.asp</a></p>
+<blockquote>
+<p><strong>웹 접근성 품질인증 마크</strong><br>장애인이나 고령자가 웹사이트 이용에 불편이 없도록 웹 접근성 표준을 준수한 우수 사이트에 대해 품질을 인증하고 마크를 부여하는 제도.</p>
+</blockquote>
+<h2 id="에디터"><a href="#에디터" class="headerlink" title="에디터"></a>에디터</h2><p>[Sublime Text] <a href="https://www.sublimetext.com/">https://www.sublimetext.com/</a><br>[Atom] <a href="https://atom.io/">https://atom.io/</a><br>[Brackets] <a href="http://brackets.io/">http://brackets.io/</a><br>[VS Code] <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a><br>[WebStorm] <a href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a></p>
+<h2 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h2><h3 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h3><ul>
+<li>Korean Language Pack for Visual Studio Code</li>
+<li>Beautify</li>
+<li>Live Server</li>
+<li>Auto Rename Tag</li>
+<li>Terminal</li>
+<li>Live Sass Compiler</li>
+<li>Turbo Console log</li>
+<li>Better Comments</li>
+<li>Highlight Matching Tag</li>
+<li>GitLens</li>
+<li>REST Client</li>
+</ul>
+<h3 id="단축키"><a href="#단축키" class="headerlink" title="단축키"></a>단축키</h3><table>
+<thead>
+<tr>
+<th>Windows 단축키</th>
+<th>macOS 단축키</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl + B</td>
+<td>Cmd + B</td>
+<td>사이드바 열기/닫기</td>
+</tr>
+<tr>
+<td>Ctrl + P</td>
+<td>Cmd + P</td>
+<td>빠른 열기(파일이나 기호 탐색)</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + P</td>
+<td>Cmd + Shift + P</td>
+<td>모든 명령 표시(에디터의 모든 명령에 접근)</td>
+</tr>
+<tr>
+<td>Ctrl + F</td>
+<td>Cmd + F</td>
+<td>찾기(검색)</td>
+</tr>
+<tr>
+<td>Ctrl + H</td>
+<td>Cmd + Opt(Alt) + F</td>
+<td>찾기(검색)/바꾸기(대체)</td>
+</tr>
+<tr>
+<td>Alt + Up</td>
+<td>Alt + Up</td>
+<td>줄 위로 이동</td>
+</tr>
+<tr>
+<td>Alt + Down</td>
+<td>Alt + Down</td>
+<td>줄 아래로 이동</td>
+</tr>
+<tr>
+<td>Shift + Alt + UpArrow</td>
+<td>Shift + Alt + UpArrow</td>
+<td>위에 줄 복사</td>
+</tr>
+<tr>
+<td>Shift + Alt + DownArrow</td>
+<td>Shift + Alt + DownArrow</td>
+<td>아래 줄 복사</td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>Tab</td>
+<td>들여쓰기</td>
+</tr>
+<tr>
+<td>Shift + Tab</td>
+<td>Shift + Tab</td>
+<td>내어쓰기</td>
+</tr>
+<tr>
+<td>Ctrl + PageUp</td>
+<td>Cmd + Shift + [</td>
+<td>이전 편집기 열기(좌측 창으로 전환)</td>
+</tr>
+<tr>
+<td>Ctrl + PageDown</td>
+<td>Cmd + Shift + ]</td>
+<td>다음 편집기 열기(우측 창으로 전환)</td>
+</tr>
+<tr>
+<td>Ctrl + ＼</td>
+<td>Cmd + ＼</td>
+<td>편집기 분할(백슬래쉬)</td>
+</tr>
+<tr>
+<td>Ctrl + 숫자</td>
+<td>Cmd + 숫자</td>
+<td>(숫자)번째 분할된 편집기 그룹에 포커스</td>
+</tr>
+<tr>
+<td>Ctrl + W</td>
+<td>Cmd + W</td>
+<td>편집기 닫기</td>
+</tr>
+</tbody></table>
+<h2 id="오픈소스-라이선스"><a href="#오픈소스-라이선스" class="headerlink" title="오픈소스 라이선스"></a>오픈소스 라이선스</h2><blockquote>
+<p>어떤 제품을 개발하는 과정에 필요한 코드 등을 누구나 열람할 수 있도록 공개하는 것</p>
+</blockquote>
+<p>개인적 이용은 가능하지만 상업적 이용에 한해서는 제한이 있거나 비용을 지불해야 하는 경우가 있다.</p>
+<ul>
+<li>Apache License: 개인/상업적 이용, 배포, 수정, 특허 신청 가능</li>
+<li>MIT License: 개인 소스에 이 라이선스를 사용하고 있다는 표시만 지켜주면 되며 나머지 제약은 없음</li>
+<li>BSD License: MIT License와 동일</li>
+<li>Beerware: 오픈소스 개발자를 만날 수 있다면 맥주를 사주자!</li>
+</ul>
+<h2 id="웹표준-검사"><a href="#웹표준-검사" class="headerlink" title="웹표준 검사"></a>웹표준 검사</h2><p>[마크업 유효성 검사] <a href="https://validator.w3.org/">https://validator.w3.org/</a><br>[CSS 유효성 검사 사이트] <a href="https://jigsaw.w3.org/css-validator">https://jigsaw.w3.org/css-validator</a></p>
+<h2 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h2><p>[W3C 웹 표준] <a href="https://www.w3.org/">https://www.w3.org/</a><br>[MDN 웹 문서] <a href="https://developer.mozilla.org/ko/">https://developer.mozilla.org/ko/</a><br>[W3Schools] <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://heropy.blog/2019/04/24/html-css-starter">https://heropy.blog/2019/04/24/html-css-starter</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>HTML</tag>
+        <tag>overview</tag>
+      </tags>
+  </entry>
 </search>
