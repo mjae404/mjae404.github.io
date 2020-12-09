@@ -9211,4 +9211,41 @@
         <tag>selecotr</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS 이벤트 제어 속성</title>
+    <url>/2020/12/09/css-pointer-events/</url>
+    <content><![CDATA[<p>요소에 부여된 이벤트를 제거하거나 활성화시켜야 하는 경우가 있는데 이럴 때 <code>pointer-events</code> 속성을 사용한다. 요소들의 마우스/터치 이벤트들의 응답을 조절할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="HTML-요소에서-사용-가능한-속성값"><a href="#HTML-요소에서-사용-가능한-속성값" class="headerlink" title="HTML 요소에서 사용 가능한 속성값"></a>HTML 요소에서 사용 가능한 속성값</h2><ul>
+<li><code>none</code> : 요소가 포인터 이벤트의 대상이 되지 않는다. 해당 요소의 자손이 다른 <code>pointer-events</code> 값을 가지고 있는 경우 그 자손은 대상이 될 수 있다.</li>
+<li><code>auto</code> : 요소가 <code>pointer-events</code> 속성을 지정하지 않은 것처럼 한다. <code>svg</code>에서는 <code>auto</code>와 <code>visiblePainted</code>가 동일한 효과를 지닌다.</li>
+<li><code>inherit</code> : 부모 요소로부터  <code>pointer-events</code> 속성값을 상속받는다.</li>
+</ul>
+<blockquote>
+<p>IE9와 IE10에서 <code>pointer-events</code>가 작동하지 않으므로 <code>visibility: hidden</code>과 함께 사용하는 것을 고려해야 한다.</p>
+</blockquote>
+<h2 id="SVG-전용-속성값"><a href="#SVG-전용-속성값" class="headerlink" title="SVG 전용 속성값"></a>SVG 전용 속성값</h2><ul>
+<li>visiblePainted</li>
+<li>visibleFill</li>
+<li>visibleStroke</li>
+<li>visible</li>
+<li>painted</li>
+<li>fill</li>
+<li>stroke</li>
+<li>all</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://developer.mozilla.org/ko/docs/Web/CSS/pointer-events">https://developer.mozilla.org/ko/docs/Web/CSS/pointer-events</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>overflow</tag>
+      </tags>
+  </entry>
 </search>

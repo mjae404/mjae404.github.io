@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-06T16:32:24.042Z</updated>
+  <updated>2020-12-09T14:41:36.467Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 이벤트 제어 속성</title>
+    <link href="http://mjae404.github.io/2020/12/09/css-pointer-events/"/>
+    <id>http://mjae404.github.io/2020/12/09/css-pointer-events/</id>
+    <published>2020-12-09T14:32:37.000Z</published>
+    <updated>2020-12-09T14:41:36.467Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;요소에 부여된 이벤트를 제거하거나 활성화시켜야 하는 경우가 있는데 이럴 때 &lt;code&gt;pointer-events&lt;/code&gt; 속성을 사용한다. 요소들의 마우스/터치 이벤트들의 응답을 조절할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="overflow" scheme="http://mjae404.github.io/tags/overflow/"/>
+    
+  </entry>
   
   <entry>
     <title>제이쿼리 선택자</title>
@@ -531,33 +554,6 @@
       <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
     
       <category term="array HOF" scheme="http://mjae404.github.io/tags/array-HOF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 윤년인지 확인하는 함수</title>
-    <link href="http://mjae404.github.io/2020/11/18/js-exercise008/"/>
-    <id>http://mjae404.github.io/2020/11/18/js-exercise008/</id>
-    <published>2020-11-18T13:34:26.000Z</published>
-    <updated>2020-11-18T13:34:35.945Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;특정 연도가 윤년인지 확인하는 함수. 윤년은 4로 나누어 떨어지고 100으로는 나누어 떨어지지는 않지만 400으로는 나누어 떨어지는 해이다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
     
   </entry>
   

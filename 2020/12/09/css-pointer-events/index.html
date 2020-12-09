@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjaedot.github.io">
   <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/>
   <title>
-    아카이브 |  404 Not Found
+    CSS 이벤트 제어 속성 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -46,7 +46,7 @@ ga('send', 'pageview');
 
   
 
-  <link rel="canonical" href="http://mjae404.github.io/archives/page/10/"/>
+  <link rel="canonical" href="http://mjae404.github.io/2020/12/09/css-pointer-events/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -56,122 +56,106 @@ ga('send', 'pageview');
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article class="articles">
+  <article id="post-css-pointer-events" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">아카이브</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2020" class="archive-year">2020</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/08/16/js-function/" class="archive-article-date">
-  <time datetime="2020-08-16T14:26:09.000Z" itemprop="datePublished">08/16</time>
-</a>
+    <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/08/16/js-function/"
-    >JS 함수</a
-  >
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS 이벤트 제어 속성
+</h1>
   
 
     </header>
     
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/08/16/js-variable/" class="archive-article-date">
-  <time datetime="2020-08-16T14:24:47.000Z" itemprop="datePublished">08/16</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/08/16/js-variable/"
-    >JS 변수</a
-  >
-</h2>
-  
 
-    </header>
     
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/08/11/js-overview/" class="archive-article-date">
-  <time datetime="2020-08-10T17:13:52.000Z" itemprop="datePublished">08/11</time>
+    <div class="article-meta">
+      <a href="/2020/12/09/css-pointer-events/" class="article-date">
+  <time datetime="2020-12-09T14:32:37.000Z" itemprop="datePublished">2020-12-09</time>
 </a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/08/11/js-overview/"
-    >자바스크립트 개요</a
-  >
-</h2>
-  
-
-    </header>
-    
-    
-  </div>
-</article>
       
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/08/08/hello-world/" class="archive-article-date">
-  <time datetime="2020-08-08T14:26:09.000Z" itemprop="datePublished">08/08</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/08/08/hello-world/"
-    >Hello World</a
-  >
-</h2>
-  
-
-    </header>
-    
-    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a>
   </div>
-</article>
-      
+
       
     </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>요소에 부여된 이벤트를 제거하거나 활성화시켜야 하는 경우가 있는데 이럴 때 <code>pointer-events</code> 속성을 사용한다. 요소들의 마우스/터치 이벤트들의 응답을 조절할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="HTML-요소에서-사용-가능한-속성값"><a href="#HTML-요소에서-사용-가능한-속성값" class="headerlink" title="HTML 요소에서 사용 가능한 속성값"></a>HTML 요소에서 사용 가능한 속성값</h2><ul>
+<li><code>none</code> : 요소가 포인터 이벤트의 대상이 되지 않는다. 해당 요소의 자손이 다른 <code>pointer-events</code> 값을 가지고 있는 경우 그 자손은 대상이 될 수 있다.</li>
+<li><code>auto</code> : 요소가 <code>pointer-events</code> 속성을 지정하지 않은 것처럼 한다. <code>svg</code>에서는 <code>auto</code>와 <code>visiblePainted</code>가 동일한 효과를 지닌다.</li>
+<li><code>inherit</code> : 부모 요소로부터  <code>pointer-events</code> 속성값을 상속받는다.</li>
+</ul>
+<blockquote>
+<p>IE9와 IE10에서 <code>pointer-events</code>가 작동하지 않으므로 <code>visibility: hidden</code>과 함께 사용하는 것을 고려해야 한다.</p>
+</blockquote>
+<h2 id="SVG-전용-속성값"><a href="#SVG-전용-속성값" class="headerlink" title="SVG 전용 속성값"></a>SVG 전용 속성값</h2><ul>
+<li>visiblePainted</li>
+<li>visibleFill</li>
+<li>visibleStroke</li>
+<li>visible</li>
+<li>painted</li>
+<li>fill</li>
+<li>stroke</li>
+<li>all</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Web/CSS/pointer-events">https://developer.mozilla.org/ko/docs/Web/CSS/pointer-events</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/12/09/css-pointer-events/" data-id="ckihitlmx0000nktv986lcxp8"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overflow/" rel="tag">overflow</a></li></ul>
+
+    </footer>
+
   </div>
-  
-  
 
   
-  <nav class="page-nav">
+  
+  <nav class="article-nav">
     
-    <a class="extend prev" rel="prev" href="/archives/page/9/">prev</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/8/">8</a><a class="page-number" href="/archives/page/9/">9</a><span class="page-number current">10</span>
+    
+      <a href="/2020/12/07/jquery-selector/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">제이쿼리 선택자</div>
+      </a>
+    
   </nav>
+
+
   
+
+  
+
+  
+  
+  
+
+</article>
 </section>
       <footer class="footer">
   <div class="outer">
