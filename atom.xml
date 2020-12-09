@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-09T14:41:36.467Z</updated>
+  <updated>2020-12-09T17:00:56.198Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS box shadow</title>
+    <link href="http://mjae404.github.io/2020/12/10/css-box-shadow/"/>
+    <id>http://mjae404.github.io/2020/12/10/css-box-shadow/</id>
+    <published>2020-12-09T16:58:05.000Z</published>
+    <updated>2020-12-09T17:00:56.198Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;box-shadow&lt;/code&gt; css 속성은 요소의 프레임 주위에 그림자 효과를 추가한다. 여러개의 효과를 쉼표로 추가하여 설정할 수 있다. &lt;strong&gt;X값, Y값, 블러, 번지는 정도, 색상&lt;/strong&gt; 을 기재한다. 거의 모든 요소의 프레임에서 사용할 수 있으며, &lt;code&gt;border-radius&lt;/code&gt;를 지정할 수 있다. 여러 개를 지정할 수 있고, 첫번째로 지정한 그림자가 제일 위에 있다.&lt;/p&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;box-shadow&lt;/span&gt;: 3&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 3&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;red&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;-1em&lt;/span&gt; 0 &lt;span class=&quot;selector-class&quot;&gt;.4em&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;teal&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="box shadow" scheme="http://mjae404.github.io/tags/box-shadow/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 이벤트 제어 속성</title>
@@ -525,35 +549,6 @@
       <category term="SCSS" scheme="http://mjae404.github.io/tags/SCSS/"/>
     
       <category term="built-in Function" scheme="http://mjae404.github.io/tags/built-in-Function/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS html 생성</title>
-    <link href="http://mjae404.github.io/2020/11/19/js-exercise009/"/>
-    <id>http://mjae404.github.io/2020/11/19/js-exercise009/</id>
-    <published>2020-11-18T15:46:53.000Z</published>
-    <updated>2020-11-18T15:47:15.282Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;아래 배열을 사용하여 html을 생성하는 함수를 작성하라.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="arry" scheme="http://mjae404.github.io/tags/arry/"/>
-    
-      <category term="array HOF" scheme="http://mjae404.github.io/tags/array-HOF/"/>
     
   </entry>
   

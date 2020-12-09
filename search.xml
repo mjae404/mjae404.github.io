@@ -9248,4 +9248,49 @@
         <tag>overflow</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS box shadow</title>
+    <url>/2020/12/10/css-box-shadow/</url>
+    <content><![CDATA[<p><code>box-shadow</code> css 속성은 요소의 프레임 주위에 그림자 효과를 추가한다. 여러개의 효과를 쉼표로 추가하여 설정할 수 있다. <strong>X값, Y값, 블러, 번지는 정도, 색상</strong> 을 기재한다. 거의 모든 요소의 프레임에서 사용할 수 있으며, <code>border-radius</code>를 지정할 수 있다. 여러 개를 지정할 수 있고, 첫번째로 지정한 그림자가 제일 위에 있다.</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">box-shadow</span>: 3<span class="selector-tag">px</span> 3<span class="selector-tag">px</span> <span class="selector-tag">red</span>, <span class="selector-tag">-1em</span> 0 <span class="selector-class">.4em</span> <span class="selector-tag">teal</span>;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="문법"><a href="#문법" class="headerlink" title="문법"></a>문법</h2><p>다음과 같이 지정할 수 있다.</p>
+<ul>
+<li>2 / 3 / 4개의 <code>&lt;length&gt;</code> 값<ul>
+<li>값이 두개만 주어진 경우: <code>&lt;offset-x&gt;</code>, <code>&lt;offset-y&gt;</code></li>
+<li>세번째 값: <code>&lt;blur-radius&gt;</code></li>
+<li>네번째 값: <code>&lt;spread-radius&gt;</code></li>
+</ul>
+</li>
+<li><code>inset</code>: 옵션갑</li>
+<li><code>color</code>: 옵션값</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* Keyword values */</span></span><br><span class="line"><span class="selector-tag">box-shadow</span>: <span class="selector-tag">none</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* offset-x | offset-y | color */</span></span><br><span class="line"><span class="selector-tag">box-shadow</span>: 60<span class="selector-tag">px</span> <span class="selector-tag">-16px</span> <span class="selector-tag">teal</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* offset-x | offset-y | blur-radius | color */</span></span><br><span class="line"><span class="selector-tag">box-shadow</span>: 10<span class="selector-tag">px</span> 5<span class="selector-tag">px</span> 5<span class="selector-tag">px</span> <span class="selector-tag">black</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* offset-x | offset-y | blur-radius | spread-radius | color */</span></span><br><span class="line"><span class="selector-tag">box-shadow</span>: 2<span class="selector-tag">px</span> 2<span class="selector-tag">px</span> 2<span class="selector-tag">px</span> 1<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0, 0, 0, 0<span class="selector-class">.2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* inset | offset-x | offset-y | color */</span></span><br><span class="line"><span class="selector-tag">box-shadow</span>: <span class="selector-tag">inset</span> 5<span class="selector-tag">em</span> 1<span class="selector-tag">em</span> <span class="selector-tag">gold</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Any number of shadows, separated by commas */</span></span><br><span class="line"><span class="selector-tag">box-shadow</span>: 3<span class="selector-tag">px</span> 3<span class="selector-tag">px</span> <span class="selector-tag">red</span>, <span class="selector-tag">-1em</span> 0 0<span class="selector-class">.4em</span> <span class="selector-tag">olive</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Global keywords */</span></span><br><span class="line"><span class="selector-tag">box-shadow</span>: <span class="selector-tag">inherit</span>;</span><br><span class="line"><span class="selector-tag">box-shadow</span>: <span class="selector-tag">initial</span>;</span><br><span class="line"><span class="selector-tag">box-shadow</span>: <span class="selector-tag">unset</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="값"><a href="#값" class="headerlink" title="값"></a>값</h3><p><strong><em>inset</em></strong></p>
+<p>지정하지 않은 경우(기본값) 그림자는 드롭섀도우로 간주된다. <code>inset</code> 키워드는 프레임 내부로 그림자 방향을 변경한다.</p>
+<p><strong><em>offset-x, offset-y</em></strong></p>
+<p>그림자 오프셋을 설정하기 위한 <code>&lt;length&gt;</code> 값이다. <code>&lt;offset-x&gt;</code>은 수평 거리를 명시한다. 음의 값은 그림자를 요소의 왼쪽에 위치시킨다. <code>&lt;offset-y&gt;</code>는 수직 거리를 명시한다. 음의 값은 그림자를 요소의 위에 위치시킨다. 두 값이 모두 0인 경우, 그림자는 요소의 뒤에 배치된다.</p>
+<p><strong><em>blur-radius</em></strong></p>
+<p>세번째 값. 값이 클수록 흐릿해지고, 그림자가 더 커지고 가벼워진다. 음수값은 허용되지 않으며, 지정하지 않으면 0이 된다.</p>
+<p><strong><em>spread-radius</em></strong></p>
+<p>네번째 값. 양수 값은 그림자를 확장시키고 더 크게 늘린다. 음수 값은 수축시킨다. 지정하지 않으면 0이 된다.</p>
+<p><strong><em>color</em></strong></p>
+<p>지정되지 않은 경우, 사용되는 색상은 브라우저에 따라 달라진다. 일반적으로 색 속성 값이지만 사파리는 현재 투명한 그림자를 적용한다.</p>
+<h3 id="보간"><a href="#보간" class="headerlink" title="보간"></a>보간</h3><p>목록의 각 그림자는 color와 x, y, blur 및 spread를 통해 보간된다. 각 그림자에 대해 여러 그림자가 모두 기재되어 있거나 기재되어 있지 않은 경우 보간된 그림자는 그 점에서 기재된 그림자와 일치되어야 한다.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow">https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>box shadow</tag>
+      </tags>
+  </entry>
 </search>
