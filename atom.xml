@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-11T13:44:13.890Z</updated>
+  <updated>2020-12-12T14:07:50.853Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 애니메이션 03</title>
+    <link href="http://mjae404.github.io/2021/01/13/css-exercise003/"/>
+    <id>http://mjae404.github.io/2021/01/13/css-exercise003/</id>
+    <published>2021-01-13T14:06:48.000Z</published>
+    <updated>2020-12-12T14:07:50.853Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 wave Animation Effect.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 트랜지션</title>
@@ -128,11 +155,11 @@
       <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
     
     
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
   </entry>
   
@@ -155,11 +182,11 @@
       <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
     
     
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
   </entry>
   
@@ -520,31 +547,6 @@
       <category term="drawing" scheme="http://mjae404.github.io/tags/drawing/"/>
     
       <category term="text" scheme="http://mjae404.github.io/tags/text/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 학점 계산기</title>
-    <link href="http://mjae404.github.io/2020/11/21/python-exercise003/"/>
-    <id>http://mjae404.github.io/2020/11/21/python-exercise003/</id>
-    <published>2020-11-21T04:46:34.000Z</published>
-    <updated>2020-11-21T04:46:47.771Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;성적표를 기다리는 학생들을 위해서 학점 계산기를 만들어보세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
