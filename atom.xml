@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-13T05:46:09.504Z</updated>
+  <updated>2020-12-13T06:00:57.468Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CSS 애니메이션 03</title>
-    <link href="http://mjae404.github.io/2021/01/12/css-exercise003/"/>
-    <id>http://mjae404.github.io/2021/01/12/css-exercise003/</id>
-    <published>2021-01-12T14:06:48.000Z</published>
-    <updated>2020-12-13T05:46:09.504Z</updated>
+    <title>CSS 애니메이션 04</title>
+    <link href="http://mjae404.github.io/2020/12/13/css-exercise004/"/>
+    <id>http://mjae404.github.io/2020/12/13/css-exercise004/</id>
+    <published>2020-12-13T05:44:36.000Z</published>
+    <updated>2020-12-13T06:00:57.468Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 wave Animation Effect.&lt;/p&gt;
+      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 tail Animation Effect.&lt;/p&gt;
     
     </summary>
     
@@ -44,15 +44,15 @@
   </entry>
   
   <entry>
-    <title>CSS 애니메이션 04</title>
-    <link href="http://mjae404.github.io/2020/12/13/css-exercise004/"/>
-    <id>http://mjae404.github.io/2020/12/13/css-exercise004/</id>
-    <published>2020-12-13T05:44:36.000Z</published>
-    <updated>2020-12-13T06:00:57.468Z</updated>
+    <title>CSS 애니메이션 03</title>
+    <link href="http://mjae404.github.io/2020/12/12/css-exercise003/"/>
+    <id>http://mjae404.github.io/2020/12/12/css-exercise003/</id>
+    <published>2020-12-12T14:06:48.000Z</published>
+    <updated>2020-12-13T06:02:17.245Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 tail Animation Effect.&lt;/p&gt;
+      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 wave Animation Effect.&lt;/p&gt;
     
     </summary>
     
