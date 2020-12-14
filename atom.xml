@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-13T06:00:57.468Z</updated>
+  <updated>2020-12-14T14:12:22.278Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 약수 찾기</title>
+    <link href="http://mjae404.github.io/2020/12/14/python-exercise008/"/>
+    <id>http://mjae404.github.io/2020/12/14/python-exercise008/</id>
+    <published>2020-12-14T14:12:12.000Z</published>
+    <updated>2020-12-14T14:12:22.278Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;자연수 중 120의 약수를 모두 출력하고, 총 몇개의 약수가 있는지 출력하는 프로그램을 써보세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 애니메이션 04</title>
@@ -507,31 +532,6 @@
     <summary type="html">
     
       &lt;p&gt;10보다 작은 2 또는 3의 배수는 2, 3, 4, 6, 8, 9이며, 이들의 합은 32입니다. while문과 if문을 활용하여, 1000보다 작은 자연수 중 2 또는 3의 배수의 합을 출력하는 프로그램을 써보세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 이상한 수학 문제 I</title>
-    <link href="http://mjae404.github.io/2020/11/22/python-exercise004/"/>
-    <id>http://mjae404.github.io/2020/11/22/python-exercise004/</id>
-    <published>2020-11-22T14:20:51.000Z</published>
-    <updated>2020-11-22T14:21:07.311Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;while문과 if문을 활용하여 100이하의 자연수 중 8의 배수이지만, 12의 배수는 아닌 것을 모두 출력하세요.&lt;/p&gt;
     
     </summary>
     

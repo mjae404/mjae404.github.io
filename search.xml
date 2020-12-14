@@ -9381,4 +9381,29 @@
         <tag>prototype</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PYTHON 약수 찾기</title>
+    <url>/2020/12/14/python-exercise008/</url>
+    <content><![CDATA[<p>자연수 중 120의 약수를 모두 출력하고, 총 몇개의 약수가 있는지 출력하는 프로그램을 써보세요.</p>
+<a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">8</span><br><span class="line">10</span><br><span class="line">12</span><br><span class="line">15</span><br><span class="line">20</span><br><span class="line">24</span><br><span class="line">30</span><br><span class="line">40</span><br><span class="line">60</span><br><span class="line">120</span><br><span class="line">120의 약수는 총 16개입니다.</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>개인풀이</em></strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">120</span></span><br><span class="line">x = <span class="number">1</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> x &lt;= n:</span><br><span class="line">    <span class="keyword">if</span> n % x == <span class="number">0</span>:</span><br><span class="line">        print(x)</span><br><span class="line">        count = count + <span class="number">1</span></span><br><span class="line">    x = x + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">&quot;%d의 약수는 총 %d개 입니다.&quot;</span> % (n, count))</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>
