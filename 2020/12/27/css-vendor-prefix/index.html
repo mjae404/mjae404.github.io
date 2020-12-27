@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjaedot.github.io">
   <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/>
   <title>
-    PYTHON 약수 찾기 |  404 Not Found
+    CSS 벤더 프리픽스 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -46,7 +46,7 @@ ga('send', 'pageview');
 
   
 
-  <link rel="canonical" href="http://mjae404.github.io/2020/12/14/python-exercise008/"/>
+  <link rel="canonical" href="http://mjae404.github.io/2020/12/27/css-vendor-prefix/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -56,7 +56,7 @@ ga('send', 'pageview');
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-python-exercise008" class="article article-type-post" itemscope
+  <article id="post-css-vendor-prefix" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -64,7 +64,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  PYTHON 약수 찾기
+  CSS 벤더 프리픽스
 </h1>
   
 
@@ -73,12 +73,12 @@ ga('send', 'pageview');
 
     
     <div class="article-meta">
-      <a href="/2020/12/14/python-exercise008/" class="article-date">
-  <time datetime="2020-12-14T14:12:12.000Z" itemprop="datePublished">2020-12-14</time>
+      <a href="/2020/12/27/css-vendor-prefix/" class="article-date">
+  <time datetime="2020-12-27T09:00:16.000Z" itemprop="datePublished">2020-12-27</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/Python/">Python</a>
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a>
   </div>
 
       
@@ -94,17 +94,57 @@ ga('send', 'pageview');
       
 
       
-      <p>자연수 중 120의 약수를 모두 출력하고, 총 몇개의 약수가 있는지 출력하는 프로그램을 써보세요.</p>
+      <p>CSS3 표준으로 확정이 되기 이전 혹은 브라우저 개발사가 실험적으로 제공하는 기능을 사용할 경우 벤더 프리픽스를 이용하여야 한다. 브라우저의 버전이 올라감에 따라 벤더 프리픽스를 사용하지 않아도 될 수 있지만 구형 브라우저 지원을 위해 사용할 필요가 있다.</p>
 <a id="more"></a>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">8</span><br><span class="line">10</span><br><span class="line">12</span><br><span class="line">15</span><br><span class="line">20</span><br><span class="line">24</span><br><span class="line">30</span><br><span class="line">40</span><br><span class="line">60</span><br><span class="line">120</span><br><span class="line">120의 약수는 총 16개입니다.</span><br></pre></td></tr></table></figure>
+<h2 id="브라우저별-벤더-프리픽스"><a href="#브라우저별-벤더-프리픽스" class="headerlink" title="브라우저별 벤더 프리픽스"></a>브라우저별 벤더 프리픽스</h2><table>
+<thead>
+<tr>
+<th>브라우저</th>
+<th>벤더 프리픽스</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IE / Edge</td>
+<td>-ms-</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>-moz-</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>-o-</td>
+</tr>
+<tr>
+<td>iOS Safari</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>Android Browser</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>Chrome for Android</td>
+<td>-webkit-</td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  <span class="attribute">-webkit-user-select</span>: none;  <span class="comment">/* Chrome all / Safari all */</span></span><br><span class="line">  <span class="attribute">-moz-user-select</span>: none;     <span class="comment">/* Firefox all */</span></span><br><span class="line">  <span class="attribute">-ms-user-select</span>: none;      <span class="comment">/* IE 10+ */</span></span><br><span class="line">  <span class="attribute">user-select</span>: none;          <span class="comment">/* Likely future */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong><em>개인풀이</em></strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">n = <span class="number">120</span></span><br><span class="line">x = <span class="number">1</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> x &lt;= n:</span><br><span class="line">    <span class="keyword">if</span> n % x == <span class="number">0</span>:</span><br><span class="line">        print(x)</span><br><span class="line">        count = count + <span class="number">1</span></span><br><span class="line">    x = x + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">&quot;%d의 약수는 총 %d개 입니다.&quot;</span> % (n, count))</span><br></pre></td></tr></table></figure>
+<h2 id="Prefix-Free-라이브러리"><a href="#Prefix-Free-라이브러리" class="headerlink" title="Prefix Free 라이브러리"></a>Prefix Free 라이브러리</h2><p>브라우저들을 맞추기 위해 하나하나 벤더 프리픽스를 사용하게 될 경우 코드의 양이 늘며, 브라우저의 업데이트가 빈번하게 이뤄지고 있으므로 불필요한 코드가 존재하게 될 경우가 많다. 사용하지 않아도 될 벤더 프리픽스를 사용하는 것은 성능에도 영향을 줄 수 있기 때문에 <a target="_blank" rel="noopener" href="https://projects.verou.me/prefixfree/"><code>Prefix Free 라이브러리</code></a>를 사용하는 것도 유용하다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;prefixfree.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <hr>
 <blockquote>
-<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/css3-vendor-prefix">https://poiemaweb.com/css3-vendor-prefix</a></p>
 </blockquote>
 
       
@@ -112,10 +152,10 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/12/14/python-exercise008/" data-id="ckiomz92d0000uotv2jxlauu7"
+      <a data-url="http://mjae404.github.io/2020/12/27/css-vendor-prefix/" data-id="ckj6wogkt0000sktv0qv6dxtg"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exercise/" rel="tag">exercise</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vendor-prefix/" rel="tag">vendor prefix</a></li></ul>
 
     </footer>
 
@@ -125,19 +165,10 @@ ga('send', 'pageview');
   
   <nav class="article-nav">
     
-      <a href="/2020/12/27/css-vendor-prefix/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">
-          
-            CSS 벤더 프리픽스
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/12/13/css-exercise004/" class="article-nav-link">
+      <a href="/2020/12/14/python-exercise008/" class="article-nav-link">
         <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">CSS 애니메이션 04</div>
+        <div class="article-nav-title">PYTHON 약수 찾기</div>
       </a>
     
   </nav>

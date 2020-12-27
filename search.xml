@@ -9406,4 +9406,68 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS 벤더 프리픽스</title>
+    <url>/2020/12/27/css-vendor-prefix/</url>
+    <content><![CDATA[<p>CSS3 표준으로 확정이 되기 이전 혹은 브라우저 개발사가 실험적으로 제공하는 기능을 사용할 경우 벤더 프리픽스를 이용하여야 한다. 브라우저의 버전이 올라감에 따라 벤더 프리픽스를 사용하지 않아도 될 수 있지만 구형 브라우저 지원을 위해 사용할 필요가 있다.</p>
+<a id="more"></a>
+
+<h2 id="브라우저별-벤더-프리픽스"><a href="#브라우저별-벤더-프리픽스" class="headerlink" title="브라우저별 벤더 프리픽스"></a>브라우저별 벤더 프리픽스</h2><table>
+<thead>
+<tr>
+<th>브라우저</th>
+<th>벤더 프리픽스</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IE / Edge</td>
+<td>-ms-</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>-moz-</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>-o-</td>
+</tr>
+<tr>
+<td>iOS Safari</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>Android Browser</td>
+<td>-webkit-</td>
+</tr>
+<tr>
+<td>Chrome for Android</td>
+<td>-webkit-</td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  <span class="attribute">-webkit-user-select</span>: none;  <span class="comment">/* Chrome all / Safari all */</span></span><br><span class="line">  <span class="attribute">-moz-user-select</span>: none;     <span class="comment">/* Firefox all */</span></span><br><span class="line">  <span class="attribute">-ms-user-select</span>: none;      <span class="comment">/* IE 10+ */</span></span><br><span class="line">  <span class="attribute">user-select</span>: none;          <span class="comment">/* Likely future */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Prefix-Free-라이브러리"><a href="#Prefix-Free-라이브러리" class="headerlink" title="Prefix Free 라이브러리"></a>Prefix Free 라이브러리</h2><p>브라우저들을 맞추기 위해 하나하나 벤더 프리픽스를 사용하게 될 경우 코드의 양이 늘며, 브라우저의 업데이트가 빈번하게 이뤄지고 있으므로 불필요한 코드가 존재하게 될 경우가 많다. 사용하지 않아도 될 벤더 프리픽스를 사용하는 것은 성능에도 영향을 줄 수 있기 때문에 <a href="https://projects.verou.me/prefixfree/"><code>Prefix Free 라이브러리</code></a>를 사용하는 것도 유용하다.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;prefixfree.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://poiemaweb.com/css3-vendor-prefix">https://poiemaweb.com/css3-vendor-prefix</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>vendor prefix</tag>
+      </tags>
+  </entry>
 </search>

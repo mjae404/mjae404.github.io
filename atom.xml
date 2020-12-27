@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-14T14:12:22.278Z</updated>
+  <updated>2020-12-27T09:10:08.531Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 벤더 프리픽스</title>
+    <link href="http://mjae404.github.io/2020/12/27/css-vendor-prefix/"/>
+    <id>http://mjae404.github.io/2020/12/27/css-vendor-prefix/</id>
+    <published>2020-12-27T09:00:16.000Z</published>
+    <updated>2020-12-27T09:10:08.531Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSS3 표준으로 확정이 되기 이전 혹은 브라우저 개발사가 실험적으로 제공하는 기능을 사용할 경우 벤더 프리픽스를 이용하여야 한다. 브라우저의 버전이 올라감에 따라 벤더 프리픽스를 사용하지 않아도 될 수 있지만 구형 브라우저 지원을 위해 사용할 필요가 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="vendor prefix" scheme="http://mjae404.github.io/tags/vendor-prefix/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 약수 찾기</title>
@@ -507,31 +530,6 @@
     <summary type="html">
     
       &lt;p&gt;1988년 쌍문동에 사는 택이는 바둑대회 우승 상금으로 5000만원을 받았습니다. 하지만 바둑 외에는 아는게 없으니, 이웃 어른들에게 이 돈으로 무엇을 해야할지 물어보기로 하였습니다. 동일 아저씨나 미란 아주머니 중 누구의 말을 듣는 것이 좋을지 판단해보세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 이상한 수학 문제 II</title>
-    <link href="http://mjae404.github.io/2020/11/23/python-exercise005/"/>
-    <id>http://mjae404.github.io/2020/11/23/python-exercise005/</id>
-    <published>2020-11-22T15:35:51.000Z</published>
-    <updated>2020-11-22T15:36:02.637Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;10보다 작은 2 또는 3의 배수는 2, 3, 4, 6, 8, 9이며, 이들의 합은 32입니다. while문과 if문을 활용하여, 1000보다 작은 자연수 중 2 또는 3의 배수의 합을 출력하는 프로그램을 써보세요.&lt;/p&gt;
     
     </summary>
     
