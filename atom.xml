@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-27T09:10:08.531Z</updated>
+  <updated>2020-12-27T11:24:52.635Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML 웹접근성</title>
+    <link href="http://mjae404.github.io/2020/12/27/html-web-accessibility/"/>
+    <id>http://mjae404.github.io/2020/12/27/html-web-accessibility/</id>
+    <published>2020-12-27T09:58:30.000Z</published>
+    <updated>2020-12-27T11:24:52.635Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;차별 및 제한 없이 동등하게&lt;/strong&gt;&lt;br&gt;The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect. (웹의 힘은 보편성에 있다. 장애에 관계없이 모든 사람이 접근할 수 있도록 하는 것은 필수적인 요소이다.)&lt;br&gt;─ Tim Berners-Lee&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+      <category term="web accessibility" scheme="http://mjae404.github.io/tags/web-accessibility/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 벤더 프리픽스</title>
@@ -505,31 +530,6 @@
     <summary type="html">
     
       &lt;p&gt;while문을 사용하여 콘솔에 아래 문장들이 출력되게 구구단 프로그램을 작성하세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 택이의 우승상금</title>
-    <link href="http://mjae404.github.io/2020/11/24/python-exercise006/"/>
-    <id>http://mjae404.github.io/2020/11/24/python-exercise006/</id>
-    <published>2020-11-23T17:02:43.000Z</published>
-    <updated>2020-11-23T17:02:54.115Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;1988년 쌍문동에 사는 택이는 바둑대회 우승 상금으로 5000만원을 받았습니다. 하지만 바둑 외에는 아는게 없으니, 이웃 어른들에게 이 돈으로 무엇을 해야할지 물어보기로 하였습니다. 동일 아저씨나 미란 아주머니 중 누구의 말을 듣는 것이 좋을지 판단해보세요.&lt;/p&gt;
     
     </summary>
     
