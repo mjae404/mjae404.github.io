@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-27T11:24:52.635Z</updated>
+  <updated>2020-12-27T13:59:02.245Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WAI-ARIA 사용법 및 주의점</title>
+    <link href="http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/"/>
+    <id>http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/</id>
+    <published>2020-12-27T13:29:56.000Z</published>
+    <updated>2020-12-27T13:59:02.245Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;WAI-ARIA를 사용하는 방법 및 주의사항은 아래와 같다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/WAI-ARIA/"/>
+    
+    
+      <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WAI-ARIA 기본 개념</title>
+    <link href="http://mjae404.github.io/2020/12/27/wai-aria-overview/"/>
+    <id>http://mjae404.github.io/2020/12/27/wai-aria-overview/</id>
+    <published>2020-12-27T11:49:30.000Z</published>
+    <updated>2020-12-27T13:30:06.396Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ARIA는 마크업에 &lt;strong&gt;역할(Role)&lt;/strong&gt;, &lt;strong&gt;속성(Property)&lt;/strong&gt;, &lt;strong&gt;상태(State)&lt;/strong&gt; 정보를 추가하여 스크린 리더기 및 보조 기기 등에서 &lt;strong&gt;접근성 및 상호 운용성을 향상&lt;/strong&gt; 시키고 보다 나은 사용자 경험(User Experience)를 제공하기 위함이라는 목적을 가진다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/WAI-ARIA/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML 웹접근성</title>
@@ -493,55 +537,6 @@
       <category term="jQuery" scheme="http://mjae404.github.io/tags/jQuery/"/>
     
       <category term="method" scheme="http://mjae404.github.io/tags/method/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>제이쿼리 개요</title>
-    <link href="http://mjae404.github.io/2020/11/26/jquery-overview/"/>
-    <id>http://mjae404.github.io/2020/11/26/jquery-overview/</id>
-    <published>2020-11-25T17:58:56.000Z</published>
-    <updated>2020-12-06T16:30:16.720Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;라이브러리(library)&lt;/em&gt;&lt;br&gt;자주 사용하는 코드들을 재사용할 수 있는 형태로 가공해서 프로그래밍 효율을 높여주는 코드&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;jQuery란&lt;/em&gt;&lt;br&gt;엘리먼트를 선택하는 강력한 방법과 선택된 엘리먼트들을 효율적으로 제어할 수 있는 다양한 수단을 제공하는 자바스크립트 라이브러리&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="jQuery" scheme="http://mjae404.github.io/categories/jQuery/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="jQuery" scheme="http://mjae404.github.io/tags/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 구구단</title>
-    <link href="http://mjae404.github.io/2020/11/25/python-exercise007/"/>
-    <id>http://mjae404.github.io/2020/11/25/python-exercise007/</id>
-    <published>2020-11-25T12:16:32.000Z</published>
-    <updated>2020-11-25T12:16:42.131Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;while문을 사용하여 콘솔에 아래 문장들이 출력되게 구구단 프로그램을 작성하세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
