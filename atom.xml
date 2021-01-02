@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2020-12-27T13:59:02.245Z</updated>
+  <updated>2021-01-02T13:45:18.141Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git 커밋 되돌리기 (reset / revert)</title>
+    <link href="http://mjae404.github.io/2021/01/02/git-reset/"/>
+    <id>http://mjae404.github.io/2021/01/02/git-reset/</id>
+    <published>2021-01-02T13:31:16.000Z</published>
+    <updated>2021-01-02T13:45:18.141Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;commit&lt;/code&gt; 혹은 &lt;code&gt;push&lt;/code&gt;했던 내용이 잘못되었을 때 이전으로 되돌려야하는 경우 종종 있다. 로컬에 &lt;code&gt;commit&lt;/code&gt;만 할 경우 &lt;code&gt;reset&lt;/code&gt;, &lt;code&gt;push&lt;/code&gt;까지 된 경우 &lt;code&gt;revert&lt;/code&gt;를 사용한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
+    
+      <category term="reset" scheme="http://mjae404.github.io/tags/reset/"/>
+    
+      <category term="revert" scheme="http://mjae404.github.io/tags/revert/"/>
+    
+  </entry>
   
   <entry>
     <title>WAI-ARIA 사용법 및 주의점</title>
@@ -514,29 +539,6 @@
       <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
     
       <category term="animation" scheme="http://mjae404.github.io/tags/animation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>제이쿼리 메소드</title>
-    <link href="http://mjae404.github.io/2020/11/28/jquery-method/"/>
-    <id>http://mjae404.github.io/2020/11/28/jquery-method/</id>
-    <published>2020-11-27T16:01:44.000Z</published>
-    <updated>2020-12-06T16:35:03.940Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;jQuery를 사용하기 위해서는 jQuery 객체를 생성하여야 하며, jQuery 객체는 다양한 메소드를 가진다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="jQuery" scheme="http://mjae404.github.io/categories/jQuery/"/>
-    
-    
-      <category term="jQuery" scheme="http://mjae404.github.io/tags/jQuery/"/>
-    
-      <category term="method" scheme="http://mjae404.github.io/tags/method/"/>
     
   </entry>
   

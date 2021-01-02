@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjaedot.github.io">
   <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/>
   <title>
-    Git &amp; GitHub 개요 |  404 Not Found
+    git 커밋 되돌리기 (reset / revert) |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -46,7 +46,7 @@ ga('send', 'pageview');
 
   
 
-  <link rel="canonical" href="http://mjae404.github.io/2020/09/02/git-overview/"/>
+  <link rel="canonical" href="http://mjae404.github.io/2021/01/02/git-reset/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -56,7 +56,7 @@ ga('send', 'pageview');
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-git-overview" class="article article-type-post" itemscope
+  <article id="post-git-reset" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -64,7 +64,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Git &amp; GitHub 개요
+  git 커밋 되돌리기 (reset / revert)
 </h1>
   
 
@@ -73,8 +73,8 @@ ga('send', 'pageview');
 
     
     <div class="article-meta">
-      <a href="/2020/09/02/git-overview/" class="article-date">
-  <time datetime="2020-09-01T16:13:12.000Z" itemprop="datePublished">2020-09-02</time>
+      <a href="/2021/01/02/git-reset/" class="article-date">
+  <time datetime="2021-01-02T13:31:16.000Z" itemprop="datePublished">2021-01-02</time>
 </a>
       
   <div class="article-category">
@@ -94,27 +94,28 @@ ga('send', 'pageview');
       
 
       
-      <p>현대 개발 팀 프로젝트에서 버전관리와 클라우드 저장소는 꼭 필요한 것이며, 버전관리를 위해서 Git, 클라우드 저장을 위해서 Github를 익히면 팀프로젝트 때 효율적인 개발 협업을 할 수 있다.</p>
+      <p><code>commit</code> 혹은 <code>push</code>했던 내용이 잘못되었을 때 이전으로 되돌려야하는 경우 종종 있다. 로컬에 <code>commit</code>만 할 경우 <code>reset</code>, <code>push</code>까지 된 경우 <code>revert</code>를 사용한다.</p>
 <a id="more"></a>
 
-<h2 id="다수의-개발자가-하나의-서비스를-만드려면"><a href="#다수의-개발자가-하나의-서비스를-만드려면" class="headerlink" title="다수의 개발자가 하나의 서비스를 만드려면?"></a>다수의 개발자가 하나의 서비스를 만드려면?</h2><ol>
-<li>각자 개발하다가 메일이나 USB 등으로 보내서 합친다.</li>
-<li>에러를 대비해 백업본을 만들어둔다.</li>
-<li>상대방의 파일을 수정시에 따로 언급한다.</li>
-<li>코드를 합칠 때 내 코드에도 반영한다.</li>
-</ol>
-<p>→ <strong>따로 작업하다가 내가 원할 때 코드를 합칠 수 있는 방법</strong>: 깃 (분산 버전 관리 시스템)</p>
-<h2 id="버전-관리-시스템-Git"><a href="#버전-관리-시스템-Git" class="headerlink" title="버전 관리 시스템 Git"></a>버전 관리 시스템 Git</h2><p>내가 만든 버전과 동료가 만든 버전을 비교해서 최신본으로 코드를 업데이트할 수 있다. 저장할 공간만 있다면 어디서나 사용이 가능하다. <strong>CLI</strong>(Command-line interface), <strong>GUI</strong>(graphical user interface)를 사용할 수 있다.</p>
-<h2 id="Github에-코드를-올리는-과정"><a href="#Github에-코드를-올리는-과정" class="headerlink" title="Github에 코드를 올리는 과정"></a>Github에 코드를 올리는 과정</h2><ol>
-<li>해당 프로젝트 폴더에서 사용할 것이라고 명령</li>
-<li>작업 후 변경한 파일중 올리고 싶은 것을 선택</li>
-<li>선택한 파일을 하나의 버전으로 만들어주고 설명을 기재</li>
-<li>GitHub 사이트에서 프로젝트 저장소 생성</li>
-<li>내 컴퓨터에서 만들었던 덩어리 작업물 GitHub에 업데이트</li>
-</ol>
+<h2 id="reset"><a href="#reset" class="headerlink" title="reset"></a>reset</h2><ul>
+<li>최근 커밋을 작업트리까지 버리고 롤백한다.</li>
+<li><strong>reset –hard</strong> : 복구된 이력 이후의 내용을 모두 삭제후 초기화</li>
+<li><strong>reset –Soft</strong> : 복구된 이력 이후의 내용을 모두 유지</li>
+<li><strong>reset –mixed</strong> : 복구된 이력 이후 내용을 모두 유지하지만 인덱스를 초기화한다. (변경 내용을 다시 추가해야 함)</li>
+<li><strong>reset HEAD~&lt;돌아가고 싶은 커밋 이전 이력&gt;</strong>: 현재부터 돌아가고 싶은 커밋 이전 이력으로 돌아가라고 지정할 수 도 있다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;옵션&gt; &lt;돌아가고 싶은 커밋&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="revert"><a href="#revert" class="headerlink" title="revert"></a>revert</h2><ul>
+<li>상태는 되돌리지만(<code>undo</code>) <strong>이전 이력은 그대로 보존</strong> 한다. (롤백 이력도 남긴다)</li>
+<li>되돌릴 커밋이 여러개라면 범위를 주어 여러개를 선택할 수도 있다.</li>
+<li>이미 <code>push</code>한 코드라면 <code>revert</code>를 진행하여야 한다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git revert &lt;되돌릴 커밋&gt;</span><br></pre></td></tr></table></figure>
+
 <hr>
 <blockquote>
-<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 처음 배우는 Git &amp; GitHub _ 진유림 강사님</p>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://niceman.tistory.com/187">https://niceman.tistory.com/187</a></p>
 </blockquote>
 
       
@@ -122,10 +123,10 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/09/02/git-overview/" data-id="ckimpfh6e001p34tvchy1hw2w"
+      <a data-url="http://mjae404.github.io/2021/01/02/git-reset/" data-id="ckjfr70bf0000iktvdgxfayf4"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overview/" rel="tag">overview</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reset/" rel="tag">reset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/revert/" rel="tag">revert</a></li></ul>
 
     </footer>
 
@@ -135,19 +136,10 @@ ga('send', 'pageview');
   
   <nav class="article-nav">
     
-      <a href="/2020/09/02/git-process/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">
-          
-            GitHub 버전 생성
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/08/28/git-branch/" class="article-nav-link">
+      <a href="/2020/12/27/wai-aria-how-to-use/" class="article-nav-link">
         <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">Git 브랜치</div>
+        <div class="article-nav-title">WAI-ARIA 사용법 및 주의점</div>
       </a>
     
   </nav>
@@ -168,7 +160,7 @@ ga('send', 'pageview');
     <ul class="list-inline">
       <li>
         &copy;
-        2020
+        2020-2021
         404 Not Found
       </li>
     </ul>

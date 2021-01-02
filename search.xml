@@ -1740,7 +1740,7 @@
   </entry>
   <entry>
     <title>Git &amp; GitHub 개요</title>
-    <url>/2020/09/02/git-overview/</url>
+    <url>/2020/08/27/git-overview/</url>
     <content><![CDATA[<p>현대 개발 팀 프로젝트에서 버전관리와 클라우드 저장소는 꼭 필요한 것이며, 버전관리를 위해서 Git, 클라우드 저장을 위해서 Github를 익히면 팀프로젝트 때 효율적인 개발 협업을 할 수 있다.</p>
 <a id="more"></a>
 
@@ -9727,6 +9727,42 @@
       </categories>
       <tags>
         <tag>WAI-ARIA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git 커밋 되돌리기 (reset / revert)</title>
+    <url>/2021/01/02/git-reset/</url>
+    <content><![CDATA[<p><code>commit</code> 혹은 <code>push</code>했던 내용이 잘못되었을 때 이전으로 되돌려야하는 경우 종종 있다. 로컬에 <code>commit</code>만 할 경우 <code>reset</code>, <code>push</code>까지 된 경우 <code>revert</code>를 사용한다.</p>
+<a id="more"></a>
+
+<h2 id="reset"><a href="#reset" class="headerlink" title="reset"></a>reset</h2><ul>
+<li>최근 커밋을 작업트리까지 버리고 롤백한다.</li>
+<li><strong>reset –hard</strong> : 복구된 이력 이후의 내용을 모두 삭제후 초기화</li>
+<li><strong>reset –Soft</strong> : 복구된 이력 이후의 내용을 모두 유지</li>
+<li><strong>reset –mixed</strong> : 복구된 이력 이후 내용을 모두 유지하지만 인덱스를 초기화한다. (변경 내용을 다시 추가해야 함)</li>
+<li><strong>reset HEAD~&lt;돌아가고 싶은 커밋 이전 이력&gt;</strong>: 현재부터 돌아가고 싶은 커밋 이전 이력으로 돌아가라고 지정할 수 도 있다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git reset &lt;옵션&gt; &lt;돌아가고 싶은 커밋&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="revert"><a href="#revert" class="headerlink" title="revert"></a>revert</h2><ul>
+<li>상태는 되돌리지만(<code>undo</code>) <strong>이전 이력은 그대로 보존</strong> 한다. (롤백 이력도 남긴다)</li>
+<li>되돌릴 커밋이 여러개라면 범위를 주어 여러개를 선택할 수도 있다.</li>
+<li>이미 <code>push</code>한 코드라면 <code>revert</code>를 진행하여야 한다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git revert &lt;되돌릴 커밋&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://niceman.tistory.com/187">https://niceman.tistory.com/187</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>reset</tag>
+        <tag>revert</tag>
       </tags>
   </entry>
 </search>
