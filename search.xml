@@ -9765,4 +9765,52 @@
         <tag>revert</tag>
       </tags>
   </entry>
+  <entry>
+    <title>npm 개요</title>
+    <url>/2021/01/03/npm-overview/</url>
+    <content><![CDATA[<p><code>npm</code>은 세계에서 가장 큰 소프트웨어 레지스트리이다. <code>Node Package Manager</code>의 약자이며 <code>node.js</code>에서 사용하는 모듈들을 패키지로 만들어 <code>npm</code>을 통하여 관리하고 배포한다. 다른 사람들이 만들어둔 모듈들을 설치하여 사용할 수 있으며, 다른 모듈의 의존성도 자동으로 해결해주고 있다.</p>
+<a id="more"></a>
+
+<h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><p><code>node.js</code>만 설치하면 자동 설치가 가능하다.</p>
+<blockquote>
+<p>node.js 다운로드 페이지: <a href="http://www.nodejs.org/">http://www.nodejs.org</a></p>
+</blockquote>
+<ul>
+<li><strong>LTS(Long Term Supported) 버전</strong> : 안정성과 보안성에 초점을 두어 개발 (짝수 버전)</li>
+<li><strong>Stable 버전</strong> : 잦은 업데이트. 프론트엔드는 Stable 버전을 추천한다. (홀수 버전)</li>
+</ul>
+<h2 id="npm의-기본-명령어"><a href="#npm의-기본-명령어" class="headerlink" title="npm의 기본 명령어"></a>npm의 기본 명령어</h2><h3 id="npm-버전"><a href="#npm-버전" class="headerlink" title="npm 버전"></a>npm 버전</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="npm-패키지-설치"><a href="#npm-패키지-설치" class="headerlink" title="npm 패키지 설치"></a>npm 패키지 설치</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install &lt;패키지명&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install &lt;패키지명&gt; -g</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>-g</code>은 global의 약자로 전역 설치를 하겠다는 의미이다.</p>
+</blockquote>
+<h3 id="package-json을-생성"><a href="#package-json을-생성" class="headerlink" title="package.json을 생성"></a>package.json을 생성</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
+
+<h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><ul>
+<li>모든 npm 패키지는 <code>package.json</code>이라는 파일로 정의된다.</li>
+<li><code>json</code>은 <strong>JSON</strong> 으로 쓰여져야 한다.</li>
+<li>정의 파일에는 최소 이름과 버전을 포함한 두 개 이상의 필드가 있어야 한다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot; : &quot;foo&quot;,</span><br><span class="line">    &quot;version&quot; : &quot;1.2.3&quot;,</span><br><span class="line">    &quot;description&quot; : &quot;A package for fooing things&quot;,</span><br><span class="line">    &quot;main&quot; : &quot;foo.js&quot;,</span><br><span class="line">    &quot;keywords&quot; : [&quot;foo&quot;, &quot;fool&quot;, &quot;foolish&quot;],</span><br><span class="line">    &quot;author&quot; : &quot;John Doe&quot;,</span><br><span class="line">    &quot;licence&quot; : &quot;ISC&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong></p>
+</blockquote>
+<ul>
+<li><a href="https://web-front-end.tistory.com/3">https://web-front-end.tistory.com/3</a></li>
+<li><a href="https://www.w3schools.com/whatis/whatis_npm.asp">https://www.w3schools.com/whatis/whatis_npm.asp</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>overview</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
 </search>

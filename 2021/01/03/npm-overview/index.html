@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjaedot.github.io">
   <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/>
   <title>
-    git 커밋 되돌리기 (reset / revert) |  404 Not Found
+    npm 개요 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -46,7 +46,7 @@ ga('send', 'pageview');
 
   
 
-  <link rel="canonical" href="http://mjae404.github.io/2021/01/02/git-reset/"/>
+  <link rel="canonical" href="http://mjae404.github.io/2021/01/03/npm-overview/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -56,7 +56,7 @@ ga('send', 'pageview');
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-git-reset" class="article article-type-post" itemscope
+  <article id="post-npm-overview" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -64,7 +64,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  git 커밋 되돌리기 (reset / revert)
+  npm 개요
 </h1>
   
 
@@ -73,12 +73,12 @@ ga('send', 'pageview');
 
     
     <div class="article-meta">
-      <a href="/2021/01/02/git-reset/" class="article-date">
-  <time datetime="2021-01-02T13:31:16.000Z" itemprop="datePublished">2021-01-02</time>
+      <a href="/2021/01/03/npm-overview/" class="article-date">
+  <time datetime="2021-01-03T05:49:41.000Z" itemprop="datePublished">2021-01-03</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/git/">git</a>
+    <a class="article-category-link" href="/categories/npm/">npm</a>
   </div>
 
       
@@ -94,39 +94,52 @@ ga('send', 'pageview');
       
 
       
-      <p><code>commit</code> 혹은 <code>push</code>했던 내용이 잘못되었을 때 이전으로 되돌려야하는 경우 종종 있다. 로컬에 <code>commit</code>만 할 경우 <code>reset</code>, <code>push</code>까지 된 경우 <code>revert</code>를 사용한다.</p>
+      <p><code>npm</code>은 세계에서 가장 큰 소프트웨어 레지스트리이다. <code>Node Package Manager</code>의 약자이며 <code>node.js</code>에서 사용하는 모듈들을 패키지로 만들어 <code>npm</code>을 통하여 관리하고 배포한다. 다른 사람들이 만들어둔 모듈들을 설치하여 사용할 수 있으며, 다른 모듈의 의존성도 자동으로 해결해주고 있다.</p>
 <a id="more"></a>
 
-<h2 id="reset"><a href="#reset" class="headerlink" title="reset"></a>reset</h2><ul>
-<li>최근 커밋을 작업트리까지 버리고 롤백한다.</li>
-<li><strong>reset –hard</strong> : 복구된 이력 이후의 내용을 모두 삭제후 초기화</li>
-<li><strong>reset –Soft</strong> : 복구된 이력 이후의 내용을 모두 유지</li>
-<li><strong>reset –mixed</strong> : 복구된 이력 이후 내용을 모두 유지하지만 인덱스를 초기화한다. (변경 내용을 다시 추가해야 함)</li>
-<li><strong>reset HEAD~&lt;돌아가고 싶은 커밋 이전 이력&gt;</strong>: 현재부터 돌아가고 싶은 커밋 이전 이력으로 돌아가라고 지정할 수 도 있다.</li>
+<h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><p><code>node.js</code>만 설치하면 자동 설치가 가능하다.</p>
+<blockquote>
+<p>node.js 다운로드 페이지: <a target="_blank" rel="noopener" href="http://www.nodejs.org/">http://www.nodejs.org</a></p>
+</blockquote>
+<ul>
+<li><strong>LTS(Long Term Supported) 버전</strong> : 안정성과 보안성에 초점을 두어 개발 (짝수 버전)</li>
+<li><strong>Stable 버전</strong> : 잦은 업데이트. 프론트엔드는 Stable 버전을 추천한다. (홀수 버전)</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;옵션&gt; &lt;돌아가고 싶은 커밋&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="npm의-기본-명령어"><a href="#npm의-기본-명령어" class="headerlink" title="npm의 기본 명령어"></a>npm의 기본 명령어</h2><h3 id="npm-버전"><a href="#npm-버전" class="headerlink" title="npm 버전"></a>npm 버전</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
-<h2 id="revert"><a href="#revert" class="headerlink" title="revert"></a>revert</h2><ul>
-<li>상태는 되돌리지만(<code>undo</code>) <strong>이전 이력은 그대로 보존</strong> 한다. (롤백 이력도 남긴다)</li>
-<li>되돌릴 커밋이 여러개라면 범위를 주어 여러개를 선택할 수도 있다.</li>
-<li>이미 <code>push</code>한 코드라면 <code>revert</code>를 진행하여야 한다.</li>
+<h3 id="npm-패키지-설치"><a href="#npm-패키지-설치" class="headerlink" title="npm 패키지 설치"></a>npm 패키지 설치</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install &lt;패키지명&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install &lt;패키지명&gt; -g</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>-g</code>은 global의 약자로 전역 설치를 하겠다는 의미이다.</p>
+</blockquote>
+<h3 id="package-json을-생성"><a href="#package-json을-생성" class="headerlink" title="package.json을 생성"></a>package.json을 생성</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
+
+<h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><ul>
+<li>모든 npm 패키지는 <code>package.json</code>이라는 파일로 정의된다.</li>
+<li><code>json</code>은 <strong>JSON</strong> 으로 쓰여져야 한다.</li>
+<li>정의 파일에는 최소 이름과 버전을 포함한 두 개 이상의 필드가 있어야 한다.</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git revert &lt;되돌릴 커밋&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;name&quot; : &quot;foo&quot;,</span><br><span class="line">    &quot;version&quot; : &quot;1.2.3&quot;,</span><br><span class="line">    &quot;description&quot; : &quot;A package for fooing things&quot;,</span><br><span class="line">    &quot;main&quot; : &quot;foo.js&quot;,</span><br><span class="line">    &quot;keywords&quot; : [&quot;foo&quot;, &quot;fool&quot;, &quot;foolish&quot;],</span><br><span class="line">    &quot;author&quot; : &quot;John Doe&quot;,</span><br><span class="line">    &quot;licence&quot; : &quot;ISC&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
 <blockquote>
-<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://niceman.tistory.com/187">https://niceman.tistory.com/187</a></p>
+<p><strong>REFERENCE</strong></p>
 </blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://web-front-end.tistory.com/3">https://web-front-end.tistory.com/3</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.w3schools.com/whatis/whatis_npm.asp">https://www.w3schools.com/whatis/whatis_npm.asp</a></li>
+</ul>
 
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2021/01/02/git-reset/" data-id="ckjfr70bf0000iktvdgxfayf4"
+      <a data-url="http://mjae404.github.io/2021/01/03/npm-overview/" data-id="ckjgpuy740000r0tvggx3fhom"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reset/" rel="tag">reset</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/revert/" rel="tag">revert</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm/" rel="tag">npm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overview/" rel="tag">overview</a></li></ul>
 
     </footer>
 
@@ -136,19 +149,10 @@ ga('send', 'pageview');
   
   <nav class="article-nav">
     
-      <a href="/2021/01/03/npm-overview/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">
-          
-            npm 개요
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/12/27/wai-aria-how-to-use/" class="article-nav-link">
+      <a href="/2021/01/02/git-reset/" class="article-nav-link">
         <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">WAI-ARIA 사용법 및 주의점</div>
+        <div class="article-nav-title">git 커밋 되돌리기 (reset / revert)</div>
       </a>
     
   </nav>

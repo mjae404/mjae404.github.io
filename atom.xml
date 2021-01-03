@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-01-02T13:45:18.141Z</updated>
+  <updated>2021-01-03T06:12:14.262Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm 개요</title>
+    <link href="http://mjae404.github.io/2021/01/03/npm-overview/"/>
+    <id>http://mjae404.github.io/2021/01/03/npm-overview/</id>
+    <published>2021-01-03T05:49:41.000Z</published>
+    <updated>2021-01-03T06:12:14.262Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;npm&lt;/code&gt;은 세계에서 가장 큰 소프트웨어 레지스트리이다. &lt;code&gt;Node Package Manager&lt;/code&gt;의 약자이며 &lt;code&gt;node.js&lt;/code&gt;에서 사용하는 모듈들을 패키지로 만들어 &lt;code&gt;npm&lt;/code&gt;을 통하여 관리하고 배포한다. 다른 사람들이 만들어둔 모듈들을 설치하여 사용할 수 있으며, 다른 모듈의 의존성도 자동으로 해결해주고 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="npm" scheme="http://mjae404.github.io/categories/npm/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="npm" scheme="http://mjae404.github.io/tags/npm/"/>
+    
+  </entry>
   
   <entry>
     <title>git 커밋 되돌리기 (reset / revert)</title>
@@ -513,32 +536,6 @@
       <category term="pattern" scheme="http://mjae404.github.io/tags/pattern/"/>
     
       <category term="mask" scheme="http://mjae404.github.io/tags/mask/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 애니메이션</title>
-    <link href="http://mjae404.github.io/2020/11/28/css-animation/"/>
-    <id>http://mjae404.github.io/2020/11/28/css-animation/</id>
-    <published>2020-11-27T16:11:55.000Z</published>
-    <updated>2020-11-27T16:12:06.162Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;애니메이션 속성은 콘텐츠를 움직이게 할 수 있으며, 애니메이션을 나타내는 CSS 스타일과 애니메이션의 중간 상태를 나타내는 키프레임들로 이루어진다. 움직이는 시간, 움직이는 방향, 움직이는 상태 등 여러가지 속성을 설정할 수 있다. &lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;animation: name | duration | timing-function | delay |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;iteration-count | direction | fill-mode | play-state&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="animation" scheme="http://mjae404.github.io/tags/animation/"/>
     
   </entry>
   
