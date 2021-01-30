@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-01-03T06:12:14.262Z</updated>
+  <updated>2021-01-30T14:11:01.169Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SVG 돋보기</title>
+    <link href="http://mjae404.github.io/2021/01/30/svg-exercise001/"/>
+    <id>http://mjae404.github.io/2021/01/30/svg-exercise001/</id>
+    <published>2021-01-30T13:34:55.000Z</published>
+    <updated>2021-01-30T14:11:01.169Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SVG의 마스크 효과와 자바스크립트를 이용하여 돋보기 효과 만들기.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/exercise/SVG/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+  </entry>
   
   <entry>
     <title>npm 개요</title>
@@ -509,33 +534,6 @@
       <category term="web font" scheme="http://mjae404.github.io/tags/web-font/"/>
     
       <category term="typography" scheme="http://mjae404.github.io/tags/typography/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVG 효과</title>
-    <link href="http://mjae404.github.io/2020/11/29/svg-effect/"/>
-    <id>http://mjae404.github.io/2020/11/29/svg-effect/</id>
-    <published>2020-11-29T11:49:00.000Z</published>
-    <updated>2020-11-29T12:47:05.862Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;svg&lt;/code&gt;에 그라디언트, 패턴, 마스크 효과를 줄 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
-    
-    
-      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
-    
-      <category term="gradient" scheme="http://mjae404.github.io/tags/gradient/"/>
-    
-      <category term="pattern" scheme="http://mjae404.github.io/tags/pattern/"/>
-    
-      <category term="mask" scheme="http://mjae404.github.io/tags/mask/"/>
     
   </entry>
   
