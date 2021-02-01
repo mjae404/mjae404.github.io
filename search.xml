@@ -9836,4 +9836,56 @@
         <tag>SVG</tag>
       </tags>
   </entry>
+  <entry>
+    <title>SVG 애니메이션</title>
+    <url>/2021/02/01/svg-animation/</url>
+    <content><![CDATA[<p><code>SVG</code>는 <code>CSS</code>와 <code>SMIL</code>로 애니메이션을 구현할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="STROKE-애니메이션"><a href="#STROKE-애니메이션" class="headerlink" title="STROKE 애니메이션"></a>STROKE 애니메이션</h2><ul>
+<li><strong>stroke-dasharray</strong>: 길이를 설정한다.</li>
+<li><strong>stroke-dashoffset</strong>: 밀린 위치를 설정한다.</li>
+</ul>
+<p><strong><em>원</em></strong></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> dash-ani &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;<span class="attribute">stroke-dashoffset</span>: <span class="number">700</span>;&#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;<span class="attribute">stroke-dashoffset</span>: <span class="number">0</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">circle</span> &#123;</span><br><span class="line">    <span class="attribute">stroke</span>: black;</span><br><span class="line">    <span class="attribute">stroke-width</span>: <span class="number">5</span>;</span><br><span class="line">    stroke-dasharray: 700; // 길이를 설정</span><br><span class="line">    stroke-dashoffset: 0; // 밀린 위치</span><br><span class="line">    <span class="selector-tag">fill</span>: <span class="selector-tag">transparent</span>;</span><br><span class="line">    <span class="selector-tag">animation</span>: <span class="selector-tag">dash-ani</span> 2<span class="selector-tag">s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">viewBox</span>=<span class="string">&quot;0 0 800 500&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">circle</span> <span class="attr">cx</span>=<span class="string">&quot;400&quot;</span> <span class="attr">cy</span>=<span class="string">&quot;250&quot;</span> <span class="attr">r</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">circle</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><em>path</em></strong></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> dash-ani &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;<span class="attribute">stroke-dashoffset</span>: <span class="number">700</span>;&#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;<span class="attribute">stroke-dashoffset</span>: <span class="number">0</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">path</span> &#123;</span><br><span class="line">    <span class="attribute">stroke</span>: black;</span><br><span class="line">    <span class="attribute">stroke-width</span>: <span class="number">5</span>;</span><br><span class="line">    <span class="attribute">stroke-dasharray</span>: <span class="number">727</span>;</span><br><span class="line">    <span class="attribute">fill</span>: transparent;</span><br><span class="line">    <span class="attribute">animation</span>: dash-ani <span class="number">2s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">viewBox</span>=<span class="string">&quot;0 0 800 500&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M 50 400 C 50 400, 300 500, 400 400 C 400 400, 600 170, 700 300&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">path</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 길이를 알 수 있다</span></span><br><span class="line"><span class="built_in">console</span>.log (<span class="built_in">document</span>.querySelector(<span class="string">&#x27;path&#x27;</span>).getTotalLength());</span><br></pre></td></tr></table></figure>
+
+<h2 id="SMIL-애니메이션의-기본-사용법"><a href="#SMIL-애니메이션의-기본-사용법" class="headerlink" title="SMIL 애니메이션의 기본 사용법"></a>SMIL 애니메이션의 기본 사용법</h2><blockquote>
+<p><strong><a href="https://www.w3.org/TR/REC-smil/">SMIL</a> 이란?</strong><br>Synchronized Multimedia Integration Language (SMIL 3.0)<br>CSS 애니메이션이 아직 처리하지 못하는 것들을 처리할 수 있기 때문에 사용한다.</p>
+</blockquote>
+<ul>
+<li><strong>attributeName</strong> : 바꿀 속성이 어떤 것인지 기술한다.</li>
+<li><strong>dur</strong> : 얼마만큼의 시간동안 재생을 시킬 것인지 설정한다.</li>
+<li><strong>to</strong> : 목적 위치를 기술한다.</li>
+<li><strong>repeatCount</strong> : 얼마나 반복할지를 설정한다. (무한반복은 <code>indefinite</code>)</li>
+<li><strong>fill</strong> : <code>default</code>값을 지정한다. 설정하지 않으면 맨처음으로 돌아간다.</li>
+<li><strong>begin</strong> : 언제 시작할지 설정한다. (<code>indefinite</code>를 입력할 경우 시작하지 않는다.)</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">viewBox</span>=<span class="string">&quot;0 0 1000 1000&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span> <span class="attr">class</span>=<span class="string">&quot;rect&quot;</span> <span class="attr">x</span>=<span class="string">&quot;10&quot;</span> <span class="attr">y</span>=<span class="string">&quot;10&quot;</span> <span class="attr">width</span>=<span class="string">&quot;20%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;20%&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">animate</span> <span class="attr">class</span>=<span class="string">&quot;ani&quot;</span> <span class="attr">attributeName</span>=<span class="string">&quot;x&quot;</span> <span class="attr">dur</span>=<span class="string">&quot;1s&quot;</span> <span class="attr">to</span>=<span class="string">&quot;700&quot;</span> <span class="attr">repeatCont</span>=<span class="string">&quot;3&quot;</span> <span class="attr">fill</span>=<span class="string">&quot;freeze&quot;</span> <span class="attr">begin</span>=<span class="string">&quot;indefinite&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">animate</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 클릭시 움직이게 한다</span></span><br><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&#x27;DOMContentLoaded&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> rect = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.rect&#x27;</span>);</span><br><span class="line">    <span class="keyword">const</span> ani = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.ani&#x27;</span>);</span><br><span class="line"></span><br><span class="line">    rect.addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        ani.beginElement();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>인프런 SVG 마스터<br><a href="https://www.inflearn.com/course/mastering-svg">https://www.inflearn.com/course/mastering-svg</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>SVG</category>
+      </categories>
+      <tags>
+        <tag>animation</tag>
+        <tag>SVG</tag>
+        <tag>stroke</tag>
+        <tag>SMIL</tag>
+      </tags>
+  </entry>
 </search>
