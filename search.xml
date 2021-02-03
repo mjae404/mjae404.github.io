@@ -9910,4 +9910,28 @@
         <tag>SVG</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PYTHON 피보나치 수열</title>
+    <url>/2021/02/03/python-exercise009/</url>
+    <content><![CDATA[<p>피보나치 수열이란 첫 번째 항과 두 번째 항이 1이고, 세 번째 항부터는 바로 앞의 두 항의 합으로 정의된 수열입니다. 피보나치 수열의 첫 20개 항을 차례대로 출력하는 프로그램을 써보세요.</p>
+<a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">5</span><br><span class="line">8</span><br><span class="line">13</span><br><span class="line">21</span><br><span class="line">34</span><br><span class="line">55</span><br><span class="line">89</span><br><span class="line">144</span><br><span class="line">233</span><br><span class="line">377</span><br><span class="line">610</span><br><span class="line">987</span><br><span class="line">1597</span><br><span class="line">2584</span><br><span class="line">4181</span><br><span class="line">6765</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 상수</span></span><br><span class="line">COUNT = <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 변수</span></span><br><span class="line">current = <span class="number">1</span></span><br><span class="line">previous = <span class="number">0</span></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> i &lt; COUNT:</span><br><span class="line">    print(current)</span><br><span class="line">    </span><br><span class="line">    temp = previous</span><br><span class="line">       previous = current</span><br><span class="line">    current = current + temp</span><br><span class="line">    </span><br><span class="line">    i += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>

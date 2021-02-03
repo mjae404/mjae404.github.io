@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-02-02T12:23:46.428Z</updated>
+  <updated>2021-02-03T09:35:57.874Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 피보나치 수열</title>
+    <link href="http://mjae404.github.io/2021/02/03/python-exercise009/"/>
+    <id>http://mjae404.github.io/2021/02/03/python-exercise009/</id>
+    <published>2021-02-03T09:35:42.000Z</published>
+    <updated>2021-02-03T09:35:57.874Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;피보나치 수열이란 첫 번째 항과 두 번째 항이 1이고, 세 번째 항부터는 바로 앞의 두 항의 합으로 정의된 수열입니다. 피보나치 수열의 첫 20개 항을 차례대로 출력하는 프로그램을 써보세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>SVG 그래픽 로고가 그려지는 애니메이션</title>
@@ -491,40 +516,6 @@
       <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
     
       <category term="structure" scheme="http://mjae404.github.io/tags/structure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>운영체제 역사와 핵심기술</title>
-    <link href="http://mjae404.github.io/2020/12/02/os-history/"/>
-    <id>http://mjae404.github.io/2020/12/02/os-history/</id>
-    <published>2020-12-01T15:47:16.000Z</published>
-    <updated>2020-12-01T15:47:29.660Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;1950년대: 제일 처음 만들어진 컴퓨터, ENIAC&lt;/li&gt;
-&lt;li&gt;1960년대: 배치 처리 시스템&lt;/li&gt;
-&lt;li&gt;1970년대: 시분할 시스템/멀티태스킹 시스템과 UNIX OS&lt;/li&gt;
-&lt;li&gt;1980년대: GUI, 개인용 컴퓨터&lt;/li&gt;
-&lt;li&gt;1990년대: 다양한 응용프로그램 및 인터넷 발달, 오픈&lt;/li&gt;
-&lt;li&gt;2000년대: 오픈소스  활성화, 가상머신, 대용량 병렬처리&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Computer Science" scheme="http://mjae404.github.io/categories/Computer-Science/"/>
-    
-      <category term="Operating System" scheme="http://mjae404.github.io/categories/Computer-Science/Operating-System/"/>
-    
-    
-      <category term="Computer Science" scheme="http://mjae404.github.io/tags/Computer-Science/"/>
-    
-      <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
-    
-      <category term="history" scheme="http://mjae404.github.io/tags/history/"/>
     
   </entry>
   
