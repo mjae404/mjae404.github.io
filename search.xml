@@ -9934,4 +9934,20 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 피보나치 수열</title>
+    <url>/2021/02/04/js-exercise010/</url>
+    <content><![CDATA[<p>피보나치 수열을 구하는 함수.</p>
+<a id="more"></a>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fibonacci</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;<span class="number">2</span>) <span class="keyword">return</span> n;</span><br><span class="line">    <span class="keyword">if</span>(!(n <span class="keyword">in</span> fibonacci))&#123;</span><br><span class="line">        fibonacci[n] = fibonacci(n<span class="number">-1</span>) + fibonacci(n<span class="number">-2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> fibonacci[n];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt;= <span class="number">20</span>; i++)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log((<span class="string">&quot; &quot;</span> + i).slice(<span class="number">-2</span>) + <span class="string">&quot; : &quot;</span> + fibonacci(i));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
 </search>
