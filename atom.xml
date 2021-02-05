@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-02-04T12:06:12.929Z</updated>
+  <updated>2021-02-05T14:41:37.232Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 배열 요소의 합계</title>
+    <link href="http://mjae404.github.io/2021/02/05/js-exercise011/"/>
+    <id>http://mjae404.github.io/2021/02/05/js-exercise011/</id>
+    <published>2021-02-05T14:41:05.000Z</published>
+    <updated>2021-02-05T14:41:37.232Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;배열 요소의 합계를 구하라.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 피보나치 수열</title>
@@ -465,33 +490,6 @@
     <summary type="html">
     
       &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 Dot Animation Effect.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 애니메이션 01</title>
-    <link href="http://mjae404.github.io/2020/12/05/css-exercise001/"/>
-    <id>http://mjae404.github.io/2020/12/05/css-exercise001/</id>
-    <published>2020-12-05T11:10:17.000Z</published>
-    <updated>2020-12-05T17:09:42.442Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 Bar Animation Effect.&lt;/p&gt;
     
     </summary>
     
