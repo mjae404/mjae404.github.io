@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-02-05T14:41:37.232Z</updated>
+  <updated>2021-02-06T14:28:04.163Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 환전 서비스</title>
+    <link href="http://mjae404.github.io/2021/02/06/python-exercise010/"/>
+    <id>http://mjae404.github.io/2021/02/06/python-exercise010/</id>
+    <published>2021-02-06T14:27:55.000Z</published>
+    <updated>2021-02-06T14:28:04.163Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;환율에 따라 화폐를 교환해주는 서비스를 운영하고 있습니다. 신속한 환전을 위하여 원(￦) 단위로 정리되어 있는 리스트를 달러($)와 엔(￥)으로 변환해주는 프로그램을 써야합니다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 배열 요소의 합계</title>
@@ -477,33 +502,6 @@
       <category term="jQuery" scheme="http://mjae404.github.io/tags/jQuery/"/>
     
       <category term="selecotr" scheme="http://mjae404.github.io/tags/selecotr/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 애니메이션 02</title>
-    <link href="http://mjae404.github.io/2020/12/06/css-exercise002/"/>
-    <id>http://mjae404.github.io/2020/12/06/css-exercise002/</id>
-    <published>2020-12-05T17:00:23.000Z</published>
-    <updated>2020-12-05T17:01:39.643Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 Dot Animation Effect.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
   </entry>
   

@@ -9966,4 +9966,30 @@
         <tag>JavaScript</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PYTHON 환전 서비스</title>
+    <url>/2021/02/06/python-exercise010/</url>
+    <content><![CDATA[<p>환율에 따라 화폐를 교환해주는 서비스를 운영하고 있습니다. 신속한 환전을 위하여 원(￦) 단위로 정리되어 있는 리스트를 달러($)와 엔(￥)으로 변환해주는 프로그램을 써야합니다.</p>
+<a id="more"></a>
+
+
+<p>현재 환율은 1달러 당 1000원, 1000엔 당 8달러입니다. 이 정보를 이용해서 파라미터 won으로 한국 금액을 받고 미국 금액을 리턴해주는 krw_to_usd 함수와, 파라미터 dollars로 미국 금액을 받고 일본 금액을 리턴해주는 usd_to_jpy 함수를 쓰세요. 그리고 이 함수들을 활용해서 아래에 원(￦)으로 정리된 amounts리스트를 달러($) 리스트와 엔(￥) 리스트로 변환 시켜보세요.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">한국 화폐: [1000, 2000, 3000, 5000, 8000, 13000, 21000, 34000]</span><br><span class="line">미국 화폐: [1.0, 2.0, 3.0, 5.0, 8.0, 13.0, 21.0, 34.0]</span><br><span class="line">일본 화폐: [125.0, 250.0, 375.0, 625.0, 1000.0, 1625.0, 2625.0, 4250.0]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 원(KRW: ￦)에서 달러(USD: $)로 바꿔주는 함수</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">krw_to_usd</span>(<span class="params">won</span>):</span></span><br><span class="line">    <span class="keyword">return</span> won / <span class="number">1000</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 달러(USD: $)에서 엔(JPY: ￥)로 바꿔주는 함수</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">usd_to_jpy</span>(<span class="params">usd</span>):</span></span><br><span class="line">    <span class="keyword">return</span> usd / <span class="number">8</span> * <span class="number">1000</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 우리나라 화폐로 각각 얼마</span></span><br><span class="line">amounts = [<span class="number">1000</span>, <span class="number">2000</span>, <span class="number">3000</span>, <span class="number">5000</span>, <span class="number">8000</span>, <span class="number">13000</span>, <span class="number">21000</span>, <span class="number">34000</span>]</span><br><span class="line">print(<span class="string">&quot;한국 화폐: &quot;</span> + str(amounts))</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 우리나라 화폐에서 미국 화폐로</span></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt; len(amounts):</span><br><span class="line">    amounts[i] = krw_to_usd(amounts[i])</span><br><span class="line">    i = i + <span class="number">1</span> </span><br><span class="line">print(<span class="string">&quot;미국 화폐: &quot;</span> + str(amounts))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 미국 화폐에서 일본 화폐로</span></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt; len(amounts):</span><br><span class="line">    amounts[i] = usd_to_jpy(amounts[i])</span><br><span class="line">    i = i + <span class="number">1</span></span><br><span class="line">print(<span class="string">&quot;일본 화폐: &quot;</span> + str(amounts))</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>
