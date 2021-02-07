@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-02-06T14:28:04.163Z</updated>
+  <updated>2021-02-07T14:39:56.650Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo</title>
+    <link href="http://mjae404.github.io/2021/02/07/hexoblog/"/>
+    <id>http://mjae404.github.io/2021/02/07/hexoblog/</id>
+    <published>2021-02-07T13:58:45.000Z</published>
+    <updated>2021-02-07T14:39:56.650Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://hexo.io/ko/&quot;&gt;Hexo&lt;/a&gt;는 &lt;code&gt;마크다운&lt;/code&gt; 또는 다른 언어를 사용하여 포스트를 작성할 수 있는 블로그 프레임워크이다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="http://mjae404.github.io/categories/blog/"/>
+    
+    
+      <category term="blog" scheme="http://mjae404.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://mjae404.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 환전 서비스</title>
@@ -479,29 +502,6 @@
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="overflow" scheme="http://mjae404.github.io/tags/overflow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>제이쿼리 선택자</title>
-    <link href="http://mjae404.github.io/2020/12/07/jquery-selector/"/>
-    <id>http://mjae404.github.io/2020/12/07/jquery-selector/</id>
-    <published>2020-12-06T16:25:00.000Z</published>
-    <updated>2020-12-06T16:32:24.042Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;jQuery는 CSS 스타일의 선택자를 이용하여 요소를 선택할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="jQuery" scheme="http://mjae404.github.io/categories/jQuery/"/>
-    
-    
-      <category term="jQuery" scheme="http://mjae404.github.io/tags/jQuery/"/>
-    
-      <category term="selecotr" scheme="http://mjae404.github.io/tags/selecotr/"/>
     
   </entry>
   
