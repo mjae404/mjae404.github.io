@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-02-07T14:39:56.650Z</updated>
+  <updated>2021-02-22T08:47:19.591Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 끝말잇기</title>
+    <link href="http://mjae404.github.io/2021/02/22/js-exercise012/"/>
+    <id>http://mjae404.github.io/2021/02/22/js-exercise012/</id>
+    <published>2021-02-22T08:26:49.000Z</published>
+    <updated>2021-02-22T08:47:19.591Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;끝말잇기 구현.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo</title>
@@ -496,38 +521,6 @@
       <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
     
       <category term="history" scheme="http://mjae404.github.io/tags/history/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>운영체제 개요</title>
-    <link href="http://mjae404.github.io/2020/12/01/os-overview/"/>
-    <id>http://mjae404.github.io/2020/12/01/os-overview/</id>
-    <published>2020-11-30T15:21:19.000Z</published>
-    <updated>2020-11-30T15:21:32.936Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;운영체제 역할&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;시스템 자원(System Resource) 관리자&lt;/li&gt;
-&lt;li&gt;사용과 컴퓨터간의 커뮤니케이션 지원&lt;/li&gt;
-&lt;li&gt;컴퓨터 하드웨어와 응용 프로그램을 제어&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-      <category term="Computer Science" scheme="http://mjae404.github.io/categories/Computer-Science/"/>
-    
-      <category term="Operating System" scheme="http://mjae404.github.io/categories/Computer-Science/Operating-System/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="Computer Science" scheme="http://mjae404.github.io/tags/Computer-Science/"/>
-    
-      <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
     
   </entry>
   
