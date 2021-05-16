@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-02-22T08:47:19.591Z</updated>
+  <updated>2021-05-16T08:30:56.474Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>부트스트랩 개요</title>
+    <link href="http://mjae404.github.io/2021/04/01/bootstrap-overview/"/>
+    <id>http://mjae404.github.io/2021/04/01/bootstrap-overview/</id>
+    <published>2021-03-31T15:30:36.000Z</published>
+    <updated>2021-05-16T08:30:56.474Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;s&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Bootstrap&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bootstrap.css를 불러오고 해당 파일에 정의된 버튼, 레이아웃 등을 가져와서 사용&lt;/li&gt;
+&lt;li&gt;클래스로 간단하게 가져와 사용 가능&lt;/li&gt;
+&lt;li&gt;트위터에서 개발&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="bootstrap" scheme="http://mjae404.github.io/categories/bootstrap/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="bootstrap" scheme="http://mjae404.github.io/tags/bootstrap/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 끝말잇기</title>
@@ -487,40 +516,6 @@
       <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
     
       <category term="structure" scheme="http://mjae404.github.io/tags/structure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>운영체제 역사와 핵심기술</title>
-    <link href="http://mjae404.github.io/2020/12/02/os-history/"/>
-    <id>http://mjae404.github.io/2020/12/02/os-history/</id>
-    <published>2020-12-01T15:47:16.000Z</published>
-    <updated>2021-02-13T06:42:38.379Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;1950년대: 제일 처음 만들어진 컴퓨터, ENIAC&lt;/li&gt;
-&lt;li&gt;1960년대: 배치 처리 시스템&lt;/li&gt;
-&lt;li&gt;1970년대: 시분할 시스템/멀티태스킹 시스템과 UNIX OS&lt;/li&gt;
-&lt;li&gt;1980년대: GUI, 개인용 컴퓨터&lt;/li&gt;
-&lt;li&gt;1990년대: 다양한 응용프로그램 및 인터넷 발달, 오픈&lt;/li&gt;
-&lt;li&gt;2000년대: 오픈소스  활성화, 가상머신, 대용량 병렬처리&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Computer Science" scheme="http://mjae404.github.io/categories/Computer-Science/"/>
-    
-      <category term="Operating System" scheme="http://mjae404.github.io/categories/Computer-Science/Operating-System/"/>
-    
-    
-      <category term="Computer Science" scheme="http://mjae404.github.io/tags/Computer-Science/"/>
-    
-      <category term="Operating System" scheme="http://mjae404.github.io/tags/Operating-System/"/>
-    
-      <category term="history" scheme="http://mjae404.github.io/tags/history/"/>
     
   </entry>
   
