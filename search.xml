@@ -9059,4 +9059,74 @@
         <tag>bootstrap</tag>
       </tags>
   </entry>
+  <entry>
+    <title>시스템 프로그래밍 개요</title>
+    <url>/2021/05/19/sp-overview/</url>
+    <content><![CDATA[<p><strong><em>리눅스를 배우는 이유</em></strong></p>
+<ul>
+<li>인터넷 서비스 서버 환경 익히기</li>
+<li>고급 운영체제 기능 직접 제어</li>
+<li>UNIX 계열 OS 사용법 익히기</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="시스템-프로그래밍-선수-과목"><a href="#시스템-프로그래밍-선수-과목" class="headerlink" title="시스템 프로그래밍 선수 과목"></a>시스템 프로그래밍 선수 과목</h2><ul>
+<li>C언어</li>
+<li>자료구조</li>
+<li>컴퓨터 구조</li>
+<li>운영체제</li>
+</ul>
+<h2 id="리눅스-LINUX"><a href="#리눅스-LINUX" class="headerlink" title="리눅스 (LINUX)"></a>리눅스 (LINUX)</h2><p><img src="/images/linux_overview.jpg" alt="서버에 많이 사용되는 운영체제"></p>
+<ul>
+<li>운영체제, 소프드웨어의 대부 UNIX 계열 운영체제. 서버에 많이 사용된다.</li>
+</ul>
+<p><img src="/images/linux_overview2.jpg" alt="컴파일러는 사람과 컴퓨터 간에 번역을 해준다."></p>
+<ul>
+<li>프로그래밍을 할 때에도 많이 사용된다. plain하게 프로그래밍이 가능하다.<ul>
+<li>ANSI C ─ C언어 표준</li>
+</ul>
+</li>
+<li>서버 + 클라우드 컴퓨팅(AWS)</li>
+<li>UNIX 계열 운영체제이므로 사용법을 익힐 수 있다.</li>
+</ul>
+<h2 id="리눅스-배경-및-역사"><a href="#리눅스-배경-및-역사" class="headerlink" title="리눅스 배경 및 역사"></a>리눅스 배경 및 역사</h2><h3 id="리눅스-시작"><a href="#리눅스-시작" class="headerlink" title="리눅스 시작"></a>리눅스 시작</h3><ul>
+<li>대학에 있는 UNIX 컴퓨터를 집에서 쓰고 싶다는 소망으로 리눅스 토발즈(Linus Torvalds)가 개발</li>
+<li>다중 사용자, 다중 작업(시분할 시스템, 멀티태스킹)을 지원하는 유닉스와 유사한 운영체제</li>
+</ul>
+<h3 id="GNU-프로젝트"><a href="#GNU-프로젝트" class="headerlink" title="GNU 프로젝트"></a>GNU 프로젝트</h3><ul>
+<li>Gnu is Not Unix</li>
+<li>유닉스 운영체제를 여러 회사에서 각자 개발하고 소스를 서로 공유하지 않는 문화에 반발</li>
+<li><strong>리차드 스톨만</strong>: 초기 컴퓨터 개발 공동체의 상호협력적인 문화로 돌아갈 것을 주장하며, 1985년도에 GNU 선언문을 발표</li>
+<li>GNU 프로젝트를 지원하기 위해 자유 소프트웨어 재단(FSF) 설립 및 GNU 공기 라이선스(GPL)라는 규약을 제공</li>
+</ul>
+<h3 id="GPL-라이선스"><a href="#GPL-라이선스" class="headerlink" title="GPL 라이선스"></a>GPL 라이선스</h3><ul>
+<li>GPL 프로그램은 어떤 목적으로, 어떤 형태로든 사용할 수 있지만 사용하거나 변경된 프로그램을 다시 배포하는 경우 동일한 GPL 라이선스로 공개해야 한다.</li>
+<li>소스 오픈을 장려하기 위함</li>
+</ul>
+<h3 id="GNU-프로젝트와-GNU-Hurd"><a href="#GNU-프로젝트와-GNU-Hurd" class="headerlink" title="GNU 프로젝트와 GNU Hurd"></a>GNU 프로젝트와 GNU Hurd</h3><ul>
+<li>GNU Hurd ─ 운영체제 커널 개발 시도</li>
+<li>운영체제에 필요한 라이브러리, 컴파일러, 에디터, 쉘 개발</li>
+</ul>
+<h3 id="GNU-프로젝트와-리눅스"><a href="#GNU-프로젝트와-리눅스" class="headerlink" title="GNU 프로젝트와 리눅스"></a>GNU 프로젝트와 리눅스</h3><ul>
+<li>GNU herd 개발 지연</li>
+<li>리눅스 토발즈가 리눅스 커널 소스 오픈</li>
+<li>GNU 프로젝트 산출물과 리눅스 커널이 통합 개발 시작</li>
+<li>리차드 스톨만(GNU 프로젝트 창시자)는 GNU/Linux라고 부르기를 희망</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 컴퓨터 공학 전공 필수 _ 시스템 프로그래밍</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Computer Science</category>
+        <category>System Programming</category>
+      </categories>
+      <tags>
+        <tag>overview</tag>
+        <tag>Computer Science</tag>
+        <tag>System Programming</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
 </search>
