@@ -9000,8 +9000,7 @@
   <entry>
     <title>부트스트랩 개요</title>
     <url>/2021/04/01/bootstrap-overview/</url>
-    <content><![CDATA[<p>s</p>
-<p><strong><em>Bootstrap</em></strong></p>
+    <content><![CDATA[<p><strong><em>Bootstrap</em></strong></p>
 <ol>
 <li>Bootstrap.css를 불러오고 해당 파일에 정의된 버튼, 레이아웃 등을 가져와서 사용</li>
 <li>클래스로 간단하게 가져와 사용 가능</li>

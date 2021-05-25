@@ -55,12 +55,11 @@
     <link href="http://mjae404.github.io/2021/04/01/bootstrap-overview/"/>
     <id>http://mjae404.github.io/2021/04/01/bootstrap-overview/</id>
     <published>2021-03-31T15:30:36.000Z</published>
-    <updated>2021-05-16T08:30:56.474Z</updated>
+    <updated>2021-05-25T20:25:31.986Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;s&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Bootstrap&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;em&gt;Bootstrap&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Bootstrap.css를 불러오고 해당 파일에 정의된 버튼, 레이아웃 등을 가져와서 사용&lt;/li&gt;
 &lt;li&gt;클래스로 간단하게 가져와 사용 가능&lt;/li&gt;
