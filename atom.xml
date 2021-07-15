@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-05-19T12:27:15.076Z</updated>
+  <updated>2021-07-15T09:49:13.322Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git add/commit/push 취소하기</title>
+    <link href="http://mjae404.github.io/2021/07/15/git-cancel-add-commit-push/"/>
+    <id>http://mjae404.github.io/2021/07/15/git-cancel-add-commit-push/</id>
+    <published>2021-07-15T09:38:53.000Z</published>
+    <updated>2021-07-15T09:49:13.322Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;git add /commit / push 취소를 진행할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
+    
+      <category term="github" scheme="http://mjae404.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>시스템 프로그래밍 개요</title>
@@ -473,33 +496,6 @@
     <summary type="html">
     
       &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 Dot Animation Effect.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 애니메이션 01</title>
-    <link href="http://mjae404.github.io/2020/12/05/css-exercise001/"/>
-    <id>http://mjae404.github.io/2020/12/05/css-exercise001/</id>
-    <published>2020-12-05T11:10:17.000Z</published>
-    <updated>2020-12-05T17:09:42.442Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 Bar Animation Effect.&lt;/p&gt;
     
     </summary>
     

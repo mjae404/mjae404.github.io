@@ -9128,4 +9128,35 @@
         <tag>linux</tag>
       </tags>
   </entry>
+  <entry>
+    <title>git add/commit/push 취소하기</title>
+    <url>/2021/07/15/git-cancel-add-commit-push/</url>
+    <content><![CDATA[<p>git add /commit / push 취소를 진행할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="git-add-취소"><a href="#git-add-취소" class="headerlink" title="git add 취소"></a>git add 취소</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git reset HEAD [file]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>파일명이 없을 시 add한 파일 전체를 취소한다.</p>
+</blockquote>
+<h2 id="git-commit-취소"><a href="#git-commit-취소" class="headerlink" title="git commit 취소"></a>git commit 취소</h2><p><strong><em>[방법1]</em></strong> commit을 취소하고 staged 상태로 워킹 디렉토리에 보존한다.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git rest --soft HEAD^</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>[방법2]</em></strong> commit을 취소하고 unstaged 상태로 워킹 디렉토리에 보존한다.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git rest --mixed HEAD^</span><br><span class="line">git reset HEAD^</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>[방법2-1]</em></strong> 마지막 커밋 두개를 취소한다.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git reset HEAD~2</span><br></pre></td></tr></table></figure>
+<p><strong><em>[방법3]</em></strong>  commit을 취소하고 unstaged 상태로 워킹 디렉토리에서 삭제한다.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git reset --hard HEAD^</span><br></pre></td></tr></table></figure>
+
+<h2 id="git-push-취소"><a href="#git-push-취소" class="headerlink" title="git push 취소"></a>git push 취소</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git push <span class="tag">&lt;<span class="name">원격</span> 저장소 이름&gt;</span> <span class="tag">&lt;<span class="name">브랜치</span> 이름&gt;</span> -f</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
 </search>
