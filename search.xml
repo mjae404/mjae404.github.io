@@ -9129,7 +9129,7 @@
       </tags>
   </entry>
   <entry>
-    <title>git add/commit/push 취소하기</title>
+    <title>git add / commit / push 취소하기</title>
     <url>/2021/07/15/git-cancel-add-commit-push/</url>
     <content><![CDATA[<p>git add /commit / push 취소를 진행할 수 있다.</p>
 <a id="more"></a>
@@ -9140,10 +9140,10 @@
 <p>파일명이 없을 시 add한 파일 전체를 취소한다.</p>
 </blockquote>
 <h2 id="git-commit-취소"><a href="#git-commit-취소" class="headerlink" title="git commit 취소"></a>git commit 취소</h2><p><strong><em>[방법1]</em></strong> commit을 취소하고 staged 상태로 워킹 디렉토리에 보존한다.</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git rest --soft HEAD^</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git reset --soft HEAD^</span><br></pre></td></tr></table></figure>
 
 <p><strong><em>[방법2]</em></strong> commit을 취소하고 unstaged 상태로 워킹 디렉토리에 보존한다.</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git rest --mixed HEAD^</span><br><span class="line">git reset HEAD^</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git reset --mixed HEAD^</span><br><span class="line">git reset HEAD^</span><br></pre></td></tr></table></figure>
 
 <p><strong><em>[방법2-1]</em></strong> 마지막 커밋 두개를 취소한다.</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">git reset HEAD~2</span><br></pre></td></tr></table></figure>
@@ -9157,6 +9157,71 @@
       <tags>
         <tag>git</tag>
         <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PHP 개요</title>
+    <url>/2021/07/28/php-overview/</url>
+    <content><![CDATA[<p><strong><em>서버 사이드 언어</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>언어</th>
+<th>운영체제</th>
+<th>웹서버</th>
+<th>제조사</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PHP</td>
+<td>리눅스, 윈도우</td>
+<td>Apache 등</td>
+<td>오픈소스</td>
+</tr>
+<tr>
+<td>JSP</td>
+<td>리눅스, 윈도우</td>
+<td>Tomcat, Jeus 등</td>
+<td>Oracle</td>
+</tr>
+<tr>
+<td>ASP.NET</td>
+<td>윈도우</td>
+<td>IIS</td>
+<td>Microsoft</td>
+</tr>
+</tbody></table>
+<a id="more"></a>
+
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><h3 id="응답-과정"><a href="#응답-과정" class="headerlink" title="응답 과정"></a>응답 과정</h3><ol>
+<li>웹페이지 요청</li>
+<li>스크립트 실행 요청</li>
+<li>데이터베이스와의 작업</li>
+<li>작업처리 결과</li>
+<li>웹페이지 응답</li>
+</ol>
+<h3 id="php로-만들어진-오픈-CMS"><a href="#php로-만들어진-오픈-CMS" class="headerlink" title="php로 만들어진 오픈 CMS"></a>php로 만들어진 오픈 CMS</h3><ol>
+<li>xpressengine</li>
+<li>그누보드</li>
+<li>워드프레스</li>
+</ol>
+<h3 id="환경설정"><a href="#환경설정" class="headerlink" title="환경설정"></a>환경설정</h3><ol>
+<li>apache</li>
+<li>php</li>
+<li>mysql + phpmyadmin</li>
+<li>autoset/bitnami wamp으로 일괄 설치 가능</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>Rock’s Easyweb<br><a href="https://www.youtube.com/watch?v=GpBVlFL6ZVA&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=1">https://www.youtube.com/watch?v=GpBVlFL6ZVA&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=1</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>overview</tag>
+        <tag>php</tag>
       </tags>
   </entry>
 </search>

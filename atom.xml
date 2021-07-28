@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-07-15T09:49:13.322Z</updated>
+  <updated>2021-07-28T11:47:45.018Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,62 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>git add/commit/push 취소하기</title>
+    <title>PHP 개요</title>
+    <link href="http://mjae404.github.io/2021/07/28/php-overview/"/>
+    <id>http://mjae404.github.io/2021/07/28/php-overview/</id>
+    <published>2021-07-28T11:36:29.000Z</published>
+    <updated>2021-07-28T11:47:45.018Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;em&gt;서버 사이드 언어&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;언어&lt;/th&gt;
+&lt;th&gt;운영체제&lt;/th&gt;
+&lt;th&gt;웹서버&lt;/th&gt;
+&lt;th&gt;제조사&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;PHP&lt;/td&gt;
+&lt;td&gt;리눅스, 윈도우&lt;/td&gt;
+&lt;td&gt;Apache 등&lt;/td&gt;
+&lt;td&gt;오픈소스&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JSP&lt;/td&gt;
+&lt;td&gt;리눅스, 윈도우&lt;/td&gt;
+&lt;td&gt;Tomcat, Jeus 등&lt;/td&gt;
+&lt;td&gt;Oracle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ASP.NET&lt;/td&gt;
+&lt;td&gt;윈도우&lt;/td&gt;
+&lt;td&gt;IIS&lt;/td&gt;
+&lt;td&gt;Microsoft&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+    
+    </summary>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git add / commit / push 취소하기</title>
     <link href="http://mjae404.github.io/2021/07/15/git-cancel-add-commit-push/"/>
     <id>http://mjae404.github.io/2021/07/15/git-cancel-add-commit-push/</id>
     <published>2021-07-15T09:38:53.000Z</published>
-    <updated>2021-07-15T09:49:13.322Z</updated>
+    <updated>2021-07-28T11:38:00.217Z</updated>
     
     <summary type="html">
     
@@ -483,33 +534,6 @@
       <category term="jQuery" scheme="http://mjae404.github.io/tags/jQuery/"/>
     
       <category term="selecotr" scheme="http://mjae404.github.io/tags/selecotr/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 애니메이션 02</title>
-    <link href="http://mjae404.github.io/2020/12/06/css-exercise002/"/>
-    <id>http://mjae404.github.io/2020/12/06/css-exercise002/</id>
-    <published>2020-12-05T17:00:23.000Z</published>
-    <updated>2020-12-05T17:01:39.643Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 Dot Animation Effect.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
   </entry>
   
