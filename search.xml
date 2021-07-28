@@ -9224,4 +9224,47 @@
         <tag>php</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PHP 변수 및 에러 확인</title>
+    <url>/2021/07/28/php-variable-and-error/</url>
+    <content><![CDATA[<p>PHP 기본 문법에서 변수 및 에러를 확인해본다.</p>
+<a id="more"></a>
+
+<h2 id="php-정보-확인"><a href="#php-정보-확인" class="headerlink" title="php 정보 확인"></a>php 정보 확인</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    phpinfo();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="기본-문법"><a href="#기본-문법" class="headerlink" title="기본 문법"></a>기본 문법</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="comment">// 기본적으로 <span class="meta">&lt;?php</span>로 시작하여</span></span><br><span class="line">   <span class="keyword">echo</span> <span class="string">&#x27;hello world&#x27;</span> <span class="comment">// &#x27;&#x27; 안/PHP 문법 밖에 태그 사용 가능</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    여러 문장 주석 처리</span></span><br><span class="line"><span class="comment">    가능합니다</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="comment">#한줄 주석</span></span><br><span class="line"><span class="meta">?&gt;</span> <span class="comment">// <span class="meta">?&gt;</span> 으로 닫힙니다</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h3><p>문자열 기본 출력 함수.</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">   <span class="keyword">echo</span> <span class="string">&#x27;hello world&#x27;</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="PHP-변수"><a href="#PHP-변수" class="headerlink" title="PHP 변수"></a>PHP 변수</h3><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">   $name = <span class="string">&quot;mjae&quot;</span>; <span class="comment">// $로 변수를 선언합니다</span></span><br><span class="line">   <span class="keyword">echo</span> <span class="string">&#x27;반갑습니다. &#x27;</span>.$name; <span class="comment">// 작은따옴표의 경우 .으로 문자열을 연결합니다</span></span><br><span class="line">   <span class="keyword">echo</span> <span class="string">&quot;반갑습니다. $name&quot;</span>; <span class="comment">// 큰따옴표의 경우 안에 변수가 들어올 수 있습니다</span></span><br><span class="line">   <span class="comment">// 반갑습니다. mjae</span></span><br><span class="line"></span><br><span class="line">   <span class="keyword">echo</span> <span class="string">&#x27;반갑습니다. $name&#x27;</span>; <span class="comment">// 반갑습니다. $name</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="에러-확인하고-싶을-경우"><a href="#에러-확인하고-싶을-경우" class="headerlink" title="에러 확인하고 싶을 경우"></a>에러 확인하고 싶을 경우</h2><p><strong><em>에러발생</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">   <span class="keyword">echo</span> <span class="string">&#x27;반갑습니다. $name</span></span><br><span class="line"><span class="string">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>보통 php 파일은 에러가 나면 어디서 에러가 났는지 알려주지 않는다. 그렇기 때문에 파일에서 확인하고 싶은 경우 따로 설정을 해주어야 한다. (물론 visual studio에서도 따로 에러 확인을 할 수는 있다.)</p>
+<ol>
+<li><code>C:\Bitnami\wampstack-8.0.8-0\apache2\php\php.ini</code>을 연다.</li>
+<li><code>display_errors</code>를 검색한다.</li>
+<li><code>display_errors = on</code>으로 설정을 변경한다.</li>
+<li><code>Bitnami WAMP Stack</code>에서 웹서버를 리부팅한다.</li>
+<li>다시 <code>localhost</code>를 확인하면 에러가 어디서 발생했는지 확인할 수 있다.</li>
+</ol>
+<blockquote>
+<p>다 작업을 했을 경우 다시 설정을 off로 해두는 것이 좋다.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>Rock’s Easyweb<br><a href="https://www.youtube.com/watch?v=Wv6haVSf6vw&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=2">https://www.youtube.com/watch?v=Wv6haVSf6vw&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=2</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>variable</tag>
+        <tag>php</tag>
+        <tag>error</tag>
+      </tags>
+  </entry>
 </search>
