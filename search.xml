@@ -9323,9 +9323,10 @@
         <category>php</category>
       </categories>
       <tags>
-        <tag>variable</tag>
         <tag>php</tag>
-        <tag>error</tag>
+        <tag>conditions</tag>
+        <tag>array</tag>
+        <tag>loop</tag>
       </tags>
   </entry>
 </search>

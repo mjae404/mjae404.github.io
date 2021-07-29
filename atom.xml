@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-07-29T12:49:33.247Z</updated>
+  <updated>2021-07-29T12:51:36.207Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://mjae404.github.io/2021/07/29/php-conditions-array-loop/"/>
     <id>http://mjae404.github.io/2021/07/29/php-conditions-array-loop/</id>
     <published>2021-07-29T12:13:53.000Z</published>
-    <updated>2021-07-29T12:49:33.247Z</updated>
+    <updated>2021-07-29T12:51:36.207Z</updated>
     
     <summary type="html">
     
@@ -33,11 +33,13 @@
       <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
     
     
-      <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
-    
       <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
     
-      <category term="error" scheme="http://mjae404.github.io/tags/error/"/>
+      <category term="conditions" scheme="http://mjae404.github.io/tags/conditions/"/>
+    
+      <category term="array" scheme="http://mjae404.github.io/tags/array/"/>
+    
+      <category term="loop" scheme="http://mjae404.github.io/tags/loop/"/>
     
   </entry>
   
