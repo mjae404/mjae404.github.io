@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-07-28T12:16:51.790Z</updated>
+  <updated>2021-07-29T12:49:33.247Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP 조건문, 배열, 반복문</title>
+    <link href="http://mjae404.github.io/2021/07/29/php-conditions-array-loop/"/>
+    <id>http://mjae404.github.io/2021/07/29/php-conditions-array-loop/</id>
+    <published>2021-07-29T12:13:53.000Z</published>
+    <updated>2021-07-29T12:49:33.247Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PHP 기본 문법에서 조건문, 배열, 반복문을 확인해본다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
+    
+    
+      <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
+    
+      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
+    
+      <category term="error" scheme="http://mjae404.github.io/tags/error/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP 변수 및 에러 확인</title>
@@ -513,29 +538,6 @@
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="box shadow" scheme="http://mjae404.github.io/tags/box-shadow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 이벤트 제어 속성</title>
-    <link href="http://mjae404.github.io/2020/12/09/css-pointer-events/"/>
-    <id>http://mjae404.github.io/2020/12/09/css-pointer-events/</id>
-    <published>2020-12-09T14:32:37.000Z</published>
-    <updated>2020-12-09T14:41:36.467Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;요소에 부여된 이벤트를 제거하거나 활성화시켜야 하는 경우가 있는데 이럴 때 &lt;code&gt;pointer-events&lt;/code&gt; 속성을 사용한다. 요소들의 마우스/터치 이벤트들의 응답을 조절할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="overflow" scheme="http://mjae404.github.io/tags/overflow/"/>
     
   </entry>
   
