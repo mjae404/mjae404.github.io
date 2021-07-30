@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-07-29T12:51:36.207Z</updated>
+  <updated>2021-07-30T08:09:52.396Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP 함수, 지역변수, 정적변수, 전역변수</title>
+    <link href="http://mjae404.github.io/2021/07/30/php-function-variable/"/>
+    <id>http://mjae404.github.io/2021/07/30/php-function-variable/</id>
+    <published>2021-07-30T07:40:40.000Z</published>
+    <updated>2021-07-30T08:09:52.396Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PHP 기본 문법에서 함수, 지역변수, 정적변수, 전역변수를 확인해본다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
+    
+    
+      <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
+    
+      <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
+    
+      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP 조건문, 배열, 반복문</title>
@@ -516,30 +541,6 @@
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="transition" scheme="http://mjae404.github.io/tags/transition/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS box shadow</title>
-    <link href="http://mjae404.github.io/2020/12/10/css-box-shadow/"/>
-    <id>http://mjae404.github.io/2020/12/10/css-box-shadow/</id>
-    <published>2020-12-09T16:58:05.000Z</published>
-    <updated>2020-12-09T17:00:56.198Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;box-shadow&lt;/code&gt; css 속성은 요소의 프레임 주위에 그림자 효과를 추가한다. 여러개의 효과를 쉼표로 추가하여 설정할 수 있다. &lt;strong&gt;X값, Y값, 블러, 번지는 정도, 색상&lt;/strong&gt; 을 기재한다. 거의 모든 요소의 프레임에서 사용할 수 있으며, &lt;code&gt;border-radius&lt;/code&gt;를 지정할 수 있다. 여러 개를 지정할 수 있고, 첫번째로 지정한 그림자가 제일 위에 있다.&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;box-shadow&lt;/span&gt;: 3&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 3&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;red&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;-1em&lt;/span&gt; 0 &lt;span class=&quot;selector-class&quot;&gt;.4em&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;teal&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="box shadow" scheme="http://mjae404.github.io/tags/box-shadow/"/>
     
   </entry>
   
