@@ -9365,4 +9365,53 @@
         <tag>php</tag>
       </tags>
   </entry>
+  <entry>
+    <title>npm gulp-file-include</title>
+    <url>/2021/07/31/npm-gulp-file-include/</url>
+    <content><![CDATA[<p>파일을 인클루드하기 위한 gulp 플러그인.</p>
+<a id="more"></a>
+
+<h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-file-include</span><br></pre></td></tr></table></figure>
+
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const fileinclude &#x3D; require(&#39;gulp-file-include&#39;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="prefix"><a href="#prefix" class="headerlink" title="prefix"></a>prefix</h3><p>Type: <code>string</code><br>Default: <code>@@</code></p>
+<h3 id="fileinclude-options"><a href="#fileinclude-options" class="headerlink" title="fileinclude([options])"></a>fileinclude([options])</h3><p>Type: <code>object</code></p>
+<p><strong>options.prefix</strong><br>Type: <code>string</code><br>Default: <code>@@</code></p>
+<p><strong>options.suffix</strong><br>Type: <code>string</code><br>Default: ``</p>
+<p><strong>options.basepath</strong><br>Type: <code>string</code><br>Default: <code>@file</code><br>possible values: <code>@file</code>, <code>@root</code>, <code>path/to/dir</code></p>
+<p><strong>options.filters</strong><br>Type: <code>object</code><br>Default: <code>false</code></p>
+<p><strong>options.context</strong><br>Type: <code>object</code><br>Default: <code>&#123;&#125;</code><br>Context of <code>if</code> statement.</p>
+<p><strong>options.indent</strong><br>Type: <code>boolean</code><br>Default: <code>false</code></p>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><h3 id="if문"><a href="#if문" class="headerlink" title="if문"></a>if문</h3><p><strong><em>index.html</em></strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">@@include(&#x27;./if-nav.html&#x27;, &#123;</span><br><span class="line">  context: &#123;</span><br><span class="line">      name: &#x27;test&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>if-nav.html</em></strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">@@if (name === &#x27;test&#x27; &amp;&amp; nav === true) &#123;</span><br><span class="line">  @@include(&#x27;test.html&#x27;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="for문"><a href="#for문" class="headerlink" title="for문"></a>for문</h3><p><strong><em>index.html</em></strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">@@include(&#x27;./for-list.html&#x27;, &#123;</span><br><span class="line">  context: &#123;</span><br><span class="line">      arr: [&#x27;test1&#x27;, &#x27;test2&#x27;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>for-list.html</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">@@for (var i &#x3D; 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">  &lt;li&gt;&#96;+arr[i]+&#96;&lt;&#x2F;li&gt;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="loop문"><a href="#loop문" class="headerlink" title="loop문"></a>loop문</h3><p><strong><em>index.html</em></strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">@@loop(&#x27;loop-article.html&#x27;, [</span><br><span class="line">  &#123; &quot;title&quot;: &quot;My post title&quot;, &quot;text&quot;: &quot;<span class="tag">&lt;<span class="name">p</span>&gt;</span>lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span>&quot; &#125;,</span><br><span class="line">  &#123; &quot;title&quot;: &quot;Another post&quot;, &quot;text&quot;: &quot;<span class="tag">&lt;<span class="name">p</span>&gt;</span>lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span>&quot; &#125;,</span><br><span class="line">  &#123; &quot;title&quot;: &quot;One more post&quot;, &quot;text&quot;: &quot;<span class="tag">&lt;<span class="name">p</span>&gt;</span>lorem ipsum...<span class="tag">&lt;/<span class="name">p</span>&gt;</span>&quot; &#125;</span><br><span class="line">])</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>loop-article.html</em></strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>@@title<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  @@text</span><br><span class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://www.npmjs.com/package/gulp-file-include">https://www.npmjs.com/package/gulp-file-include</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+        <tag>gulp-file-include</tag>
+      </tags>
+  </entry>
 </search>
