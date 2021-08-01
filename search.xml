@@ -9366,7 +9366,7 @@
       </tags>
   </entry>
   <entry>
-    <title>npm gulp-file-include</title>
+    <title>npm-gulp-file-include</title>
     <url>/2021/07/31/npm-gulp-file-include/</url>
     <content><![CDATA[<p>파일을 인클루드하기 위한 gulp 플러그인.</p>
 <a id="more"></a>
@@ -9412,6 +9412,65 @@
       <tags>
         <tag>npm</tag>
         <tag>gulp-file-include</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PHP 문서에서 다른 문서 불러오기</title>
+    <url>/2021/08/01/php-include-require/</url>
+    <content><![CDATA[<p>php 문서에서 다른 문서(ex. 공통문서)를 불러와본다.</p>
+<a id="more"></a>
+
+<h2 id="include"><a href="#include" class="headerlink" title="include"></a>include</h2><ul>
+<li>특정 조건일 때 지정한 파일이 삽입되도록 처리 가능하다.</li>
+<li>삽입 실패시(파일 및 문서가 존재하지 않을 경우) 존재하지 않는다는 문구를 출력하고 계속 파싱한다.</li>
+<li>여러 번 출력하고 싶을 경우도 가능하다. (<code>include</code> 여러 번 사용 가능)</li>
+</ul>
+<p><strong><em>/common/header.php</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">&quot;ko&quot;</span>&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">&quot;UTF-8&quot;</span>&gt;</span><br><span class="line">    &lt;meta name=<span class="string">&quot;viewport&quot;</span> content=<span class="string">&quot;width=device-width, initial-scal=1.0&quot;</span>&gt;</span><br><span class="line">    &lt;title&gt;<span class="meta">&lt;?=</span> $title; <span class="meta">?&gt;</span>&lt;/title&gt; <span class="comment">// 변수명 출력</span></span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>index.php</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="comment">// 변수 선언 전에 include 먼저 선언되거나</span></span><br><span class="line">    <span class="comment">// 선언 자체가 되지 않을 경우 에러 발생</span></span><br><span class="line">    $title = <span class="string">&#x27;home&#x27;</span>;</span><br><span class="line">    <span class="keyword">include</span>(<span class="string">&#x27;common/header.php&#x27;</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;body&gt;</span><br><span class="line">    ……내용……</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>결과</em></strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;ko&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scal=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>home<span class="tag">&lt;/<span class="name">title</span>&gt;</span> // 변수명 출력</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    ……내용……</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>안전하게 진행하고 싶을 경우 변수 선언이 되지 않았을 때 빈값을 삽입하도록 하단과 같이 <code>/common/header.php</code>에 if문을 삽입한다.</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// !isset($title): 타이틀이 존재하지 않을 때</span></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">   <span class="keyword">if</span>(!<span class="keyword">isset</span>($title)) &#123;</span><br><span class="line">       $title = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">   &#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">&quot;ko&quot;</span>&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">   &lt;meta charset=<span class="string">&quot;UTF-8&quot;</span>&gt;</span><br><span class="line">   &lt;meta name=<span class="string">&quot;viewport&quot;</span> content=<span class="string">&quot;width=device-width, initial-scal=1.0&quot;</span>&gt;</span><br><span class="line">   &lt;title&gt;<span class="meta">&lt;?=</span> $title; <span class="meta">?&gt;</span>&lt;/title&gt; <span class="comment">// 변수명 출력</span></span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="include-once"><a href="#include-once" class="headerlink" title="include_once"></a>include_once</h3><p><code>include</code>와 동일한 기능을 하지만, 여러 번 호출을 하더라도 <code>include</code>와 달리 한번만 불러온다.<br><strong><em>index.php</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $title = <span class="string">&#x27;home&#x27;</span>;</span><br><span class="line">    <span class="keyword">include_once</span>(<span class="string">&#x27;common/header.php&#x27;</span>);</span><br><span class="line">    <span class="keyword">include_once</span>(<span class="string">&#x27;common/header.php&#x27;</span>); <span class="comment">// 두 번 호출</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;body&gt;</span><br><span class="line">    ……내용……</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>결과</em></strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;ko&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scal=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>home<span class="tag">&lt;/<span class="name">title</span>&gt;</span> // 변수명 출력</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    ……내용……</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="require"><a href="#require" class="headerlink" title="require"></a>require</h2><ul>
+<li>파일을 무조건 삽입해야 할 때 사용해야 한다. (조건을 만족하지 않아도 파일을 삽입한다)</li>
+<li>삽입 실패시(파일 및 문서가 존재하지 않을 경우) 존재하지 않는다는 문구를 출력하고 해당 파일을 중지한다.</li>
+<li>여러 번 호출할 경우 여러번 선언되었다는 에러가 발생한다.</li>
+</ul>
+<p><strong><em>/common/functions.php</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">increment</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">static</span> $count =  <span class="number">0</span>; <span class="comment">//정적 변수</span></span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;&#123;$count&#125;&quot;</span>;</span><br><span class="line">    $count++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>index.php</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="keyword">require</span>(<span class="string">&#x27;common/functions.php&#x27;</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    increment(); <span class="comment">// 0</span></span><br><span class="line">    increment(); <span class="comment">// 1</span></span><br><span class="line">    increment(); <span class="comment">// 2</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="require-once"><a href="#require-once" class="headerlink" title="require_once"></a>require_once</h3><p>여러 번 호출되더라도 한 번만 호출한다.</p>
+<p><strong><em>index.php</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="comment">// 오류 발생</span></span><br><span class="line">    <span class="keyword">require</span>(<span class="string">&#x27;common/functions.php&#x27;</span>);</span><br><span class="line">    <span class="keyword">require</span>(<span class="string">&#x27;common/functions.php&#x27;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 오류 미발생</span></span><br><span class="line">    <span class="keyword">require_once</span>(<span class="string">&#x27;common/functions.php&#x27;</span>);</span><br><span class="line">    <span class="keyword">require_once</span>(<span class="string">&#x27;common/functions.php&#x27;</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    increment(); <span class="comment">// 0</span></span><br><span class="line">    increment(); <span class="comment">// 1</span></span><br><span class="line">    increment(); <span class="comment">// 2</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://www.youtube.com/watch?v=rCDuvv4ZZE8&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=5">https://www.youtube.com/watch?v=rCDuvv4ZZE8&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=5</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+        <tag>include</tag>
+        <tag>require</tag>
       </tags>
   </entry>
 </search>
