@@ -9532,4 +9532,56 @@
         <tag>loop</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PHP 사용자 입력 데이터 전송방식 get, post</title>
+    <url>/2021/08/02/php-get-post/</url>
+    <content><![CDATA[<p>PHP 기본 문법에서 form에 대해 알아본다.</p>
+<a id="more"></a>
+
+<h2 id="사용자-입력-데이터-방식"><a href="#사용자-입력-데이터-방식" class="headerlink" title="사용자 입력 데이터 방식"></a>사용자 입력 데이터 방식</h2><ul>
+<li><code>action=&quot;requests.php&quot;</code> : 사용자가 입력한 정보를 requests.php에서 확인한다. (회원가입 시 아이디를 중복체크한다거나, 로그인시 아이디와 비밀번호가 맞는지 체크하는 등)</li>
+<li><code>name</code> : DB에서 입력한 값이 들어갈 필드명</li>
+</ul>
+<h3 id="get"><a href="#get" class="headerlink" title="get"></a>get</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;requests.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;userName&quot;</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">id</span>=<span class="string">&quot;userName&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;userEmail&quot;</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">name</span>=<span class="string">&quot;useremail&quot;</span> <span class="attr">id</span>=<span class="string">&quot;userEmail&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;로그인&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="post"><a href="#post" class="headerlink" title="post"></a>post</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;requests.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;userName&quot;</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">id</span>=<span class="string">&quot;userName&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;userEmail&quot;</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">name</span>=<span class="string">&quot;useremail&quot;</span> <span class="attr">id</span>=<span class="string">&quot;userEmail&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;로그인&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="request"><a href="#request" class="headerlink" title="request"></a>request</h2><h3 id="get-1"><a href="#get-1" class="headerlink" title="get"></a>get</h3><ul>
+<li>get 방식으로 넘어온 <code>$_GET</code>은 최상위 수퍼글로벌 배열을 활용할 수 있다.</li>
+<li>get 방식은 url에 사용자가 입력한 필드와 값이 그대로 노출된다. (노출되는 길이의 제한이 있다.)</li>
+<li>서버에 <code>HTTP</code> 요청을 보내어 캐시에 저장이 되는 방식이다.</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $name = $_GET[<span class="string">&quot;username&quot;</span>];</span><br><span class="line">    $email = $_GET[<span class="string">&quot;useremail&quot;</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">echo</span> $name.<span class="string">&#x27;님께서 입력한 이메일은 &#x27;</span>.$email.<span class="string">&#x27;입니다.&#x27;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong><em>결과</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mjae님의 입력한 이메일은 mjae404@gmail.com입니다.</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="post-1"><a href="#post-1" class="headerlink" title="post"></a>post</h3><ul>
+<li>post 방식으로 넘어온 <code>$_POST</code>은 데이터를 별도로 첨부하여 전달하는 방식이다.</li>
+<li>post 방식은  url에 사용자가 입력한 필드와 값이 그대로 노출되지 않는다.</li>
+<li>캐시에 저장이 되지 않고 히스토리에도 남지 않는다.</li>
+<li><code>request.php</code> 쿼리 방식으로 보냈다는 의미이며 사용자가 입력한 것은 별도로 암호화하여 전송한다.</li>
+<li>내부적으로 암호화되었기 때문에 데이터 길이에 제한도 없으며 보안성도 뛰어나다.</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $name = $_POST[<span class="string">&quot;username&quot;</span>];</span><br><span class="line">    $email = $_POST[<span class="string">&quot;useremail&quot;</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">echo</span> $name.<span class="string">&#x27;님께서 입력한 이메일은 &#x27;</span>.$email.<span class="string">&#x27;입니다.&#x27;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong><em>결과</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mjae님의 입력한 이메일은 mjae404@gmail.com입니다.</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://www.youtube.com/watch?v=rCDuvv4ZZE8&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=5">https://www.youtube.com/watch?v=rCDuvv4ZZE8&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=5</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+        <tag>get</tag>
+        <tag>post</tag>
+        <tag>form</tag>
+      </tags>
+  </entry>
 </search>

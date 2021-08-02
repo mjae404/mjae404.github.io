@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-08-02T11:09:53.004Z</updated>
+  <updated>2021-08-02T11:50:11.648Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP 사용자 입력 데이터 전송방식 get, post</title>
+    <link href="http://mjae404.github.io/2021/08/02/php-get-post/"/>
+    <id>http://mjae404.github.io/2021/08/02/php-get-post/</id>
+    <published>2021-08-02T11:11:13.000Z</published>
+    <updated>2021-08-02T11:50:11.648Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PHP 기본 문법에서 form에 대해 알아본다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
+    
+      <category term="get" scheme="http://mjae404.github.io/tags/get/"/>
+    
+      <category term="post" scheme="http://mjae404.github.io/tags/post/"/>
+    
+      <category term="form" scheme="http://mjae404.github.io/tags/form/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP loop로 반복작업 처리하기</title>
@@ -512,29 +539,6 @@
       <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
     
       <category term="web accessibility" scheme="http://mjae404.github.io/tags/web-accessibility/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 벤더 프리픽스</title>
-    <link href="http://mjae404.github.io/2020/12/27/css-vendor-prefix/"/>
-    <id>http://mjae404.github.io/2020/12/27/css-vendor-prefix/</id>
-    <published>2020-12-27T09:00:16.000Z</published>
-    <updated>2020-12-27T09:10:08.531Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CSS3 표준으로 확정이 되기 이전 혹은 브라우저 개발사가 실험적으로 제공하는 기능을 사용할 경우 벤더 프리픽스를 이용하여야 한다. 브라우저의 버전이 올라감에 따라 벤더 프리픽스를 사용하지 않아도 될 수 있지만 구형 브라우저 지원을 위해 사용할 필요가 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="vendor prefix" scheme="http://mjae404.github.io/tags/vendor-prefix/"/>
     
   </entry>
   
