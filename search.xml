@@ -9473,4 +9473,63 @@
         <tag>require</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PHP loop로 반복작업 처리하기</title>
+    <url>/2021/08/02/php-loop/</url>
+    <content><![CDATA[<p>php로 반복작업을 처리해본다.</p>
+<a id="more"></a>
+
+<h2 id="loop"><a href="#loop" class="headerlink" title="loop"></a>loop</h2><h3 id="while"><a href="#while" class="headerlink" title="while"></a>while</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">while(조건식) &#123;</span><br><span class="line">    조건의 결과 참일 때 반복할 코드</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>while문</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>($i &lt; <span class="number">5</span>) &#123;</span><br><span class="line">        <span class="keyword">echo</span> ($i++).<span class="string">&#x27;&lt;br/&gt;&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><em>결과</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<h3 id="do-while"><a href="#do-while" class="headerlink" title="do/while"></a>do/while</h3><p>일단 먼저 실행하고 조건식을 확인한다. 조건식이 참일 때까지 반복한다.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">do&#123;</span><br><span class="line">    조건의 결과 참일 때 반복할 코드</span><br><span class="line">&#125;while(조건식)</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>do/while문</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">do</span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> ($i++).<span class="string">&#x27;&lt;br/&gt;&#x27;</span>;</span><br><span class="line">    &#125;<span class="keyword">while</span>($i &lt; <span class="number">5</span>)</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><em>결과</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for(초기값; 조건식; 증감)&#123;</span><br><span class="line">    조건의 결과 참일 때 반복할 코드</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>for문</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">0</span>; $i &lt; <span class="number">5</span>; $i++) &#123;</span><br><span class="line">        <span class="keyword">echo</span> ($i++).<span class="string">&#x27;&lt;br/&gt;&#x27;</span>;</span><br><span class="line">    &#125;&gt;)</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">0</span>; $i &lt; <span class="number">5</span>; $i++) &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;&#123;$i&#125;&lt;br/&gt;&quot;</span>;</span><br><span class="line">    &#125;&gt;)</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><em>결과</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<h3 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">foreach(배열명 as 값을 저장할 변수)&#123;</span><br><span class="line">    반복할 코드</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>foreach문</em></strong></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $results = arry(<span class="number">0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>);</span><br><span class="line">    <span class="keyword">foreach</span>($results <span class="keyword">as</span> $result) &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;변수 \$result의 값은 &#123;$result&#125;입니다. &lt;br/&gt;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">변수 $result 값은 0입니다.</span><br><span class="line">변수 $result 값은 2입니다.</span><br><span class="line">변수 $result 값은 4입니다.</span><br><span class="line">변수 $result 값은 6입니다.</span><br><span class="line">변수 $result 값은 8입니다.</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>$</code> 앞에 <code>\</code>을 입력하면 문자열로 출력한다.</p>
+</blockquote>
+<h2 id="example"><a href="#example" class="headerlink" title="example"></a>example</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $scores = <span class="keyword">array</span>(</span><br><span class="line">        <span class="string">&#x27;국어&#x27;</span> =&gt; <span class="number">80</span>,</span><br><span class="line">        <span class="string">&#x27;영어&#x27;</span> =&gt; <span class="number">90</span>,</span><br><span class="line">        <span class="string">&#x27;수학&#x27;</span> =&gt; <span class="number">100</span>,</span><br><span class="line">        <span class="string">&#x27;과학&#x27;</span> =&gt; <span class="number">95</span></span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    <span class="keyword">foreach</span>($scores <span class="keyword">as</span> $key =&gt; $score)&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;배열 \$scores에서 과목명 &#123;$key&#125;의 점수는 &#123;$score&#125;입니다. &lt;br/&gt;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong><em>결과</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">배열 $scores에서 과목명 국어의 점수는 80입니다.</span><br><span class="line">배열 $scores에서 과목명 영어의 점수는 90입니다.</span><br><span class="line">배열 $scores에서 과목명 수학의 점수는 100입니다.</span><br><span class="line">배열 $scores에서 과목명 과학의 점수는 95입니다.</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://www.youtube.com/watch?v=rCDuvv4ZZE8&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=6">https://www.youtube.com/watch?v=rCDuvv4ZZE8&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=6</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+        <tag>loop</tag>
+      </tags>
+  </entry>
 </search>

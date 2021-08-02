@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-08-01T10:13:03.664Z</updated>
+  <updated>2021-08-02T11:09:53.004Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP loop로 반복작업 처리하기</title>
+    <link href="http://mjae404.github.io/2021/08/02/php-loop/"/>
+    <id>http://mjae404.github.io/2021/08/02/php-loop/</id>
+    <published>2021-08-02T10:44:47.000Z</published>
+    <updated>2021-08-02T11:09:53.004Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;php로 반복작업을 처리해본다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
+    
+      <category term="loop" scheme="http://mjae404.github.io/tags/loop/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP 문서에서 다른 문서 불러오기</title>
@@ -512,33 +535,6 @@
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="vendor prefix" scheme="http://mjae404.github.io/tags/vendor-prefix/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 애니메이션 04</title>
-    <link href="http://mjae404.github.io/2020/12/13/css-exercise004/"/>
-    <id>http://mjae404.github.io/2020/12/13/css-exercise004/</id>
-    <published>2020-12-13T05:44:36.000Z</published>
-    <updated>2021-02-13T06:44:22.350Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CSS3(keyframes, transform, translate, animation)을 이용한 tail Animation Effect.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
   </entry>
   
