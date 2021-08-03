@@ -10,10 +10,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta property="og:type" content="website">
-  <meta property="og:title" content="404 NOT FOUND">
+  <meta property="og:title" content="MJAEDOT">
   <meta property="og:description" content="FRONT-END DEVELOP LOG">
   <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
   <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
     JS 실행 컨텍스트 |  404 Not Found
   </title>
@@ -27,25 +28,6 @@
   
 <script src="/js/pace.min.js"></script>
 
-
-  
-
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-155957742-1', 'auto');
-ga('send', 'pageview');
-
-</script>
-
-
-
-  
-
-  <link rel="canonical" href="http://mjae404.github.io/2020/09/17/js-execution-context/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -148,7 +130,7 @@ ga('send', 'pageview');
 <h2 id="실행-컨텍스트-스택"><a href="#실행-컨텍스트-스택" class="headerlink" title="실행 컨텍스트 스택"></a>실행 컨텍스트 스택</h2><img src="https://mjae404.github.io/images/stack_of_execution_context.jpg" alt="실행 컨텍스트 스택">
 
 <p>자바스크립트는 먼저 전역 코드를 평가하여 전역 실행 컨텍스트를 생성한다. 그리고 함수가 호출되면 코드를 평가하여 함수 실행 컨텍스트를 생성하는데, 이때 생성된 실행 컨텍스트는 스택 자료 구조로 관리된다. 이를 <strong>실행 컨택스트 스택(Execution context stack)</strong> 이라고 한다.</p>
-<p> 실행 컨텍스트 스택은 <strong>코드의 실행 순서를 관리__한다. 실행 가능한 코드가 평가되면 실행 컨텍스트가 생성되고 실행 컨텍스트 스택의 최상위에 쌓인다. __실행 컨텍스트 스택의 최상위에 존재하는 실행 컨텍스트를 <u>실행 중인 실행 컨텍스트(running execution context)</u></strong> 라 부른다.</p>
+<p> 실행 컨텍스트 스택은 __코드의 실행 순서를 관리__한다. 실행 가능한 코드가 평가되면 실행 컨텍스트가 생성되고 실행 컨텍스트 스택의 최상위에 쌓인다. <strong>실행 컨텍스트 스택의 최상위에 존재하는 실행 컨텍스트를 <u>실행 중인 실행 컨텍스트(running execution context)</u></strong> 라 부른다.</p>
 <h2 id="동기식-처리-모델과-비동기식-처리-모델"><a href="#동기식-처리-모델과-비동기식-처리-모델" class="headerlink" title="동기식 처리 모델과 비동기식 처리 모델"></a>동기식 처리 모델과 비동기식 처리 모델</h2><p>자바 스크립트 엔진은 단 하나의 실행 컨텍스트 스택을 갖는다. 동시에 두가지 이상의 태스크를 실행할 수 없으며, __싱글스레드(single thread)로 동작한다__는 것을 의미한다.</p>
 <ul>
 <li><strong>동기식 처리 모델(Synchronous processing model)</strong>: 하나의 처리가 종료되어야 다음 처리를 실행할 수 있다. 직렬적으로 태스크를 수행하며, 어떤 작업이 수행중이면 다음 작업은 대기하게 된다.</li>
@@ -185,12 +167,38 @@ ga('send', 'pageview');
 
 <h3 id="1-전역-객체-생성"><a href="#1-전역-객체-생성" class="headerlink" title="1. 전역 객체 생성"></a>1. 전역 객체 생성</h3><h3 id="2-전역-코드-평가"><a href="#2-전역-코드-평가" class="headerlink" title="2. 전역 코드 평가"></a>2. 전역 코드 평가</h3><ol>
 <li>전역 실행 컨텍스트 생성</li>
-<li>전역 렉시컬 환경 생성<br>2.1. 전역 환경 레코드 생성<br> 2.1.1. 객체 환경 레코드 생성<br> 2.1.2. 선언적 환경 레코드 생성<br>2.2. 외부 렉시컬 환경에 대한 참조 할당<br>2.3. this 바인딩</li>
+<li>전역 렉시컬 환경 생성</li>
+<li><ol>
+<li>전역 환경 레코드 생성</li>
+<li>1.1. 객체 환경 레코드 생성</li>
+<li>1.2. 선언적 환경 레코드 생성</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>외부 렉시컬 환경에 대한 참조 할당</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>this 바인딩</li>
+</ol>
+</li>
 </ol>
 <h3 id="3-전역-코드-실행"><a href="#3-전역-코드-실행" class="headerlink" title="3. 전역 코드 실행"></a>3. 전역 코드 실행</h3><p>식별자를 검색할 때는 실행 중인 실행 컨텍스트의 렉시컬 환경에서 식별자를 검색한다.</p>
 <h3 id="4-foo-함수-코드-평가"><a href="#4-foo-함수-코드-평가" class="headerlink" title="4. foo 함수 코드 평가"></a>4. foo 함수 코드 평가</h3><ol>
 <li>함수 실행 컨텍스트 생성</li>
-<li>함수 렉시컬 환경 생성<br>2.1. 함수 환경 레코드 생성<br>2.2. 외부 렉시컬 환경에 대한 참조 할당<br>2.3. this 바인딩</li>
+<li>함수 렉시컬 환경 생성</li>
+<li><ol>
+<li>함수 환경 레코드 생성</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>외부 렉시컬 환경에 대한 참조 할당</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>this 바인딩</li>
+</ol>
+</li>
 </ol>
 <h3 id="5-foo-함수-코드-실행"><a href="#5-foo-함수-코드-실행" class="headerlink" title="5. foo 함수 코드 실행"></a>5. foo 함수 코드 실행</h3><h3 id="6-bar-함수-코드-평가"><a href="#6-bar-함수-코드-평가" class="headerlink" title="6. bar 함수 코드 평가"></a>6. bar 함수 코드 평가</h3><h3 id="7-bar-함수-코드-실행"><a href="#7-bar-함수-코드-실행" class="headerlink" title="7. bar 함수 코드 실행"></a>7. bar 함수 코드 실행</h3><h3 id="8-bar-함수-코드-실행-종료"><a href="#8-bar-함수-코드-실행-종료" class="headerlink" title="8. bar 함수 코드 실행 종료"></a>8. bar 함수 코드 실행 종료</h3><h3 id="9-foo-함수-코드-실행-종료"><a href="#9-foo-함수-코드-실행-종료" class="headerlink" title="9. foo 함수 코드 실행 종료"></a>9. foo 함수 코드 실행 종료</h3><h3 id="10-전역-코드-실행-종료"><a href="#10-전역-코드-실행-종료" class="headerlink" title="10. 전역 코드 실행 종료"></a>10. 전역 코드 실행 종료</h3><h2 id="실행-컨텍스트와-블록-레벨-스코프"><a href="#실행-컨텍스트와-블록-레벨-스코프" class="headerlink" title="실행 컨텍스트와 블록 레벨 스코프"></a>실행 컨텍스트와 블록 레벨 스코프</h2><p><em>var 키워드로 선언한 변수</em><br>오로지 함수의 코드 블록 만을 지역 스코프로 인정하는 함수 레벨 스코프를 따른다.</p>
 <p><em>let 키워드로 선언한 변수</em><br>모든 코드 블록(함수, if 문, for 문, while 문, try/catch 문 등) 을 지역 스코프로 인정하는 블록 레벨 스코프(Block-level scope)를 따른다.</p>
@@ -204,7 +212,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/09/17/js-execution-context/" data-id="ckimpfh7d003r34tv7wrf2vga"
+      <a data-url="http://mjae404.github.io/2020/09/17/js-execution-context/" data-id="ckrvtdk8k0047icw51bjr6xk8"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/execution-context/" rel="tag">execution context</a></li></ul>
@@ -218,7 +226,7 @@ ga('send', 'pageview');
   <nav class="article-nav">
     
       <a href="/2020/09/18/js-strict-mode/" class="article-nav-link">
-        <strong class="article-nav-caption">next</strong>
+        <strong class="article-nav-caption">prev</strong>
         <div class="article-nav-title">
           
             JS 엄격모드
@@ -228,7 +236,7 @@ ga('send', 'pageview');
     
     
       <a href="/2020/09/16/js-type-casting/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
+        <strong class="article-nav-caption">next</strong>
         <div class="article-nav-title">JS 타입변환과 단축평가</div>
       </a>
     
@@ -306,7 +314,7 @@ ga('send', 'pageview');
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/category">CATEGORY</a>
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
     </li>
     
     <li class="nav-item">
@@ -369,12 +377,22 @@ ga('send', 'pageview');
 
 
 
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
 
 <script src="/js/ayer.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
   
   
 

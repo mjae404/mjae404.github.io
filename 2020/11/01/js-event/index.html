@@ -10,10 +10,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta property="og:type" content="website">
-  <meta property="og:title" content="404 NOT FOUND">
+  <meta property="og:title" content="MJAEDOT">
   <meta property="og:description" content="FRONT-END DEVELOP LOG">
   <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
   <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
     JS 이벤트 |  404 Not Found
   </title>
@@ -27,25 +28,6 @@
   
 <script src="/js/pace.min.js"></script>
 
-
-  
-
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-155957742-1', 'auto');
-ga('send', 'pageview');
-
-</script>
-
-
-
-  
-
-  <link rel="canonical" href="http://mjae404.github.io/2020/11/01/js-event/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -267,7 +249,7 @@ ga('send', 'pageview');
 
 
 <h3 id="addEventListener-메소드-방식"><a href="#addEventListener-메소드-방식" class="headerlink" title="addEventListener 메소드 방식"></a>addEventListener 메소드 방식</h3><p><code>addEventListener</code> 메소드를 이용하여 대상 DOM 요소에 이벤트를 바인딩하고 해당 이벤트가 발생했을 때 실행될 콜백 함수(이벤트 핸들러)를 지정한다.</p>
-<p><strong><em>장점</em></strong></p>
+<p><em><strong>장점</strong></em></p>
 <ul>
 <li>하나의 이벤트에 대해 하나 이상의 이벤트 핸들러를 추가할 수 있다.</li>
 <li>캡처링과 버블링을 지원한다.</li>
@@ -308,15 +290,15 @@ ga('send', 'pageview');
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>클릭하세요. 클릭한 곳의 좌표가 표시됩니다.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">em</span> <span class="attr">class</span>=<span class="string">&quot;message&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  <span class="function"><span class="keyword">function</span> <span class="title">showCoords</span>(<span class="params">e</span>) </span>&#123; <span class="comment">// e: event object</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> msg = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.message&#x27;</span>);</span></span><br><span class="line">    msg.innerHTML =</span><br><span class="line"><span class="javascript">      <span class="string">&#x27;clientX value: &#x27;</span> + e.clientX + <span class="string">&#x27;&lt;br&gt;&#x27;</span> +</span></span><br><span class="line"><span class="javascript">      <span class="string">&#x27;clientY value: &#x27;</span> + e.clientY;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="javascript">  addEventListener(<span class="string">&#x27;click&#x27;</span>, showCoords);</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="Event-Property"><a href="#Event-Property" class="headerlink" title="Event Property"></a>Event Property</h3><p><strong><em>Event.target</em></strong></p>
+<h3 id="Event-Property"><a href="#Event-Property" class="headerlink" title="Event Property"></a>Event Property</h3><p><em><strong>Event.target</strong></em></p>
 <p>실제로 이벤트를 발생시킨 요소를 가리킨다.</p>
-<p><strong><em>Event.currentTarget</em></strong></p>
+<p><em><strong>Event.currentTarget</strong></em></p>
 <p>이벤트에 바인딩된 DOM 요소를 가리킨다. 즉, addEventListener 앞에 기술된 객체를 가리킨다. addEventListener 메소드에서 지정한 이벤트 핸들러 내부의 this는 이벤트에 바인딩된 DOM 요소를 가리키며 이것은 이벤트 객체의 currentTarget 프로퍼티와 같다. 따라서 이벤트 핸들러 함수 내에서 currentTarget과 this는 언제나 일치한다.</p>
-<p><strong><em>Event.type</em></strong></p>
+<p><em><strong>Event.type</strong></em></p>
 <p>발생한 이벤트의 종류를 나타내는 문자열을 반환한다.</p>
-<p><strong><em>Event.cancelable</em></strong></p>
+<p><em><strong>Event.cancelable</strong></em></p>
 <p>요소의 기본 동작을 취소시킬 수 있는지 여부(true/false)를 나타낸다.</p>
-<p><strong><em>Event.eventPhase</em></strong></p>
+<p><em><strong>Event.eventPhase</strong></em></p>
 <p>이벤트 흐름(event flow) 상에서 어느 단계(event phase)에 있는지를 반환한다.</p>
 <table>
 <thead>
@@ -363,7 +345,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/11/01/js-event/" data-id="ckimpfh7f003u34tv0vodd8gw"
+      <a data-url="http://mjae404.github.io/2020/11/01/js-event/" data-id="ckrvtdk8j0044icw57mbw7yhk"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/event/" rel="tag">event</a></li></ul>
@@ -377,7 +359,7 @@ ga('send', 'pageview');
   <nav class="article-nav">
     
       <a href="/2020/11/05/css-filter/" class="article-nav-link">
-        <strong class="article-nav-caption">next</strong>
+        <strong class="article-nav-caption">prev</strong>
         <div class="article-nav-title">
           
             CSS 필터
@@ -387,7 +369,7 @@ ga('send', 'pageview');
     
     
       <a href="/2020/10/31/css-boxmodel/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
+        <strong class="article-nav-caption">next</strong>
         <div class="article-nav-title">CSS 박스모델</div>
       </a>
     
@@ -465,7 +447,7 @@ ga('send', 'pageview');
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/category">CATEGORY</a>
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
     </li>
     
     <li class="nav-item">
@@ -528,12 +510,22 @@ ga('send', 'pageview');
 
 
 
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
 
 <script src="/js/ayer.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
   
   
 

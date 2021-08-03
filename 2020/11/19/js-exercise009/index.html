@@ -10,10 +10,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta property="og:type" content="website">
-  <meta property="og:title" content="404 NOT FOUND">
+  <meta property="og:title" content="MJAEDOT">
   <meta property="og:description" content="FRONT-END DEVELOP LOG">
   <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
   <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
     JS html 생성 |  404 Not Found
   </title>
@@ -27,25 +28,6 @@
   
 <script src="/js/pace.min.js"></script>
 
-
-  
-
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-155957742-1', 'auto');
-ga('send', 'pageview');
-
-</script>
-
-
-
-  
-
-  <link rel="canonical" href="http://mjae404.github.io/2020/11/19/js-exercise009/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -98,10 +80,10 @@ ga('send', 'pageview');
 
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">content</span>: <span class="string">&#x27;HTML&#x27;</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">content</span>: <span class="string">&#x27;CSS&#x27;</span>, <span class="attr">completed</span>: <span class="literal">true</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">content</span>: <span class="string">&#x27;Javascript&#x27;</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">render</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> html = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  todos.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">todo</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 작성하시오</span></span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(render());</span><br></pre></td></tr></table></figure>
 
-<p><strong><em>출력</em></strong></p>
+<p><em><strong>출력</strong></em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;li id&#x3D;&quot;3&quot;&gt;</span><br><span class="line">    &lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot;&gt;HTML&lt;&#x2F;label&gt;</span><br><span class="line">&lt;&#x2F;li&gt;</span><br><span class="line">&lt;li id&#x3D;&quot;2&quot;&gt;</span><br><span class="line">    &lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot; checked&gt;CSS&lt;&#x2F;label&gt;</span><br><span class="line">&lt;&#x2F;li&gt;</span><br><span class="line">&lt;li id&#x3D;&quot;1&quot;&gt;</span><br><span class="line">    &lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot;&gt;Javascript&lt;&#x2F;label&gt;</span><br><span class="line">&lt;&#x2F;li&gt;</span><br></pre></td></tr></table></figure>
 
-<p><strong><em>풀이</em></strong></p>
+<p><em><strong>풀이</strong></em></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">content</span>: <span class="string">&#x27;HTML&#x27;</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">content</span>: <span class="string">&#x27;CSS&#x27;</span>, <span class="attr">completed</span>: <span class="literal">true</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">content</span>: <span class="string">&#x27;Javascript&#x27;</span>, <span class="attr">completed</span>: <span class="literal">false</span>&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">render</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> html = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  todos.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">todo</span>) </span>&#123;</span><br><span class="line">    html +=</span><br><span class="line">    <span class="string">`&lt;li id =&quot;<span class="subst">$&#123;todo.id&#125;</span>&quot;&gt;</span></span><br><span class="line"><span class="string">      &lt;label&gt;</span></span><br><span class="line"><span class="string">        &lt;input type=&quot;checkbox&quot;<span class="subst">$&#123;todo.completed ? <span class="string">&#x27; checked&#x27;</span> : <span class="string">&#x27;&#x27;</span>&#125;</span>&gt;</span></span><br><span class="line"><span class="string">        <span class="subst">$&#123;todo.content&#125;</span></span></span><br><span class="line"><span class="string">      &lt;/label&gt;</span></span><br><span class="line"><span class="string">    &lt;/li&gt;`</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(render());</span><br></pre></td></tr></table></figure>
 
       
@@ -109,7 +91,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/11/19/js-exercise009/" data-id="ckimpfh7r004u34tv3wthgb9t"
+      <a data-url="http://mjae404.github.io/2020/11/19/js-exercise009/" data-id="ckrvtdk8x0054icw547s55d8l"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/array-HOF/" rel="tag">array HOF</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/arry/" rel="tag">arry</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exercise/" rel="tag">exercise</a></li></ul>
@@ -123,7 +105,7 @@ ga('send', 'pageview');
   <nav class="article-nav">
     
       <a href="/2020/11/20/scss-built-in-function/" class="article-nav-link">
-        <strong class="article-nav-caption">next</strong>
+        <strong class="article-nav-caption">prev</strong>
         <div class="article-nav-title">
           
             SCSS 내장 함수
@@ -133,7 +115,7 @@ ga('send', 'pageview');
     
     
       <a href="/2020/11/18/js-exercise008/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
+        <strong class="article-nav-caption">next</strong>
         <div class="article-nav-title">JS 윤년인지 확인하는 함수</div>
       </a>
     
@@ -211,7 +193,7 @@ ga('send', 'pageview');
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/category">CATEGORY</a>
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
     </li>
     
     <li class="nav-item">
@@ -274,12 +256,22 @@ ga('send', 'pageview');
 
 
 
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
 
 <script src="/js/ayer.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
   
   
 

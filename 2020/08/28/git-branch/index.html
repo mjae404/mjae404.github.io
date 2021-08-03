@@ -10,10 +10,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta property="og:type" content="website">
-  <meta property="og:title" content="404 NOT FOUND">
+  <meta property="og:title" content="MJAEDOT">
   <meta property="og:description" content="FRONT-END DEVELOP LOG">
   <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
   <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
     Git 브랜치 |  404 Not Found
   </title>
@@ -27,25 +28,6 @@
   
 <script src="/js/pace.min.js"></script>
 
-
-  
-
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-155957742-1', 'auto');
-ga('send', 'pageview');
-
-</script>
-
-
-
-  
-
-  <link rel="canonical" href="http://mjae404.github.io/2020/08/28/git-branch/"/>
 <link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
 </head>
 
@@ -115,11 +97,11 @@ ga('send', 'pageview');
 <li>master 브랜치의 최신 커밋(base)에 develop 브랜치의 최신 커밋(compare)을 합치려고 한다.</li>
 <li>base가 될 master 브랜치로 이동한다.</li>
 <li>compare 브랜치인 develop와 합치라는 명령을 내린다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge develop</span><br></pre></td></tr></table></figure></li>
-<li>합쳐진 결과는 develop 커밋이 된다.<ul>
+<li>합쳐진 결과는 develop 커밋이 된다.</li>
+</ol>
+<ul>
 <li>develop은 master +a가 되어 둘이 합쳐진 결과물은 develop이 된다. 그래서 develop과 master 브랜치 모두 develop을 가르키게 된다.</li>
 </ul>
-</li>
-</ol>
 <h2 id="브랜치-충돌-Conflict-시에-해결-방법"><a href="#브랜치-충돌-Conflict-시에-해결-방법" class="headerlink" title="브랜치 충돌(Conflict)시에 해결 방법"></a>브랜치 충돌(Conflict)시에 해결 방법</h2><p>머지(Merge)할 때 두 버전이 같은 곳을 수정했다면 충돌이 난다. 충돌이 났을 경우 이를 직접 수정하여 고쳐주어야 한다. 위가 기존 버전, 아래가 본인이 수정했던 버전이다.</p>
 <p><em>충돌시 나오는 코드</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br><span class="line"></span><br><span class="line">&lt;&lt;&lt;&lt; HEAD</span><br><span class="line">Lorem Ipsum has been the industry&#39;s standard dummy text.</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">It was popularised in the 1960s.</span><br><span class="line">&gt;&gt;&gt;&gt; develop</span><br></pre></td></tr></table></figure>
@@ -159,7 +141,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/08/28/git-branch/" data-id="ckimpfh6d001m34tv8wtj2h0z"
+      <a data-url="http://mjae404.github.io/2020/08/28/git-branch/" data-id="ckrvtdk7m001picw54uhc7aak"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li></ul>
@@ -173,7 +155,7 @@ ga('send', 'pageview');
   <nav class="article-nav">
     
       <a href="/2020/09/02/git-process/" class="article-nav-link">
-        <strong class="article-nav-caption">next</strong>
+        <strong class="article-nav-caption">prev</strong>
         <div class="article-nav-title">
           
             GitHub 버전 생성
@@ -183,7 +165,7 @@ ga('send', 'pageview');
     
     
       <a href="/2020/08/27/git-overview/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
+        <strong class="article-nav-caption">next</strong>
         <div class="article-nav-title">Git &amp; GitHub 개요</div>
       </a>
     
@@ -261,7 +243,7 @@ ga('send', 'pageview');
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/category">CATEGORY</a>
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
     </li>
     
     <li class="nav-item">
@@ -324,12 +306,22 @@ ga('send', 'pageview');
 
 
 
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
 
 <script src="/js/ayer.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
   
   
 

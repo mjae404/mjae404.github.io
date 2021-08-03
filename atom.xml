@@ -254,7 +254,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;em&gt;서버 사이드 언어&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;&lt;strong&gt;서버 사이드 언어&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -328,7 +328,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;em&gt;리눅스를 배우는 이유&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;&lt;strong&gt;리눅스를 배우는 이유&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;인터넷 서비스 서버 환경 익히기&lt;/li&gt;
 &lt;li&gt;고급 운영체제 기능 직접 제어&lt;/li&gt;
@@ -362,7 +362,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;em&gt;Bootstrap&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;&lt;strong&gt;Bootstrap&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Bootstrap.css를 불러오고 해당 파일에 정의된 버튼, 레이아웃 등을 가져와서 사용&lt;/li&gt;
 &lt;li&gt;클래스로 간단하게 가져와 사용 가능&lt;/li&gt;
@@ -375,9 +375,9 @@
       <category term="bootstrap" scheme="http://mjae404.github.io/categories/bootstrap/"/>
     
     
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
       <category term="bootstrap" scheme="http://mjae404.github.io/tags/bootstrap/"/>
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
     
   </entry>
   
@@ -386,7 +386,7 @@
     <link href="http://mjae404.github.io/2021/02/22/js-exercise012/"/>
     <id>http://mjae404.github.io/2021/02/22/js-exercise012/</id>
     <published>2021-02-22T08:26:49.000Z</published>
-    <updated>2021-02-22T08:47:19.591Z</updated>
+    <updated>2021-02-22T08:47:20.000Z</updated>
     
     <summary type="html">
     
@@ -411,7 +411,7 @@
     <link href="http://mjae404.github.io/2021/02/07/hexoblog/"/>
     <id>http://mjae404.github.io/2021/02/07/hexoblog/</id>
     <published>2021-02-07T13:58:45.000Z</published>
-    <updated>2021-02-07T14:39:56.650Z</updated>
+    <updated>2021-02-07T14:39:58.000Z</updated>
     
     <summary type="html">
     
@@ -434,7 +434,7 @@
     <link href="http://mjae404.github.io/2021/02/05/js-exercise011/"/>
     <id>http://mjae404.github.io/2021/02/05/js-exercise011/</id>
     <published>2021-02-05T14:41:05.000Z</published>
-    <updated>2021-02-05T14:41:37.232Z</updated>
+    <updated>2021-02-05T14:41:38.000Z</updated>
     
     <summary type="html">
     
@@ -459,7 +459,7 @@
     <link href="http://mjae404.github.io/2021/02/04/js-exercise010/"/>
     <id>http://mjae404.github.io/2021/02/04/js-exercise010/</id>
     <published>2021-02-04T12:05:59.000Z</published>
-    <updated>2021-02-04T12:06:12.929Z</updated>
+    <updated>2021-02-04T12:06:14.000Z</updated>
     
     <summary type="html">
     
@@ -484,7 +484,7 @@
     <link href="http://mjae404.github.io/2021/01/03/npm-overview/"/>
     <id>http://mjae404.github.io/2021/01/03/npm-overview/</id>
     <published>2021-01-03T05:49:41.000Z</published>
-    <updated>2021-01-03T06:12:14.262Z</updated>
+    <updated>2021-01-03T06:12:16.000Z</updated>
     
     <summary type="html">
     
@@ -507,7 +507,7 @@
     <link href="http://mjae404.github.io/2021/01/02/git-reset/"/>
     <id>http://mjae404.github.io/2021/01/02/git-reset/</id>
     <published>2021-01-02T13:31:16.000Z</published>
-    <updated>2021-01-02T13:45:18.141Z</updated>
+    <updated>2021-01-02T13:45:20.000Z</updated>
     
     <summary type="html">
     
@@ -532,7 +532,7 @@
     <link href="http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/"/>
     <id>http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/</id>
     <published>2020-12-27T13:29:56.000Z</published>
-    <updated>2021-02-13T06:55:15.777Z</updated>
+    <updated>2021-02-13T06:55:16.000Z</updated>
     
     <summary type="html">
     
