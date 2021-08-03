@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-08-02T11:50:11.648Z</updated>
+  <updated>2021-08-03T08:32:21.360Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,15 +17,69 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PHP 쿠키와 세션의 기본 사용법</title>
+    <link href="http://mjae404.github.io/2021/08/02/php-cookie-session/"/>
+    <id>http://mjae404.github.io/2021/08/02/php-cookie-session/</id>
+    <published>2021-08-02T13:39:51.000Z</published>
+    <updated>2021-08-03T08:32:21.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PHP 기본 문법에서 쿠키와 세션을 확인해본다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
+    
+      <category term="cookie" scheme="http://mjae404.github.io/tags/cookie/"/>
+    
+      <category term="session" scheme="http://mjae404.github.io/tags/session/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP 사용자 입력 데이터 전송방식 get, 유효성 검사하기, FILTER INPUT</title>
+    <link href="http://mjae404.github.io/2021/08/02/php-get-validity-check-filter-input/"/>
+    <id>http://mjae404.github.io/2021/08/02/php-get-validity-check-filter-input/</id>
+    <published>2021-08-02T11:52:29.000Z</published>
+    <updated>2021-08-02T13:39:11.187Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PHP 기본 문법에서 사용자 입력 데이터 전송방식, 유효성 검사하기, FILTER-INPUT에 대해 알아본다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
+    
+    
+      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
+    
+      <category term="get" scheme="http://mjae404.github.io/tags/get/"/>
+    
+      <category term="form" scheme="http://mjae404.github.io/tags/form/"/>
+    
+      <category term="validity check" scheme="http://mjae404.github.io/tags/validity-check/"/>
+    
+      <category term="filter input" scheme="http://mjae404.github.io/tags/filter-input/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PHP 사용자 입력 데이터 전송방식 get, post</title>
     <link href="http://mjae404.github.io/2021/08/02/php-get-post/"/>
     <id>http://mjae404.github.io/2021/08/02/php-get-post/</id>
     <published>2021-08-02T11:11:13.000Z</published>
-    <updated>2021-08-02T11:50:11.648Z</updated>
+    <updated>2021-08-02T12:03:40.287Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;PHP 기본 문법에서 form에 대해 알아본다.&lt;/p&gt;
+      &lt;p&gt;PHP 기본 문법에서 사용자 입력 데이터 전송방식에 대해 알아본다.&lt;/p&gt;
     
     </summary>
     
@@ -196,7 +250,7 @@
     <link href="http://mjae404.github.io/2021/07/28/php-overview/"/>
     <id>http://mjae404.github.io/2021/07/28/php-overview/</id>
     <published>2021-07-28T11:36:29.000Z</published>
-    <updated>2021-07-28T11:47:45.018Z</updated>
+    <updated>2021-08-02T13:35:57.873Z</updated>
     
     <summary type="html">
     
@@ -491,54 +545,6 @@
     
     
       <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WAI-ARIA 기본 개념</title>
-    <link href="http://mjae404.github.io/2020/12/27/wai-aria-overview/"/>
-    <id>http://mjae404.github.io/2020/12/27/wai-aria-overview/</id>
-    <published>2020-12-27T11:49:30.000Z</published>
-    <updated>2020-12-27T13:30:06.396Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ARIA는 마크업에 &lt;strong&gt;역할(Role)&lt;/strong&gt;, &lt;strong&gt;속성(Property)&lt;/strong&gt;, &lt;strong&gt;상태(State)&lt;/strong&gt; 정보를 추가하여 스크린 리더기 및 보조 기기 등에서 &lt;strong&gt;접근성 및 상호 운용성을 향상&lt;/strong&gt; 시키고 보다 나은 사용자 경험(User Experience)를 제공하기 위함이라는 목적을 가진다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/WAI-ARIA/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML 웹접근성</title>
-    <link href="http://mjae404.github.io/2020/12/27/html-web-accessibility/"/>
-    <id>http://mjae404.github.io/2020/12/27/html-web-accessibility/</id>
-    <published>2020-12-27T09:58:30.000Z</published>
-    <updated>2020-12-27T11:24:52.635Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;차별 및 제한 없이 동등하게&lt;/strong&gt;&lt;br&gt;The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect. (웹의 힘은 보편성에 있다. 장애에 관계없이 모든 사람이 접근할 수 있도록 하는 것은 필수적인 요소이다.)&lt;br&gt;─ Tim Berners-Lee&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-    
-      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
-    
-      <category term="web accessibility" scheme="http://mjae404.github.io/tags/web-accessibility/"/>
     
   </entry>
   
