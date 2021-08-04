@@ -320,45 +320,11 @@
   </entry>
   
   <entry>
-    <title>시스템 프로그래밍 개요</title>
-    <link href="http://mjae404.github.io/2021/05/19/sp-overview/"/>
-    <id>http://mjae404.github.io/2021/05/19/sp-overview/</id>
-    <published>2021-05-19T12:26:59.000Z</published>
-    <updated>2021-05-19T12:27:15.076Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;&lt;strong&gt;리눅스를 배우는 이유&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;인터넷 서비스 서버 환경 익히기&lt;/li&gt;
-&lt;li&gt;고급 운영체제 기능 직접 제어&lt;/li&gt;
-&lt;li&gt;UNIX 계열 OS 사용법 익히기&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Computer Science" scheme="http://mjae404.github.io/categories/Computer-Science/"/>
-    
-      <category term="System Programming" scheme="http://mjae404.github.io/categories/Computer-Science/System-Programming/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="Computer Science" scheme="http://mjae404.github.io/tags/Computer-Science/"/>
-    
-      <category term="System Programming" scheme="http://mjae404.github.io/tags/System-Programming/"/>
-    
-      <category term="linux" scheme="http://mjae404.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>부트스트랩 개요</title>
     <link href="http://mjae404.github.io/2021/04/01/bootstrap-overview/"/>
     <id>http://mjae404.github.io/2021/04/01/bootstrap-overview/</id>
     <published>2021-03-31T15:30:36.000Z</published>
-    <updated>2021-05-25T20:25:31.986Z</updated>
+    <updated>2021-08-04T10:03:56.953Z</updated>
     
     <summary type="html">
     
@@ -372,7 +338,9 @@
     </summary>
     
     
-      <category term="bootstrap" scheme="http://mjae404.github.io/categories/bootstrap/"/>
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="bootstrap" scheme="http://mjae404.github.io/categories/HTML-CSS/bootstrap/"/>
     
     
       <category term="bootstrap" scheme="http://mjae404.github.io/tags/bootstrap/"/>
@@ -532,7 +500,7 @@
     <link href="http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/"/>
     <id>http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/</id>
     <published>2020-12-27T13:29:56.000Z</published>
-    <updated>2021-02-13T06:55:16.000Z</updated>
+    <updated>2021-08-04T10:02:19.847Z</updated>
     
     <summary type="html">
     
@@ -541,8 +509,35 @@
     </summary>
     
     
-      <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/WAI-ARIA/"/>
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
     
+      <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/HTML-CSS/WAI-ARIA/"/>
+    
+    
+      <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WAI-ARIA 기본 개념</title>
+    <link href="http://mjae404.github.io/2020/12/27/wai-aria-overview/"/>
+    <id>http://mjae404.github.io/2020/12/27/wai-aria-overview/</id>
+    <published>2020-12-27T11:49:30.000Z</published>
+    <updated>2021-08-04T10:02:18.608Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ARIA는 마크업에 &lt;strong&gt;역할(Role)&lt;/strong&gt;, &lt;strong&gt;속성(Property)&lt;/strong&gt;, &lt;strong&gt;상태(State)&lt;/strong&gt; 정보를 추가하여 스크린 리더기 및 보조 기기 등에서 &lt;strong&gt;접근성 및 상호 운용성을 향상&lt;/strong&gt; 시키고 보다 나은 사용자 경험(User Experience)를 제공하기 위함이라는 목적을 가진다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/HTML-CSS/WAI-ARIA/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
     
       <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
     

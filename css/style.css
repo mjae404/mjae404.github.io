@@ -6840,6 +6840,9 @@ a.toc-link {
 .footer .outer>ul:first-child {
   border-bottom: 0.1rem solid #dcdcdc;
 }
+.footer .outer>ul:last-child {
+  border-bottom: none;
+}
 .footer .outer>ul li {
   display: inline-block;
   padding: 0.5rem 0;
