@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-08-03T08:32:21.360Z</updated>
+  <updated>2021-08-08T03:40:19.131Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm dart sass</title>
+    <link href="http://mjae404.github.io/2021/08/08/npm-dart-sass/"/>
+    <id>http://mjae404.github.io/2021/08/08/npm-dart-sass/</id>
+    <published>2021-08-08T03:34:50.000Z</published>
+    <updated>2021-08-08T03:40:19.131Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SASS 컴파일러 설치해본다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="npm" scheme="http://mjae404.github.io/categories/npm/"/>
+    
+    
+      <category term="npm" scheme="http://mjae404.github.io/tags/npm/"/>
+    
+      <category term="dart sass" scheme="http://mjae404.github.io/tags/dart-sass/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP 쿠키와 세션의 기본 사용법</title>
@@ -146,11 +169,11 @@
   </entry>
   
   <entry>
-    <title>npm-gulp-file-include</title>
+    <title>npm gulp-file-include</title>
     <link href="http://mjae404.github.io/2021/07/31/npm-gulp-file-include/"/>
     <id>http://mjae404.github.io/2021/07/31/npm-gulp-file-include/</id>
     <published>2021-07-31T14:09:22.000Z</published>
-    <updated>2021-08-01T09:31:59.911Z</updated>
+    <updated>2021-08-08T03:35:30.255Z</updated>
     
     <summary type="html">
     
@@ -164,7 +187,7 @@
     
       <category term="npm" scheme="http://mjae404.github.io/tags/npm/"/>
     
-      <category term="gulp-file-include" scheme="http://mjae404.github.io/tags/gulp-file-include/"/>
+      <category term="gulp file include" scheme="http://mjae404.github.io/tags/gulp-file-include/"/>
     
   </entry>
   
@@ -513,31 +536,6 @@
     
       <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/HTML-CSS/WAI-ARIA/"/>
     
-    
-      <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WAI-ARIA 기본 개념</title>
-    <link href="http://mjae404.github.io/2020/12/27/wai-aria-overview/"/>
-    <id>http://mjae404.github.io/2020/12/27/wai-aria-overview/</id>
-    <published>2020-12-27T11:49:30.000Z</published>
-    <updated>2021-08-04T10:02:18.608Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ARIA는 마크업에 &lt;strong&gt;역할(Role)&lt;/strong&gt;, &lt;strong&gt;속성(Property)&lt;/strong&gt;, &lt;strong&gt;상태(State)&lt;/strong&gt; 정보를 추가하여 스크린 리더기 및 보조 기기 등에서 &lt;strong&gt;접근성 및 상호 운용성을 향상&lt;/strong&gt; 시키고 보다 나은 사용자 경험(User Experience)를 제공하기 위함이라는 목적을 가진다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/HTML-CSS/WAI-ARIA/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
     
       <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
     

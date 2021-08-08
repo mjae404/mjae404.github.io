@@ -6650,7 +6650,7 @@
       </tags>
   </entry>
   <entry>
-    <title>npm-gulp-file-include</title>
+    <title>npm gulp-file-include</title>
     <url>/2021/07/31/npm-gulp-file-include/</url>
     <content><![CDATA[<p>파일을 인클루드하기 위한 gulp 플러그인.</p>
 <a id="more"></a>
@@ -6695,7 +6695,7 @@
       </categories>
       <tags>
         <tag>npm</tag>
-        <tag>gulp-file-include</tag>
+        <tag>gulp file include</tag>
       </tags>
   </entry>
   <entry>
@@ -9334,6 +9334,38 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>prototype</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm dart sass</title>
+    <url>/2021/08/08/npm-dart-sass/</url>
+    <content><![CDATA[<p>SASS 컴파일러 설치해본다.</p>
+<a id="more"></a>
+
+<h3 id="sass-설치-명령어"><a href="#sass-설치-명령어" class="headerlink" title="sass 설치 명령어"></a>sass 설치 명령어</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install sass -g</span><br></pre></td></tr></table></figure>
+
+<h3 id="버전-확인"><a href="#버전-확인" class="headerlink" title="버전 확인"></a>버전 확인</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm show sass version</span><br><span class="line">sass --version</span><br></pre></td></tr></table></figure>
+
+<h3 id="컴파일"><a href="#컴파일" class="headerlink" title="컴파일"></a>컴파일</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sass &lt;변환할 scss 파일명&gt; &lt;변환될 css 파일명&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="SASS-watch-옵션"><a href="#SASS-watch-옵션" class="headerlink" title="SASS watch 옵션"></a>SASS watch 옵션</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sass --watch style.scss style.css</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>폴더감시</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sass --watch scss:css</span><br></pre></td></tr></table></figure>
+
+<h3 id="소스맵-생성되지-않는-명령어"><a href="#소스맵-생성되지-않는-명령어" class="headerlink" title="소스맵 생성되지 않는 명령어"></a>소스맵 생성되지 않는 명령어</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sass --no-source-map style.scss style.css</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://nykim.work/97">https://nykim.work/97</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+        <tag>dart sass</tag>
       </tags>
   </entry>
 </search>
