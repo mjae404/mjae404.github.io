@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-08-08T03:40:19.131Z</updated>
+  <updated>2021-08-10T09:18:35.299Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git ignore</title>
+    <link href="http://mjae404.github.io/2021/08/10/git-ignore/"/>
+    <id>http://mjae404.github.io/2021/08/10/git-ignore/</id>
+    <published>2021-08-10T09:13:36.000Z</published>
+    <updated>2021-08-10T09:18:35.299Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;올리지 않아도 되는 확장자나 폴더를 제외하는 git 명령어.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
+    
+      <category term="ignore" scheme="http://mjae404.github.io/tags/ignore/"/>
+    
+  </entry>
   
   <entry>
     <title>npm dart sass</title>
@@ -515,29 +538,6 @@
       <category term="reset" scheme="http://mjae404.github.io/tags/reset/"/>
     
       <category term="revert" scheme="http://mjae404.github.io/tags/revert/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WAI-ARIA 사용법 및 주의점</title>
-    <link href="http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/"/>
-    <id>http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/</id>
-    <published>2020-12-27T13:29:56.000Z</published>
-    <updated>2021-08-04T10:02:19.847Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;WAI-ARIA를 사용하는 방법 및 주의사항은 아래와 같다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="WAI-ARIA" scheme="http://mjae404.github.io/categories/HTML-CSS/WAI-ARIA/"/>
-    
-    
-      <category term="WAI-ARIA" scheme="http://mjae404.github.io/tags/WAI-ARIA/"/>
     
   </entry>
   

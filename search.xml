@@ -9368,4 +9368,28 @@
         <tag>dart sass</tag>
       </tags>
   </entry>
+  <entry>
+    <title>git ignore</title>
+    <url>/2021/08/10/git-ignore/</url>
+    <content><![CDATA[<p>올리지 않아도 되는 확장자나 폴더를 제외하는 git 명령어.</p>
+<a id="more"></a>
+
+<ol>
+<li><code>.gitignore</code> 파일을 생성한다. (맨 앞에 <code>.</code>을 입력하여 생성하면 숨김파일로 생성된다.)</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi .gitignore</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>제외하고 싶은 확장자나 폴더를 기재한다.</li>
+<li>git add → commit → push를 진행한다.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>ignore</tag>
+      </tags>
+  </entry>
 </search>
