@@ -6657,7 +6657,7 @@
 
 <h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp-file-include</span><br></pre></td></tr></table></figure>
 
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const fileinclude &#x3D; require(&#39;gulp-file-include&#39;);</span><br></pre></td></tr></table></figure>
+<h2 id="API-gulp-js-파일"><a href="#API-gulp-js-파일" class="headerlink" title="API (gulp.js 파일)"></a>API (gulp.js 파일)</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> fileinclude = <span class="built_in">require</span>(<span class="string">&#x27;gulp-file-include&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> gulp = <span class="built_in">require</span>(<span class="string">&quot;gulp&quot;</span>);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;fileinclude&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src([</span><br><span class="line">        <span class="string">&quot;./src/html/*/*/*&quot;</span>, <span class="comment">// 불러올 파일 위치</span></span><br><span class="line">        <span class="string">&quot;!&quot;</span> + <span class="string">&quot;./src/html/include/*&quot;</span> <span class="comment">// 읽지 않을 파일 위치</span></span><br><span class="line">    ])</span><br><span class="line">    .pipe(fileinclude(&#123;</span><br><span class="line">        prefix: <span class="string">&#x27;@@&#x27;</span>,</span><br><span class="line">        bashpath: <span class="string">&#x27;@file&#x27;</span></span><br><span class="line">    &#125;))</span><br><span class="line"></span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./dist/&#x27;</span>)); <span class="comment">// 변환한 파일 저장 위치</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <h3 id="prefix"><a href="#prefix" class="headerlink" title="prefix"></a>prefix</h3><p>Type: <code>string</code><br>Default: <code>@@</code></p>
 <h3 id="fileinclude-options"><a href="#fileinclude-options" class="headerlink" title="fileinclude([options])"></a>fileinclude([options])</h3><p>Type: <code>object</code></p>
@@ -6687,8 +6687,12 @@
 
 <hr>
 <blockquote>
-<p><strong>REFERENCE</strong><br><a href="https://www.npmjs.com/package/gulp-file-include">https://www.npmjs.com/package/gulp-file-include</a></p>
+<p><strong>REFERENCE</strong></p>
 </blockquote>
+<ul>
+<li><a href="https://www.npmjs.com/package/gulp-file-include">https://www.npmjs.com/package/gulp-file-include</a></li>
+<li><a href="https://fresh-mint.tistory.com/entry/%ED%85%9C%ED%94%8C%EB%A6%BF-gulp-file-include-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95?category=867150">https://fresh-mint.tistory.com/entry/%ED%85%9C%ED%94%8C%EB%A6%BF-gulp-file-include-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95?category=867150</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>npm</category>
