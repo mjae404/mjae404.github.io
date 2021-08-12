@@ -9396,4 +9396,36 @@
         <tag>ignore</tag>
       </tags>
   </entry>
+  <entry>
+    <title>npm gulp</title>
+    <url>/2021/08/12/npm-gulp/</url>
+    <content><![CDATA[<p>gulp는 개발 워크플로우에서 번거롭거나 시간이 많이 걸리는 작업을 자동화하는 데 도움이 되는 툴킷이다.  npm 모듈을 사용하여 원하는 작업을 수행할 수 있으며 배우기 쉽고 사용하기 쉽다.</p>
+<a id="more"></a>
+
+<h2 id="gulp-cli-글로벌-설치"><a href="#gulp-cli-글로벌-설치" class="headerlink" title="gulp-cli 글로벌 설치"></a>gulp-cli 글로벌 설치</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --global gulp-cli</span><br></pre></td></tr></table></figure>
+
+<h2 id="gulp-설치"><a href="#gulp-설치" class="headerlink" title="gulp 설치"></a>gulp 설치</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save-dev gulp</span><br></pre></td></tr></table></figure>
+
+<h2 id="gulpfile-js-생성"><a href="#gulpfile-js-생성" class="headerlink" title="gulpfile.js 생성"></a>gulpfile.js 생성</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> gulp = <span class="built_in">require</span>(<span class="string">&quot;gulp&quot;</span>); <span class="comment">// gulp 플러그인 사용시 필수</span></span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;function이름1&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> funtion기능<span class="number">1</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;function이름2&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> funtion기능<span class="number">2</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">…</span><br></pre></td></tr></table></figure>
+
+<h2 id="gulp-기본-코드"><a href="#gulp-기본-코드" class="headerlink" title="gulp 기본 코드"></a>gulp 기본 코드</h2><h3 id="gulp-src"><a href="#gulp-src" class="headerlink" title="gulp.src()"></a>gulp.src()</h3><p>task할 파일의 위치를 설정한다.</p>
+<h3 id="gulp-pipe"><a href="#gulp-pipe" class="headerlink" title="gulp.pipe()"></a>gulp.pipe()</h3><p>해당 파일을 읽고 난 뒤, 연결되어야 할 플러그인으로 연결한다. 또 여러 플러그인을 실행할 때 파이프 역할을 하기도 한다.</p>
+<h3 id="gulp-dest"><a href="#gulp-dest" class="headerlink" title="gulp.dest()"></a>gulp.dest()</h3><p>task 결과물이 저장될 위치를 지정해준다.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong></p>
+</blockquote>
+<ul>
+<li><a href="https://www.npmjs.com/package/gulp">https://www.npmjs.com/package/gulp</a></li>
+<li><a href="https://fresh-mint.tistory.com/entry/gulp-%EC%84%A4%EC%B9%98-src-pipe-dest?category=867150">https://fresh-mint.tistory.com/entry/gulp-%EC%84%A4%EC%B9%98-src-pipe-dest?category=867150</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+        <tag>gulp</tag>
+      </tags>
+  </entry>
 </search>
