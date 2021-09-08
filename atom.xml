@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-08-12T13:31:16.244Z</updated>
+  <updated>2021-09-08T05:29:20.795Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,15 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JS 별찍기</title>
+    <link href="http://mjae404.github.io/2021/09/08/js-exercise013/"/>
+    <id>http://mjae404.github.io/2021/09/08/js-exercise013/</id>
+    <published>2021-09-08T05:02:48.000Z</published>
+    <updated>2021-09-08T05:29:20.795Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;별찍기 연습.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>npm gulp</title>
     <link href="http://mjae404.github.io/2021/08/12/npm-gulp/"/>
     <id>http://mjae404.github.io/2021/08/12/npm-gulp/</id>
     <published>2021-08-12T13:23:31.000Z</published>
-    <updated>2021-08-12T13:31:16.244Z</updated>
+    <updated>2021-08-12T13:31:44.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;gulp는 개발 워크플로우에서 번거롭거나 시간이 많이 걸리는 작업을 자동화하는 데 도움이 되는 툴킷이다.  npm 모듈을 사용하여 원하는 작업을 수행할 수 있으며 배우기 쉽고 사용하기 쉽다.&lt;/p&gt;
+      &lt;p&gt;gulp는 개발 워크플로우에서 번거롭거나 시간이 많이 걸리는 작업을 자동화하는 데 도움이 되는 툴킷이다. npm 모듈을 사용하여 원하는 작업을 수행할 수 있으며 배우기 쉽고 사용하기 쉽다.&lt;/p&gt;
     
     </summary>
     
@@ -513,29 +538,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>npm 개요</title>
-    <link href="http://mjae404.github.io/2021/01/03/npm-overview/"/>
-    <id>http://mjae404.github.io/2021/01/03/npm-overview/</id>
-    <published>2021-01-03T05:49:41.000Z</published>
-    <updated>2021-01-03T06:12:16.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;npm&lt;/code&gt;은 세계에서 가장 큰 소프트웨어 레지스트리이다. &lt;code&gt;Node Package Manager&lt;/code&gt;의 약자이며 &lt;code&gt;node.js&lt;/code&gt;에서 사용하는 모듈들을 패키지로 만들어 &lt;code&gt;npm&lt;/code&gt;을 통하여 관리하고 배포한다. 다른 사람들이 만들어둔 모듈들을 설치하여 사용할 수 있으며, 다른 모듈의 의존성도 자동으로 해결해주고 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="npm" scheme="http://mjae404.github.io/categories/npm/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="npm" scheme="http://mjae404.github.io/tags/npm/"/>
     
   </entry>
   
