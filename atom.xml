@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-09-08T05:29:20.795Z</updated>
+  <updated>2021-09-09T07:32:39.227Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JS 구구단 구현</title>
+    <link href="http://mjae404.github.io/2021/09/09/js-exercise014/"/>
+    <id>http://mjae404.github.io/2021/09/09/js-exercise014/</id>
+    <published>2021-09-09T07:04:27.000Z</published>
+    <updated>2021-09-09T07:32:39.227Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;구구단 구현하기.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JS 별찍기</title>
     <link href="http://mjae404.github.io/2021/09/08/js-exercise013/"/>
     <id>http://mjae404.github.io/2021/09/08/js-exercise013/</id>
     <published>2021-09-08T05:02:48.000Z</published>
-    <updated>2021-09-08T05:29:20.795Z</updated>
+    <updated>2021-09-08T05:31:07.196Z</updated>
     
     <summary type="html">
     
@@ -501,31 +526,6 @@
     <summary type="html">
     
       &lt;p&gt;배열 요소의 합계를 구하라.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 피보나치 수열</title>
-    <link href="http://mjae404.github.io/2021/02/04/js-exercise010/"/>
-    <id>http://mjae404.github.io/2021/02/04/js-exercise010/</id>
-    <published>2021-02-04T12:05:59.000Z</published>
-    <updated>2021-02-04T12:06:14.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;피보나치 수열을 구하는 함수.&lt;/p&gt;
     
     </summary>
     
