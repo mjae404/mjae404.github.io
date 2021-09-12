@@ -9498,4 +9498,55 @@
         <tag>JavaScript</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 숫자야구 구현</title>
+    <url>/2021/09/10/js-exercise015/</url>
+    <content><![CDATA[<p>숫자야구 구현하기.</p>
+<a id="more"></a>
+
+<ul>
+<li><code>push</code>: 뒤에 밀어 넣는 것 (1, 2, 3, 4)</li>
+<li><code>pop</code>: 마지막 순으로 뽑아 나가는 것 (9, 8, 7, 6)</li>
+<li><code>shift</code>: 앞에서부터 뽑아 나가는 것 (1, 2, 3, 4)</li>
+<li><code>unshift</code>: 앞에 밀어 넣는 것 (4, 3, 2, 1)</li>
+<li><code>splice</code>: 뽑고 싶은 위치 기입 <ul>
+<li>4를 뽑고 싶으면 해당 위치인 3 / 해당 위치로부터 하나를 뽑고 싶다 1</li>
+<li>ex) <code>splice(3, 1)</code> → 3</li>
+<li>ex) <code>splice(3, 3)</code> → 3, 4, 5</li>
+</ul>
+</li>
+<li><code>[0]</code>을 기입하는 이유는 첫번째로 선택하려고 하는 것. 그렇지 않으면 각각의 배열로 출력됨.<ul>
+<li>ex) <code>[1]</code>, <code>[4]</code>, <code>[2]</code>, <code>[9]</code></li>
+<li>우리가 원하는 배열 → <code>[1, 4, 2, 9]</code></li>
+</ul>
+</li>
+<li><code>배열.join</code>: 배열을 합치게 해줌.<ul>
+<li><code>join(&#39;&#39;)</code>: “1234”</li>
+<li><code>join(&#39;,&#39;)</code>: “1,2,3,4”</li>
+<li><code>join(&#39;:&#39;)</code>: “1:2:3:4”</li>
+</ul>
+</li>
+<li><code>문자.split</code>: 문자를 배열로 만들어줌.</li>
+<li><code>indexOf</code>: 해당 배열에서 해당 내용이 어디에 들어있는지 찾아줌.<ul>
+<li>ex) <code>array[2, 3, 5, 9]</code>에서 <code>array.indexOf(3)</code> → <code>[1]</code></li>
+<li>없으면 <code>-1</code></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> body = <span class="built_in">document</span>.body;</span><br><span class="line"><span class="keyword">var</span> num;</span><br><span class="line"><span class="keyword">var</span> numArray;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">pickNum</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  num = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>];</span><br><span class="line">  numArray = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i += <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> pick = num.splice(<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (<span class="number">9</span> - i)), <span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line">    numArray.push(pick);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">pickNum();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> result = <span class="built_in">document</span>.createElement(<span class="string">&#x27;h1&#x27;</span>);</span><br><span class="line">body.append(result);</span><br><span class="line"><span class="keyword">var</span> form = <span class="built_in">document</span>.createElement(<span class="string">&#x27;form&#x27;</span>);</span><br><span class="line"><span class="built_in">document</span>.body.append(form);</span><br><span class="line"><span class="keyword">var</span> input = <span class="built_in">document</span>.createElement(<span class="string">&#x27;input&#x27;</span>);</span><br><span class="line">form.append(input);</span><br><span class="line">input.type = <span class="string">&#x27;text&#x27;</span>;</span><br><span class="line">input.maxLength = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">var</span> button = <span class="built_in">document</span>.createElement(<span class="string">&#x27;button&#x27;</span>);</span><br><span class="line">button.textContent = <span class="string">&#x27;입력&#x27;</span>;</span><br><span class="line">form.append(button);</span><br><span class="line"><span class="keyword">var</span> wrong = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">form.addEventListener(<span class="string">&#x27;submit&#x27;</span>, <span class="function"><span class="keyword">function</span> <span class="title">num_baseball</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">    <span class="built_in">console</span>.log(numArray);</span><br><span class="line">    <span class="keyword">var</span> answer = input.value;</span><br><span class="line">    <span class="keyword">if</span> (answer === numArray.join(<span class="string">&#x27;&#x27;</span>)) &#123;</span><br><span class="line">        result.textContent = <span class="string">&#x27;홈런&#x27;</span>;</span><br><span class="line">        input.value = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">        input.focus();</span><br><span class="line">        pickNum();</span><br><span class="line">        wrong = <span class="number">0</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123; <span class="comment">// 답이 틀리면</span></span><br><span class="line">        <span class="keyword">var</span> answerArray = answer.split(<span class="string">&#x27;&#x27;</span>);</span><br><span class="line">        <span class="keyword">var</span> strike = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">var</span> ball = <span class="number">0</span>;</span><br><span class="line">        wrong += <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> ( wrong &gt; <span class="number">10</span>) &#123;</span><br><span class="line">            result.textContent = <span class="string">&#x27;10번 넘게 틀려서 실패! 답은&#x27;</span> + numArray.join(<span class="string">&#x27;,&#x27;</span>) + <span class="string">&#x27;였습니다!&#x27;</span>;</span><br><span class="line">            input.value = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">            input.focus();</span><br><span class="line">            pickNum();</span><br><span class="line">            wrong = <span class="number">0</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">var</span> i =<span class="number">0</span>; i &lt; <span class="number">3</span>; i+= <span class="number">1</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="built_in">Number</span>(answerArray[i]) === numArray[i]) &#123;</span><br><span class="line">                    strike += <span class="number">1</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (numArray.indexOf(<span class="built_in">Number</span>(answerArray[i])) &gt; <span class="number">-1</span>) &#123;</span><br><span class="line">                    ball +=<span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            result.textContent = strike + <span class="string">&#x27;strike&#x27;</span> + ball + <span class="string">&#x27;ball입니다.&#x27;</span>;</span><br><span class="line">            input.value= <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">            input.focus();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a href="https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B2%8C%EC%9E%84-%EA%B0%9C%EB%B0%9C/lecture/17174?tab=curriculum&amp;mm=null">https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B2%8C%EC%9E%84-%EA%B0%9C%EB%B0%9C/lecture/17174?tab=curriculum&amp;mm=null</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
 </search>
