@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-09-12T10:29:33.829Z</updated>
+  <updated>2021-09-13T11:44:27.788Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 틱택토 게임</title>
+    <link href="http://mjae404.github.io/2021/09/13/js-exercise016/"/>
+    <id>http://mjae404.github.io/2021/09/13/js-exercise016/</id>
+    <published>2021-09-13T09:58:22.000Z</published>
+    <updated>2021-09-13T11:44:27.788Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;틱택토 게임 구현하기.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 숫자야구 구현</title>
@@ -515,29 +540,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo</title>
-    <link href="http://mjae404.github.io/2021/02/07/hexoblog/"/>
-    <id>http://mjae404.github.io/2021/02/07/hexoblog/</id>
-    <published>2021-02-07T13:58:45.000Z</published>
-    <updated>2021-02-07T14:39:58.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://hexo.io/ko/&quot;&gt;Hexo&lt;/a&gt;는 &lt;code&gt;마크다운&lt;/code&gt; 또는 다른 언어를 사용하여 포스트를 작성할 수 있는 블로그 프레임워크이다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="blog" scheme="http://mjae404.github.io/categories/blog/"/>
-    
-    
-      <category term="blog" scheme="http://mjae404.github.io/tags/blog/"/>
-    
-      <category term="hexo" scheme="http://mjae404.github.io/tags/hexo/"/>
     
   </entry>
   
