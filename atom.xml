@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-09-17T06:42:45.094Z</updated>
+  <updated>2021-09-18T00:37:55.765Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 로또추첨기</title>
+    <link href="http://mjae404.github.io/2021/09/17/js-exercise017/"/>
+    <id>http://mjae404.github.io/2021/09/17/js-exercise017/</id>
+    <published>2021-09-17T06:57:34.000Z</published>
+    <updated>2021-09-18T00:37:55.765Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;로또 추첨기 구현하기.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 틱택토 게임</title>
@@ -515,31 +540,6 @@
       <category term="bootstrap" scheme="http://mjae404.github.io/tags/bootstrap/"/>
     
       <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 끝말잇기</title>
-    <link href="http://mjae404.github.io/2021/02/22/js-exercise012/"/>
-    <id>http://mjae404.github.io/2021/02/22/js-exercise012/</id>
-    <published>2021-02-22T08:26:49.000Z</published>
-    <updated>2021-09-10T06:02:42.371Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;끝말잇기 구현.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
   </entry>
   
