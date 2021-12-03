@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-09-18T00:37:55.765Z</updated>
+  <updated>2021-12-03T12:04:46.825Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,132 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SVG 애니메이션</title>
+    <link href="http://mjae404.github.io/2021/12/03/svg-animation/"/>
+    <id>http://mjae404.github.io/2021/12/03/svg-animation/</id>
+    <published>2021-12-03T12:04:23.000Z</published>
+    <updated>2021-12-03T12:04:46.825Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;SVG-애니메이션&quot;&gt;&lt;a href=&quot;#SVG-애니메이션&quot; class=&quot;headerlink&quot; title=&quot;SVG 애니메이션&quot;&gt;&lt;/a&gt;SVG 애니메이션&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SVG&lt;/code&gt;는 &lt;code&gt;CSS&lt;/code&gt;와 &lt;code&gt;SMIL&lt;/code&gt;로 애니메이션을 구현할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
+    
+    
+      <category term="animation" scheme="http://mjae404.github.io/tags/animation/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVG 효과</title>
+    <link href="http://mjae404.github.io/2021/12/03/svg-effect/"/>
+    <id>http://mjae404.github.io/2021/12/03/svg-effect/</id>
+    <published>2021-12-03T12:03:28.000Z</published>
+    <updated>2021-12-03T12:06:28.186Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;svg&lt;/code&gt;에 그라디언트, 패턴, 마스크 효과를 줄 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+      <category term="effect" scheme="http://mjae404.github.io/tags/effect/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVG 기본</title>
+    <link href="http://mjae404.github.io/2021/12/03/svg-basic/"/>
+    <id>http://mjae404.github.io/2021/12/03/svg-basic/</id>
+    <published>2021-12-03T12:02:24.000Z</published>
+    <updated>2021-12-03T12:06:20.638Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;svg&lt;/code&gt;의 기본 구성 태그는 아래와 같으며 &lt;code&gt;xmlns&lt;/code&gt;는 생략 가능하다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;svg&lt;/code&gt; 안에 style을 인라인으로 넣어둘 수도 있다.&lt;/li&gt;
+&lt;li&gt;기본 CSS와 같이 클래스를 사용하여 작업하는 것이 바람직하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;http:/www.w3.org/2000/svg&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;svg&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVG 개요</title>
+    <link href="http://mjae404.github.io/2021/12/03/svg-overview/"/>
+    <id>http://mjae404.github.io/2021/12/03/svg-overview/</id>
+    <published>2021-12-03T12:01:19.000Z</published>
+    <updated>2021-12-03T12:06:40.906Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SVG란 확장 가능한 벡터 그래픽(Scalable Vector Graphics)이자 XML 기반의 2차원 그래픽이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DOM의 일부로서 각 객체별로 HTML 엘리먼트가 추가된다.&lt;/li&gt;
+&lt;li&gt;모양이 복잡하지 않을 경우 파일 사이즈도 작다.&lt;/li&gt;
+&lt;li&gt;포인트가 많으면 많을 수록 계산해서 그려지기 때문에 성능이 떨어진다.&lt;/li&gt;
+&lt;li&gt;CSS와 자바스크립트를 사용해서 조작이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS 가위바위보</title>
+    <link href="http://mjae404.github.io/2021/09/19/js-exercise018/"/>
+    <id>http://mjae404.github.io/2021/09/19/js-exercise018/</id>
+    <published>2021-09-19T01:44:00.000Z</published>
+    <updated>2021-10-01T07:47:21.033Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;가위바위보 구현하기.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 로또추첨기</title>
@@ -384,162 +510,6 @@
       <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
     
       <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP 조건문, 배열, 반복문</title>
-    <link href="http://mjae404.github.io/2021/07/29/php-conditions-array-loop/"/>
-    <id>http://mjae404.github.io/2021/07/29/php-conditions-array-loop/</id>
-    <published>2021-07-29T12:13:53.000Z</published>
-    <updated>2021-07-29T12:51:36.207Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;PHP 기본 문법에서 조건문, 배열, 반복문을 확인해본다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
-    
-      <category term="conditions" scheme="http://mjae404.github.io/tags/conditions/"/>
-    
-      <category term="array" scheme="http://mjae404.github.io/tags/array/"/>
-    
-      <category term="loop" scheme="http://mjae404.github.io/tags/loop/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP 변수 및 에러 확인</title>
-    <link href="http://mjae404.github.io/2021/07/28/php-variable-and-error/"/>
-    <id>http://mjae404.github.io/2021/07/28/php-variable-and-error/</id>
-    <published>2021-07-28T11:52:55.000Z</published>
-    <updated>2021-07-28T12:16:51.790Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;PHP 기본 문법에서 변수 및 에러를 확인해본다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
-    
-    
-      <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
-    
-      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
-    
-      <category term="error" scheme="http://mjae404.github.io/tags/error/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP 개요</title>
-    <link href="http://mjae404.github.io/2021/07/28/php-overview/"/>
-    <id>http://mjae404.github.io/2021/07/28/php-overview/</id>
-    <published>2021-07-28T11:36:29.000Z</published>
-    <updated>2021-08-02T13:35:57.873Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;&lt;strong&gt;서버 사이드 언어&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;언어&lt;/th&gt;
-&lt;th&gt;운영체제&lt;/th&gt;
-&lt;th&gt;웹서버&lt;/th&gt;
-&lt;th&gt;제조사&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;PHP&lt;/td&gt;
-&lt;td&gt;리눅스, 윈도우&lt;/td&gt;
-&lt;td&gt;Apache 등&lt;/td&gt;
-&lt;td&gt;오픈소스&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;JSP&lt;/td&gt;
-&lt;td&gt;리눅스, 윈도우&lt;/td&gt;
-&lt;td&gt;Tomcat, Jeus 등&lt;/td&gt;
-&lt;td&gt;Oracle&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ASP.NET&lt;/td&gt;
-&lt;td&gt;윈도우&lt;/td&gt;
-&lt;td&gt;IIS&lt;/td&gt;
-&lt;td&gt;Microsoft&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-    
-    </summary>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git add / commit / push 취소하기</title>
-    <link href="http://mjae404.github.io/2021/07/15/git-cancel-add-commit-push/"/>
-    <id>http://mjae404.github.io/2021/07/15/git-cancel-add-commit-push/</id>
-    <published>2021-07-15T09:38:53.000Z</published>
-    <updated>2021-07-28T11:38:00.217Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;git add /commit / push 취소를 진행할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://mjae404.github.io/categories/git/"/>
-    
-    
-      <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
-    
-      <category term="github" scheme="http://mjae404.github.io/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>부트스트랩 개요</title>
-    <link href="http://mjae404.github.io/2021/04/01/bootstrap-overview/"/>
-    <id>http://mjae404.github.io/2021/04/01/bootstrap-overview/</id>
-    <published>2021-03-31T15:30:36.000Z</published>
-    <updated>2021-08-04T10:03:56.953Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;&lt;strong&gt;Bootstrap&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Bootstrap.css를 불러오고 해당 파일에 정의된 버튼, 레이아웃 등을 가져와서 사용&lt;/li&gt;
-&lt;li&gt;클래스로 간단하게 가져와 사용 가능&lt;/li&gt;
-&lt;li&gt;트위터에서 개발&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="bootstrap" scheme="http://mjae404.github.io/categories/HTML-CSS/bootstrap/"/>
-    
-    
-      <category term="bootstrap" scheme="http://mjae404.github.io/tags/bootstrap/"/>
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
     
   </entry>
   
