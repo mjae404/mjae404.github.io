@@ -9941,6 +9941,7 @@
 <li>투명 콘텐츠 모델. 부모의 콘텐츠 모델을 따른다.</li>
 <li>투명한 요소를 제거해도 부모와 자식 관계가 문법적으로 유효해야 한다.<br><code>a</code>, <code>ins</code>, <code>del</code>, <code>object</code>, <code>video</code>, <code>audio</code>, <code>map</code>, <code>noscript</code>, <code>canvas</code></li>
 </ul>
+<hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
 </blockquote>
@@ -9996,6 +9997,7 @@
 <li>viewport</li>
 <li>title</li>
 </ul>
+<hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
 </blockquote>
@@ -10008,5 +10010,61 @@
         <tag>HTML</tag>
         <tag>the red</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>HTML 개요 알고리즘 이해</title>
+    <url>/2021/12/05/html-outline-heading/</url>
+    <content><![CDATA[<ul>
+<li>headingmap</li>
+<li>헤딩</li>
+<li>섹셔닝</li>
+<li>명시적/암시적 섹션</li>
+<li>어색한 섹션</li>
+</ul>
+<a id="more"></a>
+
+<h3 id="SECTIONING-ROOT"><a href="#SECTIONING-ROOT" class="headerlink" title="SECTIONING ROOT"></a>SECTIONING ROOT</h3><ul>
+<li>브라우저 제조사가 오랜 시간 HTML5 알고리즘을 구현하지 않았기 때문에 <strong>이 개념을 실무에 사용하는 것을 권장하지 않음</strong>.<ul>
+<li><code>body</code></li>
+<li><code>blockquote</code></li>
+<li><code>details</code></li>
+<li><code>dialog</code></li>
+<li><code>figure</code></li>
+<li><code>fieldset</code></li>
+<li><code>td</code></li>
+</ul>
+</li>
+<li>HTML5에서 새롭게 추가된 명세</li>
+<li>독립적인 개요를 생성하는 개요 컨테이너</li>
+<li>섹셔닝 루트 외부에서 내부 개요에 접근 불가</li>
+<li>문맥 아닌 콘텐츠를 전체 개요에서 격리하는 역할<ul>
+<li>해당 태그 안에 헤딩을 넣더라도 개요로 취급되지 않는 영역</li>
+</ul>
+</li>
+</ul>
+<h3 id="Sectioning-Content"><a href="#Sectioning-Content" class="headerlink" title="Sectioning Content"></a>Sectioning Content</h3><ul>
+<li><code>article</code>: 기사, 본문, 맥락 독립적으로 배포 가능</li>
+<li><code>aside</code>: 페이지의 주요 내용이 아닌</li>
+<li><code>nav</code>: 사이트의 주된 탐색 메뉴</li>
+<li><code>section</code>: 주제별로 나누거나 묶는</li>
+<li>HTML5에서 새롭게 추가된 명세</li>
+<li>명시적 개요를 생성하는 개요 컨테이너</li>
+<li>적절한 수준의 헤딩을 자식 요소로 사용하여야 한다</li>
+<li><code>HTML5</code> 명세 알고리즘에 의존하면 안된다.</li>
+</ul>
+<h2 id="명시적-섹션"><a href="#명시적-섹션" class="headerlink" title="명시적 섹션"></a>명시적 섹션</h2><ul>
+<li>헤딩과 함께 섹셔닝 콘텐츠(article, aside, nav, section)를 사용하여 섹션의 범위를 명시적으로 알 수 있는 섹션.</li>
+</ul>
+<h2 id="암시적-섹션"><a href="#암시적-섹션" class="headerlink" title="암시적 섹션"></a>암시적 섹션</h2><ul>
+<li>섹셔닝 콘텐츠를 사용하지 않고 헤딩만을 사용하여 암시적으로 개요가 생성된 섹션.</li>
+</ul>
+<h2 id="어색한-섹션"><a href="#어색한-섹션" class="headerlink" title="어색한 섹션"></a>어색한 섹션</h2><ul>
+<li>h1을 건너뛰고 h2부터 출발한다거나 헤딩이 누락된 섹션.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+]]></content>
   </entry>
 </search>

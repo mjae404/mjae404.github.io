@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-04T13:14:42.083Z</updated>
+  <updated>2021-12-04T16:10:15.545Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTML 개요 알고리즘 이해</title>
+    <link href="http://mjae404.github.io/2021/12/05/html-outline-heading/"/>
+    <id>http://mjae404.github.io/2021/12/05/html-outline-heading/</id>
+    <published>2021-12-04T16:09:48.000Z</published>
+    <updated>2021-12-04T16:10:15.545Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;headingmap&lt;/li&gt;
+&lt;li&gt;헤딩&lt;/li&gt;
+&lt;li&gt;섹셔닝&lt;/li&gt;
+&lt;li&gt;명시적/암시적 섹션&lt;/li&gt;
+&lt;li&gt;어색한 섹션&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>검색엔진</title>
     <link href="http://mjae404.github.io/2021/12/04/html-seo/"/>
     <id>http://mjae404.github.io/2021/12/04/html-seo/</id>
     <published>2021-12-04T13:13:44.000Z</published>
-    <updated>2021-12-04T13:14:42.083Z</updated>
+    <updated>2021-12-04T13:25:30.381Z</updated>
     
     <summary type="html">
     
@@ -56,7 +79,7 @@
     <link href="http://mjae404.github.io/2021/12/04/html-how-to-learn/"/>
     <id>http://mjae404.github.io/2021/12/04/html-how-to-learn/</id>
     <published>2021-12-04T13:10:44.000Z</published>
-    <updated>2021-12-04T13:14:33.217Z</updated>
+    <updated>2021-12-04T13:25:26.711Z</updated>
     
     <summary type="html">
     
@@ -500,31 +523,6 @@
       <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
     
       <category term="loop" scheme="http://mjae404.github.io/tags/loop/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP 문서에서 다른 문서 불러오기</title>
-    <link href="http://mjae404.github.io/2021/08/01/php-include-require/"/>
-    <id>http://mjae404.github.io/2021/08/01/php-include-require/</id>
-    <published>2021-08-01T09:32:42.000Z</published>
-    <updated>2021-08-01T10:13:03.664Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;php 문서에서 다른 문서(ex. 공통문서)를 불러와본다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
-    
-      <category term="include" scheme="http://mjae404.github.io/tags/include/"/>
-    
-      <category term="require" scheme="http://mjae404.github.io/tags/require/"/>
     
   </entry>
   
