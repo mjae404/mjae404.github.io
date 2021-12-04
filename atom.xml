@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-03T12:04:46.825Z</updated>
+  <updated>2021-12-04T13:12:49.841Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML을 어떻게 공부해야 하는가</title>
+    <link href="http://mjae404.github.io/2021/12/04/html-how-to-learn/"/>
+    <id>http://mjae404.github.io/2021/12/04/html-how-to-learn/</id>
+    <published>2021-12-04T13:10:44.000Z</published>
+    <updated>2021-12-04T13:12:49.841Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Flow-content-플로우-콘텐츠&quot;&gt;&lt;a href=&quot;#Flow-content-플로우-콘텐츠&quot; class=&quot;headerlink&quot; title=&quot;Flow content (플로우 콘텐츠)&quot;&gt;&lt;/a&gt;Flow content (플로우
+        
+      
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>SVG 애니메이션</title>
@@ -485,31 +514,6 @@
       <category term="npm" scheme="http://mjae404.github.io/tags/npm/"/>
     
       <category term="gulp file include" scheme="http://mjae404.github.io/tags/gulp-file-include/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP 함수, 지역변수, 정적변수, 전역변수</title>
-    <link href="http://mjae404.github.io/2021/07/30/php-function-variable/"/>
-    <id>http://mjae404.github.io/2021/07/30/php-function-variable/</id>
-    <published>2021-07-30T07:40:40.000Z</published>
-    <updated>2021-07-30T08:09:52.396Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;PHP 기본 문법에서 함수, 지역변수, 정적변수, 전역변수를 확인해본다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
-    
-    
-      <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
-    
-      <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
-    
-      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
     
   </entry>
   
