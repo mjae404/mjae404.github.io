@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-04T13:12:49.841Z</updated>
+  <updated>2021-12-04T13:14:42.083Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,21 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>HTML을 어떻게 공부해야 하는가</title>
-    <link href="http://mjae404.github.io/2021/12/04/html-how-to-learn/"/>
-    <id>http://mjae404.github.io/2021/12/04/html-how-to-learn/</id>
-    <published>2021-12-04T13:10:44.000Z</published>
-    <updated>2021-12-04T13:12:49.841Z</updated>
+    <title>검색엔진</title>
+    <link href="http://mjae404.github.io/2021/12/04/html-seo/"/>
+    <id>http://mjae404.github.io/2021/12/04/html-seo/</id>
+    <published>2021-12-04T13:13:44.000Z</published>
+    <updated>2021-12-04T13:14:42.083Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;Flow-content-플로우-콘텐츠&quot;&gt;&lt;a href=&quot;#Flow-content-플로우-콘텐츠&quot; class=&quot;headerlink&quot; title=&quot;Flow content (플로우 콘텐츠)&quot;&gt;&lt;/a&gt;Flow content (플로우
-        
-      
+      &lt;h2 id=&quot;SEO에-영향을-주는-요인들&quot;&gt;&lt;a href=&quot;#SEO에-영향을-주는-요인들&quot; class=&quot;headerlink&quot; title=&quot;SEO에 영향을 주는 요인들&quot;&gt;&lt;/a&gt;SEO에 영향을 주는 요인들&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;검색 결과 페이지(SERP) 노출 대비 클릭률&lt;/li&gt;
+&lt;li&gt;백링크(BACKLINK): 다른 웹페이지로부터 인용(링크)되는 횟수&lt;/li&gt;
+&lt;li&gt;도메인 권력(Domain authority): 검색결과 페이지 순위 예측 점수&lt;/li&gt;
+&lt;li&gt;페이지 타이틀&lt;/li&gt;
+&lt;li&gt;메타 디스크립션&lt;/li&gt;
+&lt;li&gt;로딩속도&lt;/li&gt;
+&lt;li&gt;SSL(https) 사용 여부&lt;/li&gt;
+&lt;li&gt;콘텐츠의 양, 질, 개연성&lt;/li&gt;
+&lt;li&gt;사용자 경험: LCP(최대 콘텐츠 블럭 그리기), CLS(누적 배치 변경) - 페이지가 덜컥덜컥 열리면 안됨&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -42,6 +46,36 @@
     
     
       <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML을 어떻게 공부해야 하는가</title>
+    <link href="http://mjae404.github.io/2021/12/04/html-how-to-learn/"/>
+    <id>http://mjae404.github.io/2021/12/04/html-how-to-learn/</id>
+    <published>2021-12-04T13:10:44.000Z</published>
+    <updated>2021-12-04T13:14:33.217Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Flow-content-플로우-콘텐츠&quot;&gt;&lt;a href=&quot;#Flow-content-플로우-콘텐츠&quot; class=&quot;headerlink&quot; title=&quot;Flow content (플로우 콘텐츠)&quot;&gt;&lt;/a&gt;Flow content (플로우 콘텐츠)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;body&lt;/code&gt;에 포함할 수 있는 요소.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;base&lt;/code&gt;, &lt;code&gt;style&lt;/code&gt;, &lt;code&gt;title&lt;/code&gt; 요소를 제외한 나머지 모든 요소.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
     
   </entry>
   
@@ -491,29 +525,6 @@
       <category term="include" scheme="http://mjae404.github.io/tags/include/"/>
     
       <category term="require" scheme="http://mjae404.github.io/tags/require/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>npm gulp-file-include</title>
-    <link href="http://mjae404.github.io/2021/07/31/npm-gulp-file-include/"/>
-    <id>http://mjae404.github.io/2021/07/31/npm-gulp-file-include/</id>
-    <published>2021-07-31T14:09:22.000Z</published>
-    <updated>2021-08-11T13:01:29.653Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;파일을 인클루드하기 위한 gulp 플러그인.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="npm" scheme="http://mjae404.github.io/categories/npm/"/>
-    
-    
-      <category term="npm" scheme="http://mjae404.github.io/tags/npm/"/>
-    
-      <category term="gulp file include" scheme="http://mjae404.github.io/tags/gulp-file-include/"/>
     
   </entry>
   

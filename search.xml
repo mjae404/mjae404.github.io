@@ -4429,7 +4429,7 @@
 
 <p>자바스크립트는 먼저 전역 코드를 평가하여 전역 실행 컨텍스트를 생성한다. 그리고 함수가 호출되면 코드를 평가하여 함수 실행 컨텍스트를 생성하는데, 이때 생성된 실행 컨텍스트는 스택 자료 구조로 관리된다. 이를 <strong>실행 컨택스트 스택(Execution context stack)</strong> 이라고 한다.</p>
 <p> 실행 컨텍스트 스택은 __코드의 실행 순서를 관리__한다. 실행 가능한 코드가 평가되면 실행 컨텍스트가 생성되고 실행 컨텍스트 스택의 최상위에 쌓인다. <strong>실행 컨텍스트 스택의 최상위에 존재하는 실행 컨텍스트를 <u>실행 중인 실행 컨텍스트(running execution context)</u></strong> 라 부른다.</p>
-<h2 id="동기식-처리-모델과-비동기식-처리-모델"><a href="#동기식-처리-모델과-비동기식-처리-모델" class="headerlink" title="동기식 처리 모델과 비동기식 처리 모델"></a>동기식 처리 모델과 비동기식 처리 모델</h2><p>자바 스크립트 엔진은 단 하나의 실행 컨텍스트 스택을 갖는다. 동시에 두가지 이상의 태스크를 실행할 수 없으며, __싱글스레드(single thread)로 동작한다__는 것을 의미한다.</p>
+<h2 id="동기식-처리-모델과-비동기식-처리-모델"><a href="#동기식-처리-모델과-비동기식-처리-모델" class="headerlink" title="동기식 처리 모델과 비동기식 처리 모델"></a>동기식 처리 모델과 비동기식 처리 모델</h2><p>자바 스크립트 엔진은 단 하나의 실행 컨텍스트 스택을 갖는다. 동시에 두가지 이상의 태스크를 실행할 수 없으며, <strong>싱글스레드(single thread)로 동작한다</strong> 는 것을 의미한다.</p>
 <ul>
 <li><strong>동기식 처리 모델(Synchronous processing model)</strong>: 하나의 처리가 종료되어야 다음 처리를 실행할 수 있다. 직렬적으로 태스크를 수행하며, 어떤 작업이 수행중이면 다음 작업은 대기하게 된다.</li>
 <li><strong>비동기식 처리 모델(Asynchronous processing model)</strong>: 병렬적으로 태스크를 수행하며 태스크가 종료되지 않더라도 대기하지 않고 다음 태스크를 실행한다. 자바스크립트에 동시성(concurrency)을 부여하여 싱글 스레드의 약점을 보완한다.<ul>
@@ -5758,7 +5758,7 @@
 <p>가장 바깥 영역에 선언된 변수 x는 어디서든 참조할 수 있다. 함수 foo 내부에서 선언된 변수 x는 함수 foo 내에서만 참조할 수 있고, 함수 foo 외부에서는 참조할 수 없다. <strong>두 개의 변수 x는 식별자 이름이 동일하지만 유효한 범위, 스코프가 다른 별개의 변수</strong> 이다.</p>
 <p>식별자는 어떤 값을 구별해야 하므로 유일(unique)해야 한다. 식별자 변수 이름은 중복될 수 없고, 하나의 값은 유일한 식별자에 연결(Name binding)되어야 한다. 다만, 다른 스코프에는 같은 이름의 식별자를 사용할 수 있다.</p>
 <blockquote>
-<p><strong>var 키워드로 선언한 변수의 중복 선언</strong><br>var 키워드로 선언된 변수는 같은 스코프내에서 중복 선언이 허용된다. 의돟치 않게 변수값이 재할당되어 변경되는 부작용이 발생할 수 있다. 하지만 let이나 const 키워드로 선언된 변수는 같은 스코프 내에서 중복선언을 허용하지 않는다.</p>
+<p><strong>var 키워드로 선언한 변수의 중복 선언</strong><br>var 키워드로 선언된 변수는 같은 스코프내에서 중복 선언이 허용된다. 의도치 않게 변수값이 재할당되어 변경되는 부작용이 발생할 수 있다. 하지만 let이나 const 키워드로 선언된 변수는 같은 스코프 내에서 중복선언을 허용하지 않는다.</p>
 </blockquote>
 <h2 id="스코프의-종류"><a href="#스코프의-종류" class="headerlink" title="스코프의 종류"></a>스코프의 종류</h2><p>코드는 전역(global)과 지역(local)으로 구분할 수 있다. 이때 변수는 자신이 선언된 위치에 의해 유효한 범위인 스코프(전역, 지역)가 결정된다.</p>
 <table>
@@ -5783,7 +5783,7 @@
 <td>지역 변수</td>
 </tr>
 </tbody></table>
-<h3 id="전역과-전역-스코프"><a href="#전역과-전역-스코프" class="headerlink" title="전역과 전역 스코프"></a>전역과 전역 스코프</h3><p>전역이란 코드의 가장 바깥 영역을 말한다. 전역은 전역 스코프(global scope)를 만든다. 전역에 변수를 선언하면 전역 스코프를 갖는 전역 변수(globl variable)가 된다. <strong>전역 변수는 어디서든지 참조할 수 있다.</strong></p>
+<h3 id="전역과-전역-스코프"><a href="#전역과-전역-스코프" class="headerlink" title="전역과 전역 스코프"></a>전역과 전역 스코프</h3><p>전역이란 코드의 가장 바깥 영역을 말한다. 전역은 전역 스코프(global scope)를 만든다. 전역에 변수를 선언하면 전역 스코프를 갖는 전역 변수(global variable)가 된다. <strong>전역 변수는 어디서든지 참조할 수 있다.</strong></p>
 <h3 id="지역과-지역-스코프"><a href="#지역과-지역-스코프" class="headerlink" title="지역과 지역 스코프"></a>지역과 지역 스코프</h3><p>지역이란 함수 몸체 내부를 말한다. 지역은 지역 스코프(local scope)를 만든다. 지역에 변수를 선언하면 지역 스코프를 갖는 지역 변수(local variable)가 된다. 지역 변수는 자신이 선언된 지역과 하위 지역(중첩 함수)에서만 참조할 수 있다.</p>
 <h2 id="스코프-체인"><a href="#스코프-체인" class="headerlink" title="스코프 체인"></a>스코프 체인</h2><p><img src="/images/scope.jpg" alt="스코프 체인" title="스코프 체인"></p>
 <p>함수는 중첩될 수 있으므로 함수의 지역 스코프도 중첩될 수 있다. 중첩 함수의 지역 스코프는 중첩 함수를 포함하는 외부 함수의 지역 스코프와 계층적 구조를 갖는다. 이때 외부 함수의 지역 스코프를 중첩 함수의 상위 스코프라 한다.</p>
@@ -7902,7 +7902,7 @@
 </blockquote>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="default-초깃값-설정"><a href="#default-초깃값-설정" class="headerlink" title="!default (초깃값 설정)"></a>!default (초깃값 설정)</h3><p><code>!default</code> 플래그는 할당되지 않은 변수의 초깃값을 설정하며 할당되어 있는 변수가 있다면 변수가 기존 할당값을 사용한다. __‘변수와 값을 설정하겠지만, 혹시 기존 변수가 있을 경우는 현재 설정하는 변수의 값은 사용하지 않겠다’__는 의미. Overwrite하지 않는다.</p>
+<h3 id="default-초깃값-설정"><a href="#default-초깃값-설정" class="headerlink" title="!default (초깃값 설정)"></a>!default (초깃값 설정)</h3><p><code>!default</code> 플래그는 할당되지 않은 변수의 초깃값을 설정하며 할당되어 있는 변수가 있다면 변수가 기존 할당값을 사용한다. <strong>‘변수와 값을 설정하겠지만, 혹시 기존 변수가 있을 경우는 현재 설정하는 변수의 값은 사용하지 않겠다’</strong> 는 의미. Overwrite하지 않는다.</p>
 <blockquote>
 <p>SCSS</p>
 </blockquote>
@@ -9893,6 +9893,8 @@
 <li><code>body</code>에 포함할 수 있는 요소.</li>
 <li><code>base</code>, <code>style</code>, <code>title</code> 요소를 제외한 나머지 모든 요소.</li>
 </ul>
+<a id="more"></a>
+
 <h2 id="Metadata-content-메타-데이터-콘텐츠"><a href="#Metadata-content-메타-데이터-콘텐츠" class="headerlink" title="Metadata content (메타 데이터 콘텐츠)"></a>Metadata content (메타 데이터 콘텐츠)</h2><ul>
 <li>콘텐츠와 문서를 구조화하는 요소를 의미</li>
 <li>다른 콘텐츠의 표시, 동작, 관계 등을 설정</li>
@@ -9940,7 +9942,7 @@
 <li>투명한 요소를 제거해도 부모와 자식 관계가 문법적으로 유효해야 한다.<br><code>a</code>, <code>ins</code>, <code>del</code>, <code>object</code>, <code>video</code>, <code>audio</code>, <code>map</code>, <code>noscript</code>, <code>canvas</code></li>
 </ul>
 <blockquote>
-<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드  _ 정찬명 강사님</p>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -9949,6 +9951,62 @@
       </categories>
       <tags>
         <tag>HTML</tag>
+        <tag>the red</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>검색엔진</title>
+    <url>/2021/12/04/html-seo/</url>
+    <content><![CDATA[<h2 id="SEO에-영향을-주는-요인들"><a href="#SEO에-영향을-주는-요인들" class="headerlink" title="SEO에 영향을 주는 요인들"></a>SEO에 영향을 주는 요인들</h2><ul>
+<li>검색 결과 페이지(SERP) 노출 대비 클릭률</li>
+<li>백링크(BACKLINK): 다른 웹페이지로부터 인용(링크)되는 횟수</li>
+<li>도메인 권력(Domain authority): 검색결과 페이지 순위 예측 점수</li>
+<li>페이지 타이틀</li>
+<li>메타 디스크립션</li>
+<li>로딩속도</li>
+<li>SSL(https) 사용 여부</li>
+<li>콘텐츠의 양, 질, 개연성</li>
+<li>사용자 경험: LCP(최대 콘텐츠 블럭 그리기), CLS(누적 배치 변경) - 페이지가 덜컥덜컥 열리면 안됨</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="페이지-타이틀-명세"><a href="#페이지-타이틀-명세" class="headerlink" title="페이지 타이틀 명세"></a>페이지 타이틀 명세</h2><ul>
+<li>분류: 메타 데이터 콘텐츠</li>
+<li>문맥: HEAD 요소의 자식</li>
+<li>콘텐츠 모델: 텍스트. 공백만으로 구성할 수 없음</li>
+<li>태그 생략: 시작태그와 종료태그 모두 생략 불가능</li>
+</ul>
+<blockquote>
+<p>light house / Alexa Extention</p>
+</blockquote>
+<h3 id="페이지-타이틀"><a href="#페이지-타이틀" class="headerlink" title="페이지 타이틀"></a>페이지 타이틀</h3><ul>
+<li>페이지 타이틀은 음성으로 전달 받을 수 있다.</li>
+<li>구분자: <code>-</code>(대시), <code>|</code>(파이프), <code>:</code>(콜론)을 추천 / <code>_</code>(언더바)는 인접 키워드를 하나로 연결하기 때문에 추천하지 않음.</li>
+<li>검색 로봇은 JavaScript에 의해 동적으로 생성한 페이지 타이틀도 크롤링한다.</li>
+<li>본문을 가장 잘 설명하는 <strong>키워드</strong> 중심으로.</li>
+<li>페이지마다 <strong>구체적</strong> 이고 <strong>고유한</strong> 키워드를 사용.</li>
+<li>페이지마다 <strong>반복</strong> 하는 키워드 <strong>최소화</strong>.</li>
+<li>구체적인 키워드를 앞으로 <strong>배치</strong>.</li>
+<li>가능한 <strong>짧게</strong>. 2~3단계정도만.</li>
+</ul>
+<h2 id="메타데이터"><a href="#메타데이터" class="headerlink" title="메타데이터"></a>메타데이터</h2><ul>
+<li>lang</li>
+<li>charset</li>
+<li>description: 검색 엔진의 검색 결과 화면에 노출되는 텍스트</li>
+<li>viewport</li>
+<li>title</li>
+</ul>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>the red</tag>
       </tags>
   </entry>
 </search>
