@@ -9956,7 +9956,7 @@
       </tags>
   </entry>
   <entry>
-    <title>검색엔진</title>
+    <title>HTML 검색엔진</title>
     <url>/2021/12/04/html-seo/</url>
     <content><![CDATA[<h2 id="SEO에-영향을-주는-요인들"><a href="#SEO에-영향을-주는-요인들" class="headerlink" title="SEO에 영향을 주는 요인들"></a>SEO에 영향을 주는 요인들</h2><ul>
 <li>검색 결과 페이지(SERP) 노출 대비 클릭률</li>
@@ -10066,5 +10066,13 @@
 <p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>the red</tag>
+      </tags>
   </entry>
 </search>
