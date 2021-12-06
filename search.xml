@@ -9634,7 +9634,7 @@
   <entry>
     <title>SVG 애니메이션</title>
     <url>/2021/12/03/svg-animation/</url>
-    <content><![CDATA[<h1 id="SVG-애니메이션"><a href="#SVG-애니메이션" class="headerlink" title="SVG 애니메이션"></a>SVG 애니메이션</h1><p><code>SVG</code>는 <code>CSS</code>와 <code>SMIL</code>로 애니메이션을 구현할 수 있다.</p>
+    <content><![CDATA[<p><code>SVG</code>는 <code>CSS</code>와 <code>SMIL</code>로 애니메이션을 구현할 수 있다.</p>
 <a id="more"></a>
 
 <h2 id="STROKE-애니메이션"><a href="#STROKE-애니메이션" class="headerlink" title="STROKE 애니메이션"></a>STROKE 애니메이션</h2><ul>
@@ -10149,6 +10149,69 @@
 <li>s: 정확하지 않거나 관련 없는. del 요소 고려</li>
 <li>u: 오타, 중국 고유명사 등의 표기. ins 요소를 고려</li>
 </ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>the red</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML 인터렉티브 콘텐츠</title>
+    <url>/2021/12/06/html-interative-contents/</url>
+    <content><![CDATA[<h2 id="a-button"><a href="#a-button" class="headerlink" title="a, button"></a>a, button</h2><ul>
+<li>a<ul>
+<li>실행 결과를 가리킬 수 있는 url이 있을 때</li>
+<li>현재페이지 특정 섹션 스크롤 이동</li>
+<li>대화 상자를 참조하는 경우. a 요소의 href 값은 dialog 요소의 id(해시 url)을 참조</li>
+<li>링크 열기 가능. (button보다 더 많은 기능을 제공)</li>
+</ul>
+</li>
+<li>button<ul>
+<li>참조할 url이 없을 때</li>
+</ul>
+</li>
+<li>pointer: 링크를 의미하기 때문에 button일 때는 pointer 하지 않는 것이 좋음.</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="a-target"><a href="#a-target" class="headerlink" title="a target"></a>a target</h2><ul>
+<li>target=”_blank”: 안전하지 않은 외부 페이지 새창 링크<ul>
+<li>새창으로 열린 외부 페이지 B는 자바스크립트 <code>window.opener</code> 객체를 통해 부모 페이지 A의 제어 권한을 획득한다.</li>
+<li>사용자는 탭 가로채기(tabnabbing) 공격에 노출될 수 있다.</li>
+</ul>
+</li>
+<li>해당 문제는 <code>rel</code>로 해결할 수 있다. (<code>rel=&quot;noopener noreferrer&quot;</code>)<ul>
+<li><code>noopener</code> 값은 <code>window.opener</code> 객체를 제거</li>
+<li><code>noreferrer</code>값은 <code>window.opener</code> 제거 불능</li>
+<li><code>noopener</code>를 지원하지 않는 낡은 브라우저를 위해 <code>noreferrer</code>를 함께 표기한다.</li>
+<li>최신 브라우저는 암시적으로 적용하고 있으나 낡은 브라우저를 위해 명시하는 것이 좋다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="details-summary"><a href="#details-summary" class="headerlink" title="details, summary"></a>details, summary</h2><ul>
+<li>열림 상태일 때 정보를 표시하는 위젯.</li>
+<li>details 요소에 open 속성을 넣으면 열린 상태로 표시.</li>
+<li>summary 요소는 details 요소의 나머지 부분에 대한 요약, 캡션, 범례를 의미한다.</li>
+<li>숨겨진 폼(form)을 드러내기도 한다.</li>
+</ul>
+<h2 id="input"><a href="#input" class="headerlink" title="input"></a>input</h2><ul>
+<li>search, tel, url, email, date, time, range, color 등등.</li>
+<li>attr: required, placeholder(label 대안으로 사용하면 안됨 / 접근성이 떨어짐)</li>
+</ul>
+<h2 id="datalist"><a href="#datalist" class="headerlink" title="datalist"></a>datalist</h2><ul>
+<li>다른 콘트롤을 위해 미리 정의된 옵션 세트를 의미.</li>
+<li>숨겨진 상태로 표시된다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;local&quot;</span>&gt;</span>지역번호<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;local&quot;</span> <span class="attr">value</span>=<span class="string">&quot;?&quot;</span> <span class="attr">list</span>=<span class="string">&quot;local-list&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">&quot;local-list&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;02&quot;</span> <span class="attr">label</span>=<span class="string">&quot;서울&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;031&quot;</span> <span class="attr">label</span>=<span class="string">&quot;경기&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">datalist</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>

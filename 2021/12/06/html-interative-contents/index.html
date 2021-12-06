@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjae404.github.io">
   <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
-    HTML 의미론 |  404 Not Found
+    HTML 인터렉티브 콘텐츠 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -37,7 +37,7 @@
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-html-semantics" class="article article-type-post" itemscope
+  <article id="post-html-interative-contents" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -45,7 +45,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  HTML 의미론
+  HTML 인터렉티브 콘텐츠
 </h1>
   
 
@@ -54,8 +54,8 @@
 
     
     <div class="article-meta">
-      <a href="/2021/12/06/html-semantics/" class="article-date">
-  <time datetime="2021-12-06T02:46:08.000Z" itemprop="datePublished">2021-12-06</time>
+      <a href="/2021/12/06/html-interative-contents/" class="article-date">
+  <time datetime="2021-12-06T02:49:45.000Z" itemprop="datePublished">2021-12-06</time>
 </a>
       
   <div class="article-category">
@@ -75,77 +75,52 @@
       
 
       
-      <ul>
-<li><code>div</code>, <code>span</code>은 아무 의미가 없다.</li>
+      <h2 id="a-button"><a href="#a-button" class="headerlink" title="a, button"></a>a, button</h2><ul>
+<li>a<ul>
+<li>실행 결과를 가리킬 수 있는 url이 있을 때</li>
+<li>현재페이지 특정 섹션 스크롤 이동</li>
+<li>대화 상자를 참조하는 경우. a 요소의 href 값은 dialog 요소의 id(해시 url)을 참조</li>
+<li>링크 열기 가능. (button보다 더 많은 기능을 제공)</li>
 </ul>
-<h2 id="sectioning"><a href="#sectioning" class="headerlink" title="sectioning"></a>sectioning</h2><ul>
-<li>hx, hgroup, header, footer → 섹셔닝은 아니지만 함께 쓰는 요소</li>
-<li>article, aside, nav, section → 섹셔닝 요소</li>
+</li>
+<li>button<ul>
+<li>참조할 url이 없을 때</li>
+</ul>
+</li>
+<li>pointer: 링크를 의미하기 때문에 button일 때는 pointer 하지 않는 것이 좋음.</li>
 </ul>
 <a id="more"></a>
 
-<h2 id="header-footer"><a href="#header-footer" class="headerlink" title="header, footer"></a>header, footer</h2><ul>
-<li>여러번 사용해도 됨</li>
+<h2 id="a-target"><a href="#a-target" class="headerlink" title="a target"></a>a target</h2><ul>
+<li>target=”_blank”: 안전하지 않은 외부 페이지 새창 링크<ul>
+<li>새창으로 열린 외부 페이지 B는 자바스크립트 <code>window.opener</code> 객체를 통해 부모 페이지 A의 제어 권한을 획득한다.</li>
+<li>사용자는 탭 가로채기(tabnabbing) 공격에 노출될 수 있다.</li>
 </ul>
-<h2 id="section-article"><a href="#section-article" class="headerlink" title="section, article"></a>section, article</h2><ul>
-<li>section: 제목이 있는 주제별 콘텐츠 그룹</li>
-<li>article: 섹션 요소 중 독립적으로 배포 가능한 완결형 콘텐츠. 뉴스 기사, 블로그 본문, 사용자의 댓글 등.</li>
-<li>h1~6 요소 사용을 강력하게 권장, header / footer 요소 사용은 선택사항</li>
-<li>중첩 허용 (section 안 section, article 안 article)</li>
+</li>
+<li>해당 문제는 <code>rel</code>로 해결할 수 있다. (<code>rel=&quot;noopener noreferrer&quot;</code>)<ul>
+<li><code>noopener</code> 값은 <code>window.opener</code> 객체를 제거</li>
+<li><code>noreferrer</code>값은 <code>window.opener</code> 제거 불능</li>
+<li><code>noopener</code>를 지원하지 않는 낡은 브라우저를 위해 <code>noreferrer</code>를 함께 표기한다.</li>
+<li>최신 브라우저는 암시적으로 적용하고 있으나 낡은 브라우저를 위해 명시하는 것이 좋다.</li>
 </ul>
-<h2 id="nav"><a href="#nav" class="headerlink" title="nav"></a>nav</h2><ul>
-<li>현재 사이트 또는 현재 페이지 일부를 링크하고 있는 주요 탐색 섹션.</li>
-<li>빵부스러기 링크, 약관, 저작권 고지 같은 링크는 적절하지 않음.</li>
-<li>h1~6 요소 사용을 강력하게 권장</li>
+</li>
 </ul>
-<h2 id="aside"><a href="#aside" class="headerlink" title="aside"></a>aside</h2><ul>
-<li>페이지의 주된 내용과 관련이 약해서 구분할 필요가 있는 섹션</li>
-<li>부수적인 콘텐츠, 관련기사, 광고 등의 내용을 포함할 수 있다</li>
-<li>h1~6 요소 사용을 강력하게 권장</li>
+<h2 id="details-summary"><a href="#details-summary" class="headerlink" title="details, summary"></a>details, summary</h2><ul>
+<li>열림 상태일 때 정보를 표시하는 위젯.</li>
+<li>details 요소에 open 속성을 넣으면 열린 상태로 표시.</li>
+<li>summary 요소는 details 요소의 나머지 부분에 대한 요약, 캡션, 범례를 의미한다.</li>
+<li>숨겨진 폼(form)을 드러내기도 한다.</li>
 </ul>
-<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><ul>
-<li>문서의 핵심 주제 또는 애플리케이션의 핵심 기능과 직접 관련있는 콘텐츠 영역을 의미.</li>
-<li>페이지마다 반복되지 않는 내용을 포함하여야 한다.</li>
-<li>섹셔닝 콘텐츠가 아니므로 h1~6, header, footer 요소의 범위와 관련없음.</li>
-<li>하나의 페이지 안에서 하나의 main 요소만 표시 가능</li>
-<li>섹셔닝 관련 요소의 자식이 될 수 없다.</li>
-<li>body, div 요소를 제외한 다른 요소의 자손이 될 수 없다.</li>
+<h2 id="input"><a href="#input" class="headerlink" title="input"></a>input</h2><ul>
+<li>search, tel, url, email, date, time, range, color 등등.</li>
+<li>attr: required, placeholder(label 대안으로 사용하면 안됨 / 접근성이 떨어짐)</li>
 </ul>
-<h2 id="dialog"><a href="#dialog" class="headerlink" title="dialog"></a>dialog</h2><ul>
-<li>사용자와 상호 작용하는 응용 프로그램(대화상자)을 의미</li>
-<li>보통 입력 양식과 콘트롤을 포함하고 있으며 닫기 기능을 제공한다.</li>
-<li>키보드 초점이 요소 내부에서 순환하도록 처리하여야 한다.</li>
+<h2 id="datalist"><a href="#datalist" class="headerlink" title="datalist"></a>datalist</h2><ul>
+<li>다른 콘트롤을 위해 미리 정의된 옵션 세트를 의미.</li>
+<li>숨겨진 상태로 표시된다.</li>
 </ul>
-<h2 id="figure-figcation"><a href="#figure-figcation" class="headerlink" title="figure, figcation"></a>figure, figcation</h2><ul>
-<li>figcation을 사용하는 것이 적절하다.</li>
-<li>단 한번 자손으로 인정</li>
-</ul>
-<h2 id="mark"><a href="#mark" class="headerlink" title="mark"></a>mark</h2><ul>
-<li>독자의 주의를 끌기 위한 하이라이트.</li>
-<li>현재 독자의 행위나 관심에 따라 강조한 것.</li>
-<li>검색 결과 목록에서 사용자가 입력한 키워드.</li>
-</ul>
-<h2 id="address"><a href="#address" class="headerlink" title="address"></a>address</h2><ul>
-<li>가까운 조상 article 또는 body 요소를 범위로 하는 관련 연락처 정보.</li>
-<li>p 요소의 자손이 될 수 없음 (프레이징 요소가 아니므로)</li>
-</ul>
-<h2 id="ins-del"><a href="#ins-del" class="headerlink" title="ins, del"></a>ins, del</h2><ul>
-<li>ins: 추가한 내용을 의미</li>
-<li>del: 삭제한 내용을 의미</li>
-<li>콘텐츠 모델이 투명해서 어떤 요소라도 포함할 수 있음</li>
-<li>여러 단락을 한번에 포함하는 것은 부적절하다.</li>
-</ul>
-<h2 id="progress"><a href="#progress" class="headerlink" title="progress"></a>progress</h2><ul>
-<li>계산 또는 사용자 과업의 진척도</li>
-<li>원격 호스트의 응답을 기다려야 하는 경우도 있기 때문에 정확하지 않을 수 있다.</li>
-<li>오래된 브라우저를 위해 value 값과 별도로 콘텐츠를 제공하는 것이 좋다.</li>
-</ul>
-<h2 id="b-i-s-u"><a href="#b-i-s-u" class="headerlink" title="b, i, s, u"></a>b, i, s, u</h2><ul>
-<li>b: 강조할 의도가 없는 볼드. strong 요소 고려</li>
-<li>i: 현재 맥락과 다른 분위기. em 요소 고려</li>
-<li>s: 정확하지 않거나 관련 없는. del 요소 고려</li>
-<li>u: 오타, 중국 고유명사 등의 표기. ins 요소를 고려</li>
-</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;local&quot;</span>&gt;</span>지역번호<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;local&quot;</span> <span class="attr">value</span>=<span class="string">&quot;?&quot;</span> <span class="attr">list</span>=<span class="string">&quot;local-list&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">&quot;local-list&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;02&quot;</span> <span class="attr">label</span>=<span class="string">&quot;서울&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;031&quot;</span> <span class="attr">label</span>=<span class="string">&quot;경기&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">datalist</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
@@ -156,7 +131,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2021/12/06/html-semantics/" data-id="ckwu2ovy0000040tf8qqq5m32"
+      <a data-url="http://mjae404.github.io/2021/12/06/html-interative-contents/" data-id="ckwu2u11y0000oktfgclvdob0"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-red/" rel="tag">the red</a></li></ul>
@@ -169,19 +144,10 @@
   
   <nav class="article-nav">
     
-      <a href="/2021/12/06/html-interative-contents/" class="article-nav-link">
-        <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">
-          
-            HTML 인터렉티브 콘텐츠
-          
-        </div>
-      </a>
     
-    
-      <a href="/2021/12/05/html-outline-heading/" class="article-nav-link">
+      <a href="/2021/12/06/html-semantics/" class="article-nav-link">
         <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">HTML 개요 알고리즘 이해</div>
+        <div class="article-nav-title">HTML 의미론</div>
       </a>
     
   </nav>

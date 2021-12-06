@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-06T02:48:11.007Z</updated>
+  <updated>2021-12-06T02:50:49.205Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML 인터렉티브 콘텐츠</title>
+    <link href="http://mjae404.github.io/2021/12/06/html-interative-contents/"/>
+    <id>http://mjae404.github.io/2021/12/06/html-interative-contents/</id>
+    <published>2021-12-06T02:49:45.000Z</published>
+    <updated>2021-12-06T02:50:49.205Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;a-button&quot;&gt;&lt;a href=&quot;#a-button&quot; class=&quot;headerlink&quot; title=&quot;a, button&quot;&gt;&lt;/a&gt;a, button&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;a&lt;ul&gt;
+&lt;li&gt;실행 결과를 가리킬 수 있는 url이 있을 때&lt;/li&gt;
+&lt;li&gt;현재페이지 특정 섹션 스크롤 이동&lt;/li&gt;
+&lt;li&gt;대화 상자를 참조하는 경우. a 요소의 href 값은 dialog 요소의 id(해시 url)을 참조&lt;/li&gt;
+&lt;li&gt;링크 열기 가능. (button보다 더 많은 기능을 제공)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;button&lt;ul&gt;
+&lt;li&gt;참조할 url이 없을 때&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;pointer: 링크를 의미하기 때문에 button일 때는 pointer 하지 않는 것이 좋음.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML 의미론</title>
@@ -146,11 +184,11 @@
     <link href="http://mjae404.github.io/2021/12/03/svg-animation/"/>
     <id>http://mjae404.github.io/2021/12/03/svg-animation/</id>
     <published>2021-12-03T12:04:23.000Z</published>
-    <updated>2021-12-03T12:04:46.825Z</updated>
+    <updated>2021-12-06T02:48:46.426Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;SVG-애니메이션&quot;&gt;&lt;a href=&quot;#SVG-애니메이션&quot; class=&quot;headerlink&quot; title=&quot;SVG 애니메이션&quot;&gt;&lt;/a&gt;SVG 애니메이션&lt;/h1&gt;&lt;p&gt;&lt;code&gt;SVG&lt;/code&gt;는 &lt;code&gt;CSS&lt;/code&gt;와 &lt;code&gt;SMIL&lt;/code&gt;로 애니메이션을 구현할 수 있다.&lt;/p&gt;
+      &lt;p&gt;&lt;code&gt;SVG&lt;/code&gt;는 &lt;code&gt;CSS&lt;/code&gt;와 &lt;code&gt;SMIL&lt;/code&gt;로 애니메이션을 구현할 수 있다.&lt;/p&gt;
     
     </summary>
     
@@ -512,33 +550,6 @@
       <category term="validity check" scheme="http://mjae404.github.io/tags/validity-check/"/>
     
       <category term="filter input" scheme="http://mjae404.github.io/tags/filter-input/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP 사용자 입력 데이터 전송방식 get, post</title>
-    <link href="http://mjae404.github.io/2021/08/02/php-get-post/"/>
-    <id>http://mjae404.github.io/2021/08/02/php-get-post/</id>
-    <published>2021-08-02T11:11:13.000Z</published>
-    <updated>2021-08-02T12:03:40.287Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;PHP 기본 문법에서 사용자 입력 데이터 전송방식에 대해 알아본다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
-    
-      <category term="get" scheme="http://mjae404.github.io/tags/get/"/>
-    
-      <category term="post" scheme="http://mjae404.github.io/tags/post/"/>
-    
-      <category term="form" scheme="http://mjae404.github.io/tags/form/"/>
     
   </entry>
   
