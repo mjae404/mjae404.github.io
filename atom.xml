@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-06T02:46:53.329Z</updated>
+  <updated>2021-12-06T02:48:11.007Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,16 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>html 시멘틱</title>
+    <title>HTML 의미론</title>
     <link href="http://mjae404.github.io/2021/12/06/html-semantics/"/>
     <id>http://mjae404.github.io/2021/12/06/html-semantics/</id>
     <published>2021-12-06T02:46:08.000Z</published>
-    <updated>2021-12-06T02:46:53.329Z</updated>
+    <updated>2021-12-06T02:48:11.007Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;HTML-의미론&quot;&gt;&lt;a href=&quot;#HTML-의미론&quot; class=&quot;headerlink&quot; title=&quot;HTML 의미론&quot;&gt;&lt;/a&gt;HTML 의미론&lt;/h1&gt;&lt;ul&gt;
+      &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;span&lt;/code&gt;은 아무 의미가 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;sectioning&quot;&gt;&lt;a href=&quot;#sectioning&quot; class=&quot;headerlink&quot; title=&quot;sectioning&quot;&gt;&lt;/a&gt;sectioning&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;hx, hgroup, header, footer → 섹셔닝은 아니지만 함께 쓰는 요소&lt;/li&gt;
+&lt;li&gt;article, aside, nav, section → 섹셔닝 요소&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
