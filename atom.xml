@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-04T16:12:33.425Z</updated>
+  <updated>2021-12-06T02:46:53.329Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html 시멘틱</title>
+    <link href="http://mjae404.github.io/2021/12/06/html-semantics/"/>
+    <id>http://mjae404.github.io/2021/12/06/html-semantics/</id>
+    <published>2021-12-06T02:46:08.000Z</published>
+    <updated>2021-12-06T02:46:53.329Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HTML-의미론&quot;&gt;&lt;a href=&quot;#HTML-의미론&quot; class=&quot;headerlink&quot; title=&quot;HTML 의미론&quot;&gt;&lt;/a&gt;HTML 의미론&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;span&lt;/code&gt;은 아무 의미가 없다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML 개요 알고리즘 이해</title>
@@ -508,29 +535,6 @@
       <category term="post" scheme="http://mjae404.github.io/tags/post/"/>
     
       <category term="form" scheme="http://mjae404.github.io/tags/form/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP loop로 반복작업 처리하기</title>
-    <link href="http://mjae404.github.io/2021/08/02/php-loop/"/>
-    <id>http://mjae404.github.io/2021/08/02/php-loop/</id>
-    <published>2021-08-02T10:44:47.000Z</published>
-    <updated>2021-08-02T11:09:53.004Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;php로 반복작업을 처리해본다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
-    
-      <category term="loop" scheme="http://mjae404.github.io/tags/loop/"/>
     
   </entry>
   

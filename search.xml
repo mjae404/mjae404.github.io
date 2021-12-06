@@ -10075,4 +10075,92 @@
         <tag>the red</tag>
       </tags>
   </entry>
+  <entry>
+    <title>html 시멘틱</title>
+    <url>/2021/12/06/html-semantics/</url>
+    <content><![CDATA[<h1 id="HTML-의미론"><a href="#HTML-의미론" class="headerlink" title="HTML 의미론"></a>HTML 의미론</h1><ul>
+<li><code>div</code>, <code>span</code>은 아무 의미가 없다.</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="sectioning"><a href="#sectioning" class="headerlink" title="sectioning"></a>sectioning</h2><ul>
+<li>hx, hgroup, header, footer → 섹셔닝은 아니지만 함께 쓰는 요소</li>
+<li>article, aside, nav, section → 섹셔닝 요소</li>
+</ul>
+<h2 id="header-footer"><a href="#header-footer" class="headerlink" title="header, footer"></a>header, footer</h2><ul>
+<li>여러번 사용해도 됨</li>
+</ul>
+<h2 id="section-article"><a href="#section-article" class="headerlink" title="section, article"></a>section, article</h2><ul>
+<li>section: 제목이 있는 주제별 콘텐츠 그룹</li>
+<li>article: 섹션 요소 중 독립적으로 배포 가능한 완결형 콘텐츠. 뉴스 기사, 블로그 본문, 사용자의 댓글 등.</li>
+<li>h1~6 요소 사용을 강력하게 권장, header / footer 요소 사용은 선택사항</li>
+<li>중첩 허용 (section 안 section, article 안 article)</li>
+</ul>
+<h2 id="nav"><a href="#nav" class="headerlink" title="nav"></a>nav</h2><ul>
+<li>현재 사이트 또는 현재 페이지 일부를 링크하고 있는 주요 탐색 섹션.</li>
+<li>빵부스러기 링크, 약관, 저작권 고지 같은 링크는 적절하지 않음.</li>
+<li>h1~6 요소 사용을 강력하게 권장</li>
+</ul>
+<h2 id="aside"><a href="#aside" class="headerlink" title="aside"></a>aside</h2><ul>
+<li>페이지의 주된 내용과 관련이 약해서 구분할 필요가 있는 섹션</li>
+<li>부수적인 콘텐츠, 관련기사, 광고 등의 내용을 포함할 수 있다</li>
+<li>h1~6 요소 사용을 강력하게 권장</li>
+</ul>
+<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><ul>
+<li>문서의 핵심 주제 또는 애플리케이션의 핵심 기능과 직접 관련있는 콘텐츠 영역을 의미.</li>
+<li>페이지마다 반복되지 않는 내용을 포함하여야 한다.</li>
+<li>섹셔닝 콘텐츠가 아니므로 h1~6, header, footer 요소의 범위와 관련없음.</li>
+<li>하나의 페이지 안에서 하나의 main 요소만 표시 가능</li>
+<li>섹셔닝 관련 요소의 자식이 될 수 없다.</li>
+<li>body, div 요소를 제외한 다른 요소의 자손이 될 수 없다.</li>
+</ul>
+<h2 id="dialog"><a href="#dialog" class="headerlink" title="dialog"></a>dialog</h2><ul>
+<li>사용자와 상호 작용하는 응용 프로그램(대화상자)을 의미</li>
+<li>보통 입력 양식과 콘트롤을 포함하고 있으며 닫기 기능을 제공한다.</li>
+<li>키보드 초점이 요소 내부에서 순환하도록 처리하여야 한다.</li>
+</ul>
+<h2 id="figure-figcation"><a href="#figure-figcation" class="headerlink" title="figure, figcation"></a>figure, figcation</h2><ul>
+<li>figcation을 사용하는 것이 적절하다.</li>
+<li>단 한번 자손으로 인정</li>
+</ul>
+<h2 id="mark"><a href="#mark" class="headerlink" title="mark"></a>mark</h2><ul>
+<li>독자의 주의를 끌기 위한 하이라이트.</li>
+<li>현재 독자의 행위나 관심에 따라 강조한 것.</li>
+<li>검색 결과 목록에서 사용자가 입력한 키워드.</li>
+</ul>
+<h2 id="address"><a href="#address" class="headerlink" title="address"></a>address</h2><ul>
+<li>가까운 조상 article 또는 body 요소를 범위로 하는 관련 연락처 정보.</li>
+<li>p 요소의 자손이 될 수 없음 (프레이징 요소가 아니므로)</li>
+</ul>
+<h2 id="ins-del"><a href="#ins-del" class="headerlink" title="ins, del"></a>ins, del</h2><ul>
+<li>ins: 추가한 내용을 의미</li>
+<li>del: 삭제한 내용을 의미</li>
+<li>콘텐츠 모델이 투명해서 어떤 요소라도 포함할 수 있음</li>
+<li>여러 단락을 한번에 포함하는 것은 부적절하다.</li>
+</ul>
+<h2 id="progress"><a href="#progress" class="headerlink" title="progress"></a>progress</h2><ul>
+<li>계산 또는 사용자 과업의 진척도</li>
+<li>원격 호스트의 응답을 기다려야 하는 경우도 있기 때문에 정확하지 않을 수 있다.</li>
+<li>오래된 브라우저를 위해 value 값과 별도로 콘텐츠를 제공하는 것이 좋다.</li>
+</ul>
+<h2 id="b-i-s-u"><a href="#b-i-s-u" class="headerlink" title="b, i, s, u"></a>b, i, s, u</h2><ul>
+<li>b: 강조할 의도가 없는 볼드. strong 요소 고려</li>
+<li>i: 현재 맥락과 다른 분위기. em 요소 고려</li>
+<li>s: 정확하지 않거나 관련 없는. del 요소 고려</li>
+<li>u: 오타, 중국 고유명사 등의 표기. ins 요소를 고려</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>the red</tag>
+      </tags>
+  </entry>
 </search>
