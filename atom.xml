@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-07T01:24:26.994Z</updated>
+  <updated>2021-12-07T01:30:22.886Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,23 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CSS가 어려운 이유</title>
+    <link href="http://mjae404.github.io/2021/12/07/html-why-css-is-difficult/"/>
+    <id>http://mjae404.github.io/2021/12/07/html-why-css-is-difficult/</id>
+    <published>2021-12-07T01:27:53.000Z</published>
+    <updated>2021-12-07T01:30:22.886Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;값 정의 구문: css 속성의 유효한 값과 순서&lt;br&gt;&lt;code&gt;|&lt;/code&gt; : 파이프라인, only. 양쪽에서 하나만 사용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTML 이미지 마크업 최적화</title>
     <link href="http://mjae404.github.io/2021/12/07/html-img-markup/"/>
     <id>http://mjae404.github.io/2021/12/07/html-img-markup/</id>
     <published>2021-12-07T01:22:07.000Z</published>
-    <updated>2021-12-07T01:24:26.994Z</updated>
+    <updated>2021-12-07T01:24:49.238Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;이미지-포맷&quot;&gt;&lt;a href=&quot;#이미지-포맷&quot; class=&quot;headerlink&quot; title=&quot;이미지 포맷&quot;&gt;&lt;/a&gt;이미지 포맷&lt;/h2&gt;&lt;ul&gt;
+      &lt;h2 id=&quot;이미지-포맷&quot;&gt;&lt;a href=&quot;#이미지-포맷&quot; class=&quot;headerlink&quot; title=&quot;이미지 포맷&quot;&gt;&lt;/a&gt;이미지 포맷&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;.jpg&lt;/code&gt;/&lt;code&gt;.png&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;모든
-        
-      
+&lt;li&gt;모든 브라우저에서 지원하는 폴백 이미지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.webp&lt;/code&gt; (알파 채널, ie 미지원)&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;jpg&lt;/code&gt;/&lt;code&gt;png&lt;/code&gt; 대비 30-70% 수준의 용량&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.avif&lt;/code&gt; (알파채널, 크롬/삼성인터넷 지원)&lt;ul&gt;
+&lt;li&gt; 저용량+고품질&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -529,31 +559,6 @@
       <category term="npm" scheme="http://mjae404.github.io/tags/npm/"/>
     
       <category term="dart sass" scheme="http://mjae404.github.io/tags/dart-sass/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP 쿠키와 세션의 기본 사용법</title>
-    <link href="http://mjae404.github.io/2021/08/02/php-cookie-session/"/>
-    <id>http://mjae404.github.io/2021/08/02/php-cookie-session/</id>
-    <published>2021-08-02T13:39:51.000Z</published>
-    <updated>2021-08-03T08:32:21.360Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;PHP 기본 문법에서 쿠키와 세션을 확인해본다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/categories/php/"/>
-    
-    
-      <category term="php" scheme="http://mjae404.github.io/tags/php/"/>
-    
-      <category term="cookie" scheme="http://mjae404.github.io/tags/cookie/"/>
-    
-      <category term="session" scheme="http://mjae404.github.io/tags/session/"/>
     
   </entry>
   

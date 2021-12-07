@@ -63,6 +63,72 @@
     
     
     
+    <article id="post-html-why-css-is-difficult" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/12/07/html-why-css-is-difficult/"
+    >CSS가 어려운 이유</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/07/html-why-css-is-difficult/" class="article-date">
+  <time datetime="2021-12-07T01:27:53.000Z" itemprop="datePublished">2021-12-07</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/HTML/">HTML</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>값 정의 구문: css 속성의 유효한 값과 순서<br><code>|</code> : 파이프라인, only. 양쪽에서 하나만 사용할 수 있다.</p>
+      
+      <a class="article-more-link" href="/2021/12/07/html-why-css-is-difficult/">MORE</a>
+      
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/07/html-why-css-is-difficult/" data-id="ckwvfclzq0000lktf00qr73ca"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-red/" rel="tag">the red</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+
+  
+
+</article>
+    
     <article id="post-html-img-markup" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -117,33 +183,9 @@
 </ul>
 </li>
 </ul>
-<h2 id="이미지-제공-로직"><a href="#이미지-제공-로직" class="headerlink" title="이미지 제공 로직"></a>이미지 제공 로직</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if (&#x27;avif&#x27;를 지원하면) &#123;</span><br><span class="line">    &#x27;avif&#x27; 출력</span><br><span class="line">&#125; else if (&#x27;webp&#x27;를 지원하면) &#123;</span><br><span class="line">    &#x27;webp&#x27; 출력</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    &#x27;jpg&#x27; 출력</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">&quot;x.avif&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/avif&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">&quot;x.webp&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/webp&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;x.jpg&quot;</span> <span class="attr">alt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>type은 조건절이라고 생각한다. avif를 지원하면 해당 avif를 출력하라. 등등</li>
-<li> 세가지 이미지 포맷중에 단 하나의 이미지만 출력한다.</li>
-<li>type 뿐만 아니라 media 분기도 가능하다.</li>
-</ul>
-<p><em><strong>ex</strong></em></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">&quot;small.webp&quot;</span> <span class="attr">media</span>=<span class="string">&quot;(max-width:960px)&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;large.webp&quot;</span> <span class="attr">alt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>resolution 이미지로도 분기 가능하다. img에도 srcset 사용 가능하다.<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">&quot;2x.webp _2x, 1x.webp&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/webp&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">srcset</span>=<span class="string">&quot;2x.jpg _2x&quot;</span> <span class="attr">src</span>=<span class="string">&quot;1x.jpg&quot;</span> <span class="attr">alt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<p><code>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; alt&gt;</code></p>
-<ul>
-<li>lazy: 로딩 지연 / async: 디코딩 지연</li>
-</ul>
-<h2 id="debugging"><a href="#debugging" class="headerlink" title="debugging"></a>debugging</h2><ul>
-<li><code>currentSrc</code>: 현재 화면에 출력하고 있는 소스</li>
-<li><code>intrinsic</code>: 현재 화면에 출력하는 소스의 원본 사이즈</li>
-</ul>
-<hr>
-<blockquote>
-<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
-</blockquote>
-
+      
+      <a class="article-more-link" href="/2021/12/07/html-img-markup/">MORE</a>
+      
       
       <!-- reward -->
       
@@ -724,78 +766,6 @@
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SVG/" rel="tag">SVG</a></li></ul>
-
-    </footer>
-
-  </div>
-
-  
-
-  
-
-  
-
-</article>
-    
-    <article id="post-svg-overview" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/12/03/svg-overview/"
-    >SVG 개요</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2021/12/03/svg-overview/" class="article-date">
-  <time datetime="2021-12-03T12:01:19.000Z" itemprop="datePublished">2021-12-03</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/SVG/">SVG</a>
-  </div>
-
-      
-    </div>
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <p>SVG란 확장 가능한 벡터 그래픽(Scalable Vector Graphics)이자 XML 기반의 2차원 그래픽이다.</p>
-<ul>
-<li>DOM의 일부로서 각 객체별로 HTML 엘리먼트가 추가된다.</li>
-<li>모양이 복잡하지 않을 경우 파일 사이즈도 작다.</li>
-<li>포인트가 많으면 많을 수록 계산해서 그려지기 때문에 성능이 떨어진다.</li>
-<li>CSS와 자바스크립트를 사용해서 조작이 가능하다.</li>
-</ul>
-      
-      <a class="article-more-link" href="/2021/12/03/svg-overview/">MORE</a>
-      
-      
-      <!-- reward -->
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2021/12/03/svg-overview/" data-id="ckwqcbsg20008o8tf04af2lxj"
-        class="article-share-link">share</a>
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SVG/" rel="tag">SVG</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overview/" rel="tag">overview</a></li></ul>
 
     </footer>
 
