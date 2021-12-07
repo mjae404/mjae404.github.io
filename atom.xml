@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-07T01:30:22.886Z</updated>
+  <updated>2021-12-07T01:32:10.865Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://mjae404.github.io/2021/12/07/html-why-css-is-difficult/"/>
     <id>http://mjae404.github.io/2021/12/07/html-why-css-is-difficult/</id>
     <published>2021-12-07T01:27:53.000Z</published>
-    <updated>2021-12-07T01:30:22.886Z</updated>
+    <updated>2021-12-07T01:32:10.865Z</updated>
     
     <summary type="html">
     
@@ -32,10 +32,10 @@
     
       <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
     
-      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
     
     
-      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
     
       <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
     
