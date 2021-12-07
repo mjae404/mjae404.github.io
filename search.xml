@@ -10226,4 +10226,57 @@
         <tag>the red</tag>
       </tags>
   </entry>
+  <entry>
+    <title>HTML 이미지 마크업 최적화</title>
+    <url>/2021/12/07/html-img-markup/</url>
+    <content><![CDATA[<h2 id="이미지-포맷"><a href="#이미지-포맷" class="headerlink" title="이미지 포맷"></a>이미지 포맷</h2><ul>
+<li><code>.jpg</code>/<code>.png</code><ul>
+<li>모든 브라우저에서 지원하는 폴백 이미지</li>
+</ul>
+</li>
+<li><code>.webp</code> (알파 채널, ie 미지원)<ul>
+<li><code>jpg</code>/<code>png</code> 대비 30-70% 수준의 용량</li>
+</ul>
+</li>
+<li><code>.avif</code> (알파채널, 크롬/삼성인터넷 지원)<ul>
+<li> 저용량+고품질</li>
+</ul>
+</li>
+</ul>
+<h2 id="이미지-제공-로직"><a href="#이미지-제공-로직" class="headerlink" title="이미지 제공 로직"></a>이미지 제공 로직</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">if (&#x27;avif&#x27;를 지원하면) &#123;</span><br><span class="line">    &#x27;avif&#x27; 출력</span><br><span class="line">&#125; else if (&#x27;webp&#x27;를 지원하면) &#123;</span><br><span class="line">    &#x27;webp&#x27; 출력</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    &#x27;jpg&#x27; 출력</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">&quot;x.avif&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/avif&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">&quot;x.webp&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/webp&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;x.jpg&quot;</span> <span class="attr">alt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>type은 조건절이라고 생각한다. avif를 지원하면 해당 avif를 출력하라. 등등</li>
+<li> 세가지 이미지 포맷중에 단 하나의 이미지만 출력한다.</li>
+<li>type 뿐만 아니라 media 분기도 가능하다.</li>
+</ul>
+<p><em><strong>ex</strong></em></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">&quot;small.webp&quot;</span> <span class="attr">media</span>=<span class="string">&quot;(max-width:960px)&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;large.webp&quot;</span> <span class="attr">alt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>resolution 이미지로도 분기 가능하다. img에도 srcset 사용 가능하다.<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">picture</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">srcset</span>=<span class="string">&quot;2x.webp _2x, 1x.webp&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/webp&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">srcset</span>=<span class="string">&quot;2x.jpg _2x&quot;</span> <span class="attr">src</span>=<span class="string">&quot;1x.jpg&quot;</span> <span class="attr">alt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">picture</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><code>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; alt&gt;</code></p>
+<ul>
+<li>lazy: 로딩 지연 / async: 디코딩 지연</li>
+</ul>
+<h2 id="debugging"><a href="#debugging" class="headerlink" title="debugging"></a>debugging</h2><ul>
+<li><code>currentSrc</code>: 현재 화면에 출력하고 있는 소스</li>
+<li><code>intrinsic</code>: 현재 화면에 출력하는 소스의 원본 사이즈</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>the red</tag>
+      </tags>
+  </entry>
 </search>
