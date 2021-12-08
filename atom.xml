@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-07T01:32:10.865Z</updated>
+  <updated>2021-12-08T01:44:38.036Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS의 절대 권력, 초기화</title>
+    <link href="http://mjae404.github.io/2021/12/08/css-reset/"/>
+    <id>http://mjae404.github.io/2021/12/08/css-reset/</id>
+    <published>2021-12-08T01:43:12.000Z</published>
+    <updated>2021-12-08T01:44:38.036Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;대부분의 초기화 스타일은 쓸모 없거나 덮어쓴다.&lt;/li&gt;
+&lt;li&gt;개발자 도구에서 &lt;code&gt;coverage&lt;/code&gt;를 검색해 사용되지 않는 CSS를 확인할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS가 어려운 이유</title>
@@ -536,29 +564,6 @@
       <category term="git" scheme="http://mjae404.github.io/tags/git/"/>
     
       <category term="ignore" scheme="http://mjae404.github.io/tags/ignore/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>npm dart sass</title>
-    <link href="http://mjae404.github.io/2021/08/08/npm-dart-sass/"/>
-    <id>http://mjae404.github.io/2021/08/08/npm-dart-sass/</id>
-    <published>2021-08-08T03:34:50.000Z</published>
-    <updated>2021-08-08T03:40:19.131Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SASS 컴파일러 설치해본다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="npm" scheme="http://mjae404.github.io/categories/npm/"/>
-    
-    
-      <category term="npm" scheme="http://mjae404.github.io/tags/npm/"/>
-    
-      <category term="dart sass" scheme="http://mjae404.github.io/tags/dart-sass/"/>
     
   </entry>
   

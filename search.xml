@@ -10352,4 +10352,38 @@
         <tag>the red</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS의 절대 권력, 초기화</title>
+    <url>/2021/12/08/css-reset/</url>
+    <content><![CDATA[<ul>
+<li>대부분의 초기화 스타일은 쓸모 없거나 덮어쓴다.</li>
+<li>개발자 도구에서 <code>coverage</code>를 검색해 사용되지 않는 CSS를 확인할 수 있다.</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="넣으면-적절할-것-같은-코드들"><a href="#넣으면-적절할-것-같은-코드들" class="headerlink" title="넣으면 적절할 것 같은 코드들"></a>넣으면 적절할 것 같은 코드들</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">overflow-wrap</span>: break-word;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* DO NOT BREAK KOREAN WORDS */</span></span><br><span class="line"><span class="selector-pseudo">:lang(ko)</span> &#123;</span><br><span class="line">    <span class="attribute">word-break</span>: keep-all;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>클래스로 reset 하는 경우가 좋을 수도 있다.<ul>
+<li>클래스<code>:where</code>(선택자): 선택자 정수, 선택자의 특이성을 증가시키지 않음</li>
+<li>ex) <code>class:where(ol, ul) &#123;list-style: none;&#125;</code> -&gt; ol, ul에 클래스가 들어가있는 곳만 초기화</li>
+<li><code>is</code>도 같은 기능을 하고 있지만, 특이성을 증가시킴</li>
+<li><code>is</code>, <code>where</code>은 아직 삼성 브라우저에서 작동하지 않음.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>the red</tag>
+      </tags>
+  </entry>
 </search>
