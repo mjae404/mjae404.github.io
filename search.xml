@@ -10440,7 +10440,7 @@
       </tags>
   </entry>
   <entry>
-    <title>레이아웃 여백</title>
+    <title>CSS 레이아웃 여백</title>
     <url>/2021/12/11/css-layout-space/</url>
     <content><![CDATA[<ul>
 <li>vmin, vmax: viewfort-min, viewfort-max</li>
