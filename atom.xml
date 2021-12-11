@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-10T06:35:45.536Z</updated>
+  <updated>2021-12-11T02:39:53.892Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>레이아웃 여백</title>
+    <link href="http://mjae404.github.io/2021/12/11/css-layout-space/"/>
+    <id>http://mjae404.github.io/2021/12/11/css-layout-space/</id>
+    <published>2021-12-11T02:38:46.000Z</published>
+    <updated>2021-12-11T02:39:53.892Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;vmin, vmax: viewfort-min, viewfort-max&lt;/li&gt;
+&lt;li&gt;padding의 %값: 컨테이너 블럭의 너비값을 참조한다. (padding-top이든, padding-left이든 너비를 참조함)&lt;/li&gt;
+&lt;li&gt;margin의  %값: 컨테이너 블럭의 너비값을 참조한다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CSS 레이아웃 배치</title>
-    <link href="http://mjae404.github.io/2021/12/10/CSS-layout-arrange/"/>
-    <id>http://mjae404.github.io/2021/12/10/CSS-layout-arrange/</id>
+    <link href="http://mjae404.github.io/2021/12/10/css-layout-arrange/"/>
+    <id>http://mjae404.github.io/2021/12/10/css-layout-arrange/</id>
     <published>2021-12-10T06:34:43.000Z</published>
-    <updated>2021-12-10T06:35:45.536Z</updated>
+    <updated>2021-12-11T02:39:25.543Z</updated>
     
     <summary type="html">
     
@@ -537,31 +566,6 @@
     <summary type="html">
     
       &lt;p&gt;구구단 구현하기.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 별찍기</title>
-    <link href="http://mjae404.github.io/2021/09/08/js-exercise013/"/>
-    <id>http://mjae404.github.io/2021/09/08/js-exercise013/</id>
-    <published>2021-09-08T05:02:48.000Z</published>
-    <updated>2021-09-08T05:31:07.196Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;별찍기 연습.&lt;/p&gt;
     
     </summary>
     
