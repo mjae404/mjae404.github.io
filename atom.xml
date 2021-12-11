@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-11T02:40:59.634Z</updated>
+  <updated>2021-12-11T17:01:45.771Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 레이아웃 플로팅</title>
+    <link href="http://mjae404.github.io/2021/12/12/css-layout-floating/"/>
+    <id>http://mjae404.github.io/2021/12/12/css-layout-floating/</id>
+    <published>2021-12-11T17:00:56.000Z</published>
+    <updated>2021-12-11T17:01:45.771Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;플로팅-속성&quot;&gt;&lt;a href=&quot;#플로팅-속성&quot; class=&quot;headerlink&quot; title=&quot;플로팅 속성&quot;&gt;&lt;/a&gt;플로팅 속성&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;플로팅 요소의 너비는 수축하고 일반적인 흐름에서 벗어난다.&lt;/li&gt;
+&lt;li&gt;인접 후행 블록 요소는 플로팅 요소와 겹치고 인라인 요소(+텍스트 요소)는 플로팅 요소 주변으로 흐른다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clear&lt;/code&gt;, &lt;code&gt;flow-root&lt;/code&gt; 속성으로 해제할 수 있다.&lt;/li&gt;
+&lt;li&gt;컬럼을 배치하는 속성이 아니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 레이아웃 여백</title>
@@ -541,31 +571,6 @@
     <summary type="html">
     
       &lt;p&gt;숫자야구 구현하기.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 구구단 구현</title>
-    <link href="http://mjae404.github.io/2021/09/09/js-exercise014/"/>
-    <id>http://mjae404.github.io/2021/09/09/js-exercise014/</id>
-    <published>2021-09-09T07:04:27.000Z</published>
-    <updated>2021-09-10T06:46:05.373Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;구구단 구현하기.&lt;/p&gt;
     
     </summary>
     

@@ -10576,4 +10576,46 @@
         <tag>the red</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS 레이아웃 플로팅</title>
+    <url>/2021/12/12/css-layout-floating/</url>
+    <content><![CDATA[<h2 id="플로팅-속성"><a href="#플로팅-속성" class="headerlink" title="플로팅 속성"></a>플로팅 속성</h2><ul>
+<li>플로팅 요소의 너비는 수축하고 일반적인 흐름에서 벗어난다.</li>
+<li>인접 후행 블록 요소는 플로팅 요소와 겹치고 인라인 요소(+텍스트 요소)는 플로팅 요소 주변으로 흐른다.</li>
+<li><code>clear</code>, <code>flow-root</code> 속성으로 해제할 수 있다.</li>
+<li>컬럼을 배치하는 속성이 아니다.</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="플로팅-해제"><a href="#플로팅-해제" class="headerlink" title="플로팅 해제"></a>플로팅 해제</h2><ol>
+<li>부모 요소에 <code>float</code> / 자식 요소에 <code>float</code></li>
+<li>자식 요소 하단에 <code>blank enlement</code> 넣고 <code>clear:both</code> 속성</li>
+<li>부모 요소에 <code>overflow: hidden</code></li>
+<li>부모 요소에 <code>display: inline-block</code></li>
+<li>부모 요소 <code>after</code>에 <code>clear: both</code></li>
+<li>부모요소에 <code>display: flow-root</code> (ie에서는 안됨)</li>
+</ol>
+<h2 id="float-amp-display"><a href="#float-amp-display" class="headerlink" title="float &amp; display"></a>float &amp; display</h2><ol>
+<li>float가 되면 <code>display: block</code>가 된다.</li>
+<li>display 속성이 없어도 width, hieght, 수직 margin, padding 속성을 사용할 수 있다.</li>
+<li>따라서 보통의 경우 display 속성을 명시할 필요가 없다.</li>
+</ol>
+<h2 id="column-layout"><a href="#column-layout" class="headerlink" title="column layout"></a>column layout</h2><ol>
+<li><code>columns: column-width || column-count</code> / <code>coumns-gap</code> / <code>column-rule</code></li>
+<li><code>break-inside: avoid</code></li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>the red</tag>
+      </tags>
+  </entry>
 </search>
