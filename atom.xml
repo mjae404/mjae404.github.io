@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-11T17:01:45.771Z</updated>
+  <updated>2021-12-12T15:21:52.537Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS flex</title>
+    <link href="http://mjae404.github.io/2021/12/13/css-flex-1/"/>
+    <id>http://mjae404.github.io/2021/12/13/css-flex-1/</id>
+    <published>2021-12-12T15:20:57.000Z</published>
+    <updated>2021-12-12T15:21:52.537Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;flex-item&quot;&gt;&lt;a href=&quot;#flex-item&quot; class=&quot;headerlink&quot; title=&quot;flex item&quot;&gt;&lt;/a&gt;flex item&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.flex-item &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex: 0 1 auto; &amp;#x2F;* 팽창지수 + 수축지수 + 기준크기 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-grow: 0; &amp;#x2F;* 팽창지수 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-shrink: 1; &amp;#x2F;* 수축지수 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-basis: auto; &amp;#x2F;* 기준 크기 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    align-self: auto; &amp;#x2F;* 독립적 교차축 정렬*&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    order: 0; &amp;#x2F;* 배치 정렬 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 레이아웃 플로팅</title>
@@ -546,31 +571,6 @@
     <summary type="html">
     
       &lt;p&gt;틱택토 게임 구현하기.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 숫자야구 구현</title>
-    <link href="http://mjae404.github.io/2021/09/10/js-exercise015/"/>
-    <id>http://mjae404.github.io/2021/09/10/js-exercise015/</id>
-    <published>2021-09-10T10:31:44.000Z</published>
-    <updated>2021-09-12T10:29:33.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;숫자야구 구현하기.&lt;/p&gt;
     
     </summary>
     
