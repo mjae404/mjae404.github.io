@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-14T10:27:01.744Z</updated>
+  <updated>2021-12-15T03:16:09.519Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>css grid</title>
+    <title>CSS로 그리기</title>
+    <link href="http://mjae404.github.io/2021/12/15/css-drawing/"/>
+    <id>http://mjae404.github.io/2021/12/15/css-drawing/</id>
+    <published>2021-12-15T03:15:10.000Z</published>
+    <updated>2021-12-15T03:16:09.519Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;삼각형으로-그리기&quot;&gt;&lt;a href=&quot;#삼각형으로-그리기&quot; class=&quot;headerlink&quot; title=&quot;삼각형으로 그리기&quot;&gt;&lt;/a&gt;삼각형으로 그리기&lt;/h2&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;::before&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;margin-right&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;8px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;40px&lt;/span&gt; solid transparent;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;border-left-color&lt;/span&gt;: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS grid</title>
     <link href="http://mjae404.github.io/2021/12/14/css-grid-1/"/>
     <id>http://mjae404.github.io/2021/12/14/css-grid-1/</id>
     <published>2021-12-14T10:26:05.000Z</published>
-    <updated>2021-12-14T10:27:01.744Z</updated>
+    <updated>2021-12-15T03:16:00.030Z</updated>
     
     <summary type="html">
     
@@ -551,31 +576,6 @@
     <summary type="html">
     
       &lt;p&gt;가위바위보 구현하기.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 로또추첨기</title>
-    <link href="http://mjae404.github.io/2021/09/17/js-exercise017/"/>
-    <id>http://mjae404.github.io/2021/09/17/js-exercise017/</id>
-    <published>2021-09-17T06:57:34.000Z</published>
-    <updated>2021-09-18T00:37:55.765Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;로또 추첨기 구현하기.&lt;/p&gt;
     
     </summary>
     
