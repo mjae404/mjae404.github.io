@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-16T02:13:16.949Z</updated>
+  <updated>2021-12-17T05:12:46.152Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML 덩어리 콘텐츠 빨리 그리기</title>
+    <link href="http://mjae404.github.io/2021/12/17/html-largest-contentful-paint/"/>
+    <id>http://mjae404.github.io/2021/12/17/html-largest-contentful-paint/</id>
+    <published>2021-12-17T05:12:07.000Z</published>
+    <updated>2021-12-17T05:12:46.152Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;LCP&lt;/code&gt;는 구글 핵심 성능 지표에 포함되는 항목&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lighthouse&lt;/code&gt;: 크롬에 내장되어 있음&lt;/li&gt;
+&lt;li&gt;2.5초 이내에 로드하는 것이 목표&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 최적화</title>
@@ -560,35 +589,6 @@
     
       <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
     
-    
-      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVG 개요</title>
-    <link href="http://mjae404.github.io/2021/12/03/svg-overview/"/>
-    <id>http://mjae404.github.io/2021/12/03/svg-overview/</id>
-    <published>2021-12-03T12:01:19.000Z</published>
-    <updated>2021-12-03T12:06:40.906Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SVG란 확장 가능한 벡터 그래픽(Scalable Vector Graphics)이자 XML 기반의 2차원 그래픽이다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DOM의 일부로서 각 객체별로 HTML 엘리먼트가 추가된다.&lt;/li&gt;
-&lt;li&gt;모양이 복잡하지 않을 경우 파일 사이즈도 작다.&lt;/li&gt;
-&lt;li&gt;포인트가 많으면 많을 수록 계산해서 그려지기 때문에 성능이 떨어진다.&lt;/li&gt;
-&lt;li&gt;CSS와 자바스크립트를 사용해서 조작이 가능하다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
     
       <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
     
