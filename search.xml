@@ -10923,4 +10923,65 @@
         <tag>the red</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CSS 덜컥덜컥 누적 배치 변경 문제</title>
+    <url>/2021/12/18/css-cumulative-layout-shift/</url>
+    <content><![CDATA[<ul>
+<li><p><code>CLS</code>는 구글 핵심 성능 지표에 포함되는 항목</p>
+</li>
+<li><p><code>lighthouse</code>: 크롬에 내장되어 있음</p>
+</li>
+<li><p>0.1 이내에 로드하는 것이 목표</p>
+</li>
+<li><p>돔이 뒤늦게 추가, 웹폰트가 뒤늦게 로딩되는 등의 이유로 레이아웃 배치가 변경됨.</p>
+</li>
+<li><p>FOIT: font of invisible text / 보이지 않다가 나타나는 현상</p>
+</li>
+<li><p>FOUT: font of unstyled text / 시스템 폰트에서 웹폰트로 변경되는 현상</p>
+</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="CLS-유발-요인"><a href="#CLS-유발-요인" class="headerlink" title="CLS 유발 요인"></a>CLS 유발 요인</h2><ul>
+<li>첫 페인팅 이후 뷰포트 안에서 배치가 바뀌는 상황<ul>
+<li>치수를 알 수 없는 이미지 로딩.</li>
+<li>동적으로 추가된 DOM.</li>
+<li>웹폰트 swap 페인팅.</li>
+</ul>
+</li>
+</ul>
+<h2 id="CLS-확인"><a href="#CLS-확인" class="headerlink" title="CLS 확인"></a>CLS 확인</h2><ul>
+<li>동적으로 추가하는 콘텐츠에 자리 표시자 제공</li>
+<li>이미지/영상 요소에 비율 힌트 제공</li>
+<li>애니메이션 적용시 transform 사용 (width, height X)</li>
+</ul>
+<h3 id="이미지-영상-비율-힌트-제공하기"><a href="#이미지-영상-비율-힌트-제공하기" class="headerlink" title="이미지/영상 비율 힌트 제공하기"></a>이미지/영상 비율 힌트 제공하기</h3><p><strong>첫번째</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;...&quot;</span> <span class="attr">width</span>=<span class="string">&quot;800&quot;</span> <span class="attr">height</span>=<span class="string">&quot;534&quot;</span> <span class="attr">alt</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">max-width</span>: 100%;</span><br><span class="line"><span class="selector-tag">height</span>: <span class="selector-tag">auto</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>두번째</strong></p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">aspect-ratio: 800/534; /* check caniuse */</span><br></pre></td></tr></table></figure>
+
+<p><strong>세번째</strong></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.utube</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">padding-top</span>: <span class="number">56.25%</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.utube__ifram</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="자리-표시자"><a href="#자리-표시자" class="headerlink" title="자리 표시자"></a>자리 표시자</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.hero_banner</span> &#123;</span><br><span class="line">    <span class="attribute">min-height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: silver;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="웹폰트-대체-글꼴"><a href="#웹폰트-대체-글꼴" class="headerlink" title="웹폰트 대체 글꼴"></a>웹폰트 대체 글꼴</h3><ul>
+<li>웹폰트와 최대한 비슷한 대체 글꼴 지정</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>HTML &amp; CSS</category>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>the red</tag>
+      </tags>
+  </entry>
 </search>

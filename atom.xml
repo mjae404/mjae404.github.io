@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-17T05:12:46.152Z</updated>
+  <updated>2021-12-18T08:06:27.939Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 덜컥덜컥 누적 배치 변경 문제</title>
+    <link href="http://mjae404.github.io/2021/12/18/css-cumulative-layout-shift/"/>
+    <id>http://mjae404.github.io/2021/12/18/css-cumulative-layout-shift/</id>
+    <published>2021-12-18T08:05:29.035Z</published>
+    <updated>2021-12-18T08:06:27.939Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;CLS&lt;/code&gt;는 구글 핵심 성능 지표에 포함되는 항목&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;lighthouse&lt;/code&gt;: 크롬에 내장되어 있음&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;0.1 이내에 로드하는 것이 목표&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;돔이 뒤늦게 추가, 웹폰트가 뒤늦게 로딩되는 등의 이유로 레이아웃 배치가 변경됨.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;FOIT: font of invisible text / 보이지 않다가 나타나는 현상&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;FOUT: font of unstyled text / 시스템 폰트에서 웹폰트로 변경되는 현상&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML 덩어리 콘텐츠 빨리 그리기</title>
@@ -565,32 +603,6 @@
       <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
     
       <category term="effect" scheme="http://mjae404.github.io/tags/effect/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVG 기본</title>
-    <link href="http://mjae404.github.io/2021/12/03/svg-basic/"/>
-    <id>http://mjae404.github.io/2021/12/03/svg-basic/</id>
-    <published>2021-12-03T12:02:24.000Z</published>
-    <updated>2021-12-03T12:06:20.638Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;svg&lt;/code&gt;의 기본 구성 태그는 아래와 같으며 &lt;code&gt;xmlns&lt;/code&gt;는 생략 가능하다.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;svg&lt;/code&gt; 안에 style을 인라인으로 넣어둘 수도 있다.&lt;/li&gt;
-&lt;li&gt;기본 CSS와 같이 클래스를 사용하여 작업하는 것이 바람직하다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;http:/www.w3.org/2000/svg&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;svg&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
-    
-    
-      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
     
   </entry>
   
