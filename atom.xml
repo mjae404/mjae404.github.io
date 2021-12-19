@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-19T07:42:45.431Z</updated>
+  <updated>2021-12-19T08:52:33.400Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 추상화</title>
+    <link href="http://mjae404.github.io/2021/12/19/python-abstraction/"/>
+    <id>http://mjae404.github.io/2021/12/19/python-abstraction/</id>
+    <published>2021-12-19T08:51:58.000Z</published>
+    <updated>2021-12-19T08:52:33.400Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;추상화 (Abstraction)&lt;/strong&gt;&lt;br&gt;복잡한 세부 사항은 숨기면서 주요한 기능에만 집중할 수  있게 해주는 개념이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;변수 (Variable): 값을 저장&lt;/li&gt;
+&lt;li&gt;함수 (Function): 명령을 저장&lt;/li&gt;
+&lt;li&gt;객체 (Class)&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://mjae404.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
+    
+      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 데이터 타입</title>
@@ -585,29 +613,6 @@
       <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
     
       <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVG 애니메이션</title>
-    <link href="http://mjae404.github.io/2021/12/03/svg-animation/"/>
-    <id>http://mjae404.github.io/2021/12/03/svg-animation/</id>
-    <published>2021-12-03T12:04:23.000Z</published>
-    <updated>2021-12-06T02:48:46.426Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;SVG&lt;/code&gt;는 &lt;code&gt;CSS&lt;/code&gt;와 &lt;code&gt;SMIL&lt;/code&gt;로 애니메이션을 구현할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="SVG" scheme="http://mjae404.github.io/categories/SVG/"/>
-    
-    
-      <category term="animation" scheme="http://mjae404.github.io/tags/animation/"/>
-    
-      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
     
   </entry>
   
