@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-19T08:57:17.087Z</updated>
+  <updated>2021-12-20T04:37:20.327Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 모듈</title>
+    <link href="http://mjae404.github.io/2021/12/20/python-module/"/>
+    <id>http://mjae404.github.io/2021/12/20/python-module/</id>
+    <published>2021-12-20T04:36:48.000Z</published>
+    <updated>2021-12-20T04:37:20.327Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;모듈&lt;/strong&gt; 은 바로 실행하는 용도가 아니라, 나중에 사용할 함수나 클래스 등을 미리 정의해둔 파일이다. 정보를 한번만 정의해두고 import하면 여러 프로그램에서 손쉽게 사용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://mjae404.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
+    
+      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 추상화</title>
@@ -572,34 +595,6 @@
 &lt;li&gt;SSL(https) 사용 여부&lt;/li&gt;
 &lt;li&gt;콘텐츠의 양, 질, 개연성&lt;/li&gt;
 &lt;li&gt;사용자 경험: LCP(최대 콘텐츠 블럭 그리기), CLS(누적 배치 변경) - 페이지가 덜컥덜컥 열리면 안됨&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
-    
-    
-      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML을 어떻게 공부해야 하는가</title>
-    <link href="http://mjae404.github.io/2021/12/04/html-how-to-learn/"/>
-    <id>http://mjae404.github.io/2021/12/04/html-how-to-learn/</id>
-    <published>2021-12-04T13:10:44.000Z</published>
-    <updated>2021-12-04T13:25:26.711Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Flow-content-플로우-콘텐츠&quot;&gt;&lt;a href=&quot;#Flow-content-플로우-콘텐츠&quot; class=&quot;headerlink&quot; title=&quot;Flow content (플로우 콘텐츠)&quot;&gt;&lt;/a&gt;Flow content (플로우 콘텐츠)&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;body&lt;/code&gt;에 포함할 수 있는 요소.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;base&lt;/code&gt;, &lt;code&gt;style&lt;/code&gt;, &lt;code&gt;title&lt;/code&gt; 요소를 제외한 나머지 모든 요소.&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
