@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-20T04:37:20.327Z</updated>
+  <updated>2021-12-21T08:51:01.928Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PYTHON 리스트</title>
+    <link href="http://mjae404.github.io/2021/12/21/python-list/"/>
+    <id>http://mjae404.github.io/2021/12/21/python-list/</id>
+    <published>2021-12-21T08:50:23.000Z</published>
+    <updated>2021-12-21T08:51:01.928Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;변수에 여러가지 값을 저장하고 싶다면 리스트(list)라는 자료형을 사용하면 된다. 리스트 안에는 또 다른 리스트가 있을 수 있으며, &lt;strong&gt;nested list&lt;/strong&gt; 라고 부른다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+    
+      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
+    
+      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PYTHON 모듈</title>
     <link href="http://mjae404.github.io/2021/12/20/python-module/"/>
     <id>http://mjae404.github.io/2021/12/20/python-module/</id>
     <published>2021-12-20T04:36:48.000Z</published>
-    <updated>2021-12-20T04:37:20.327Z</updated>
+    <updated>2021-12-21T08:51:12.167Z</updated>
     
     <summary type="html">
     
@@ -30,7 +53,7 @@
     </summary>
     
     
-      <category term="python" scheme="http://mjae404.github.io/categories/python/"/>
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
     
     
       <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
@@ -44,7 +67,7 @@
     <link href="http://mjae404.github.io/2021/12/19/python-abstraction/"/>
     <id>http://mjae404.github.io/2021/12/19/python-abstraction/</id>
     <published>2021-12-19T08:51:58.000Z</published>
-    <updated>2021-12-19T08:57:17.087Z</updated>
+    <updated>2021-12-21T08:51:06.631Z</updated>
     
     <summary type="html">
     
@@ -58,7 +81,7 @@
     </summary>
     
     
-      <category term="python" scheme="http://mjae404.github.io/categories/python/"/>
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
     
     
       <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
@@ -72,7 +95,7 @@
     <link href="http://mjae404.github.io/2021/12/19/python-datatype/"/>
     <id>http://mjae404.github.io/2021/12/19/python-datatype/</id>
     <published>2021-12-19T07:35:45.000Z</published>
-    <updated>2021-12-19T08:57:13.574Z</updated>
+    <updated>2021-12-21T08:51:09.565Z</updated>
     
     <summary type="html">
     
@@ -86,7 +109,7 @@
     </summary>
     
     
-      <category term="python" scheme="http://mjae404.github.io/categories/python/"/>
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
     
     
       <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
@@ -560,41 +583,6 @@
 &lt;li&gt;섹셔닝&lt;/li&gt;
 &lt;li&gt;명시적/암시적 섹션&lt;/li&gt;
 &lt;li&gt;어색한 섹션&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
-    
-    
-      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML 검색엔진</title>
-    <link href="http://mjae404.github.io/2021/12/04/html-seo/"/>
-    <id>http://mjae404.github.io/2021/12/04/html-seo/</id>
-    <published>2021-12-04T13:13:44.000Z</published>
-    <updated>2021-12-04T16:12:23.822Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;SEO에-영향을-주는-요인들&quot;&gt;&lt;a href=&quot;#SEO에-영향을-주는-요인들&quot; class=&quot;headerlink&quot; title=&quot;SEO에 영향을 주는 요인들&quot;&gt;&lt;/a&gt;SEO에 영향을 주는 요인들&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;검색 결과 페이지(SERP) 노출 대비 클릭률&lt;/li&gt;
-&lt;li&gt;백링크(BACKLINK): 다른 웹페이지로부터 인용(링크)되는 횟수&lt;/li&gt;
-&lt;li&gt;도메인 권력(Domain authority): 검색결과 페이지 순위 예측 점수&lt;/li&gt;
-&lt;li&gt;페이지 타이틀&lt;/li&gt;
-&lt;li&gt;메타 디스크립션&lt;/li&gt;
-&lt;li&gt;로딩속도&lt;/li&gt;
-&lt;li&gt;SSL(https) 사용 여부&lt;/li&gt;
-&lt;li&gt;콘텐츠의 양, 질, 개연성&lt;/li&gt;
-&lt;li&gt;사용자 경험: LCP(최대 콘텐츠 블럭 그리기), CLS(누적 배치 변경) - 페이지가 덜컥덜컥 열리면 안됨&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
