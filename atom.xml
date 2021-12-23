@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-21T15:56:42.502Z</updated>
+  <updated>2021-12-23T01:18:32.190Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 데이터 분석</title>
+    <link href="http://mjae404.github.io/2021/12/23/python-data-analysis/"/>
+    <id>http://mjae404.github.io/2021/12/23/python-data-analysis/</id>
+    <published>2021-12-23T01:17:55.000Z</published>
+    <updated>2021-12-23T01:18:32.190Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;파이썬으로는 데이터 분석을 할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+    
+      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
+    
+      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 제어문</title>
@@ -544,37 +567,6 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;pointer: 링크를 의미하기 때문에 button일 때는 pointer 하지 않는 것이 좋음.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
-    
-    
-      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML 의미론</title>
-    <link href="http://mjae404.github.io/2021/12/06/html-semantics/"/>
-    <id>http://mjae404.github.io/2021/12/06/html-semantics/</id>
-    <published>2021-12-06T02:46:08.000Z</published>
-    <updated>2021-12-06T02:48:11.007Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;span&lt;/code&gt;은 아무 의미가 없다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;sectioning&quot;&gt;&lt;a href=&quot;#sectioning&quot; class=&quot;headerlink&quot; title=&quot;sectioning&quot;&gt;&lt;/a&gt;sectioning&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;hx, hgroup, header, footer → 섹셔닝은 아니지만 함께 쓰는 요소&lt;/li&gt;
-&lt;li&gt;article, aside, nav, section → 섹셔닝 요소&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
