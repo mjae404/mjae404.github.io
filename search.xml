@@ -11495,4 +11495,82 @@
         <tag>data type</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PYTHON 객체</title>
+    <url>/2021/12/24/python-object/</url>
+    <content><![CDATA[<h1 id="PYTHON-객체"><a href="#PYTHON-객체" class="headerlink" title="PYTHON 객체"></a>PYTHON 객체</h1><p>속성과 행동을 떠올릴 수 있다면 모두 객체이다. 객체는 속성과 행동으로 이루어져 있다. 속성은 변수로 나타내며, 행동은 함수(메소드)로 나타낸다.</p>
+<p><img src="/images/python_object.jpg" alt="객체란"></p>
+<a id="more"></a>
+
+
+<h2 id="객체-지향-프로그래밍"><a href="#객체-지향-프로그래밍" class="headerlink" title="객체 지향 프로그래밍"></a>객체 지향 프로그래밍</h2><p>프로그램을 여러개의 독립된 __객체들과 그 객체들 간의 상호 작용__으로 파악하는 프로그래밍 접근법. 프로그램을 객체와 객체의 소통으로 바라본다. 프로그램에 어떤 객체들이 필요할지 정한 후에 속성과 행동을 정하고 서로 어떻게 소통할지 판단한다.</p>
+<blockquote>
+<p><strong>모델링(modeling)</strong> : 객체지향적으로 설계</p>
+</blockquote>
+<blockquote>
+<p><strong>꼭 알아야 할 4가지 개념</strong> : 추상화 캡슐화, 상속, 다형성</p>
+</blockquote>
+<h2 id="객체-설계의-원칙-SOLID-원칙"><a href="#객체-설계의-원칙-SOLID-원칙" class="headerlink" title="객체 설계의 원칙, SOLID 원칙"></a>객체 설계의 원칙, SOLID 원칙</h2><ol>
+<li>단일 책임 원칙 (Single Responsibility Principle)</li>
+<li>개방 폐쇄 원칙 (Open-closed Principle)</li>
+<li>리스코프 치환 원칙 (Liskov Substitution Principle)</li>
+<li>인터페이스 분리 원칙 (Interface Segregation Principle)</li>
+<li>의존 관계 역전 원칙 (Dependency Inversion Principle)</li>
+</ol>
+<h2 id="클래스와-인스턴스"><a href="#클래스와-인스턴스" class="headerlink" title="클래스와 인스턴스"></a>클래스와 인스턴스</h2><p>클래스는 어떠한 변수와 메소드를 가지는지 알려주는 명세서같은 설계도라고 보면 된다. 객체의 경우 클래스로 구현하고 싶은 결과물이며, 인스턴스로 실체화한다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">User1 = User() <span class="comment"># 유저 인스턴스가 생성된다.</span></span><br><span class="line">User2 = User()</span><br><span class="line">User3 = User()</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="인스턴스-변수"><a href="#인스턴스-변수" class="headerlink" title="인스턴스 변수"></a>인스턴스 변수</h2><p>인스턴스가 개인적으로 갖고 있는 속성.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">user1.name = <span class="string">&quot;Minjee Kim&quot;</span></span><br><span class="line">user1.email = <span class="string">&quot;mjaedot@gmail.com&quot;</span></span><br><span class="line">user1.nickname = <span class="string">&quot;mjaedot&quot;</span></span><br><span class="line"></span><br><span class="line">user2.name = <span class="string">&quot;Inho Baek&quot;</span></span><br><span class="line">user2.email = <span class="string">&quot;Inho@gmail.com&quot;</span></span><br><span class="line">user2.nickname = <span class="string">&quot;cheese in the trap&quot;</span></span><br><span class="line"></span><br><span class="line">user3.name = <span class="string">&quot;Myungyoung Gang&quot;</span></span><br><span class="line">user3.email = <span class="string">&quot;hope@gmail.com&quot;</span></span><br><span class="line">user3.nickname = <span class="string">&quot;Gadam Hangsul&quot;</span></span><br><span class="line"></span><br><span class="line">print(user1.name) <span class="comment"># Minjee Kim</span></span><br><span class="line">print(user2.email) <span class="comment">#Inho@gmail.com</span></span><br><span class="line">print(user3.age) <span class="comment">#정의하지 않았으므로 에러 발생</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="메소드"><a href="#메소드" class="headerlink" title="메소드"></a>메소드</h2><ol>
+<li><strong>인스턴스 메소드</strong> : 인스턴스 변수를 사용하거나 인스턴스 변수에 값을 설정하는 메소드.</li>
+<li><strong>클래스 메소드</strong></li>
+<li><strong>정적 메소드</strong></li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">say_hello</span>(<span class="params">some_user</span>):</span></span><br><span class="line">    print(<span class="string">&quot;Hello, my name is &#123;&#125;.&quot;</span>.format(some_user.name))</span><br><span class="line"></span><br><span class="line">User.say_hello(user1) <span class="comment"># Hello, my name is Minjee Kim.</span></span><br><span class="line">User.say_hello(user2) <span class="comment"># Hello, my name is Inho Baek.</span></span><br><span class="line">User.say_hello(user3) <span class="comment"># Hello, my name is Myungyoung Gang.</span></span><br></pre></td></tr></table></figure>
+
+<p><em><strong>인스턴스 메소드의 특별한 규칙</strong></em></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#인스턴스의 메소드를 호출. 첫번째 파라미터를 자동으로 넣어준다.</span></span><br><span class="line">user1.say_hello() <span class="comment"># Hello, my name is Minjee Kim.</span></span><br><span class="line">user1.say_hello(user1) <span class="comment"># 파라미터가 2개 들어가게 되어 에러 발생.</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="self"><a href="#self" class="headerlink" title="self"></a>self</h2><p>파이썬에서는 인스턴스 메소드의 첫번째 파라미터를 self로 사용하는 것을 권장한다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">login</span>(<span class="params">self, my_email, my_nickname</span>):</span></span><br><span class="line">    <span class="keyword">if</span>(self.email == my_email <span class="keyword">and</span> self.nickname == my_nickname):</span><br><span class="line">        print(<span class="string">&quot;환영합니다.&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&quot;실패!&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="인스턴스-변수와-같은-이름을-갖는-파라미터"><a href="#인스턴스-변수와-같은-이름을-갖는-파라미터" class="headerlink" title="인스턴스 변수와 같은 이름을 갖는 파라미터"></a>인스턴스 변수와 같은 이름을 갖는 파라미터</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check_name</span>(<span class="params">self, name</span>):</span></span><br><span class="line">    <span class="comment"># 파라미터로 받는 name이 유저의 이름과 같은지 불린값으로 리턴하는 메소드.</span></span><br><span class="line">    <span class="keyword">return</span> self.name == name</span><br><span class="line"></span><br><span class="line">print(user1.check_name(<span class="string">&quot;Minjee Kim&quot;</span>)) <span class="comment"># true</span></span><br><span class="line">print(user1.check_name(<span class="string">&quot;Inho Baek&quot;</span>)) <span class="comment"># false</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="인스턴스-변수-초기값-선언"><a href="#인스턴스-변수-초기값-선언" class="headerlink" title="인스턴스 변수 초기값 선언"></a>인스턴스 변수 초기값 선언</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">initialize</span>(<span class="params">self, name, email, password</span>):</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.email = email</span><br><span class="line">        self password = password</span><br><span class="line"></span><br><span class="line">user1 = User()</span><br><span class="line">user1.initialize(<span class="string">&quot;Young&quot;</span>, <span class="string">&quot;young@codeit.kr&quot;</span>, <span class="string">&quot;123456&quot;</span>)</span><br><span class="line"><span class="comment"># Young young@codeit.kr 123456</span></span><br><span class="line"></span><br><span class="line">user2 = User()</span><br><span class="line">user2.initialize(<span class="string">&quot;Yoonsoo&quot;</span>, <span class="string">&quot;yoonsoo@codeit.kr&quot;</span>, <span class="string">&quot;abcdef&quot;</span>)</span><br><span class="line"><span class="comment"># Yoonsoo yoonsoo@codeit.kr abcdef</span></span><br><span class="line"></span><br><span class="line">user3 = User()</span><br><span class="line">User.initialize(user3, <span class="string">&quot;Taeho&quot;</span>, <span class="string">&quot;taeho@codeit.kr&quot;</span>, <span class="string">&quot;123abc&quot;</span>)</span><br><span class="line"><span class="comment"># Taeho taeho@codeit.kr 123abc</span></span><br><span class="line"></span><br><span class="line">user4 = User()</span><br><span class="line">User.initialize(user4, <span class="string">&quot;Lisa&quot;</span>, <span class="string">&quot;lisa@codeit.kr&quot;</span>, <span class="string">&quot;abc123&quot;</span>)</span><br><span class="line"><span class="comment"># Lisa lisa@codeit.kr abc123</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="init-메소드"><a href="#init-메소드" class="headerlink" title="__init__ 메소드"></a><code>__init__</code> 메소드</h2><p><code>__init__</code> 메서드는 인스턴스가 생성될 때 자동으로 호출된다.</p>
+<ol>
+<li>User 인스턴스 생성</li>
+<li><code>__init__</code> 메소드 자동 호출</li>
+<li>인스턴스 변수들의 초깃값 설정</li>
+</ol>
+<blockquote>
+<p><strong>특수메소드</strong> : 특정 상황에서 자동으로 호출되는 메소드(언더바가 두개씩  있는 메소드. magic method, special method)</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">initialize</span>(<span class="params">self, name, email, password</span>):</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.email = email</span><br><span class="line">        self password = password</span><br><span class="line"></span><br><span class="line">user1 = User(<span class="string">&quot;Young&quot;</span>, <span class="string">&quot;young@codeit.kr&quot;</span>, <span class="string">&quot;123456&quot;</span>)</span><br><span class="line"><span class="comment"># Young young@codeit.kr 123456</span></span><br><span class="line"></span><br><span class="line">user2 = User(<span class="string">&quot;Yoonsoo&quot;</span>, <span class="string">&quot;yoonsoo@codeit.kr&quot;</span>, <span class="string">&quot;abcdef&quot;</span>)</span><br><span class="line"><span class="comment"># Yoonsoo yoonsoo@codeit.kr abcdef</span></span><br><span class="line"></span><br><span class="line">user3 = User(<span class="string">&quot;Taeho&quot;</span>, <span class="string">&quot;taeho@codeit.kr&quot;</span>, <span class="string">&quot;123abc&quot;</span>)</span><br><span class="line"><span class="comment"># Taeho taeho@codeit.kr 123abc</span></span><br><span class="line"></span><br><span class="line">user4 = User(<span class="string">&quot;Lisa&quot;</span>, <span class="string">&quot;lisa@codeit.kr&quot;</span>, <span class="string">&quot;abc123&quot;</span>)</span><br><span class="line"><span class="comment"># Lisa lisa@codeit.kr abc123</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="str-메소드"><a href="#str-메소드" class="headerlink" title="__str__ 메소드"></a><code>__str__</code> 메소드</h2><p>인스턴스를 출력할 때 우리가 원하는 정보를 나오게 하고 싶다면 클래스에 <code>__str__</code> 메소드를 정의하면 된다.</p>
+<blockquote>
+<p><strong>double underscore</strong> : dunder라고 부르기도 한다.</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, name, email, password</span>):</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.email = email</span><br><span class="line">        self password = password</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">sya_hello</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&quot;Hello, my name is &#123;&#125;.&quot;</span>.format(self.name))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;사용자: &#123;&#125;, 이메일: &#123;&#125;, 비밀번호: *****&quot;</span>.format(self.name, self.email)</span><br><span class="line"></span><br><span class="line">user1 = User(<span class="string">&quot;Minjee Kim&quot;</span>, <span class="string">&quot;mjaedot@gmail.com&quot;</span>, <span class="string">&quot;1234&quot;</span>)</span><br><span class="line">user1 = User(<span class="string">&quot;Inho Baek&quot;</span>, <span class="string">&quot;inho@gmail.com&quot;</span>, <span class="string">&quot;abcd&quot;</span>)</span><br><span class="line"></span><br><span class="line">print(user1)</span><br><span class="line">print(user2)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 객체지향 프로그래밍</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>data type</tag>
+      </tags>
+  </entry>
 </search>
