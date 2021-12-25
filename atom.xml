@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-23T15:45:26.215Z</updated>
+  <updated>2021-12-25T10:28:55.675Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,15 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SVG 돋보기</title>
+    <link href="http://mjae404.github.io/2021/12/25/svg-exercise001/"/>
+    <id>http://mjae404.github.io/2021/12/25/svg-exercise001/</id>
+    <published>2021-12-25T10:27:54.000Z</published>
+    <updated>2021-12-25T10:28:55.675Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SVG의 마스크 효과와 자바스크립트를 이용하여 돋보기 효과 만들기.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/exercise/SVG/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PYTHON 객체</title>
     <link href="http://mjae404.github.io/2021/12/24/python-object/"/>
     <id>http://mjae404.github.io/2021/12/24/python-object/</id>
     <published>2021-12-23T15:44:56.000Z</published>
-    <updated>2021-12-23T15:45:26.215Z</updated>
+    <updated>2021-12-23T15:46:05.948Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;PYTHON-객체&quot;&gt;&lt;a href=&quot;#PYTHON-객체&quot; class=&quot;headerlink&quot; title=&quot;PYTHON 객체&quot;&gt;&lt;/a&gt;PYTHON 객체&lt;/h1&gt;&lt;p&gt;속성과 행동을 떠올릴 수 있다면 모두 객체이다. 객체는 속성과 행동으로 이루어져 있다. 속성은 변수로 나타내며, 행동은 함수(메소드)로 나타낸다.&lt;/p&gt;
+      &lt;p&gt;속성과 행동을 떠올릴 수 있다면 모두 객체이다. 객체는 속성과 행동으로 이루어져 있다. 속성은 변수로 나타내며, 행동은 함수(메소드)로 나타낸다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/python_object.jpg&quot; alt=&quot;객체란&quot;&gt;&lt;/p&gt;
     
     </summary>
@@ -526,44 +551,6 @@
     
     
       <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML 이미지 마크업 최적화</title>
-    <link href="http://mjae404.github.io/2021/12/07/html-img-markup/"/>
-    <id>http://mjae404.github.io/2021/12/07/html-img-markup/</id>
-    <published>2021-12-07T01:22:07.000Z</published>
-    <updated>2021-12-07T01:24:49.238Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;이미지-포맷&quot;&gt;&lt;a href=&quot;#이미지-포맷&quot; class=&quot;headerlink&quot; title=&quot;이미지 포맷&quot;&gt;&lt;/a&gt;이미지 포맷&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.jpg&lt;/code&gt;/&lt;code&gt;.png&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;모든 브라우저에서 지원하는 폴백 이미지&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.webp&lt;/code&gt; (알파 채널, ie 미지원)&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;jpg&lt;/code&gt;/&lt;code&gt;png&lt;/code&gt; 대비 30-70% 수준의 용량&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.avif&lt;/code&gt; (알파채널, 크롬/삼성인터넷 지원)&lt;ul&gt;
-&lt;li&gt; 저용량+고품질&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
-    
-    
-      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
     
       <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
     
