@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-26T15:15:12.586Z</updated>
+  <updated>2021-12-28T06:19:51.337Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SVG SMIL 애니메이션 alternate 구현</title>
+    <link href="http://mjae404.github.io/2021/12/28/svg-exercise004/"/>
+    <id>http://mjae404.github.io/2021/12/28/svg-exercise004/</id>
+    <published>2021-12-28T06:18:16.000Z</published>
+    <updated>2021-12-28T06:19:51.337Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SMIL 애니메이션 alternate 구현하기.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/categories/exercise/SVG/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
+    
+  </entry>
   
   <entry>
     <title>SVG SMIL 애니메이션 Morphing 효과</title>
@@ -509,35 +534,6 @@
       &lt;h2 id=&quot;display&quot;&gt;&lt;a href=&quot;#display&quot; class=&quot;headerlink&quot; title=&quot;display&quot;&gt;&lt;/a&gt;display&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;inline&lt;/strong&gt;, &lt;strong&gt;block&lt;/strong&gt;, list-item, &lt;strong&gt;inline-block&lt;/strong&gt;, table, inline-table, table-row-group, table-header-group, table-footer-group, table-row, table-column-group, table-column, table-cell, tabel-caption, &lt;strong&gt;none&lt;/strong&gt;, inherit&lt;/p&gt;
 &lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 네이밍</title>
-    <link href="http://mjae404.github.io/2021/12/09/css-naming/"/>
-    <id>http://mjae404.github.io/2021/12/09/css-naming/</id>
-    <published>2021-12-08T16:57:54.000Z</published>
-    <updated>2021-12-08T16:59:05.768Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;BEM&quot;&gt;&lt;a href=&quot;#BEM&quot; class=&quot;headerlink&quot; title=&quot;BEM&quot;&gt;&lt;/a&gt;BEM&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Block: 재사용 가능한 독립적인 블록.&lt;/li&gt;
-&lt;li&gt;Element: 블록을 구성하는 종속적인 하위 요소.&lt;/li&gt;
-&lt;li&gt;Modifier: 블록 또는 요소의 변형(모양, 상태, 동작) → 확장할 때 이용&lt;/li&gt;
-&lt;/ul&gt;
     
     </summary>
     

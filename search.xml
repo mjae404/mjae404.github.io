@@ -11642,4 +11642,21 @@
         <tag>SVG</tag>
       </tags>
   </entry>
+  <entry>
+    <title>SVG SMIL 애니메이션 alternate 구현</title>
+    <url>/2021/12/28/svg-exercise004/</url>
+    <content><![CDATA[<p>SMIL 애니메이션 alternate 구현하기.</p>
+<a id="more"></a>
+
+<p><img src="/images/alternate.svg" alt="css bar animation"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">version</span>=<span class="string">&quot;1.1&quot;</span> <span class="attr">id</span>=<span class="string">&quot;Layer_1&quot;</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="attr">xmlns:xlink</span>=<span class="string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="attr">x</span>=<span class="string">&quot;0px&quot;</span> <span class="attr">y</span>=<span class="string">&quot;0px&quot;</span></span></span><br><span class="line"><span class="tag">     <span class="attr">viewBox</span>=<span class="string">&quot;0 0 1000 1000&quot;</span> <span class="attr">style</span>=<span class="string">&quot;enable-background:new 0 0 1000 1000;&quot;</span> <span class="attr">xml:space</span>=<span class="string">&quot;preserve&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">&quot;40&quot;</span> <span class="attr">y</span>=<span class="string">&quot;39&quot;</span> <span class="attr">width</span>=<span class="string">&quot;206&quot;</span> <span class="attr">height</span>=<span class="string">&quot;206&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">animate</span> <span class="attr">class</span>=<span class="string">&quot;ani&quot;</span> <span class="attr">attributeName</span>=<span class="string">&quot;x&quot;</span> <span class="attr">dur</span>=<span class="string">&quot;2s&quot;</span> <span class="attr">values</span>=<span class="string">&quot;0; 700; 0&quot;</span> <span class="attr">keytimes</span>=<span class="string">&quot;0; 0.5; 1&quot;</span> <span class="attr">repeatCount</span>=<span class="string">&quot;indefinite&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">animate</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>SVG</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>SVG</tag>
+      </tags>
+  </entry>
 </search>
