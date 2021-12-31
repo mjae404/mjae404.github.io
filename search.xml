@@ -11691,4 +11691,61 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PYTHON 홀수짝수</title>
+    <url>/2021/12/30/python-exercise002/</url>
+    <content><![CDATA[<p>짝수인지 홀수인지 판단해주는 <code>is_evenly_divisible</code> 함수를 쓰세요.</p>
+<a id="more"></a>
+
+
+<p><code>is_evenly_divisible</code>는 <code>number</code>(수)를 파라미터로 받습니다. 짝수인 경우에는, 즉 <code>number</code>가 2로 나누어 떨어질 경우에는 True를 리턴해줍니다. 홀수인 경우에는, 즉 <code>number</code>가 2로 나누어 떨어지지 않을 경우에는 False를 리턴해줍니다. 함수 안에는 <code>print</code>문을 사용하면 안 되고, return문을 사용하여야 합니다.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_evenly_divisible</span>(<span class="params">number</span>):</span></span><br><span class="line">    <span class="comment"># 코드를 작성하세요</span></span><br><span class="line"></span><br><span class="line">print(is_evenly_divisible(<span class="number">3</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">7</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">8</span>))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<p><em>개인 풀이</em></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_evenly_divisible</span>(<span class="params">number</span>):</span></span><br><span class="line">    <span class="comment"># 코드를 작성하세요</span></span><br><span class="line">    <span class="keyword">return</span> number%<span class="number">2</span>==<span class="number">0</span></span><br><span class="line"></span><br><span class="line">print(is_evenly_divisible(<span class="number">3</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">7</span>))</span><br><span class="line">print(is_evenly_divisible(<span class="number">8</span>))</span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PYTHON 학점 계산기</title>
+    <url>/2021/12/31/python-exercise003/</url>
+    <content><![CDATA[<p>성적표를 기다리는 학생들을 위해서 학점 계산기를 만들어보세요.</p>
+<a id="more"></a>
+
+<p>절대 평가 방식으로 총 점수가 90점 이상이면 A를, 80점 이상 90점 미만이면 B를, 70점 이상 80점 미만이면 C를, 60점 이상 70점 미만이면 D를, 60점 미만이면 F를 부과하는 수업입니다.</p>
+<p>성적이 A일 경우 “You get an A”를, B일 경우 “You get a B”를, C일 경우 “You get a C”를, D일 경우 “You get a D”를, F일 경우 “You fail”을 출력하는 함수를 쓰세요.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_grade</span>(<span class="params">midterm, final</span>):</span></span><br><span class="line">    total = midterm + final</span><br><span class="line">    <span class="comment"># 코드를 쓰세요.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 테스트</span></span><br><span class="line">print_grade(<span class="number">40</span>, <span class="number">45</span>)</span><br><span class="line">print_grade(<span class="number">20</span>, <span class="number">35</span>)</span><br><span class="line">print_grade(<span class="number">30</span>, <span class="number">32</span>)</span><br><span class="line">print_grade(<span class="number">50</span>, <span class="number">45</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">You get a B</span><br><span class="line">You fail</span><br><span class="line">You get a D</span><br><span class="line">You get an A</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>개인 풀이</strong></em></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_grade</span>(<span class="params">midterm, final</span>):</span></span><br><span class="line">    total = midterm + final</span><br><span class="line">    <span class="comment"># 코드를 쓰세요.</span></span><br><span class="line">    <span class="keyword">if</span> total&gt;=<span class="number">90</span>:</span><br><span class="line">        print(<span class="string">&quot;you get an A&quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> total&gt;= <span class="number">80</span>:</span><br><span class="line">        print(<span class="string">&quot;you get a B&quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> total&gt;= <span class="number">70</span>:</span><br><span class="line">        print(<span class="string">&quot;you get a C&quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> total&gt;= <span class="number">60</span>:</span><br><span class="line">        print(<span class="string">&quot;you get a D&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&quot;You fail&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 테스트</span></span><br><span class="line">print_grade(<span class="number">40</span>, <span class="number">45</span>)</span><br><span class="line">print_grade(<span class="number">20</span>, <span class="number">35</span>)</span><br><span class="line">print_grade(<span class="number">30</span>, <span class="number">32</span>)</span><br><span class="line">print_grade(<span class="number">50</span>, <span class="number">45</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>

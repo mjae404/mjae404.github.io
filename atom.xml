@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-29T04:29:32.450Z</updated>
+  <updated>2021-12-31T14:27:35.076Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PYTHON 학점 계산기</title>
+    <link href="http://mjae404.github.io/2021/12/31/python-exercise003/"/>
+    <id>http://mjae404.github.io/2021/12/31/python-exercise003/</id>
+    <published>2021-12-31T00:33:01.000Z</published>
+    <updated>2021-12-31T14:27:35.076Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;성적표를 기다리는 학생들을 위해서 학점 계산기를 만들어보세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PYTHON 홀수짝수</title>
+    <link href="http://mjae404.github.io/2021/12/30/python-exercise002/"/>
+    <id>http://mjae404.github.io/2021/12/30/python-exercise002/</id>
+    <published>2021-12-29T16:05:52.000Z</published>
+    <updated>2021-12-31T14:27:39.734Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;짝수인지 홀수인지 판단해주는 &lt;code&gt;is_evenly_divisible&lt;/code&gt; 함수를 쓰세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 거스름돈 계산기</title>
@@ -473,65 +523,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;flex-item&quot;&gt;&lt;a href=&quot;#flex-item&quot; class=&quot;headerlink&quot; title=&quot;flex item&quot;&gt;&lt;/a&gt;flex item&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.flex-item &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex: 0 1 auto; &amp;#x2F;* 팽창지수 + 수축지수 + 기준크기 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-grow: 0; &amp;#x2F;* 팽창지수 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-shrink: 1; &amp;#x2F;* 수축지수 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-basis: auto; &amp;#x2F;* 기준 크기 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    align-self: auto; &amp;#x2F;* 독립적 교차축 정렬*&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    order: 0; &amp;#x2F;* 배치 정렬 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 레이아웃 플로팅</title>
-    <link href="http://mjae404.github.io/2021/12/12/css-layout-floating/"/>
-    <id>http://mjae404.github.io/2021/12/12/css-layout-floating/</id>
-    <published>2021-12-11T17:00:56.000Z</published>
-    <updated>2021-12-11T17:01:45.771Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;플로팅-속성&quot;&gt;&lt;a href=&quot;#플로팅-속성&quot; class=&quot;headerlink&quot; title=&quot;플로팅 속성&quot;&gt;&lt;/a&gt;플로팅 속성&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;플로팅 요소의 너비는 수축하고 일반적인 흐름에서 벗어난다.&lt;/li&gt;
-&lt;li&gt;인접 후행 블록 요소는 플로팅 요소와 겹치고 인라인 요소(+텍스트 요소)는 플로팅 요소 주변으로 흐른다.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;clear&lt;/code&gt;, &lt;code&gt;flow-root&lt;/code&gt; 속성으로 해제할 수 있다.&lt;/li&gt;
-&lt;li&gt;컬럼을 배치하는 속성이 아니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 레이아웃 여백</title>
-    <link href="http://mjae404.github.io/2021/12/11/css-layout-space/"/>
-    <id>http://mjae404.github.io/2021/12/11/css-layout-space/</id>
-    <published>2021-12-11T02:38:46.000Z</published>
-    <updated>2021-12-11T02:40:59.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;vmin, vmax: viewfort-min, viewfort-max&lt;/li&gt;
-&lt;li&gt;padding의 %값: 컨테이너 블럭의 너비값을 참조한다. (padding-top이든, padding-left이든 너비를 참조함)&lt;/li&gt;
-&lt;li&gt;margin의  %값: 컨테이너 블럭의 너비값을 참조한다.&lt;/li&gt;
-&lt;/ul&gt;
     
     </summary>
     
