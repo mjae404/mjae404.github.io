@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-01T05:18:43.915Z</updated>
+  <updated>2022-01-01T06:01:27.962Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VUE 변수</title>
+    <link href="http://mjae404.github.io/2022/01/01/vue-various/"/>
+    <id>http://mjae404.github.io/2022/01/01/vue-various/</id>
+    <published>2022-01-01T05:10:52.000Z</published>
+    <updated>2022-01-01T06:01:27.962Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;() : 소괄호 - 연산에서 우선순위, 함수에서 인자값을 담는 곳, if, for, …, 명령 (메서드)&lt;/li&gt;
+&lt;li&gt;{} : 중괄호 - 함수의 실행문을 담는 영역(블록 스코프), if, for, …, 객체 선언&lt;/li&gt;
+&lt;li&gt;[] : 대괄호 - 배열&lt;/li&gt;
+&lt;li&gt;&amp;lt;&amp;gt; : 각괄호&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="various" scheme="http://mjae404.github.io/tags/various/"/>
+    
+  </entry>
   
   <entry>
     <title>VUE 템플릿 리터럴</title>
@@ -496,36 +524,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;삼각형으로-그리기&quot;&gt;&lt;a href=&quot;#삼각형으로-그리기&quot; class=&quot;headerlink&quot; title=&quot;삼각형으로 그리기&quot;&gt;&lt;/a&gt;삼각형으로 그리기&lt;/h2&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;::before&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;margin-right&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;8px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;40px&lt;/span&gt; solid transparent;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;border-left-color&lt;/span&gt;: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS grid</title>
-    <link href="http://mjae404.github.io/2021/12/14/css-grid-1/"/>
-    <id>http://mjae404.github.io/2021/12/14/css-grid-1/</id>
-    <published>2021-12-14T10:26:05.000Z</published>
-    <updated>2021-12-15T03:16:00.030Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;격자를 이용하여 내용의 크기와 위치를 제어하는 방법.&lt;/li&gt;
-&lt;li&gt;두개의 축을 이용.&lt;/li&gt;
-&lt;li&gt;셀병합 기능 제공&lt;/li&gt;
-&lt;li&gt;짧은 코드로 자유도 높은 배치 구현&lt;/li&gt;
-&lt;/ul&gt;
     
     </summary>
     
