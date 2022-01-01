@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2021-12-31T14:27:35.076Z</updated>
+  <updated>2022-01-01T05:18:43.915Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VUE 템플릿 리터럴</title>
+    <link href="http://mjae404.github.io/2022/01/01/vue-templete-literal/"/>
+    <id>http://mjae404.github.io/2022/01/01/vue-templete-literal/</id>
+    <published>2022-01-01T04:40:17.000Z</published>
+    <updated>2022-01-01T05:18:43.915Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ES6 = ECMA Script 6 = 2015년 6월 기준으로 새로이 자바스크립트가 업데이트된 버전&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(var =&amp;gt; let, const 변수명(상수 + 배열 또는 객체의 추가 및 삭제) / ES7에서 class + 생성자라는 인자값을 도입)&lt;/li&gt;
+&lt;li&gt;객체라는 개념이 넓어짐과 동시에 명확해짐&lt;/li&gt;
+&lt;li&gt;콜백지옥을 막기 위해서 promise() 함수 ~ then&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="templete literal" scheme="http://mjae404.github.io/tags/templete-literal/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 학점 계산기</title>
@@ -498,31 +526,6 @@
 &lt;li&gt;셀병합 기능 제공&lt;/li&gt;
 &lt;li&gt;짧은 코드로 자유도 높은 배치 구현&lt;/li&gt;
 &lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS flex</title>
-    <link href="http://mjae404.github.io/2021/12/13/css-flex-1/"/>
-    <id>http://mjae404.github.io/2021/12/13/css-flex-1/</id>
-    <published>2021-12-12T15:20:57.000Z</published>
-    <updated>2021-12-12T15:21:52.537Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;flex-item&quot;&gt;&lt;a href=&quot;#flex-item&quot; class=&quot;headerlink&quot; title=&quot;flex item&quot;&gt;&lt;/a&gt;flex item&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.flex-item &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex: 0 1 auto; &amp;#x2F;* 팽창지수 + 수축지수 + 기준크기 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-grow: 0; &amp;#x2F;* 팽창지수 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-shrink: 1; &amp;#x2F;* 수축지수 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    flex-basis: auto; &amp;#x2F;* 기준 크기 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    align-self: auto; &amp;#x2F;* 독립적 교차축 정렬*&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    order: 0; &amp;#x2F;* 배치 정렬 *&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     

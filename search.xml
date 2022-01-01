@@ -11748,4 +11748,62 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>VUE 템플릿 리터럴</title>
+    <url>/2022/01/01/vue-templete-literal/</url>
+    <content><![CDATA[<p>ES6 = ECMA Script 6 = 2015년 6월 기준으로 새로이 자바스크립트가 업데이트된 버전</p>
+<ul>
+<li>(var =&gt; let, const 변수명(상수 + 배열 또는 객체의 추가 및 삭제) / ES7에서 class + 생성자라는 인자값을 도입)</li>
+<li>객체라는 개념이 넓어짐과 동시에 명확해짐</li>
+<li>콜백지옥을 막기 위해서 promise() 함수 ~ then</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="템플릿-리터럴"><a href="#템플릿-리터럴" class="headerlink" title="템플릿 리터럴(``)"></a>템플릿 리터럴(``)</h2><ul>
+<li> JSON Formatter</li>
+</ul>
+<h3 id="ES5"><a href="#ES5" class="headerlink" title="ES5"></a>ES5</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var string1 &#x3D; &quot;안녕하세요&quot;;</span><br><span class="line">var string2 &#x3D; &quot;반갑습니다&quot;;</span><br><span class="line">var greeting1 &#x3D; string1 + &quot;, &quot; + string2;</span><br><span class="line">console.log(greeting1);</span><br><span class="line"></span><br><span class="line">var product1 &#x3D; &#123;</span><br><span class="line">    name : &quot;곰인형&quot;,</span><br><span class="line">    price : &quot;8,000원&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var message1 &#x3D; &quot;상품 &quot; + product1.name + &quot;의 가격은 &quot; + product1.price + &quot; 입니다.&quot;;</span><br><span class="line">console.log(message1);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 게임 캐릭터 구성</span><br><span class="line">var hero &#x3D; &#123;</span><br><span class="line">    shape : &quot;hero.jpg&quot;,</span><br><span class="line">    name : &quot;토마토재배자&quot;,</span><br><span class="line">    cloth : &quot;낡은 가죽옷&quot;,</span><br><span class="line">    device : &quot;호미&quot;,</span><br><span class="line">    level : 1,</span><br><span class="line">    hp : 100,</span><br><span class="line">    ep : 0,</span><br><span class="line"></span><br><span class="line">    running : function() &#123;</span><br><span class="line">        return &quot;휘리릭~~&quot;;</span><br><span class="line">    &#125;,</span><br><span class="line">    action : function() &#123;</span><br><span class="line">        return &quot;빠숑~~&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">document.write(&quot;&lt;img src&#x3D;&#39;.&#x2F;img&#x2F;&quot;+ hero.shape +&quot;&#39;&gt; &lt;br&gt;&quot;);</span><br><span class="line">document.write(&quot;나의 캐릭터 이름 : &quot; + hero.name + &quot;&lt;br&gt;&quot;);</span><br><span class="line">document.write(&quot;나의 현재 레벨 : &quot; + hero.level + &quot;&lt;br&gt;&quot;);</span><br><span class="line"></span><br><span class="line">document.write(&quot;게임이 시작되었습니다. 나는 &quot; + hero.running() + &quot; 달리고 있습니다.&lt;br&gt;&quot;);</span><br><span class="line">document.write(&quot;나의 캐릭터 &quot; + hero.name + &quot;이(가) &quot; + hero.device + &quot;로 휘두르는 소리 &quot; + hero.action() + &quot;&lt;br&gt;&quot;);</span><br><span class="line"></span><br><span class="line">document.write(&quot;1단계 끝판왕을 &quot; + hero.device + &quot;로 물리쳤습니다!&lt;br&gt;&quot;);</span><br><span class="line">hero.level++;</span><br><span class="line">document.write(&quot;나의 현재 레벨 : &quot; + hero.level + &quot;&lt;br&gt;&quot;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 기존 경험치 (ep)에서 50을 올려주고, 기존 체력(hp)에서 100을 올려준다.</span><br><span class="line">hero.ep +&#x3D; 50;</span><br><span class="line">hero.hp +&#x3D; 100;</span><br><span class="line"></span><br><span class="line">document.write(&quot;나의 현재 체력 : &quot; + hero.hp + &quot;&lt;br&gt;&quot;);</span><br><span class="line">document.write(&quot;나의 현재 경험치 : &quot; + hero.ep + &quot;&lt;br&gt;&quot;);</span><br><span class="line"></span><br><span class="line">var multiLine1 &#x3D; &quot;문자열1번\n문자열2번&quot;;</span><br><span class="line">console.log(multiLine1); &#x2F;&#x2F; 데이터 상에서 엔터처럼 사용</span><br><span class="line"></span><br><span class="line">var multiLine2 &#x3D; &quot;문자열1번&lt;br&gt;문자열2번&quot;;</span><br><span class="line">console.log(multiLine2); &#x2F;&#x2F; html 상에서 엔터처럼 사용</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>뺄 때는 진짜 빠짐. 더할 때는 문자열로 변형됨.</li>
+<li>괄호를 넣어 먼저 연산하게 함.</li>
+<li>문자열 + 숫자 = 문자열</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var value1 &#x3D; 1;</span><br><span class="line">var value2 &#x3D; 2;</span><br><span class="line">var result1 &#x3D; &quot;구입한 총 수량은&quot; + (value1 + value2) + &quot;개 입니다.&quot;;</span><br><span class="line">console.log(value1);</span><br><span class="line">console.log(result1);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var bool1 &#x3D; false; &#x2F;&#x2F; 10&gt;12</span><br><span class="line">var bool_result1 &#x3D; &quot;논리형 값은 &quot; + (bool1 ? &quot;참&quot; : &quot;거짓&quot;) + &quot; 입니다.&quot;;</span><br><span class="line">console.log(bool_result1);</span><br></pre></td></tr></table></figure>
+
+<h3 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h3><ul>
+<li>템플릿 리터럴 사용. 템플릿 리터럴에는 $를 사용하여 변수 또는 식을 포함할 수 있음.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var string3 &#x3D; &quot;안녕하세요&quot;;</span><br><span class="line">var string4 &#x3D; &quot;반갑습니다&quot;;</span><br><span class="line">var greeting2 &#x3D; &#96;$&#123;string3&#125;, $&#123;string4&#125;&#96;;</span><br><span class="line">console.log(greeting2);</span><br><span class="line"></span><br><span class="line">var product2 &#x3D; &#123;</span><br><span class="line">    name : &quot;곰인형&quot;,</span><br><span class="line">    price : &quot;8,000원&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var message2 &#x3D; &#96;상품 $&#123;product2.name&#125;의 가격은 $&#123;product2.price&#125;입니다.&#96;;</span><br><span class="line">console.log(message2);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var multiLine3 &#x3D; &#96;문자열1번</span><br><span class="line">문자열2번&#96;;</span><br><span class="line">console.log(multiLine3); &#x2F;&#x2F; 데이터 상에서 엔터처럼 사용</span><br><span class="line"></span><br><span class="line">var multiLine4 &#x3D; &#96;문자열1번&lt;br&gt;문자열2번&#96;;</span><br><span class="line">console.log(multiLine4); &#x2F;&#x2F; html 상에서 엔터처럼 사용</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var value3 &#x3D; 1;</span><br><span class="line">var value4 &#x3D; 2;</span><br><span class="line">var result2 &#x3D; &#96;구입한 총 수량은 $&#123;value1 + value2&#125;개 입니다.&#96;;</span><br><span class="line">console.log(result2);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var bool2 &#x3D; false; &#x2F;&#x2F; 10&gt;12</span><br><span class="line">var bool_result2 &#x3D; &#96;논리형 값은 $&#123;(bool1 ? &quot;참&quot; : &quot;거짓&quot;)&#125; 입니다.&#96;;</span><br><span class="line">console.log(bool_result2);</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="실습문제-ES5"><a href="#실습문제-ES5" class="headerlink" title="실습문제 - ES5"></a>실습문제 - ES5</h3><ul>
+<li>alt + shift + 화살표 하면 복사됨</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var cart1 &#x3D; &#123;</span><br><span class="line">    present : &quot;장미 한 묶음&quot;,</span><br><span class="line">    price : 15000</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var totalPrice1 &#x3D; function() &#123;</span><br><span class="line">    return cart1.price + &quot;원&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var myCart1 &#x3D; &quot;장바구니에 &quot; + cart1.present + &quot;이(가) 담겨있습니다. 가격은 &quot; + totalPrice1() + &quot;입니다.&quot;;</span><br><span class="line">console.log(myCart1);</span><br></pre></td></tr></table></figure>
+
+<h3 id="실습문제-ES6"><a href="#실습문제-ES6" class="headerlink" title="실습문제 - ES6"></a>실습문제 - ES6</h3><ul>
+<li>조건 “+”라는 병합 연산자를 모두 제거하여 적용할 것</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var cart2 &#x3D; &#123;</span><br><span class="line">    present : &quot;장미 한 묶음&quot;,</span><br><span class="line">    price : 15000</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var totalPrice2 &#x3D; function() &#123;</span><br><span class="line">    return &#96;$&#123;cart1.price&#125;원&#96;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var myCart2 &#x3D; &#96;장바구니에 $&#123;cart2.present&#125;이(가) 담겨있습니다. 가격은 $&#123;totalPrice2()&#125;입니다.&#96;;</span><br><span class="line">console.log(myCart2);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>뷰(Vue.js) 프로그래밍 과정 _ 하이미디어 아카데미</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>templete literal</tag>
+      </tags>
+  </entry>
 </search>
