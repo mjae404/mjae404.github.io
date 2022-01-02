@@ -11942,4 +11942,30 @@
         <tag>various</tag>
       </tags>
   </entry>
+  <entry>
+    <title>VUE 전개 연산자</title>
+    <url>/2022/01/02/vue-spread-operator/</url>
+    <content><![CDATA[<ul>
+<li>전개 연산자 (spreadOperator) : 나열형 자료(배열(Array)과 객체(Object))를 추출(왼)하거나 연결(오른)시 사용</li>
+<li>사용방법 : 변수명 앞에 마침표 세개를 연속적으로 작성한다. (…변수명)</li>
+<li>구분자에 대한 제한 : 배열 = [] / 객체 - {} / 함수 - ()</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="자바스크립트-ES5-이하-lt-배열-gt-에서-전개-연산자처럼-사용"><a href="#자바스크립트-ES5-이하-lt-배열-gt-에서-전개-연산자처럼-사용" class="headerlink" title="자바스크립트 (ES5 이하) &lt;배열&gt;에서 전개 연산자처럼 사용"></a>자바스크립트 (ES5 이하) &lt;배열&gt;에서 전개 연산자처럼 사용</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> array1 = [<span class="string">&quot;one&quot;</span>, <span class="string">&quot;two&quot;</span>];</span><br><span class="line"><span class="keyword">var</span> array2 = [<span class="string">&quot;three&quot;</span>, <span class="string">&quot;four&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 두개의 배열 합치기 - 1</span></span><br><span class="line"><span class="keyword">var</span> combine1 = [array1[<span class="number">0</span>], array1[<span class="number">1</span>], array2[<span class="number">0</span>], array2[<span class="number">1</span>]];</span><br><span class="line"><span class="built_in">console</span>.log(combine1); <span class="comment">// [&#x27;one&#x27;, &#x27;two&#x27;, &#x27;three&#x27;, &#x27;four&#x27;]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 두개의 배열 합치기 - 2</span></span><br><span class="line"><span class="keyword">var</span> combine2 = array1.concat(array2);</span><br><span class="line"><span class="built_in">console</span>.log(combine2); <span class="comment">// [&#x27;one&#x27;, &#x27;two&#x27;, &#x27;three&#x27;, &#x27;four&#x27;]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 두개의 배열 합치기 - 3</span></span><br><span class="line"><span class="keyword">var</span> combine3 = [].concat(array1, array2);</span><br><span class="line"><span class="built_in">console</span>.log(combine3); <span class="comment">// [&#x27;one&#x27;, &#x27;two&#x27;, &#x27;three&#x27;, &#x27;four&#x27;]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// [[&quot;one&quot;, &quot;two&quot;], [&quot;three&quot;, &quot;four&quot;]];</span></span><br><span class="line"><span class="keyword">var</span> combine3_1 = [[], []]; <span class="comment">// [0번 인덱스, 1번 인덱스]</span></span><br><span class="line"><span class="comment">// 실습 : push 메서드를 활용하여 위의 예시와 같은 형태를 구성하시오</span></span><br><span class="line"><span class="keyword">var</span> array1 = [<span class="string">&quot;one&quot;</span>, <span class="string">&quot;two&quot;</span>];</span><br><span class="line"><span class="keyword">var</span> array2 = [<span class="string">&quot;three&quot;</span>, <span class="string">&quot;four&quot;</span>];</span><br><span class="line"></span><br><span class="line">combine3_1[<span class="number">0</span>].push(array1[<span class="number">0</span>]);</span><br><span class="line">combine3_1[<span class="number">0</span>].push(array1[<span class="number">1</span>]);</span><br><span class="line">combine3_1[<span class="number">1</span>].push(array2[<span class="number">0</span>]);</span><br><span class="line">combine3_1[<span class="number">1</span>].push(array2[<span class="number">1</span>]);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(combine3_1); <span class="comment">// [[&quot;one&quot;, &quot;two&quot;], [&quot;three&quot;, &quot;four&quot;]]</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>뷰(Vue.js) 프로그래밍 과정 _ 하이미디어 아카데미</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>spread opeartor</tag>
+      </tags>
+  </entry>
 </search>
