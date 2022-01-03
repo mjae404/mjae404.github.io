@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-02T13:25:23.671Z</updated>
+  <updated>2022-01-03T13:00:12.245Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,88 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>VUE Class</title>
+    <link href="http://mjae404.github.io/2022/01/03/vue-class/"/>
+    <id>http://mjae404.github.io/2022/01/03/vue-class/</id>
+    <published>2022-01-03T12:35:23.000Z</published>
+    <updated>2022-01-03T13:00:12.245Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;html 문서에서 속성으로 존재하는 클래스명: 공통 클래스명 부여가 가능(for CSS style)&lt;/li&gt;
+&lt;li&gt;실생활에서 학교 : 클래스 단위로 수업을 받거나 움직임 (과목 또는 소풍)&lt;/li&gt;
+&lt;li&gt;객체 영역 : 속성(key: value(특정 데이터))과 기능(key:value(function))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;=&amp;gt; Class라는 존재는 어떠한 그룹을 가리킴&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+    
+    
+      <category term="class" scheme="http://mjae404.github.io/tags/class/"/>
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VUE 심볼</title>
+    <link href="http://mjae404.github.io/2022/01/03/vue-symbol/"/>
+    <id>http://mjae404.github.io/2022/01/03/vue-symbol/</id>
+    <published>2022-01-03T12:13:13.000Z</published>
+    <updated>2022-01-03T12:34:52.585Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Symbol은 숫자형 데이터(number), 문자형 데이터(string), 논리형데이터(boolean)처럼 원시형 데이터 중 하나.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+    
+    
+      <category term="symbol" scheme="http://mjae404.github.io/tags/symbol/"/>
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VUE 함수</title>
+    <link href="http://mjae404.github.io/2022/01/03/vue-function/"/>
+    <id>http://mjae404.github.io/2022/01/03/vue-function/</id>
+    <published>2022-01-03T10:27:14.000Z</published>
+    <updated>2022-01-03T12:14:15.434Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;ES6에서 화살표 함수(Arrow Function) 도입 : &lt;code&gt;=&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;비교 연산자 : &lt;code&gt;&amp;lt;=&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+    
+    
+      <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>VUE 전개 연산자</title>
     <link href="http://mjae404.github.io/2022/01/02/vue-spread-operator/"/>
     <id>http://mjae404.github.io/2022/01/02/vue-spread-operator/</id>
     <published>2022-01-02T13:22:34.000Z</published>
-    <updated>2022-01-02T13:25:23.671Z</updated>
+    <updated>2022-01-03T10:25:51.005Z</updated>
     
     <summary type="html">
     
@@ -443,101 +520,6 @@
       <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
     
       <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 덜컥덜컥 누적 배치 변경 문제</title>
-    <link href="http://mjae404.github.io/2021/12/18/css-cumulative-layout-shift/"/>
-    <id>http://mjae404.github.io/2021/12/18/css-cumulative-layout-shift/</id>
-    <published>2021-12-18T08:05:29.035Z</published>
-    <updated>2021-12-18T08:06:27.939Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;CLS&lt;/code&gt;는 구글 핵심 성능 지표에 포함되는 항목&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;lighthouse&lt;/code&gt;: 크롬에 내장되어 있음&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;0.1 이내에 로드하는 것이 목표&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;돔이 뒤늦게 추가, 웹폰트가 뒤늦게 로딩되는 등의 이유로 레이아웃 배치가 변경됨.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;FOIT: font of invisible text / 보이지 않다가 나타나는 현상&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;FOUT: font of unstyled text / 시스템 폰트에서 웹폰트로 변경되는 현상&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML 덩어리 콘텐츠 빨리 그리기</title>
-    <link href="http://mjae404.github.io/2021/12/17/html-largest-contentful-paint/"/>
-    <id>http://mjae404.github.io/2021/12/17/html-largest-contentful-paint/</id>
-    <published>2021-12-17T05:12:07.000Z</published>
-    <updated>2021-12-17T05:12:46.152Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;LCP&lt;/code&gt;는 구글 핵심 성능 지표에 포함되는 항목&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lighthouse&lt;/code&gt;: 크롬에 내장되어 있음&lt;/li&gt;
-&lt;li&gt;2.5초 이내에 로드하는 것이 목표&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
-    
-    
-      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 최적화</title>
-    <link href="http://mjae404.github.io/2021/12/16/css-optimization/"/>
-    <id>http://mjae404.github.io/2021/12/16/css-optimization/</id>
-    <published>2021-12-16T02:12:40.000Z</published>
-    <updated>2021-12-16T02:13:16.949Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;사용하지 않는 CSS 제거&lt;/li&gt;
-&lt;li&gt;렌더 차단 리소스 제거&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="the red" scheme="http://mjae404.github.io/tags/the-red/"/>
     
   </entry>
   
