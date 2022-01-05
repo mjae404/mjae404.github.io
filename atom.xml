@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-03T13:00:12.245Z</updated>
+  <updated>2022-01-05T04:53:31.243Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python-exercise006</title>
+    <link href="http://mjae404.github.io/2022/01/05/python-exercise006/"/>
+    <id>http://mjae404.github.io/2022/01/05/python-exercise006/</id>
+    <published>2022-01-05T04:53:31.000Z</published>
+    <updated>2022-01-05T04:53:31.243Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>VUE Class</title>
@@ -481,34 +496,6 @@
 &lt;li&gt;변수 (Variable): 값을 저장&lt;/li&gt;
 &lt;li&gt;함수 (Function): 명령을 저장&lt;/li&gt;
 &lt;li&gt;객체 (Class)&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
-    
-      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 데이터 타입</title>
-    <link href="http://mjae404.github.io/2021/12/19/python-datatype/"/>
-    <id>http://mjae404.github.io/2021/12/19/python-datatype/</id>
-    <published>2021-12-19T07:35:45.000Z</published>
-    <updated>2021-12-21T08:51:09.565Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;자료형에는 숫자(Number), 문자(String), 불린(Boolean)이 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;숫자: 정수(Integer), 소수(Floating Point)&lt;/li&gt;
-&lt;li&gt;문자: “Hello” + “World” → “HelloWorld”&lt;/li&gt;
-&lt;li&gt;불린: True, False&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
