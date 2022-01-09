@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-09T07:54:33.208Z</updated>
+  <updated>2022-01-09T09:54:47.843Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JS 오늘 날짜 출력</title>
+    <title>JS 연습문제</title>
     <link href="http://mjae404.github.io/2022/01/09/js-exercise019/"/>
     <id>http://mjae404.github.io/2022/01/09/js-exercise019/</id>
     <published>2022-01-09T07:38:05.000Z</published>
-    <updated>2022-01-09T07:54:33.208Z</updated>
+    <updated>2022-01-09T09:54:47.843Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;오늘 0000년00월00일 요일 시:분:초 순으로 날짜 객체로부터 받아와서 콘솔창에 출력하라. (요일정보는 배열데이터를 활용할 것)&lt;/p&gt;
+      &lt;p&gt;연습문제.&lt;/p&gt;
     
     </summary>
     
@@ -71,7 +71,7 @@
     <link href="http://mjae404.github.io/2022/01/03/vue-class/"/>
     <id>http://mjae404.github.io/2022/01/03/vue-class/</id>
     <published>2022-01-03T12:35:23.000Z</published>
-    <updated>2022-01-05T13:07:45.009Z</updated>
+    <updated>2022-01-09T08:40:25.967Z</updated>
     
     <summary type="html">
     
