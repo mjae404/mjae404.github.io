@@ -12231,4 +12231,26 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JS 오늘 날짜 출력</title>
+    <url>/2022/01/09/js-exercise019/</url>
+    <content><![CDATA[<p>오늘 0000년00월00일 요일 시:분:초 순으로 날짜 객체로부터 받아와서 콘솔창에 출력하라. (요일정보는 배열데이터를 활용할 것)</p>
+<a id="more"></a>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="keyword">const</span> year = today.getFullYear();</span><br><span class="line"><span class="keyword">const</span> month = today.getMonth()+<span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> date = today.getDate();</span><br><span class="line"><span class="keyword">const</span> dayLabel = today.getDay();</span><br><span class="line"><span class="keyword">const</span> hours = today.getHours();</span><br><span class="line"><span class="keyword">const</span> minutes = today.getMinutes();</span><br><span class="line"><span class="keyword">const</span> seconds = today.getSeconds();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getTodayLabel</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> week = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">&#x27;일요일&#x27;</span>, <span class="string">&#x27;월요일&#x27;</span>, <span class="string">&#x27;화요일&#x27;</span>, <span class="string">&#x27;수요일&#x27;</span>, <span class="string">&#x27;목요일&#x27;</span>, <span class="string">&#x27;금요일&#x27;</span>, <span class="string">&#x27;토요일&#x27;</span>);</span><br><span class="line">    <span class="keyword">const</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>().getDay();</span><br><span class="line">    <span class="keyword">const</span> todayLabel = week[today];</span><br><span class="line">    <span class="keyword">return</span> todayLabel;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;year&#125;</span>년 <span class="subst">$&#123;month&#125;</span>월 <span class="subst">$&#123;date&#125;</span>일 <span class="subst">$&#123;getTodayLabel()&#125;</span> <span class="subst">$&#123;hours&#125;</span>:<span class="subst">$&#123;minutes&#125;</span>:<span class="subst">$&#123;seconds&#125;</span>`</span>);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>뷰(Vue.js) 프로그래밍 과정 _ 하이미디어 아카데미</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
 </search>

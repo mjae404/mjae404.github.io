@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-05T04:56:13.780Z</updated>
+  <updated>2022-01-09T07:54:33.208Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS 오늘 날짜 출력</title>
+    <link href="http://mjae404.github.io/2022/01/09/js-exercise019/"/>
+    <id>http://mjae404.github.io/2022/01/09/js-exercise019/</id>
+    <published>2022-01-09T07:38:05.000Z</published>
+    <updated>2022-01-09T07:54:33.208Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;오늘 0000년00월00일 요일 시:분:초 순으로 날짜 객체로부터 받아와서 콘솔창에 출력하라. (요일정보는 배열데이터를 활용할 것)&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>PYTHON 택이의 우승상금</title>
@@ -150,7 +175,7 @@
     <link href="http://mjae404.github.io/2022/01/01/vue-various/"/>
     <id>http://mjae404.github.io/2022/01/01/vue-various/</id>
     <published>2022-01-01T05:10:52.000Z</published>
-    <updated>2022-01-01T06:01:27.962Z</updated>
+    <updated>2022-01-09T07:53:48.375Z</updated>
     
     <summary type="html">
     
@@ -479,34 +504,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;모듈&lt;/strong&gt; 은 바로 실행하는 용도가 아니라, 나중에 사용할 함수나 클래스 등을 미리 정의해둔 파일이다. 정보를 한번만 정의해두고 import하면 여러 프로그램에서 손쉽게 사용할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
-    
-      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 추상화</title>
-    <link href="http://mjae404.github.io/2021/12/19/python-abstraction/"/>
-    <id>http://mjae404.github.io/2021/12/19/python-abstraction/</id>
-    <published>2021-12-19T08:51:58.000Z</published>
-    <updated>2021-12-21T08:51:06.631Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;추상화 (Abstraction)&lt;/strong&gt;&lt;br&gt;복잡한 세부 사항은 숨기면서 주요한 기능에만 집중할 수  있게 해주는 개념이다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;변수 (Variable): 값을 저장&lt;/li&gt;
-&lt;li&gt;함수 (Function): 명령을 저장&lt;/li&gt;
-&lt;li&gt;객체 (Class)&lt;/li&gt;
-&lt;/ul&gt;
     
     </summary>
     
