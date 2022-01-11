@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-11T10:56:15.794Z</updated>
+  <updated>2022-01-11T10:58:41.593Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VUE 배열 함수</title>
+    <link href="http://mjae404.github.io/2022/01/10/vue-array-function/"/>
+    <id>http://mjae404.github.io/2022/01/10/vue-array-function/</id>
+    <published>2022-01-10T11:58:45.000Z</published>
+    <updated>2022-01-11T10:58:41.593Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-배열의-내장-함수-활용&quot;&gt;&lt;a href=&quot;#1-배열의-내장-함수-활용&quot; class=&quot;headerlink&quot; title=&quot;1. 배열의 내장 함수 활용&quot;&gt;&lt;/a&gt;1. 배열의 내장 함수 활용&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;map() 함수 메서드:
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="arrayfunction" scheme="http://mjae404.github.io/tags/arrayfunction/"/>
+    
+  </entry>
   
   <entry>
     <title>JS 연습문제</title>
@@ -481,29 +511,6 @@
     <summary type="html">
     
       &lt;p&gt;변수에 여러가지 값을 저장하고 싶다면 리스트(list)라는 자료형을 사용하면 된다. 리스트 안에는 또 다른 리스트가 있을 수 있으며, &lt;strong&gt;nested list&lt;/strong&gt; 라고 부른다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
-    
-      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 모듈</title>
-    <link href="http://mjae404.github.io/2021/12/20/python-module/"/>
-    <id>http://mjae404.github.io/2021/12/20/python-module/</id>
-    <published>2021-12-20T04:36:48.000Z</published>
-    <updated>2021-12-21T08:51:12.167Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;모듈&lt;/strong&gt; 은 바로 실행하는 용도가 아니라, 나중에 사용할 함수나 클래스 등을 미리 정의해둔 파일이다. 정보를 한번만 정의해두고 import하면 여러 프로그램에서 손쉽게 사용할 수 있다.&lt;/p&gt;
     
     </summary>
     
