@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-11T10:58:41.593Z</updated>
+  <updated>2022-01-12T07:57:04.437Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -21,18 +21,14 @@
     <link href="http://mjae404.github.io/2022/01/10/vue-array-function/"/>
     <id>http://mjae404.github.io/2022/01/10/vue-array-function/</id>
     <published>2022-01-10T11:58:45.000Z</published>
-    <updated>2022-01-11T10:58:41.593Z</updated>
+    <updated>2022-01-12T07:57:04.437Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;1-배열의-내장-함수-활용&quot;&gt;&lt;a href=&quot;#1-배열의-내장-함수-활용&quot; class=&quot;headerlink&quot; title=&quot;1. 배열의 내장 함수 활용&quot;&gt;&lt;/a&gt;1. 배열의 내장 함수 활용&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;map() 함수 메서드:
-        
-      
+      &lt;h2 id=&quot;1-배열의-내장-함수-활용&quot;&gt;&lt;a href=&quot;#1-배열의-내장-함수-활용&quot; class=&quot;headerlink&quot; title=&quot;1. 배열의 내장 함수 활용&quot;&gt;&lt;/a&gt;1. 배열의 내장 함수 활용&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;map() 함수 메서드: 배열을 대상으로 반복문 (속도 빠름)&lt;/li&gt;
+&lt;li&gt;filter() 함수 메서드: 배열을 대상으로 조건문&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
