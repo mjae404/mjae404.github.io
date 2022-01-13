@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-12T07:57:04.437Z</updated>
+  <updated>2022-01-13T12:48:10.114Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>VUE 배열 함수</title>
+    <title>JS 배열 함수</title>
     <link href="http://mjae404.github.io/2022/01/10/vue-array-function/"/>
     <id>http://mjae404.github.io/2022/01/10/vue-array-function/</id>
     <published>2022-01-10T11:58:45.000Z</published>
-    <updated>2022-01-12T07:57:04.437Z</updated>
+    <updated>2022-01-13T12:48:10.114Z</updated>
     
     <summary type="html">
     
@@ -33,12 +33,12 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
     
     
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
-      <category term="arrayfunction" scheme="http://mjae404.github.io/tags/arrayfunction/"/>
+      <category term="array function" scheme="http://mjae404.github.io/tags/array-function/"/>
     
   </entry>
   
@@ -93,11 +93,11 @@
   </entry>
   
   <entry>
-    <title>VUE Class</title>
+    <title>JS Class</title>
     <link href="http://mjae404.github.io/2022/01/03/vue-class/"/>
     <id>http://mjae404.github.io/2022/01/03/vue-class/</id>
     <published>2022-01-03T12:35:23.000Z</published>
-    <updated>2022-01-10T11:57:17.289Z</updated>
+    <updated>2022-01-13T12:47:57.628Z</updated>
     
     <summary type="html">
     
@@ -111,21 +111,21 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
     
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="class" scheme="http://mjae404.github.io/tags/class/"/>
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
   </entry>
   
   <entry>
-    <title>VUE 심볼</title>
+    <title>JS 심볼</title>
     <link href="http://mjae404.github.io/2022/01/03/vue-symbol/"/>
     <id>http://mjae404.github.io/2022/01/03/vue-symbol/</id>
     <published>2022-01-03T12:13:13.000Z</published>
-    <updated>2022-01-03T12:34:52.585Z</updated>
+    <updated>2022-01-13T12:47:47.299Z</updated>
     
     <summary type="html">
     
@@ -134,21 +134,21 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
     
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="symbol" scheme="http://mjae404.github.io/tags/symbol/"/>
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
   </entry>
   
   <entry>
-    <title>VUE 함수</title>
+    <title>JS 함수</title>
     <link href="http://mjae404.github.io/2022/01/03/vue-function/"/>
     <id>http://mjae404.github.io/2022/01/03/vue-function/</id>
     <published>2022-01-03T10:27:14.000Z</published>
-    <updated>2022-01-03T12:14:15.434Z</updated>
+    <updated>2022-01-13T12:48:00.826Z</updated>
     
     <summary type="html">
     
@@ -160,21 +160,21 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
     
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="function" scheme="http://mjae404.github.io/tags/function/"/>
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
   </entry>
   
   <entry>
-    <title>VUE 전개 연산자</title>
+    <title>JS 전개 연산자</title>
     <link href="http://mjae404.github.io/2022/01/02/vue-spread-operator/"/>
     <id>http://mjae404.github.io/2022/01/02/vue-spread-operator/</id>
     <published>2022-01-02T13:22:34.000Z</published>
-    <updated>2022-01-03T10:25:51.005Z</updated>
+    <updated>2022-01-13T12:47:51.016Z</updated>
     
     <summary type="html">
     
@@ -187,21 +187,21 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
     
     
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="spread opeartor" scheme="http://mjae404.github.io/tags/spread-opeartor/"/>
     
   </entry>
   
   <entry>
-    <title>VUE 변수</title>
+    <title>JS 변수</title>
     <link href="http://mjae404.github.io/2022/01/01/vue-various/"/>
     <id>http://mjae404.github.io/2022/01/01/vue-various/</id>
     <published>2022-01-01T05:10:52.000Z</published>
-    <updated>2022-01-09T07:53:48.375Z</updated>
+    <updated>2022-01-13T12:47:32.970Z</updated>
     
     <summary type="html">
     
@@ -215,21 +215,21 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
     
     
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="various" scheme="http://mjae404.github.io/tags/various/"/>
     
   </entry>
   
   <entry>
-    <title>VUE 템플릿 리터럴</title>
+    <title>JS 템플릿 리터럴</title>
     <link href="http://mjae404.github.io/2022/01/01/vue-templete-literal/"/>
     <id>http://mjae404.github.io/2022/01/01/vue-templete-literal/</id>
     <published>2022-01-01T04:40:17.000Z</published>
-    <updated>2022-01-01T05:18:43.915Z</updated>
+    <updated>2022-01-13T12:47:40.687Z</updated>
     
     <summary type="html">
     
@@ -243,10 +243,10 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
     
     
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="templete literal" scheme="http://mjae404.github.io/tags/templete-literal/"/>
     
