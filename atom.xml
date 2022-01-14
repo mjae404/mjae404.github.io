@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-13T15:01:21.482Z</updated>
+  <updated>2022-01-14T10:09:47.498Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://mjae404.github.io/2022/01/13/vue-overview/"/>
     <id>http://mjae404.github.io/2022/01/13/vue-overview/</id>
     <published>2022-01-13T14:57:14.000Z</published>
-    <updated>2022-01-13T15:01:21.482Z</updated>
+    <updated>2022-01-14T10:09:47.498Z</updated>
     
     <summary type="html">
     
@@ -30,7 +30,9 @@
     </summary>
     
     
-      <category term="Vue" scheme="http://mjae404.github.io/categories/Vue/"/>
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
     
     
       <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
