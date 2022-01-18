@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-14T10:09:47.498Z</updated>
+  <updated>2022-01-18T10:26:37.244Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VUE bind</title>
+    <link href="http://mjae404.github.io/2022/01/18/vue-bind/"/>
+    <id>http://mjae404.github.io/2022/01/18/vue-bind/</id>
+    <published>2022-01-18T10:25:25.000Z</published>
+    <updated>2022-01-18T10:26:37.244Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;v-bind&lt;/code&gt;의 역할 : vue 인스턴스 내부에서 선언된 data의 속성값(들)을 변수처럼 이용하여 HTML 문서 상의 문자열로 구성된 변수 자리에 그 값을 넣어준다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="bind" scheme="http://mjae404.github.io/tags/bind/"/>
+    
+  </entry>
   
   <entry>
     <title>VUE 개요</title>
@@ -486,29 +511,6 @@
     <summary type="html">
     
       &lt;p&gt;파이썬으로는 데이터 분석을 할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
-    
-      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 제어문</title>
-    <link href="http://mjae404.github.io/2021/12/22/python-control-flow-statement/"/>
-    <id>http://mjae404.github.io/2021/12/22/python-control-flow-statement/</id>
-    <published>2021-12-21T15:56:01.000Z</published>
-    <updated>2021-12-21T15:56:42.502Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;제어문을 활용하면 조건에 따라 동작을 나눌 수 있다. 그리고 반복문을 활용하면 우리가 하나하나 힘겹게 하던 일들을 컴퓨터에게 자동으로 반복시킬 수 있다. 반복문은 원하는 명령들을 한번만 기재하고 반복적으로 실행 가능한 문이다. PYTHON에는 while 반복문과 for 반복문이 있다.&lt;/p&gt;
     
     </summary>
     
