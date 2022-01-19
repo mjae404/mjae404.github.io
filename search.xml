@@ -12431,4 +12431,25 @@
         <tag>bind</tag>
       </tags>
   </entry>
+  <entry>
+    <title>vue-model</title>
+    <url>/2022/01/19/vue-model/</url>
+    <content><![CDATA[<p>v-model 디렉티브를 사용하면 어떤 입력값에 대한 내용을 실시간으로 표시하는 양방향 데이터를 구현할 수 있다.</p>
+<a id="more"></a>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;ko&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>03_vue_model<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">v-model:value</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> main = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el : <span class="string">&quot;#main&quot;</span>,</span></span><br><span class="line">            data : &#123;</span><br><span class="line"><span class="javascript">                message : <span class="string">&#x27;아래 입력상자에 값을 넣으세요&#x27;</span></span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        /*</span><br><span class="line">        [v-bind vs v-model]</span><br><span class="line">        v-bind : 단방향 데이터 바인딩</span><br><span class="line">        v-model : 양방향 데이터 바인딩</span><br><span class="line"></span><br><span class="line"><span class="javascript">        &lt;input type=<span class="string">&quot;text&quot;</span> v-bind:value=<span class="string">&quot;sDate&quot;</span>&gt; <span class="comment">// sDate 값을 HTML의 input 영역에서 어트리뷰트로 보내고 종료</span></span></span><br><span class="line"><span class="javascript">        &lt;input type=<span class="string">&quot;text&quot;</span> v-model:value=<span class="string">&quot;sMsg&quot;</span>&gt; <span class="comment">// sMsg 값을 지정된 위치의 내용과 연동이 가능</span></span></span><br><span class="line">        */</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>뷰(Vue.js) 프로그래밍 과정 _ 하이미디어 아카데미</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>overview</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
 </search>
