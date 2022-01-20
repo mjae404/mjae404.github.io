@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-19T10:55:38.566Z</updated>
+  <updated>2022-01-20T11:23:04.704Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>vue-model</title>
+    <title>VUE if</title>
+    <link href="http://mjae404.github.io/2022/01/20/vue-if/"/>
+    <id>http://mjae404.github.io/2022/01/20/vue-if/</id>
+    <published>2022-01-20T11:21:22.000Z</published>
+    <updated>2022-01-20T11:23:04.704Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;vue-if.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="if" scheme="http://mjae404.github.io/tags/if/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VUE model</title>
     <link href="http://mjae404.github.io/2022/01/19/vue-model/"/>
     <id>http://mjae404.github.io/2022/01/19/vue-model/</id>
     <published>2022-01-19T10:54:33.000Z</published>
-    <updated>2022-01-19T10:55:38.566Z</updated>
+    <updated>2022-01-20T11:22:56.600Z</updated>
     
     <summary type="html">
     
@@ -35,9 +60,9 @@
       <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
     
     
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="moedl" scheme="http://mjae404.github.io/tags/moedl/"/>
     
   </entry>
   
@@ -499,30 +524,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 객체</title>
-    <link href="http://mjae404.github.io/2021/12/24/python-object/"/>
-    <id>http://mjae404.github.io/2021/12/24/python-object/</id>
-    <published>2021-12-23T15:44:56.000Z</published>
-    <updated>2021-12-23T15:46:05.948Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;속성과 행동을 떠올릴 수 있다면 모두 객체이다. 객체는 속성과 행동으로 이루어져 있다. 속성은 변수로 나타내며, 행동은 함수(메소드)로 나타낸다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/python_object.jpg&quot; alt=&quot;객체란&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-    
-      <category term="python" scheme="http://mjae404.github.io/tags/python/"/>
-    
-      <category term="data type" scheme="http://mjae404.github.io/tags/data-type/"/>
     
   </entry>
   
