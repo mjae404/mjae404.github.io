@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-20T11:23:27.408Z</updated>
+  <updated>2022-01-21T11:50:19.139Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VUE for</title>
+    <link href="http://mjae404.github.io/2022/01/21/vue-for/"/>
+    <id>http://mjae404.github.io/2022/01/21/vue-for/</id>
+    <published>2022-01-21T11:48:41.000Z</published>
+    <updated>2022-01-21T11:50:19.139Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;v-for 디렉티브는 반복문으로 데이터를 하나씩 차례대로 꺼내어 사용할 때 유용하다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="for" scheme="http://mjae404.github.io/tags/for/"/>
+    
+  </entry>
   
   <entry>
     <title>VUE if</title>
@@ -487,31 +512,6 @@
     <summary type="html">
     
       &lt;p&gt;그래픽 로고가 그려지는 애니메이션 만들기.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="SVG" scheme="http://mjae404.github.io/categories/exercise/SVG/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVG 돋보기</title>
-    <link href="http://mjae404.github.io/2021/12/25/svg-exercise001/"/>
-    <id>http://mjae404.github.io/2021/12/25/svg-exercise001/</id>
-    <published>2021-12-25T10:27:54.000Z</published>
-    <updated>2021-12-25T10:28:55.675Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SVG의 마스크 효과와 자바스크립트를 이용하여 돋보기 효과 만들기.&lt;/p&gt;
     
     </summary>
     
