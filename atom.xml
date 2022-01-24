@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-22T08:07:54.276Z</updated>
+  <updated>2022-01-24T13:03:25.193Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VUE async</title>
+    <link href="http://mjae404.github.io/2022/01/24/vue-async/"/>
+    <id>http://mjae404.github.io/2022/01/24/vue-async/</id>
+    <published>2022-01-24T12:19:38.000Z</published>
+    <updated>2022-01-24T13:03:25.193Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;비동기 식(함수) - asynchhrone : 함수 호출에 의해서 후속 실행문을 가져와서 사용한다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="async" scheme="http://mjae404.github.io/tags/async/"/>
+    
+  </entry>
   
   <entry>
     <title>VUE on</title>
@@ -89,6 +116,21 @@
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
       <category term="if" scheme="http://mjae404.github.io/tags/if/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue-model</title>
+    <link href="http://mjae404.github.io/2022/01/20/vue-model-1/"/>
+    <id>http://mjae404.github.io/2022/01/20/vue-model-1/</id>
+    <published>2022-01-20T11:20:50.000Z</published>
+    <updated>2022-01-22T08:16:13.465Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
     
   </entry>
   
@@ -475,56 +517,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVG SMIL 애니메이션 alternate 구현</title>
-    <link href="http://mjae404.github.io/2021/12/28/svg-exercise004/"/>
-    <id>http://mjae404.github.io/2021/12/28/svg-exercise004/</id>
-    <published>2021-12-28T06:18:16.000Z</published>
-    <updated>2021-12-28T06:19:51.337Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SMIL 애니메이션 alternate 구현하기.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="SVG" scheme="http://mjae404.github.io/categories/exercise/SVG/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVG SMIL 애니메이션 Morphing 효과</title>
-    <link href="http://mjae404.github.io/2021/12/27/svg-exercise003/"/>
-    <id>http://mjae404.github.io/2021/12/27/svg-exercise003/</id>
-    <published>2021-12-26T15:13:59.000Z</published>
-    <updated>2021-12-26T15:15:12.586Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SMIL 애니메이션 Morphing 효과 만들기.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="SVG" scheme="http://mjae404.github.io/categories/exercise/SVG/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="SVG" scheme="http://mjae404.github.io/tags/SVG/"/>
     
   </entry>
   
