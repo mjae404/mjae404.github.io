@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-26T10:05:32.103Z</updated>
+  <updated>2022-01-26T12:13:08.958Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue-router</title>
+    <link href="http://mjae404.github.io/2022/01/26/vue-router/"/>
+    <id>http://mjae404.github.io/2022/01/26/vue-router/</id>
+    <published>2022-01-26T11:21:06.000Z</published>
+    <updated>2022-01-26T12:13:08.958Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;라우터란 페이지까지 이동할 수 있는 기능을 의미.&lt;br&gt;라우터를 사용하면 경로와 컴퓨넌트를 등록하면 싱글 페이지 어플리케이션(SPA : Single Page Application)&lt;br&gt;사용자가 클릭한 화면이 쉽게 이동하도록 도와주는 역할을 담당.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="router" scheme="http://mjae404.github.io/tags/router/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VUE vuex</title>
+    <link href="http://mjae404.github.io/2022/01/26/vue-vuex/"/>
+    <id>http://mjae404.github.io/2022/01/26/vue-vuex/</id>
+    <published>2022-01-26T10:37:37.000Z</published>
+    <updated>2022-01-26T11:33:00.165Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;하나의 뷰 또는 복수의 화면 사이에서 여러개의 컴포넌트를 사용하면 각 컴포넌트 간에 값을 전달하거나 공유하는 것이 쉽지 않음.&lt;br&gt;이런 문제를 해결하기 위해서는 vuex라는 상태값 전문 라이브러리를 활용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="vuex" scheme="http://mjae404.github.io/tags/vuex/"/>
+    
+  </entry>
   
   <entry>
     <title>VUE computed</title>
@@ -44,7 +94,7 @@
     <link href="http://mjae404.github.io/2022/01/24/vue-async/"/>
     <id>http://mjae404.github.io/2022/01/24/vue-async/</id>
     <published>2022-01-24T12:19:38.000Z</published>
-    <updated>2022-01-24T13:03:25.193Z</updated>
+    <updated>2022-01-26T10:35:04.137Z</updated>
     
     <summary type="html">
     
@@ -463,56 +513,6 @@
     <summary type="html">
     
       &lt;p&gt;성적표를 기다리는 학생들을 위해서 학점 계산기를 만들어보세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 홀수짝수</title>
-    <link href="http://mjae404.github.io/2021/12/30/python-exercise002/"/>
-    <id>http://mjae404.github.io/2021/12/30/python-exercise002/</id>
-    <published>2021-12-29T16:05:52.000Z</published>
-    <updated>2021-12-31T14:27:39.734Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;짝수인지 홀수인지 판단해주는 &lt;code&gt;is_evenly_divisible&lt;/code&gt; 함수를 쓰세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 거스름돈 계산기</title>
-    <link href="http://mjae404.github.io/2021/12/29/python-exercise001/"/>
-    <id>http://mjae404.github.io/2021/12/29/python-exercise001/</id>
-    <published>2021-12-29T04:28:56.000Z</published>
-    <updated>2021-12-29T04:29:32.450Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;현명하게 거스름돈을 계산해주는 프로그램을 만드려고 합니다. 예를 들어 33,000원짜리 물건을 사기 위해 100,000원을 냈다면, 50,000원 1장, 10,000원 1장, 5,000원 1장, 1,000원 2장과 같이 ‘가장 적은 수’의 지폐를 거슬러 주는 방식입니다.&lt;/p&gt;
     
     </summary>
     
