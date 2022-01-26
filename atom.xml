@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-24T13:03:25.193Z</updated>
+  <updated>2022-01-26T10:05:32.103Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VUE computed</title>
+    <link href="http://mjae404.github.io/2022/01/26/vue-computed/"/>
+    <id>http://mjae404.github.io/2022/01/26/vue-computed/</id>
+    <published>2022-01-26T10:04:07.000Z</published>
+    <updated>2022-01-26T10:05:32.103Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;VUE computed&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>VUE async</title>
@@ -116,21 +139,6 @@
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
       <category term="if" scheme="http://mjae404.github.io/tags/if/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue-model</title>
-    <link href="http://mjae404.github.io/2022/01/20/vue-model-1/"/>
-    <id>http://mjae404.github.io/2022/01/20/vue-model-1/</id>
-    <published>2022-01-20T11:20:50.000Z</published>
-    <updated>2022-01-22T08:16:13.465Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
     
   </entry>
   
