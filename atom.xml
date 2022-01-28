@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-26T12:13:08.958Z</updated>
+  <updated>2022-01-28T09:49:58.085Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>vue-router</title>
+    <title>VUE methods</title>
+    <link href="http://mjae404.github.io/2022/01/28/vue-methods/"/>
+    <id>http://mjae404.github.io/2022/01/28/vue-methods/</id>
+    <published>2022-01-28T09:47:15.000Z</published>
+    <updated>2022-01-28T09:49:58.085Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;이벤트-핸들러-v-on-로직-논리값-과-methods의-속성&quot;&gt;&lt;a href=&quot;#이벤트-핸들러-v-on-로직-논리값-과-methods의-속성&quot; class=&quot;headerlink&quot; title=&quot;이벤트 핸들러(v-on) 로직(논리값)과 methods의 속성&quot;&gt;&lt;/a&gt;이벤트 핸들러(v-on) 로직(논리값)과 methods의 속성&lt;/h3&gt;&lt;p&gt;메서드는 뷰 인스턴스에 포함하여 사용하는 함수를 의미.&lt;br&gt;특히, 뷰에서 methods 속성은 이벤트 핸들러를 사용하여 (클릭) 이벤트가 발생했을 때 실행되는 로직에 되는 로직에 사용.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="methods" scheme="http://mjae404.github.io/tags/methods/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VUE router</title>
     <link href="http://mjae404.github.io/2022/01/26/vue-router/"/>
     <id>http://mjae404.github.io/2022/01/26/vue-router/</id>
     <published>2022-01-26T11:21:06.000Z</published>
-    <updated>2022-01-26T12:13:08.958Z</updated>
+    <updated>2022-01-28T09:50:15.716Z</updated>
     
     <summary type="html">
     
@@ -500,31 +525,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="templete literal" scheme="http://mjae404.github.io/tags/templete-literal/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 학점 계산기</title>
-    <link href="http://mjae404.github.io/2021/12/31/python-exercise003/"/>
-    <id>http://mjae404.github.io/2021/12/31/python-exercise003/</id>
-    <published>2021-12-31T00:33:01.000Z</published>
-    <updated>2021-12-31T14:27:35.076Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;성적표를 기다리는 학생들을 위해서 학점 계산기를 만들어보세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
