@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-01-28T09:49:58.085Z</updated>
+  <updated>2022-02-03T07:39:05.942Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mySQL 개요</title>
+    <link href="http://mjae404.github.io/2022/02/03/sql-overview/"/>
+    <id>http://mjae404.github.io/2022/02/03/sql-overview/</id>
+    <published>2022-02-03T05:36:17.000Z</published>
+    <updated>2022-02-03T07:39:05.942Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;데이터베이스를 다루기 위해서는 DBMS라는 프로그램을 사용해야하고, DBMS는 결국 SQL이라고 하는 언어로 조작해야 한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>VUE methods</title>
@@ -497,34 +528,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="various" scheme="http://mjae404.github.io/tags/various/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 템플릿 리터럴</title>
-    <link href="http://mjae404.github.io/2022/01/01/vue-templete-literal/"/>
-    <id>http://mjae404.github.io/2022/01/01/vue-templete-literal/</id>
-    <published>2022-01-01T04:40:17.000Z</published>
-    <updated>2022-01-13T12:47:40.687Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ES6 = ECMA Script 6 = 2015년 6월 기준으로 새로이 자바스크립트가 업데이트된 버전&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;(var =&amp;gt; let, const 변수명(상수 + 배열 또는 객체의 추가 및 삭제) / ES7에서 class + 생성자라는 인자값을 도입)&lt;/li&gt;
-&lt;li&gt;객체라는 개념이 넓어짐과 동시에 명확해짐&lt;/li&gt;
-&lt;li&gt;콜백지옥을 막기 위해서 promise() 함수 ~ then&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="templete literal" scheme="http://mjae404.github.io/tags/templete-literal/"/>
     
   </entry>
   
