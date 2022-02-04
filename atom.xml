@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-02-04T12:45:55.671Z</updated>
+  <updated>2022-02-04T12:57:05.139Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sql Primary Key</title>
+    <link href="http://mjae404.github.io/2022/02/04/sql-primary-key/"/>
+    <id>http://mjae404.github.io/2022/02/04/sql-primary-key/</id>
+    <published>2022-02-04T12:47:40.000Z</published>
+    <updated>2022-02-04T12:57:05.139Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Primary Key: 테이블에서 특정 row 하나를 식별하는 역할.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
+    
+      <category term="Primary Key" scheme="http://mjae404.github.io/tags/Primary-Key/"/>
+    
+  </entry>
   
   <entry>
     <title>mySQL 개요</title>
@@ -500,34 +531,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="spread opeartor" scheme="http://mjae404.github.io/tags/spread-opeartor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 변수</title>
-    <link href="http://mjae404.github.io/2022/01/01/vue-various/"/>
-    <id>http://mjae404.github.io/2022/01/01/vue-various/</id>
-    <published>2022-01-01T05:10:52.000Z</published>
-    <updated>2022-01-13T12:47:32.970Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;() : 소괄호 - 연산에서 우선순위, 함수에서 인자값을 담는 곳, if, for, …, 명령 (메서드)&lt;/li&gt;
-&lt;li&gt;{} : 중괄호 - 함수의 실행문을 담는 영역(블록 스코프), if, for, …, 객체 선언&lt;/li&gt;
-&lt;li&gt;[] : 대괄호 - 배열&lt;/li&gt;
-&lt;li&gt;&amp;lt;&amp;gt; : 각괄호&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="various" scheme="http://mjae404.github.io/tags/various/"/>
     
   </entry>
   

@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>sql Primary Key</title>
+    <url>/2022/02/04/sql-primary-key/</url>
+    <content><![CDATA[<p>Primary Key: 테이블에서 특정 row 하나를 식별하는 역할.</p>
+<a id="more"></a>
+
+<h2 id="Natural-Key"><a href="#Natural-Key" class="headerlink" title="Natural Key"></a>Natural Key</h2><p>실제로 어떤 개체가 갖고 있는 속성을 나타내는 컬럼이 Primary Key가 되었을 때를 의미한다.</p>
+<h2 id="Surrogate-Key"><a href="#Surrogate-Key" class="headerlink" title="Surrogate Key"></a>Surrogate Key</h2><ul>
+<li>어떤 개체의 실제 속성은 아니지만 Primary Key로 쓰기 위해 추가한 컬럼</li>
+<li>보통 1부터 시작해서 1씩 증가하는 정수값을 갖는다.</li>
+<li>Auto Increment 속성을 컬럼에 설정하면, 해당 컬럼에 관해서는 DBMS가 ‘자동으로 증가’하는 값을 넣는다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Data Base</category>
+        <category>SQL</category>
+        <category>mySQL</category>
+      </categories>
+      <tags>
+        <tag>Data Base</tag>
+        <tag>SQL</tag>
+        <tag>mySQL</tag>
+        <tag>Primary Key</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mySQL 개요</title>
     <url>/2022/02/03/sql-overview/</url>
     <content><![CDATA[<p>데이터베이스를 다루기 위해서는 DBMS라는 프로그램을 사용해야하고, DBMS는 결국 SQL이라고 하는 언어로 조작해야 한다.</p>
