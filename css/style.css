@@ -5880,9 +5880,6 @@ button {
 .category-list .category-list-child .category-list-item {
   margin: 5px 0;
 }
-.category-list .category-list-child .category-list-item > .category-list-child {
-  margin: 10px 0;
-}
 .tag-list {
   list-style: none;
   padding-left: 0;
