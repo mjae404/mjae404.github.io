@@ -1,3 +1,3 @@
-.category-list .category-list-child .category-list-item > .category-list-item::before {
+.category-list .category-list-child .category-list-item > .category-list-item li::before {
     margin-left: 40px;
 }
