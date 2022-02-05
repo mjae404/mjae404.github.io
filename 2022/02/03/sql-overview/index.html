@@ -75,7 +75,12 @@
       
 
       
-      <p>데이터베이스를 다루기 위해서는 DBMS라는 프로그램을 사용해야하고, DBMS는 결국 SQL이라고 하는 언어로 조작해야 한다.</p>
+      <ul>
+<li><strong>데이터베이스</strong>: 일정한 체계 속에 저장된 데이터의 집합</li>
+<li>데이터베이스를 다루기 위해서는 DBMS(Database Management System)라는 프로그램을 사용해야하고, DBMS는 결국 SQL이라고 하는 언어로 조작해야 한다.</li>
+<li>테이블에서 하나의 개체를 나타내는 것은 row, 개체의 각 속성을 나타내는 것은 column이다</li>
+<li>서버 - 클라이언트 구조로 동작한다.</li>
+</ul>
 <a id="more"></a>
 
 <h2 id="SQL의-역사"><a href="#SQL의-역사" class="headerlink" title="SQL의 역사"></a>SQL의 역사</h2><ul>
@@ -94,11 +99,13 @@
 </li>
 <li>오라클: 은행, 거래소 등과 같이 데이터 처리의 정확성, 운영의 안정성 등이 엄격하게 요구되는 분야</li>
 <li>MySQL: 우리가 흔히 쓰는 앱, 웹 사이트 같은 서비스. 간단히 사용해볼 때 요구하는 컴퓨터 성능도 작은 편.</li>
+<li>CSV 파일: Comma Separated Values</li>
 </ul>
 <h2 id="sys-데이터-베이스"><a href="#sys-데이터-베이스" class="headerlink" title="sys 데이터 베이스"></a>sys 데이터 베이스</h2><p>MySQL 서버의 성능 관련 정보들을 갖고있는 데이터베이스이다.</p>
 <ul>
 <li>기획자/마케터 : 데이터베이스에 저장된 데이터를 잘 분석해서 시장 및 고객을 분석</li>
 <li>백엔드 개발자 또는 데이터베이스 관리자 : 데이터가 빠르고 안정적으로, 조회 및 저장될 수 있도록 개발 및 관리.  DBMS가 성능 저하 없이 효율적으로 작업을 처리하고 있는지를 체크가 필요하다. 이러한 정보를 확인할 수 있는 기본 데이터베이스 중 하나가 이 sys 데이터베이스이다.</li>
+<li>a라는 데이터베이스를 만드려고 할 때 <code>CREATE DATABASE a;</code>으로 실행한다.</li>
 </ul>
 <hr>
 <blockquote>
@@ -127,7 +134,7 @@
         <strong class="article-nav-caption">next</strong>
         <div class="article-nav-title">
           
-            mySQL Primary Key
+            mySQL Primary Key (기본키)
           
         </div>
       </a>
