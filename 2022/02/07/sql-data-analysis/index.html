@@ -201,6 +201,43 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">as</span> regin,</span><br><span class="line">  <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>),</span><br><span class="line">  gender</span><br><span class="line"><span class="keyword">HAVING</span></span><br><span class="line">  region <span class="operator">=</span> <span class="string">&#x27;서울&#x27;</span></span><br><span class="line">  <span class="keyword">AND</span> GENDER <span class="operator">=</span> <span class="string">&#x27;m&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
 <li>NULL값도 노출하기 때문에 값이 있는 region값만 정렬하고 싶으면 IS NOT NULL을 사용한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">as</span> regin,</span><br><span class="line">  <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>),</span><br><span class="line">  gender</span><br><span class="line"><span class="keyword">HAVING</span> region <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span></span><br><span class="line">  region <span class="keyword">ASC</span>,</span><br><span class="line">  gender <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure></li>
 </ul>
+<h3 id="GROUP-BY를-쓸-때-지켜야-하는-규칙"><a href="#GROUP-BY를-쓸-때-지켜야-하는-규칙" class="headerlink" title="GROUP BY를 쓸 때 지켜야 하는 규칙"></a>GROUP BY를 쓸 때 지켜야 하는 규칙</h3><ul>
+<li>SELECT절에는 GROUP BY 뒤에서 사용한 컬럼 또는 COUNT, MAX 같은 집계 함수만 사용할 수 있다.</li>
+<li>반대로, GROUP BY 뒤에 쓰지 않은 컬럼 이름을 SELECT절 뒤에 사용할 수 없다.</li>
+</ul>
+<p><em><strong>오류 예시</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">AS</span> region, gender, age, <span class="built_in">COUNT</span> (<span class="operator">*</span>) <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>), gender</span><br><span class="line"><span class="keyword">HAVING</span> region <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> region <span class="keyword">ASC</span>, gender <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>정상 예시</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">AS</span> region, gender, <span class="built_in">AVG</span>(age), <span class="built_in">COUNT</span> (<span class="operator">*</span>) <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>), gender</span><br><span class="line"><span class="keyword">HAVING</span> region <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> region <span class="keyword">ASC</span>, gender <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="WITH-ROLLUP"><a href="#WITH-ROLLUP" class="headerlink" title="WITH ROLLUP"></a>WITH ROLLUP</h3><ul>
+<li>세부 그룹들을 좀 더 큰 단위의 그룹으로 중간중간에 합쳐준다.</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">as</span> region, gender, <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>), gender <span class="keyword">WITH</span> <span class="keyword">ROLLUP</span></span><br><span class="line"><span class="keyword">HAVING</span> region <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> region <span class="keyword">ASC</span>, gender <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>GROUP BY 뒤 기준 순서에 따라 WITH ROLLUP의 결과도 달라진다.</li>
+<li>NULL임을 나타내기 위해 쓰인 NULL vs. 부분 총계를 나타내기 위해 쓰인 NULL</li>
+</ol>
+<h2 id="SELECT문의-실행-순서"><a href="#SELECT문의-실행-순서" class="headerlink" title="SELECT문의 실행 순서"></a>SELECT문의 실행 순서</h2><h3 id="앞에-나와야-하는-순서"><a href="#앞에-나와야-하는-순서" class="headerlink" title="앞에 나와야 하는 순서"></a>앞에 나와야 하는 순서</h3><ol>
+<li>SELECT</li>
+<li>FROM</li>
+<li>WHERE</li>
+<li>GROUP BY</li>
+<li>HAVING</li>
+<li>ORDER BY</li>
+<li>LIMIT</li>
+</ol>
+<h3 id="해석-및-실행되는-순서"><a href="#해석-및-실행되는-순서" class="headerlink" title="해석 및 실행되는 순서"></a>해석 및 실행되는 순서</h3><ol>
+<li>FROM: 어느 테이블을 대상으로 할 것인지를 먼저 결정한다.</li>
+<li>WHERE: 해당 테이블에서 특정 조건(들)을 만족하는 row들만 선별한다.</li>
+<li>GROUP BY: row들을 그루핑 기준대로 그루핑된다. 하나의 그룹은 하나의 row로 표현한다.</li>
+<li>HAVING: 그루핑 작업 후 생성된 여러 그룹들 중에서, 특정 조건(들)을 만족하는 그룹들만 선별한다.</li>
+<li>SELECT: 모든 컬럼 또는 특정 컬럼들을 조회한다.</li>
+<li>ORDER BY: 각 row를 특정 기준에 따라서 정렬한다.</li>
+<li>LIMIT: 이전 단계까지 조회된 row들 중 일부 row들만을 추린다.</li>
+</ol>
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
