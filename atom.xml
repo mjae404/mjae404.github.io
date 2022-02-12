@@ -478,6 +478,56 @@
   </entry>
   
   <entry>
+    <title>PYTHON 약수 찾기</title>
+    <link href="http://mjae404.github.io/2022/01/08/python-exercise008/"/>
+    <id>http://mjae404.github.io/2022/01/08/python-exercise008/</id>
+    <published>2022-01-08T10:19:44.000Z</published>
+    <updated>2022-02-12T14:11:32.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;자연수 중 120의 약수를 모두 출력하고, 총 몇개의 약수가 있는지 출력하는 프로그램을 써보세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PYTHON 구구단</title>
+    <link href="http://mjae404.github.io/2022/01/07/python-exercise007/"/>
+    <id>http://mjae404.github.io/2022/01/07/python-exercise007/</id>
+    <published>2022-01-07T10:13:23.000Z</published>
+    <updated>2022-02-12T14:11:28.072Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;while문을 사용하여 콘솔에 아래 문장들이 출력되게 구구단 프로그램을 작성하세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PYTHON 택이의 우승상금</title>
     <link href="http://mjae404.github.io/2022/01/05/python-exercise006/"/>
     <id>http://mjae404.github.io/2022/01/05/python-exercise006/</id>
@@ -499,57 +549,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS Class</title>
-    <link href="http://mjae404.github.io/2022/01/03/vue-class/"/>
-    <id>http://mjae404.github.io/2022/01/03/vue-class/</id>
-    <published>2022-01-03T12:35:23.000Z</published>
-    <updated>2022-01-13T12:47:57.628Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;html 문서에서 속성으로 존재하는 클래스명: 공통 클래스명 부여가 가능(for CSS style)&lt;/li&gt;
-&lt;li&gt;실생활에서 학교 : 클래스 단위로 수업을 받거나 움직임 (과목 또는 소풍)&lt;/li&gt;
-&lt;li&gt;객체 영역 : 속성(key: value(특정 데이터))과 기능(key:value(function))&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;=&amp;gt; Class라는 존재는 어떠한 그룹을 가리킴&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="class" scheme="http://mjae404.github.io/tags/class/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 심볼</title>
-    <link href="http://mjae404.github.io/2022/01/03/vue-symbol/"/>
-    <id>http://mjae404.github.io/2022/01/03/vue-symbol/</id>
-    <published>2022-01-03T12:13:13.000Z</published>
-    <updated>2022-01-13T12:47:47.299Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Symbol은 숫자형 데이터(number), 문자형 데이터(string), 논리형데이터(boolean)처럼 원시형 데이터 중 하나.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="symbol" scheme="http://mjae404.github.io/tags/symbol/"/>
     
   </entry>
   
