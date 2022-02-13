@@ -13230,4 +13230,60 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>mySQL 테이블 조인</title>
+    <url>/2022/02/13/sql-table-join/</url>
+    <content><![CDATA[<p>조인(join): 여러 테이블을 합쳐서 하나의 테이블인 것처럼 보는 행위</p>
+<a id="more"></a>
+
+<h2 id="Foreign-Key-외래키"><a href="#Foreign-Key-외래키" class="headerlink" title="Foreign Key (외래키)"></a>Foreign Key (외래키)</h2><ul>
+<li>다른 테이블의 특정 row를 식별할 수 있게 해주는 컬럼.</li>
+<li>Foreign Key는 다른 테이블의 특정 row를 식별할 수 있어야 하기 때문에 주로 다른 테이블의 Primary Key를 참조할 때가 많다.</li>
+<li><code>foreign key</code>를 지정해주는 이유: 지정했을 때 이상한 id값 추가를 시도하면 mySQL에서 에러를 발생시킨다.</li>
+<li>자식 테이블: 참조를 하는 테이블</li>
+<li>부모 테이블: 참조를 당하는 테이블</li>
+</ul>
+<h2 id="다른-종류의-테이블-조인하기"><a href="#다른-종류의-테이블-조인하기" class="headerlink" title="다른 종류의 테이블 조인하기"></a>다른 종류의 테이블 조인하기</h2><ul>
+<li>연결하다, 합치다라는 의미.</li>
+<li>보통 Foreign Key를 기준으로 하는 것이 맞지만, 서로 같은 의미를 나타내는 컬럼들을 기준으로 조인하기도 한다.</li>
+</ul>
+<h3 id="LEFT-OUTER-JOIN-RIGHT-OUTER-JOIN"><a href="#LEFT-OUTER-JOIN-RIGHT-OUTER-JOIN" class="headerlink" title="LEFT OUTER JOIN / RIGHT OUTER JOIN"></a>LEFT OUTER JOIN / RIGHT OUTER JOIN</h3><ul>
+<li><code>LEFT OUTER JOIN</code>: 왼쪽에 있는 테이블을 기준으로 오른쪽에 있는 테이블을 합치라는 의미.</li>
+<li><code>RIGHT OUTER JOIN</code>: 오른쪽에 있는 테이블을 기준으로 왼쪽에 있는 테이블을 합치라는 의미.</li>
+<li><code>ON</code>으로 시작하는 구문: 두 테이블을 합칠 때 item.id의 값과 stock.item_id의 값을 비교하여 같은 값끼리 가로 방향으로 연결하라.</li>
+<li>item row에는 있지만 stock row에는 없을 경우 합쳐질 때 null로 표시된다.</li>
+</ul>
+<p><em><strong>예시</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    item.id,</span><br><span class="line">    item.name,</span><br><span class="line">    stock.item_id,</span><br><span class="line">    stock.inventory_count</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> stock</span><br><span class="line"><span class="keyword">ON</span> item.id <span class="operator">=</span> stock.item_id</span><br></pre></td></tr></table></figure>
+
+<h3 id="INNER-JOIN"><a href="#INNER-JOIN" class="headerlink" title="INNER JOIN"></a>INNER JOIN</h3><ul>
+<li><code>INNER JOIN</code>: 테이블의 일치하는 값이 있는 컬럼들로만 합쳐 연결된다. 기준이 되는 테이블이 따로 없으며 기준 테이블이 없으므로 null이 되는 경우는 없다.</li>
+</ul>
+<h3 id="alias-붙이기"><a href="#alias-붙이기" class="headerlink" title="alias 붙이기"></a>alias 붙이기</h3><ul>
+<li><code>AS</code>로 alias를 붙여준다.</li>
+<li>스페이스로 구분하여 이름을 붙여줘도 괜찮다.</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    i.id,</span><br><span class="line">    i.name,</span><br><span class="line">    s.item_id,</span><br><span class="line">    s.inventory_count</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> i <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> stock <span class="keyword">AS</span> s</span><br><span class="line"><span class="keyword">ON</span> i.id <span class="operator">=</span> s.item_id</span><br></pre></td></tr></table></figure>
+
+<h3 id="컬럼의-alias와-테이블의-alias"><a href="#컬럼의-alias와-테이블의-alias" class="headerlink" title="컬럼의 alias와 테이블의 alias"></a>컬럼의 alias와 테이블의 alias</h3><ul>
+<li>컬럼의 alias: 각 컬럼이 실제로 우리에게 그 alias로 변환되어서 보여지게 하기 위한 용도</li>
+<li>테이블의 alias: SQL 문의 전체 길이를 줄여서 가독성을 높이기 위해 사용. 한번 alias를 붙였으면 그 테이블은 해당 alias로만 나타내야 한다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Data Base</category>
+        <category>SQL</category>
+        <category>mySQL</category>
+      </categories>
+      <tags>
+        <tag>Data Base</tag>
+        <tag>SQL</tag>
+        <tag>mySQL</tag>
+        <tag>table join</tag>
+      </tags>
+  </entry>
 </search>
