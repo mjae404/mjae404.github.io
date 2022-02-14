@@ -13311,7 +13311,7 @@
       </tags>
   </entry>
   <entry>
-    <title>sql-exercise001</title>
+    <title>SQL 데이터 조회</title>
     <url>/2022/02/14/sql-exercise001/</url>
     <content><![CDATA[<p>(1) 나이가 20대이고, (2) 코드잇 피자 가게 사이트에 가입한 달이 7월인 회원들만 추려서 그 회원들에게 이메일로 할인 쿠폰을 발송하려고 합니다.</p>
 <a id="more"></a>
