@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-02-13T10:02:29.037Z</updated>
+  <updated>2022-02-14T12:07:48.668Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>sql-exercise001</title>
+    <link href="http://mjae404.github.io/2022/02/14/sql-exercise001/"/>
+    <id>http://mjae404.github.io/2022/02/14/sql-exercise001/</id>
+    <published>2022-02-14T12:03:15.000Z</published>
+    <updated>2022-02-14T12:07:48.668Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(1) 나이가 20대이고, (2) 코드잇 피자 가게 사이트에 가입한 달이 7월인 회원들만 추려서 그 회원들에게 이메일로 할인 쿠폰을 발송하려고 합니다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mySQL 테이블 조인</title>
     <link href="http://mjae404.github.io/2022/02/13/sql-table-join/"/>
     <id>http://mjae404.github.io/2022/02/13/sql-table-join/</id>
     <published>2022-02-13T09:19:47.000Z</published>
-    <updated>2022-02-13T10:02:29.037Z</updated>
+    <updated>2022-02-13T13:52:03.015Z</updated>
     
     <summary type="html">
     
@@ -518,31 +543,6 @@
     <summary type="html">
     
       &lt;p&gt;자연수 중 120의 약수를 모두 출력하고, 총 몇개의 약수가 있는지 출력하는 프로그램을 써보세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 구구단</title>
-    <link href="http://mjae404.github.io/2022/01/07/python-exercise007/"/>
-    <id>http://mjae404.github.io/2022/01/07/python-exercise007/</id>
-    <published>2022-01-07T10:13:23.000Z</published>
-    <updated>2022-02-12T14:11:28.072Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;while문을 사용하여 콘솔에 아래 문장들이 출력되게 구구단 프로그램을 작성하세요.&lt;/p&gt;
     
     </summary>
     

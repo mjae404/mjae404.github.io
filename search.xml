@@ -13269,7 +13269,31 @@
 <li>컬럼의 alias: 각 컬럼이 실제로 우리에게 그 alias로 변환되어서 보여지게 하기 위한 용도</li>
 <li>테이블의 alias: SQL 문의 전체 길이를 줄여서 가독성을 높이기 위해 사용. 한번 alias를 붙였으면 그 테이블은 해당 alias로만 나타내야 한다.</li>
 </ul>
-<hr>
+<h2 id="결합-연산과-집합-연산"><a href="#결합-연산과-집합-연산" class="headerlink" title="결합 연산과 집합 연산"></a>결합 연산과 집합 연산</h2><ul>
+<li>연산: 테이블을 합치는 작업</li>
+<li>결합 연산: 테이블을 가로 방향으로 합치는 것에 관한 연산</li>
+<li>집합 연산: 테이블을 세로 방향으로 합치는 것에 관한 연산</li>
+<li>합집합을 나타낼 때 두 집합이 공통적으로 갖고 있는 원소는 중복을 제거하고 하나만 표시된다.</li>
+<li>mySQL에서는 8.0 기준으로 UNION 연산자만 지원한다.</li>
+<li><code>INTERSECT</code>: A ∩ B 일 때 사용</li>
+<li><code>MINUS</code>/<code>EXCEPT</code>: A - B, B - A 일 때 사용</li>
+<li><code>UNION</code>: A U B일 때 사용</li>
+</ul>
+<h2 id="같은-종류의-테이블을-조인하기"><a href="#같은-종류의-테이블을-조인하기" class="headerlink" title="같은 종류의 테이블을 조인하기"></a>같은 종류의 테이블을 조인하기</h2><p><strong>특정 테이블에 있는 값만 확인하고 싶은 경우</strong></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    old.id <span class="keyword">AS</span> old_id,</span><br><span class="line">    old.name <span class="keyword">AS</span> old_name,</span><br><span class="line">    new.id <span class="keyword">AS</span> new_id,</span><br><span class="line">    new.name <span class="keyword">AS</span> new_name</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> <span class="keyword">old</span> <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> item_mew <span class="keyword">AS</span> <span class="keyword">new</span></span><br><span class="line"><span class="keyword">ON</span> old.id <span class="operator">=</span> new.id;</span><br></pre></td></tr></table></figure>
+<p><em><strong>신상중 null값만 확인하고 싶은 경우</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    old.id <span class="keyword">AS</span> old_id,</span><br><span class="line">    old.name <span class="keyword">AS</span> old_name,</span><br><span class="line">    new.id <span class="keyword">AS</span> new_id,</span><br><span class="line">    new.name <span class="keyword">AS</span> new_name</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> <span class="keyword">old</span> <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> item_mew <span class="keyword">AS</span> <span class="keyword">new</span></span><br><span class="line"><span class="keyword">ON</span> old.id <span class="operator">=</span> new.id</span><br><span class="line"><span class="keyword">WHERE</span> old.id <span class="keyword">IS</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure>
+<p><em><strong>둘다 같이 있는 종류를 보고 싶은 경우</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    old.id <span class="keyword">AS</span> old_id,</span><br><span class="line">    old.name <span class="keyword">AS</span> old_name,</span><br><span class="line">    new.id <span class="keyword">AS</span> new_id,</span><br><span class="line">    new.name <span class="keyword">AS</span> new_name</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> <span class="keyword">old</span> <span class="keyword">INNER</span> <span class="keyword">JOIN</span> item_mew <span class="keyword">AS</span> <span class="keyword">new</span></span><br><span class="line"><span class="keyword">ON</span> old.id <span class="operator">=</span> new.id;</span><br></pre></td></tr></table></figure>
+<p><em><strong>둘다 합쳐보고 싶은 경우</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> item</span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> item_new;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ON-대신-USING-사용"><a href="#ON-대신-USING-사용" class="headerlink" title="ON 대신 USING 사용"></a>ON 대신 USING 사용</h3><ul>
+<li>join의 조건을 설정할 때 ON 절을 사용했지만 만약 조인 조건으로 쓰인 두 컬럼의 이름이 같으면 ON 대신 USING을 쓰는 경우도 있다.</li>
+<li>두 테이블에서 조인 조건으로 사용되는 컬럼들의 이름이 같으면 그냥 USING이라고 쓰고 그 안에 컬럼 이름을 쓰는 것도 허용</li>
+<li>__ON old.id = new.id와 USING(id)__는 같다.</li>
+</ul>
+<h2 id="UNION"><a href="#UNION" class="headerlink" title="UNION"></a>UNION</h2><h3 id="서로-다른-종류의-테이블도-조회하는-컬럼을-일치시키면-집합-연산이-가능하다"><a href="#서로-다른-종류의-테이블도-조회하는-컬럼을-일치시키면-집합-연산이-가능하다" class="headerlink" title="서로 다른 종류의 테이블도, 조회하는 컬럼을 일치시키면 집합 연산이 가능하다."></a>서로 다른 종류의 테이블도, 조회하는 컬럼을 일치시키면 집합 연산이 가능하다.</h3><hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
 </blockquote>
@@ -13284,6 +13308,28 @@
         <tag>SQL</tag>
         <tag>mySQL</tag>
         <tag>table join</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>sql-exercise001</title>
+    <url>/2022/02/14/sql-exercise001/</url>
+    <content><![CDATA[<p>(1) 나이가 20대이고, (2) 코드잇 피자 가게 사이트에 가입한 달이 7월인 회원들만 추려서 그 회원들에게 이메일로 할인 쿠폰을 발송하려고 합니다.</p>
+<a id="more"></a>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> <span class="keyword">member</span></span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">MONTH</span>(sign_up_day) <span class="keyword">IN</span> (<span class="number">7</span>)</span><br><span class="line">  <span class="keyword">AND</span> age <span class="keyword">BETWEEN</span> <span class="number">20</span> <span class="keyword">and</span> <span class="number">29</span>;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>SQL</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>SQL</tag>
       </tags>
   </entry>
 </search>
