@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>sql-exercise002</title>
+    <title>SQL 데이터 조회</title>
     <url>/2022/02/15/sql-exercise002/</url>
     <content><![CDATA[<p>(1) star(별점) 컬럼을 기준으로 일단 오름차순 정렬하고,<br>(2) 같은 별점인 경우에는 registration_date(등록일자) 컬럼을 기준으로 내림차순 정렬하려고 합니다.<br>(3) 5번째 row까지만 일단 추려서 보고 싶습니다.</p>
 <a id="more"></a>
