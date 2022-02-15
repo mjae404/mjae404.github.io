@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-02-14T12:09:38.709Z</updated>
+  <updated>2022-02-15T08:34:23.867Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sql-exercise002</title>
+    <link href="http://mjae404.github.io/2022/02/15/sql-exercise002/"/>
+    <id>http://mjae404.github.io/2022/02/15/sql-exercise002/</id>
+    <published>2022-02-15T08:32:42.000Z</published>
+    <updated>2022-02-15T08:34:23.867Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(1) star(별점) 컬럼을 기준으로 일단 오름차순 정렬하고,&lt;br&gt;(2) 같은 별점인 경우에는 registration_date(등록일자) 컬럼을 기준으로 내림차순 정렬하려고 합니다.&lt;br&gt;(3) 5번째 row까지만 일단 추려서 보고 싶습니다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL 데이터 조회</title>
@@ -530,31 +555,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PYTHON 약수 찾기</title>
-    <link href="http://mjae404.github.io/2022/01/08/python-exercise008/"/>
-    <id>http://mjae404.github.io/2022/01/08/python-exercise008/</id>
-    <published>2022-01-08T10:19:44.000Z</published>
-    <updated>2022-02-12T14:11:32.006Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;자연수 중 120의 약수를 모두 출력하고, 총 몇개의 약수가 있는지 출력하는 프로그램을 써보세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/exercise/Python/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
     
   </entry>
   
