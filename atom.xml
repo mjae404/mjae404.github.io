@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-02-15T08:36:19.682Z</updated>
+  <updated>2022-02-16T12:41:48.610Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SQL</title>
+    <link href="http://mjae404.github.io/2022/02/16/sql-exercise003/"/>
+    <id>http://mjae404.github.io/2022/02/16/sql-exercise003/</id>
+    <published>2022-02-16T12:40:35.000Z</published>
+    <updated>2022-02-16T12:41:48.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(1) 고객들이 남긴 리뷰 수와, (2) 별점 평균값을 구하려고 합니다.&lt;br&gt;(3) 댓글이 존재하는(comment 컬럼이 NULL이 아닌) 리뷰들의 개수와 그 별점들의 평균만 구하려고 하는데요.&lt;br&gt;(4) 그리고 별점의 평균값은 반올림을 해주려고 합니다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL 데이터 조회</title>
@@ -530,31 +555,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="array function" scheme="http://mjae404.github.io/tags/array-function/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 연습문제</title>
-    <link href="http://mjae404.github.io/2022/01/09/js-exercise019/"/>
-    <id>http://mjae404.github.io/2022/01/09/js-exercise019/</id>
-    <published>2022-01-09T07:38:05.000Z</published>
-    <updated>2022-01-11T10:56:15.794Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;연습문제.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/exercise/JavaScript/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
   </entry>
   
