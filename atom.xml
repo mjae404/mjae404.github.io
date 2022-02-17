@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-02-16T12:41:48.610Z</updated>
+  <updated>2022-02-17T13:05:43.866Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>SQL</title>
+    <title>SQL 데이터 분석</title>
+    <link href="http://mjae404.github.io/2022/02/17/sql-exercise004/"/>
+    <id>http://mjae404.github.io/2022/02/17/sql-exercise004/</id>
+    <published>2022-02-17T13:02:37.000Z</published>
+    <updated>2022-02-17T13:05:43.866Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(1) pizza_price_cost 테이블의 name, price, price/cost(원가 기준 가격의 비율) 컬럼을 조회하세요.&lt;br&gt;(2) 대신 마지막 price/cost 컬럼을 사용해서 그 값이&lt;br&gt;1 =&amp;lt; 값 &amp;lt; 1.5 인 경우, ‘C. 저효율 메뉴’&lt;br&gt;1.5 &amp;lt;= 값 &amp;lt; 1.7 인 경우, ‘B. 중효율 메뉴’&lt;br&gt;1.7 &amp;lt;= 값 인 경우, ‘A. 고효율 메뉴’&lt;br&gt;라고 그 값을 변환해서 표시하는 추가적인 컬럼도 함께 조회하고 대신 이 컬럼에는 efficiency라는 alias를 붙여주세요.&lt;br&gt;(3) 그리고 전체 row를 efficiency 컬럼을 기준으로 내림차순, 그 다음 기준으로 price 컬럼을 기준으로 오름차순 정렬하세요.&lt;br&gt;(4) 이 중에서 가장 첫 번째 row 부터 6개만 추리세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL 데이터 분석</title>
     <link href="http://mjae404.github.io/2022/02/16/sql-exercise003/"/>
     <id>http://mjae404.github.io/2022/02/16/sql-exercise003/</id>
     <published>2022-02-16T12:40:35.000Z</published>
-    <updated>2022-02-16T12:41:48.610Z</updated>
+    <updated>2022-02-17T13:03:30.121Z</updated>
     
     <summary type="html">
     
@@ -529,32 +554,6 @@
       <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
     
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS 배열 함수</title>
-    <link href="http://mjae404.github.io/2022/01/10/vue-array-function/"/>
-    <id>http://mjae404.github.io/2022/01/10/vue-array-function/</id>
-    <published>2022-01-10T11:58:45.000Z</published>
-    <updated>2022-01-13T12:48:10.114Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-배열의-내장-함수-활용&quot;&gt;&lt;a href=&quot;#1-배열의-내장-함수-활용&quot; class=&quot;headerlink&quot; title=&quot;1. 배열의 내장 함수 활용&quot;&gt;&lt;/a&gt;1. 배열의 내장 함수 활용&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;map() 함수 메서드: 배열을 대상으로 반복문 (속도 빠름)&lt;/li&gt;
-&lt;li&gt;filter() 함수 메서드: 배열을 대상으로 조건문&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="array function" scheme="http://mjae404.github.io/tags/array-function/"/>
     
   </entry>
   

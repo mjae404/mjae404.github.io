@@ -13354,12 +13354,33 @@
       </tags>
   </entry>
   <entry>
-    <title>SQL</title>
+    <title>SQL 데이터 분석</title>
     <url>/2022/02/16/sql-exercise003/</url>
     <content><![CDATA[<p>(1) 고객들이 남긴 리뷰 수와, (2) 별점 평균값을 구하려고 합니다.<br>(3) 댓글이 존재하는(comment 컬럼이 NULL이 아닌) 리뷰들의 개수와 그 별점들의 평균만 구하려고 하는데요.<br>(4) 그리고 별점의 평균값은 반올림을 해주려고 합니다.</p>
 <a id="more"></a>
 
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>), ROUND(<span class="built_in">AVG</span>(star)) <span class="keyword">FROM</span> review <span class="keyword">WHERE</span> comment <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>SQL</category>
+      </categories>
+      <tags>
+        <tag>exercise</tag>
+        <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL 데이터 분석</title>
+    <url>/2022/02/17/sql-exercise004/</url>
+    <content><![CDATA[<p>(1) pizza_price_cost 테이블의 name, price, price/cost(원가 기준 가격의 비율) 컬럼을 조회하세요.<br>(2) 대신 마지막 price/cost 컬럼을 사용해서 그 값이<br>1 =&lt; 값 &lt; 1.5 인 경우, ‘C. 저효율 메뉴’<br>1.5 &lt;= 값 &lt; 1.7 인 경우, ‘B. 중효율 메뉴’<br>1.7 &lt;= 값 인 경우, ‘A. 고효율 메뉴’<br>라고 그 값을 변환해서 표시하는 추가적인 컬럼도 함께 조회하고 대신 이 컬럼에는 efficiency라는 alias를 붙여주세요.<br>(3) 그리고 전체 row를 efficiency 컬럼을 기준으로 내림차순, 그 다음 기준으로 price 컬럼을 기준으로 오름차순 정렬하세요.<br>(4) 이 중에서 가장 첫 번째 row 부터 6개만 추리세요.</p>
+<a id="more"></a>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    name,</span><br><span class="line">    price,</span><br><span class="line">    price<span class="operator">/</span>cost, </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(<span class="keyword">CASE</span>  </span><br><span class="line">    <span class="keyword">WHEN</span> price <span class="operator">/</span> cost <span class="operator">&gt;=</span> <span class="number">1.7</span> <span class="keyword">THEN</span> <span class="string">&#x27;A. 고효율 메뉴&#x27;</span></span><br><span class="line">    <span class="keyword">WHEN</span> price <span class="operator">/</span> cost <span class="operator">&lt;</span> <span class="number">1.7</span></span><br><span class="line">        <span class="keyword">AND</span> price <span class="operator">/</span> cost <span class="operator">&gt;=</span> <span class="number">1.5</span> </span><br><span class="line">        <span class="keyword">THEN</span> <span class="string">&#x27;B. 중효율 메뉴&#x27;</span></span><br><span class="line">    <span class="keyword">WHEN</span> price <span class="operator">/</span> cost <span class="operator">&lt;</span> <span class="number">1.5</span></span><br><span class="line">        <span class="keyword">AND</span> price <span class="operator">/</span> cost <span class="operator">&gt;=</span> <span class="number">1</span> </span><br><span class="line">        <span class="keyword">THEN</span> <span class="string">&#x27;C. 저효율 메뉴&#x27;</span></span><br><span class="line"><span class="keyword">END</span>) <span class="keyword">AS</span> efficiency</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">FROM</span> pizza_price_cost</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> efficiency <span class="keyword">DESC</span>, price <span class="keyword">ASC</span></span><br><span class="line">LIMIT <span class="number">6</span>;</span><br></pre></td></tr></table></figure>
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
