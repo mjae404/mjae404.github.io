@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-02-17T13:05:43.866Z</updated>
+  <updated>2022-02-18T13:10:03.691Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mySQL 서브쿼리</title>
+    <link href="http://mjae404.github.io/2022/02/18/sql-sub-query/"/>
+    <id>http://mjae404.github.io/2022/02/18/sql-sub-query/</id>
+    <published>2022-02-18T12:32:59.000Z</published>
+    <updated>2022-02-18T13:10:03.691Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;서브쿼리&quot;&gt;&lt;a href=&quot;#서브쿼리&quot; class=&quot;headerlink&quot; title=&quot;서브쿼리&quot;&gt;&lt;/a&gt;서브쿼리&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;SQL문 안에 ‘부품’처럼 들어가는 SELECT문.&lt;/li&gt;
+&lt;li&gt;전체 SQL문에서 일부를 이루는 또다른 SQL문.&lt;/li&gt;
+&lt;li&gt;괄호로 서브쿼리를 감싸주어야 한다.&lt;/li&gt;
+&lt;li&gt;전체 SQL문을 outer query(외부쿼리), 서브쿼리를 inner query(내부쿼리)라고도 함.&lt;/li&gt;
+&lt;li&gt;HAVING절, SELECT절, WHERE절, FROM절 등에서도 사용 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
+    
+      <category term="Primary Key" scheme="http://mjae404.github.io/tags/Primary-Key/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL 데이터 분석</title>
@@ -121,7 +158,7 @@
     <link href="http://mjae404.github.io/2022/02/13/sql-table-join/"/>
     <id>http://mjae404.github.io/2022/02/13/sql-table-join/</id>
     <published>2022-02-13T09:19:47.000Z</published>
-    <updated>2022-02-17T14:19:27.832Z</updated>
+    <updated>2022-02-18T12:12:46.240Z</updated>
     
     <summary type="html">
     
@@ -250,14 +287,14 @@
     <link href="http://mjae404.github.io/2022/02/03/sql-overview/"/>
     <id>http://mjae404.github.io/2022/02/03/sql-overview/</id>
     <published>2022-02-03T05:36:17.000Z</published>
-    <updated>2022-02-05T09:55:29.804Z</updated>
+    <updated>2022-02-18T13:13:05.759Z</updated>
     
     <summary type="html">
     
       &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;데이터베이스&lt;/strong&gt;: 일정한 체계 속에 저장된 데이터의 집합&lt;/li&gt;
 &lt;li&gt;데이터베이스를 다루기 위해서는 DBMS(Database Management System)라는 프로그램을 사용해야하고, DBMS는 결국 SQL이라고 하는 언어로 조작해야 한다.&lt;/li&gt;
-&lt;li&gt;테이블에서 하나의 개체를 나타내는 것은 row, 개체의 각 속성을 나타내는 것은 column이다&lt;/li&gt;
+&lt;li&gt;테이블에서 하나의 개체를 나타내는 것은 row, 개체의 각 속성을 나타내는 것은 column이다.&lt;/li&gt;
 &lt;li&gt;서버 - 클라이언트 구조로 동작한다.&lt;/li&gt;
 &lt;/ul&gt;
     
@@ -529,31 +566,6 @@
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
       <category term="bind" scheme="http://mjae404.github.io/tags/bind/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VUE 개요</title>
-    <link href="http://mjae404.github.io/2022/01/13/vue-overview/"/>
-    <id>http://mjae404.github.io/2022/01/13/vue-overview/</id>
-    <published>2022-01-13T14:57:14.000Z</published>
-    <updated>2022-01-14T10:09:47.498Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Vue 개요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
   </entry>
   

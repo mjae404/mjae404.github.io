@@ -148,7 +148,25 @@
 
 <h3 id="리뷰-내용-확인하기"><a href="#리뷰-내용-확인하기" class="headerlink" title="리뷰 내용 확인하기"></a>리뷰 내용 확인하기</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> review <span class="keyword">WHERE</span> item_id <span class="operator">=</span> <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
 
-
+<h2 id="그-외의-조인들"><a href="#그-외의-조인들" class="headerlink" title="그 외의 조인들"></a>그 외의 조인들</h2><h3 id="NATURAL-JOIN-자연조인"><a href="#NATURAL-JOIN-자연조인" class="headerlink" title="NATURAL JOIN (자연조인)"></a>NATURAL JOIN (자연조인)</h3><ul>
+<li>두 테이블에서 같은 이름의 컬럼을 찾아서 자동으로 그것들을 조인 조건을 설정하고, INNER JOIN을 해주는 조인</li>
+<li>조인 조건을 자동으로 설정해주기 때문에 ON절을 쓸 필요가 없다.</li>
+</ul>
+<h3 id="CROSS-JOIN"><a href="#CROSS-JOIN" class="headerlink" title="CROSS JOIN"></a>CROSS JOIN</h3><ul>
+<li>한 테이블의 하나의 row에 다른 테이블의 모든 row들을 매칭하고, 그 다음 row에서도 또, 다른 테이블의 모든 row들을 매칭하는 것을 반복함으로써 두 테이블의 row들의 모든 조합을 보여주는 조인</li>
+<li>두 테이블의 Cartesian Product를 구하는 조인</li>
+<li><strong>카르테시안 곱(Cartesian Product)</strong>: 두 집합의 모든 원소들의 조합을 나타내는 것을 수학의 집합 이론</li>
+</ul>
+<h3 id="SELF-JOIN"><a href="#SELF-JOIN" class="headerlink" title="SELF JOIN"></a>SELF JOIN</h3><ul>
+<li>테이블이 자기 자신과 조인을 하는 경우</li>
+</ul>
+<h3 id="FULL-OUTER-JOIN"><a href="#FULL-OUTER-JOIN" class="headerlink" title="FULL OUTER JOIN"></a>FULL OUTER JOIN</h3><ul>
+<li>두 테이블의 LEFT OUTER JOIN 결과와 RIGHT OUTER JOIN 결과를 합치는 조인</li>
+<li>두 결과에 모두 존재하는 row들(두 테이블에 공통으로 존재하던 row들)은 한번만 표현</li>
+</ul>
+<h3 id="Non-Equi-조인"><a href="#Non-Equi-조인" class="headerlink" title="Non-Equi 조인"></a>Non-Equi 조인</h3><ul>
+<li>ON절에서 등호(=)가 없는 조건 표현식</li>
+</ul>
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>

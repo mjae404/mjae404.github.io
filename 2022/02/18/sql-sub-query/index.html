@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjae404.github.io">
   <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
-    mySQL 개요 |  404 Not Found
+    mySQL 서브쿼리 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -37,7 +37,7 @@
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-sql-overview" class="article article-type-post" itemscope
+  <article id="post-sql-sub-query" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -45,7 +45,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  mySQL 개요
+  mySQL 서브쿼리
 </h1>
   
 
@@ -54,8 +54,8 @@
 
     
     <div class="article-meta">
-      <a href="/2022/02/03/sql-overview/" class="article-date">
-  <time datetime="2022-02-03T05:36:17.000Z" itemprop="datePublished">2022-02-03</time>
+      <a href="/2022/02/18/sql-sub-query/" class="article-date">
+  <time datetime="2022-02-18T12:32:59.000Z" itemprop="datePublished">2022-02-18</time>
 </a>
       
   <div class="article-category">
@@ -75,38 +75,19 @@
       
 
       
-      <ul>
-<li><strong>데이터베이스</strong>: 일정한 체계 속에 저장된 데이터의 집합</li>
-<li>데이터베이스를 다루기 위해서는 DBMS(Database Management System)라는 프로그램을 사용해야하고, DBMS는 결국 SQL이라고 하는 언어로 조작해야 한다.</li>
-<li>테이블에서 하나의 개체를 나타내는 것은 row, 개체의 각 속성을 나타내는 것은 column이다.</li>
-<li>서버 - 클라이언트 구조로 동작한다.</li>
+      <h2 id="서브쿼리"><a href="#서브쿼리" class="headerlink" title="서브쿼리"></a>서브쿼리</h2><ul>
+<li>SQL문 안에 ‘부품’처럼 들어가는 SELECT문.</li>
+<li>전체 SQL문에서 일부를 이루는 또다른 SQL문.</li>
+<li>괄호로 서브쿼리를 감싸주어야 한다.</li>
+<li>전체 SQL문을 outer query(외부쿼리), 서브쿼리를 inner query(내부쿼리)라고도 함.</li>
+<li>HAVING절, SELECT절, WHERE절, FROM절 등에서도 사용 가능하다.</li>
 </ul>
 <a id="more"></a>
 
-<h2 id="SQL의-역사"><a href="#SQL의-역사" class="headerlink" title="SQL의 역사"></a>SQL의 역사</h2><ul>
-<li><strong>SQL(Structured Query Language)</strong> : SEQUEL (Structured English Query Language)에서 상표권의 문제로 변경됨.</li>
-<li>1987년, 국제 표준화 기구(ISO)에서 <a target="_blank" rel="noopener" href="https://www.iso.org/standard/16661.html">SQL에 관한 국제 표준(ISO 9075:1987)</a>이 제정. 현재는 2019년 개정안이 최신이다.</li>
-<li>공인된 국제 표준이 있지만 Oracle, Microsoft SQL Server, MySQL 등의 DBMS에서 지원되는 SQL이 표준을 완벽히 준수하지 않는다.</li>
-</ul>
-<h2 id="MySQL이란"><a href="#MySQL이란" class="headerlink" title="MySQL이란?"></a>MySQL이란?</h2><ul>
-<li>현재 페이스북, 유튜브 등을 비롯한 유명한 서비스에서도 활발히 사용됨.</li>
-<li>MySQL AB 개발 -&gt; Sun Microsystems 인수 -&gt; Oracle 인수</li>
-<li>오픈 소스 소프트웨어</li>
-<li>상업용 라이센스 필요한 상황<ul>
-<li>MySQL에 관한 추가 서비스, 상시 기술 지원 등을 원할 때</li>
-<li>MySQL의 소스 코드를 가져다가 일부를 수정하고 자신의 제품의 일부로 만들어서 재배포하는 상황에서 그 소스코드를 공개하고 싶지 않을 때</li>
-</ul>
-</li>
-<li>오라클: 은행, 거래소 등과 같이 데이터 처리의 정확성, 운영의 안정성 등이 엄격하게 요구되는 분야</li>
-<li>MySQL: 우리가 흔히 쓰는 앱, 웹 사이트 같은 서비스. 간단히 사용해볼 때 요구하는 컴퓨터 성능도 작은 편.</li>
-<li>CSV 파일: Comma Separated Values</li>
-</ul>
-<h2 id="sys-데이터-베이스"><a href="#sys-데이터-베이스" class="headerlink" title="sys 데이터 베이스"></a>sys 데이터 베이스</h2><p>MySQL 서버의 성능 관련 정보들을 갖고있는 데이터베이스이다.</p>
-<ul>
-<li>기획자/마케터 : 데이터베이스에 저장된 데이터를 잘 분석해서 시장 및 고객을 분석</li>
-<li>백엔드 개발자 또는 데이터베이스 관리자 : 데이터가 빠르고 안정적으로, 조회 및 저장될 수 있도록 개발 및 관리.  DBMS가 성능 저하 없이 효율적으로 작업을 처리하고 있는지를 체크가 필요하다. 이러한 정보를 확인할 수 있는 기본 데이터베이스 중 하나가 이 sys 데이터베이스이다.</li>
-<li>a라는 데이터베이스를 만드려고 할 때 <code>CREATE DATABASE a;</code>으로 실행한다.</li>
-</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> i.ID, i.name, <span class="built_in">AVG</span>(star) <span class="keyword">AS</span> avg_star</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> i <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> review <span class="keyword">AS</span> r</span><br><span class="line"><span class="keyword">ON</span> R.ITEM_ID <span class="operator">=</span> I.ID</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> i.id, i.name</span><br><span class="line"><span class="keyword">HAVING</span> avg_star <span class="operator">&lt;</span> (<span class="keyword">SELECT</span> <span class="built_in">AVG</span>(star) <span class="keyword">FROM</span> review)</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> avg_star <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="select절에-있는-서브쿼리"><a href="#select절에-있는-서브쿼리" class="headerlink" title="select절에 있는 서브쿼리"></a>select절에 있는 서브쿼리</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    id,</span><br><span class="line">    name,</span><br><span class="line">    price,</span><br><span class="line">    (<span class="keyword">SELECT</span> <span class="built_in">MAX</span>(price) <span class="keyword">FROM</span> item) <span class="keyword">AS</span> max_price</span><br><span class="line"><span class="keyword">FROM</span> main.item;</span><br></pre></td></tr></table></figure>
+
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
@@ -117,10 +98,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2022/02/03/sql-overview/" data-id="ckz6k1icd0000vu0a4a1ggh01"
+      <a data-url="http://mjae404.github.io/2022/02/18/sql-sub-query/" data-id="ckztxdopd0000u70a68g18s7c"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Base/" rel="tag">Data Base</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/" rel="tag">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mySQL/" rel="tag">mySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overview/" rel="tag">overview</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Base/" rel="tag">Data Base</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Primary-Key/" rel="tag">Primary Key</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/" rel="tag">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mySQL/" rel="tag">mySQL</a></li></ul>
 
     </footer>
 
@@ -130,19 +111,10 @@
   
   <nav class="article-nav">
     
-      <a href="/2022/02/04/sql-primary-key/" class="article-nav-link">
-        <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">
-          
-            mySQL Primary Key (기본키)
-          
-        </div>
-      </a>
     
-    
-      <a href="/2022/01/28/vue-methods/" class="article-nav-link">
+      <a href="/2022/02/17/sql-exercise004/" class="article-nav-link">
         <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">VUE methods</div>
+        <div class="article-nav-title">SQL 데이터 분석</div>
       </a>
     
   </nav>

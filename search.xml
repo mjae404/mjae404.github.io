@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>mySQL 서브쿼리</title>
+    <url>/2022/02/18/sql-sub-query/</url>
+    <content><![CDATA[<h2 id="서브쿼리"><a href="#서브쿼리" class="headerlink" title="서브쿼리"></a>서브쿼리</h2><ul>
+<li>SQL문 안에 ‘부품’처럼 들어가는 SELECT문.</li>
+<li>전체 SQL문에서 일부를 이루는 또다른 SQL문.</li>
+<li>괄호로 서브쿼리를 감싸주어야 한다.</li>
+<li>전체 SQL문을 outer query(외부쿼리), 서브쿼리를 inner query(내부쿼리)라고도 함.</li>
+<li>HAVING절, SELECT절, WHERE절, FROM절 등에서도 사용 가능하다.</li>
+</ul>
+<a id="more"></a>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> i.ID, i.name, <span class="built_in">AVG</span>(star) <span class="keyword">AS</span> avg_star</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> i <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> review <span class="keyword">AS</span> r</span><br><span class="line"><span class="keyword">ON</span> R.ITEM_ID <span class="operator">=</span> I.ID</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> i.id, i.name</span><br><span class="line"><span class="keyword">HAVING</span> avg_star <span class="operator">&lt;</span> (<span class="keyword">SELECT</span> <span class="built_in">AVG</span>(star) <span class="keyword">FROM</span> review)</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> avg_star <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="select절에-있는-서브쿼리"><a href="#select절에-있는-서브쿼리" class="headerlink" title="select절에 있는 서브쿼리"></a>select절에 있는 서브쿼리</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    id,</span><br><span class="line">    name,</span><br><span class="line">    price,</span><br><span class="line">    (<span class="keyword">SELECT</span> <span class="built_in">MAX</span>(price) <span class="keyword">FROM</span> item) <span class="keyword">AS</span> max_price</span><br><span class="line"><span class="keyword">FROM</span> main.item;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Data Base</category>
+        <category>SQL</category>
+        <category>mySQL</category>
+      </categories>
+      <tags>
+        <tag>Data Base</tag>
+        <tag>SQL</tag>
+        <tag>mySQL</tag>
+        <tag>Primary Key</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SQL 데이터 분석</title>
     <url>/2022/02/17/sql-exercise004/</url>
     <content><![CDATA[<p>(1) pizza_price_cost 테이블의 name, price, price/cost(원가 기준 가격의 비율) 컬럼을 조회하세요.<br>(2) 대신 마지막 price/cost 컬럼을 사용해서 그 값이<br>1 =&lt; 값 &lt; 1.5 인 경우, ‘C. 저효율 메뉴’<br>1.5 &lt;= 값 &lt; 1.7 인 경우, ‘B. 중효율 메뉴’<br>1.7 &lt;= 값 인 경우, ‘A. 고효율 메뉴’<br>라고 그 값을 변환해서 표시하는 추가적인 컬럼도 함께 조회하고 대신 이 컬럼에는 efficiency라는 alias를 붙여주세요.<br>(3) 그리고 전체 row를 efficiency 컬럼을 기준으로 내림차순, 그 다음 기준으로 price 컬럼을 기준으로 오름차순 정렬하세요.<br>(4) 이 중에서 가장 첫 번째 row 부터 6개만 추리세요.</p>
@@ -161,7 +194,25 @@
 
 <h3 id="리뷰-내용-확인하기"><a href="#리뷰-내용-확인하기" class="headerlink" title="리뷰 내용 확인하기"></a>리뷰 내용 확인하기</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> review <span class="keyword">WHERE</span> item_id <span class="operator">=</span> <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
 
-
+<h2 id="그-외의-조인들"><a href="#그-외의-조인들" class="headerlink" title="그 외의 조인들"></a>그 외의 조인들</h2><h3 id="NATURAL-JOIN-자연조인"><a href="#NATURAL-JOIN-자연조인" class="headerlink" title="NATURAL JOIN (자연조인)"></a>NATURAL JOIN (자연조인)</h3><ul>
+<li>두 테이블에서 같은 이름의 컬럼을 찾아서 자동으로 그것들을 조인 조건을 설정하고, INNER JOIN을 해주는 조인</li>
+<li>조인 조건을 자동으로 설정해주기 때문에 ON절을 쓸 필요가 없다.</li>
+</ul>
+<h3 id="CROSS-JOIN"><a href="#CROSS-JOIN" class="headerlink" title="CROSS JOIN"></a>CROSS JOIN</h3><ul>
+<li>한 테이블의 하나의 row에 다른 테이블의 모든 row들을 매칭하고, 그 다음 row에서도 또, 다른 테이블의 모든 row들을 매칭하는 것을 반복함으로써 두 테이블의 row들의 모든 조합을 보여주는 조인</li>
+<li>두 테이블의 Cartesian Product를 구하는 조인</li>
+<li><strong>카르테시안 곱(Cartesian Product)</strong>: 두 집합의 모든 원소들의 조합을 나타내는 것을 수학의 집합 이론</li>
+</ul>
+<h3 id="SELF-JOIN"><a href="#SELF-JOIN" class="headerlink" title="SELF JOIN"></a>SELF JOIN</h3><ul>
+<li>테이블이 자기 자신과 조인을 하는 경우</li>
+</ul>
+<h3 id="FULL-OUTER-JOIN"><a href="#FULL-OUTER-JOIN" class="headerlink" title="FULL OUTER JOIN"></a>FULL OUTER JOIN</h3><ul>
+<li>두 테이블의 LEFT OUTER JOIN 결과와 RIGHT OUTER JOIN 결과를 합치는 조인</li>
+<li>두 결과에 모두 존재하는 row들(두 테이블에 공통으로 존재하던 row들)은 한번만 표현</li>
+</ul>
+<h3 id="Non-Equi-조인"><a href="#Non-Equi-조인" class="headerlink" title="Non-Equi 조인"></a>Non-Equi 조인</h3><ul>
+<li>ON절에서 등호(=)가 없는 조건 표현식</li>
+</ul>
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
@@ -588,7 +639,7 @@
     <content><![CDATA[<ul>
 <li><strong>데이터베이스</strong>: 일정한 체계 속에 저장된 데이터의 집합</li>
 <li>데이터베이스를 다루기 위해서는 DBMS(Database Management System)라는 프로그램을 사용해야하고, DBMS는 결국 SQL이라고 하는 언어로 조작해야 한다.</li>
-<li>테이블에서 하나의 개체를 나타내는 것은 row, 개체의 각 속성을 나타내는 것은 column이다</li>
+<li>테이블에서 하나의 개체를 나타내는 것은 row, 개체의 각 속성을 나타내는 것은 column이다.</li>
 <li>서버 - 클라이언트 구조로 동작한다.</li>
 </ul>
 <a id="more"></a>
