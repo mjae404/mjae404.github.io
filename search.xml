@@ -16,6 +16,14 @@
 
 <h3 id="select절에-있는-서브쿼리"><a href="#select절에-있는-서브쿼리" class="headerlink" title="select절에 있는 서브쿼리"></a>select절에 있는 서브쿼리</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    id,</span><br><span class="line">    name,</span><br><span class="line">    price,</span><br><span class="line">    (<span class="keyword">SELECT</span> <span class="built_in">MAX</span>(price) <span class="keyword">FROM</span> item) <span class="keyword">AS</span> max_price</span><br><span class="line"><span class="keyword">FROM</span> main.item;</span><br></pre></td></tr></table></figure>
 
+<h2 id="where-절에-있는-서브쿼리"><a href="#where-절에-있는-서브쿼리" class="headerlink" title="where 절에 있는 서브쿼리"></a>where 절에 있는 서브쿼리</h2><p><em><strong>전체 상품의 평균 가격을 구하는 쿼리보다 높은 가격을 가진 상품</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    id,</span><br><span class="line">    name,</span><br><span class="line">    price,</span><br><span class="line">    (SELCT <span class="built_in">AVG</span>(price) <span class="keyword">FROM</span> item) <span class="keyword">AS</span> avg_price</span><br><span class="line"><span class="keyword">FROM</span> main.item</span><br><span class="line"><span class="keyword">WHERE</span> price <span class="operator">&gt;</span> (<span class="keyword">SELECT</span> <span class="built_in">AVG</span>(price) <span class="keyword">FROM</span> item);</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>최고가 상품</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id, name, price</span><br><span class="line"><span class="keyword">FROM</span> price <span class="operator">=</span> (<span class="keyword">SELECT</span> <span class="built_in">MAX</span>(price) <span class="keyword">FROM</span> item);</span><br></pre></td></tr></table></figure>
+<p><em><strong>최저가 상품</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id, name, price</span><br><span class="line"><span class="keyword">FROM</span> price <span class="operator">=</span> (<span class="keyword">SELECT</span> <span class="built_in">MIN</span>(price) <span class="keyword">FROM</span> item);</span><br></pre></td></tr></table></figure>
+
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
