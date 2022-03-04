@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-02-26T08:10:04.240Z</updated>
+  <updated>2022-03-04T04:36:56.113Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 애니메이션 04</title>
+    <link href="http://mjae404.github.io/2022/03/04/css-exercise005/"/>
+    <id>http://mjae404.github.io/2022/03/04/css-exercise005/</id>
+    <published>2022-03-04T02:55:54.000Z</published>
+    <updated>2022-03-04T04:36:56.113Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;거울 반사 효과.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
   
   <entry>
     <title>mySQL 서브쿼리</title>
@@ -541,31 +568,6 @@
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
       <category term="moedel" scheme="http://mjae404.github.io/tags/moedel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VUE bind</title>
-    <link href="http://mjae404.github.io/2022/01/18/vue-bind/"/>
-    <id>http://mjae404.github.io/2022/01/18/vue-bind/</id>
-    <published>2022-01-18T10:25:25.000Z</published>
-    <updated>2022-01-18T10:26:37.244Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;v-bind&lt;/code&gt;의 역할 : vue 인스턴스 내부에서 선언된 data의 속성값(들)을 변수처럼 이용하여 HTML 문서 상의 문자열로 구성된 변수 자리에 그 값을 넣어준다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-      <category term="bind" scheme="http://mjae404.github.io/tags/bind/"/>
     
   </entry>
   
