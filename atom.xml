@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-03-04T04:36:56.113Z</updated>
+  <updated>2022-03-12T13:06:52.816Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CSS 애니메이션 04</title>
+    <title>CSS 애니메이션 06</title>
+    <link href="http://mjae404.github.io/2022/03/04/css-exercise006/"/>
+    <id>http://mjae404.github.io/2022/03/04/css-exercise006/</id>
+    <published>2022-03-04T05:25:34.000Z</published>
+    <updated>2022-03-12T13:06:52.816Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;좌우로 벌어지는 CSS 애니메이션.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 애니메이션 05</title>
     <link href="http://mjae404.github.io/2022/03/04/css-exercise005/"/>
     <id>http://mjae404.github.io/2022/03/04/css-exercise005/</id>
     <published>2022-03-04T02:55:54.000Z</published>
-    <updated>2022-03-04T04:36:56.113Z</updated>
+    <updated>2022-03-12T13:06:36.656Z</updated>
     
     <summary type="html">
     
@@ -48,7 +75,7 @@
     <link href="http://mjae404.github.io/2022/02/18/sql-sub-query/"/>
     <id>http://mjae404.github.io/2022/02/18/sql-sub-query/</id>
     <published>2022-02-18T12:32:59.000Z</published>
-    <updated>2022-02-26T08:10:04.240Z</updated>
+    <updated>2022-03-12T12:47:43.507Z</updated>
     
     <summary type="html">
     
@@ -543,31 +570,6 @@
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
       <category term="if" scheme="http://mjae404.github.io/tags/if/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VUE model</title>
-    <link href="http://mjae404.github.io/2022/01/19/vue-model/"/>
-    <id>http://mjae404.github.io/2022/01/19/vue-model/</id>
-    <published>2022-01-19T10:54:33.000Z</published>
-    <updated>2022-01-22T08:07:21.139Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;v-model 디렉티브를 사용하면 어떤 입력값에 대한 내용을 실시간으로 표시하는 양방향 데이터를 구현할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-      <category term="moedel" scheme="http://mjae404.github.io/tags/moedel/"/>
     
   </entry>
   
