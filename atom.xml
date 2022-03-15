@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-03-14T08:45:10.853Z</updated>
+  <updated>2022-03-15T04:33:28.206Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JAVA 배열</title>
+    <link href="http://mjae404.github.io/2022/03/15/java-array/"/>
+    <id>http://mjae404.github.io/2022/03/15/java-array/</id>
+    <published>2022-03-15T03:13:13.000Z</published>
+    <updated>2022-03-15T04:33:28.206Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;배열을 사용하면 변수 하나에 값을 여러개 담을 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
+    
+    
+      <category term="array" scheme="http://mjae404.github.io/tags/array/"/>
+    
+      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>JAVA 조건문과 반복문</title>
@@ -553,33 +576,6 @@
     
     
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VUE async</title>
-    <link href="http://mjae404.github.io/2022/01/24/vue-async/"/>
-    <id>http://mjae404.github.io/2022/01/24/vue-async/</id>
-    <published>2022-01-24T12:19:38.000Z</published>
-    <updated>2022-01-26T10:35:04.137Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;비동기 식(함수) - asynchhrone : 함수 호출에 의해서 후속 실행문을 가져와서 사용한다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-      <category term="async" scheme="http://mjae404.github.io/tags/async/"/>
     
   </entry>
   
