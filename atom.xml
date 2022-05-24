@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-03-15T04:33:28.206Z</updated>
+  <updated>2022-05-24T08:12:19.132Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>리액트 개요</title>
+    <link href="http://mjae404.github.io/2022/05/24/react-overview/"/>
+    <id>http://mjae404.github.io/2022/05/24/react-overview/</id>
+    <published>2022-05-24T02:14:12.000Z</published>
+    <updated>2022-05-24T08:12:19.132Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;create-react-app&lt;/code&gt;으로 리엑트 프로젝트 생성.&lt;br&gt;&lt;code&gt;npm init react-app &amp;lt;폴더 이름&amp;gt;&lt;/code&gt; 혹은 터미널에서 &lt;code&gt;npm init react-app .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;개발모드 실행: &lt;code&gt;npm runt start&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;개발모드 종료: &lt;code&gt;Ctrl + C&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;리액트 개발자 도구: React Developer Tools (크롬 확장 프로그램)&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="React" scheme="http://mjae404.github.io/categories/JavaScript/React/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="react" scheme="http://mjae404.github.io/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA 객체 지향 프로그래밍</title>
+    <link href="http://mjae404.github.io/2022/03/17/java-oop/"/>
+    <id>http://mjae404.github.io/2022/03/17/java-oop/</id>
+    <published>2022-03-17T05:42:54.000Z</published>
+    <updated>2022-03-18T12:32:12.788Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;객체 지향 프로그래밍&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;컴퓨터 프로그래밍의 패러다임 중 하나이다. 객체 지향 프로그래밍은 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 “객체”들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. &lt;sup&gt;1&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;‘객체’는 ‘속성’들과 ‘동작’들의 묶음이라고 할 수 있는데 속성은 ‘변수’로 나타내고, 동작은 ‘메소드(함수)’로 나타낸다.&lt;blockquote&gt;
+&lt;p&gt;[ 1 ] : &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D&quot;&gt;위키백과&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
+    
+      <category term="object-oriented programming" scheme="http://mjae404.github.io/tags/object-oriented-programming/"/>
+    
+  </entry>
   
   <entry>
     <title>JAVA 배열</title>
@@ -528,54 +590,6 @@
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
       <category term="router" scheme="http://mjae404.github.io/tags/router/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VUE vuex</title>
-    <link href="http://mjae404.github.io/2022/01/26/vue-vuex/"/>
-    <id>http://mjae404.github.io/2022/01/26/vue-vuex/</id>
-    <published>2022-01-26T10:37:37.000Z</published>
-    <updated>2022-02-07T10:52:47.360Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;하나의 뷰 또는 복수의 화면 사이에서 여러개의 컴포넌트를 사용하면 각 컴포넌트 간에 값을 전달하거나 공유하는 것이 쉽지 않음.&lt;br&gt;이런 문제를 해결하기 위해서는 vuex라는 상태값 전문 라이브러리를 활용할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-      <category term="vuex" scheme="http://mjae404.github.io/tags/vuex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VUE computed</title>
-    <link href="http://mjae404.github.io/2022/01/26/vue-computed/"/>
-    <id>http://mjae404.github.io/2022/01/26/vue-computed/</id>
-    <published>2022-01-26T10:04:07.000Z</published>
-    <updated>2022-01-26T10:05:32.103Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;VUE computed&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
   </entry>
   
