@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-05-24T08:12:19.132Z</updated>
+  <updated>2022-06-20T11:36:15.553Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://mjae404.github.io/2022/05/24/react-overview/"/>
     <id>http://mjae404.github.io/2022/05/24/react-overview/</id>
     <published>2022-05-24T02:14:12.000Z</published>
-    <updated>2022-05-24T08:12:19.132Z</updated>
+    <updated>2022-06-20T11:36:15.553Z</updated>
     
     <summary type="html">
     
       &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;create-react-app&lt;/code&gt;으로 리엑트 프로젝트 생성.&lt;br&gt;&lt;code&gt;npm init react-app &amp;lt;폴더 이름&amp;gt;&lt;/code&gt; 혹은 터미널에서 &lt;code&gt;npm init react-app .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;create-react-app&lt;/code&gt;으로 리액트 프로젝트 생성.&lt;br&gt;&lt;code&gt;npm init react-app &amp;lt;폴더 이름&amp;gt;&lt;/code&gt; 혹은 터미널에서 &lt;code&gt;npm init react-app .&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;개발모드 실행: &lt;code&gt;npm runt start&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;개발모드 종료: &lt;code&gt;Ctrl + C&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;리액트 개발자 도구: React Developer Tools (크롬 확장 프로그램)&lt;/li&gt;
