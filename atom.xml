@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-06-20T11:36:15.553Z</updated>
+  <updated>2022-08-21T09:31:13.089Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,17 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>리액트 next.js 세팅</title>
+    <link href="http://mjae404.github.io/2022/08/21/react-nextjs/"/>
+    <id>http://mjae404.github.io/2022/08/21/react-nextjs/</id>
+    <published>2022-08-21T07:26:19.000Z</published>
+    <updated>2022-08-21T09:31:13.089Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;code&gt;node.js&lt;/code&gt;를 설치한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm i next&lt;/code&gt; 명령어를 진행한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm i react react-dom&lt;/code&gt; 을 설치한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://thebook.io/&quot;&gt;https://thebook.io/&lt;/a&gt; 에서 참고할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="React" scheme="http://mjae404.github.io/categories/JavaScript/React/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="react" scheme="http://mjae404.github.io/tags/react/"/>
+    
+      <category term="nextjs" scheme="http://mjae404.github.io/tags/nextjs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>리액트 개요</title>
     <link href="http://mjae404.github.io/2022/05/24/react-overview/"/>
     <id>http://mjae404.github.io/2022/05/24/react-overview/</id>
     <published>2022-05-24T02:14:12.000Z</published>
-    <updated>2022-06-20T11:36:15.553Z</updated>
+    <updated>2022-08-21T07:24:53.226Z</updated>
     
     <summary type="html">
     
       &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;create-react-app&lt;/code&gt;으로 리액트 프로젝트 생성.&lt;br&gt;&lt;code&gt;npm init react-app &amp;lt;폴더 이름&amp;gt;&lt;/code&gt; 혹은 터미널에서 &lt;code&gt;npm init react-app .&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;개발모드 실행: &lt;code&gt;npm runt start&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;create-react-app&lt;/code&gt;으로 리액트 프로젝트 생성.&lt;br&gt;&lt;code&gt;npm init react-app &amp;lt;폴더 이름&amp;gt;&lt;/code&gt; 혹은 해당 폴더 안에 들어간 후  터미널에서 &lt;code&gt;npm init react-app .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;개발모드 실행: &lt;code&gt;npm run start&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;개발모드 종료: &lt;code&gt;Ctrl + C&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;리액트 개발자 도구: React Developer Tools (크롬 확장 프로그램)&lt;/li&gt;
 &lt;/ul&gt;
@@ -565,31 +599,6 @@
       <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
     
       <category term="methods" scheme="http://mjae404.github.io/tags/methods/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VUE router</title>
-    <link href="http://mjae404.github.io/2022/01/26/vue-router/"/>
-    <id>http://mjae404.github.io/2022/01/26/vue-router/</id>
-    <published>2022-01-26T11:21:06.000Z</published>
-    <updated>2022-01-28T09:50:15.716Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;라우터란 페이지까지 이동할 수 있는 기능을 의미.&lt;br&gt;라우터를 사용하면 경로와 컴퓨넌트를 등록하면 싱글 페이지 어플리케이션(SPA : Single Page Application)&lt;br&gt;사용자가 클릭한 화면이 쉽게 이동하도록 도와주는 역할을 담당.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-      <category term="router" scheme="http://mjae404.github.io/tags/router/"/>
     
   </entry>
   
