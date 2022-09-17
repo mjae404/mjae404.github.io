@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-08-21T09:31:13.089Z</updated>
+  <updated>2022-09-17T07:34:15.364Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>웹게임으로 배우는 vue 1</title>
+    <link href="http://mjae404.github.io/2022/09/17/vue-webgame/"/>
+    <id>http://mjae404.github.io/2022/09/17/vue-webgame/</id>
+    <published>2022-09-17T06:19:45.000Z</published>
+    <updated>2022-09-17T07:34:15.364Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;웹게임으로 배우는 vue  구구단&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+      <category term="webgame" scheme="http://mjae404.github.io/tags/webgame/"/>
+    
+      <category term="multiplication table" scheme="http://mjae404.github.io/tags/multiplication-table/"/>
+    
+  </entry>
   
   <entry>
     <title>리액트 next.js 세팅</title>
@@ -574,31 +601,6 @@
       <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
     
       <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VUE methods</title>
-    <link href="http://mjae404.github.io/2022/01/28/vue-methods/"/>
-    <id>http://mjae404.github.io/2022/01/28/vue-methods/</id>
-    <published>2022-01-28T09:47:15.000Z</published>
-    <updated>2022-01-28T09:49:58.085Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;이벤트-핸들러-v-on-로직-논리값-과-methods의-속성&quot;&gt;&lt;a href=&quot;#이벤트-핸들러-v-on-로직-논리값-과-methods의-속성&quot; class=&quot;headerlink&quot; title=&quot;이벤트 핸들러(v-on) 로직(논리값)과 methods의 속성&quot;&gt;&lt;/a&gt;이벤트 핸들러(v-on) 로직(논리값)과 methods의 속성&lt;/h3&gt;&lt;p&gt;메서드는 뷰 인스턴스에 포함하여 사용하는 함수를 의미.&lt;br&gt;특히, 뷰에서 methods 속성은 이벤트 핸들러를 사용하여 (클릭) 이벤트가 발생했을 때 실행되는 로직에 되는 로직에 사용.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-      <category term="methods" scheme="http://mjae404.github.io/tags/methods/"/>
     
   </entry>
   
