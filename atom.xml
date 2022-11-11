@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-09-17T13:38:52.500Z</updated>
+  <updated>2022-10-10T11:24:21.220Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>뷰 개요</title>
+    <link href="http://mjae404.github.io/2022/10/10/vue-overview-1/"/>
+    <id>http://mjae404.github.io/2022/10/10/vue-overview-1/</id>
+    <published>2022-10-10T07:13:38.000Z</published>
+    <updated>2022-10-10T11:24:21.220Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vue create &amp;lt;프로젝트명&amp;gt;&lt;/code&gt;으로 세팅 가능하다.&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo npm install -g @vue/cli&lt;/code&gt; 설치 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vue webpack-simple &amp;lt;프로젝트명&amp;gt;&lt;/code&gt;으로 세팅 가능하다.&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo npm install -g @vue/cli-init&lt;/code&gt; 설치 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm run dev&lt;/code&gt;로 로컬 서버 확인 가능.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
+    
+    
+      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>웹게임으로 배우는 vue 2</title>
@@ -561,37 +594,6 @@
       <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
     
       <category term="data query" scheme="http://mjae404.github.io/tags/data-query/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mySQL Primary Key (기본키)</title>
-    <link href="http://mjae404.github.io/2022/02/04/sql-primary-key/"/>
-    <id>http://mjae404.github.io/2022/02/04/sql-primary-key/</id>
-    <published>2022-02-04T12:47:40.000Z</published>
-    <updated>2022-02-05T09:49:07.148Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Primary Key: 테이블에서 특정 row 하나를 식별하는 역할.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
-    
-      <category term="Primary Key" scheme="http://mjae404.github.io/tags/Primary-Key/"/>
     
   </entry>
   
