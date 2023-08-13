@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2022-10-10T11:24:21.220Z</updated>
+  <updated>2023-08-13T02:00:20.515Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>장고 개요</title>
+    <link href="http://mjae404.github.io/2023/08/03/django-overview/"/>
+    <id>http://mjae404.github.io/2023/08/03/django-overview/</id>
+    <published>2023-08-03T12:33:53.000Z</published>
+    <updated>2023-08-13T02:00:20.515Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;diango-개발환경-구성하기&quot;&gt;&lt;a href=&quot;#diango-개발환경-구성하기&quot; class=&quot;headerlink&quot; title=&quot;diango 개발환경 구성하기&quot;&gt;&lt;/a&gt;diango 개발환경 구성하기&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Homebrew&lt;/code&gt;를 설치후 버전을 확인한다.&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#x2F;bin&amp;#x2F;bash -c &amp;quot;$(curl -fsSL https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;Homebrew&amp;#x2F;install&amp;#x2F;HEAD&amp;#x2F;install.sh)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew --version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://mjae404.github.io/categories/python/"/>
+    
+      <category term="django" scheme="http://mjae404.github.io/categories/python/django/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="django" scheme="http://mjae404.github.io/tags/django/"/>
+    
+  </entry>
   
   <entry>
     <title>뷰 개요</title>
@@ -562,38 +592,6 @@
       <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
     
       <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mySQL 데이터 조회</title>
-    <link href="http://mjae404.github.io/2022/02/06/sql-data-query/"/>
-    <id>http://mjae404.github.io/2022/02/06/sql-data-query/</id>
-    <published>2022-02-06T06:23:39.000Z</published>
-    <updated>2022-02-06T11:20:37.581Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;SELECT&lt;/code&gt; : &lt;strong&gt;테이블데이터&lt;/strong&gt; 를 &lt;strong&gt;조회&lt;/strong&gt; 할 때 사용하는 구문.&lt;br&gt;&lt;code&gt;*&lt;/code&gt; : asterisk. 각 row의 모든 컬럼들을 보여달라는 의미.&lt;/p&gt;
-&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;FROM&lt;/span&gt; main.member;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
-    
-      <category term="data query" scheme="http://mjae404.github.io/tags/data-query/"/>
     
   </entry>
   
