@@ -14696,6 +14696,19 @@
 </ol>
 <h2 id="runserver"><a href="#runserver" class="headerlink" title="runserver"></a>runserver</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">django-admin runserver</span><br><span class="line">python manage.py runserver</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">django-admin runserver &#123;ip:port&#125;</span><br><span class="line">python manage.py runserver &#123;ip:port&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Django-프로젝트-생성하기"><a href="#Django-프로젝트-생성하기" class="headerlink" title="Django 프로젝트 생성하기"></a>Django 프로젝트 생성하기</h2><h3 id="프로젝트-생성"><a href="#프로젝트-생성" class="headerlink" title="프로젝트 생성"></a>프로젝트 생성</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">django-admin startproject &#123;프로젝트명&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="프로젝트-구조"><a href="#프로젝트-구조" class="headerlink" title="프로젝트 구조"></a>프로젝트 구조</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">codeit_proj&#x2F; #프로젝트명</span><br><span class="line">    manage.py</span><br><span class="line">    codeit_proj&#x2F; # 프로젝트명</span><br><span class="line">        __init__.py</span><br><span class="line">        settings.py</span><br><span class="line">        urls.py</span><br><span class="line">        wsgi.py</span><br></pre></td></tr></table></figure>
+<ul>
+<li><em><strong>Project Root</strong></em> : 최상위 프로젝트명 디렉토리는 <code>Project Root</code>라고 한다.</li>
+<li><em><strong>manage.py</strong></em> : Django 앱을 만들거나, 데이터베이스 관련 기능을 수행하거나, 개발 서버를 실행하는 등의 여러기능을 실행 할 수 있는 프로젝트 관리를 위한 명령 유틸리티. <code>django-admin</code>이 동일한 기능을 한다.</li>
+<li><em><strong>ProjectApp (Django Root)</strong></em> : Django 프로젝트를 위한 여러 파일이 담겨 있는 디렉토리.</li>
+<li><em><strong><strong>init</strong>.py</strong></em> : <code>__init__.py</code> 파일이 포함된 디렉토리를 Python의 패키지로 인식하게끔 하기 위해서 사용한다. python 3.3 이후 버전부터는 이 파일이 없어도 패키지로 인식되지만 하위 버전 호환을 위해 작성하는 것이 좋다.</li>
+<li><em><strong>settings.py</strong></em> : Django 프로젝트의 여러 가지 설정을 담고 있는 파일이다.</li>
+<li><em><strong>urls.py</strong></em> :  Django 프로젝트로 들어온 url을 보고 알맞은 로직(View)으로 연결해주는 역할을 하는 파일이다.</li>
+<li><em><strong>wsgi.py</strong></em> : 웹 서버와 Django 어플리케이션을 연결해주는 역할을 한다.</li>
+</ul>
 <hr>
 <blockquote>
 <p><strong>REFERENCE</strong><br>코드잇 온라인 강의 Django 웹 개발 시작하기</p>
