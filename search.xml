@@ -14724,4 +14724,37 @@
         <tag>django</tag>
       </tags>
   </entry>
+  <entry>
+    <title>장고 앱(App) 구조</title>
+    <url>/2023/08/19/django-app-structure/</url>
+    <content><![CDATA[<h2 id="Project와-App의-차이"><a href="#Project와-App의-차이" class="headerlink" title="Project와 App의 차이"></a>Project와 App의 차이</h2><p>Django에서 웹 서비스 각각의 기능은 앱 단위로 구현한다. 실제로 하나의 프로젝트는 여러 개의 앱과 약간의 설정 파일들로 구성되어 있고 하나의 앱은 여러 개의 프로젝트에서 사용할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="App-생성하기"><a href="#App-생성하기" class="headerlink" title="App 생성하기"></a>App 생성하기</h2><p>Django에서 앱을 생성할 때는 <strong>manage.py</strong> 를 이용한다.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python manage.py startapp &#123;생성할 App 이름&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Django-App-구조"><a href="#Django-App-구조" class="headerlink" title="Django App 구조"></a>Django App 구조</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;app_name&#125;&#x2F;</span><br><span class="line">    __init__.py</span><br><span class="line">    admin.py</span><br><span class="line">    apps.py</span><br><span class="line">    migrations&#x2F;</span><br><span class="line">        __init__.py</span><br><span class="line">    models.py</span><br><span class="line">    tests.py</span><br><span class="line">    views.py</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><em><strong>admin.py</strong></em> : 각각의 앱을 Django의 관리자 기능과 연결하거나 관리자 기능에 대해 설정을 하는 파일이다.</li>
+<li><em><strong>apps.py</strong></em> : 각각의 App마다 추가적인 기능 및 설정을 넣어 주기 위한 파일이다.</li>
+<li><em><strong>migrations 디렉토리</strong></em> : Django 앱의 데이터 구조에 대한 변경 사항인 migration 파일이 저장되는 디렉토리이다.</li>
+<li><em><strong>models.py</strong></em> : 앱에서 사용하는 데이터 구조를 정의하고 데이터베이스와의 소통을 담당하는 파일이다.</li>
+<li><em><strong>tests.py</strong></em> : 앱에 대한 테스트 코드를 작성하는 파일이다. Django 프로젝트의 모든 기능이 의도한 대로 잘 동작하는지 체크하는 것을 말한다.</li>
+<li><em><strong>views.py</strong></em> : 앱에서 어떤 기능을 할지에 대한 메인 로직을 담당하는 파일이다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 Django 웹 개발 시작하기</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>django</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>django</tag>
+      </tags>
+  </entry>
 </search>

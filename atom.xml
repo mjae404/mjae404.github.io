@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2023-08-19T09:15:31.956Z</updated>
+  <updated>2023-08-19T09:39:00.163Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>장고 앱(App) 구조</title>
+    <link href="http://mjae404.github.io/2023/08/19/django-app-structure/"/>
+    <id>http://mjae404.github.io/2023/08/19/django-app-structure/</id>
+    <published>2023-08-19T09:17:06.000Z</published>
+    <updated>2023-08-19T09:39:00.163Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Project와-App의-차이&quot;&gt;&lt;a href=&quot;#Project와-App의-차이&quot; class=&quot;headerlink&quot; title=&quot;Project와 App의 차이&quot;&gt;&lt;/a&gt;Project와 App의 차이&lt;/h2&gt;&lt;p&gt;Django에서 웹 서비스 각각의 기능은 앱 단위로 구현한다. 실제로 하나의 프로젝트는 여러 개의 앱과 약간의 설정 파일들로 구성되어 있고 하나의 앱은 여러 개의 프로젝트에서 사용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+      <category term="django" scheme="http://mjae404.github.io/categories/Python/django/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="django" scheme="http://mjae404.github.io/tags/django/"/>
+    
+  </entry>
   
   <entry>
     <title>장고 개요</title>
@@ -557,41 +582,6 @@
       <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
     
       <category term="table join" scheme="http://mjae404.github.io/tags/table-join/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mySQL 데이터 분석</title>
-    <link href="http://mjae404.github.io/2022/02/07/sql-data-analysis/"/>
-    <id>http://mjae404.github.io/2022/02/07/sql-data-analysis/</id>
-    <published>2022-02-07T12:59:07.000Z</published>
-    <updated>2022-02-10T17:07:26.487Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;집계함수-Aggregate-Function&quot;&gt;&lt;a href=&quot;#집계함수-Aggregate-Function&quot; class=&quot;headerlink&quot; title=&quot;집계함수 (Aggregate Function)&quot;&gt;&lt;/a&gt;집계함수 (Aggregate Function)&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;어떤 컬럼의 값들을 대상으로 원하는 특징값을 구해주는 함수.&lt;/li&gt;
-&lt;li&gt;특정 컬럼의 여러 row의 값들을 동시에 고려해서 실행되는 함수.&lt;/li&gt;
-&lt;li&gt;그루핑을 통해 생성된 각 그룹의 수치적인 특성을 구하는 함수.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
-    
-    
-      <category term="data analysis" scheme="http://mjae404.github.io/tags/data-analysis/"/>
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
     
   </entry>
   
