@@ -163,11 +163,17 @@
     <link href="http://mjae404.github.io/2022/08/21/react-nextjs/"/>
     <id>http://mjae404.github.io/2022/08/21/react-nextjs/</id>
     <published>2022-08-21T07:26:19.000Z</published>
-    <updated>2022-08-21T09:31:13.089Z</updated>
+    <updated>2024-01-26T08:23:35.031Z</updated>
     
     <summary type="html">
     
-      &lt;ol&gt;
+      &lt;h1 id=&quot;Next-js를-사용하는-이유&quot;&gt;&lt;a href=&quot;#Next-js를-사용하는-이유&quot; class=&quot;headerlink&quot; title=&quot;Next.js를 사용하는 이유&quot;&gt;&lt;/a&gt;Next.js를 사용하는 이유&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;프리 렌더링&lt;/li&gt;
+&lt;li&gt;Vercel로 서버 호스팅&lt;/li&gt;
+&lt;li&gt;파일 시스템 기반 서버 호스팅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;npx create next app .&lt;/code&gt;으로 설치한다.&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;node.js&lt;/code&gt;를 설치한다.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;npm i next&lt;/code&gt; 명령어를 진행한다.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;npm i react react-dom&lt;/code&gt; 을 설치한다.&lt;/li&gt;
