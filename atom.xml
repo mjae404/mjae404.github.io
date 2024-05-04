@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2023-08-19T09:39:00.163Z</updated>
+  <updated>2024-05-04T09:05:24.173Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 문자열 출력하기</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-02/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-02/</id>
+    <published>2024-05-04T09:03:10.000Z</published>
+    <updated>2024-05-04T09:05:24.173Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;a&lt;/code&gt;와 &lt;code&gt;b&lt;/code&gt;가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-100,000 ≤ &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt; ≤ 100,000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;입력&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;4 5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;a &amp;#x3D; 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;b &amp;#x3D; 5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 문자열 출력하기</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-01/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-01/</id>
+    <published>2024-05-04T08:57:07.000Z</published>
+    <updated>2024-05-04T09:05:30.627Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;문자열 &lt;code&gt;str&lt;/code&gt;이 주어질 때, &lt;code&gt;str&lt;/code&gt;을 출력하는 코드를 작성해 보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;str&lt;/code&gt;의 길이 ≤ 1,000,000&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;str&lt;/code&gt;에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>장고 앱(App) 구조</title>
@@ -532,62 +586,6 @@
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
       <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL 데이터 조회</title>
-    <link href="http://mjae404.github.io/2022/02/14/sql-exercise001/"/>
-    <id>http://mjae404.github.io/2022/02/14/sql-exercise001/</id>
-    <published>2022-02-14T12:03:15.000Z</published>
-    <updated>2022-02-14T12:09:38.709Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;(1) 나이가 20대이고, (2) 코드잇 피자 가게 사이트에 가입한 달이 7월인 회원들만 추려서 그 회원들에게 이메일로 할인 쿠폰을 발송하려고 합니다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mySQL 테이블 조인</title>
-    <link href="http://mjae404.github.io/2022/02/13/sql-table-join/"/>
-    <id>http://mjae404.github.io/2022/02/13/sql-table-join/</id>
-    <published>2022-02-13T09:19:47.000Z</published>
-    <updated>2022-02-18T12:12:46.240Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;조인(join): 여러 테이블을 합쳐서 하나의 테이블인 것처럼 보는 행위&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
-    
-      <category term="table join" scheme="http://mjae404.github.io/tags/table-join/"/>
     
   </entry>
   
