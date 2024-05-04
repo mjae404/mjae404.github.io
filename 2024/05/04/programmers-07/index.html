@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjae404.github.io">
   <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
-    &lt;프로그래머스&gt; 특수문자 출력하기 |  404 Not Found
+    &lt;프로그래머스&gt; 두 수의 차 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -37,7 +37,7 @@
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-programmers-05" class="article article-type-post" itemscope
+  <article id="post-programmers-07" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -45,7 +45,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  &lt;프로그래머스&gt; 특수문자 출력하기
+  &lt;프로그래머스&gt; 두 수의 차
 </h1>
   
 
@@ -54,8 +54,8 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/04/programmers-05/" class="article-date">
-  <time datetime="2024-05-04T09:24:32.000Z" itemprop="datePublished">2024-05-04</time>
+      <a href="/2024/05/04/programmers-07/" class="article-date">
+  <time datetime="2024-05-04T09:47:10.000Z" itemprop="datePublished">2024-05-04</time>
 </a>
       
   <div class="article-category">
@@ -75,20 +75,21 @@
       
 
       
-      <p>다음과 같이 출력하도록 코드를 작성해 주세요.</p>
-<p><strong>출력</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!@#$%^&amp;*(\&#39;&quot;&lt;&gt;?:;</span><br></pre></td></tr></table></figure>
-
+      <p>정수 <code>num1</code>과 <code>num2</code>가 주어질 때, <code>num1</code>에서 <code>num2</code>를 뺀 값을 return하도록 soltuion 함수를 완성해주세요.</p>
+<ul>
+<li>-50000 ≤ <code>num1</code> ≤ 50000 </li>
+<li>-50000 ≤ <code>num2</code> ≤ 50000</li>
+</ul>
 <a id="more"></a>
 
 <p><em><strong>풀이</strong></em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const readline &#x3D; require(&#39;readline&#39;);</span><br><span class="line">const rl &#x3D; readline.createInterface(&#123;</span><br><span class="line">    input: process.stdin,</span><br><span class="line">    output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">rl.on(&#39;close&#39;, function () &#123;</span><br><span class="line">  console.log(&#96;!@#$%^&amp;*(\\&#39;&quot;&lt;&gt;?:;&#96;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function solution(num1, num2) &#123;</span><br><span class="line">    return num1 - num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/04/programmers-05/" data-id="clvrwgd0x00003n0adh4catz9"
+      <a data-url="http://mjae404.github.io/2024/05/04/programmers-07/" data-id="clvrxdhe20000k30abja58m01"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
@@ -101,19 +102,10 @@
   
   <nav class="article-nav">
     
+    
       <a href="/2024/05/04/programmers-06/" class="article-nav-link">
-        <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">
-          
-            &lt;프로그래머스&gt; 두 수의 합
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2024/05/04/programmers-04/" class="article-nav-link">
         <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">&lt;프로그래머스&gt; 대소문자 바꿔서 출력하기</div>
+        <div class="article-nav-title">&lt;프로그래머스&gt; 두 수의 합</div>
       </a>
     
   </nav>

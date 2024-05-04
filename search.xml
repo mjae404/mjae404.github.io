@@ -14874,4 +14874,42 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 두 수의 차</title>
+    <url>/2024/05/04/programmers-07/</url>
+    <content><![CDATA[<p>정수 <code>num1</code>과 <code>num2</code>가 주어질 때, <code>num1</code>에서 <code>num2</code>를 뺀 값을 return하도록 soltuion 함수를 완성해주세요.</p>
+<ul>
+<li>-50000 ≤ <code>num1</code> ≤ 50000 </li>
+<li>-50000 ≤ <code>num2</code> ≤ 50000</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(num1, num2) &#123;</span><br><span class="line">    return num1 - num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 두 수의 합</title>
+    <url>/2024/05/04/programmers-06/</url>
+    <content><![CDATA[<p>정수  <code>num1</code>과 <code>num2</code>가 주어질 때, <code>num1</code>과 <code>num2</code>의 합을 return하도록 soltuion 함수를 완성해주세요.</p>
+<ul>
+<li>-50,000 ≤ <code>num1</code> ≤ 50,000 </li>
+<li>-50,000 ≤ <code>num2</code> ≤ 50,000</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(num1, num2) &#123;</span><br><span class="line">    return num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>

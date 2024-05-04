@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-04T09:26:25.698Z</updated>
+  <updated>2024-05-04T09:50:50.911Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 두 수의 차</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-07/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-07/</id>
+    <published>2024-05-04T09:47:10.000Z</published>
+    <updated>2024-05-04T09:50:50.911Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;num1&lt;/code&gt;과 &lt;code&gt;num2&lt;/code&gt;가 주어질 때, &lt;code&gt;num1&lt;/code&gt;에서 &lt;code&gt;num2&lt;/code&gt;를 뺀 값을 return하도록 soltuion 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-50000 ≤ &lt;code&gt;num1&lt;/code&gt; ≤ 50000 &lt;/li&gt;
+&lt;li&gt;-50000 ≤ &lt;code&gt;num2&lt;/code&gt; ≤ 50000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 두 수의 합</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-06/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-06/</id>
+    <published>2024-05-04T09:43:47.000Z</published>
+    <updated>2024-05-04T09:46:23.680Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수  &lt;code&gt;num1&lt;/code&gt;과 &lt;code&gt;num2&lt;/code&gt;가 주어질 때, &lt;code&gt;num1&lt;/code&gt;과 &lt;code&gt;num2&lt;/code&gt;의 합을 return하도록 soltuion 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-50,000 ≤ &lt;code&gt;num1&lt;/code&gt; ≤ 50,000 &lt;/li&gt;
+&lt;li&gt;-50,000 ≤ &lt;code&gt;num2&lt;/code&gt; ≤ 50,000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 특수문자 출력하기</title>
@@ -530,70 +580,6 @@
       <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
     
       <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 애니메이션 05</title>
-    <link href="http://mjae404.github.io/2022/03/04/css-exercise005/"/>
-    <id>http://mjae404.github.io/2022/03/04/css-exercise005/</id>
-    <published>2022-03-04T02:55:54.000Z</published>
-    <updated>2022-03-12T13:57:49.485Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;거울 반사 효과.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mySQL 서브쿼리</title>
-    <link href="http://mjae404.github.io/2022/02/18/sql-sub-query/"/>
-    <id>http://mjae404.github.io/2022/02/18/sql-sub-query/</id>
-    <published>2022-02-18T12:32:59.000Z</published>
-    <updated>2022-03-12T12:47:43.507Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;서브쿼리&quot;&gt;&lt;a href=&quot;#서브쿼리&quot; class=&quot;headerlink&quot; title=&quot;서브쿼리&quot;&gt;&lt;/a&gt;서브쿼리&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;SQL문 안에 ‘부품’처럼 들어가는 SELECT문.&lt;/li&gt;
-&lt;li&gt;전체 SQL문에서 일부를 이루는 또다른 SQL문.&lt;/li&gt;
-&lt;li&gt;괄호로 서브쿼리를 감싸주어야 한다.&lt;/li&gt;
-&lt;li&gt;전체 SQL문을 outer query(외부쿼리), 서브쿼리를 inner query(내부쿼리)라고도 함.&lt;/li&gt;
-&lt;li&gt;HAVING절, SELECT절, WHERE절, FROM절 등에서도 사용 가능하다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
-    
-    
-      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
-    
-      <category term="Primary Key" scheme="http://mjae404.github.io/tags/Primary-Key/"/>
     
   </entry>
   
