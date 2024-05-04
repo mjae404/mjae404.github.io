@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-04T09:50:50.911Z</updated>
+  <updated>2024-05-04T10:22:07.141Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 몫 구하기</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-09/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-09/</id>
+    <published>2024-05-04T10:20:36.000Z</published>
+    <updated>2024-05-04T10:22:07.141Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;num1&lt;/code&gt;, &lt;code&gt;num2&lt;/code&gt;가 매개변수로 주어질 때, &lt;code&gt;num1&lt;/code&gt;을 &lt;code&gt;num2&lt;/code&gt;로 나눈 몫을 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;num1&lt;/code&gt; ≤ 100&lt;/li&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;num2&lt;/code&gt; ≤ 100&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 두 수의 곱</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-08/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-08/</id>
+    <published>2024-05-04T10:18:41.000Z</published>
+    <updated>2024-05-04T10:20:54.812Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;num1&lt;/code&gt;, &lt;code&gt;num2&lt;/code&gt;가 매개변수 주어집니다. &lt;code&gt;num1&lt;/code&gt;과 &lt;code&gt;num2&lt;/code&gt;를 곱한 값을 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;num1&lt;/code&gt; ≤ 100 &lt;/li&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;num2&lt;/code&gt; ≤ 100&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 두 수의 차</title>
@@ -519,67 +569,6 @@
       <category term="operation" scheme="http://mjae404.github.io/tags/operation/"/>
     
       <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JAVA 개요</title>
-    <link href="http://mjae404.github.io/2022/03/13/java-overview/"/>
-    <id>http://mjae404.github.io/2022/03/13/java-overview/</id>
-    <published>2022-03-13T05:05:05.000Z</published>
-    <updated>2022-03-13T06:18:31.704Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;자바는 전세계적으로 많이 쓰이고 가장 인기있는 언어이다.&lt;/li&gt;
-&lt;li&gt;뿐만 아니라 오랜 인기 덕에 잘 되어 있는 커뮤니티와 정보도 활발하다.&lt;/li&gt;
-&lt;li&gt;개발자 수요가 제일 많은 언어이기도 하다.&lt;/li&gt;
-&lt;li&gt;자바는 객체지향언어이며, 객체지향언어는 코드의 구조가 명확하여 코드를 이해하기 쉽고 관리와 유지보수가 효율적이다.&lt;/li&gt;
-&lt;li&gt;자바 가상머신(Java Virtual Machine, JVM)을 설치하면 운영체제/디바이스 상관없이 동일하게 작동한다.&lt;/li&gt;
-&lt;li&gt;JRE(Java Runtime Environment): JVM을 사용하여 개발할 수 있는 환경&lt;/li&gt;
-&lt;li&gt;JDK(Java Development Kit): 내 컴퓨터에 JRE 환경을 만들기 위해 설치하는 것&lt;ul&gt;
-&lt;li&gt;자바는 오라클 소유이기 때문에 오라클 사이트에서 JDK 설치가 필요하다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 애니메이션 06</title>
-    <link href="http://mjae404.github.io/2022/03/04/css-exercise006/"/>
-    <id>http://mjae404.github.io/2022/03/04/css-exercise006/</id>
-    <published>2022-03-04T05:25:34.000Z</published>
-    <updated>2022-03-12T13:57:59.508Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;좌우로 벌어지는 CSS 애니메이션.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
-    
-    
-      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
-    
-      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
     
   </entry>
   
