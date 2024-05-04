@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-04T09:14:02.086Z</updated>
+  <updated>2024-05-04T09:26:25.698Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 특수문자 출력하기</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-05/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-05/</id>
+    <published>2024-05-04T09:24:32.000Z</published>
+    <updated>2024-05-04T09:26:25.698Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;다음과 같이 출력하도록 코드를 작성해 주세요.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;!@#$%^&amp;amp;*(\&amp;#39;&amp;quot;&amp;lt;&amp;gt;?:;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 대소문자 바꿔서 출력하기</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-04/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-04/</id>
+    <published>2024-05-04T09:18:49.000Z</published>
+    <updated>2024-05-04T09:23:55.197Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;영어 알파벳으로 이루어진 문자열 &lt;code&gt;str&lt;/code&gt;이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;str&lt;/code&gt;의 길이 ≤ 20&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;str&lt;/code&gt;은 알파벳으로 이루어진 문자열입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;입력&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;aBcDeFg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;AbCdEfG&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 문자열 반복해서 출력하기</title>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-03/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-03/</id>
+    <published>2024-05-04T09:15:12.000Z</published>
+    <updated>2024-05-04T09:17:33.289Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;문자열 &lt;code&gt;str&lt;/code&gt;과 정수 &lt;code&gt;n&lt;/code&gt;이 주어집니다. &lt;code&gt;str&lt;/code&gt;이 &lt;code&gt;n&lt;/code&gt;번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;str&lt;/code&gt;의 길이 ≤ 10 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;입력&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;string 5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;출력&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;stringstringstringstringstring&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; a와 b 출력하기</title>
@@ -511,81 +594,6 @@
       <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
     
       <category term="Primary Key" scheme="http://mjae404.github.io/tags/Primary-Key/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL 데이터 분석</title>
-    <link href="http://mjae404.github.io/2022/02/17/sql-exercise004/"/>
-    <id>http://mjae404.github.io/2022/02/17/sql-exercise004/</id>
-    <published>2022-02-17T13:02:37.000Z</published>
-    <updated>2022-02-17T13:05:43.866Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;(1) pizza_price_cost 테이블의 name, price, price/cost(원가 기준 가격의 비율) 컬럼을 조회하세요.&lt;br&gt;(2) 대신 마지막 price/cost 컬럼을 사용해서 그 값이&lt;br&gt;1 =&amp;lt; 값 &amp;lt; 1.5 인 경우, ‘C. 저효율 메뉴’&lt;br&gt;1.5 &amp;lt;= 값 &amp;lt; 1.7 인 경우, ‘B. 중효율 메뉴’&lt;br&gt;1.7 &amp;lt;= 값 인 경우, ‘A. 고효율 메뉴’&lt;br&gt;라고 그 값을 변환해서 표시하는 추가적인 컬럼도 함께 조회하고 대신 이 컬럼에는 efficiency라는 alias를 붙여주세요.&lt;br&gt;(3) 그리고 전체 row를 efficiency 컬럼을 기준으로 내림차순, 그 다음 기준으로 price 컬럼을 기준으로 오름차순 정렬하세요.&lt;br&gt;(4) 이 중에서 가장 첫 번째 row 부터 6개만 추리세요.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL 데이터 분석</title>
-    <link href="http://mjae404.github.io/2022/02/16/sql-exercise003/"/>
-    <id>http://mjae404.github.io/2022/02/16/sql-exercise003/</id>
-    <published>2022-02-16T12:40:35.000Z</published>
-    <updated>2022-02-17T13:03:30.121Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;(1) 고객들이 남긴 리뷰 수와, (2) 별점 평균값을 구하려고 합니다.&lt;br&gt;(3) 댓글이 존재하는(comment 컬럼이 NULL이 아닌) 리뷰들의 개수와 그 별점들의 평균만 구하려고 하는데요.&lt;br&gt;(4) 그리고 별점의 평균값은 반올림을 해주려고 합니다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL 데이터 조회</title>
-    <link href="http://mjae404.github.io/2022/02/15/sql-exercise002/"/>
-    <id>http://mjae404.github.io/2022/02/15/sql-exercise002/</id>
-    <published>2022-02-15T08:32:42.000Z</published>
-    <updated>2022-02-15T08:36:19.682Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;(1) star(별점) 컬럼을 기준으로 일단 오름차순 정렬하고,&lt;br&gt;(2) 같은 별점인 경우에는 registration_date(등록일자) 컬럼을 기준으로 내림차순 정렬하려고 합니다.&lt;br&gt;(3) 5번째 row까지만 일단 추려서 보고 싶습니다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
-    
-      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
     
   </entry>
   

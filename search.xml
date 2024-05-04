@@ -14764,6 +14764,25 @@
       </tags>
   </entry>
   <entry>
+    <title>&lt;프로그래머스&gt; 문자열 출력하기</title>
+    <url>/2024/05/04/programmers-01/</url>
+    <content><![CDATA[<p>문자열 <code>str</code>이 주어질 때, <code>str</code>을 출력하는 코드를 작성해 보세요.</p>
+<ul>
+<li>1 ≤ <code>str</code>의 길이 ≤ 1,000,000</li>
+<li><code>str</code>에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const readline &#x3D; require(&#39;readline&#39;);</span><br><span class="line">const rl &#x3D; readline.createInterface(&#123;</span><br><span class="line">    input: process.stdin,</span><br><span class="line">    output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">let input &#x3D; [];</span><br><span class="line"></span><br><span class="line">rl.on(&#39;line&#39;, function (line) &#123;</span><br><span class="line">    input &#x3D; [line];</span><br><span class="line">&#125;).on(&#39;close&#39;,function()&#123;</span><br><span class="line">    str &#x3D; input[0];</span><br><span class="line">    console.log(str);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>&lt;프로그래머스&gt; a와 b 출력하기</title>
     <url>/2024/05/04/programmers-02/</url>
     <content><![CDATA[<p>정수 <code>a</code>와 <code>b</code>가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.</p>
@@ -14787,17 +14806,67 @@
       </tags>
   </entry>
   <entry>
-    <title>&lt;프로그래머스&gt; 문자열 출력하기</title>
-    <url>/2024/05/04/programmers-01/</url>
-    <content><![CDATA[<p>문자열 <code>str</code>이 주어질 때, <code>str</code>을 출력하는 코드를 작성해 보세요.</p>
+    <title>&lt;프로그래머스&gt; 문자열 반복해서 출력하기</title>
+    <url>/2024/05/04/programmers-03/</url>
+    <content><![CDATA[<p>문자열 <code>str</code>과 정수 <code>n</code>이 주어집니다. <code>str</code>이 <code>n</code>번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.</p>
 <ul>
-<li>1 ≤ <code>str</code>의 길이 ≤ 1,000,000</li>
-<li><code>str</code>에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.</li>
+<li>1 ≤ <code>str</code>의 길이 ≤ 10 </li>
+<li>1 ≤ <code>n</code> ≤ 5</li>
 </ul>
+<p><strong>입력</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">string 5</span><br></pre></td></tr></table></figure>
+
+<p><strong>출력</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">stringstringstringstringstring</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
 
 <p><em><strong>풀이</strong></em></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const readline &#x3D; require(&#39;readline&#39;);</span><br><span class="line">const rl &#x3D; readline.createInterface(&#123;</span><br><span class="line">    input: process.stdin,</span><br><span class="line">    output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">let input &#x3D; [];</span><br><span class="line"></span><br><span class="line">rl.on(&#39;line&#39;, function (line) &#123;</span><br><span class="line">    input &#x3D; [line];</span><br><span class="line">&#125;).on(&#39;close&#39;,function()&#123;</span><br><span class="line">    str &#x3D; input[0];</span><br><span class="line">    console.log(str);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const readline &#x3D; require(&#39;readline&#39;);</span><br><span class="line">const rl &#x3D; readline.createInterface(&#123;</span><br><span class="line">    input: process.stdin,</span><br><span class="line">    output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">let input &#x3D; [];</span><br><span class="line"></span><br><span class="line">rl.on(&#39;line&#39;, function (line) &#123;</span><br><span class="line">    input &#x3D; line.split(&#39; &#39;);</span><br><span class="line">&#125;).on(&#39;close&#39;, function () &#123;</span><br><span class="line">    str &#x3D; input[0];</span><br><span class="line">    n &#x3D; Number(input[1]);</span><br><span class="line">    console.log(str.repeat(n))</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 특수문자 출력하기</title>
+    <url>/2024/05/04/programmers-05/</url>
+    <content><![CDATA[<p>다음과 같이 출력하도록 코드를 작성해 주세요.</p>
+<p><strong>출력</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">!@#$%^&amp;*(\&#39;&quot;&lt;&gt;?:;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const readline &#x3D; require(&#39;readline&#39;);</span><br><span class="line">const rl &#x3D; readline.createInterface(&#123;</span><br><span class="line">    input: process.stdin,</span><br><span class="line">    output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">rl.on(&#39;close&#39;, function () &#123;</span><br><span class="line">  console.log(&#96;!@#$%^&amp;*(\\&#39;&quot;&lt;&gt;?:;&#96;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 대소문자 바꿔서 출력하기</title>
+    <url>/2024/05/04/programmers-04/</url>
+    <content><![CDATA[<p>영어 알파벳으로 이루어진 문자열 <code>str</code>이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.</p>
+<ul>
+<li>1 ≤ <code>str</code>의 길이 ≤ 20</li>
+<li><code>str</code>은 알파벳으로 이루어진 문자열입니다.</li>
+</ul>
+<p><strong>입력</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aBcDeFg</span><br></pre></td></tr></table></figure>
+
+<p><strong>출력</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">AbCdEfG</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const readline &#x3D; require(&#39;readline&#39;);</span><br><span class="line">const rl &#x3D; readline.createInterface(&#123;</span><br><span class="line">    input: process.stdin,</span><br><span class="line">    output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">let input &#x3D; [];</span><br><span class="line"></span><br><span class="line">rl.on(&#39;line&#39;, function (line) &#123;</span><br><span class="line">    input &#x3D; [line];</span><br><span class="line">&#125;).on(&#39;close&#39;,function()&#123;</span><br><span class="line">    str &#x3D; input[0];</span><br><span class="line">    let arr &#x3D; [];</span><br><span class="line">    str.split(&#39;&#39;).forEach((k) &#x3D;&gt; &#123;arr.push(k &#x3D;&#x3D; k.toUpperCase() ? k.toLowerCase() : k.toUpperCase()); &#125;);</span><br><span class="line">    console.log(arr.join(&#39;&#39;));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>programmers</category>
       </categories>
