@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjae404.github.io">
   <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
-    장고 앱(App) 구조 |  404 Not Found
+    &lt;프로그래머스&gt; 특수문자 출력하기 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -37,7 +37,7 @@
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-django-app-structure" class="article article-type-post" itemscope
+  <article id="post-programmers-005" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -45,7 +45,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  장고 앱(App) 구조
+  &lt;프로그래머스&gt; 특수문자 출력하기
 </h1>
   
 
@@ -54,12 +54,12 @@
 
     
     <div class="article-meta">
-      <a href="/2023/08/19/django-app-structure/" class="article-date">
-  <time datetime="2023-08-19T09:17:06.000Z" itemprop="datePublished">2023-08-19</time>
+      <a href="/2024/05/04/programmers-005/" class="article-date">
+  <time datetime="2024-05-04T09:24:32.000Z" itemprop="datePublished">2024-05-04</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Python/">Python</a> / <a class="article-category-link" href="/categories/Python/django/">django</a>
+    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
   </div>
 
       
@@ -75,36 +75,23 @@
       
 
       
-      <h2 id="Project와-App의-차이"><a href="#Project와-App의-차이" class="headerlink" title="Project와 App의 차이"></a>Project와 App의 차이</h2><p>Django에서 웹 서비스 각각의 기능은 앱 단위로 구현한다. 실제로 하나의 프로젝트는 여러 개의 앱과 약간의 설정 파일들로 구성되어 있고 하나의 앱은 여러 개의 프로젝트에서 사용할 수 있다.</p>
+      <p>다음과 같이 출력하도록 코드를 작성해 주세요.</p>
+<p><strong>출력</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!@#$%^&amp;*(\&#39;&quot;&lt;&gt;?:;</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
 
-<h2 id="App-생성하기"><a href="#App-생성하기" class="headerlink" title="App 생성하기"></a>App 생성하기</h2><p>Django에서 앱을 생성할 때는 <strong>manage.py</strong> 를 이용한다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py startapp &#123;생성할 App 이름&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Django-App-구조"><a href="#Django-App-구조" class="headerlink" title="Django App 구조"></a>Django App 구조</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;app_name&#125;&#x2F;</span><br><span class="line">    __init__.py</span><br><span class="line">    admin.py</span><br><span class="line">    apps.py</span><br><span class="line">    migrations&#x2F;</span><br><span class="line">        __init__.py</span><br><span class="line">    models.py</span><br><span class="line">    tests.py</span><br><span class="line">    views.py</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><em><strong>admin.py</strong></em> : 각각의 앱을 Django의 관리자 기능과 연결하거나 관리자 기능에 대해 설정을 하는 파일이다.</li>
-<li><em><strong>apps.py</strong></em> : 각각의 App마다 추가적인 기능 및 설정을 넣어 주기 위한 파일이다.</li>
-<li><em><strong>migrations 디렉토리</strong></em> : Django 앱의 데이터 구조에 대한 변경 사항인 migration 파일이 저장되는 디렉토리이다.</li>
-<li><em><strong>models.py</strong></em> : 앱에서 사용하는 데이터 구조를 정의하고 데이터베이스와의 소통을 담당하는 파일이다.</li>
-<li><em><strong>tests.py</strong></em> : 앱에 대한 테스트 코드를 작성하는 파일이다. Django 프로젝트의 모든 기능이 의도한 대로 잘 동작하는지 체크하는 것을 말한다.</li>
-<li><em><strong>views.py</strong></em> : 앱에서 어떤 기능을 할지에 대한 메인 로직을 담당하는 파일이다.</li>
-</ul>
-<hr>
-<blockquote>
-<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 Django 웹 개발 시작하기</p>
-</blockquote>
-
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const readline &#x3D; require(&#39;readline&#39;);</span><br><span class="line">const rl &#x3D; readline.createInterface(&#123;</span><br><span class="line">    input: process.stdin,</span><br><span class="line">    output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">rl.on(&#39;close&#39;, function () &#123;</span><br><span class="line">  console.log(&#96;!@#$%^&amp;*(\\&#39;&quot;&lt;&gt;?:;&#96;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2023/08/19/django-app-structure/" data-id="cllhtv07g0000hf0aeulgf5hs"
+      <a data-url="http://mjae404.github.io/2024/05/04/programmers-005/" data-id="clvs1geeq001h3n0a4b2n8984"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/" rel="tag">django</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
 
     </footer>
 
@@ -114,19 +101,19 @@
   
   <nav class="article-nav">
     
-      <a href="/2024/05/04/programmers-001/" class="article-nav-link">
+      <a href="/2024/05/04/programmers-006/" class="article-nav-link">
         <strong class="article-nav-caption">next</strong>
         <div class="article-nav-title">
           
-            &lt;프로그래머스&gt; 문자열 출력하기
+            &lt;프로그래머스&gt; 두 수의 합
           
         </div>
       </a>
     
     
-      <a href="/2023/08/03/django-overview/" class="article-nav-link">
+      <a href="/2024/05/04/programmers-004/" class="article-nav-link">
         <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">장고 개요</div>
+        <div class="article-nav-title">&lt;프로그래머스&gt; 대소문자 바꿔서 출력하기</div>
       </a>
     
   </nav>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-04T10:22:07.141Z</updated>
+  <updated>2024-05-04T11:46:05.815Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; 몫 구하기</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-09/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-09/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-009/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-009/</id>
     <published>2024-05-04T10:20:36.000Z</published>
-    <updated>2024-05-04T10:22:07.141Z</updated>
+    <updated>2024-05-04T11:46:05.815Z</updated>
     
     <summary type="html">
     
@@ -34,7 +34,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
@@ -43,10 +45,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; 두 수의 곱</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-08/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-08/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-008/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-008/</id>
     <published>2024-05-04T10:18:41.000Z</published>
-    <updated>2024-05-04T10:20:54.812Z</updated>
+    <updated>2024-05-04T11:46:00.702Z</updated>
     
     <summary type="html">
     
@@ -59,7 +61,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
@@ -68,10 +72,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; 두 수의 차</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-07/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-07/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-007/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-007/</id>
     <published>2024-05-04T09:47:10.000Z</published>
-    <updated>2024-05-04T09:50:50.911Z</updated>
+    <updated>2024-05-04T11:45:56.019Z</updated>
     
     <summary type="html">
     
@@ -84,7 +88,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
@@ -93,10 +99,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; 두 수의 합</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-06/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-06/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-006/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-006/</id>
     <published>2024-05-04T09:43:47.000Z</published>
-    <updated>2024-05-04T09:46:23.680Z</updated>
+    <updated>2024-05-04T11:45:51.253Z</updated>
     
     <summary type="html">
     
@@ -109,7 +115,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
@@ -118,10 +126,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; 특수문자 출력하기</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-05/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-05/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-005/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-005/</id>
     <published>2024-05-04T09:24:32.000Z</published>
-    <updated>2024-05-04T09:26:25.698Z</updated>
+    <updated>2024-05-04T11:45:45.741Z</updated>
     
     <summary type="html">
     
@@ -132,7 +140,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
@@ -141,10 +151,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; 대소문자 바꿔서 출력하기</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-04/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-04/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-004/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-004/</id>
     <published>2024-05-04T09:18:49.000Z</published>
-    <updated>2024-05-04T09:23:55.197Z</updated>
+    <updated>2024-05-04T11:45:41.841Z</updated>
     
     <summary type="html">
     
@@ -162,7 +172,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
@@ -171,10 +183,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; 문자열 반복해서 출력하기</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-03/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-03/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-003/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-003/</id>
     <published>2024-05-04T09:15:12.000Z</published>
-    <updated>2024-05-04T09:17:33.289Z</updated>
+    <updated>2024-05-04T11:45:39.074Z</updated>
     
     <summary type="html">
     
@@ -192,7 +204,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
@@ -201,10 +215,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; a와 b 출력하기</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-02/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-02/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-002/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-002/</id>
     <published>2024-05-04T09:03:10.000Z</published>
-    <updated>2024-05-04T09:14:02.086Z</updated>
+    <updated>2024-05-04T11:45:33.895Z</updated>
     
     <summary type="html">
     
@@ -221,7 +235,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
@@ -230,10 +246,10 @@
   
   <entry>
     <title>&lt;프로그래머스&gt; 문자열 출력하기</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-01/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-01/</id>
+    <link href="http://mjae404.github.io/2024/05/04/programmers-001/"/>
+    <id>http://mjae404.github.io/2024/05/04/programmers-001/</id>
     <published>2024-05-04T08:57:07.000Z</published>
-    <updated>2024-05-04T09:05:30.627Z</updated>
+    <updated>2024-05-04T11:45:27.186Z</updated>
     
     <summary type="html">
     
@@ -246,7 +262,9 @@
     </summary>
     
     
-      <category term="programmers" scheme="http://mjae404.github.io/categories/programmers/"/>
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
