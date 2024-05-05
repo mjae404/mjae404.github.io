@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-05T02:26:54.935Z</updated>
+  <updated>2024-05-05T05:08:14.208Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 짝수의 합</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-013/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-013/</id>
+    <published>2024-05-05T05:02:22.000Z</published>
+    <updated>2024-05-05T05:08:14.208Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;n&lt;/code&gt;이 주어질 때, &lt;code&gt;n&lt;/code&gt; 이하의 짝수를 모두 더한 값을 return 하도록 solution 함수를 작성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt; &lt;code&gt;n&lt;/code&gt; ≤ 1000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 배열의 평균값</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-012/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-012/</id>
+    <published>2024-05-05T04:58:43.000Z</published>
+    <updated>2024-05-05T05:07:50.162Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 배열 &lt;code&gt;numbers&lt;/code&gt;가 매개변수로 주어집니다. &lt;code&gt;numbers&lt;/code&gt;의 원소의 평균값을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;numbers&lt;/code&gt;의 원소 ≤ 1,000 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;numbers&lt;/code&gt;의 길이 ≤ 100&lt;/li&gt;
+&lt;li&gt;정답의 소수 부분이 .0 또는 .5인 경우만 입력으로 주어집니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 두 수의 나눗셈</title>
@@ -536,59 +590,6 @@
       <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
     
       <category term="react" scheme="http://mjae404.github.io/tags/react/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JAVA 객체 지향 프로그래밍</title>
-    <link href="http://mjae404.github.io/2022/03/17/java-oop/"/>
-    <id>http://mjae404.github.io/2022/03/17/java-oop/</id>
-    <published>2022-03-17T05:42:54.000Z</published>
-    <updated>2022-03-18T12:32:12.788Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;객체 지향 프로그래밍&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;컴퓨터 프로그래밍의 패러다임 중 하나이다. 객체 지향 프로그래밍은 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 “객체”들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. &lt;sup&gt;1&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;‘객체’는 ‘속성’들과 ‘동작’들의 묶음이라고 할 수 있는데 속성은 ‘변수’로 나타내고, 동작은 ‘메소드(함수)’로 나타낸다.&lt;blockquote&gt;
-&lt;p&gt;[ 1 ] : &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D&quot;&gt;위키백과&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
-    
-      <category term="object-oriented programming" scheme="http://mjae404.github.io/tags/object-oriented-programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JAVA 배열</title>
-    <link href="http://mjae404.github.io/2022/03/15/java-array/"/>
-    <id>http://mjae404.github.io/2022/03/15/java-array/</id>
-    <published>2022-03-15T03:13:13.000Z</published>
-    <updated>2022-03-15T04:33:28.206Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;배열을 사용하면 변수 하나에 값을 여러개 담을 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
-    
-    
-      <category term="array" scheme="http://mjae404.github.io/tags/array/"/>
-    
-      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
     
   </entry>
   
