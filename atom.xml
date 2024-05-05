@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-05T07:19:54.286Z</updated>
+  <updated>2024-05-05T07:41:06.106Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,116 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 짝수는 싫어요</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-020/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-020/</id>
+    <published>2024-05-05T07:39:51.000Z</published>
+    <updated>2024-05-05T07:41:06.106Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때, &lt;code&gt;n&lt;/code&gt; 이하의 홀수가 오름차순으로 담긴 배열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 100&lt;/li&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 중앙값 구하기</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-019/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-019/</id>
+    <published>2024-05-05T07:37:56.000Z</published>
+    <updated>2024-05-05T07:39:39.962Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미합니다. 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 정수 배열 &lt;code&gt;array&lt;/code&gt;가 매개변수로 주어질 때, 중앙값을 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;array&lt;/code&gt;의 길이는 홀수입니다.&lt;/li&gt;
+&lt;li&gt;0 &amp;lt; &lt;code&gt;array&lt;/code&gt;의 길이 &amp;lt; 100 &lt;/li&gt;
+&lt;li&gt;-1,000 &amp;lt; &lt;code&gt;array&lt;/code&gt;의 원소 &amp;lt; 1,000&lt;/li&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 머쓱이보다 키 큰 사람</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-018/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-018/</id>
+    <published>2024-05-05T07:34:19.000Z</published>
+    <updated>2024-05-05T07:39:36.329Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;머쓱이는 학교에서 키 순으로 줄을 설 때 몇 번째로 서야 하는지 궁금해졌습니다. 머쓱이네 반 친구들의 키가 담긴 정수 배열 &lt;code&gt;array&lt;/code&gt;와 머쓱이의 키 &lt;code&gt;height&lt;/code&gt;가 매개변수로 주어질 때, 머쓱이보다 키 큰 사람 수를 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;array&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;height&lt;/code&gt; ≤ 200 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;array&lt;/code&gt;의 원소 ≤ 200&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 중복된 숫자 개수</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-017/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-017/</id>
+    <published>2024-05-05T07:31:35.000Z</published>
+    <updated>2024-05-05T07:35:24.939Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수가 담긴 배열 &lt;code&gt;array&lt;/code&gt;와 정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때, &lt;code&gt;array&lt;/code&gt;에 &lt;code&gt;n&lt;/code&gt;이 몇 개 있는 지를 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;array&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;array&lt;/code&gt;의 원소 ≤ 1,000 &lt;/li&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 1,000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 양꼬치</title>
@@ -76,7 +186,7 @@
     <link href="http://mjae404.github.io/2024/05/05/programmers-014/"/>
     <id>http://mjae404.github.io/2024/05/05/programmers-014/</id>
     <published>2024-05-05T07:13:14.000Z</published>
-    <updated>2024-05-05T07:15:05.132Z</updated>
+    <updated>2024-05-05T07:33:08.821Z</updated>
     
     <summary type="html">
     
@@ -458,121 +568,6 @@
     
     
       <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>장고 앱(App) 구조</title>
-    <link href="http://mjae404.github.io/2023/08/19/django-app-structure/"/>
-    <id>http://mjae404.github.io/2023/08/19/django-app-structure/</id>
-    <published>2023-08-19T09:17:06.000Z</published>
-    <updated>2023-08-19T09:39:00.163Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Project와-App의-차이&quot;&gt;&lt;a href=&quot;#Project와-App의-차이&quot; class=&quot;headerlink&quot; title=&quot;Project와 App의 차이&quot;&gt;&lt;/a&gt;Project와 App의 차이&lt;/h2&gt;&lt;p&gt;Django에서 웹 서비스 각각의 기능은 앱 단위로 구현한다. 실제로 하나의 프로젝트는 여러 개의 앱과 약간의 설정 파일들로 구성되어 있고 하나의 앱은 여러 개의 프로젝트에서 사용할 수 있다.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-      <category term="django" scheme="http://mjae404.github.io/categories/Python/django/"/>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-      <category term="django" scheme="http://mjae404.github.io/tags/django/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>장고 개요</title>
-    <link href="http://mjae404.github.io/2023/08/03/django-overview/"/>
-    <id>http://mjae404.github.io/2023/08/03/django-overview/</id>
-    <published>2023-08-03T12:33:53.000Z</published>
-    <updated>2023-08-19T09:15:31.956Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;diango-개발환경-구성하기&quot;&gt;&lt;a href=&quot;#diango-개발환경-구성하기&quot; class=&quot;headerlink&quot; title=&quot;diango 개발환경 구성하기&quot;&gt;&lt;/a&gt;diango 개발환경 구성하기&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;Homebrew&lt;/code&gt;를 설치후 버전을 확인한다.&lt;/p&gt;
- &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#x2F;bin&amp;#x2F;bash -c &amp;quot;$(curl -fsSL https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;Homebrew&amp;#x2F;install&amp;#x2F;HEAD&amp;#x2F;install.sh)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
- &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew --version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
-    
-      <category term="django" scheme="http://mjae404.github.io/categories/Python/django/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
-    
-      <category term="django" scheme="http://mjae404.github.io/tags/django/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>뷰 개요</title>
-    <link href="http://mjae404.github.io/2022/10/10/vue-overview-1/"/>
-    <id>http://mjae404.github.io/2022/10/10/vue-overview-1/</id>
-    <published>2022-10-10T07:13:38.000Z</published>
-    <updated>2022-10-10T11:24:21.220Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;vue create &amp;lt;프로젝트명&amp;gt;&lt;/code&gt;으로 세팅 가능하다.&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sudo npm install -g @vue/cli&lt;/code&gt; 설치 필요&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;vue webpack-simple &amp;lt;프로젝트명&amp;gt;&lt;/code&gt;으로 세팅 가능하다.&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sudo npm install -g @vue/cli-init&lt;/code&gt; 설치 필요&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;npm run dev&lt;/code&gt;로 로컬 서버 확인 가능.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>웹게임으로 배우는 vue 2</title>
-    <link href="http://mjae404.github.io/2022/09/17/vue-webgame-2/"/>
-    <id>http://mjae404.github.io/2022/09/17/vue-webgame-2/</id>
-    <published>2022-09-17T07:50:45.000Z</published>
-    <updated>2022-09-17T13:38:52.500Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;웹게임으로 배우는 vue 숫자야구&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-      <category term="webgame" scheme="http://mjae404.github.io/tags/webgame/"/>
-    
-      <category term="number baseball" scheme="http://mjae404.github.io/tags/number-baseball/"/>
     
   </entry>
   

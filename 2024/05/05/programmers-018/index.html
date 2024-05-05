@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjae404.github.io">
   <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
-    &lt;프로그래머스&gt; 양꼬치 |  404 Not Found
+    &lt;프로그래머스&gt; 머쓱이보다 키 큰 사람 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -37,7 +37,7 @@
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-programmers-016" class="article article-type-post" itemscope
+  <article id="post-programmers-018" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -45,7 +45,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  &lt;프로그래머스&gt; 양꼬치
+  &lt;프로그래머스&gt; 머쓱이보다 키 큰 사람
 </h1>
   
 
@@ -54,8 +54,8 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/05/programmers-016/" class="article-date">
-  <time datetime="2024-05-05T07:17:04.000Z" itemprop="datePublished">2024-05-05</time>
+      <a href="/2024/05/05/programmers-018/" class="article-date">
+  <time datetime="2024-05-05T07:34:19.000Z" itemprop="datePublished">2024-05-05</time>
 </a>
       
   <div class="article-category">
@@ -75,22 +75,22 @@
       
 
       
-      <p>머쓱이네 양꼬치 가게는 10인분을 먹으면 음료수 하나를 서비스로 줍니다. 양꼬치는 1인분에 12,000원, 음료수는 2,000원입니다. 정수 <code>n</code>과 <code>k</code>가 매개변수로 주어졌을 때, 양꼬치 <code>n</code>인분과 음료수 <code>k</code>개를 먹었다면 총얼마를 지불해야 하는지 return 하도록 solution 함수를 완성해보세요.</p>
+      <p>머쓱이는 학교에서 키 순으로 줄을 설 때 몇 번째로 서야 하는지 궁금해졌습니다. 머쓱이네 반 친구들의 키가 담긴 정수 배열 <code>array</code>와 머쓱이의 키 <code>height</code>가 매개변수로 주어질 때, 머쓱이보다 키 큰 사람 수를 return 하도록 solution 함수를 완성해보세요.</p>
 <ul>
-<li>0 &lt; <code>n</code> &lt; 1,000</li>
-<li><code>n</code> / 10 ≤ <code>k</code> &lt; 1,000</li>
-<li>서비스로 받은 음료수는 모두 마십니다.</li>
+<li>1 ≤ <code>array</code>의 길이 ≤ 100 </li>
+<li>1 ≤ <code>height</code> ≤ 200 </li>
+<li>1 ≤ <code>array</code>의 원소 ≤ 200</li>
 </ul>
 <a id="more"></a>
 
 <p><em><strong>풀이</strong></em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function solution(n, k) &#123;</span><br><span class="line">    return n*12000 + k*2000 - parseInt(n&#x2F;10)*2000</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function solution(array, height) &#123;</span><br><span class="line">    return array.filter(list &#x3D;&gt; list &gt; height).length</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/05/programmers-016/" data-id="clvt7dgbp0003ha0adznxf3fz"
+      <a data-url="http://mjae404.github.io/2024/05/05/programmers-018/" data-id="clvt84r7r00014j0adxqobdhy"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
@@ -103,19 +103,19 @@
   
   <nav class="article-nav">
     
-      <a href="/2024/05/05/programmers-017/" class="article-nav-link">
+      <a href="/2024/05/05/programmers-019/" class="article-nav-link">
         <strong class="article-nav-caption">next</strong>
         <div class="article-nav-title">
           
-            &lt;프로그래머스&gt; 중복된 숫자 개수
+            &lt;프로그래머스&gt; 중앙값 구하기
           
         </div>
       </a>
     
     
-      <a href="/2024/05/05/programmers-015/" class="article-nav-link">
+      <a href="/2024/05/05/programmers-017/" class="article-nav-link">
         <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">&lt;프로그래머스&gt; 배열 뒤집기</div>
+        <div class="article-nav-title">&lt;프로그래머스&gt; 중복된 숫자 개수</div>
       </a>
     
   </nav>
