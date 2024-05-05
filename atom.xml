@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-05T10:30:18.540Z</updated>
+  <updated>2024-05-05T11:36:07.219Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 주사위의 개수</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-028/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-028/</id>
+    <published>2024-05-05T11:32:38.000Z</published>
+    <updated>2024-05-05T11:36:07.219Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;머쓱이는 직육면체 모양의 상자를 하나 가지고 있는데 이 상자에 정육면체 모양의 주사위를 최대한 많이 채우고 싶습니다. 상자의 가로, 세로, 높이가 저장되어있는 배열 &lt;code&gt;box&lt;/code&gt;와 주사위 모서리의 길이 정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어졌을 때, 상자에 들어갈 수 있는 주사위의 최대 개수를 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;box&lt;/code&gt;의 길이는 3입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;box[0]&lt;/code&gt; = 상자의 가로 길이&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;box[1]&lt;/code&gt; = 상자의 세로 길이 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;box[2]&lt;/code&gt; = 상자의 높이 길이 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;box&lt;/code&gt;의 원소 ≤ 100 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 50 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt; ≤ &lt;code&gt;box&lt;/code&gt;의 원소 &lt;/li&gt;
+&lt;li&gt;주사위는 상자와 평행하게 넣습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 가위 바위 보</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-027/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-027/</id>
+    <published>2024-05-05T11:29:39.000Z</published>
+    <updated>2024-05-05T11:32:27.364Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;가위는 2 바위는 0 보는 5로 표현합니다. 가위 바위 보를 내는 순서대로 나타낸 문자열 &lt;code&gt;rsp&lt;/code&gt;가 매개변수로 주어질 때, rsp에 저장된 가위 바위 보를 모두 이기는 경우를 순서대로 나타낸 문자열을 return하도록 solution 함수를 완성해보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt; &lt;code&gt;rsp&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rsp&lt;/code&gt;와 길이가 같은 문자열을 return 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rsp&lt;/code&gt;는 숫자 0, 2, 5로 이루어져 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 개미 군단</title>
@@ -493,60 +554,6 @@
 &lt;ul&gt;
 &lt;li&gt;0 ≤ &lt;code&gt;num1&lt;/code&gt; ≤ 100&lt;/li&gt;
 &lt;li&gt;0 ≤ &lt;code&gt;num2&lt;/code&gt; ≤ 100&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 두 수의 곱</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-008/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-008/</id>
-    <published>2024-05-04T10:18:41.000Z</published>
-    <updated>2024-05-04T11:46:00.702Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 &lt;code&gt;num1&lt;/code&gt;, &lt;code&gt;num2&lt;/code&gt;가 매개변수 주어집니다. &lt;code&gt;num1&lt;/code&gt;과 &lt;code&gt;num2&lt;/code&gt;를 곱한 값을 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;0 ≤ &lt;code&gt;num1&lt;/code&gt; ≤ 100 &lt;/li&gt;
-&lt;li&gt;0 ≤ &lt;code&gt;num2&lt;/code&gt; ≤ 100&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 두 수의 차</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-007/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-007/</id>
-    <published>2024-05-04T09:47:10.000Z</published>
-    <updated>2024-05-04T11:45:56.019Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 &lt;code&gt;num1&lt;/code&gt;과 &lt;code&gt;num2&lt;/code&gt;가 주어질 때, &lt;code&gt;num1&lt;/code&gt;에서 &lt;code&gt;num2&lt;/code&gt;를 뺀 값을 return하도록 soltuion 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;-50000 ≤ &lt;code&gt;num1&lt;/code&gt; ≤ 50000 &lt;/li&gt;
-&lt;li&gt;-50000 ≤ &lt;code&gt;num2&lt;/code&gt; ≤ 50000&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>

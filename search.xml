@@ -15303,4 +15303,53 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 가위 바위 보</title>
+    <url>/2024/05/05/programmers-027/</url>
+    <content><![CDATA[<p>가위는 2 바위는 0 보는 5로 표현합니다. 가위 바위 보를 내는 순서대로 나타낸 문자열 <code>rsp</code>가 매개변수로 주어질 때, rsp에 저장된 가위 바위 보를 모두 이기는 경우를 순서대로 나타낸 문자열을 return하도록 solution 함수를 완성해보세요.</p>
+<ul>
+<li>0 &lt; <code>rsp</code>의 길이 ≤ 100 </li>
+<li><code>rsp</code>와 길이가 같은 문자열을 return 합니다.</li>
+<li><code>rsp</code>는 숫자 0, 2, 5로 이루어져 있습니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(rsp) &#123;</span><br><span class="line">    var answer &#x3D; &#39;&#39;;</span><br><span class="line">    </span><br><span class="line">    for(let i &#x3D; 0; i &lt; rsp.length; i++) &#123;</span><br><span class="line">        let ch &#x3D; rsp.charAt(i);</span><br><span class="line">        if(ch &#x3D;&#x3D;&#x3D; &quot;2&quot;) &#123;</span><br><span class="line">            answer +&#x3D; &quot;0&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        else if(ch &#x3D;&#x3D;&#x3D; &quot;0&quot;) &#123;</span><br><span class="line">            answer +&#x3D; &quot;5&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        else if(ch &#x3D;&#x3D;&#x3D; &quot;5&quot;) &#123;</span><br><span class="line">            answer +&#x3D; &quot;2&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 주사위의 개수</title>
+    <url>/2024/05/05/programmers-028/</url>
+    <content><![CDATA[<p>머쓱이는 직육면체 모양의 상자를 하나 가지고 있는데 이 상자에 정육면체 모양의 주사위를 최대한 많이 채우고 싶습니다. 상자의 가로, 세로, 높이가 저장되어있는 배열 <code>box</code>와 주사위 모서리의 길이 정수 <code>n</code>이 매개변수로 주어졌을 때, 상자에 들어갈 수 있는 주사위의 최대 개수를 return 하도록 solution 함수를 완성해주세요.</p>
+<ul>
+<li><code>box</code>의 길이는 3입니다.</li>
+<li><code>box[0]</code> = 상자의 가로 길이</li>
+<li><code>box[1]</code> = 상자의 세로 길이 </li>
+<li><code>box[2]</code> = 상자의 높이 길이 </li>
+<li>1 ≤ <code>box</code>의 원소 ≤ 100 </li>
+<li>1 ≤ <code>n</code> ≤ 50 </li>
+<li><code>n</code> ≤ <code>box</code>의 원소 </li>
+<li>주사위는 상자와 평행하게 넣습니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(box, n) &#123;</span><br><span class="line">    return box.reduce((acc,v) &#x3D;&gt; acc * Math.floor(v &#x2F; n), 1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>
