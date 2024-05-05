@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-05T01:52:37.804Z</updated>
+  <updated>2024-05-05T02:26:54.935Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>&lt;프로그래머스&gt; 두 수의 나눗셈</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-011/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-011/</id>
+    <published>2024-05-05T02:23:38.000Z</published>
+    <updated>2024-05-05T02:26:54.935Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;num1&lt;/code&gt;과 &lt;code&gt;num2&lt;/code&gt;가 매개변수로 주어질 때, &lt;code&gt;num1&lt;/code&gt;을 &lt;code&gt;num2&lt;/code&gt;로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 soltuion 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt; &lt;code&gt;num1&lt;/code&gt; ≤ 100 &lt;/li&gt;
+&lt;li&gt;0 &amp;lt; &lt;code&gt;num2&lt;/code&gt; ≤ 100&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
     <title>&lt;프로그래머스&gt; 나이 출력</title>
     <link href="http://mjae404.github.io/2024/05/05/programmers-010/"/>
     <id>http://mjae404.github.io/2024/05/05/programmers-010/</id>
     <published>2024-05-05T01:48:19.000Z</published>
-    <updated>2024-05-05T01:52:37.804Z</updated>
+    <updated>2024-05-05T02:26:59.606Z</updated>
     
     <summary type="html">
     
@@ -560,29 +587,6 @@
     
     
       <category term="array" scheme="http://mjae404.github.io/tags/array/"/>
-    
-      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JAVA 조건문과 반복문</title>
-    <link href="http://mjae404.github.io/2022/03/14/java-control-flow-statement/"/>
-    <id>http://mjae404.github.io/2022/03/14/java-control-flow-statement/</id>
-    <published>2022-03-14T06:10:25.000Z</published>
-    <updated>2022-03-14T08:45:10.853Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;if&quot;&gt;&lt;a href=&quot;#if&quot; class=&quot;headerlink&quot; title=&quot;if&quot;&gt;&lt;/a&gt;if&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (조건부분 &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 수행 부분 1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (조건 부분 &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 수행 부분 2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (조건 부분 &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 수행 부분 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 수행 부분 4&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
-    
-    
-      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
     
       <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
     

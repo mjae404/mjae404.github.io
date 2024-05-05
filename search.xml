@@ -14970,7 +14970,28 @@
 <a id="more"></a>
 
 <p><em><strong>풀이</strong></em></p>
-<figure class="highlight plain"><figcaption><span>solution(age) &#123;</span></figcaption><table><tr><td class="code"><pre><span class="line">var answer &#x3D; 2022 - age + 1;</span><br><span class="line">    return answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(age) &#123;</span><br><span class="line">var answer &#x3D; 2022 - age + 1;</span><br><span class="line">    return answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 두 수의 나눗셈</title>
+    <url>/2024/05/05/programmers-011/</url>
+    <content><![CDATA[<p>정수 <code>num1</code>과 <code>num2</code>가 매개변수로 주어질 때, <code>num1</code>을 <code>num2</code>로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 soltuion 함수를 완성해주세요.</p>
+<ul>
+<li>0 &lt; <code>num1</code> ≤ 100 </li>
+<li>0 &lt; <code>num2</code> ≤ 100</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const solution &#x3D; (num1, num2) &#x3D;&gt; Math.floor((num1 &#x2F; num2) * 1000);</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>exercise</category>
         <category>programmers</category>
