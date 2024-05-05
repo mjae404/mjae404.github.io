@@ -14959,4 +14959,24 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 몫 구하기</title>
+    <url>/2024/05/05/programmers-010/</url>
+    <content><![CDATA[<p>머쓱이는 선생님이 몇 년도에 태어났는지 궁금해졌습니다. 2022년 기준 선생님의 나이 <code>age</code>가 주어질 때, 선생님의 출생 연도를 return 하는 solution 함수를 완성해주세요.</p>
+<ul>
+<li>0 &lt; <code>age</code> ≤ 120</li>
+<li>나이는 태어난 연도에 1살이며 매년 1월 1일마다 1살씩 증가합니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><figcaption><span>solution(age) &#123;</span></figcaption><table><tr><td class="code"><pre><span class="line">var answer &#x3D; 2022 - age + 1;</span><br><span class="line">    return answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>

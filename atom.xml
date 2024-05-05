@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-04T11:46:05.815Z</updated>
+  <updated>2024-05-05T01:51:09.293Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 몫 구하기</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-010/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-010/</id>
+    <published>2024-05-05T01:48:19.000Z</published>
+    <updated>2024-05-05T01:51:09.293Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;머쓱이는 선생님이 몇 년도에 태어났는지 궁금해졌습니다. 2022년 기준 선생님의 나이 &lt;code&gt;age&lt;/code&gt;가 주어질 때, 선생님의 출생 연도를 return 하는 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt; &lt;code&gt;age&lt;/code&gt; ≤ 120&lt;/li&gt;
+&lt;li&gt;나이는 태어난 연도에 1살이며 매년 1월 1일마다 1살씩 증가합니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 몫 구하기</title>
@@ -556,35 +583,6 @@
     
     
       <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
-    
-      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JAVA 변수와 연산</title>
-    <link href="http://mjae404.github.io/2022/03/13/java-variables-and-operation/"/>
-    <id>http://mjae404.github.io/2022/03/13/java-variables-and-operation/</id>
-    <published>2022-03-13T05:56:48.000Z</published>
-    <updated>2022-03-13T10:14:36.203Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;변수&quot;&gt;&lt;a href=&quot;#변수&quot; class=&quot;headerlink&quot; title=&quot;변수&quot;&gt;&lt;/a&gt;변수&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;변수의 이름과 변수의 자료형을 선언해주어야 한다.&lt;/li&gt;
-&lt;li&gt;[ 자료형(data type) ] [ 변수의 이름 ]&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;int&lt;/code&gt;: x가 어떤 자료형을 저장할지&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a; &lt;span class=&quot;comment&quot;&gt;// 정수형 변수&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;String s; &lt;span class=&quot;comment&quot;&gt;// 문자열 변수&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
-    
-    
-      <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
-    
-      <category term="operation" scheme="http://mjae404.github.io/tags/operation/"/>
     
       <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
     
