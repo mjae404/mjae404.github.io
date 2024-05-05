@@ -15061,7 +15061,7 @@
       </tags>
   </entry>
   <entry>
-    <title>&lt;프로그래머스&gt; 배열 두 배 만들기</title>
+    <title>&lt;프로그래머스&gt; 배열 뒤집기</title>
     <url>/2024/05/05/programmers-015/</url>
     <content><![CDATA[<p>정수가 들어 있는 배열 <code>num_list</code>가 매개변수로 주어집니다. <code>num_list</code>의 원소의 순서를 거꾸로 뒤집은 배열을 return하도록 solution 함수를 완성해주세요.</p>
 <ul>
@@ -15070,7 +15070,7 @@
 </ul>
 <a id="more"></a>
 
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(numbers) &#123;</span><br><span class="line">    var answer &#x3D; [];</span><br><span class="line">    </span><br><span class="line">    for(let i &#x3D; 0; i &lt; numbers.length; i++) &#123;</span><br><span class="line">        answer.push(numbers[i] * 2);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(num_list) &#123;</span><br><span class="line">    return num_list.reverse();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>exercise</category>
         <category>programmers</category>
