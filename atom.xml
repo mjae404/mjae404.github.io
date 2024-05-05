@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-05T05:08:14.208Z</updated>
+  <updated>2024-05-05T07:19:54.286Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,88 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 양꼬치</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-016/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-016/</id>
+    <published>2024-05-05T07:17:04.000Z</published>
+    <updated>2024-05-05T07:19:54.286Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;머쓱이네 양꼬치 가게는 10인분을 먹으면 음료수 하나를 서비스로 줍니다. 양꼬치는 1인분에 12,000원, 음료수는 2,000원입니다. 정수 &lt;code&gt;n&lt;/code&gt;과 &lt;code&gt;k&lt;/code&gt;가 매개변수로 주어졌을 때, 양꼬치 &lt;code&gt;n&lt;/code&gt;인분과 음료수 &lt;code&gt;k&lt;/code&gt;개를 먹었다면 총얼마를 지불해야 하는지 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt; &lt;code&gt;n&lt;/code&gt; &amp;lt; 1,000&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt; / 10 ≤ &lt;code&gt;k&lt;/code&gt; &amp;lt; 1,000&lt;/li&gt;
+&lt;li&gt;서비스로 받은 음료수는 모두 마십니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 배열 두 배 만들기</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-015/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-015/</id>
+    <published>2024-05-05T07:15:20.000Z</published>
+    <updated>2024-05-05T07:19:00.526Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수가 들어 있는 배열 &lt;code&gt;num_list&lt;/code&gt;가 매개변수로 주어집니다. &lt;code&gt;num_list&lt;/code&gt;의 원소의 순서를 거꾸로 뒤집은 배열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 1,000&lt;/li&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 1,000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 배열 두 배 만들기</title>
+    <link href="http://mjae404.github.io/2024/05/05/programmers-014/"/>
+    <id>http://mjae404.github.io/2024/05/05/programmers-014/</id>
+    <published>2024-05-05T07:13:14.000Z</published>
+    <updated>2024-05-05T07:15:05.132Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 배열 &lt;code&gt;numbers&lt;/code&gt;가 매개변수로 주어집니다. &lt;code&gt;numbers&lt;/code&gt;의 각 원소에 두배한 원소를 가진 배열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-10,000 ≤ &lt;code&gt;numbers&lt;/code&gt;의 원소 ≤ 10,000&lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;numbers&lt;/code&gt;의 길이 ≤ 1,000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 짝수의 합</title>
@@ -491,105 +573,6 @@
       <category term="webgame" scheme="http://mjae404.github.io/tags/webgame/"/>
     
       <category term="number baseball" scheme="http://mjae404.github.io/tags/number-baseball/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>웹게임으로 배우는 vue 1</title>
-    <link href="http://mjae404.github.io/2022/09/17/vue-webgame-1/"/>
-    <id>http://mjae404.github.io/2022/09/17/vue-webgame-1/</id>
-    <published>2022-09-17T06:19:45.000Z</published>
-    <updated>2022-09-17T08:01:32.070Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;웹게임으로 배우는 vue 구구단&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="Vue" scheme="http://mjae404.github.io/categories/JavaScript/Vue/"/>
-    
-    
-      <category term="vue" scheme="http://mjae404.github.io/tags/vue/"/>
-    
-      <category term="webgame" scheme="http://mjae404.github.io/tags/webgame/"/>
-    
-      <category term="multiplication table" scheme="http://mjae404.github.io/tags/multiplication-table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>리액트 next.js 세팅</title>
-    <link href="http://mjae404.github.io/2022/08/21/react-nextjs/"/>
-    <id>http://mjae404.github.io/2022/08/21/react-nextjs/</id>
-    <published>2022-08-21T07:26:19.000Z</published>
-    <updated>2024-01-26T08:23:35.031Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Next-js를-사용하는-이유&quot;&gt;&lt;a href=&quot;#Next-js를-사용하는-이유&quot; class=&quot;headerlink&quot; title=&quot;Next.js를 사용하는 이유&quot;&gt;&lt;/a&gt;Next.js를 사용하는 이유&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;프리 렌더링&lt;/li&gt;
-&lt;li&gt;Vercel로 서버 호스팅&lt;/li&gt;
-&lt;li&gt;파일 시스템 기반 서버 호스팅&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;npx create next app .&lt;/code&gt;으로 설치한다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;node.js&lt;/code&gt;를 설치한다.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;npm i next&lt;/code&gt; 명령어를 진행한다.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;npm i react react-dom&lt;/code&gt; 을 설치한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://thebook.io/&quot;&gt;https://thebook.io/&lt;/a&gt; 에서 참고할 수 있다.&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="React" scheme="http://mjae404.github.io/categories/JavaScript/React/"/>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="react" scheme="http://mjae404.github.io/tags/react/"/>
-    
-      <category term="nextjs" scheme="http://mjae404.github.io/tags/nextjs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>리액트 개요</title>
-    <link href="http://mjae404.github.io/2022/05/24/react-overview/"/>
-    <id>http://mjae404.github.io/2022/05/24/react-overview/</id>
-    <published>2022-05-24T02:14:12.000Z</published>
-    <updated>2022-08-21T07:24:53.226Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;create-react-app&lt;/code&gt;으로 리액트 프로젝트 생성.&lt;br&gt;&lt;code&gt;npm init react-app &amp;lt;폴더 이름&amp;gt;&lt;/code&gt; 혹은 해당 폴더 안에 들어간 후  터미널에서 &lt;code&gt;npm init react-app .&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;개발모드 실행: &lt;code&gt;npm run start&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;개발모드 종료: &lt;code&gt;Ctrl + C&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;리액트 개발자 도구: React Developer Tools (크롬 확장 프로그램)&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
-    
-      <category term="React" scheme="http://mjae404.github.io/categories/JavaScript/React/"/>
-    
-    
-      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
-    
-      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
-    
-      <category term="react" scheme="http://mjae404.github.io/tags/react/"/>
     
   </entry>
   
