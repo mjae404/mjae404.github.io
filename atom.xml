@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-06T12:12:53.030Z</updated>
+  <updated>2024-05-06T12:17:38.979Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 점의 위치 구하기</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-040/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-040/</id>
+    <published>2024-05-06T12:14:39.000Z</published>
+    <updated>2024-05-06T12:17:38.979Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;사분면은 한 평면을 x축과 y축을 기준으로 나눈 네 부분입니다. 사분면은 아래와 같이 1부터 4까지 번호를 매깁니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;x 좌표와 y 좌표가 모두 양수이면 제1사분면에 속합니다.&lt;/li&gt;
+&lt;li&gt;x 좌표가 음수, y 좌표가 양수이면 제2사분면에 속합니다.&lt;/li&gt;
+&lt;li&gt;x 좌표와 y 좌표가 모두 음수이면 제3사분면에 속합니다.&lt;/li&gt;
+&lt;li&gt;x 좌표가 양수, y 좌표가 음수이면 제4사분면에 속합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;x 좌표 (x, y)를 차례대로 담은 정수 배열 &lt;code&gt;dot&lt;/code&gt;이 매개변수로 주어집니다. 좌표 &lt;code&gt;dot&lt;/code&gt;이 사분면 중 어디에 속하는지 1, 2, 3, 4 중 하나를 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dot&lt;/code&gt;의 길이 = 2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dot[0]&lt;/code&gt;은 x좌표를, &lt;code&gt;dot[1]&lt;/code&gt;은 y좌표를 나타냅니다.&lt;/li&gt;
+&lt;li&gt;-500 ≤ &lt;code&gt;dot&lt;/code&gt;의 원소 ≤ 500 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dot&lt;/code&gt;의 원소는 0이 아닙니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 문자열안에 문자열</title>
@@ -537,32 +573,6 @@
     <summary type="html">
     
       &lt;p&gt;머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 &lt;code&gt;n&lt;/code&gt;이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 100&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 짝수는 싫어요</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-020/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-020/</id>
-    <published>2024-05-05T07:39:51.000Z</published>
-    <updated>2024-05-05T07:50:16.105Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때, &lt;code&gt;n&lt;/code&gt; 이하의 홀수가 오름차순으로 담긴 배열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 100&lt;/li&gt;
 &lt;/ul&gt;

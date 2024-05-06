@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>&lt;프로그래머스&gt; 점의 위치 구하기</title>
+    <url>/2024/05/06/programmers-040/</url>
+    <content><![CDATA[<p>사분면은 한 평면을 x축과 y축을 기준으로 나눈 네 부분입니다. 사분면은 아래와 같이 1부터 4까지 번호를 매깁니다.</p>
+<ul>
+<li>x 좌표와 y 좌표가 모두 양수이면 제1사분면에 속합니다.</li>
+<li>x 좌표가 음수, y 좌표가 양수이면 제2사분면에 속합니다.</li>
+<li>x 좌표와 y 좌표가 모두 음수이면 제3사분면에 속합니다.</li>
+<li>x 좌표가 양수, y 좌표가 음수이면 제4사분면에 속합니다.</li>
+</ul>
+<p>x 좌표 (x, y)를 차례대로 담은 정수 배열 <code>dot</code>이 매개변수로 주어집니다. 좌표 <code>dot</code>이 사분면 중 어디에 속하는지 1, 2, 3, 4 중 하나를 return 하도록 solution 함수를 완성해주세요.</p>
+<ul>
+<li><code>dot</code>의 길이 = 2</li>
+<li><code>dot[0]</code>은 x좌표를, <code>dot[1]</code>은 y좌표를 나타냅니다.</li>
+<li>-500 ≤ <code>dot</code>의 원소 ≤ 500 </li>
+<li><code>dot</code>의 원소는 0이 아닙니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(dot) &#123;</span><br><span class="line">    return dot[0] &gt; 0 ? (dot[1] &gt; 0 ? 1 : 4) : (dot[1] &gt; 0 ? 2 : 3);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>&lt;프로그래머스&gt; 문자열안에 문자열</title>
     <url>/2024/05/06/programmers-039/</url>
     <content><![CDATA[<p>문자열 <code>str1</code>, <code>str2</code>가 매개변수로 주어집니다. <code>str1</code> 안에 <code>str2</code>가 있다면 1을 없다면 2를 return하도록 solution 함수를 완성해주세요.</p>
