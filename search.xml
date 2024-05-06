@@ -15352,4 +15352,69 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 짝수 홀수 개수</title>
+    <url>/2024/05/06/programmers-029/</url>
+    <content><![CDATA[<p>정수가 담긴 리스트 <code>num_list</code>가 주어질 때, <code>num_list</code>의 원소 중 짝수와 홀수의 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+<ul>
+<li>1 ≤ <code>num_list</code>의 길이 ≤ 100 </li>
+<li>0 ≤ <code>num_list</code>의 원소 ≤ 1,000</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(num_list) &#123;</span><br><span class="line">    var answer &#x3D; [0, 0];</span><br><span class="line"></span><br><span class="line">    for(let a of num_list)&#123;</span><br><span class="line">        answer[a % 2] +&#x3D; 1</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 삼각형의 완성조건 (1)</title>
+    <url>/2024/05/06/programmers-031/</url>
+    <content><![CDATA[<p>선분 세 개로 삼각형을 만들기 위해서는 다음과 같은 조건을 만족해야 합니다.</p>
+<ul>
+<li>가장 긴 변의 길이는 다른 두 변의 길이의 합보다 작아야 합니다.</li>
+</ul>
+<p>삼각형의 세 변의 길이가 담긴 배열 <code>sides</code>이 매개변수로 주어집니다. 세 변으로 삼각형을 만들 수 있다면 1, 만들 수 없다면 2를 return하도록 solution 함수를 완성해주세요.</p>
+<ul>
+<li><code>sides</code>의 원소는 자연수입니다. </li>
+<li><code>sides</code>의 길이는 3입니다. </li>
+<li>1 ≤ <code>sides</code>의 원소 ≤ 1,000</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const solution &#x3D; (sides)&#x3D;&gt; &#123;</span><br><span class="line">    sides.sort((a,b)&#x3D;&gt;a-b);</span><br><span class="line">    return (sides[0] + sides[1] &gt; sides[2] ? 1 : 2)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 숨어있는 숫자의 덧셈 (1)</title>
+    <url>/2024/05/06/programmers-030/</url>
+    <content><![CDATA[<p>문자열 <code>my_string</code>이 매개변수로 주어집니다. <code>my_string</code>안의 모든 자연수들의 합을 return하도록 solution 함수를 완성해주세요.</p>
+<ul>
+<li>1 ≤ <code>my_string</code>의 길이 ≤ 1,000</li>
+<li><code>my_string</code>은 소문자, 대문자 그리고 한자리 자연수로만 구성되어 있습니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(my_string) &#123;</span><br><span class="line">  const num &#x3D; my_string.split(&quot;&quot;);</span><br><span class="line">  let result &#x3D; 0;</span><br><span class="line">  </span><br><span class="line">  for(let i &#x3D; 0; i &lt; num.length; i++)&#123;</span><br><span class="line">    if(Number(num[i])) result +&#x3D; Number(num[i])</span><br><span class="line">  &#125;</span><br><span class="line">  return result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>

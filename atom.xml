@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-05T11:36:07.219Z</updated>
+  <updated>2024-05-06T06:56:48.876Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,92 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 삼각형의 완성조건 (1)</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-031/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-031/</id>
+    <published>2024-05-06T06:54:49.000Z</published>
+    <updated>2024-05-06T06:56:48.876Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;선분 세 개로 삼각형을 만들기 위해서는 다음과 같은 조건을 만족해야 합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;가장 긴 변의 길이는 다른 두 변의 길이의 합보다 작아야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;삼각형의 세 변의 길이가 담긴 배열 &lt;code&gt;sides&lt;/code&gt;이 매개변수로 주어집니다. 세 변으로 삼각형을 만들 수 있다면 1, 만들 수 없다면 2를 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sides&lt;/code&gt;의 원소는 자연수입니다. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sides&lt;/code&gt;의 길이는 3입니다. &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;sides&lt;/code&gt;의 원소 ≤ 1,000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 숨어있는 숫자의 덧셈 (1)</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-030/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-030/</id>
+    <published>2024-05-06T06:52:26.000Z</published>
+    <updated>2024-05-06T06:56:03.815Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;문자열 &lt;code&gt;my_string&lt;/code&gt;이 매개변수로 주어집니다. &lt;code&gt;my_string&lt;/code&gt;안의 모든 자연수들의 합을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;my_string&lt;/code&gt;의 길이 ≤ 1,000&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;my_string&lt;/code&gt;은 소문자, 대문자 그리고 한자리 자연수로만 구성되어 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 짝수 홀수 개수</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-029/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-029/</id>
+    <published>2024-05-06T06:49:01.000Z</published>
+    <updated>2024-05-06T06:51:45.454Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수가 담긴 리스트 &lt;code&gt;num_list&lt;/code&gt;가 주어질 때, &lt;code&gt;num_list&lt;/code&gt;의 원소 중 짝수와 홀수의 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 1,000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 주사위의 개수</title>
@@ -473,87 +559,6 @@
 &lt;li&gt;0 ≤ &lt;code&gt;numbers&lt;/code&gt;의 원소 ≤ 1,000 &lt;/li&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;numbers&lt;/code&gt;의 길이 ≤ 100&lt;/li&gt;
 &lt;li&gt;정답의 소수 부분이 .0 또는 .5인 경우만 입력으로 주어집니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 두 수의 나눗셈</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-011/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-011/</id>
-    <published>2024-05-05T02:23:38.000Z</published>
-    <updated>2024-05-05T02:26:54.935Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 &lt;code&gt;num1&lt;/code&gt;과 &lt;code&gt;num2&lt;/code&gt;가 매개변수로 주어질 때, &lt;code&gt;num1&lt;/code&gt;을 &lt;code&gt;num2&lt;/code&gt;로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 soltuion 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;0 &amp;lt; &lt;code&gt;num1&lt;/code&gt; ≤ 100 &lt;/li&gt;
-&lt;li&gt;0 &amp;lt; &lt;code&gt;num2&lt;/code&gt; ≤ 100&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 나이 출력</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-010/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-010/</id>
-    <published>2024-05-05T01:48:19.000Z</published>
-    <updated>2024-05-05T02:28:57.960Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;머쓱이는 선생님이 몇 년도에 태어났는지 궁금해졌습니다. 2022년 기준 선생님의 나이 &lt;code&gt;age&lt;/code&gt;가 주어질 때, 선생님의 출생 연도를 return 하는 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;0 &amp;lt; &lt;code&gt;age&lt;/code&gt; ≤ 120&lt;/li&gt;
-&lt;li&gt;나이는 태어난 연도에 1살이며 매년 1월 1일마다 1살씩 증가합니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 몫 구하기</title>
-    <link href="http://mjae404.github.io/2024/05/04/programmers-009/"/>
-    <id>http://mjae404.github.io/2024/05/04/programmers-009/</id>
-    <published>2024-05-04T10:20:36.000Z</published>
-    <updated>2024-05-04T11:46:05.815Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 &lt;code&gt;num1&lt;/code&gt;, &lt;code&gt;num2&lt;/code&gt;가 매개변수로 주어질 때, &lt;code&gt;num1&lt;/code&gt;을 &lt;code&gt;num2&lt;/code&gt;로 나눈 몫을 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;0 ≤ &lt;code&gt;num1&lt;/code&gt; ≤ 100&lt;/li&gt;
-&lt;li&gt;0 ≤ &lt;code&gt;num2&lt;/code&gt; ≤ 100&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
