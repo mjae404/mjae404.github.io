@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-06T09:28:23.577Z</updated>
+  <updated>2024-05-06T12:12:53.030Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 문자열안에 문자열</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-039/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-039/</id>
+    <published>2024-05-06T12:10:42.000Z</published>
+    <updated>2024-05-06T12:12:53.030Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;문자열 &lt;code&gt;str1&lt;/code&gt;, &lt;code&gt;str2&lt;/code&gt;가 매개변수로 주어집니다. &lt;code&gt;str1&lt;/code&gt; 안에 &lt;code&gt;str2&lt;/code&gt;가 있다면 1을 없다면 2를 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;str1&lt;/code&gt;의 길이 ≤ 100&lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;str2&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
+&lt;li&gt;문자열은 알파벳 대문자, 소문자, 숫자로 구성되어 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 자릿수 더하기</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-038/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-038/</id>
+    <published>2024-05-06T10:39:37.000Z</published>
+    <updated>2024-05-06T10:52:13.877Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때 &lt;code&gt;n&lt;/code&gt;의 각 자리 숫자의 합을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 1,000,000&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; n의 배수 고르기</title>
@@ -511,62 +565,6 @@
       &lt;p&gt;정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때, &lt;code&gt;n&lt;/code&gt; 이하의 홀수가 오름차순으로 담긴 배열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 100&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 중앙값 구하기</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-019/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-019/</id>
-    <published>2024-05-05T07:37:56.000Z</published>
-    <updated>2024-05-05T07:39:39.962Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미합니다. 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 정수 배열 &lt;code&gt;array&lt;/code&gt;가 매개변수로 주어질 때, 중앙값을 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;array&lt;/code&gt;의 길이는 홀수입니다.&lt;/li&gt;
-&lt;li&gt;0 &amp;lt; &lt;code&gt;array&lt;/code&gt;의 길이 &amp;lt; 100 &lt;/li&gt;
-&lt;li&gt;-1,000 &amp;lt; &lt;code&gt;array&lt;/code&gt;의 원소 &amp;lt; 1,000&lt;/li&gt;
-&lt;li&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 머쓱이보다 키 큰 사람</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-018/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-018/</id>
-    <published>2024-05-05T07:34:19.000Z</published>
-    <updated>2024-05-05T07:39:36.329Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;머쓱이는 학교에서 키 순으로 줄을 설 때 몇 번째로 서야 하는지 궁금해졌습니다. 머쓱이네 반 친구들의 키가 담긴 정수 배열 &lt;code&gt;array&lt;/code&gt;와 머쓱이의 키 &lt;code&gt;height&lt;/code&gt;가 매개변수로 주어질 때, 머쓱이보다 키 큰 사람 수를 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;array&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;height&lt;/code&gt; ≤ 200 &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;array&lt;/code&gt;의 원소 ≤ 200&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
