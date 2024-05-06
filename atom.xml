@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-06T12:31:04.586Z</updated>
+  <updated>2024-05-06T13:39:08.807Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 배열에서 문자열 대소문자 변환하기</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-042/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-042/</id>
+    <published>2024-05-06T13:36:27.000Z</published>
+    <updated>2024-05-06T13:39:08.807Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;문자열 배열 &lt;code&gt;strArr&lt;/code&gt;가 주어집니다. 모든 원소가 알파벳으로만 이루어져 있을 때, 배열에서 홀수번째 인덱스의 문자열은 모든 문자를 대문자로, 짝수번째 인덱스의 문자열은 모든 문자를 소문자로 바꿔서 반환하는 solution 함수를 완성해 주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;strArr&lt;/code&gt; ≤ 20&lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;strArr&lt;/code&gt;의 원소의 길이 ≤ 20&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;strArr&lt;/code&gt;의 원소는 알파벳으로 이루어진 문자열 입니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 세균 증식</title>
@@ -549,33 +577,6 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;소수점 이하를 버린 정수를 return합니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 피자 나눠 먹기 (1)</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-022/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-022/</id>
-    <published>2024-05-05T07:49:12.000Z</published>
-    <updated>2024-05-05T07:52:02.059Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;머쓱이네 피자가게는 피자를 두 조각에서 열 조각까지 원하는 조각 수로 잘라줍니다. 피자 조각 수 &lt;code&gt;slice&lt;/code&gt;와 피자를 먹는 사람의 수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때, &lt;code&gt;n&lt;/code&gt;명의 사람이 최소 한 조각 이상 피자를 먹으려면 최소 몇 판의 피자를 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;2 ≤ &lt;code&gt;slice&lt;/code&gt; ≤ 10&lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 100&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
