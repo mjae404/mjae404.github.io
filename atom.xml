@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-06T06:56:48.876Z</updated>
+  <updated>2024-05-06T07:11:01.365Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 대문자와 소문자</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-033/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-033/</id>
+    <published>2024-05-06T07:08:56.000Z</published>
+    <updated>2024-05-06T07:11:01.365Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;문자열 &lt;code&gt;my_string&lt;/code&gt;이 매개변수로 주어질 때, 대문자는 소문자로 소문자는 대문자로 변환한 문자열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;my_string&lt;/code&gt;의 길이 ≤ 1,000&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;my_string&lt;/code&gt;은 영어 대문자와 소문자로만 구성되어 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 암호 해독</title>
+    <link href="http://mjae404.github.io/2024/05/06/programmers-032/"/>
+    <id>http://mjae404.github.io/2024/05/06/programmers-032/</id>
+    <published>2024-05-06T07:00:57.000Z</published>
+    <updated>2024-05-06T07:03:01.306Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;군 전략가 머쓱이는 전쟁 중 적군이 다음과 같은 암호 체계를 사용한다는 것을 알아냈습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;암호화된 문자열 &lt;code&gt;cipher&lt;/code&gt;를 주고받습니다. &lt;/li&gt;
+&lt;li&gt;그 문자열에서 &lt;code&gt;code&lt;/code&gt;의 배수 번째 글자만 진짜 암호입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;문자열 &lt;code&gt;cipher&lt;/code&gt;와 정수 &lt;code&gt;code&lt;/code&gt;가 매개변수로 주어질 때 해독된 암호 문자열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;cipher&lt;/code&gt;의 길이 ≤ 1,000 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;code&lt;/code&gt; ≤ cipher의 길이 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cipher&lt;/code&gt;는 소문자와 공백으로만 구성되어 있습니다. &lt;/li&gt;
+&lt;li&gt;공백도 하나의 문자로 취급합니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 삼각형의 완성조건 (1)</title>
@@ -505,60 +566,6 @@
 &lt;ul&gt;
 &lt;li&gt;-10,000 ≤ &lt;code&gt;numbers&lt;/code&gt;의 원소 ≤ 10,000&lt;/li&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;numbers&lt;/code&gt;의 길이 ≤ 1,000&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 짝수의 합</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-013/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-013/</id>
-    <published>2024-05-05T05:02:22.000Z</published>
-    <updated>2024-05-05T05:08:14.208Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 &lt;code&gt;n&lt;/code&gt;이 주어질 때, &lt;code&gt;n&lt;/code&gt; 이하의 짝수를 모두 더한 값을 return 하도록 solution 함수를 작성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;0 &amp;lt; &lt;code&gt;n&lt;/code&gt; ≤ 1000&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 배열의 평균값</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-012/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-012/</id>
-    <published>2024-05-05T04:58:43.000Z</published>
-    <updated>2024-05-05T05:07:50.162Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 배열 &lt;code&gt;numbers&lt;/code&gt;가 매개변수로 주어집니다. &lt;code&gt;numbers&lt;/code&gt;의 원소의 평균값을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;0 ≤ &lt;code&gt;numbers&lt;/code&gt;의 원소 ≤ 1,000 &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;numbers&lt;/code&gt;의 길이 ≤ 100&lt;/li&gt;
-&lt;li&gt;정답의 소수 부분이 .0 또는 .5인 경우만 입력으로 주어집니다.&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
