@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjae404.github.io">
   <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
-    &lt;프로그래머스&gt; 가장 큰 수 찾기 |  404 Not Found
+    &lt;프로그래머스&gt; n의 배수 고르기 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -37,7 +37,7 @@
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-programmers-035" class="article article-type-post" itemscope
+  <article id="post-programmers-037" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -45,7 +45,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  &lt;프로그래머스&gt; 가장 큰 수 찾기
+  &lt;프로그래머스&gt; n의 배수 고르기
 </h1>
   
 
@@ -54,8 +54,8 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/06/programmers-035/" class="article-date">
-  <time datetime="2024-05-06T09:12:00.000Z" itemprop="datePublished">2024-05-06</time>
+      <a href="/2024/05/06/programmers-037/" class="article-date">
+  <time datetime="2024-05-06T09:26:40.000Z" itemprop="datePublished">2024-05-06</time>
 </a>
       
   <div class="article-category">
@@ -75,22 +75,22 @@
       
 
       
-      <p>정수 배열 <code>array</code>가 매개변수로 주어질 때, 가장 큰 수와 그 수의 인덱스를 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+      <p>정수 n과 정수 배열 <code>numlist</code>가 매개변수로 주어질 때, <code>numlist</code>에서 <code>n</code>의 배수가 아닌 수들을 제거한 배열을 return하도록 solution 함수를 완성해주세요.</p>
 <ul>
-<li>1 ≤ <code>array</code>의 길이 ≤ 100</li>
-<li>0 ≤ <code>array</code> 원소 ≤ 1,000</li>
-<li><code>array</code>에 중복된 숫자는 없습니다.</li>
+<li>1 ≤ <code>n</code> ≤ 10,000</li>
+<li>1 ≤ <code>numlist</code>의 크기 ≤ 100</li>
+<li>1 ≤ <code>numlist</code>의 원소 ≤ 100,000</li>
 </ul>
 <a id="more"></a>
 
 <p><em><strong>풀이</strong></em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function solution(array) &#123;</span><br><span class="line">    let max &#x3D; Math.max(...array);</span><br><span class="line">    return [max, array.indexOf(max)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function solution(n, numlist) &#123;</span><br><span class="line">    return numlist.filter(num &#x3D;&gt; num % n &#x3D;&#x3D;&#x3D; 0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/06/programmers-035/" data-id="clvur3fro0001b40acphp5n2t"
+      <a data-url="http://mjae404.github.io/2024/05/06/programmers-037/" data-id="clvutrued00040y0ac3d1h9y9"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
@@ -103,19 +103,10 @@
   
   <nav class="article-nav">
     
+    
       <a href="/2024/05/06/programmers-036/" class="article-nav-link">
-        <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">
-          
-            &lt;프로그래머스&gt; 배열의 유사도
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2024/05/06/programmers-034/" class="article-nav-link">
         <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">&lt;프로그래머스&gt; 제곱수 판별하기</div>
+        <div class="article-nav-title">&lt;프로그래머스&gt; 배열의 유사도</div>
       </a>
     
   </nav>
