@@ -15464,4 +15464,44 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 제곱수 판별하기</title>
+    <url>/2024/05/06/programmers-034/</url>
+    <content><![CDATA[<p>어떤 자연수를 제곱했을 때 나오는 정수를 제곱수라고 합니다. 정수 <code>n</code>이 매개변수로 주어질 때, <code>n</code>이 제곱수라면 1을 아니라면 2를 return하도록 solution 함수를 완성해주세요.</p>
+<ul>
+<li>1 ≤ <code>n</code> ≤ 1,000,000</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(n) &#123;</span><br><span class="line">    return Math.sqrt(n) % 1 &#x3D;&#x3D;&#x3D; 0 ? 1 : 2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 가장 큰 수 찾기</title>
+    <url>/2024/05/06/programmers-035/</url>
+    <content><![CDATA[<p>정수 배열 <code>array</code>가 매개변수로 주어질 때, 가장 큰 수와 그 수의 인덱스를 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+<ul>
+<li>1 ≤ <code>array</code>의 길이 ≤ 100</li>
+<li>0 ≤ <code>array</code> 원소 ≤ 1,000</li>
+<li><code>array</code>에 중복된 숫자는 없습니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(array) &#123;</span><br><span class="line">    let max &#x3D; Math.max(...array);</span><br><span class="line">    return [max, array.indexOf(max)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>
