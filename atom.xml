@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-07T01:32:52.471Z</updated>
+  <updated>2024-05-07T01:36:19.145Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 배열 원소의 길이</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-049/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-049/</id>
+    <published>2024-05-07T01:34:34.000Z</published>
+    <updated>2024-05-07T01:36:19.145Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;문자열 배열 &lt;code&gt;strlist&lt;/code&gt;가 매개변수로 주어집니다. &lt;code&gt;strlist&lt;/code&gt; 각 원소의 길이를 담은 배열을 retrun하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;strlist&lt;/code&gt; 원소의 길이 ≤ 100&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;strlist&lt;/code&gt;는 알파벳 소문자, 대문자, 특수문자로 구성되어 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; n보다 커질 때까지 더하기</title>
@@ -543,33 +570,6 @@
 &lt;ul&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;my_string&lt;/code&gt;의 길이 ≤ 1,000&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;my_string&lt;/code&gt;은 소문자, 대문자 그리고 한자리 자연수로만 구성되어 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 짝수 홀수 개수</title>
-    <link href="http://mjae404.github.io/2024/05/06/programmers-029/"/>
-    <id>http://mjae404.github.io/2024/05/06/programmers-029/</id>
-    <published>2024-05-06T06:49:01.000Z</published>
-    <updated>2024-05-06T06:51:45.454Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수가 담긴 리스트 &lt;code&gt;num_list&lt;/code&gt;가 주어질 때, &lt;code&gt;num_list&lt;/code&gt;의 원소 중 짝수와 홀수의 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
-&lt;li&gt;0 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 1,000&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
