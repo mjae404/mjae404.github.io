@@ -15866,4 +15866,25 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; n개 간격의 원소들</title>
+    <url>/2024/05/07/programmers-053/</url>
+    <content><![CDATA[<p>정수 리스트 <code>num_list</code>와 정수 n이 주어질 때, <code>num_list</code>의 첫 번째 원소부터 마지막 원소까지 <code>n</code>개 간격으로 저장되어있는 원소들을 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.</p>
+<ul>
+<li>5 ≤ <code>num_list</code>의 길이 ≤ 20 </li>
+<li>1 ≤ <code>num_list</code>의 원소 ≤ 9 </li>
+<li>1 ≤ <code>n</code> ≤ 4</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(num_list, n) &#123;</span><br><span class="line">  return num_list.filter((_, index) &#x3D;&gt; index % n &#x3D;&#x3D;&#x3D; 0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>
