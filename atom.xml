@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-07T01:36:19.145Z</updated>
+  <updated>2024-05-07T02:16:59.296Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 할 일 목록</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-050/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-050/</id>
+    <published>2024-05-07T01:38:36.000Z</published>
+    <updated>2024-05-07T02:16:59.296Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;오늘 해야 할 일이 담긴 문자열 배열 &lt;code&gt;todo_list&lt;/code&gt;와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 &lt;code&gt;finished&lt;/code&gt;가 매개변수로 주어질 때, &lt;code&gt;todo_list&lt;/code&gt;에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;todo_list&lt;/code&gt;의 길이 1 ≤ 100 &lt;/li&gt;
+&lt;li&gt;2 ≤ &lt;code&gt;todo_list&lt;/code&gt;의 원소의 길이 ≤ 20 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;todo_list&lt;/code&gt;의 원소는 영소문자로만 이루어져 있습니다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;todo_list&lt;/code&gt;의 원소는 모두 서로 다릅니다. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;finished[i]&lt;/code&gt;는 true 또는 false이고 true는 &lt;code&gt;todo_list[i]&lt;/code&gt;를 마쳤음을, false는 아직 마치지 못했음을 나타냅니다. &lt;/li&gt;
+&lt;li&gt;아직 마치지 못한 일이 적어도 하나 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 배열 원소의 길이</title>
@@ -543,33 +574,6 @@
 &lt;li&gt;&lt;code&gt;sides&lt;/code&gt;의 원소는 자연수입니다. &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;sides&lt;/code&gt;의 길이는 3입니다. &lt;/li&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;sides&lt;/code&gt;의 원소 ≤ 1,000&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 숨어있는 숫자의 덧셈 (1)</title>
-    <link href="http://mjae404.github.io/2024/05/06/programmers-030/"/>
-    <id>http://mjae404.github.io/2024/05/06/programmers-030/</id>
-    <published>2024-05-06T06:52:26.000Z</published>
-    <updated>2024-05-06T06:56:03.815Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;문자열 &lt;code&gt;my_string&lt;/code&gt;이 매개변수로 주어집니다. &lt;code&gt;my_string&lt;/code&gt;안의 모든 자연수들의 합을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;my_string&lt;/code&gt;의 길이 ≤ 1,000&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;my_string&lt;/code&gt;은 소문자, 대문자 그리고 한자리 자연수로만 구성되어 있습니다.&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>

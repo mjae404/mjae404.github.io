@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjae404.github.io">
   <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
-    태그: programmers |  404 Not Found
+    &lt;프로그래머스&gt; 할 일 목록 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -37,86 +37,93 @@
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article class="articles">
+  <article id="post-programmers-050" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">#&nbspprogrammers</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2020" class="archive-year">2020</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/10/27/js-exercise005-odd-even/" class="archive-article-date">
-  <time datetime="2020-10-27T13:39:35.000Z" itemprop="datePublished">10/27</time>
-</a>
+    <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/10/27/js-exercise005-odd-even/"
-    >JS 짝수와 홀수</a
-  >
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  &lt;프로그래머스&gt; 할 일 목록
+</h1>
   
 
     </header>
     
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/algorism/" rel="tag">algorism</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exercise/" rel="tag">exercise</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
 
     
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/10/26/js-exercise004-watermelon/" class="archive-article-date">
-  <time datetime="2020-10-26T14:57:12.000Z" itemprop="datePublished">10/26</time>
+    <div class="article-meta">
+      <a href="/2024/05/07/programmers-050/" class="article-date">
+  <time datetime="2024-05-07T01:38:36.000Z" itemprop="datePublished">2024-05-07</time>
 </a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/10/26/js-exercise004-watermelon/"
-    >JS 수박수박수박수박수박수?</a
-  >
-</h2>
-  
-
-    </header>
-    
-    
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/algorism/" rel="tag">algorism</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exercise/" rel="tag">exercise</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
-
-    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
   </div>
-</article>
-      
+
       
     </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>오늘 해야 할 일이 담긴 문자열 배열 <code>todo_list</code>와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 <code>finished</code>가 매개변수로 주어질 때, <code>todo_list</code>에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.</p>
+<ul>
+<li>1 ≤ <code>todo_list</code>의 길이 1 ≤ 100 </li>
+<li>2 ≤ <code>todo_list</code>의 원소의 길이 ≤ 20 </li>
+<li><code>todo_list</code>의 원소는 영소문자로만 이루어져 있습니다.</li>
+<li><code>todo_list</code>의 원소는 모두 서로 다릅니다. </li>
+<li><code>finished[i]</code>는 true 또는 false이고 true는 <code>todo_list[i]</code>를 마쳤음을, false는 아직 마치지 못했음을 나타냅니다. </li>
+<li>아직 마치지 못한 일이 적어도 하나 있습니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function solution(todo_list, finished) &#123;</span><br><span class="line">    var answer &#x3D; [];</span><br><span class="line">    return todo_list.filter((e,i) &#x3D;&gt; !finished[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2024/05/07/programmers-050/" data-id="clvvrg94a0000gt0agkdt3885"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
+
+    </footer>
+
   </div>
-  
-  
 
   
-  <nav class="page-nav">
+  
+  <nav class="article-nav">
     
-    <a class="extend prev" rel="prev" href="/tags/programmers/page/5/">next</a><a class="page-number" href="/tags/programmers/">1</a><span class="space">&hellip;</span><a class="page-number" href="/tags/programmers/page/4/">4</a><a class="page-number" href="/tags/programmers/page/5/">5</a><span class="page-number current">6</span>
+    
+      <a href="/2024/05/07/programmers-049/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">&lt;프로그래머스&gt; 배열 원소의 길이</div>
+      </a>
+    
   </nav>
+
+
   
+
+  
+
+  
+  
+  
+
+</article>
 </section>
       <footer class="footer">
   <div class="outer">
