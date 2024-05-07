@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-06T13:45:33.124Z</updated>
+  <updated>2024-05-07T01:16:22.066Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 원하는 문자열 찾기</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-045/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-045/</id>
+    <published>2024-05-07T01:13:52.000Z</published>
+    <updated>2024-05-07T01:16:22.066Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;알파벳으로 이루어진 문자열 &lt;code&gt;myString&lt;/code&gt;과 &lt;code&gt;pat&lt;/code&gt;이 주어집니다. &lt;code&gt;myString&lt;/code&gt;의 연속된 부분 문자열 중 pat이 존재하면 1을 그렇지 않으면 0을 return 하는 solution 함수를 완성해 주세요.  단, 알파벳 대문자와 소문자는 구분하지 않습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;myString&lt;/code&gt;의 길이 ≤ 100,000 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;pat&lt;/code&gt;의 길이 ≤ 300 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;myString&lt;/code&gt;과 &lt;code&gt;pat&lt;/code&gt;은 모두 알파벳으로 이루어진 문자열입니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 대문자로 바꾸기</title>
@@ -547,34 +575,6 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;hp&lt;/code&gt;는 자연수입니다.&lt;/li&gt;
 &lt;li&gt;0 ≤ &lt;code&gt;hp&lt;/code&gt; ≤ 1000&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 문자 반복 출력하기</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-025/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-025/</id>
-    <published>2024-05-05T08:04:50.000Z</published>
-    <updated>2024-05-05T08:07:15.224Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;문자열 &lt;code&gt;my_string&lt;/code&gt;과 정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때, &lt;code&gt;my_string&lt;/code&gt;에 들어있는 각 문자를 &lt;code&gt;n&lt;/code&gt;만큼 반복한 문자열을 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;2 ≤ &lt;code&gt;my_string&lt;/code&gt; 길이 ≤ 5 &lt;/li&gt;
-&lt;li&gt;2 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 10&lt;/li&gt;
-&lt;li&gt;“my_string”은 영어 대소문자로 이루어져 있습니다.&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
