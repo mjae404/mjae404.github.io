@@ -15825,4 +15825,45 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 5명씩</title>
+    <url>/2024/05/07/programmers-051/</url>
+    <content><![CDATA[<p>최대 5명씩 탑승가능한 놀이기구를 타기 위해 줄을 서있는 사람들의 이름이 담긴 문자열 리스트 <code>names</code>가 주어질 때, 앞에서 부터 5명씩 묶은 그룹의 가장 앞에 서있는 사람들의 이름을 담은 리스트를 return하도록 solution 함수를 완성해주세요. 마지막 그룹이 5명이 되지 않더라도 가장 앞에 있는 사람의 이름을 포함합니다.</p>
+<ul>
+<li>5 ≤ <code>names</code>의 길이 ≤ 30 </li>
+<li>1 ≤ <code>names</code>의 원소의 길이 ≤ 10 </li>
+<li><code>names</code>의 원소는 영어 알파벳 소문자로만 이루어져 있습니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(names) &#123;</span><br><span class="line">    return names.filter((_, i) &#x3D;&gt; i%5 &#x3D;&#x3D;&#x3D; 0)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 홀수 vs 짝수</title>
+    <url>/2024/05/07/programmers-052/</url>
+    <content><![CDATA[<p>정수 리스트 <code>num_list</code>가 주어집니다. 가장 첫 번째 원소를 1번 원소라고 할 때, 홀수 번째 원소들의 합과 짝수 번째 원소들의 합 중 큰 값을 return 하도록 solution 함수를 완성해주세요. 두 값이 같을 경우 그 값을 return합니다.</p>
+<ul>
+<li>5 ≤ <code>num_list</code>의 길이 ≤ 50 </li>
+<li>-9 ≤ <code>num_list</code>의 원소 ≤ 9</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(num_list) &#123;</span><br><span class="line">    let even &#x3D; 0;</span><br><span class="line">    let odd &#x3D; 0;</span><br><span class="line"></span><br><span class="line">    num_list.map((v, idx) &#x3D;&gt; &#123;</span><br><span class="line">        !(idx % 2) ? even +&#x3D; v : odd +&#x3D; v; </span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    return odd &gt; even ? odd : even; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>

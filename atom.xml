@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-07T02:16:59.296Z</updated>
+  <updated>2024-05-07T05:50:55.782Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 홀수 vs 짝수</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-052/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-052/</id>
+    <published>2024-05-07T05:48:36.000Z</published>
+    <updated>2024-05-07T05:50:55.782Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 리스트 &lt;code&gt;num_list&lt;/code&gt;가 주어집니다. 가장 첫 번째 원소를 1번 원소라고 할 때, 홀수 번째 원소들의 합과 짝수 번째 원소들의 합 중 큰 값을 return 하도록 solution 함수를 완성해주세요. 두 값이 같을 경우 그 값을 return합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 50 &lt;/li&gt;
+&lt;li&gt;-9 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 9&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 5명씩</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-051/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-051/</id>
+    <published>2024-05-07T05:46:36.000Z</published>
+    <updated>2024-05-07T05:48:31.466Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;최대 5명씩 탑승가능한 놀이기구를 타기 위해 줄을 서있는 사람들의 이름이 담긴 문자열 리스트 &lt;code&gt;names&lt;/code&gt;가 주어질 때, 앞에서 부터 5명씩 묶은 그룹의 가장 앞에 서있는 사람들의 이름을 담은 리스트를 return하도록 solution 함수를 완성해주세요. 마지막 그룹이 5명이 되지 않더라도 가장 앞에 있는 사람의 이름을 포함합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5 ≤ &lt;code&gt;names&lt;/code&gt;의 길이 ≤ 30 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;names&lt;/code&gt;의 원소의 길이 ≤ 10 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;names&lt;/code&gt;의 원소는 영어 알파벳 소문자로만 이루어져 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 할 일 목록</title>
@@ -508,72 +563,6 @@
 &lt;ul&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;my_string&lt;/code&gt;의 길이 ≤ 1,000&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;my_string&lt;/code&gt;은 영어 대문자와 소문자로만 구성되어 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 암호 해독</title>
-    <link href="http://mjae404.github.io/2024/05/06/programmers-032/"/>
-    <id>http://mjae404.github.io/2024/05/06/programmers-032/</id>
-    <published>2024-05-06T07:00:57.000Z</published>
-    <updated>2024-05-06T07:03:01.306Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;군 전략가 머쓱이는 전쟁 중 적군이 다음과 같은 암호 체계를 사용한다는 것을 알아냈습니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;암호화된 문자열 &lt;code&gt;cipher&lt;/code&gt;를 주고받습니다. &lt;/li&gt;
-&lt;li&gt;그 문자열에서 &lt;code&gt;code&lt;/code&gt;의 배수 번째 글자만 진짜 암호입니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;문자열 &lt;code&gt;cipher&lt;/code&gt;와 정수 &lt;code&gt;code&lt;/code&gt;가 매개변수로 주어질 때 해독된 암호 문자열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;cipher&lt;/code&gt;의 길이 ≤ 1,000 &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;code&lt;/code&gt; ≤ cipher의 길이 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cipher&lt;/code&gt;는 소문자와 공백으로만 구성되어 있습니다. &lt;/li&gt;
-&lt;li&gt;공백도 하나의 문자로 취급합니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 삼각형의 완성조건 (1)</title>
-    <link href="http://mjae404.github.io/2024/05/06/programmers-031/"/>
-    <id>http://mjae404.github.io/2024/05/06/programmers-031/</id>
-    <published>2024-05-06T06:54:49.000Z</published>
-    <updated>2024-05-06T06:56:48.876Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;선분 세 개로 삼각형을 만들기 위해서는 다음과 같은 조건을 만족해야 합니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;가장 긴 변의 길이는 다른 두 변의 길이의 합보다 작아야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;삼각형의 세 변의 길이가 담긴 배열 &lt;code&gt;sides&lt;/code&gt;이 매개변수로 주어집니다. 세 변으로 삼각형을 만들 수 있다면 1, 만들 수 없다면 2를 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sides&lt;/code&gt;의 원소는 자연수입니다. &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sides&lt;/code&gt;의 길이는 3입니다. &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;sides&lt;/code&gt;의 원소 ≤ 1,000&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
