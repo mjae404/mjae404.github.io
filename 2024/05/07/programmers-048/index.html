@@ -16,7 +16,7 @@
   <meta property="og:url" content="http://mjae404.github.io">
   <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
   <title>
-    &lt;프로그래머스&gt; 길이에 따른 연산 |  404 Not Found
+    &lt;프로그래머스&gt; n보다 커질 때까지 더하기 |  404 Not Found
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -37,7 +37,7 @@
   <div id="app">
     <div class="content" role="main">
       <section class="outer">
-  <article id="post-programmers-046" class="article article-type-post" itemscope
+  <article id="post-programmers-048" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -45,7 +45,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  &lt;프로그래머스&gt; 길이에 따른 연산
+  &lt;프로그래머스&gt; n보다 커질 때까지 더하기
 </h1>
   
 
@@ -54,8 +54,8 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/07/programmers-046/" class="article-date">
-  <time datetime="2024-05-07T01:21:41.000Z" itemprop="datePublished">2024-05-07</time>
+      <a href="/2024/05/07/programmers-048/" class="article-date">
+  <time datetime="2024-05-07T01:31:04.000Z" itemprop="datePublished">2024-05-07</time>
 </a>
       
   <div class="article-category">
@@ -75,22 +75,22 @@
       
 
       
-      <p>정수가 담긴 리스트 <code>num_list</code>가 주어질 때, 리스트의 길이가 11 이상이면 리스트에 있는 모든 원소의 합을 10 이하이면 모든 원소의 곱을 return하도록 solution 함수를 완성해주세요.</p>
+      <p>정수 배열 <code>numbers</code>와 정수 n이 매개변수로 주어집니다. <code>numbers</code>의 원소를 앞에서부터 하나씩 더하다가 그 합이 n보다 커지는 순간 이때까지 더했던 원소들의 합을 return 하는 solution 함수를 작성해 주세요.</p>
 <ul>
-<li>2 ≤ <code>num_list</code>의 길이 ≤ 20</li>
-<li>1 ≤ <code>num_list</code>의 원소 ≤ 9</li>
-<li><code>num_list</code>의 원소를 모두 곱했을 때 2,147,483,647를 넘는 입력은 주어지지 않습니다.</li>
+<li>1 ≤ <code>numbers</code>의 길이 ≤ 100 </li>
+<li>1 ≤ <code>numbers</code>의 원소 ≤ 100 </li>
+<li>0 ≤ <code>n</code> &lt; <code>numbers</code>의 모든 원소의 합</li>
 </ul>
 <a id="more"></a>
 
 <p><em><strong>풀이</strong></em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function solution(num_list) &#123;</span><br><span class="line">    let result &#x3D; 0</span><br><span class="line">    if (num_list.length &gt; 10) &#123;</span><br><span class="line">        return num_list.reduce((acc, cur) &#x3D;&gt; acc + cur)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        return num_list.reduce((acc, cur) &#x3D;&gt; acc * cur)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function solution(numbers, n) &#123;</span><br><span class="line">    return numbers.reduce((acc, cur) &#x3D;&gt; acc &gt; n ? acc : acc+cur, 0)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/07/programmers-046/" data-id="clvvpmxon0000mg0a6r592uva"
+      <a data-url="http://mjae404.github.io/2024/05/07/programmers-048/" data-id="clvvpuu2a0000yd0ad03c9eue"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
@@ -103,19 +103,10 @@
   
   <nav class="article-nav">
     
+    
       <a href="/2024/05/07/programmers-047/" class="article-nav-link">
-        <strong class="article-nav-caption">next</strong>
-        <div class="article-nav-title">
-          
-            &lt;프로그래머스&gt; 조건에 맞게 수열 변환하기 1
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2024/05/07/programmers-045/" class="article-nav-link">
         <strong class="article-nav-caption">prev</strong>
-        <div class="article-nav-title">&lt;프로그래머스&gt; 원하는 문자열 찾기</div>
+        <div class="article-nav-title">&lt;프로그래머스&gt; 조건에 맞게 수열 변환하기 1</div>
       </a>
     
   </nav>

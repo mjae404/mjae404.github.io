@@ -15740,4 +15740,45 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; n보다 커질 때까지 더하기</title>
+    <url>/2024/05/07/programmers-048/</url>
+    <content><![CDATA[<p>정수 배열 <code>numbers</code>와 정수 n이 매개변수로 주어집니다. <code>numbers</code>의 원소를 앞에서부터 하나씩 더하다가 그 합이 n보다 커지는 순간 이때까지 더했던 원소들의 합을 return 하는 solution 함수를 작성해 주세요.</p>
+<ul>
+<li>1 ≤ <code>numbers</code>의 길이 ≤ 100 </li>
+<li>1 ≤ <code>numbers</code>의 원소 ≤ 100 </li>
+<li>0 ≤ <code>n</code> &lt; <code>numbers</code>의 모든 원소의 합</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(numbers, n) &#123;</span><br><span class="line">    return numbers.reduce((acc, cur) &#x3D;&gt; acc &gt; n ? acc : acc+cur, 0)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 조건에 맞게 수열 변환하기 1</title>
+    <url>/2024/05/07/programmers-047/</url>
+    <content><![CDATA[<p>정수 배열 <code>arr</code>가 주어집니다. <code>arr</code>의 각 원소에 대해 값이 50보다 크거나 같은 짝수라면 2로 나누고, 50보다 작은 홀수라면 2를 곱합니다. 그 결과인 정수 배열을 return 하는 solution 함수를 완성해 주세요.</p>
+<ul>
+<li>1 ≤ <code>arr</code>의 길이 ≤ 1,000,000 </li>
+<li>1 ≤ <code>arr</code>의 원소의 값 ≤ 100</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function solution(arr) &#123;</span><br><span class="line">    return arr.map(a &#x3D;&gt; &#123;</span><br><span class="line">        if(a &gt;&#x3D; 50 &amp;&amp; a %2 &#x3D;&#x3D;&#x3D;0) return Math.floor(a&#x2F;2)</span><br><span class="line">        if(a &lt; 50 &amp;&amp; a %2 &#x3D;&#x3D;&#x3D; 1) return a*2</span><br><span class="line">        return a</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-07T01:26:45.103Z</updated>
+  <updated>2024-05-07T01:32:52.471Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; n보다 커질 때까지 더하기</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-048/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-048/</id>
+    <published>2024-05-07T01:31:04.000Z</published>
+    <updated>2024-05-07T01:32:52.471Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 배열 &lt;code&gt;numbers&lt;/code&gt;와 정수 n이 매개변수로 주어집니다. &lt;code&gt;numbers&lt;/code&gt;의 원소를 앞에서부터 하나씩 더하다가 그 합이 n보다 커지는 순간 이때까지 더했던 원소들의 합을 return 하는 solution 함수를 작성해 주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;numbers&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;numbers&lt;/code&gt;의 원소 ≤ 100 &lt;/li&gt;
+&lt;li&gt;0 ≤ &lt;code&gt;n&lt;/code&gt; &amp;lt; &lt;code&gt;numbers&lt;/code&gt;의 모든 원소의 합&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 조건에 맞게 수열 변환하기 1</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-047/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-047/</id>
+    <published>2024-05-07T01:28:19.000Z</published>
+    <updated>2024-05-07T01:30:39.815Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 배열 &lt;code&gt;arr&lt;/code&gt;가 주어집니다. &lt;code&gt;arr&lt;/code&gt;의 각 원소에 대해 값이 50보다 크거나 같은 짝수라면 2로 나누고, 50보다 작은 홀수라면 2를 곱합니다. 그 결과인 정수 배열을 return 하는 solution 함수를 완성해 주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;arr&lt;/code&gt;의 길이 ≤ 1,000,000 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;arr&lt;/code&gt;의 원소의 값 ≤ 100&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 길이에 따른 연산</title>
@@ -515,67 +570,6 @@
 &lt;ul&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
 &lt;li&gt;0 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 1,000&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 주사위의 개수</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-028/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-028/</id>
-    <published>2024-05-05T11:32:38.000Z</published>
-    <updated>2024-05-05T11:36:07.219Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;머쓱이는 직육면체 모양의 상자를 하나 가지고 있는데 이 상자에 정육면체 모양의 주사위를 최대한 많이 채우고 싶습니다. 상자의 가로, 세로, 높이가 저장되어있는 배열 &lt;code&gt;box&lt;/code&gt;와 주사위 모서리의 길이 정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어졌을 때, 상자에 들어갈 수 있는 주사위의 최대 개수를 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;box&lt;/code&gt;의 길이는 3입니다.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;box[0]&lt;/code&gt; = 상자의 가로 길이&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;box[1]&lt;/code&gt; = 상자의 세로 길이 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;box[2]&lt;/code&gt; = 상자의 높이 길이 &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;box&lt;/code&gt;의 원소 ≤ 100 &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 50 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;n&lt;/code&gt; ≤ &lt;code&gt;box&lt;/code&gt;의 원소 &lt;/li&gt;
-&lt;li&gt;주사위는 상자와 평행하게 넣습니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 가위 바위 보</title>
-    <link href="http://mjae404.github.io/2024/05/05/programmers-027/"/>
-    <id>http://mjae404.github.io/2024/05/05/programmers-027/</id>
-    <published>2024-05-05T11:29:39.000Z</published>
-    <updated>2024-05-05T11:32:27.364Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;가위는 2 바위는 0 보는 5로 표현합니다. 가위 바위 보를 내는 순서대로 나타낸 문자열 &lt;code&gt;rsp&lt;/code&gt;가 매개변수로 주어질 때, rsp에 저장된 가위 바위 보를 모두 이기는 경우를 순서대로 나타낸 문자열을 return하도록 solution 함수를 완성해보세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;0 &amp;lt; &lt;code&gt;rsp&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rsp&lt;/code&gt;와 길이가 같은 문자열을 return 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rsp&lt;/code&gt;는 숫자 0, 2, 5로 이루어져 있습니다.&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
