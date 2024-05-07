@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-07T06:06:52.737Z</updated>
+  <updated>2024-05-07T06:44:15.158Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 순서 바꾸기</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-055/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-055/</id>
+    <published>2024-05-07T06:41:33.000Z</published>
+    <updated>2024-05-07T06:44:15.158Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 리스트 &lt;code&gt;num_list&lt;/code&gt;와 정수 &lt;code&gt;n&lt;/code&gt;이 주어질 때, &lt;code&gt;num_list&lt;/code&gt;를 &lt;code&gt;n&lt;/code&gt; 번째 원소 이후의 원소들과 &lt;code&gt;n&lt;/code&gt; 번째까지의 원소들로 나눠 &lt;code&gt;n&lt;/code&gt; 번째 원소 이후의 원소들을 &lt;code&gt;n&lt;/code&gt; 번째까지의 원소들 앞에 붙인 리스트를 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 30&lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 9&lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; n 번째 원소까지</title>
+    <link href="http://mjae404.github.io/2024/05/07/programmers-054/"/>
+    <id>http://mjae404.github.io/2024/05/07/programmers-054/</id>
+    <published>2024-05-07T06:38:32.000Z</published>
+    <updated>2024-05-07T06:41:29.442Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 리스트 &lt;code&gt;num_list&lt;/code&gt;와 정수 &lt;code&gt;n&lt;/code&gt;이 주어질 때, &lt;code&gt;num_list&lt;/code&gt;의 첫 번째 원소부터 &lt;code&gt;n&lt;/code&gt; 번째 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 30&lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 9 &lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; n개 간격의 원소들</title>
@@ -510,60 +566,6 @@
 &lt;li&gt;1 ≤ &lt;code&gt;s1&lt;/code&gt;, &lt;code&gt;s2&lt;/code&gt;의 원소의 길이 ≤ 10 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;s1&lt;/code&gt;과 &lt;code&gt;s2&lt;/code&gt;의 원소는 알파벳 소문자로만 이루어져 있습니다.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;s1&lt;/code&gt;과 &lt;code&gt;s2&lt;/code&gt;는 각각 중복된 원소를 갖지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 가장 큰 수 찾기</title>
-    <link href="http://mjae404.github.io/2024/05/06/programmers-035/"/>
-    <id>http://mjae404.github.io/2024/05/06/programmers-035/</id>
-    <published>2024-05-06T09:12:00.000Z</published>
-    <updated>2024-05-06T09:15:39.511Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 배열 &lt;code&gt;array&lt;/code&gt;가 매개변수로 주어질 때, 가장 큰 수와 그 수의 인덱스를 담은 배열을 return 하도록 solution 함수를 완성해보세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;array&lt;/code&gt;의 길이 ≤ 100&lt;/li&gt;
-&lt;li&gt;0 ≤ &lt;code&gt;array&lt;/code&gt; 원소 ≤ 1,000&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;array&lt;/code&gt;에 중복된 숫자는 없습니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 제곱수 판별하기</title>
-    <link href="http://mjae404.github.io/2024/05/06/programmers-034/"/>
-    <id>http://mjae404.github.io/2024/05/06/programmers-034/</id>
-    <published>2024-05-06T09:10:14.000Z</published>
-    <updated>2024-05-06T09:11:48.880Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;어떤 자연수를 제곱했을 때 나오는 정수를 제곱수라고 합니다. 정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때, &lt;code&gt;n&lt;/code&gt;이 제곱수라면 1을 아니라면 2를 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 1,000,000&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
