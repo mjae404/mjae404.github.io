@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-08T10:03:56.755Z</updated>
+  <updated>2024-05-08T10:08:11.165Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 첫 번째로 나오는 음수</title>
+    <link href="http://mjae404.github.io/2024/05/08/programmers-057/"/>
+    <id>http://mjae404.github.io/2024/05/08/programmers-057/</id>
+    <published>2024-05-08T10:06:19.000Z</published>
+    <updated>2024-05-08T10:08:11.165Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;정수 리스트 &lt;code&gt;num_list&lt;/code&gt;가 주어질 때, 첫 번째로 나오는 음수의 인덱스를 return하도록 solution 함수를 완성해주세요. 음수가 없다면 -1을 return합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 100&lt;/li&gt;
+&lt;li&gt;-10 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 100&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; n 번째 원소부터</title>
@@ -537,34 +564,6 @@
       &lt;p&gt;정수 &lt;code&gt;n&lt;/code&gt;이 매개변수로 주어질 때 &lt;code&gt;n&lt;/code&gt;의 각 자리 숫자의 합을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;0 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 1,000,000&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; n의 배수 고르기</title>
-    <link href="http://mjae404.github.io/2024/05/06/programmers-037/"/>
-    <id>http://mjae404.github.io/2024/05/06/programmers-037/</id>
-    <published>2024-05-06T09:26:40.000Z</published>
-    <updated>2024-05-06T09:28:23.577Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;정수 n과 정수 배열 &lt;code&gt;numlist&lt;/code&gt;가 매개변수로 주어질 때, &lt;code&gt;numlist&lt;/code&gt;에서 &lt;code&gt;n&lt;/code&gt;의 배수가 아닌 수들을 제거한 배열을 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 10,000&lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;numlist&lt;/code&gt;의 크기 ≤ 100&lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;numlist&lt;/code&gt;의 원소 ≤ 100,000&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
