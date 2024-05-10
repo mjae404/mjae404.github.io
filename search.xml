@@ -16031,4 +16031,25 @@
         <tag>programmers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>&lt;프로그래머스&gt; 접두사인지 확인하기</title>
+    <url>/2024/05/10/programmers-061/</url>
+    <content><![CDATA[<p>어떤 문자열에 대해서 접두사는 특정 인덱스까지의 문자열을 의미합니다. 예를 들어, “banana”의 모든 접두사는 “b”, “ba”, “ban”, “bana”, “banan”, “banana”입니다.<br>문자열 <code>my_string</code>과 <code>is_prefix</code>가 주어질 때, <code>is_prefix</code>가 <code>my_string</code>의 접두사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.</p>
+<ul>
+<li>1 ≤ <code>my_string</code>의 길이 ≤ 100</li>
+<li>1 ≤ <code>is_prefix</code>의 길이 ≤ 100 </li>
+<li><code>my_string</code>과 <code>is_prefix</code>는 영소문자로만 이루어져 있습니다.</li>
+</ul>
+<a id="more"></a>
+
+<p><em><strong>풀이</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const solution &#x3D; (my_string, is_prefix) &#x3D;&gt; +(my_string.indexOf(is_prefix) &#x3D;&#x3D; 0);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>exercise</category>
+        <category>programmers</category>
+      </categories>
+      <tags>
+        <tag>programmers</tag>
+      </tags>
+  </entry>
 </search>

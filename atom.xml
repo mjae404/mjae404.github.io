@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-09T04:01:04.896Z</updated>
+  <updated>2024-05-10T08:02:23.262Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;프로그래머스&gt; 접두사인지 확인하기</title>
+    <link href="http://mjae404.github.io/2024/05/10/programmers-061/"/>
+    <id>http://mjae404.github.io/2024/05/10/programmers-061/</id>
+    <published>2024-05-10T07:59:58.000Z</published>
+    <updated>2024-05-10T08:02:23.262Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;어떤 문자열에 대해서 접두사는 특정 인덱스까지의 문자열을 의미합니다. 예를 들어, “banana”의 모든 접두사는 “b”, “ba”, “ban”, “bana”, “banan”, “banana”입니다.&lt;br&gt;문자열 &lt;code&gt;my_string&lt;/code&gt;과 &lt;code&gt;is_prefix&lt;/code&gt;가 주어질 때, &lt;code&gt;is_prefix&lt;/code&gt;가 &lt;code&gt;my_string&lt;/code&gt;의 접두사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;my_string&lt;/code&gt;의 길이 ≤ 100&lt;/li&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;is_prefix&lt;/code&gt;의 길이 ≤ 100 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;my_string&lt;/code&gt;과 &lt;code&gt;is_prefix&lt;/code&gt;는 영소문자로만 이루어져 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
+    
+    
+      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 배열 만들기 1</title>
@@ -529,33 +557,6 @@
 &lt;li&gt;1 ≤ &lt;code&gt;strArr&lt;/code&gt; ≤ 20&lt;/li&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;strArr&lt;/code&gt;의 원소의 길이 ≤ 20&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;strArr&lt;/code&gt;의 원소는 알파벳으로 이루어진 문자열 입니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 세균 증식</title>
-    <link href="http://mjae404.github.io/2024/05/06/programmers-041/"/>
-    <id>http://mjae404.github.io/2024/05/06/programmers-041/</id>
-    <published>2024-05-06T12:28:48.000Z</published>
-    <updated>2024-05-06T12:31:04.586Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;어떤 세균은 1시간에 두배만큼 증식한다고 합니다. 처음 세균의 마리수 &lt;code&gt;n&lt;/code&gt;과 경과한 시간 &lt;code&gt;t&lt;/code&gt;가 매개변수로 주어질 때 t시간 후 세균의 수를 return하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;n&lt;/code&gt; ≤ 10 &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;t&lt;/code&gt; ≤ 15&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
