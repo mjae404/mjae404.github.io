@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mjae404.github.io/"/>
-  <updated>2024-05-10T08:48:03.019Z</updated>
+  <updated>2024-05-11T12:01:38.630Z</updated>
   <id>http://mjae404.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UI 개발 기본 지식</title>
+    <link href="http://mjae404.github.io/2024/05/11/html-basic/"/>
+    <id>http://mjae404.github.io/2024/05/11/html-basic/</id>
+    <published>2024-05-11T11:33:00.000Z</published>
+    <updated>2024-05-11T12:01:38.630Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;UI / Front-end develop info.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>&lt;프로그래머스&gt; 문자열의 뒤의 n글자</title>
@@ -525,34 +548,6 @@
 &lt;li&gt;2 ≤ &lt;code&gt;num_list&lt;/code&gt;의 길이 ≤ 20&lt;/li&gt;
 &lt;li&gt;1 ≤ &lt;code&gt;num_list&lt;/code&gt;의 원소 ≤ 9&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;num_list&lt;/code&gt;의 원소를 모두 곱했을 때 2,147,483,647를 넘는 입력은 주어지지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
-    
-      <category term="programmers" scheme="http://mjae404.github.io/categories/exercise/programmers/"/>
-    
-    
-      <category term="programmers" scheme="http://mjae404.github.io/tags/programmers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;프로그래머스&gt; 원하는 문자열 찾기</title>
-    <link href="http://mjae404.github.io/2024/05/07/programmers-045/"/>
-    <id>http://mjae404.github.io/2024/05/07/programmers-045/</id>
-    <published>2024-05-07T01:13:52.000Z</published>
-    <updated>2024-05-07T01:16:22.066Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;알파벳으로 이루어진 문자열 &lt;code&gt;myString&lt;/code&gt;과 &lt;code&gt;pat&lt;/code&gt;이 주어집니다. &lt;code&gt;myString&lt;/code&gt;의 연속된 부분 문자열 중 pat이 존재하면 1을 그렇지 않으면 0을 return 하는 solution 함수를 완성해 주세요.  단, 알파벳 대문자와 소문자는 구분하지 않습니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;myString&lt;/code&gt;의 길이 ≤ 100,000 &lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;pat&lt;/code&gt;의 길이 ≤ 300 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;myString&lt;/code&gt;과 &lt;code&gt;pat&lt;/code&gt;은 모두 알파벳으로 이루어진 문자열입니다.&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
