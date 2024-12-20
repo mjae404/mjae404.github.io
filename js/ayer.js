@@ -204,7 +204,7 @@
     $sidebar.removeClass('on');
   });
 
-  if (window.matchMedia("(min-width: 992px)").matches) {
+  if (window.matchMedia("(min-width: 768px)").matches) {
     $content.addClass('on');
     $sidebar.addClass('on');
   }

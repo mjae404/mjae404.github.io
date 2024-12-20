@@ -80,10 +80,10 @@
 
 <h2 id="Block-전체를-감싸고-있는-블럭-요소"><a href="#Block-전체를-감싸고-있는-블럭-요소" class="headerlink" title="Block (전체를 감싸고 있는 블럭 요소)"></a>Block (전체를 감싸고 있는 블럭 요소)</h2><p>블럭(Block)은 문단 전체에 적용된 요소 또는 요소를 담고 있는 컨테이너를 말한다. 블럭 요소는 클래스의 어근을 형성하고 항상 맨 앞에 위치하도록 한다. 일단 블럭을 정의하고 블럭이 형성한 클래스의 어근을 맨 앞에 붙여 그 블럭이 포함하는 요소들의 클래스명을 지으면 된다.</p>
 <h2 id="Element"><a href="#Element" class="headerlink" title="Element"></a>Element</h2><p>요소(Element)는 블럭이 포함하고 있는 조각 하나이다. 블럭은 전체를 말하고, 요소들은 그 조각들을 일컫는다. <strong>각 요소는 두 개의 밑줄표시(underscore)로 연결하여 블럭 다음에 위치</strong> 시킨다. 두개의 밑줄 표시는 시각적으로 쉽고 빠르게 코드를 찾고 조작할 수 있도록 도와준다. 스타일시트와 HTML 역시 DRY(don’t repeat yourself)로 유지되어야 하기 때문에 클래스명은 간단하고 명확하며 정확하게 유지한다라는 것으로 너무 고민하지 않도록 한다.</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.block__element</span> &#123;<span class="attribute">property</span>:value;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.block__element</span> &#123;property:value;&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="modifiers"><a href="#modifiers" class="headerlink" title="modifiers"></a>modifiers</h2><p><code>modifier</code>은 블럭 또는 요소의 속성이다. 이 속성은 <strong>블럭 또는 요소의 외관이나 상태를 변화</strong> 시킨다. 클래스명을 지을 때의 목적은 해당 요소를 반복하여 재사용할 수 있게 하기 위함이다. 요소의 스타일이 같다면 사이트의 다른 영역이라고 할지라도 새로운 클래스를 정의할 필요가 없다. 특정 요소의 스타일을 수정할 필요가 있다면 <code>modifier</code>을 활용하면 된다. <strong>요소 또는 블럭 다음에 두개의 하이픈(<code>--</code>)을 추가하여 modifier을 표시</strong> 한다.</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.block--modifier &#123;…&#125;</span><br><span class="line">.blcok__element--modifier &#123;…&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.block--modifier</span> &#123;…&#125;</span><br><span class="line"><span class="selector-class">.blcok__element--modifier</span> &#123;…&#125;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>모든 이름은 간단명료해야 하며 절대적으로 필요하지 않는 이상 추가적인 클래스를 만들거나 똑같은 스타일을 반복해서는 안 된다.</p>
@@ -114,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/11/09/css-ben-methodology/" data-id="ckrvtdk89003aicw57jld72d7"
+      <a data-url="http://mjae404.github.io/2020/11/09/css-ben-methodology/" data-id="cm4wfofer0003jp0a3g9c5bc9"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BEM/" rel="tag">BEM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/methodology/" rel="tag">methodology</a></li></ul>

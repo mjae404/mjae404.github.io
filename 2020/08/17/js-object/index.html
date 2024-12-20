@@ -171,7 +171,7 @@
 
 
 <h3 id="메소드-축약-표현"><a href="#메소드-축약-표현" class="headerlink" title="메소드 축약 표현"></a>메소드 축약 표현</h3><p>ES6에서는 메소드를 정의할 때 function 키워드를 생략하여 축약 표현을 사용할 수 있다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;kitten&#x27;</span>,</span><br><span class="line">  sayHi() &#123;     <span class="comment">// sayHi: function() &#123;을 축약</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;mew mew &#x27;</span> + <span class="built_in">this</span>.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">animal.sayHi(); <span class="comment">// mew mew kitten</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;kitten&#x27;</span>,</span><br><span class="line">  <span class="function"><span class="title">sayHi</span>(<span class="params"></span>)</span> &#123;     <span class="comment">// sayHi: function() &#123;을 축약</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;mew mew &#x27;</span> + <span class="built_in">this</span>.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">animal.sayHi(); <span class="comment">// mew mew kitten</span></span><br></pre></td></tr></table></figure>
 
 
 <h2 id="프로퍼티-정의"><a href="#프로퍼티-정의" class="headerlink" title="프로퍼티 정의"></a>프로퍼티 정의</h2><ul>
@@ -317,7 +317,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2020/08/17/js-object/" data-id="ckrvtdk9a005zicw5b50g8s6b"
+      <a data-url="http://mjae404.github.io/2020/08/17/js-object/" data-id="cm4wfoffk009ujp0afis45pok"
         class="article-share-link">share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/object/" rel="tag">object</a></li></ul>
