@@ -130,7 +130,7 @@
 <h2 id="실행-컨텍스트-스택"><a href="#실행-컨텍스트-스택" class="headerlink" title="실행 컨텍스트 스택"></a>실행 컨텍스트 스택</h2><img src="https://mjae404.github.io/images/stack_of_execution_context.jpg" alt="실행 컨텍스트 스택">
 
 <p>자바스크립트는 먼저 전역 코드를 평가하여 전역 실행 컨텍스트를 생성한다. 그리고 함수가 호출되면 코드를 평가하여 함수 실행 컨텍스트를 생성하는데, 이때 생성된 실행 컨텍스트는 스택 자료 구조로 관리된다. 이를 <strong>실행 컨택스트 스택(Execution context stack)</strong> 이라고 한다.</p>
-<p> 실행 컨텍스트 스택은 __코드의 실행 순서를 관리__한다. 실행 가능한 코드가 평가되면 실행 컨텍스트가 생성되고 실행 컨텍스트 스택의 최상위에 쌓인다. <strong>실행 컨텍스트 스택의 최상위에 존재하는 실행 컨텍스트를 <u>실행 중인 실행 컨텍스트(running execution context)</u></strong> 라 부른다.</p>
+<p> 실행 컨텍스트 스택은 <strong>코드의 실행 순서를 관리</strong> 한다. 실행 가능한 코드가 평가되면 실행 컨텍스트가 생성되고 실행 컨텍스트 스택의 최상위에 쌓인다. <strong>실행 컨텍스트 스택의 최상위에 존재하는 실행 컨텍스트를 <u>실행 중인 실행 컨텍스트(running execution context)</u></strong> 라 부른다.</p>
 <h2 id="동기식-처리-모델과-비동기식-처리-모델"><a href="#동기식-처리-모델과-비동기식-처리-모델" class="headerlink" title="동기식 처리 모델과 비동기식 처리 모델"></a>동기식 처리 모델과 비동기식 처리 모델</h2><p>자바 스크립트 엔진은 단 하나의 실행 컨텍스트 스택을 갖는다. 동시에 두가지 이상의 태스크를 실행할 수 없으며, <strong>싱글스레드(single thread)로 동작한다</strong> 는 것을 의미한다.</p>
 <ul>
 <li><strong>동기식 처리 모델(Synchronous processing model)</strong>: 하나의 처리가 종료되어야 다음 처리를 실행할 수 있다. 직렬적으로 태스크를 수행하며, 어떤 작업이 수행중이면 다음 작업은 대기하게 된다.</li>
@@ -258,7 +258,7 @@
     <ul class="list-inline">
       <li>
         &copy;
-        2020-2024
+        2020-2025
         404 Not Found
       </li>
       <li>
