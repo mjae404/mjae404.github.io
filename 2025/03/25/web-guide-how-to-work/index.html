@@ -110,7 +110,7 @@
 <li>첫 단계는 HTML을 처리하여 문서의 내용을 설명하는 DOM 트리를 만드는 것이다.</li>
 <li>토큰화와 트리 생성을 포함하며 HTML 토큰은 시작 및 종료 태그 그리고 속성 이름 및 값을 포함한다. 구문 분석기는 토큰화된 입력을 분석하여 DOM 트리를 만든다.</li>
 <li>구문 분석기가 이미지와 같은 논 블로킹 자원을 발견하면, 브라우저는 해당 자원을 요청하고 분석을 계속한다. 구문 분석은 CSS 파일을 만났을 때도 지속될 수 있다.</li>
-<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/async_function"><code>async</code></a>나 <code>defer</code> 같은 설정이 되어있지 않은 <code>&lt;script&gt;</code> 태그는 렌더링을 막고, HTML의 분석을 중지시킨다.</li>
+<li><code>async</code>나 <code>defer</code>같은 설정이 되어있지 않은 <code>&lt;script&gt;</code> 태그는 렌더링을 막고, HTML의 분석을 중지시킨다.</li>
 </ul>
 </li>
 <li><strong>CSSOM 구축</strong><ul>
@@ -128,11 +128,11 @@
 <li>CSS가 분석되고 CSSOM이 생성되는 동안, 프리 스캐너 덕에 Javascript 파일 같은 다른 자원도 다운로드된다.</li>
 <li>Javascript는 해석 후 컴파일되고, 구문 분석 및 실행된다.</li>
 <li>스크립트는 추상 구문 트리로 구문 분석된다.</li>
-<li>일부 브라우저 엔진은 추상 구문 트리를 인터프리터에게 넘기고, 그 결과 메인 쓰레드에서 실행되는 바이트코드가 생성된다.</li>
+<li>일부 브라우저 엔진은 추상 구문 트리를 인터프리터에게 넘기고, 그 결과 메인 쓰레드에서 실행되는 바이트코드가 생성된다.</li>
 </ul>
 </li>
 <li><strong>접근성 트리 구축</strong><ul>
-<li>브라우저는 접근성 트리를 만든다.</li>
+<li>브라우저는 접근성 트리를 만든다.</li>
 <li>보조 장치는 이 트리를 이용해 내용을 분석하고 해석한다.</li>
 <li>접근성 객체 모델(AOM)은 DOM의 의미 버전이다. AOM이 만들어지기 전까지, 스크린 리더기는 컨텐츠에 접근할 수 없다.</li>
 <li>브라우저는 DOM이 업데이트 될 때 접근성 트리도 업데이트한다. 접근성 트리는 보조 기술 자체적으로 수정될 수는 없다.</li>
