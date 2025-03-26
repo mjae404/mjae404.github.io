@@ -80,23 +80,20 @@
 
 <h2 id="탐색-Navigation"><a href="#탐색-Navigation" class="headerlink" title="탐색 (Navigation)"></a>탐색 (Navigation)</h2><ul>
 <li>웹페이지를 로딩하는 첫 단계</li>
-<li><strong>DNS 조회</strong><ul>
+</ul>
+<h3 id="DNS-조회"><a href="#DNS-조회" class="headerlink" title="DNS 조회"></a>DNS 조회</h3><ul>
 <li>브라우저는 DNS 조회를 요청한다. 이는 최종적으로 이름 서버에 의해서 처리되고, IP 주소로 응답한다. 최초의 요청 이후에, IP는 일정 기간 동안 캐시된다.</li>
 <li>DNS 조회는 보통 호스트 이름 하나당 한 번만 수행된다. 하지만 DNS 조회는 요청된 페이지에서 참조하는 다른 호스트 이름에 대해서는 각각 수행해야 한다. 만약 글꼴, 이미지, 스크립트, 광고 그리고 다른 자원들이 서로 다른 호스트 이름을 가지고 있다면, DNS 조회는 각각에 대해서 모두 수행되어야 한다.</li>
 </ul>
-</li>
-<li><strong>TCP 핸드셰이크</strong><ul>
+<h3 id="TCP-핸드셰이크"><a href="#TCP-핸드셰이크" class="headerlink" title="TCP 핸드셰이크"></a>TCP 핸드셰이크</h3><ul>
 <li>서버와 TCP 3방향 핸드셰이크를 통해 연결을 설정한다.</li>
 <li>TCP (전송 제어 프로토콜)은 두 개의 호스트를 연결하고 데이터 스트림을 교환하게 해주는 중요한 네트워크 프로토콜이다. TCP는 데이터와 패킷이 보내진 순서대로 전달하는 것을 보장해준다.</li>
 <li>TCP가 전송하는 세 가지 메시지는 각각 <strong>SYN(SYNchronize)</strong>, <strong>SYN-ACK(SYNchronize-ACKnowledgement)</strong>, **ACK(ACKnowledge)**라는 이름을 가진다. 세 가지 메시지 메커니즘은 서로 정보를 주고 받기를 윈하는 두 컴퓨터가 HTTP 브라우저 요청과 같은 데이터를 전송하기 전에 연결 매개변수를 협상할 수 있도록 설계되었다.</li>
 <li>호스트(일반적으로 브라우저)는 TCP SYNchronize 패킷을 서버로 보낸다. 서버는 SYN을 수신하고 SYNchronize-ACKnowledgement를 다시 보낸다. 호스트는 서버의 SYN-ACK을 수신하고 ACKnowledge를 다시 보낸다. 서버는 ACK를 수신하고 TCP 소켓 연결이 설정된다.</li>
 </ul>
-</li>
-<li><strong>TLS 협상</strong><ul>
+<h3 id="TLS-협상"><a href="#TLS-협상" class="headerlink" title="TLS 협상"></a>TLS 협상</h3><ul>
 <li>HTTPS를 이용한 보안성 있는 연결을 위해 또 다른 “핸드셰이크”가 필요하다. 이 핸드셰이크는 통신 암호화에 쓰일 암호를 결정하고, 서버를 확인하고, 실제 데이터 전송 전에 안전한 연결이 이루어지도록 한다.</li>
 <li>이를 위해서 자원에 대한 실제 요청 전에 클라이언트에서 서버로 3번 더 왕복한다.</li>
-</ul>
-</li>
 </ul>
 <h2 id="응답-Response"><a href="#응답-Response" class="headerlink" title="응답 (Response)"></a>응답 (Response)</h2><ul>
 <li>웹서버로 한번 연결이 성립되면, 브라우저는 초기 <code>HTTP GET resquest</code> 를 보낸다.</li>
@@ -106,14 +103,14 @@
 <li>브라우저가 첫 번째 데이터의 청크를 받으면, 수신된 정보를 구문 분석하기 시작한다.</li>
 <li>브라우저가 네트워크를 통해 받은 데이터를 DOM이나 CSSOM으로 바꾸는 단계이다. 이는 렌더러가 화면에 페이지를 그리는데 사용된다.</li>
 <li>브라우저는 마크업을 내부적으로 DOM으로 표현한다.</li>
-<li><strong>DOM tree 구축</strong><ul>
+</ul>
+<h3 id="DOM-tree-구축"><a href="#DOM-tree-구축" class="headerlink" title="DOM tree 구축"></a>DOM tree 구축</h3><ul>
 <li>첫 단계는 HTML을 처리하여 문서의 내용을 설명하는 DOM 트리를 만드는 것이다.</li>
 <li>토큰화와 트리 생성을 포함하며 HTML 토큰은 시작 및 종료 태그 그리고 속성 이름 및 값을 포함한다. 구문 분석기는 토큰화된 입력을 분석하여 DOM 트리를 만든다.</li>
 <li>구문 분석기가 이미지와 같은 논 블로킹 자원을 발견하면, 브라우저는 해당 자원을 요청하고 분석을 계속한다. 구문 분석은 CSS 파일을 만났을 때도 지속될 수 있다.</li>
 <li><code>async</code>나 <code>defer</code>같은 설정이 되어있지 않은 <code>&lt;script&gt;</code> 태그는 렌더링을 막고, HTML의 분석을 중지시킨다.</li>
 </ul>
-</li>
-<li><strong>CSSOM 구축</strong><ul>
+<h3 id="CSSOM-구축"><a href="#CSSOM-구축" class="headerlink" title="CSSOM 구축"></a>CSSOM 구축</h3><ul>
 <li>두 번째 단계는 CSS를 처리하고 CSSOM 트리를 만드는 것이다.</li>
 <li>DOM과 CSSOM은 둘 다 트리구조이며, 둘은 각각의 독립적인 자료구조이다.</li>
 <li>브라우저는 CSS 규칙을 이해할 수 있고 작업을 진행할 수 있도록 스타일 맵으로 변환한다. 브라우저는 CSS에 있는 각각의 규칙을 읽고, 트리 노드를 만든다.</li>
@@ -123,39 +120,34 @@
 <li>속성 값을 캐스케이드한다.</li>
 <li>CSSOM을 만드는데 드는 시간은 일반적으로 한 번의 DNS 조회를 하는 시간보다 짧기 때문에 웹 성능 최적화의 관점에서 CSSOM는 성능 향상에 큰 기여를 할 수 있는 영역은 아니다.</li>
 </ul>
-</li>
-<li><strong>Javascript 컴파일</strong><ul>
+<h3 id="Javascript-컴파일"><a href="#Javascript-컴파일" class="headerlink" title="Javascript 컴파일"></a>Javascript 컴파일</h3><ul>
 <li>CSS가 분석되고 CSSOM이 생성되는 동안, 프리 스캐너 덕에 Javascript 파일 같은 다른 자원도 다운로드된다.</li>
 <li>Javascript는 해석 후 컴파일되고, 구문 분석 및 실행된다.</li>
 <li>스크립트는 추상 구문 트리로 구문 분석된다.</li>
 <li>일부 브라우저 엔진은 추상 구문 트리를 인터프리터에게 넘기고, 그 결과 메인 쓰레드에서 실행되는 바이트코드가 생성된다.</li>
 </ul>
-</li>
-<li><strong>접근성 트리 구축</strong><ul>
+<h3 id="접근성-트리-구축"><a href="#접근성-트리-구축" class="headerlink" title="접근성 트리 구축"></a>접근성 트리 구축</h3><ul>
 <li>브라우저는 접근성 트리를 만든다.</li>
 <li>보조 장치는 이 트리를 이용해 내용을 분석하고 해석한다.</li>
 <li>접근성 객체 모델(AOM)은 DOM의 의미 버전이다. AOM이 만들어지기 전까지, 스크린 리더기는 컨텐츠에 접근할 수 없다.</li>
 <li>브라우저는 DOM이 업데이트 될 때 접근성 트리도 업데이트한다. 접근성 트리는 보조 기술 자체적으로 수정될 수는 없다.</li>
 </ul>
-</li>
-</ul>
 <h2 id="렌더-Render"><a href="#렌더-Render" class="headerlink" title="렌더 (Render)"></a>렌더 (Render)</h2><ul>
 <li>렌더 트리는 보이는 요소의 레이아웃을 계산한다. 그러고 나서 요소가 화면에 페인트된다. 어떤 경우에는 컨텐츠가 자신만의 레이어를 가지도록 조작되고, 나중에 합성된다. 화면의 일부분을 CPU 대신 GPU가 그리면서 메인 쓰레드의 부담이 줄고 성능이 향상된다.</li>
-<li><strong>스타일 (Style)</strong><ul>
+</ul>
+<h3 id="스타일-Style"><a href="#스타일-Style" class="headerlink" title="스타일 (Style)"></a>스타일 (Style)</h3><ul>
 <li>DOM과 CSSOM을 합쳐 렌더 트리를 만드는 것이다.</li>
 <li>계산된 스타일 트리(다른 말로 렌더 트리)는 DOM 트리의 루트부터 시작하여 눈에 보이는 노드를 순회하며 만들어진다.</li>
 <li>보여지는 각각의 노드에는 CSSOM 규칙이 적용된다.</li>
 <li>렌더링 트리는 콘텐츠와 계산된 스타일을 가진 모든 가시 노드를 보유하고 있으며, 모든 관련 스타일을 DOM 트리의 모든 가시 노드와 일치시키고 CSS 캐스케이드를 기반으로 각 노드에 대해 계산된 스타일이 무엇인지 결정한다.</li>
 </ul>
-</li>
-<li><strong>레이아웃 (Layout)</strong><ul>
+<h3 id="레이아웃-Layout"><a href="#레이아웃-Layout" class="headerlink" title="레이아웃 (Layout)"></a>레이아웃 (Layout)</h3><ul>
 <li>렌더 트리를 기반으로 각 노드의 도형 값을 계산하기 위해 레이아웃을 실행한다. 이후 페이지에서 각 객체의 크기와 위치를 계산한다.</li>
 <li>레이아웃은 렌더링 트리의 모든 노드의 크기와 위치를 결정하고 페이지의 각 객체 크기와 위치를 결정하는 과정이며 각 노드의 크기와 위치가 처음 결정되는 시점이다.</li>
 <li>리플로우는 페이지의 일부 또는 전체 문서의 크기와 위치를 결정하는 모든 후속 작업이다. 레이아웃 이후의 재계산한다.</li>
 <li>렌더 트리가 구축되면 레이아웃이 시작된다. 렌더 트리는 계산된 스타일과 함께 표시되는 노드(보이지 않더라도)를 식별하지만 각 노드의 크기나 위치는 식별하지 못한다. 각 객체의 정확한 크기와 위치를 확인하기 위해 브라우저는 렌더 트리의 루트에서 시작하여 이를 탐색한다.</li>
 </ul>
-</li>
-<li><strong>페인트 (Paint)</strong><ul>
+<h3 id="페인트-Paint"><a href="#페인트-Paint" class="headerlink" title="페인트 (Paint)"></a>페인트 (Paint)</h3><ul>
 <li>페인팅 또는 래스터화 단계에서 브라우저는 레이아웃 단계에서 계산된 각 상자를 화면의 실제 픽셀로 변환한다.</li>
 <li>페인팅에는 텍스트, 색상, 테두리, 그림자, 버튼 및 이미지와 같은 대체 요소 등 요소의 모든 시각적 부분을 화면에 그리는 작업이 포함되며, 브라우저는 이 작업을 매우 빠르게 수행해야 한다.</li>
 <li>초기 페인팅보다 더 빨리 다시 페인팅할 수 있도록 화면에 그리는 작업은 일반적으로 여러 레이어로 나뉜다. 이러한 경우 합성이 필요하다.</li>
@@ -163,12 +155,9 @@
 <li>레이어를 인스턴스화하는 특정 속성과 요소가 있다. 이는 <code>&lt;video&gt;</code>, <code>&lt;canvas&gt;</code> 및 <code>opacity</code>, <code>3D transform</code>, <code>will-change</code> 등의 CSS 속성을 가진 모든 요소를 포함한다. 이 노드는 이러한 이유(레이어를 인스턴스화하는 특정 속성과 요소)로 별도의 레이어가 필요한 경우를 제외하고는 하위 노드와 함께 자체 레이어에 그려진다.</li>
 <li>레이어는 성능을 향상시키지만 메모리 관리 측면에서는 비용이 많이 들기 때문에 웹 성능 최적화 전략의 일부로 과도하게 사용해서는 안 된다.</li>
 </ul>
-</li>
-<li><strong>합성 (Composition)</strong><ul>
+<h3 id="합성-Composition"><a href="#합성-Composition" class="headerlink" title="합성 (Composition)"></a>합성 (Composition)</h3><ul>
 <li>문서의 섹션이 서로 겹쳐서 다른 레이어로 그려질 때, 올바른 순서로 화면에 그려지고 내용이 올바르게 렌더링되도록 하기 위해 합성이 필요하다.</li>
 <li>페이지가 자산을 계속 로드할 때 리플로우가 발생할 수 있다. 리플로우는 다시 페인팅하고 다시 합성한다.</li>
-</ul>
-</li>
 </ul>
 <h2 id="상호작용-Interactivity"><a href="#상호작용-Interactivity" class="headerlink" title="상호작용 (Interactivity)"></a>상호작용 (Interactivity)</h2><ul>
 <li>지연된 Javascript를 다운로드하거나 온로드 이벤트가 발생하여 실행되는 경우, 메인 스레드가 사용중일 수 있다. 이 경우 스크롤, 터치 및 기타 상호 작용이 불가능하다.</li>
