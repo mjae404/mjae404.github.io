@@ -195,7 +195,7 @@
 
 </article>
     
-    <article id="post-programmers-064" class="article article-type-post" itemscope
+    <article id="post-django-app-structure" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -203,8 +203,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2024/05/10/programmers-064/"
-    >&lt;프로그래머스&gt; 문자열의 뒤의 n글자</a
+  <a class="article-title" href="/2023/08/19/django-app-structure/"
+    >장고 앱(App) 구조</a
   >
 </h2>
   
@@ -214,12 +214,12 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/10/programmers-064/" class="article-date">
-  <time datetime="2024-05-10T08:46:41.000Z" itemprop="datePublished">2024-05-10</time>
+      <a href="/2023/08/19/django-app-structure/" class="article-date">
+  <time datetime="2023-08-19T09:17:06.000Z" itemprop="datePublished">2023-08-19</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
+    <a class="article-category-link" href="/categories/Python/">Python</a> / <a class="article-category-link" href="/categories/Python/django/">django</a>
   </div>
 
       
@@ -235,24 +235,19 @@
       
 
       
-      <p>문자열 <code>my_string</code>과 정수 <code>n</code>이 매개변수로 주어질 때, <code>my_string</code>의 뒤의 <code>n</code>글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
-<ul>
-<li><code>my_string</code>은 숫자와 알파벳으로 이루어져 있습니다. </li>
-<li>1 ≤ <code>my_string</code>의 길이 ≤ 1,000 </li>
-<li>1 ≤ n ≤ <code>my_string</code>의 길이</li>
-</ul>
+      <h2 id="Project와-App의-차이"><a href="#Project와-App의-차이" class="headerlink" title="Project와 App의 차이"></a>Project와 App의 차이</h2><p>Django에서 웹 서비스 각각의 기능은 앱 단위로 구현한다. 실제로 하나의 프로젝트는 여러 개의 앱과 약간의 설정 파일들로 구성되어 있고 하나의 앱은 여러 개의 프로젝트에서 사용할 수 있다.</p>
       
-      <a class="article-more-link" href="/2024/05/10/programmers-064/">MORE</a>
+      <a class="article-more-link" href="/2023/08/19/django-app-structure/">MORE</a>
       
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/10/programmers-064/" data-id="cm4wfofg800j9jp0a1vhd3rai"
+      <a data-url="http://mjae404.github.io/2023/08/19/django-app-structure/" data-id="cm4wfoff1002pjp0a3tgt7g60"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/" rel="tag">django</a></li></ul>
 
     </footer>
 
@@ -266,7 +261,7 @@
 
 </article>
     
-    <article id="post-programmers-063" class="article article-type-post" itemscope
+    <article id="post-django-overview" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -274,8 +269,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2024/05/10/programmers-063/"
-    >&lt;프로그래머스&gt; 접미사인지 확인하기</a
+  <a class="article-title" href="/2023/08/03/django-overview/"
+    >장고 개요</a
   >
 </h2>
   
@@ -285,12 +280,12 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/10/programmers-063/" class="article-date">
-  <time datetime="2024-05-10T08:42:24.000Z" itemprop="datePublished">2024-05-10</time>
+      <a href="/2023/08/03/django-overview/" class="article-date">
+  <time datetime="2023-08-03T12:33:53.000Z" itemprop="datePublished">2023-08-03</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
+    <a class="article-category-link" href="/categories/Python/">Python</a> / <a class="article-category-link" href="/categories/Python/django/">django</a>
   </div>
 
       
@@ -306,24 +301,22 @@
       
 
       
-      <p>어떤 문자열에 대해서 접미사는 특정 인덱스부터 시작하는 문자열을 의미합니다. 예를 들어, “banana”의 모든 접미사는 “banana”, “anana”, “nana”, “ana”, “na”, “a”입니다.<br>문자열 <code>my_string</code>과 <code>is_suffix</code>가 주어질 때, <code>is_suffix</code>가 <code>my_string</code>의 접미사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.</p>
-<ul>
-<li>1 ≤ <code>my_string</code>의 길이 ≤ 100</li>
-<li>1 ≤ <code>is_suffix</code>의 길이 ≤ 100 </li>
-<li><code>my_string</code>과 <code>is_suffix</code>는 영소문자로만 이루어져 있습니다.</li>
-</ul>
+      <h2 id="diango-개발환경-구성하기"><a href="#diango-개발환경-구성하기" class="headerlink" title="diango 개발환경 구성하기"></a>diango 개발환경 구성하기</h2><ol>
+<li><p><code>Homebrew</code>를 설치후 버전을 확인한다.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew --version</span><br></pre></td></tr></table></figure>
       
-      <a class="article-more-link" href="/2024/05/10/programmers-063/">MORE</a>
+      <a class="article-more-link" href="/2023/08/03/django-overview/">MORE</a>
       
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/10/programmers-063/" data-id="cm4wfofg800j6jp0a6vv483x2"
+      <a data-url="http://mjae404.github.io/2023/08/03/django-overview/" data-id="cm4wfoff1002sjp0a4df61w4b"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/" rel="tag">django</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overview/" rel="tag">overview</a></li></ul>
 
     </footer>
 
@@ -337,7 +330,7 @@
 
 </article>
     
-    <article id="post-programmers-062" class="article article-type-post" itemscope
+    <article id="post-vue-overview-1" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -345,8 +338,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2024/05/10/programmers-062/"
-    >&lt;프로그래머스&gt; 문자열의 앞의 n글자</a
+  <a class="article-title" href="/2022/10/10/vue-overview-1/"
+    >뷰 개요</a
   >
 </h2>
   
@@ -356,77 +349,12 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/10/programmers-062/" class="article-date">
-  <time datetime="2024-05-10T08:40:38.000Z" itemprop="datePublished">2024-05-10</time>
-</a>
-      
-      
-    </div>
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <p>문자열 <code>my_string</code>과 정수 <code>n</code>이 매개변수로 주어질 때, <code>my_string</code>의 앞의 <code>n</code>글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
-<ul>
-<li><code>my_string</code>은 숫자와 알파벳으로 이루어져 있습니다. </li>
-<li>1 ≤ <code>my_string</code>의 길이 ≤ 1,000 </li>
-<li>1 ≤ <code>n</code> ≤ <code>my_string</code>의 길이</li>
-</ul>
-      
-      <a class="article-more-link" href="/2024/05/10/programmers-062/">MORE</a>
-      
-      
-      <!-- reward -->
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/10/programmers-062/" data-id="cm4wfofg800j1jp0ac6mf9mrx"
-        class="article-share-link">share</a>
-      
-    </footer>
-
-  </div>
-
-  
-
-  
-
-  
-
-</article>
-    
-    <article id="post-programmers-061" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2024/05/10/programmers-061/"
-    >&lt;프로그래머스&gt; 접두사인지 확인하기</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2024/05/10/programmers-061/" class="article-date">
-  <time datetime="2024-05-10T07:59:58.000Z" itemprop="datePublished">2024-05-10</time>
+      <a href="/2022/10/10/vue-overview-1/" class="article-date">
+  <time datetime="2022-10-10T07:13:38.000Z" itemprop="datePublished">2022-10-10</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a> / <a class="article-category-link" href="/categories/JavaScript/Vue/">Vue</a>
   </div>
 
       
@@ -442,24 +370,29 @@
       
 
       
-      <p>어떤 문자열에 대해서 접두사는 특정 인덱스까지의 문자열을 의미합니다. 예를 들어, “banana”의 모든 접두사는 “b”, “ba”, “ban”, “bana”, “banan”, “banana”입니다.<br>문자열 <code>my_string</code>과 <code>is_prefix</code>가 주어질 때, <code>is_prefix</code>가 <code>my_string</code>의 접두사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.</p>
-<ul>
-<li>1 ≤ <code>my_string</code>의 길이 ≤ 100</li>
-<li>1 ≤ <code>is_prefix</code>의 길이 ≤ 100 </li>
-<li><code>my_string</code>과 <code>is_prefix</code>는 영소문자로만 이루어져 있습니다.</li>
+      <ul>
+<li><code>vue create &lt;프로젝트명&gt;</code>으로 세팅 가능하다.<ul>
+<li><code>sudo npm install -g @vue/cli</code> 설치 필요</li>
+</ul>
+</li>
+<li><code>vue webpack-simple &lt;프로젝트명&gt;</code>으로 세팅 가능하다.<ul>
+<li><code>sudo npm install -g @vue/cli-init</code> 설치 필요</li>
+</ul>
+</li>
+<li><code>npm run dev</code>로 로컬 서버 확인 가능.</li>
 </ul>
       
-      <a class="article-more-link" href="/2024/05/10/programmers-061/">MORE</a>
+      <a class="article-more-link" href="/2022/10/10/vue-overview-1/">MORE</a>
       
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/10/programmers-061/" data-id="cm4wfofg800iyjp0a6l5n12si"
+      <a data-url="http://mjae404.github.io/2022/10/10/vue-overview-1/" data-id="cm4wfofgk00okjp0a54ewaccm"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li></ul>
 
     </footer>
 
@@ -473,7 +406,7 @@
 
 </article>
     
-    <article id="post-programmers-060" class="article article-type-post" itemscope
+    <article id="post-vue-webgame-2" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -481,8 +414,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2024/05/09/programmers-060/"
-    >&lt;프로그래머스&gt; 배열 만들기 1</a
+  <a class="article-title" href="/2022/09/17/vue-webgame-2/"
+    >웹게임으로 배우는 vue 2</a
   >
 </h2>
   
@@ -492,12 +425,12 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/09/programmers-060/" class="article-date">
-  <time datetime="2024-05-09T03:59:04.000Z" itemprop="datePublished">2024-05-09</time>
+      <a href="/2022/09/17/vue-webgame-2/" class="article-date">
+  <time datetime="2022-09-17T07:50:45.000Z" itemprop="datePublished">2022-09-17</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a> / <a class="article-category-link" href="/categories/JavaScript/Vue/">Vue</a>
   </div>
 
       
@@ -513,23 +446,19 @@
       
 
       
-      <p>정수 <code>n</code>과 <code>k</code>가 주어졌을 때, 1 이상 <code>n</code> 이하의 정수 중에서 <code>k</code>의 배수를 오름차순으로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.</p>
-<ul>
-<li>1 ≤ <code>n</code> ≤ 1,000,000 </li>
-<li>1 ≤ <code>k</code> ≤ min(1,000, n)</li>
-</ul>
+      <p>웹게임으로 배우는 vue 숫자야구</p>
       
-      <a class="article-more-link" href="/2024/05/09/programmers-060/">MORE</a>
+      <a class="article-more-link" href="/2022/09/17/vue-webgame-2/">MORE</a>
       
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/09/programmers-060/" data-id="cm4wfofg700itjp0a7nw0esz8"
+      <a data-url="http://mjae404.github.io/2022/09/17/vue-webgame-2/" data-id="cm4wfofgm00pbjp0a711mee6t"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/number-baseball/" rel="tag">number baseball</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webgame/" rel="tag">webgame</a></li></ul>
 
     </footer>
 
@@ -543,7 +472,7 @@
 
 </article>
     
-    <article id="post-programmers-059" class="article article-type-post" itemscope
+    <article id="post-vue-webgame-1" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -551,8 +480,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2024/05/09/programmers-059/"
-    >&lt;프로그래머스&gt; 카운트 다운</a
+  <a class="article-title" href="/2022/09/17/vue-webgame-1/"
+    >웹게임으로 배우는 vue 1</a
   >
 </h2>
   
@@ -562,12 +491,12 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/09/programmers-059/" class="article-date">
-  <time datetime="2024-05-09T03:56:55.000Z" itemprop="datePublished">2024-05-09</time>
+      <a href="/2022/09/17/vue-webgame-1/" class="article-date">
+  <time datetime="2022-09-17T06:19:45.000Z" itemprop="datePublished">2022-09-17</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a> / <a class="article-category-link" href="/categories/JavaScript/Vue/">Vue</a>
   </div>
 
       
@@ -583,22 +512,19 @@
       
 
       
-      <p>정수 <code>start_num</code>와 <code>end_num</code>가 주어질 때, <code>start_num</code>에서 <code>end_num</code>까지 1씩 감소하는 수들을 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.</p>
-<ul>
-<li>0 ≤ <code>end_num</code> ≤ <code>start_num</code> ≤ 50</li>
-</ul>
+      <p>웹게임으로 배우는 vue 구구단</p>
       
-      <a class="article-more-link" href="/2024/05/09/programmers-059/">MORE</a>
+      <a class="article-more-link" href="/2022/09/17/vue-webgame-1/">MORE</a>
       
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/09/programmers-059/" data-id="cm4wfofg500iqjp0af2go1pd0"
+      <a data-url="http://mjae404.github.io/2022/09/17/vue-webgame-1/" data-id="cm4wfofgm00p3jp0a9dv36qm3"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/multiplication-table/" rel="tag">multiplication table</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webgame/" rel="tag">webgame</a></li></ul>
 
     </footer>
 
@@ -612,7 +538,7 @@
 
 </article>
     
-    <article id="post-programmers-058" class="article article-type-post" itemscope
+    <article id="post-react-nextjs" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -620,8 +546,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2024/05/09/programmers-058/"
-    >&lt;프로그래머스&gt; 편지</a
+  <a class="article-title" href="/2022/08/21/react-nextjs/"
+    >리액트 next.js 세팅</a
   >
 </h2>
   
@@ -631,12 +557,12 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/09/programmers-058/" class="article-date">
-  <time datetime="2024-05-09T03:50:31.000Z" itemprop="datePublished">2024-05-09</time>
+      <a href="/2022/08/21/react-nextjs/" class="article-date">
+  <time datetime="2022-08-21T07:26:19.000Z" itemprop="datePublished">2022-08-21</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a> / <a class="article-category-link" href="/categories/JavaScript/React/">React</a>
   </div>
 
       
@@ -652,25 +578,32 @@
       
 
       
-      <p>머쓱이는 할머니께 생신 축하 편지를 쓰려고 합니다. 할머니가 보시기 편하도록 글자 한 자 한 자를 가로 2cm 크기로 적으려고 하며, 편지를 가로로만 적을 때, 축하 문구 <code>message</code>를 적기 위해 필요한 편지지의 최소 가로길이를 return 하도록 solution 함수를 완성해주세요.</p>
-<ul>
-<li>공백도 하나의 문자로 취급합니다. </li>
-<li>1 ≤ <code>message</code>의 길이 ≤ 50</li>
-<li>편지지의 여백은 생각하지 않습니다. </li>
-<li><code>message</code>는 영문 알파벳 대소문자, ‘!’, ‘~’ 또는 공백으로만 이루어져 있습니다.</li>
+      <h1 id="Next-js를-사용하는-이유"><a href="#Next-js를-사용하는-이유" class="headerlink" title="Next.js를 사용하는 이유"></a>Next.js를 사용하는 이유</h1><ul>
+<li>프리 렌더링</li>
+<li>Vercel로 서버 호스팅</li>
+<li>파일 시스템 기반 서버 호스팅</li>
 </ul>
+<p><code>npx create next app .</code>으로 설치한다.</p>
+<ol>
+<li><code>node.js</code>를 설치한다.</li>
+<li><code>npm i next</code> 명령어를 진행한다.</li>
+<li><code>npm i react react-dom</code> 을 설치한다.</li>
+</ol>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://thebook.io/">https://thebook.io/</a> 에서 참고할 수 있다.</p>
+</blockquote>
       
-      <a class="article-more-link" href="/2024/05/09/programmers-058/">MORE</a>
+      <a class="article-more-link" href="/2022/08/21/react-nextjs/">MORE</a>
       
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/09/programmers-058/" data-id="cm4wfofg500iljp0a679f1s3a"
+      <a data-url="http://mjae404.github.io/2022/08/21/react-nextjs/" data-id="cm4wfofgc00kzjp0a1mio8rzh"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nextjs/" rel="tag">nextjs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/" rel="tag">react</a></li></ul>
 
     </footer>
 
@@ -684,7 +617,7 @@
 
 </article>
     
-    <article id="post-programmers-057" class="article article-type-post" itemscope
+    <article id="post-react-overview" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -692,8 +625,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2024/05/08/programmers-057/"
-    >&lt;프로그래머스&gt; 첫 번째로 나오는 음수</a
+  <a class="article-title" href="/2022/05/24/react-overview/"
+    >리액트 개요</a
   >
 </h2>
   
@@ -703,12 +636,12 @@
 
     
     <div class="article-meta">
-      <a href="/2024/05/08/programmers-057/" class="article-date">
-  <time datetime="2024-05-08T10:06:19.000Z" itemprop="datePublished">2024-05-08</time>
+      <a href="/2022/05/24/react-overview/" class="article-date">
+  <time datetime="2022-05-24T02:14:12.000Z" itemprop="datePublished">2022-05-24</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/programmers/">programmers</a>
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a> / <a class="article-category-link" href="/categories/JavaScript/React/">React</a>
   </div>
 
       
@@ -724,23 +657,97 @@
       
 
       
-      <p>정수 리스트 <code>num_list</code>가 주어질 때, 첫 번째로 나오는 음수의 인덱스를 return하도록 solution 함수를 완성해주세요. 음수가 없다면 -1을 return합니다.</p>
-<ul>
-<li>5 ≤ <code>num_list</code>의 길이 ≤ 100</li>
-<li>-10 ≤ <code>num_list</code>의 원소 ≤ 100</li>
+      <ul>
+<li><code>create-react-app</code>으로 리액트 프로젝트 생성.<br><code>npm init react-app &lt;폴더 이름&gt;</code> 혹은 해당 폴더 안에 들어간 후  터미널에서 <code>npm init react-app .</code></li>
+<li>개발모드 실행: <code>npm run start</code></li>
+<li>개발모드 종료: <code>Ctrl + C</code></li>
+<li>리액트 개발자 도구: React Developer Tools (크롬 확장 프로그램)</li>
 </ul>
       
-      <a class="article-more-link" href="/2024/05/08/programmers-057/">MORE</a>
+      <a class="article-more-link" href="/2022/05/24/react-overview/">MORE</a>
       
       
       <!-- reward -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mjae404.github.io/2024/05/08/programmers-057/" data-id="cm4wfofg500iijp0a5h42dy26"
+      <a data-url="http://mjae404.github.io/2022/05/24/react-overview/" data-id="cm4wfofgc00l3jp0a2c918s26"
         class="article-share-link">share</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programmers/" rel="tag">programmers</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overview/" rel="tag">overview</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/" rel="tag">react</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+
+  
+
+</article>
+    
+    <article id="post-java-oop" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/03/17/java-oop/"
+    >JAVA 객체 지향 프로그래밍</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/03/17/java-oop/" class="article-date">
+  <time datetime="2022-03-17T05:42:54.000Z" itemprop="datePublished">2022-03-17</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Java/">Java</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><strong>객체 지향 프로그래밍</strong></p>
+<ul>
+<li>컴퓨터 프로그래밍의 패러다임 중 하나이다. 객체 지향 프로그래밍은 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 “객체”들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. <sup>1</sup></li>
+<li>‘객체’는 ‘속성’들과 ‘동작’들의 묶음이라고 할 수 있는데 속성은 ‘변수’로 나타내고, 동작은 ‘메소드(함수)’로 나타낸다.<blockquote>
+<p>[ 1 ] : <a target="_blank" rel="noopener" href="https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">위키백과</a></p>
+</blockquote>
+</li>
+</ul>
+      
+      <a class="article-more-link" href="/2022/03/17/java-oop/">MORE</a>
+      
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2022/03/17/java-oop/" data-id="cm4wfoffb005vjp0a52zqfxy7"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/object-oriented-programming/" rel="tag">object-oriented programming</a></li></ul>
 
     </footer>
 
@@ -760,7 +767,7 @@
   
   <nav class="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/2/">prev</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/2/">prev</a>
   </nav>
   
 </section>
