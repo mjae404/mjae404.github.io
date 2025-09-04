@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 함수 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-function" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 함수
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/16/js-function/" class="article-date">
+  <time datetime="2020-08-16T14:26:09.000Z" itemprop="datePublished">2020-08-16</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>일련의 과정을 문(statement)들로 구현하고 코드 블록으로 감싸서 하나의 실행 단위로 정의한 것. 함수는 함수 정의를 통해 생성한다. 함수는 객체이며 일반 객체에는 없는 함수 객체만의 고유한 프로퍼티를 가지고 있다.</p>
+<a id="more"></a>
+
+<h2 id="함수를-사용하는-이유"><a href="#함수를-사용하는-이유" class="headerlink" title="함수를 사용하는 이유"></a>함수를 사용하는 이유</h2><ol>
+<li>코드의 재사용</li>
+<li>유지보수의 편의성을 높이고 실수를 줄여 코드의 신뢰성을 높임</li>
+<li>코드의 가독성을 향상</li>
+</ol>
+<h2 id="함수-리터럴"><a href="#함수-리터럴" class="headerlink" title="함수 리터럴"></a>함수 리터럴</h2><p><img src="/images/function.jpg" alt="함수리터럴" title="함수 리터럴"></p>
+<p>함수 리터럴은 function 키워드, 함수 이름,매개변수 목록, 함수 몸체로 구성되어 있다.</p>
+<ul>
+<li>함수 이름<ul>
+<li>식별자이기 때문에 식별자 네이밍 규칙을 준수해야 함.</li>
+<li>함수 몸체 내에서만 참조할 수 있다.</li>
+<li>생략할 수 있다. 이름이 있으면 기명 함수, 없으면 익명 함수라고 부른다.</li>
+</ul>
+</li>
+<li>매개변수 목록<ul>
+<li>0개 이상의 매개변수를 괄호로 감싸고 쉼표로 구분.</li>
+<li>함수 몸체 내에서 변수와 동일하게 취급되기 때문에 식별자 네이밍 규칙을 준수해야 함.</li>
+</ul>
+</li>
+<li>함수 몸체<ul>
+<li>호출되었을 때 실행될 문들을 하나의 실행단위로 정의한 코드 블록이다.</li>
+<li>함수 호출에 의해 실행됨.</li>
+</ul>
+</li>
+</ul>
+<h2 id="함수-정의"><a href="#함수-정의" class="headerlink" title="함수 정의"></a>함수 정의</h2><h3 id="함수를-정의하는-법"><a href="#함수를-정의하는-법" class="headerlink" title="함수를 정의하는 법"></a>함수를 정의하는 법</h3><ol>
+<li>함수 선언문(Function Declaration/Function Statement)</li>
+<li>함수 표현식(Function Expression)</li>
+<li>Function 생성자 함수(Function Constructor)</li>
+<li>화살표 함수(Arrow Function): ES6</li>
+</ol>
+<blockquote>
+<p><strong><u>변수 선언과 함수 정의</u></strong><br>함수 선언문이 평가되면 식별자가 암묵적으로 생성이 되고 함수 객체가 할당되기 때문에 변수는 선언, 함수는 정의된다는 표현을 사용하고 있다.</p>
+</blockquote>
+<h3 id="함수-선언문"><a href="#함수-선언문" class="headerlink" title="함수 선언문"></a>함수 선언문</h3><p>함수 리터럴 표기법과 동일하지만 함수 선언문은 함수 이름을 생략할 수 없다. 함수 이름과 동일한 이름의 식별자를 암묵적으로 선언하고 생성된 함수 객체를 할당한다. 함수 이름으로 호출하는 것이 아니라 함수 객체를 가리키는 식별자로 호출한다. 함수 선언문은 표현식이 아닌 문이다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">x, y</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.dir(add); <span class="comment">// f add(X, y)</span></span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="함수-표현식"><a href="#함수-표현식" class="headerlink" title="함수 표현식"></a>함수 표현식</h3><p>자바스크립트의 함수는 <strong>일급 객체</strong> 이기 때문에 함수를 값처럼 자유롭게 사용할 수 있다. 함수 표현식의 함수 리터럴은 이름을 생략하는 것이 일반적이다. 함수 이름은 함수 몸체 내부에서만 유효하므로 함수 이름으로 함수를 호출할 수는 없다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> add = <span class="function"><span class="keyword">function</span> (<span class="params">x, y</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="함수-생성-시점과-함수-호이스팅"><a href="#함수-생성-시점과-함수-호이스팅" class="headerlink" title="함수 생성 시점과 함수 호이스팅"></a>함수 생성 시점과 함수 호이스팅</h3><ul>
+<li>함수 선언문으로 정의한 함수와 함수 표현식으로 정의한 함수의 생성 시점은 다르다.</li>
+<li><strong><u>함수 선언문</u></strong> 으로 정의하게 될 경우 자바스크립트 엔진이 다른 코드가 실행되기 전에 함수 객체를 생성하고 함수 이름과 동일한 변수에 할당까지 완료한다.</li>
+<li><strong><u>함수 표현식</u></strong> 을 정의했을 때 함수 표현식 이전에 함수를 참조하면 undefined가 반환되는데, 이때 호출하게 되면 undefined를 호출하게 되는 것이므로 타입에러가 발생한다.</li>
+</ul>
+<blockquote>
+<p><strong>함수 호이스팅</strong><br>함수 선언문이 코드의 맨 위로 끌어올려진 것처럼 동작한다. 선언 단계, 초기화 단계, 할당 단계 전부 동시에 진행된다.</p>
+</blockquote>
+<blockquote>
+<p><strong>변수 호이스팅</strong><br>선언 단계와 초기화 단계가 동시에 진행된다. 다른 코드가 실행되기 이전에 암묵적으로 수행됨.</p>
+</blockquote>
+<h3 id="Function-생성자-함수"><a href="#Function-생성자-함수" class="headerlink" title="Function 생성자 함수"></a>Function 생성자 함수</h3><ul>
+<li>매개변수 목록과 함수 몸체를 문자열로 전달받는다.</li>
+<li>new 연산자와 함께 호출하고 생성된 함수 객체를 반환. (new 연산자없이 호출해도 결과는 동일.)</li>
+<li>클로저를 생성하지 않는다.</li>
+</ul>
+<blockquote>
+<p><strong>생성자 함수</strong>: 객체를 생성하는 함수.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> add = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">&#x27;x&#x27;</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;return x + y&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="화살표-함수"><a href="#화살표-함수" class="headerlink" title="화살표 함수"></a>화살표 함수</h3><ul>
+<li>function 키워드 대신 화살표(=&gt;, Fat arrow)를 사용하여 함수를 선언할 수 있다.</li>
+<li>항상 익명 함수로 정의한다.</li>
+<li>기존 함수와 this 바인딩 방식이 다르다.</li>
+<li>prototype 프로퍼티가 없다.</li>
+<li>arguments 객체를 생성하지 않는다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> add = <span class="function">(<span class="params">x, y</span>) =&gt;</span> x + y;</span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="함수-호출"><a href="#함수-호출" class="headerlink" title="함수 호출"></a>함수 호출</h2><p>함수를 참조하는 변수와 한 쌍의 소괄호인 함수 호출 연산자로 호출한다. 함수 호출 연산자 내에는 0개 이상의 인수(argument)를 쉼표로 구분하여 나열하고, 매개변수에 할당할 수 있는 값이어야 한다.</p>
+<h3 id="매개변수와-인수"><a href="#매개변수와-인수" class="headerlink" title="매개변수와 인수"></a>매개변수와 인수</h3><p>함수가 호출되면 함수 몸체 내에서 암묵적으로 매개변수가 생성된다. 변수와 마찬가지로 undefined로 초기화되고, 인수가 할당된다.</p>
+<ul>
+<li>매개변수의 스코프는 함수 내부이다.</li>
+<li>매개변수의 갯수만큼 인수를 전달하지 않아도 오류가 발생하지는 않는다.<ul>
+<li>인수가 부족한 경우 매개 변수의 값은 undefined.</li>
+<li>인수가 초과하는 경우 초과되는 인수는 무시되며 모든 인수는 암묵적으로 arguments 객체의 프로퍼티로 보관된다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="인수-확인"><a href="#인수-확인" class="headerlink" title="인수 확인"></a>인수 확인</h3><p>자바스크립트 함수는 매개변수와 인수의 개수가 일치하는지 따로 확인하지 않고 타입을 사전에 지정하지 않기 때문에 적절한 인수가 전달되었는지 확인이 필요하다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> x !== <span class="string">&#x27;number&#x27;</span> || <span class="keyword">typeof</span> y !== <span class="string">&#x27;number&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">TypeError</span>(<span class="string">&#x27;숫자 타입이 아닌 값입니다.&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="number">2</span>));</span><br><span class="line"><span class="comment">// TypeError: 숫자 타입이 아닌 값입니다.</span></span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>));</span><br><span class="line"><span class="comment">// TypeError: 숫자 타입이 아닌 값입니다.</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="매개변수의-개수"><a href="#매개변수의-개수" class="headerlink" title="매개변수의 개수"></a>매개변수의 개수</h3><p><strong>순서에 의미</strong> 가 있으므로 매개변수가 많으면 많을 수록 실수를 발생시킬 가능성이 높아진다. 또한 개수나 순서가 변경되게 되면 호출 방법도 변경되므로 함수의 코드 전체가 영향을 받는다. 매개변수의 개수가 많으면 함수가 여러가지 일을 한다는 증거이므로 바람직하지 않다. 그러므로 <strong>매개변수는 최대 3개 이상을 넘지 않는 것을 권장</strong> 한다.</p>
+<h3 id="반환문"><a href="#반환문" class="headerlink" title="반환문"></a>반환문</h3><ul>
+<li>함수의 실행을 중단하고 함수 몸체를 빠져나간다.</li>
+<li>반환문은 return 키워드 뒤에 지정한 값을 반환한다.</li>
+<li>반환문을 생략할 수 있다. undefined 반환.</li>
+<li>return 키워드와 반환값 사이에 줄바꿈이 있으면 세미콜론이 자동으로 추가된다.</li>
+</ul>
+<h2 id="다양한-함수의-형태"><a href="#다양한-함수의-형태" class="headerlink" title="다양한 함수의 형태"></a>다양한 함수의 형태</h2><h3 id="즉시실행함수"><a href="#즉시실행함수" class="headerlink" title="즉시실행함수"></a>즉시실행함수</h3><ul>
+<li>함수의 정의와 함께 즉시 호출된다.</li>
+<li>한번만 호출되며 다시 호출할 수 없다.</li>
+<li>익명 즉시 실행 함수를 사용하는 것이 일반적이다.</li>
+<li>기명 즉시 실행 함수도 사용 가능하지만 함수 이름은 함수 몸체에만 참조할 수 있으므로 이름이 있다고 하더라도 다시 호출할 수는 없다.</li>
+<li>그룹 연산자(…)로 감싸주어야 한다. 그렇지 않으면 오류 발생.</li>
+<li>일반 함수처럼 값을 반환할 수 있고 인수를 전달할 수도 있다.</li>
+<li>혹시 있을 수도 있는 변수나 함수 이름이 충돌하는 것을 방지할 수 있다.</li>
+<li>함수 선언문이나 함수 표현식을 그룹 연산자로 감싸면 함수가 평가되어 함수 객체가 된다. 가장 일반적인 방식은 첫번째 방식이다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;());</span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line">!<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;();</span><br><span class="line"></span><br><span class="line">+<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;();</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="재귀-함수"><a href="#재귀-함수" class="headerlink" title="재귀 함수"></a>재귀 함수</h3><ul>
+<li>함수가 자기 자신을 호출하는 함수이다.</li>
+<li>자신을 무한히 호출하므로 호출을 멈출 수 있는 탈출 조건을 만들어두어야 한다.</li>
+<li>무한 반복에 빠질 수 있고 stack overflow 에러를 발생시킬 수 있다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 팩토리얼(계승)은 1부터 자신까지의 모든 양의 정수의 곱이다.</span></span><br><span class="line"><span class="comment">// n! = 1 * 2 * ... * (n-1) * n</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 탈출 조건: n이 1 이하일 때 재귀 호출을 멈춘다.</span></span><br><span class="line">  <span class="keyword">if</span> (n &lt;= <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">return</span> factorial(n - <span class="number">1</span>) * n;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(factorial(<span class="number">0</span>)); <span class="comment">// 0! = 1</span></span><br><span class="line"><span class="built_in">console</span>.log(factorial(<span class="number">1</span>)); <span class="comment">// 1! = 1</span></span><br><span class="line"><span class="built_in">console</span>.log(factorial(<span class="number">2</span>)); <span class="comment">// 2! = 1 * 2 = 2</span></span><br><span class="line"><span class="built_in">console</span>.log(factorial(<span class="number">3</span>)); <span class="comment">// 3! = 1 * 2 * 3 = 6</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="중첩-함수"><a href="#중첩-함수" class="headerlink" title="중첩 함수"></a>중첩 함수</h3><ul>
+<li>함수 내부에 정의된 함수. 내부 함수라고도 한다.</li>
+<li>자신을 포함하는 외부 함수를 돕는 헬퍼 함수 역할을 한다.</li>
+<li>외부 함수의 변수에 접근할 수 있다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">outer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 중첩 함수</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">inner</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> y = <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(x + y); <span class="comment">// 3</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  inner();</span><br><span class="line">  <span class="built_in">console</span>.log(x + y);</span><br><span class="line">  <span class="comment">// ReferenceError: y is not defined</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">outer();</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="콜백-함수"><a href="#콜백-함수" class="headerlink" title="콜백 함수"></a>콜백 함수</h3><p>자바스크립트의 함수 매개변수로 함수를 전달할 수 있는데, 매개변수로 전달하려는 함수를 콜백함수라고 한다.</p>
+<blockquote>
+<p><strong>고차 함수</strong>: 매개변수를 통해 함수를 전달받거나 반환값으로 함수를 반환하는 함수를 고차 함수라 한다.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/08/16/js-function/" data-id="cm4wfoffj009ejp0ab4449hg8"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/function/" rel="tag">function</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/08/17/js-object/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 객체
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/16/js-variable/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 변수</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

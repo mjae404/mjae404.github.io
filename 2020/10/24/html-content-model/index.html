@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    HTML 콘텐츠 모델 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-html-content-model" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  HTML 콘텐츠 모델
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/10/24/html-content-model/" class="article-date">
+  <time datetime="2020-10-24T05:40:10.000Z" itemprop="datePublished">2020-10-24</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/HTML/">HTML</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>HTML5의 요소는 0개 이상의 카테고리에 속하며, 각 카테고리는 특성이 비슷한 요소끼리 묶어둔 분류이다. 특정 요소는 폼 관련 요소로 따로 분류하여 다양한 폼 관리 처리 모델에서 세부적으로 분류된다. 어떤 요소들은 특정 요소만의 요구사항을 가지고 있고, 아무 카테고리에도 해당되지 않는 경우가 있다. 기본 규칙은 Base HTML Element에 나온 규칙을 따른다.</p>
+<a id="more"></a>
+
+<p><img src="/images/content-model.jpg" alt="HTML5 Content Model"></p>
+<h2 id="메타데이터-콘텐츠-Metadata-Content"><a href="#메타데이터-콘텐츠-Metadata-Content" class="headerlink" title="메타데이터 콘텐츠 (Metadata Content)"></a>메타데이터 콘텐츠 (Metadata Content)</h2><ul>
+<li>메타데이터는 나머지 내용의 표현 및 행동을 설정함</li>
+<li>다른 문서와의 관계를 설정하거나, 미분류 정보들을 포함한다.</li>
+</ul>
+<blockquote>
+<p>base, command, link, meta, noscript, script, style, title</p>
+</blockquote>
+<h2 id="플로우-콘텐츠-Flow-Content"><a href="#플로우-콘텐츠-Flow-Content" class="headerlink" title="플로우 콘텐츠 (Flow Content)"></a>플로우 콘텐츠 (Flow Content)</h2><ul>
+<li>문서 및 어플리케이션의 Body에서 사용되는 대부분의 요소는 플로우 콘텐츠로 분류.</li>
+<li>플로우 콘텐츠 모델을 포함할 수 있는 콘텐츠 모델은 최소한 하나의 공백이 아닌 텍스트 노드를 포함하거나, 최소한 하나의 임베디드 콘텐츠를 포함하여야 한다. 이러한 결과로 del요소 및 그 자식 요소들은 del요소의 부모 엘리먼트가 될 수 없다. (강력하게 지켜야 할 내용은 아님)</li>
+<li>스크립트로 데이터를 채우기 위해 자리를 잡아 두는 목적 등의 정당한 이유로 요소가 비어 있을 수 있다.</li>
+</ul>
+<blockquote>
+<p>a, abbr, address, area (map 요소의 자식 요소인 경우), article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas,  cite, code, command, datalist, del, details, dfn, div, dl, em, embed, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, i, iframe, img, input, ins, kbd, keygen, label, map, mark, math, menu, meter, nav, noscript, object, ol, output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span, strong, style (scoped 속성이 있으면), sub, sup, svg, table, textarea, time, ul, var, video, wbr, text</p>
+</blockquote>
+<h2 id="섹션-콘텐츠-Section-Conetnt"><a href="#섹션-콘텐츠-Section-Conetnt" class="headerlink" title="섹션 콘텐츠 (Section Conetnt)"></a>섹션 콘텐츠 (Section Conetnt)</h2><ul>
+<li>헤딩과 푸터의 유효범위를 지정함</li>
+<li>제목과 그 내용을 포함하는 범위를 지정함</li>
+<li>헤딩과 아웃라인을 포함할 수 있다.</li>
+</ul>
+<blockquote>
+<p>article, aside, nav, section</p>
+</blockquote>
+<h2 id="헤딩-콘텐츠-Heading-Content"><a href="#헤딩-콘텐츠-Heading-Content" class="headerlink" title="헤딩 콘텐츠 (Heading Content)"></a>헤딩 콘텐츠 (Heading Content)</h2><p>섹션(섹션 콘텐츠나 또는 헤딩 콘텐츠에 의해 암시적으로 마크업 된 영역)의 헤더를 정의한다.</p>
+<blockquote>
+<p>h1, h2, h3, h4, h5, h6, hgroup</p>
+</blockquote>
+<h2 id="프레이징-콘텐츠-Phrasing-Content"><a href="#프레이징-콘텐츠-Phrasing-Content" class="headerlink" title="프레이징 콘텐츠 (Phrasing Content)"></a>프레이징 콘텐츠 (Phrasing Content)</h2><ul>
+<li>문서의 텍스트이며, 그 텍스트를 단락 내부레벨에서 마크업을 하는 요소</li>
+<li>프레이징 콘텐츠가 모여 문단을 구성한다.</li>
+</ul>
+<blockquote>
+<p>a (프레이징 콘텐츠만을 포함하는 경우), abbr, area (map 요소의 자식요소인 경우), audio, b, bdi, bdo, br, button, canvas, cite, code, command, datalist, del (프레이징 콘텐츠을 포함하는 경우), dfn, em, embed, i, iframe, img, input, ins (프레이징 콘텐츠만을 포함하는 경우), kbd, keygen, label, map (프레이징 콘텐츠만을 포함하는 경우), mark, math, meter, noscript, object, output, progress, q, ruby, s, samp, script, select, small, span, strong, sub, sup, svg, textarea, time, var, video, wbr, text</p>
+</blockquote>
+<h2 id="임베디드-콘텐츠-Embedded-Content"><a href="#임베디드-콘텐츠-Embedded-Content" class="headerlink" title="임베디드 콘텐츠 (Embedded Content)"></a>임베디드 콘텐츠 (Embedded Content)</h2><ul>
+<li>다른 리소스(음악, 영상 등)를 문서에 삽입하는 콘텐츠나, 문서에 삽입된 다른 형태에서 유래한 콘텐츠</li>
+<li>HTML의 네임스페이스에 속하지 않으면서, 콘텐츠를 포함하고 있지만 메타데이터가 아닌 것들을 임베디드 콘텐츠라 한다. (SVG등)</li>
+<li>임베디드 콘텐츠 요소 중 일부는 외부 리소스가 사용이 불가능 할때 사용할 대체 콘텐츠를 갖는다.</li>
+</ul>
+<blockquote>
+<p>audio, canvas, embed, iframe, img, math, object, svg, video</p>
+</blockquote>
+<h2 id="인터랙티브-콘텐츠-Interactive-Content"><a href="#인터랙티브-콘텐츠-Interactive-Content" class="headerlink" title="인터랙티브 콘텐츠 (Interactive Content)"></a>인터랙티브 콘텐츠 (Interactive Content)</h2><p>사용자와의 상호작용을 위해 사용되는 콘텐츠</p>
+<blockquote>
+<p>a, audio (controls 속성이 있으면), button, details, embed, iframe, img (usemap 속성이 있으면), input (type 속성이 hidden 상태가 아니면), keygen, label, menu (type 속성이 toolbar 상태면), object (usemap 속성이 있으면), select, textarea, video (controls 속성이 있으면)</p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="http://darum.daum.net/convention/html/html5_elements">http://darum.daum.net/convention/html/html5_elements</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/10/24/html-content-model/" data-id="cm4wfoff4003yjp0a5e1bdzmd"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Content-Model/" rel="tag">Content Model</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML5/" rel="tag">HTML5</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/10/26/js-exercise004-watermelon/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 수박수박수박수박수박수?
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/10/23/css-grid/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">CSS Grid</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

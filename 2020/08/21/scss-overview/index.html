@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    Sass &amp; SCSS 개요 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-scss-overview" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Sass &amp; SCSS 개요
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/21/scss-overview/" class="article-date">
+  <time datetime="2020-08-21T13:36:05.000Z" itemprop="datePublished">2020-08-21</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/Sass-SCSS/">Sass & SCSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <blockquote>
+<p><strong>CSS Preprocessor</strong></p>
+</blockquote>
+<p>CSS가 동작하기 전에 사용할 수 있는 기능. Sass, Less, Stylus 등이 있다. CSS 문법과 흡사하지만 <strong>선택자의 중첩, 조건문, 반복문, 단위의 연산등 표준 CSS보다 훨씬 많은 기능을 사용</strong> 하여 편하게 작성할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="Sass와-SCSS의-차이점"><a href="#Sass와-SCSS의-차이점" class="headerlink" title="Sass와 SCSS의 차이점"></a>Sass와 SCSS의 차이점</h2><p>SCSS는 Sass(Syntactically Awesome Style Sheets)의 3버전에서 새롭게 등장했다. CSS 구문과 완전히 호환되도록 새로운 구문을 도입해 만들어졌다. <strong>SCSS</strong> 는 CSS와 거의 같은 문법이며 <strong>Sass의 모든 기능을 지원하는 CSS의 상위집합</strong> 이다.</p>
+<h3 id="간단한-차이-비교"><a href="#간단한-차이-비교" class="headerlink" title="간단한 차이 비교"></a><strong><u>간단한 차이 비교</u></strong></h3><ul>
+<li><strong>Sass</strong><ul>
+<li>{ } 및 ; 사용하지 않는다.</li>
+<li>선택자의 유효범위는 들여쓰기</li>
+<li>=와 + 기호로 Mixns 기능을 사용</li>
+<li>좀더 간결하고 작성시에 편리하다.</li>
+</ul>
+</li>
+<li><strong>SCSS</strong><ul>
+<li>{ } 및 ; 사용한다.</li>
+<li>선택자의 유효범위는 중괄호</li>
+<li>@mixin과 @include로 Mixns 기능 사용</li>
+<li>인라인 코드(한줄 작성) 작성 가능</li>
+<li>CSS와 유사한 문법이라 통합하기 쉬움</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Mixins</strong>(‘믹스인’): 재사용 가능한 기능을 만드는 방식</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Sass</span></span><br><span class="line"><span class="selector-class">.list</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span></span><br><span class="line">  float: left</span><br><span class="line">  li</span><br><span class="line">    color: red</span><br><span class="line">    background: url(<span class="string">&quot;./image.jpg&quot;</span>)</span><br><span class="line">    &amp;:last-child</span><br><span class="line">      margin-right: -<span class="number">10px</span></span><br><span class="line"></span><br><span class="line">// SCSS</span><br><span class="line">.list &#123;</span><br><span class="line">  width: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="selector-tag">li</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    <span class="attribute">background</span>: url(<span class="string">&quot;./image.jpg&quot;</span>);</span><br><span class="line">    &amp;<span class="selector-pseudo">:last-child</span> &#123;</span><br><span class="line">      <span class="attribute">margin-right</span>: -<span class="number">10px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="컴파일-방법"><a href="#컴파일-방법" class="headerlink" title="컴파일 방법"></a>컴파일 방법</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.sassmeister.com/">SassMeister</a>:  설치하지 않고 컴파일할 수 있는 사이트</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sass/node-sass">node-sass</a>: Node.js를 컴파일러인 LibSass에 바인딩한 라이브러리</li>
+<li><a target="_blank" rel="noopener" href="https://gulpjs.com/">Gulp</a>: 빌드 자동화 도구(JavaScript Task Runner)</li>
+<li><a target="_blank" rel="noopener" href="https://webpack.js.org/">Webpack</a>: JavaScript 모듈화 도구</li>
+<li><a target="_blank" rel="noopener" href="https://parceljs.org/">Parcel</a>: 웹 애플리케이션 번들러</li>
+</ol>
+<h2 id="주석"><a href="#주석" class="headerlink" title="주석"></a>주석</h2><blockquote>
+<p>Sass</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;* 컴파일되는</span><br><span class="line"> * 여러 줄</span><br><span class="line"> * 주석 *&#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Error</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*</span><br><span class="line">컴파일되는</span><br><span class="line">여러 줄 주석</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h2 id="데이터-종류-Data-Types"><a href="#데이터-종류-Data-Types" class="headerlink" title="데이터 종류(Data Types)"></a>데이터 종류(Data Types)</h2><table>
+<thead>
+<tr>
+<th>데이터</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Numbers</td>
+<td>숫자.<br/>단위가 있거나 없을 수 있음.</td>
+<td>1, .85, 20px, 2em…</td>
+</tr>
+<tr>
+<td>Strings</td>
+<td>문자.<br/>문자가 있거나 없을 수 있음.</td>
+<td>bold, relative, “dotum”…</td>
+</tr>
+<tr>
+<td>Colors</td>
+<td>색상 표현</td>
+<td>red, #FFFF00, rgba(255,0,0,.5)</td>
+</tr>
+<tr>
+<td>Booleans</td>
+<td>논리</td>
+<td>true, false</td>
+</tr>
+<tr>
+<td>Nulls</td>
+<td>아무 것도 없음.<br/>속성값으로 사용되면 컴파일하지 않는다.</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Lists</td>
+<td>공백이나 , (쉼표)로 구분된 값의 목록.<br/>( ) 소괄호를 붙이거나 붙이지 않는다.</td>
+<td>(bunny, kitten, puppy), bunny rabbit</td>
+</tr>
+<tr>
+<td>Maps</td>
+<td>Lists와 유사하나 값이 Key: Value 형태.<br/><strong>( ) 소괄호를 꼭 붙여야 한다.</strong></td>
+<td>(bunny: b, kitten: k, puppy: p)</td>
+</tr>
+</tbody></table>
+<h2 id="중첩-Nesting"><a href="#중첩-Nesting" class="headerlink" title="중첩(Nesting)"></a>중첩(Nesting)</h2><p>상위 선택자의 반복을 피하고 좀 더 편리하게 작성할 수 있다.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.section</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="selector-class">.list</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="selector-tag">li</span> &#123;</span><br><span class="line">      <span class="attribute">float</span>: left;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.section</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.section</span> <span class="selector-class">.list</span> &#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.section</span> <span class="selector-class">.list</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="상위-선택자-참조-Ampersand"><a href="#상위-선택자-참조-Ampersand" class="headerlink" title="상위 선택자 참조 (Ampersand)"></a>상위 선택자 참조 (Ampersand)</h3><p>중첩 안에서 &amp; 키워드는 부모 선택자를 참조하여 치환한다.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.btn</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  &amp;<span class="selector-class">.active</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.btn</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.btn</span><span class="selector-class">.active</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="at-root-중첩-벗어나기"><a href="#at-root-중첩-벗어나기" class="headerlink" title="@at-root (중첩 벗어나기)"></a>@at-root (중첩 벗어나기)</h3><p>중첩을 벗어나고 싶을 때 @at-root 사용. 중첩 안에서 생성하되 중첩 밖에서 사용해야 할 때 주로 쓰인다.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.list</span> &#123;</span><br><span class="line">  <span class="variable">$w</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="variable">$h</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="selector-tag">li</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="variable">$w</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="variable">$h</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">@at-root</span> .box &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="variable">$w</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="variable">$h</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.list</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="중첩된-속성"><a href="#중첩된-속성" class="headerlink" title="중첩된 속성"></a>중첩된 속성</h3><p>font-, margin- 등과 같이 동일한 네임 스페이스를 가지는 속성들을 다음과 같이 사용할 수 있다.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">font</span>: &#123;</span><br><span class="line">    weight: bold;</span><br><span class="line">    size: <span class="number">10px</span>;</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="attribute">margin</span>: &#123;</span><br><span class="line">    top: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">20px</span>;</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="attribute">padding</span>: &#123;</span><br><span class="line">    bottom: <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">30px</span>;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">40px</span>;</span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="변수-Variables"><a href="#변수-Variables" class="headerlink" title="변수(Variables)"></a>변수(Variables)</h2><p>반복적으로 사용되는 값을 변수로 지정할 수 있으며 변수 이름 앞에는 반드시 <code>$</code> (달러 기호)를 붙여야 한다.</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$변수이름: 속성값;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$color-primary</span>: <span class="number">#eee</span>;</span><br><span class="line"><span class="variable">$url-images</span>: <span class="string">&quot;/assets/images/&quot;</span>;</span><br><span class="line"><span class="variable">$w</span>: <span class="number">500px</span>;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">$w</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$color-primary</span> url(<span class="variable">$url-images</span> + <span class="string">&quot;bg.jpg&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#eee</span> <span class="built_in">url</span>(<span class="string">&quot;/assets/images/bg.jpg&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="변수-유효범위-Variable-Scope"><a href="#변수-유효범위-Variable-Scope" class="headerlink" title="변수 유효범위(Variable Scope)"></a>변수 유효범위(Variable Scope)</h3><p>변수는 선언된 블록(<code>&#123; &#125;</code>) 내에서만 사용할 수 있다.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="variable">$color</span>: <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$color</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Error</span></span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$color</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="변수-재할당-Variable-Reassignment"><a href="#변수-재할당-Variable-Reassignment" class="headerlink" title="변수 재할당(Variable Reassignment)"></a>변수 재할당(Variable Reassignment)</h3><p>변수에 변수를 할당할 수 있다.</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$yelloworange</span>: <span class="number">#ffa800</span>;</span><br><span class="line"><span class="variable">$color-primary</span>: <span class="variable">$yelloworange</span>;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$color-primary</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa800</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="global-전역-설정"><a href="#global-전역-설정" class="headerlink" title="!global (전역 설정)"></a>!global (전역 설정)</h3><p><code>!global</code> 플래그를 사용하면 변수의 유효범위를 전역(Global)로 설정한다. 기존에 같은 이름으로 사용하던 변수가 있다면 값이 덮어질 수 있다.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="variable">$color</span>: <span class="number">#000</span> !global;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$color</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$color</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="default-초깃값-설정"><a href="#default-초깃값-설정" class="headerlink" title="!default (초깃값 설정)"></a>!default (초깃값 설정)</h3><p><code>!default</code> 플래그는 할당되지 않은 변수의 초깃값을 설정하며 할당되어 있는 변수가 있다면 변수가 기존 할당값을 사용한다. <strong>‘변수와 값을 설정하겠지만, 혹시 기존 변수가 있을 경우는 현재 설정하는 변수의 값은 사용하지 않겠다’</strong> 는 의미. Overwrite하지 않는다.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$color-primary</span>: red;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="variable">$color-primary</span>: blue !default;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$color-primary</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="문자-보간"><a href="#문자-보간" class="headerlink" title="#{ } (문자 보간)"></a>#{ } (문자 보간)</h3><p><code>#&#123;&#125;</code>를 이용해서 코드의 어디든지 변수 값을 넣을 수 있다.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$family</span>: unquote(<span class="string">&quot;Droid+Sans&quot;</span>);</span><br><span class="line"><span class="keyword">@import</span> url(<span class="string">&quot;http://fonts.googleapis.com/css?family=#&#123;$family&#125;&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> url(<span class="string">&quot;http://fonts.googleapis.com/css?family=Droid+Sans&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="가져오기-Import"><a href="#가져오기-Import" class="headerlink" title="가져오기 (Import)"></a>가져오기 (Import)</h2><p><code>@import</code>로 외부에서 가져온 Sass 파일은 모두 단일 CSS 출력 파일로 병합된다. 가져온 파일에 정의된 모든 변수 또는 Mixins 등을 주 파일에서 사용할 수 있다.</p>
+<p><em>Sass <code>@import</code>가 CSS <code>@import</code> 규칙으로 컴파일되는 상황</em></p>
+<ol>
+<li>파일 확장자가 <code>.css</code>일 때</li>
+<li>파일 이름이 <code>http://</code>로 시작하는 경우</li>
+<li><code>url()</code>이 붙어있을 경우</li>
+<li>미디어쿼리가 있는 경우</li>
+</ol>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> <span class="string">&quot;hello.css&quot;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&quot;http://hello.com/hello&quot;</span>;</span><br><span class="line"><span class="keyword">@import</span> url(hello);</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&quot;hello&quot;</span> screen;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="여러-파일-가져오기"><a href="#여러-파일-가져오기" class="headerlink" title="여러 파일 가져오기"></a>여러 파일 가져오기</h3><p>하나의 <code>@import</code>로 여러 파일을 가져올 수 있다. <code>,</code> (쉼표)로 구분.</p>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> <span class="string">&quot;header&quot;</span>, <span class="string">&quot;footer&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="파일-분할-Particals"><a href="#파일-분할-Particals" class="headerlink" title="파일 분할(Particals)"></a>파일 분할(Particals)</h3><p>파일을 나눠서 프로젝트를 진행할 경우, 파일이 많아질수록 관리가 어렵기 때문에 Partials 기능을 지원한다. 파일 이름 앞에 <code>_</code>를 붙여 <code>@import</code>로 가져오면 컴파일 시 <code>~.css</code> 파일로 컴파일하지 않는다. <code>Webpack</code>이나 <code>Parcel</code>, <code>Gulp</code> 같은 일반적인 빌드툴에서는 Partials 기능을 사용할 필요 없이, 설정된 값에 따라 빌드된다. 되도록 <strong><code>_</code>를 사용</strong> 할 것을 권장.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://heropy.blog/2018/01/31/sass/">https://heropy.blog/2018/01/31/sass/</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/08/21/scss-overview/" data-id="cm4wfofgd00lljp0acgvcf6pl"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SASS/" rel="tag">SASS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SCSS/" rel="tag">SCSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overview/" rel="tag">overview</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/08/22/scss-operations/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            SCSS 기본 연산
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/20/js-array/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 배열</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

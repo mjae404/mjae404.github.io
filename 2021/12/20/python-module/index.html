@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    PYTHON 모듈 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-python-module" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  PYTHON 모듈
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/20/python-module/" class="article-date">
+  <time datetime="2021-12-20T04:36:48.000Z" itemprop="datePublished">2021-12-20</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><strong>모듈</strong> 은 바로 실행하는 용도가 아니라, 나중에 사용할 함수나 클래스 등을 미리 정의해둔 파일이다. 정보를 한번만 정의해두고 import하면 여러 프로그램에서 손쉽게 사용할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="모듈"><a href="#모듈" class="headerlink" title="모듈"></a>모듈</h2><p>기본적으로 모듈 안에 정의된 변수 / 함수 / 클래스를 호출하는 방식은 아래와 같다. 여러 개의 함수/변수/클래스를 불러오고 싶다면 <code>,</code> (쉼표)로 구분한다. 모듈 안의 정의된 모든 변수 / 함수 / 클래스를 호출하고 싶다면 <code>*</code>을 사용한다. 단, 일부만 사용하고 싶을 경우에 <code>*</code>를 사용하는 것은 불필요하다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> (모듈 파일명) <span class="keyword">import</span> (불러올 함수명), (불러올 변수명), (불러올 클래스)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="random-모듈"><a href="#random-모듈" class="headerlink" title="random 모듈"></a>random 모듈</h2><p>파이썬을 설치하면 기본적으로 제공되는 <code>random</code>이라는 모듈이 있다. 그 안에 <code>randint</code>, <code>uniform</code>이라는 함수가 있다. 이 두 함수를 사용하고 싶다면 <code>random</code> 모듈파일을 먼저 불러와야 한다.</p>
+<p><em><strong>randint</strong></em></p>
+<p>파라미터에 두개의 숫자를 받고, 그 숫자 사이의 정수를 임의로 랜덤하게 리턴해준다.</p>
+<p><em><strong>uniform</strong></em></p>
+<p>파라미터에 두개의 숫자를 받고, 그 숫자 사이의 소수를 임의로 랜덤하게 리턴해준다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randint, uniform</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="input"><a href="#input" class="headerlink" title="input"></a>input</h2><p>사용자의 입력을 받고 싶을 때 <code>input</code>이라는 내장함수를 사용할 수 있다. 입력을 받기 전에 콘솔에 출력된다. 보통 유저에게 어떤 값을 입력할지 설명하는 용도로 사용된다. 사용자가 입력을 진행할 때까지 프로그램이 멈추고, 입력하면 다음 단계로 진행된다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;이름을 입력하세요 :&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello &quot;</span> + name) <span class="comment"># Hello Minjee</span></span><br></pre></td></tr></table></figure>
+
+<p>사용자가 어떤 것을 입력해도 <strong>입력값은 문자열 형태로 리턴</strong> 된다. 따라서 숫자형의 값을 입력받고 싶다면 <code>int</code> 함수를 사용해서 직접 형변환을 시켜주어야 한다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;정수 : &quot;</span>))</span><br><span class="line">y = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;정수 : &quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;입력한 정수의 합 %d&quot;</span> % (x + y))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 정수 : 5</span></span><br><span class="line"><span class="comment"># 정수 : 3</span></span><br><span class="line"><span class="comment"># 입력한 정수의 합 : 8</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/20/python-module/" data-id="cm4wfofgc00krjp0a2vozf7zj"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/data-type/" rel="tag">data type</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/21/python-list/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            PYTHON 리스트
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/19/python-abstraction/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">PYTHON 추상화</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

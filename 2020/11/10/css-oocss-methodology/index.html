@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    CSS OOCSS 방법론 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-css-oocss-methodology" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS OOCSS 방법론
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/11/10/css-oocss-methodology/" class="article-date">
+  <time datetime="2020-11-09T16:01:35.000Z" itemprop="datePublished">2020-11-10</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/CSS/">CSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>Object Oriented CSS의 약자이며 Nicole Sullivan에 의해 개발된 프레임워크이다. CSS를 모듈 방식으로 코딩하여 중복을 최소화하는 기법이다.</p>
+<a id="more"></a>
+
+<h2 id="기본-원칙"><a href="#기본-원칙" class="headerlink" title="기본 원칙"></a>기본 원칙</h2><ul>
+<li><p><strong>구조(structure)와 모양(skin)의 분리</strong>: 반복적인 시각적 기능(배경, 테두리 등)을 별도의 “스킨”으로 정의하여 다양한 객체와 혼합한다. 중복 코드 없이 시각적 다양성을 표현할 수 있다.</p>
+</li>
+<li><p><strong>콘테이너와 콘텐츠의 분리</strong>: 스타일을 정의할 때 의존적인 스타일을 사용하지 않는다. 사물의 모양은 어디에 위치하던간에 동일하게 보인다.</p>
+<ul>
+<li>ex. <code>h2</code>에 <code>.title</code>(클래스 이름)을 부여하여 사용하면 클래스가 없는 <code>h2</code>와 <code>.title</code> 클래스 역시 동일하게 보이기 때문에 불필요한 스타일을 중복해서 정의할 필요가 없다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="네이밍-방법"><a href="#네이밍-방법" class="headerlink" title="네이밍 방법"></a>네이밍 방법</h2><ul>
+<li>가능하면 짧고 간결하게 작성한다.</li>
+<li>동작과 형태가 예상이 가능하도록 명확하게 작성한다.</li>
+<li>어떻게 생겼는지보다는 어떤 목적인지 알 수 있도록 의미가 있게 작성한다.</li>
+<li>지나치게 구체적이지 않고 일반적으로 사용 가능하도록 작성한다.</li>
+<li>종이나 다른 매체가 아닌 모니터를 중심으로 작성한다.</li>
+</ul>
+<h2 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h2><ul>
+<li>많은 CSS 코드를 재사용하면서 코드 길이가 줄어들기 때문에 CSS 파일 크기가 작아진다. 속도를 향상시킬 수 있다.</li>
+<li>새로운 요소를 추가할 때 기존 모듈을 통해서 재사용이 가능하고 쉽게 확장 가능하여 유지보수성이 높아진다.</li>
+</ul>
+<h2 id="단점"><a href="#단점" class="headerlink" title="단점"></a>단점</h2><ul>
+<li>복잡해지는 HTML이 오히려 유지보수를 어렵게 한다는 의견이 있다.</li>
+<li>가독성이 떨어진다.</li>
+<li>미디어 객체와 같은 일부 모듈에 적용하기 좋아보이지만 프로젝트 전반적으로 적용하기 어렵다.</li>
+<li>non-semantic한 클래스를 사용한다.</li>
+<li>Sass와 함께 사용하게 되면 단점을 보완할 수 있다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong></p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A0-2-oocss-object-oriented-css-4064e1119354">https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A0-2-oocss-object-oriented-css-4064e1119354</a></li>
+<li><a target="_blank" rel="noopener" href="https://wit.nts-corp.com/2015/04/16/3538">https://wit.nts-corp.com/2015/04/16/3538</a></li>
+</ul>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/11/10/css-oocss-methodology/" data-id="cm4wfofey001hjp0adiecbr31"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OOCSS/" rel="tag">OOCSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/methodology/" rel="tag">methodology</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/11/11/css-smacss-methodology/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            CSS SMACSS 방법론
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/11/09/css-ben-methodology/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">CSS BEM 방법론</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

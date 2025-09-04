@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    장고 개요 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-django-overview" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  장고 개요
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2023/08/03/django-overview/" class="article-date">
+  <time datetime="2023-08-03T12:33:53.000Z" itemprop="datePublished">2023-08-03</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a> / <a class="article-category-link" href="/categories/Python/django/">django</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h2 id="diango-개발환경-구성하기"><a href="#diango-개발환경-구성하기" class="headerlink" title="diango 개발환경 구성하기"></a>diango 개발환경 구성하기</h2><ol>
+<li><p><code>Homebrew</code>를 설치후 버전을 확인한다.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;install.sh)&quot;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew --version</span><br></pre></td></tr></table></figure>
+<a id="more"></a></li>
+<li><p><code>pyenv</code>, <code>pyenv-virtualenv</code>를 설치한다.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install pyenv </span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install pyenv-virtualenv</span><br></pre></td></tr></table></figure></li>
+<li><p><code>pyenv-virtualenv</code>의 설치가 다 됐다면 설정을 한다.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $SHELL</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>pyenv 설정하기 (bash)</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">echo &#39;export PYENV_ROOT&#x3D;&quot;$HOME&#x2F;.pyenv&quot;&#39; &gt;&gt; ~&#x2F;.profile</span><br><span class="line">echo &#39;export PATH&#x3D;&quot;$PYENV_ROOT&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.profile</span><br><span class="line">echo &#39;eval &quot;$(pyenv init --path)&quot;&#39; &gt;&gt; ~&#x2F;.profile</span><br><span class="line">echo &#39;if [ -n &quot;$PS1&quot; -a -n &quot;$BASH_VERSION&quot; ]; then source ~&#x2F;.bashrc; fi&#39; &gt;&gt; ~&#x2F;.profile</span><br><span class="line">echo &#39;eval &quot;$(pyenv init -)&quot;&#39; &gt;&gt; ~&#x2F;.bashrc</span><br><span class="line">echo &#39;eval &quot;$(pyenv virtualenv-init -)&quot;&#39; &gt;&gt; ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>pyenv 설정하기 (zsh)</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#39;eval &quot;$(pyenv init --path)&quot;&#39; &gt;&gt; ~&#x2F;.zprofile</span><br><span class="line">echo &#39;eval &quot;$(pyenv init -)&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br><span class="line">echo &#39;eval &quot;$(pyenv virtualenv-init -)&quot;&#39; &gt;&gt; ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+<li><p>설정 후 버전을 확인한다.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv --version</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="pyenv를-이용한-파이썬-설치"><a href="#pyenv를-이용한-파이썬-설치" class="headerlink" title="pyenv를 이용한 파이썬 설치"></a>pyenv를 이용한 파이썬 설치</h2><ol>
+<li><p><code>pyenv</code>를 이용하여 python 버전을 확인한다.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv install --list</span><br></pre></td></tr></table></figure></li>
+<li><p>python 버전을 선택하여 설치한다.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv install &#123;파이썬 버전&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>python 버전을 확인한다.</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv versions</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="pyenv-virtualenv를-이용한-가상환경-생성"><a href="#pyenv-virtualenv를-이용한-가상환경-생성" class="headerlink" title="pyenv-virtualenv를 이용한 가상환경 생성"></a>pyenv-virtualenv를 이용한 가상환경 생성</h2><ol>
+<li><code>pyenv virtualenv</code>을 입력하고 python의 버전과 생성할 가상 환경의 입력한다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv virtualenv &#123;python 버전&#125; &#123;가상 환경 이름&#125;</span><br></pre></td></tr></table></figure></li>
+<li>가상환경을 삭제하고 싶을 시에는 <code>pyenv uninstall</code>과 가상 환경 이름을 기재한다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv uninstall &#123;가상 환경 이름&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="pyenv로-설치한-파이썬-적용-및-django-2-2-설치"><a href="#pyenv로-설치한-파이썬-적용-및-django-2-2-설치" class="headerlink" title="pyenv로 설치한 파이썬 적용 및 django 2.2 설치"></a>pyenv로 설치한 파이썬 적용 및 django 2.2 설치</h2><ul>
+<li>컴퓨터 전역에 적용하고 싶을 때는 <code>global</code>을, 해당 폴더 내에만 적용하고 싶을 때에는 <code>local</code>을 적용한다.</li>
+<li><em><strong>global</strong></em><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv global &#123;가상 환경 이름&#125;</span><br></pre></td></tr></table></figure></li>
+<li><em><strong>local</strong></em><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv local &#123;가상 환경 이름&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="django-설치"><a href="#django-설치" class="headerlink" title="django 설치"></a>django 설치</h2><ol>
+<li>다음 커맨드를 입력하여 django를 입력한다. 디렉토리에 django를 설치하는 것이 아니라 django-envs 환경에 django를 설치하는 것을 유의한다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install django&#x3D;&#x3D;2.2</span><br></pre></td></tr></table></figure></li>
+<li>설치가 잘 되었는지 확인한다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">django-admin --version</span><br></pre></td></tr></table></figure></li>
+<li>설치되어 있는 파키지 패키지 목록을 확인한다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 list</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="runserver"><a href="#runserver" class="headerlink" title="runserver"></a>runserver</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">django-admin runserver</span><br><span class="line">python manage.py runserver</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">django-admin runserver &#123;ip:port&#125;</span><br><span class="line">python manage.py runserver &#123;ip:port&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Django-프로젝트-생성하기"><a href="#Django-프로젝트-생성하기" class="headerlink" title="Django 프로젝트 생성하기"></a>Django 프로젝트 생성하기</h2><h3 id="프로젝트-생성"><a href="#프로젝트-생성" class="headerlink" title="프로젝트 생성"></a>프로젝트 생성</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">django-admin startproject &#123;프로젝트명&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="프로젝트-구조"><a href="#프로젝트-구조" class="headerlink" title="프로젝트 구조"></a>프로젝트 구조</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">codeit_proj&#x2F; #프로젝트명</span><br><span class="line">    manage.py</span><br><span class="line">    codeit_proj&#x2F; # 프로젝트명</span><br><span class="line">        __init__.py</span><br><span class="line">        settings.py</span><br><span class="line">        urls.py</span><br><span class="line">        wsgi.py</span><br></pre></td></tr></table></figure>
+<ul>
+<li><em><strong>Project Root</strong></em> : 최상위 프로젝트명 디렉토리는 <code>Project Root</code>라고 한다.</li>
+<li><em><strong>manage.py</strong></em> : Django 앱을 만들거나, 데이터베이스 관련 기능을 수행하거나, 개발 서버를 실행하는 등의 여러기능을 실행 할 수 있는 프로젝트 관리를 위한 명령 유틸리티. <code>django-admin</code>이 동일한 기능을 한다.</li>
+<li><em><strong>ProjectApp (Django Root)</strong></em> : Django 프로젝트를 위한 여러 파일이 담겨 있는 디렉토리.</li>
+<li><em><strong><strong>init</strong>.py</strong></em> : <code>__init__.py</code> 파일이 포함된 디렉토리를 Python의 패키지로 인식하게끔 하기 위해서 사용한다. python 3.3 이후 버전부터는 이 파일이 없어도 패키지로 인식되지만 하위 버전 호환을 위해 작성하는 것이 좋다.</li>
+<li><em><strong>settings.py</strong></em> : Django 프로젝트의 여러 가지 설정을 담고 있는 파일이다.</li>
+<li><em><strong>urls.py</strong></em> :  Django 프로젝트로 들어온 url을 보고 알맞은 로직(View)으로 연결해주는 역할을 하는 파일이다.</li>
+<li><em><strong>wsgi.py</strong></em> : 웹 서버와 Django 어플리케이션을 연결해주는 역할을 한다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 Django 웹 개발 시작하기</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2023/08/03/django-overview/" data-id="cm4wfoff1002sjp0a4df61w4b"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/" rel="tag">django</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/overview/" rel="tag">overview</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2023/08/19/django-app-structure/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            장고 앱(App) 구조
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/08/21/react-nextjs/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">리액트 next.js 세팅</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

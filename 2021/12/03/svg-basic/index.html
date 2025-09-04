@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    SVG 기본 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-svg-basic" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  SVG 기본
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/03/svg-basic/" class="article-date">
+  <time datetime="2021-12-03T12:02:24.000Z" itemprop="datePublished">2021-12-03</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/SVG/">SVG</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <ul>
+<li><code>svg</code>의 기본 구성 태그는 아래와 같으며 <code>xmlns</code>는 생략 가능하다.</li>
+<li><code>svg</code> 안에 style을 인라인으로 넣어둘 수도 있다.</li>
+<li>기본 CSS와 같이 클래스를 사용하여 작업하는 것이 바람직하다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http:/www.w3.org/2000/svg&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="기본-도형"><a href="#기본-도형" class="headerlink" title="기본 도형"></a>기본 도형</h2><h3 id="사각형"><a href="#사각형" class="headerlink" title="사각형"></a>사각형</h3><ul>
+<li><code>rect</code> 태그를 사용한다.</li>
+<li><strong>x</strong>, <strong>y</strong>: x축 위치와 y축 위치를 나타낸다. 단위를 생략하면 px 단위가 된다.</li>
+<li>fill의 기본색은 검은색이다.</li>
+<li><strong>stroke</strong>: 테두리(기본 1px)</li>
+<li><strong>stroke-width</strong>: 테두리 너비. 단위 생략하면 px 단위가 된다.</li>
+<li><strong>rx</strong>, <strong>ry</strong>: 꼭지점이 둥근 사각형을 만들 수 있다.</li>
+<li>첫번째 사각형와 두번째 사각형 모두 같은 사각형이다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http:/www.w3.org/2000/svg&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 1 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">&quot;10&quot;</span> <span class="attr">y</span>=<span class="string">&quot;20&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 2 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">&quot;10&quot;</span> <span class="attr">y</span>=<span class="string">&quot;20&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 3 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">&quot;10&quot;</span> <span class="attr">y</span>=<span class="string">&quot;20&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span> <span class="attr">rx</span>=<span class="string">&quot;10&quot;</span> <span class="attr">ry</span>=<span class="string">&quot;10&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="원형"><a href="#원형" class="headerlink" title="원형"></a>원형</h3><ul>
+<li><strong>circle</strong><ul>
+<li>정원.</li>
+<li>가운데 위치한다.</li>
+<li><code>r</code>: 반지름</li>
+<li><code>cx</code>, <code>cy</code>: 위치를 나타낸다.</li>
+</ul>
+</li>
+<li><strong>ellipse</strong><ul>
+<li>타원.</li>
+<li>타원이기 때문에 rx의 길이와 ry의 길이가 다르다.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http:/www.w3.org/2000/svg&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 정원 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">circle</span> <span class="attr">cx</span>=<span class="string">&quot;50&quot;</span> <span class="attr">cy</span>=<span class="string">&quot;250&quot;</span> <span class="attr">r</span>=<span class="string">&quot;30&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">circle</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 타원 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ellipse</span> <span class="attr">cx</span>=<span class="string">&quot;350&quot;</span> <span class="attr">cy</span>=<span class="string">&quot;350&quot;</span> <span class="attr">rx</span>=<span class="string">&quot;100&quot;</span> <span class="attr">ry</span>=<span class="string">&quot;50&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ellipse</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="선"><a href="#선" class="headerlink" title="선"></a>선</h3><ul>
+<li><strong>line</strong><ul>
+<li>x, y축 모두 선을 긋는 출발 지점과 끝나는 지점을 설명해주어야 한다.</li>
+</ul>
+</li>
+<li><strong>polyline</strong>, <strong>polygon</strong><ul>
+<li>직선을 계속 잇는다는 개념이다.</li>
+<li><code>polyline</code>과 달리 <code>polygon</code>은 마무리를 해주어 온전하게 다각형을 만들어준다.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http:/www.w3.org/2000/svg&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 선 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">line</span> <span class="attr">x1</span>=<span class="string">&quot;10&quot;</span> <span class="attr">x2</span>=<span class="string">&quot;100&quot;</span> <span class="attr">y1</span>=<span class="string">&quot;30&quot;</span> <span class="attr">y2</span>=<span class="string">&quot;300&quot;</span> <span class="attr">stroke</span>=<span class="string">&quot;blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">line</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- polyline --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">polyline</span> <span class="attr">points</span>=<span class="string">&quot;0 0, 200 100, 150 300&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">stroke</span>=<span class="string">&quot;red&quot;</span> <span class="attr">stroke-width</span>=<span class="string">&quot;10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">polyline</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- polygon --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">polygon</span> <span class="attr">points</span>=<span class="string">&quot;0 0, 200 100, 150 300&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">stroke</span>=<span class="string">&quot;red&quot;</span> <span class="attr">stroke-width</span>=<span class="string">&quot;10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">polygon</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Patch"><a href="#Patch" class="headerlink" title="Patch"></a>Patch</h3><ul>
+<li><strong>M</strong>: 펜툴의 시작점</li>
+<li><strong>L</strong>: 어디로 그을지 선언한다.</li>
+<li><strong>H</strong>: 가로 직선</li>
+<li><strong>V</strong>: 수직 방향 직선</li>
+<li><strong>Z</strong>: path를 마무리한다.</li>
+<li><strong>C</strong>: 커브를 그리려고 할 때 C라고 기재한다. 여기서 세가지 점을 입력한다.</li>
+<li>곡선을 그리고 싶을 경우 시작점, 조정하는 포인트 점, 끝점을 순서대로 입한다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http:/www.w3.org/2000/svg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M 300 200 L 500 100 H 50 V 300 Z&quot;</span> <span class="attr">stroke</span>=<span class="string">&quot;red&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">stroke-width</span>=<span class="string">&quot;5&quot;</span> <span class="attr">fill</span>=<span class="string">&quot;transparent&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">path</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M 100 150 C 100 150, 300 50, 500 250&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">path</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="텍스트"><a href="#텍스트" class="headerlink" title="텍스트"></a>텍스트</h2><h3 id="기본-텍스트"><a href="#기본-텍스트" class="headerlink" title="기본 텍스트"></a>기본 텍스트</h3><ul>
+<li><code>text</code> 태그를 사용한다.</li>
+<li><code>font-size</code> / <code>font-weight</code> / <code>fill</code> 등으로 조정한다.</li>
+<li>HTML 기본 텍스트와 달리 색상을 <code>color</code>가 아닌 <code>fill</code>로 조절한다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http:/www.w3.org/2000/svg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">text</span> <span class="attr">x</span>=<span class="string">&quot;20&quot;</span> <span class="attr">y</span>=<span class="string">&quot;50&quot;</span>&gt;</span>HELLO, WORLD!<span class="tag">&lt;/<span class="name">text</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="곡선-텍스트"><a href="#곡선-텍스트" class="headerlink" title="곡선 텍스트"></a>곡선 텍스트</h3><ul>
+<li><code>font-size</code> / <code>font-weight</code> / <code>fill</code> 등으로 조정한다.</li>
+<li><strong>defs</strong>: 나중에 참조할 그래픽 요소들을 담아둘 공간. 도형이나 마스크, 그라데이션 등을 정의하여 defs 안에 넣어둘 수 있다.</li>
+<li><code>path</code>에 id값을 주고 <code>textPath href</code>에 아이디값을 넣어주면 글이 해당 <code>path</code> 모양으로 적용된다.</li>
+<li><strong>tspan</strong>: 강조하고 싶을 때 <code>tspan</code>을 사용한다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http:/www.w3.org/2000/svg&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 참조공간 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">defs</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">id</span>=<span class="string">&quot;text-curve&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">d</span>=<span class="string">&quot;M 50 400 C 50 400, 300 500, 400 400</span></span></span><br><span class="line"><span class="tag"><span class="string">        C 400 400, 600 170, 700 300&quot;</span> <span class="attr">stroke</span>=<span class="string">&quot;red&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">stroke-width</span>=<span class="string">&quot;5&quot;</span> <span class="attr">fill</span>=<span class="string">&quot;transparent&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">path</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">defs</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 텍스트 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">text</span> <span class="attr">x</span>=<span class="string">&quot;20&quot;</span> <span class="attr">y</span>=<span class="string">&quot;50&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">textPath</span> <span class="attr">href</span>=<span class="string">&quot;#text-curve&quot;</span>&gt;</span></span><br><span class="line">        HELLO,</span><br><span class="line">        <span class="tag">&lt;<span class="name">tspan</span> <span class="attr">style</span>=<span class="string">&quot;fill: red;&quot;</span>&gt;</span>WORLD<span class="tag">&lt;/<span class="name">tspan</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">textPath</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">text</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="그룹"><a href="#그룹" class="headerlink" title="그룹"></a>그룹</h2><ul>
+<li>묶고 싶은 그룹들을 <code>&lt;g&gt; &lt;/g&gt;</code>로 감싼다.</li>
+<li>각자에게 스타일을 준다면 해당 스타일이 우선 적용된다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http:/www.w3.org/2000/svg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">g</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">&quot;10&quot;</span> <span class="attr">y</span>=<span class="string">&quot;20&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">&quot;200&quot;</span> <span class="attr">y</span>=<span class="string">&quot;300&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span>/&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="name">g</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>인프런 SVG 마스터<br><a target="_blank" rel="noopener" href="https://www.inflearn.com/course/mastering-svg">https://www.inflearn.com/course/mastering-svg</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/03/svg-basic/" data-id="cm4wfofgg00msjp0a8shy140l"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SVG/" rel="tag">SVG</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/03/svg-effect/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            SVG 효과
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/03/svg-overview/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">SVG 개요</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

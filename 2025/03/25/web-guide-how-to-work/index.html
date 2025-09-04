@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    브라우저는 어떻게 동작하는가 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-web-guide-how-to-work" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  브라우저는 어떻게 동작하는가
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2025/03/25/web-guide-how-to-work/" class="article-date">
+  <time datetime="2025-03-25T12:38:23.000Z" itemprop="datePublished">2025-03-25</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/web/">web</a> / <a class="article-category-link" href="/categories/web/performance/">performance</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>실제 성능 및 체감되는 성능을 향상시키는 방법을 이해하기 위해서 브라우저가 어떻게 동작하는지 이해해야 한다.</p>
+<a id="more"></a>
+
+<h2 id="탐색-Navigation"><a href="#탐색-Navigation" class="headerlink" title="탐색 (Navigation)"></a>탐색 (Navigation)</h2><ul>
+<li>웹페이지를 로딩하는 첫 단계</li>
+</ul>
+<h3 id="DNS-조회"><a href="#DNS-조회" class="headerlink" title="DNS 조회"></a>DNS 조회</h3><ul>
+<li>브라우저는 DNS 조회를 요청한다. 이는 최종적으로 이름 서버에 의해서 처리되고, IP 주소로 응답한다. 최초의 요청 이후에, IP는 일정 기간 동안 캐시된다.</li>
+<li>DNS 조회는 보통 호스트 이름 하나당 한 번만 수행된다. 하지만 DNS 조회는 요청된 페이지에서 참조하는 다른 호스트 이름에 대해서는 각각 수행해야 한다. 만약 글꼴, 이미지, 스크립트, 광고 그리고 다른 자원들이 서로 다른 호스트 이름을 가지고 있다면, DNS 조회는 각각에 대해서 모두 수행되어야 한다.</li>
+</ul>
+<h3 id="TCP-핸드셰이크"><a href="#TCP-핸드셰이크" class="headerlink" title="TCP 핸드셰이크"></a>TCP 핸드셰이크</h3><ul>
+<li>서버와 TCP 3방향 핸드셰이크를 통해 연결을 설정한다.</li>
+<li>TCP (전송 제어 프로토콜)은 두 개의 호스트를 연결하고 데이터 스트림을 교환하게 해주는 중요한 네트워크 프로토콜이다. TCP는 데이터와 패킷이 보내진 순서대로 전달하는 것을 보장해준다.</li>
+<li>TCP가 전송하는 세 가지 메시지는 각각 <strong>SYN(SYNchronize)</strong>, <strong>SYN-ACK(SYNchronize-ACKnowledgement)</strong>, <strong>ACK(ACKnowledge)</strong> 라는 이름을 가진다. 세 가지 메시지 메커니즘은 서로 정보를 주고 받기를 윈하는 두 컴퓨터가 HTTP 브라우저 요청과 같은 데이터를 전송하기 전에 연결 매개변수를 협상할 수 있도록 설계되었다.</li>
+<li>호스트(일반적으로 브라우저)는 TCP SYNchronize 패킷을 서버로 보낸다. 서버는 SYN을 수신하고 SYNchronize-ACKnowledgement를 다시 보낸다. 호스트는 서버의 SYN-ACK을 수신하고 ACKnowledge를 다시 보낸다. 서버는 ACK를 수신하고 TCP 소켓 연결이 설정된다.</li>
+</ul>
+<h3 id="TLS-협상"><a href="#TLS-협상" class="headerlink" title="TLS 협상"></a>TLS 협상</h3><ul>
+<li>HTTPS를 이용한 보안성 있는 연결을 위해 또 다른 “핸드셰이크”가 필요하다. 이 핸드셰이크는 통신 암호화에 쓰일 암호를 결정하고, 서버를 확인하고, 실제 데이터 전송 전에 안전한 연결이 이루어지도록 한다.</li>
+<li>이를 위해서 자원에 대한 실제 요청 전에 클라이언트에서 서버로 3번 더 왕복한다.</li>
+</ul>
+<h2 id="응답-Response"><a href="#응답-Response" class="headerlink" title="응답 (Response)"></a>응답 (Response)</h2><ul>
+<li>웹서버로 한번 연결이 성립되면, 브라우저는 초기 <code>HTTP GET resquest</code> 를 보낸다.</li>
+<li>웹사이트는 대개 HTML 파일을 요청한다.</li>
+</ul>
+<h2 id="구문-분석-Parsing"><a href="#구문-분석-Parsing" class="headerlink" title="구문 분석 (Parsing)"></a>구문 분석 (Parsing)</h2><ul>
+<li>브라우저가 첫 번째 데이터의 청크를 받으면, 수신된 정보를 구문 분석하기 시작한다.</li>
+<li>브라우저가 네트워크를 통해 받은 데이터를 DOM이나 CSSOM으로 바꾸는 단계이다. 이는 렌더러가 화면에 페이지를 그리는데 사용된다.</li>
+<li>브라우저는 마크업을 내부적으로 DOM으로 표현한다.</li>
+</ul>
+<h3 id="DOM-tree-구축"><a href="#DOM-tree-구축" class="headerlink" title="DOM tree 구축"></a>DOM tree 구축</h3><ul>
+<li>첫 단계는 HTML을 처리하여 문서의 내용을 설명하는 DOM 트리를 만드는 것이다.</li>
+<li>토큰화와 트리 생성을 포함하며 HTML 토큰은 시작 및 종료 태그 그리고 속성 이름 및 값을 포함한다. 구문 분석기는 토큰화된 입력을 분석하여 DOM 트리를 만든다.</li>
+<li>구문 분석기가 이미지와 같은 논 블로킹 자원을 발견하면, 브라우저는 해당 자원을 요청하고 분석을 계속한다. 구문 분석은 CSS 파일을 만났을 때도 지속될 수 있다.</li>
+<li><code>async</code>나 <code>defer</code>같은 설정이 되어있지 않은 <code>&lt;script&gt;</code> 태그는 렌더링을 막고, HTML의 분석을 중지시킨다.</li>
+</ul>
+<h3 id="CSSOM-구축"><a href="#CSSOM-구축" class="headerlink" title="CSSOM 구축"></a>CSSOM 구축</h3><ul>
+<li>두 번째 단계는 CSS를 처리하고 CSSOM 트리를 만드는 것이다.</li>
+<li>DOM과 CSSOM은 둘 다 트리구조이며, 둘은 각각의 독립적인 자료구조이다.</li>
+<li>브라우저는 CSS 규칙을 이해할 수 있고 작업을 진행할 수 있도록 스타일 맵으로 변환한다. 브라우저는 CSS에 있는 각각의 규칙을 읽고, 트리 노드를 만든다.</li>
+<li>CSS 선택기에 기반해서 부모 노드, 자식 노드, 형제 관계의 노드를 만든다.</li>
+<li>브라우저는 HTML을 객체로 바꾸는 프로세스처럼 CSS도 동일하게 처리한다.</li>
+<li>CSSOM 트리는 사용자 에이전트의 스타일 시트를 포함한다. 브라우저는 노드에 적용 가능한 가장 일반적인 규칙부터 적용한다.</li>
+<li>속성 값을 캐스케이드한다.</li>
+<li>CSSOM을 만드는데 드는 시간은 일반적으로 한 번의 DNS 조회를 하는 시간보다 짧기 때문에 웹 성능 최적화의 관점에서 CSSOM는 성능 향상에 큰 기여를 할 수 있는 영역은 아니다.</li>
+</ul>
+<h3 id="Javascript-컴파일"><a href="#Javascript-컴파일" class="headerlink" title="Javascript 컴파일"></a>Javascript 컴파일</h3><ul>
+<li>CSS가 분석되고 CSSOM이 생성되는 동안, 프리 스캐너 덕에 Javascript 파일 같은 다른 자원도 다운로드된다.</li>
+<li>Javascript는 해석 후 컴파일되고, 구문 분석 및 실행된다.</li>
+<li>스크립트는 추상 구문 트리로 구문 분석된다.</li>
+<li>일부 브라우저 엔진은 추상 구문 트리를 인터프리터에게 넘기고, 그 결과 메인 쓰레드에서 실행되는 바이트코드가 생성된다.</li>
+</ul>
+<h3 id="접근성-트리-구축"><a href="#접근성-트리-구축" class="headerlink" title="접근성 트리 구축"></a>접근성 트리 구축</h3><ul>
+<li>브라우저는 접근성 트리를 만든다.</li>
+<li>보조 장치는 이 트리를 이용해 내용을 분석하고 해석한다.</li>
+<li>접근성 객체 모델(AOM)은 DOM의 의미 버전이다. AOM이 만들어지기 전까지, 스크린 리더기는 컨텐츠에 접근할 수 없다.</li>
+<li>브라우저는 DOM이 업데이트 될 때 접근성 트리도 업데이트한다. 접근성 트리는 보조 기술 자체적으로 수정될 수는 없다.</li>
+</ul>
+<h2 id="렌더-Render"><a href="#렌더-Render" class="headerlink" title="렌더 (Render)"></a>렌더 (Render)</h2><ul>
+<li>렌더 트리는 보이는 요소의 레이아웃을 계산한다. 그러고 나서 요소가 화면에 페인트된다. 어떤 경우에는 컨텐츠가 자신만의 레이어를 가지도록 조작되고, 나중에 합성된다. 화면의 일부분을 CPU 대신 GPU가 그리면서 메인 쓰레드의 부담이 줄고 성능이 향상된다.</li>
+</ul>
+<h3 id="스타일-Style"><a href="#스타일-Style" class="headerlink" title="스타일 (Style)"></a>스타일 (Style)</h3><ul>
+<li>DOM과 CSSOM을 합쳐 렌더 트리를 만드는 것이다.</li>
+<li>계산된 스타일 트리(다른 말로 렌더 트리)는 DOM 트리의 루트부터 시작하여 눈에 보이는 노드를 순회하며 만들어진다.</li>
+<li>보여지는 각각의 노드에는 CSSOM 규칙이 적용된다.</li>
+<li>렌더링 트리는 콘텐츠와 계산된 스타일을 가진 모든 가시 노드를 보유하고 있으며, 모든 관련 스타일을 DOM 트리의 모든 가시 노드와 일치시키고 CSS 캐스케이드를 기반으로 각 노드에 대해 계산된 스타일이 무엇인지 결정한다.</li>
+</ul>
+<h3 id="레이아웃-Layout"><a href="#레이아웃-Layout" class="headerlink" title="레이아웃 (Layout)"></a>레이아웃 (Layout)</h3><ul>
+<li>렌더 트리를 기반으로 각 노드의 도형 값을 계산하기 위해 레이아웃을 실행한다. 이후 페이지에서 각 객체의 크기와 위치를 계산한다.</li>
+<li>레이아웃은 렌더링 트리의 모든 노드의 크기와 위치를 결정하고 페이지의 각 객체 크기와 위치를 결정하는 과정이며 각 노드의 크기와 위치가 처음 결정되는 시점이다.</li>
+<li>리플로우는 페이지의 일부 또는 전체 문서의 크기와 위치를 결정하는 모든 후속 작업이다. 레이아웃 이후의 재계산한다.</li>
+<li>렌더 트리가 구축되면 레이아웃이 시작된다. 렌더 트리는 계산된 스타일과 함께 표시되는 노드(보이지 않더라도)를 식별하지만 각 노드의 크기나 위치는 식별하지 못한다. 각 객체의 정확한 크기와 위치를 확인하기 위해 브라우저는 렌더 트리의 루트에서 시작하여 이를 탐색한다.</li>
+</ul>
+<h3 id="페인트-Paint"><a href="#페인트-Paint" class="headerlink" title="페인트 (Paint)"></a>페인트 (Paint)</h3><ul>
+<li>페인팅 또는 래스터화 단계에서 브라우저는 레이아웃 단계에서 계산된 각 상자를 화면의 실제 픽셀로 변환한다.</li>
+<li>페인팅에는 텍스트, 색상, 테두리, 그림자, 버튼 및 이미지와 같은 대체 요소 등 요소의 모든 시각적 부분을 화면에 그리는 작업이 포함되며, 브라우저는 이 작업을 매우 빠르게 수행해야 한다.</li>
+<li>초기 페인팅보다 더 빨리 다시 페인팅할 수 있도록 화면에 그리는 작업은 일반적으로 여러 레이어로 나뉜다. 이러한 경우 합성이 필요하다.</li>
+<li>페인팅은 레이아웃 트리의 요소를 레이어로 나눌 수 있다. 콘텐츠를 GPU의 메인 스레드 대신 레이어를 활용하면 페인트 및 재페인트 성능이 향상된다.</li>
+<li>레이어를 인스턴스화하는 특정 속성과 요소가 있다. 이는 <code>&lt;video&gt;</code>, <code>&lt;canvas&gt;</code> 및 <code>opacity</code>, <code>3D transform</code>, <code>will-change</code> 등의 CSS 속성을 가진 모든 요소를 포함한다. 이 노드는 이러한 이유(레이어를 인스턴스화하는 특정 속성과 요소)로 별도의 레이어가 필요한 경우를 제외하고는 하위 노드와 함께 자체 레이어에 그려진다.</li>
+<li>레이어는 성능을 향상시키지만 메모리 관리 측면에서는 비용이 많이 들기 때문에 웹 성능 최적화 전략의 일부로 과도하게 사용해서는 안 된다.</li>
+</ul>
+<h3 id="합성-Composition"><a href="#합성-Composition" class="headerlink" title="합성 (Composition)"></a>합성 (Composition)</h3><ul>
+<li>문서의 섹션이 서로 겹쳐서 다른 레이어로 그려질 때, 올바른 순서로 화면에 그려지고 내용이 올바르게 렌더링되도록 하기 위해 합성이 필요하다.</li>
+<li>페이지가 자산을 계속 로드할 때 리플로우가 발생할 수 있다. 리플로우는 다시 페인팅하고 다시 합성한다.</li>
+</ul>
+<h2 id="상호작용-Interactivity"><a href="#상호작용-Interactivity" class="headerlink" title="상호작용 (Interactivity)"></a>상호작용 (Interactivity)</h2><ul>
+<li>지연된 Javascript를 다운로드하거나 온로드 이벤트가 발생하여 실행되는 경우, 메인 스레드가 사용중일 수 있다. 이 경우 스크롤, 터치 및 기타 상호 작용이 불가능하다.</li>
+<li>상호작용은 페이지가 50ms 이내에 사용자 상호작용에 반응할 때 첫 번째 콘텐츠 풀 페인트 이후의 시점을 의미한다.</li>
+<li>상호작용 시간(TTI)은 첫 번째 요청에서 DNS 조회 및 TCP 연결로 이어진 후 페이지가 상호작용할 때까지의 시간을 측정하는 것이다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work">브라우저는 어떻게 동작하는가</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2025/03/25/web-guide-how-to-work/" data-id="cm8ohj88800008g0a09lmc3ce"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/performance/" rel="tag">performance</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/" rel="tag">web</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+    
+      <a href="/2024/05/11/html-basic/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">UI 개발 기본 지식</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

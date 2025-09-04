@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    SVG 그래픽 로고가 그려지는 애니메이션 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-svg-exercise002" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  SVG 그래픽 로고가 그려지는 애니메이션
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/26/svg-exercise002/" class="article-date">
+  <time datetime="2021-12-26T04:31:24.000Z" itemprop="datePublished">2021-12-26</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/SVG/">SVG</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>그래픽 로고가 그려지는 애니메이션 만들기.</p>
+<a id="more"></a>
+
+<p><img src="/images/svg-logo-animation.gif" alt="css bar animation"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">version</span>=<span class="string">&quot;1.1&quot;</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="attr">xmlns:xlink</span>=<span class="string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="attr">x</span>=<span class="string">&quot;0px&quot;</span> <span class="attr">y</span>=<span class="string">&quot;0px&quot;</span></span></span><br><span class="line"><span class="tag">     <span class="attr">viewBox</span>=<span class="string">&quot;0 0 300 80&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">defs</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css">            <span class="keyword">@keyframes</span> logo-ani &#123;</span></span><br><span class="line"><span class="css">                <span class="selector-tag">from</span> &#123;stroke-dashoffset: <span class="number">1237</span>;&#125;</span></span><br><span class="line"><span class="css">                <span class="selector-tag">to</span> &#123;stroke-dashoffset: <span class="number">0</span>;&#125;</span></span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line"><span class="css">            <span class="selector-id">#mask</span>&#123;fill:none;stroke:<span class="number">#ffffff</span>;stroke-<span class="attribute">width</span>:<span class="number">5</span>;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:<span class="number">10</span>;&#125;</span></span><br><span class="line">            </span><br><span class="line">            .logo &#123;</span><br><span class="line"><span class="css">                stroke-dasharray: <span class="number">1237</span>;</span></span><br><span class="line"><span class="css">                <span class="attribute">animation</span>: logo-ani <span class="number">10s</span> linear;</span></span><br><span class="line">            &#125;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mask</span> <span class="attr">id</span>=<span class="string">&quot;mask&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">g</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">path</span> <span class="attr">class</span>=<span class="string">&quot;logo&quot;</span> <span class="attr">d</span>=<span class="string">&quot;M23,27l-2,21l26-8l-8-23l-8,49l18-32l5-5c0,0,7,1,7,6s1,6,0,10s-4,8-6,9s-6,1-6-1s1-9,2-13s2-6,5-6s14-8,14-8</span></span></span><br><span class="line"><span class="tag"><span class="string">                l-2.5,22.5L94,40L84,21l-8,45l33-45v43l-5-29l5.5-6.5l12.8,29.3l0.9-46.5l12.4,29.2c0,0-1,6-5,11c0,0-1,4,1,5s3,0,4-2s4-6,4-9</span></span></span><br><span class="line"><span class="tag"><span class="string">                s1-7,0-8s4-3,4-3l-1,3v6l23-5l-11-19l-3,36l25-20l3-6l20-4l-15,6l-3,28l-4-17l27-6l3,4c0,0-4,7-4,8s-2,6-1,7s3,1,4,0s3-4,4-8</span></span></span><br><span class="line"><span class="tag"><span class="string">                s2-7,1-9s-2-3-2-3l6-2c0,0,3-1,3,4s-2,8-1,11s2,3,3,3s4-5,5-7s3-12,3-12s-2,17-1,20s3,5,3,5s3-7,4-9s10-13,10-13s-3,20-2,22</span></span></span><br><span class="line"><span class="tag"><span class="string">                s7-20,8-20s3,17,4,17s2-3,2-3l13-29c0,0,6-3,5,1s-4,18-4,20s1,16,1,16l-1-16c0,0-5,2-6,3s-4,6-4,7s9,2,10,2s13-2,13-2&quot;</span>/&gt;</span></span><br><span class="line">             <span class="tag">&lt;/<span class="name">g</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mask</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">defs</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">g</span> <span class="attr">mask</span>=<span class="string">&quot;url(#mask)&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M38.5,26.9c-0.9,5.3-1.6,9.8-2.3,15.2c1.9-0.4,3.6-0.9,5.4-1.3c0.3-0.1,0.6-0.2,0.9-0.2c1.3-0.3,1.8-0.4,5.2-0.5</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-1.2,1-1.3,1.2-1.7,1.4c-0.3,0.2-0.8,0.4-1.2,0.8l-9.2,2.7c-0.8,3.8-1.3,7.3-2,11c-0.5,2.7-1,5.7-1.6,8.3c-0.4,0.4-0.7,0.6-1,0.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.1,0-0.2-0.1-0.2-0.1L30,63.1c0-2.1,0.2-3.8,0.5-5.5c0.2-0.9,0.3-1.9,0.4-2.9l0.8-4c0.1-0.6,0.2-1.3,0.3-2</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.2-1,0.3-1.7,0.4-2.7c-0.8,0.2-1.6,0.4-2.3,0.6l-2,0.7c-1.9,0.6-3.7,1.2-5.5,2.4c-1.4,0-2.5-0.1-2.9-1.6c0-0.8,0.3-1,0.6-1.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.2-0.1,0.2-0.2,0.4-0.5c0.7-4.6,1.1-10.4,1.3-15.3c0.8-0.4,1.6-0.4,2.1-0.3c0.1,0,0.3,0.1,0.4,0.1c0.7,1.4,0.6,2.5,0.5,3.7</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.1,1.1-0.1,2.2-0.3,3.2v0.8c-0.1,1.8-0.3,3.5-0.5,5.3c-0.1,0.9-0.1,0.9-0.2,1.8c1.2-0.3,2.4-0.7,3.7-1.1c1.8-0.6,3.2-1.1,5-1.5</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.3-1.6,0.6-3.4,0.8-5.1c0.5-3.3,1-6.8,1.6-10.1v-0.3c0.1-0.6,0.2-1.4,0.9-2h0.5c0.9-0.1,1.8-0.1,1.9,1.3V26.9z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M62.2,40.3c0,2.4-0.3,4.8-0.8,6.8c-0.7,2.4-2.4,5.1-4.3,7c-1.1,0.8-2.7,1.6-4.3,1.6c-0.7,0-1.4-0.1-1.9-0.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.9-0.4-1.5-0.7-2-1.6c-0.4-1.4-0.6-2.7-0.6-3.8c0-2.6,0.6-5,1.3-7.3c0.3-0.9,0.6-1.9,0.8-2.8c0.4-0.7,0.7-1.4,1-2.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.9-2.4,2-5,5.3-4.3c0.7,0.6,0.5,0.7,0.5,1.2V35c-2,0.8-2.6,2.4-3.2,3.9c-0.1,0.4-0.3,0.9-0.4,1.3c-0.2,0.8-0.4,1.6-0.7,2.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.6,2-1.4,4.5-1.4,6.5c0,1.1,0.2,2.3,0.6,3.3c0.4,0.3,1.4,0.6,1.9,0.3c3.8-2.9,5.1-7.4,5.1-12.2c0-1.8-0.2-3.7-0.4-5.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0-0.1-0.1-0.7-0.2-0.8c-0.3-1.1-0.5-2-1.7-2.3c-0.8-0.5-1.7-0.4-2.5-0.4c-0.6,0-1.4-0.1-2.4-0.3c1.7-2.4,3.4-2.3,5.2-2.2</span></span></span><br><span class="line"><span class="tag"><span class="string">            c1.2,0.5,2.3,0.9,3.1,1.9C61.6,33.7,62.2,37,62.2,40.3z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M84.4,26.9c-0.9,5.3-1.6,9.8-2.3,15.2c1.9-0.4,3.6-0.9,5.4-1.3c0.3-0.1,0.6-0.2,0.9-0.2c1.3-0.3,1.8-0.4,5.2-0.5</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-1.2,1-1.3,1.2-1.7,1.4c-0.3,0.2-0.8,0.4-1.2,0.8l-9.2,2.7c-0.8,3.8-1.3,7.3-2,11c-0.5,2.7-1,5.7-1.6,8.3c-0.4,0.4-0.7,0.6-1,0.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.1,0-0.2-0.1-0.2-0.1l-0.9-1.6c0-2.1,0.2-3.8,0.5-5.5c0.2-0.9,0.3-1.9,0.4-2.9l0.8-4c0.1-0.6,0.2-1.3,0.3-2</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.2-1,0.3-1.7,0.4-2.7c-0.8,0.2-1.6,0.4-2.3,0.6l-2,0.7c-1.9,0.6-3.7,1.2-5.5,2.4c-1.4,0-2.5-0.1-2.9-1.6c0-0.8,0.3-1,0.6-1.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.2-0.1,0.2-0.2,0.4-0.5c0.7-4.6,1.1-10.4,1.3-15.3c0.8-0.4,1.6-0.4,2.1-0.3c0.1,0,0.3,0.1,0.4,0.1c0.7,1.4,0.6,2.5,0.5,3.7</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.1,1.1-0.1,2.2-0.3,3.2v0.8c-0.1,1.8-0.3,3.5-0.5,5.3c-0.1,0.9-0.1,0.9-0.2,1.8c1.2-0.3,2.4-0.7,3.7-1.1c1.8-0.6,3.2-1.1,5-1.5</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.3-1.6,0.6-3.4,0.8-5.1c0.5-3.3,1-6.8,1.6-10.1v-0.3c0.1-0.6,0.2-1.4,0.9-2h0.5c0.9-0.1,1.8-0.1,1.9,1.3V26.9z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M125.3,18.6c-1.1,2.2-1.2,4.5-1.4,6.9c-0.1,1.5-0.2,3.1-0.5,4.4c-0.1,1.4-0.1,2.7-0.2,4.2c0.1,1.6,0.1,3.8,0.2,5.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.2,4,0.3,8.6,0.3,12.4c0.1,1.9,0.2,3.5,0.7,5.7c-1.1,0.4-2,0.4-2.8,0.1c-1.2-1.5-2.2-3.1-3.2-4.7c-0.4-0.6-0.8-1.3-1.2-1.8</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-2.1-3.7-4.5-9.5-6.2-14.2c-0.2,2.1-0.3,4.4-0.3,6.7c0,3.7,0.2,7.5,0.4,11c0.1,2.2,0.2,4.9,0.3,6.8c-1.6,0.4-2-0.2-2.6-0.6</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.1-0.1-0.3-0.3-0.4-0.3c-0.1-1.2-0.2-2.7-0.3-3.9c-0.2-2.3-0.4-4.9-0.4-7.5c0-0.5,0.1-1.3,0.1-1.9c0.1-0.1,0.1-1.4,0.1-3.2</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0-1.1-0.1-2.3-0.1-3.4c0-1.9,0.1-3.5,0.4-4.2v-1.9l0.1-6.4c0.1-0.1,0.8-0.3,0.9-0.4c0.6-0.2,1.2-0.4,2.1,0.6</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.5,0.8,0.7,1.6,0.8,2.2c0.1,0.3,0.2,0.7,0.3,1.1c1.9,5.6,5.3,13.9,8.3,19.4c0-0.4-0.1-0.8-0.1-1.1c0-1.7-0.1-3.6-0.1-5.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.1-2.9-0.2-5.8-0.2-8.7c0-4,0.2-8,0.7-11.3c0.4-2.1,1.1-3.9,1.7-5.4c0.3-0.2,0.4-0.4,0.5-0.6l0.6-1.2L125.3,18.6z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M141.1,41.6c0,3.9-1.2,7.8-2.8,11.7c-0.9,1.7-2.2,3.9-5.2,4.7c-2.1-0.2-3.5-1.3-4.2-2.7c-0.6-4.6,1.8-8.6,4.3-12.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.2-0.3,0.4-0.7,0.6-1c0.9-0.9,1.3-2,2.4-2.7c1.7,0.2,1.8,0.8,1.7,1.9c-2.9,3.4-5.1,7.9-5.9,11.3c-0.2,1.3-0.2,2.3,0.7,2.8</span></span></span><br><span class="line"><span class="tag"><span class="string">            c2-0.5,2.9-2.7,3.6-4.3c0.8-1.9,1.6-4.4,1.9-6.9c0.2-1,0.3-1.9,0.3-2.8c0-1.1-0.1-2.2-0.2-3.4c-0.8-0.2-0.7-0.7-0.7-1.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c1.3-0.8,2.9,0,3.2,1.3C141,38.9,141.1,40.2,141.1,41.6z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M154.7,26c0.2,2.2-0.2,4.2-0.6,6.4c-0.3,1.7-0.6,3.3-0.6,5l-0.2,1.8c0.1,0,0.2-0.1,0.3-0.1c0.5-0.1,1.1-0.3,1.7-0.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c2.4-0.4,4.8-0.7,7.3-1.1c0.3,0.1,0.9,0.2,1.9,0.2l0.1,1.7c-3,0.9-5,1.4-7.4,1.7c-0.6,0.1-1.2,0.2-1.7,0.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-1.2,0.2-2.2,0.4-2.4,0.4l0.1,0.7c0.1,0.5,0.1,1.3-0.1,1.8c0.1,0.9,0,2,0,3c0,1.7,0,3.2,0.2,4.8c-0.2,0.9-0.7,2.2-2.2,2.2</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.4-0.6-0.7-1.8-0.5-2.5c-0.3-1.8-0.3-4-0.3-6.1c0-1.4-0.1-2.1,0-3.2c-1.8,0.5-3.5,1.1-5.3,2.1c-0.7,0-1.6-0.8-1.7-1.1l0.1-1.7</span></span></span><br><span class="line"><span class="tag"><span class="string">            c2.4-0.9,4.8-1.7,7.1-2.2c0.1-0.7,0.1-1.3,0.2-2.1l0.2-1.9c0.4-3.2,0.9-6.8,1.3-10.3c0.9-0.7,1.6-0.2,2,0.1l0.3,0.2L154.7,26z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M198,26.3c-1.5,0.8-2.7,1.1-3.9,1.3c-0.7,0.1-1.4,0.2-2.1,0.4c-1,0.3-1.9,0.5-2.7,0.7c-2.5,0.6-4.5,1.2-7.7,2.2</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.2,0.3-0.9,0.7-1.2,0.7c-1.1,0.2-2.6,0.2-2.9-1.4c-0.2-0.7,0.2-1.1,0.5-1.4c0.1-0.1,0.2-0.2,0.3-0.4c2.9-0.5,5.2-1.2,7.5-1.9</span></span></span><br><span class="line"><span class="tag"><span class="string">            c2.3-0.6,4.3-1.2,7.3-1.7c0.7,0.2,1.3,0.2,1.8,0.2c0.9-0.1,1.8-0.1,2.7,0.4L198,26.3z M185.2,39c1.2-0.3,2.4-0.6,3.6-0.8</span></span></span><br><span class="line"><span class="tag"><span class="string">            c3-0.9,5.4-1.4,9.2-1.9c0.1,0.1,0.2-0.1,0.2-0.1c2-0.2,3.2,0.2,5.8,0.9l-2.2,0.9c-1.2,0.4-2.3,0.8-3.3,0.9</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-3.7,0.9-6.5,1.5-9.8,2.5l-1.3,0.4h0.1c-0.9,0.3-2,0.6-2.8,1c-0.6,4.1-1.2,9.4-1.3,14l-1.7,0.6c-1.7-0.9-1.6-2.6-1.4-4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.1-1.6,0.4-3.6,0.7-5.5c0.3-1.7,0.5-2.9,0.6-4.4c-0.2-0.1-0.3-0.1-0.3-0.2c-0.6-0.3-1.1-0.5-0.8-1.6c0.5-0.5,0.8-0.7,1.3-1.1</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.1-0.1,0.1-0.2,0.3-0.3c0.2-0.9,0.2-1.7,0.4-2.4c0.2-1.1,0.3-2.3,0.4-3.4c0.1-0.6,0.1-1.4,0.2-2c0.9-1.3,1.6-0.7,2-0.1</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.2,0.2,0.2,0.3,0.8,0.3c0.4,1.5,0.1,2.3-0.1,3.3c-0.1,0.7-0.3,1.4-0.3,1.8C185.1,38.5,185.2,38.6,185.2,39z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M213,41.6c0,3.9-1.2,7.8-2.8,11.7c-0.9,1.7-2.2,3.9-5.2,4.7c-2.1-0.2-3.5-1.3-4.2-2.7c-0.6-4.6,1.8-8.6,4.3-12.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.2-0.3,0.4-0.7,0.6-1c0.9-0.9,1.3-2,2.4-2.7c1.7,0.2,2.2,0.9,1.7,1.9c-2.9,3.4-5.1,7.9-5.9,11.3c-0.2,1.3-0.2,2.3,0.7,2.8</span></span></span><br><span class="line"><span class="tag"><span class="string">            c2-0.5,2.9-2.7,3.6-4.3c0.8-1.9,1.6-4.4,1.9-6.9c0.2-1,0.3-1.9,0.3-2.8c0-1.1-0.1-2.2-0.2-3.4c-0.8-0.2-0.7-0.7-0.7-1.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c1.3-0.8,2.9,0,3.2,1.3C212.9,38.9,213,40.2,213,41.6z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M229.5,34.8c-0.2,1.1-0.3,2.4-0.6,3.7c-0.4,2.7-1,5.8-1,8.6c0,3.2,0.7,6.3,2.8,9.2c-2.2,2-3.2,0-3.9-1.4l-0.1-0.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-1.1-1.8-1.4-4.5-1.4-7.1c-0.5,1-1.1,1.8-1.4,2.4c-0.1,0.2-0.3,0.5-0.8,1c-0.9,0.8-1.9,1.7-3.3,1.6c-1.3-0.6-2.3-1.2-2.9-2.8</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.4-1.2-0.5-2.9-0.5-4.5c0-1.8,0.2-3.5,0.4-5.3c0.1-1.1,0.3-2.2,0.3-3.9c0.9-0.3,1.6-0.5,2.6,0.8c0,1.6-0.1,3-0.2,4.4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.2,1.4-0.3,2.9-0.3,4.2c0,0.9,0.1,1.8,0.3,2.8c0.1,0.4,0.4,1.2,0.8,1.4c0.9-0.2,1.5-1.1,1.9-1.9c1.8-2.7,3.1-5.9,4-9.1</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.1-0.5,0.2-1,0.2-1.5c0.1-1.3,0.3-2.6,1.5-3.5l0.3,0.1c0.5,0.2,0.9,0.2,1.3,0.7L229.5,34.8z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M244.5,36.4c0.2,1.1,0.3,2.3,0.3,3.5c0,1.6-0.2,3.3-0.4,4.9c-0.1,1-0.3,2-0.3,3l-0.7,7.3c0.4-1.2,0.8-2.9,1.2-4</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.1-0.5,0.3-1,0.4-1.4c0.7-3.1,1.4-6.5,2.4-9.5c0.2-0.4,0.8-1.6,0.7-1.3c0.7-1.4,0.9-1.8,1.7-2.2c1.1,0,1.8,0.6,2.5,1.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.6,2.5,0.8,4.5,1.2,6.8c0.4,3.2,0.8,6.4,1.8,9.1c0.1,0.1,0.4-0.2,0.8-0.7h1.4c-0.2,1.3-0.7,2.7-1.9,3.2</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-1.1,0.4-2.6-0.5-2.9-1.8c-0.7-2.5-1.2-5.9-1.7-8.9c-0.3-1.9-0.4-2.9-0.8-4.9c-0.9,2.1-1.4,4.7-1.9,7.3c-0.6,2.5-1.2,5.4-2.2,8</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.6,1.6-1.4,3-2.4,3.9c-1.9-0.1-2.2-1.4-2.5-2.7c-0.1-0.2-0.2-0.6-0.2-0.8c-0.1-3.3,0.3-6.6,0.7-9.8c0.2-2.3,0.6-4.7,0.7-7.1</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-3.8,3.6-6.9,8.1-7.5,13.4l-1.4,0.8c-0.8-0.4-0.8-0.6-0.9-0.9c0-0.2-0.2-0.4-0.5-0.7c0.1-1.6,0.6-2.5,1-3.5</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.4-0.9,0.6-1.6,0.8-2.2c1.8-3.4,4.2-6.9,7.3-9.4c0.2-0.1,0.4-0.3,0.6-0.5c0.8-0.9,1.9-1.9,2.9-0.5L244.5,36.4z&quot;</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M275.4,26.1c-2.3,5.8-2.8,14.2-3,18.7c-0.1,1.3-0.1,2.7-0.1,4c0,1.9,0,3.3,0.2,5.1c3-0.3,5.6-0.5,8-1.1</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.5,0,0.9,0.3,1.4,0.6l1.2,0.8c-3.5,1.2-6.5,1.9-10.4,2.4c0,0.2,0.1,0.4,0.1,0.6c0.1,1,0.2,1.8-0.7,2.7c-1.7,0-2.3-1.4-2.4-3</span></span></span><br><span class="line"><span class="tag"><span class="string">            c-0.6,0-1.4-0.1-1.9-0.2c-2.4,0-5.3-0.6-7.3-2.6c-0.5-0.9-0.9-2-0.6-3.2c0.6-1.3,1.4-2.7,2.5-3.8c1.7-1.3,4.2-3,7-2.5</span></span></span><br><span class="line"><span class="tag"><span class="string">            c0.1-0.9,0.1-1.6,0.2-2.4c0.3-3.5,0.7-7.6,1.6-12.4c0.2-1,0.4-1.8,0.7-2.7c0.3-0.9,0.6-1.9,0.8-3.2c1.3,0.3,2.5,0.7,2.8,1.9</span></span></span><br><span class="line"><span class="tag"><span class="string">            L275.4,26.1z M269.1,47.3c-2.9-0.5-5.9,2.2-6.6,4.8c0.9,1.8,4.2,2,6.8,2c-0.1-1.2-0.1-2.7-0.1-4.3C269.2,49,269.2,48.2,269.1,47.3</span></span></span><br><span class="line"><span class="tag"><span class="string">            z&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">g</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>인프런 SVG 마스터<br><a target="_blank" rel="noopener" href="https://www.inflearn.com/course/mastering-svg">https://www.inflearn.com/course/mastering-svg</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/26/svg-exercise002/" data-id="cm4wfofgh00n3jp0a8oeadn33"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SVG/" rel="tag">SVG</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exercise/" rel="tag">exercise</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/27/svg-exercise003/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            SVG SMIL 애니메이션 Morphing 효과
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/25/svg-exercise001/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">SVG 돋보기</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

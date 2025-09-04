@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    mySQL 데이터 분석 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-sql-data-analysis" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  mySQL 데이터 분석
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/02/07/sql-data-analysis/" class="article-date">
+  <time datetime="2022-02-07T12:59:07.000Z" itemprop="datePublished">2022-02-07</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Data-Base/">Data Base</a> / <a class="article-category-link" href="/categories/Data-Base/SQL/">SQL</a> / <a class="article-category-link" href="/categories/Data-Base/SQL/mySQL/">mySQL</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h2 id="집계함수-Aggregate-Function"><a href="#집계함수-Aggregate-Function" class="headerlink" title="집계함수 (Aggregate Function)"></a>집계함수 (Aggregate Function)</h2><ul>
+<li>어떤 컬럼의 값들을 대상으로 원하는 특징값을 구해주는 함수.</li>
+<li>특정 컬럼의 여러 row의 값들을 동시에 고려해서 실행되는 함수.</li>
+<li>그루핑을 통해 생성된 각 그룹의 수치적인 특성을 구하는 함수.</li>
+</ul>
+<a id="more"></a>
+
+<ul>
+<li><p><code>COUNT</code>: null의 갯수는 제외하고 조회한다.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(email) <span class="keyword">FROM</span> main.member;</span><br><span class="line"><span class="keyword">SELECT</span> height <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>*</code>: 전체 row 수를 조회해준다.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>MAX</code>: 최댓값을 구한다.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MAX</span>(height) <span class="keyword">FROM</span> main.member; </span><br></pre></td></tr></table></figure></li>
+<li><p><code>MIN</code>: 최솟값을 구한다.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MIN</span>(height) <span class="keyword">FROM</span> main.member; </span><br></pre></td></tr></table></figure></li>
+<li><p><code>AVG</code>: 평균값을 구한다. NULL은 제외하여 평군을 구함.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(height) <span class="keyword">FROM</span> main.member; </span><br></pre></td></tr></table></figure></li>
+<li><p><code>SUM</code>: 합계 함수</p>
+</li>
+<li><p><code>STD</code>: 표준편차 함수</p>
+</li>
+</ul>
+<h2 id="산술함수-Mathematical-Function"><a href="#산술함수-Mathematical-Function" class="headerlink" title="산술함수 (Mathematical Function)"></a>산술함수 (Mathematical Function)</h2><blockquote>
+<p>특정 컬럼의 각 row의 값마다 실행되는 함수</p>
+</blockquote>
+<ul>
+<li><code>ABS</code>: 절대값을 구하는 함수</li>
+<li><code>SQRT</code>: 제곱근을 구하는 함수</li>
+<li><code>CEIL</code>: 올림 함수</li>
+<li><code>FLOOR</code>: 내림 함수</li>
+<li><code>ROUND</code>: 반올림 함수</li>
+<li><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/mathematical-functions.html">참고</a></li>
+</ul>
+<h2 id="NULL을-다루는-방법"><a href="#NULL을-다루는-방법" class="headerlink" title="NULL을 다루는 방법"></a>NULL을 다루는 방법</h2><ul>
+<li>NULL이 있는 데이터만 확인하고 싶은 경우<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> address <span class="keyword">IS</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure></li>
+<li>NULL이 없는 데이터만 확인하고 싶은 경우<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> address <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure></li>
+<li>여러 속성중 특정 값 하나라도 NULL이 있는 데이터를 보고 싶은 경우<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line">    <span class="keyword">WHERE</span> address <span class="keyword">IS</span> <span class="keyword">NULL</span></span><br><span class="line">        <span class="keyword">OR</span> weight <span class="keyword">IS</span> <span class="keyword">NULL</span></span><br><span class="line">        <span class="keyword">OR</span> height <span class="keyword">IS</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure></li>
+<li>NULL을 다른 단어로 변경하고 싶은 경우<ul>
+<li>값이 있으면 그 값 그대로, NULL이면 두번째 인자가 출력된다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    <span class="built_in">COALESCE</span>(height, <span class="string">&#x27;###&#x27;</span>),</span><br><span class="line">    <span class="built_in">COALESCE</span>(weight, <span class="string">&#x27;---&#x27;</span>),</span><br><span class="line">    <span class="built_in">COALESCE</span>(address, <span class="string">&#x27;@@@&#x27;</span>),</span><br><span class="line"><span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="NULL에-대해-알아야-하는-사실"><a href="#NULL에-대해-알아야-하는-사실" class="headerlink" title="NULL에 대해 알아야 하는 사실"></a>NULL에 대해 알아야 하는 사실</h3><ul>
+<li>IS NULL과 =NULL은 다르다.<ul>
+<li>NULL은 어떠한 값이 아니기 때문에 등호를 사용하여 비교할 수 있는 대상이 아니다. 그래서 TRUE일 수가 없다.</li>
+</ul>
+</li>
+<li>NULL은 어떤 연산을 해도 NULL이다.</li>
+<li>컬럼끼리 계산할 때 하나라도 NULL이 있으면 결과는 NULL이다.</li>
+</ul>
+<h2 id="이상한-값을-제외하고-싶다면"><a href="#이상한-값을-제외하고-싶다면" class="headerlink" title="이상한 값을 제외하고 싶다면?"></a>이상한 값을 제외하고 싶다면?</h2><ul>
+<li>제대로 필터링하지 않으면 20, 30대 타겟인 데이터베이스에 음수, 300 등의 이상한 숫자가 생길 수 있다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(age) <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> age <span class="keyword">BETWEEN</span> <span class="number">5</span> <span class="keyword">AND</span> <span class="number">100</span>;</span><br></pre></td></tr></table></figure></li>
+<li>이상한 주소를 입력한 회원들이 있을 수 있다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> address <span class="keyword">NOT</span> <span class="keyword">LIKE</span> <span class="string">&#x27;%호&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="컬럼에-alias-붙이기"><a href="#컬럼에-alias-붙이기" class="headerlink" title="컬럼에 alias 붙이기"></a>컬럼에 alias 붙이기</h2><ul>
+<li>띄어쓰기(스페이스)가 포함된 alias에는 따옴표를 붙여주어야 한다. 그렇지 않으면 스페이스를 기준으로 구문 해석이 이루어지는 SQL 특성상 에러가 발생한다.</li>
+</ul>
+<h3 id="as"><a href="#as" class="headerlink" title="as"></a>as</h3><ul>
+<li><code>AS</code>를 붙여 별칭을 붙인다.</li>
+<li><code>AS</code>를 생략하여 스페이스로 구분할 수 있지만, 가독성을 위해 <code>as</code>를 사용하는 것이 좋다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  email 이메일,</span><br><span class="line">  height <span class="keyword">AS</span> 키,</span><br><span class="line">  weight <span class="keyword">AS</span> 몸무게,</span><br><span class="line">  weight <span class="operator">/</span> ((height<span class="operator">/</span><span class="number">100</span>) <span class="operator">*</span> (height<span class="operator">/</span><span class="number">100</span>)) <span class="keyword">AS</span> BMI</span><br><span class="line"><span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="concat"><a href="#concat" class="headerlink" title="concat"></a>concat</h3><ul>
+<li>concatenate의 줄임말로 연결하다의 의미이다.</li>
+<li>괄호 안에 있는 것들을 이어서 하나의 컬럼으로 만들어준다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  email 이메일,</span><br><span class="line">  CONCAT(height, <span class="string">&#x27;cm&#x27;</span>, <span class="string">&#x27;, &#x27;</span>, weight, <span class="string">&#x27;kg&#x27;</span>) <span class="keyword">AS</span> <span class="string">&#x27;키와 몸무게&#x27;</span>,</span><br><span class="line">  weight <span class="operator">/</span> ((height<span class="operator">/</span><span class="number">100</span>) <span class="operator">*</span> (height<span class="operator">/</span><span class="number">100</span>)) <span class="keyword">AS</span> BMI</span><br><span class="line"><span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="컬럼의-값-변환해서-보기"><a href="#컬럼의-값-변환해서-보기" class="headerlink" title="컬럼의 값 변환해서 보기"></a>컬럼의 값 변환해서 보기</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  email 이메일,</span><br><span class="line">  CONCAT(height, <span class="string">&#x27;cm&#x27;</span>, <span class="string">&#x27;, &#x27;</span>, weight, <span class="string">&#x27;kg&#x27;</span>) <span class="keyword">AS</span> <span class="string">&#x27;키와 몸무게&#x27;</span>,</span><br><span class="line">  weight <span class="operator">/</span> ((height<span class="operator">/</span><span class="number">100</span>) <span class="operator">*</span> (height<span class="operator">/</span><span class="number">100</span>)) <span class="keyword">AS</span> BMI,</span><br><span class="line">  </span><br><span class="line">(<span class="keyword">CASE</span></span><br><span class="line">  <span class="keyword">WHEN</span> weight <span class="keyword">IS</span> <span class="keyword">NULL</span> <span class="keyword">OR</span> height <span class="keyword">is</span> <span class="keyword">NULL</span> <span class="keyword">THEN</span> <span class="string">&#x27;비만 여부 알 수 없음&#x27;</span></span><br><span class="line">  <span class="keyword">WHEN</span> weight <span class="operator">/</span> ((height<span class="operator">/</span><span class="number">100</span>) <span class="operator">*</span> (height<span class="operator">/</span><span class="number">100</span>)) <span class="operator">&gt;=</span> <span class="number">25</span> <span class="keyword">THEN</span> <span class="string">&#x27;과체중 또는 비만&#x27;</span></span><br><span class="line">  <span class="keyword">WHEN</span> weight <span class="operator">/</span> ((height<span class="operator">/</span><span class="number">100</span>) <span class="operator">*</span> (height<span class="operator">/</span><span class="number">100</span>)) <span class="operator">&gt;=</span> <span class="number">18.5</span></span><br><span class="line">    <span class="keyword">AND</span> weight <span class="operator">/</span> ((height<span class="operator">/</span><span class="number">100</span>) <span class="operator">*</span> (height<span class="operator">/</span><span class="number">100</span>)) <span class="operator">&lt;</span> <span class="number">25</span></span><br><span class="line">    <span class="keyword">THEN</span> <span class="string">&#x27;정상&#x27;</span></span><br><span class="line">  <span class="keyword">ELSE</span> <span class="string">&#x27;저체중&#x27;</span></span><br><span class="line"><span class="keyword">END</span>) <span class="keyword">AS</span> obesity_check</span><br><span class="line">  </span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> obesity_check <span class="keyword">ASC</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="CASE-함수의-종류"><a href="#CASE-함수의-종류" class="headerlink" title="CASE 함수의 종류"></a>CASE 함수의 종류</h2><h3 id="단순-CASE-함수"><a href="#단순-CASE-함수" class="headerlink" title="단순 CASE 함수"></a>단순 CASE 함수</h3><ul>
+<li>CASE 문 바로 뒤에 컬럼 이름을 쓰고, 그 컬럼의 값과 어떤 값이 같은지(=)를 비교하는 CASE 함수.</li>
+<li><code>ELSE 컬럼이름</code>: 해당 컬럼에 있던 모든 값을 그대로 보여달라는 의미.</li>
+<li>등호 연산(=)만 가능하다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CASE</span> 컬럼 이름 </span><br><span class="line">  <span class="keyword">WHEN</span> 값 <span class="keyword">THEN</span> 값 </span><br><span class="line">  <span class="keyword">WHEN</span> 값 <span class="keyword">THEN</span> 값</span><br><span class="line">  <span class="keyword">WHEN</span> 값 <span class="keyword">THEN</span> 값</span><br><span class="line">  <span class="keyword">ELSE</span> 값</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="검색-CASE-함수"><a href="#검색-CASE-함수" class="headerlink" title="검색 CASE 함수"></a>검색 CASE 함수</h3><ul>
+<li>일단 TRUE인 조건을 만나게되면 거기에 있는 THEN 뒤의 값을 돌려주고, CASE 함수는 종료된다.</li>
+<li>좀더 다양한 형태의 조건을 사용할 수 있다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CASE</span></span><br><span class="line">  <span class="keyword">WHEN</span> 조건<span class="number">1</span> <span class="keyword">THEN</span> 값</span><br><span class="line">  <span class="keyword">WHEN</span> 조건<span class="number">2</span> <span class="keyword">THEN</span> 값 </span><br><span class="line">  <span class="keyword">WHEN</span> 조건<span class="number">3</span> <span class="keyword">THEN</span> 값 </span><br><span class="line">  <span class="keyword">ELSE</span> 값</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="NULL을-다른-값으로-변환하는-다양한-함수"><a href="#NULL을-다른-값으로-변환하는-다양한-함수" class="headerlink" title="NULL을 다른 값으로 변환하는 다양한 함수"></a>NULL을 다른 값으로 변환하는 다양한 함수</h2><h3 id="COALESCE-함수"><a href="#COALESCE-함수" class="headerlink" title="COALESCE 함수"></a>COALESCE 함수</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COALESCE</span>(height, <span class="string">&#x27;N/A&#x27;</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COALESCE</span>(height, weight <span class="operator">*</span> <span class="number">2.3</span>, <span class="string">&#x27;N/A&#x27;</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+
+<h3 id="IFNULL-함수"><a href="#IFNULL-함수" class="headerlink" title="IFNULL 함수"></a>IFNULL 함수</h3><p>첫 번 인자가 NULL인 경우에는, 두 번째 인자를 표시하고 NULL이 아니면 해당 값을 그대로 표현</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> IFNULL(height, <span class="string">&#x27;N/A&#x27;</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+
+<h3 id="IF-함수"><a href="#IF-함수" class="headerlink" title="IF 함수"></a>IF 함수</h3><p>가장 첫 번째 인자로 어떤 조건식이 온다. 만약 그 조건식의 결과가 True라면 두 번째 인자를 리턴하고, False라면 세 번째 인자를 리턴한다.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> IF(height <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>, height, <span class="string">&#x27;N/A&#x27;</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CASE-함수"><a href="#CASE-함수" class="headerlink" title="CASE 함수"></a>CASE 함수</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  <span class="keyword">CASE</span></span><br><span class="line">    <span class="keyword">WHEN</span> height <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">THEN</span> height</span><br><span class="line">    <span class="keyword">ELSE</span> <span class="string">&#x27;N/A&#x27;</span></span><br><span class="line">  <span class="keyword">END</span></span><br><span class="line"><span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+
+<h2 id="고유값만-보기"><a href="#고유값만-보기" class="headerlink" title="고유값만 보기"></a>고유값만 보기</h2><ul>
+<li><code>DISTINCT</code>: 고유한 값<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span>(gender) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+<li><code>SUBSTRING</code>: 문자열의 일부를 추출하는 함수. 인수에는 몇번째 문자열부터 몇글자의 문자열을 추출할 것인가.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span>(<span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>)) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="고유값-개수-구하기"><a href="#고유값-개수-구하기" class="headerlink" title="고유값 개수 구하기"></a>고유값 개수 구하기</h2><ul>
+<li><code>COUNT</code> 함수는 <code>DISTINCT</code>와도 함께 사용할 수 있다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="keyword">DISTINCT</span>(gender)) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="keyword">DISTINCT</span>(<span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>))) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="문자열-관련-함수들"><a href="#문자열-관련-함수들" class="headerlink" title="문자열 관련 함수들"></a>문자열 관련 함수들</h2><h3 id="LENGTH-함수"><a href="#LENGTH-함수" class="headerlink" title="LENGTH 함수"></a>LENGTH 함수</h3><p>문자열의 길이를 구한다.</p>
+<h3 id="UPPER-LOWER-함수"><a href="#UPPER-LOWER-함수" class="headerlink" title="UPPER, LOWER 함수"></a>UPPER, LOWER 함수</h3><ul>
+<li>UPPER: 문자열을 모두 대문자로 바꿔서 보여준다.</li>
+<li>LOWER: 문자열을 모두 소문자로 바꿔서 보여준다.</li>
+</ul>
+<h3 id="LPAD-RPAD-함수"><a href="#LPAD-RPAD-함수" class="headerlink" title="LPAD, RPAD 함수"></a>LPAD, RPAD 함수</h3><ul>
+<li>문자열의 왼쪽 혹은 오른쪽을 특정 문자열로 채워주는 함수.</li>
+<li>숫자이더라도 문자열 함수 안에 인자로 넣어주면 자동으로 문자열로 형변환이 되어 계산됨.</li>
+<li>LPAD: LEFT + padding</li>
+<li>RPAD: RIGHT + padding</li>
+<li><code>LPAD(age, 10, &#39;0&#39;)</code>: age 컬럼의 값을 왼쪽에 문자 9을 붙여서 총 10자리로 만들어라는 의미.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, LPAD(age, <span class="number">10</span>, <span class="string">&#x27;0&#x27;</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="TRIM-LTRIM-RTRIM-함수"><a href="#TRIM-LTRIM-RTRIM-함수" class="headerlink" title="TRIM, LTRIM, RTRIM 함수"></a>TRIM, LTRIM, RTRIM 함수</h3><ul>
+<li>문자열에 존재하는 공백을 제거하는 함수.</li>
+<li><code>LTRIM</code>: 왼쪽 공백 삭제</li>
+<li><code>RTRIM</code>: 오른쪽 공백 삭제</li>
+<li><code>TRIM</code>: 왼쪽, 오른쪽 양쪽 다 공백 삭제</li>
+</ul>
+<h2 id="그루핑해서-보기"><a href="#그루핑해서-보기" class="headerlink" title="그루핑해서 보기"></a>그루핑해서 보기</h2><ul>
+<li><code>GROUP BY</code>를 사용하면 각 그룹에 대해서 각각 실행된다.</li>
+<li>각각의 row는 하나의 그룹을 나타낸다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> gender <span class="keyword">FROM</span> main.member <span class="keyword">GROUP</span> <span class="keyword">BY</span> gender;</span><br></pre></td></tr></table></figure></li>
+<li>COUNT 함수를 사용했을 때 그룹별 각각 조회한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> gender, <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">FROM</span> main.member <span class="keyword">GROUP</span> <span class="keyword">BY</span> gender;</span><br></pre></td></tr></table></figure></li>
+<li>SUBSTRING 함수와 함께 사용할 수 있다. → 지역별로 분리한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">as</span> regin,</span><br><span class="line">  <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>);</span><br></pre></td></tr></table></figure></li>
+<li>여러개의 컬럼을 그루핑할 수도 있다. → 같은 지역이라도 성별로 분리할 수도 있음.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">as</span> regin,</span><br><span class="line">  <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>),</span><br><span class="line">  gender;</span><br></pre></td></tr></table></figure></li>
+<li>주요 그룹들만 보고 싶을 때 HAVING을 사용한다. → 서울 지역 남성을 보고 싶을 때<blockquote>
+<p>where: 테이블에서 맨 처음 row들을 조회할 때 조건을 설정하기 위한 구문<br>having: 이미 조회된 row들을 그룹핑했을 때 생성된 그룹들중에 다시 필터링을 할 때 사용하는 구문</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">as</span> regin,</span><br><span class="line">  <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>),</span><br><span class="line">  gender</span><br><span class="line"><span class="keyword">HAVING</span></span><br><span class="line">  region <span class="operator">=</span> <span class="string">&#x27;서울&#x27;</span></span><br><span class="line">  <span class="keyword">AND</span> GENDER <span class="operator">=</span> <span class="string">&#x27;m&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+<li>NULL값도 노출하기 때문에 값이 있는 region값만 정렬하고 싶으면 IS NOT NULL을 사용한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">as</span> regin,</span><br><span class="line">  <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span></span><br><span class="line">  <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>),</span><br><span class="line">  gender</span><br><span class="line"><span class="keyword">HAVING</span> region <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span></span><br><span class="line">  region <span class="keyword">ASC</span>,</span><br><span class="line">  gender <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="GROUP-BY를-쓸-때-지켜야-하는-규칙"><a href="#GROUP-BY를-쓸-때-지켜야-하는-규칙" class="headerlink" title="GROUP BY를 쓸 때 지켜야 하는 규칙"></a>GROUP BY를 쓸 때 지켜야 하는 규칙</h3><ul>
+<li>SELECT절에는 GROUP BY 뒤에서 사용한 컬럼 또는 COUNT, MAX 같은 집계 함수만 사용할 수 있다.</li>
+<li>반대로, GROUP BY 뒤에 쓰지 않은 컬럼 이름을 SELECT절 뒤에 사용할 수 없다.</li>
+</ul>
+<p><em><strong>오류 예시</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">AS</span> region, gender, age, <span class="built_in">COUNT</span> (<span class="operator">*</span>) <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>), gender</span><br><span class="line"><span class="keyword">HAVING</span> region <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> region <span class="keyword">ASC</span>, gender <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>정상 예시</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">AS</span> region, gender, <span class="built_in">AVG</span>(age), <span class="built_in">COUNT</span> (<span class="operator">*</span>) <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>), gender</span><br><span class="line"><span class="keyword">HAVING</span> region <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> region <span class="keyword">ASC</span>, gender <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="WITH-ROLLUP"><a href="#WITH-ROLLUP" class="headerlink" title="WITH ROLLUP"></a>WITH ROLLUP</h3><ul>
+<li>세부 그룹들을 좀 더 큰 단위의 그룹으로 중간중간에 합쳐준다.</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>) <span class="keyword">as</span> region, gender, <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="built_in">SUBSTRING</span>(address, <span class="number">1</span>, <span class="number">2</span>), gender <span class="keyword">WITH</span> <span class="keyword">ROLLUP</span></span><br><span class="line"><span class="keyword">HAVING</span> region <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> region <span class="keyword">ASC</span>, gender <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>GROUP BY 뒤 기준 순서에 따라 WITH ROLLUP의 결과도 달라진다.</li>
+<li>NULL임을 나타내기 위해 쓰인 NULL vs. 부분 총계를 나타내기 위해 쓰인 NULL</li>
+</ol>
+<h2 id="SELECT문의-실행-순서"><a href="#SELECT문의-실행-순서" class="headerlink" title="SELECT문의 실행 순서"></a>SELECT문의 실행 순서</h2><h3 id="앞에-나와야-하는-순서"><a href="#앞에-나와야-하는-순서" class="headerlink" title="앞에 나와야 하는 순서"></a>앞에 나와야 하는 순서</h3><ol>
+<li>SELECT</li>
+<li>FROM</li>
+<li>WHERE</li>
+<li>GROUP BY</li>
+<li>HAVING</li>
+<li>ORDER BY</li>
+<li>LIMIT</li>
+</ol>
+<h3 id="해석-및-실행되는-순서"><a href="#해석-및-실행되는-순서" class="headerlink" title="해석 및 실행되는 순서"></a>해석 및 실행되는 순서</h3><ol>
+<li>FROM: 어느 테이블을 대상으로 할 것인지를 먼저 결정한다.</li>
+<li>WHERE: 해당 테이블에서 특정 조건(들)을 만족하는 row들만 선별한다.</li>
+<li>GROUP BY: row들을 그루핑 기준대로 그루핑된다. 하나의 그룹은 하나의 row로 표현한다.</li>
+<li>HAVING: 그루핑 작업 후 생성된 여러 그룹들 중에서, 특정 조건(들)을 만족하는 그룹들만 선별한다.</li>
+<li>SELECT: 모든 컬럼 또는 특정 컬럼들을 조회한다.</li>
+<li>ORDER BY: 각 row를 특정 기준에 따라서 정렬한다.</li>
+<li>LIMIT: 이전 단계까지 조회된 row들 중 일부 row들만을 추린다.</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2022/02/07/sql-data-analysis/" data-id="cm4wfofgd00ljjp0a6t324rjc"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Base/" rel="tag">Data Base</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/" rel="tag">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/data-analysis/" rel="tag">data analysis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mySQL/" rel="tag">mySQL</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2022/02/13/sql-table-join/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            mySQL 테이블 조인
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/02/06/sql-data-query/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">mySQL 데이터 조회</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

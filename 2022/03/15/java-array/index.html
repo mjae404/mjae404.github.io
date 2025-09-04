@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JAVA 배열 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-java-array" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JAVA 배열
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/03/15/java-array/" class="article-date">
+  <time datetime="2022-03-15T03:13:13.000Z" itemprop="datePublished">2022-03-15</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Java/">Java</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>배열을 사용하면 변수 하나에 값을 여러개 담을 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="배열-생성"><a href="#배열-생성" class="headerlink" title="배열 생성"></a>배열 생성</h2><ul>
+<li>선언과 동시에 빈 배열 생성<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] intArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br></pre></td></tr></table></figure></li>
+<li>선언 후 배열 생성<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] intArray;</span><br><span class="line">intArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>]; <span class="comment">// 크기 5의 빈 배열</span></span><br></pre></td></tr></table></figure></li>
+<li>리터럴로 배열 생성<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] intArray = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span>[] intArray;</span><br><span class="line">intArray = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;; <span class="comment">// 오류</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="배열-사용"><a href="#배열-사용" class="headerlink" title="배열 사용"></a>배열 사용</h2><ul>
+<li>값을 대입할 때<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">intArray[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">intArray[<span class="number">1</span>] = <span class="number">2</span>;</span><br></pre></td></tr></table></figure></li>
+<li>값을 읽을 때<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(intArray[<span class="number">0</span>] + intArray[<span class="number">1</span>]); <span class="comment">// 1 + 2</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="앨리어싱-Aliasing"><a href="#앨리어싱-Aliasing" class="headerlink" title="앨리어싱 (Aliasing)"></a>앨리어싱 (Aliasing)</h3><ul>
+<li><code>arr1</code>을 <code>arr2</code>에 지정해주었을 때 두 변수는 같은 주서를 가리키게 된다.</li>
+<li><code>arr2</code>를 <code>arr1</code>의 __Alias(가명)__이라고 할 수 있다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr1 = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line"><span class="keyword">int</span>[] arr2 = arr1;</span><br><span class="line"></span><br><span class="line">System.out.println(arr2[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Clone"><a href="#Clone" class="headerlink" title="Clone"></a>Clone</h3><ul>
+<li><code>arr1</code>을 <code>arr2</code>에 새롭게 복사한다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr1 = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line"><span class="keyword">int</span>[] arr2 = arr1.clone();</span><br><span class="line"></span><br><span class="line">arr1[<span class="number">0</span>] = <span class="number">100</span>;</span><br><span class="line">System.out.println(arr1[<span class="number">0</span>]); <span class="comment">// 100</span></span><br><span class="line">System.out.println(arr2[<span class="number">0</span>]); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="for-each"><a href="#for-each" class="headerlink" title="for-each"></a>for-each</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i : intArray) &#123;</span><br><span class="line">    System.out.println(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">String[] fruitsArray = <span class="keyword">new</span> String[<span class="number">5</span>];</span><br><span class="line"></span><br><span class="line">fruitsArray[<span class="number">0</span>] = <span class="string">&quot;딸기&quot;</span>;</span><br><span class="line">fruitsArray[<span class="number">1</span>] = <span class="string">&quot;당근&quot;</span>;</span><br><span class="line">fruitsArray[<span class="number">2</span>] = <span class="string">&quot;수박&quot;</span>;</span><br><span class="line">fruitsArray[<span class="number">3</span>] = <span class="string">&quot;참외&quot;</span>;</span><br><span class="line">fruitsArray[<span class="number">4</span>] = <span class="string">&quot;메론&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (String fruit : fruitsArray) &#123;</span><br><span class="line">    System.out.println(fruit);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">딸기</span><br><span class="line">당근</span><br><span class="line">수박</span><br><span class="line">참외</span><br><span class="line">메론</span><br></pre></td></tr></table></figure>
+
+<h2 id="다중배열"><a href="#다중배열" class="headerlink" title="다중배열"></a>다중배열</h2><h3 id="초기값-선언"><a href="#초기값-선언" class="headerlink" title="초기값 선언"></a>초기값 선언</h3><ul>
+<li>2차원 구조는 다중배열로 선언한다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] multiArray;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] multiArray = &#123;</span><br><span class="line">    &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;,</span><br><span class="line">    &#123;<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>&#125;,</span><br><span class="line">    &#123;<span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="생성"><a href="#생성" class="headerlink" title="생성"></a>생성</h3><ul>
+<li>선언과 생성만 하기 위해서는 각 대괄호 사이에 사이즈를 삽입한다.</li>
+<li>일반적으로 ‘행(줄)’을 첫 번째 대괄호에, ‘열(칸)’을 두 번째 대괄호에 넣는다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] multiArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>][<span class="number">4</span>];</span><br></pre></td></tr></table></figure>
+
+<h3 id="사용"><a href="#사용" class="headerlink" title="사용"></a>사용</h3><ul>
+<li>예시로 든 <code>multiArray[0]</code>, <code>multiArray[1]</code>, <code>multiArray[3]</code>은 <code>int[4]</code>의 자료형을 갖는다.</li>
+<li>그렇기 때문에 일반적인 배열 탐색법으로 탐색할 수 있다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; multiArray[<span class="number">0</span>].length; i++) &#123;</span><br><span class="line">    multiarray[<span class="number">0</span>][i] = <span class="number">1</span> + i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; multiArray[<span class="number">1</span>].length; i++) &#123;</span><br><span class="line">    multiarray[<span class="number">1</span>][i] = <span class="number">5</span> + i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; multiArray[<span class="number">2</span>].length; i++) &#123;</span><br><span class="line">    multiarray[<span class="number">2</span>][i] = <span class="number">9</span> + i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>중첩 반복문</strong></em></p>
+<ul>
+<li>중첩 반복문을 사용하면 보다 깔끔하게 사용할 수 있다.</li>
+<li>여기서 <code>multiArray[i][j].length</code>는 전체 자리 수(12)가 아닌 행(줄)의 수(3)이다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; multiArray.length; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; multiArray[i].length; j++) &#123;</span><br><span class="line">        multiArray[i][j] = (i * <span class="number">4</span> + <span class="number">1</span>) + j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="연습문제"><a href="#연습문제" class="headerlink" title="연습문제"></a>연습문제</h2><h3 id="배열연습"><a href="#배열연습" class="headerlink" title="배열연습"></a>배열연습</h3><p>(1) 크기가 30인 정수형 배열 intArray를 만들어 주세요.<br>(2) 배열의 첫 번째(0번 인덱스) 칸부터 1001, 1002, 1003, …, 1029, 1030을 순서대로 넣어주세요.<br>(3) 크기가 4인 문자열형 배열 remainders를 만들어 “Zero”, “One”, “Two”, “Three”를 순서대로 넣어주세요.<br>(4) intArray 배열에 담긴 각 값을 4로 나눈 나머지를 인덱스로 생각하고, remainders 배열에서 그 인덱스에 위치한 단어를 출력해주세요.  이 때 반드시 ‘배열 정리’ 노트에 있는, for- each문을 활용해주세요!!</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] intArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">30</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;intArray.length; i++) &#123;</span><br><span class="line">            intArray[i] = i + <span class="number">1001</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        String[] remainders = &#123;<span class="string">&quot;Zero&quot;</span>, <span class="string">&quot;One&quot;</span>, <span class="string">&quot;Two&quot;</span>, <span class="string">&quot;Three&quot;</span>&#125;;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> num : intArray) &#123;</span><br><span class="line">            System.out.println(remainders[num % <span class="number">4</span>]);</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="DNA-염기-서열-분석"><a href="#DNA-염기-서열-분석" class="headerlink" title="DNA 염기 서열 분석"></a>DNA 염기 서열 분석</h3><p>DNA 염기 서열은 생물의 유전 성질을 결정하는 매우 중요한 역할을 가지고 있습니다. 템플릿에 주어진 염기 서열에서 TAGG, CCAG, AGCC가 총 몇 번 등장하는지 세어봅시다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String dna = <span class="string">&quot;GATCCGCCCGCCTCGGCCTCCCAAAGTGCTGGGATTACAGGTGTGAGCCA&quot;</span></span><br><span class="line">                   + <span class="string">&quot;CCACGCCCGGCTAATTTTTATTTATTTATTTAAAGACAGAGTCTCACTCT&quot;</span></span><br><span class="line">                   + <span class="string">&quot;GTCACTCAGGCTAGAGTGCAGTGGCACCATCTCAGCTCACTGCAGCCTTG&quot;</span></span><br><span class="line">                   + <span class="string">&quot;ACCTCCCTGGGCTCCGGTGATTTCACCCTCCCAAGTAGCTAGGACTACAG&quot;</span></span><br><span class="line">                   + <span class="string">&quot;GCACATGCCACGACACCCAGCTAATTTTTTATTTTCTGTGAAGTCAAGGT&quot;</span></span><br><span class="line">                   + <span class="string">&quot;CTTGCTACGTTGCCCATGCTGGTATCAAACCCCTGGGCTCAATCAATCCT&quot;</span></span><br><span class="line">                   + <span class="string">&quot;TCCACCTCAGCCTCCCCAAGTATTGGGGTTACAGGCATGAGCTACCACAC&quot;</span></span><br><span class="line">                   + <span class="string">&quot;TCAGCCCTAGCCTACTTGAAACGTGTTCAGAGCATTTAAGTTACCCTACA&quot;</span></span><br><span class="line">                   + <span class="string">&quot;GTTGGGCAAAGTCATCTAACACAAAGCCCTTTTTATAGTAATAAAATGTT&quot;</span></span><br><span class="line">                   + <span class="string">&quot;GTATATCTCATGTGATTTATTGAATATTGTTACTGAAAGTGAGAAACAGC&quot;</span></span><br><span class="line">                   + <span class="string">&quot;ATGGTTGCATGAAAGGAGGCACAGTCGAGCCAGGCACAGCCTGGGCGCAG&quot;</span></span><br><span class="line">                   + <span class="string">&quot;AGCGAGACTCAAAAAAAGAAAAGGCCAGGCGCACTGGCTCACGCCTGTAA&quot;</span></span><br><span class="line">                   + <span class="string">&quot;TCCCAGCATTTCGGGAGGCTGAGGCGGGTGGATCACCTGAGGTCAGGAGT&quot;</span></span><br><span class="line">                   + <span class="string">&quot;TCAAGACCAGCCTAGCCAACATGGTGAAACCCCGTCTCTACTAAAATACA&quot;</span></span><br><span class="line">                   + <span class="string">&quot;AAAATTAACCGGGCGTGATGGCAGGTGCCTGTAATCCCAGCTACTTGGGA&quot;</span></span><br><span class="line">                   + <span class="string">&quot;GGCTGAGGCAGGAGAATCGCTTGAACCAGGAGGCGGAGGTTGCAGGGAGC&quot;</span></span><br><span class="line">                   + <span class="string">&quot;CAAGATGGCGCCACTGCACTCCAGCCTGGGCGATAGAGTGAGACTCCGTC&quot;</span></span><br><span class="line">                   + <span class="string">&quot;TCAGAAAAAAAAGAAAAGAAACGAGGCACAGTCGCATGCACATGTAGTCC&quot;</span></span><br><span class="line">                   + <span class="string">&quot;CAGTTACTTGAGAGGCTAAGGCAGGAGGATCTCTTGAGCCCAAGAGTTTG&quot;</span></span><br><span class="line">                   + <span class="string">&quot;AGTCCAGCCTGAACAACATAGCAAGACATCATCTCTAAAATTTAAAAAAG&quot;</span></span><br><span class="line">                   + <span class="string">&quot;GGCCGGGCACAGTGGCTCACACCTGTAATCCCAGCACTTTGGGAGGTGGA&quot;</span></span><br><span class="line">                   + <span class="string">&quot;GGTGGGTAGATCACCTGACGTCAGGAGTTGGAAACCAGCCTGGCTAACAT&quot;</span>;</span><br><span class="line">        <span class="keyword">char</span>[] charArray = dna.toCharArray();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// AGG, CCAG, AGCC가 각각 몇 개씩 있는지 담을 변수가 필요</span></span><br><span class="line">        <span class="keyword">int</span> TAGG = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> CCAG = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> AGCC = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 검사할 문자 4개를 담을 4칸짜리 문자 배열(char[])을 선언</span></span><br><span class="line">        <span class="keyword">char</span>[] current = <span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">4</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// charArray를 탐색할 for문</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; charArray.length - <span class="number">3</span>; i++) &#123;</span><br><span class="line">            <span class="comment">// 반복문 내에 또 반복문을 만들어 검사해야 할 문자열 4개를 순서대로 채워 넣음</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; current.length; k++) &#123;</span><br><span class="line">                current[k] = charArray[i + k];</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// char[]을 String으로 변환</span></span><br><span class="line">            String seq = <span class="keyword">new</span> String(current);</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// 염기서열 세기</span></span><br><span class="line">            <span class="keyword">switch</span> (seq) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&quot;TAGG&quot;</span>:</span><br><span class="line">                    TAGG++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&quot;CCAG&quot;</span>:</span><br><span class="line">                    CCAG++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&quot;AGCC&quot;</span>:</span><br><span class="line">                    AGCC++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        System.out.println(<span class="string">&quot;TAGG: &quot;</span> + TAGG);</span><br><span class="line">        System.out.println(<span class="string">&quot;CCAG: &quot;</span> + CCAG);</span><br><span class="line">        System.out.println(<span class="string">&quot;AGCC: &quot;</span> + AGCC);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>charArray를 탐색할 for문</strong></p>
+<ol>
+<li>int i = 0에서 시작</li>
+<li>i &lt; charArray.length - 3까지만 탐색</li>
+</ol>
+<p>문자열의 첫 줄(“GATCCGCCCGCCTCGGCCTCCCAAAGTGCTGGGATTACAGGTGTGAGCCA”)을 “GATC”(인덱스 0 ~ 3) / “ATCC”(인덱스 1 ~ 4) / “TCCG”(2 ~ 5) / “CCGC”(3 ~ 6), … 이런 식으로 확인한다. 그러다가 맨 마지막 줄(“GGTGGGTAGATCACCTGACGTCAGGAGTTGGAAACCAGCCTGGCTAACAT”)에서 “ACAT”까지만 확인 필요하다. “ACAT”은 인덱스 <code>length - 4</code>부터 <code>length - 1</code>까지이기 때문에 종결식을 <code>i &lt; charArray.length - 3</code>으로 잡아야 한다.</p>
+</blockquote>
+<blockquote>
+<p><strong>검사할 문자 4개를 담을 4칸짜리 문자 배열(char[])을 선언</strong><br>for문 안에서 배열을 선언하는 이유는 반복문을 벗어나면 더 이상 사용할 일이 없기 때문이다.<br>하지만 배열을 새로 만드는 작업 비용이 클 수 있기 때문에 여러번 반복하여 만들지 않고 for문 밖에서 한 번 만들어 재사용하는 것이 나을 수 있다.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 자바 기초</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2022/03/15/java-array/" data-id="cm4wfoff70057jp0a6ksy7wj5"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/array/" rel="tag">array</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2022/03/17/java-oop/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JAVA 객체 지향 프로그래밍
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/03/14/java-control-flow-statement/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JAVA 조건문과 반복문</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

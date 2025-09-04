@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    CSS 최적화 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-css-optimization" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS 최적화
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/16/css-optimization/" class="article-date">
+  <time datetime="2021-12-16T02:12:40.000Z" itemprop="datePublished">2021-12-16</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/CSS/">CSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <ul>
+<li>사용하지 않는 CSS 제거</li>
+<li>렌더 차단 리소스 제거</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="사용하지-않는-CSS"><a href="#사용하지-않는-CSS" class="headerlink" title="사용하지 않는 CSS"></a>사용하지 않는 CSS</h2><ul>
+<li>css는 페이지 렌더링을 차단하는 리소스. 브라우저가 스타일을 계산하는데 잠재적으로 더 많은 시간을 소비한다.</li>
+<li>구글 라이트하우스는 2KB 이상 미사용 CSS가 포함된 파일을 검출한다.</li>
+</ul>
+<h2 id="렌더-차단-리소스"><a href="#렌더-차단-리소스" class="headerlink" title="렌더 차단 리소스"></a>렌더 차단 리소스</h2><ul>
+<li>브라우저가 외부 리소스를 다운로드 하고 파싱하는 동안 페이지 콘텐츠를 파싱하거나 렌더링하지 않기 때문에 페이지 표시 속도 저하의 원인이 된다.</li>
+<li>unused css는 render blocking을 가중시키는 요인.</li>
+<li>렌더 블로킹 리소스 표시 조건<ul>
+<li><code>defer</code>, <code>async</code> 속성이 없는 <code>head</code> 요소의 <code>script</code> 태그</li>
+<li><code>media</code> 속성과 <code>&lt;link rel=&quot;stylesheet&quot;&gt;</code> 태그</li>
+</ul>
+</li>
+</ul>
+<h3 id="렌더-차단-스크립트"><a href="#렌더-차단-스크립트" class="headerlink" title="렌더 차단 스크립트"></a>렌더 차단 스크립트</h3><ol>
+<li>필수 스크립트는 html에 <code>&lt;script&gt;</code> 형식으로 작성</li>
+<li>기타 스크립트는 <code>&lt;/body&gt;</code> 종료 태그 직전에 선언</li>
+<li>마지막에 파싱해도 문제 없으면 <code>defer</code> 속성</li>
+<li>가능한 빠른 시점에 실행 필요하면 <code>async</code> 속성</li>
+</ol>
+<h3 id="렌더-차단-lt-link-rel-quot-stylesheet-quot-gt"><a href="#렌더-차단-lt-link-rel-quot-stylesheet-quot-gt" class="headerlink" title="렌더 차단 &lt;link rel=&quot;stylesheet&quot;&gt;"></a>렌더 차단 <code>&lt;link rel=&quot;stylesheet&quot;&gt;</code></h3><ul>
+<li><code>media</code> 속성이 없거나 값이 <code>all</code>이면 렌더 차단 리소스</li>
+</ul>
+<ol>
+<li>반응형 웹인 경우 해상도 구간 별로 css 파일을 분리하고 <code>media</code> 속성으로 분기<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;*.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">media</span>=<span class="string">&quot;max-width:639px&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;*.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">media</span>=<span class="string">&quot;min-width:640px&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>필수 스타일은 페이지 <code>&lt;head&gt;</code>에 <code>&lt;style&gt;</code>형식으로 작성<ul>
+<li>지연 스타일은 <code>&lt;link rel=&quot;preload&quot;&gt;</code> 속성으로 병렬 로딩후 지연 적용</li>
+<li><code>this.onload=null</code> 할당 이유: <code>rel</code> 속성을 변경할 때 일부 브라우저가 다시 <code>onload</code> 실행하는 것을 방어하는 코드</li>
+<li>외부 스타일 파일이 렌더링(FCP)을 차단하지 않음<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="comment">/* 필수 스타일 여기 */</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;preload&quot;</span> <span class="attr">as</span>=<span class="string">&quot;style&quot;</span> <span class="attr">href</span>=<span class="string">&quot;x.css&quot;</span> <span class="attr">onload</span>=<span class="string">&quot;this.onload=null;this.rel=&#x27;stylesheet&#x27;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/16/css-optimization/" data-id="cm4wfofez001rjp0a6ghzdxof"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-red/" rel="tag">the red</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/17/html-largest-contentful-paint/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            HTML 덩어리 콘텐츠 빨리 그리기
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/15/css-drawing/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">CSS로 그리기</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

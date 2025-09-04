@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    PYTHON 택이의 우승상금 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-python-exercise006" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  PYTHON 택이의 우승상금
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/05/python-exercise006/" class="article-date">
+  <time datetime="2022-01-05T04:53:31.000Z" itemprop="datePublished">2022-01-05</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/Python/">Python</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>1988년 쌍문동에 사는 택이는 바둑대회 우승 상금으로 5000만원을 받았습니다. 하지만 바둑 외에는 아는게 없으니, 이웃 어른들에게 이 돈으로 무엇을 해야할지 물어보기로 하였습니다. 동일 아저씨나 미란 아주머니 중 누구의 말을 듣는 것이 좋을지 판단해보세요.</p>
+<a id="more"></a>
+
+<p>은행에서 근무하는 동일 아저씨는, 은행에 돈을 맡겨서 매년 이자로 12%씩 받는 것을 추천하셨습니다. 1년 후인 1989년에는, 5000만원의 12% 이자인 600만원이 더해져 5600만원이 된다고 하면서요. 이 이야기를 들은 미란 아주머니는 고작 12%때문에 생돈을 은행에 넣어 놓느냐며, 얼마 전 지어진 매매가 5000만원짜리 은마아파트를 살 것을 추천하셨습니다. 2016년 현재 은마아파트의 매매가는 11억원입니다.</p>
+<p><strong>while문과 if문을 사용해 1988년 은행에 5000만원을 넣었을 경우 2016년에 얼마나 있을지 계산</strong><sup style="margin:0 5px;">1</sup>하여, <strong>2016년에 은행에 저축해 둔 금액이 더 크다면, <code>*원 차이로 동일 아저씨의 말씀이 맞습니다.</code>가 출력</strong><sup style="margin:0 5px;">2</sup>되게 하세요. 하지만 <strong>은마 아파트의 가격이 더 크다면, <code>*원 차이로 미란 아주머니의 말씀이 맞습니다.</code>가 출력</strong><sup style="margin:0 5px;">3</sup>되게 하세요. (단 이자율은 매년 12%로 같다고 가정합니다.)</p>
+<!-- more -->
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">94193324원 차이로 동일 아저씨의 말씀이 맞습니다.</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">INTEREST_RATE = <span class="number">0.12</span></span><br><span class="line">APARTMENT_PRICE = <span class="number">1100000000</span></span><br><span class="line"></span><br><span class="line">amount = <span class="number">50000000</span></span><br><span class="line">year = <span class="number">1988</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> year &lt; <span class="number">2016</span>:</span><br><span class="line">    amount = amount * (<span class="number">1</span> + INTEREST_RATE)</span><br><span class="line">    year = year + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> amount &gt; APARTMENT_PRICE:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;%d원 차이로 동일 아저씨 말씀이 맞습니다.&quot;</span> %(amount-APARTMENT_PRICE))</span><br><span class="line"><span class="keyword">elif</span> amount &lt; APARTMENT_PRICE:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;%d원 차이로 미란 아주머니 말씀이 맞습니다.&quot;</span> %(APARTMENT_PRICE-amount))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;똑같습니다.&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2022/01/05/python-exercise006/" data-id="cm4wfofgb00k8jp0a619r4lth"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exercise/" rel="tag">exercise</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2022/01/07/python-exercise007/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            PYTHON 구구단
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/01/03/python-exercise005/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">PYTHON 이상한 수학 문제 II</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 연습문제 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-exercise019" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 연습문제
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/09/js-exercise019/" class="article-date">
+  <time datetime="2022-01-09T07:38:05.000Z" itemprop="datePublished">2022-01-09</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/exercise/">exercise</a> / <a class="article-category-link" href="/categories/exercise/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>연습문제.</p>
+<a id="more"></a>
+
+<h2 id="오늘-날짜-출력"><a href="#오늘-날짜-출력" class="headerlink" title="오늘 날짜 출력"></a>오늘 날짜 출력</h2><p>오늘 0000년00월00일 요일 시:분:초 순으로 날짜 객체로부터 받아와서 콘솔창에 출력하라. (요일정보는 배열데이터를 활용할 것)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="keyword">const</span> year = today.getFullYear();</span><br><span class="line"><span class="keyword">const</span> month = today.getMonth()+<span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> date = today.getDate();</span><br><span class="line"><span class="keyword">const</span> dayLabel = today.getDay();</span><br><span class="line"><span class="keyword">const</span> hours = today.getHours();</span><br><span class="line"><span class="keyword">const</span> minutes = today.getMinutes();</span><br><span class="line"><span class="keyword">const</span> seconds = today.getSeconds();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getTodayLabel</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> week = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">&#x27;일요일&#x27;</span>, <span class="string">&#x27;월요일&#x27;</span>, <span class="string">&#x27;화요일&#x27;</span>, <span class="string">&#x27;수요일&#x27;</span>, <span class="string">&#x27;목요일&#x27;</span>, <span class="string">&#x27;금요일&#x27;</span>, <span class="string">&#x27;토요일&#x27;</span>);</span><br><span class="line">    <span class="keyword">const</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>().getDay();</span><br><span class="line">    <span class="keyword">const</span> todayLabel = week[today];</span><br><span class="line">    <span class="keyword">return</span> todayLabel;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;year&#125;</span>년 <span class="subst">$&#123;month&#125;</span>월 <span class="subst">$&#123;date&#125;</span>일 <span class="subst">$&#123;getTodayLabel()&#125;</span> <span class="subst">$&#123;hours&#125;</span>:<span class="subst">$&#123;minutes&#125;</span>:<span class="subst">$&#123;seconds&#125;</span>`</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> $today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="keyword">const</span> $cur_year = $today.getFullYear();</span><br><span class="line"><span class="keyword">const</span> $cur_month = $today.getMonth() + <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> $cur_date = $today.getDate();</span><br><span class="line"><span class="keyword">const</span> $cur_day = $today.getDay();  <span class="comment">//0 ~ 6</span></span><br><span class="line"><span class="keyword">const</span> $yoil = [<span class="string">&quot;일&quot;</span>, <span class="string">&quot;월&quot;</span>, <span class="string">&quot;화&quot;</span>, <span class="string">&quot;수&quot;</span>, <span class="string">&quot;목&quot;</span>, <span class="string">&quot;금&quot;</span>, <span class="string">&quot;토&quot;</span>];</span><br><span class="line"><span class="keyword">const</span> $cur_hour = $today.getHours();</span><br><span class="line"><span class="keyword">const</span> $cur_min = $today.getMinutes();</span><br><span class="line"><span class="keyword">const</span> $cur_sec = $today.getSeconds();</span><br><span class="line"><span class="built_in">console</span>.log($cur_year + <span class="string">&quot;년 &quot;</span> + $cur_month + <span class="string">&quot;월 &quot;</span> + $cur_date + <span class="string">&quot;일 &quot;</span> + $yoil[$cur_day] + <span class="string">&quot;요일 &quot;</span> + $cur_hour + <span class="string">&quot; : &quot;</span> + $cur_min + <span class="string">&quot; : &quot;</span> + $cur_sec);</span><br></pre></td></tr></table></figure>
+
+<h2 id="아기-돼지-삼형제"><a href="#아기-돼지-삼형제" class="headerlink" title="아기 돼지 삼형제"></a>아기 돼지 삼형제</h2><p>객체 배열을 활용하여 문장을 완성하시오.</p>
+<ul>
+<li>첫째 아기 돼지, 움막, 둘째 아기 돼지, 나무집, 막내 아기 돼지, 벽돌집 각 데이터로 구성할 것</li>
+<li>해당 항목은 key를 만들어서 각각 value값으로 넣어서 활용할 것</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">첫째 아기 돼지는 움막을 지었고, 둘째 아기 돼지는 나무집을 지었고, 막내 아기 돼지는 벽돌집을 지었습니다.</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> $brother = [</span><br><span class="line">    &#123;<span class="attr">$pig</span> : <span class="string">&quot;첫째 아기 돼지&quot;</span>, <span class="attr">$house</span> : <span class="string">&quot;움막&quot;</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">$pig</span> : <span class="string">&quot;둘째 아기 돼지&quot;</span>, <span class="attr">$house</span> : <span class="string">&quot;나무집&quot;</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">$pig</span> : <span class="string">&quot;막내 아기 돼지&quot;</span>, <span class="attr">$house</span> : <span class="string">&quot;벽돌집&quot;</span>&#125;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;$brother[<span class="number">0</span>].$pig&#125;</span>는 <span class="subst">$&#123;$brother[<span class="number">0</span>].$house&#125;</span>을 지었고, <span class="subst">$&#123;$brother[<span class="number">1</span>].$pig&#125;</span>는 <span class="subst">$&#123;$brother[<span class="number">1</span>].$house&#125;</span>을 지었고, <span class="subst">$&#123;$brother[<span class="number">2</span>].$pig&#125;</span>는 <span class="subst">$&#123;$brother[<span class="number">2</span>].$house&#125;</span>을 지었습니다.`</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> $brother = [</span><br><span class="line">    &#123;<span class="attr">$pig</span> : <span class="string">&quot;첫째 아기 돼지&quot;</span>, <span class="attr">$house</span> : <span class="string">&quot;움막&quot;</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">$pig</span> : <span class="string">&quot;둘째 아기 돼지&quot;</span>, <span class="attr">$house</span> : <span class="string">&quot;나무집&quot;</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">$pig</span> : <span class="string">&quot;막내 아기 돼지&quot;</span>, <span class="attr">$house</span> : <span class="string">&quot;벽돌집&quot;</span>&#125;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log($brother[<span class="number">0</span>].$pig+<span class="string">&quot;는 &quot;</span>+$brother[<span class="number">0</span>].$house+<span class="string">&quot;을 지었고, &quot;</span>+$brother[<span class="number">1</span>].$pig+<span class="string">&quot;는 &quot;</span>+$brother[<span class="number">1</span>].$house+<span class="string">&quot;을 지었고, &quot;</span>+$brother[<span class="number">2</span>].$pig+<span class="string">&quot;는 &quot;</span>+$brother[<span class="number">2</span>].$house+<span class="string">&quot;을 지었습니다.&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> ex_02 = <span class="string">&quot;&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;$brother.length; i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(i&lt;$brother.length - <span class="number">1</span>)&#123;  <span class="comment">//i = 0, 1</span></span><br><span class="line">        ex_02 += $brother[i].$pig+<span class="string">&quot;는 &quot;</span>+$brother[i].$house+<span class="string">&quot;을 지었고, &quot;</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;  <span class="comment">//i = 2</span></span><br><span class="line">        ex_02 += $brother[i].$pig+<span class="string">&quot;는 &quot;</span>+$brother[i].$house+<span class="string">&quot;을 지었습니다.&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(ex_02);</span><br></pre></td></tr></table></figure>
+
+<h2 id="좋아하는-과일"><a href="#좋아하는-과일" class="headerlink" title="좋아하는 과일"></a>좋아하는 과일</h2><ul>
+<li>빈 배열 데이터를 만드시오.</li>
+<li>순차적으로 배열 데이터 내에 좋아하는 과일 5개를 for문을 활용하여 하나씩 추가해 주시기 바랍니다.</li>
+<li>for문을 반복하는 과정에서 console.log($fav_arr)로 출력하되 하나씩 추가되는 과정을 모두 출력하시오.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> $fav_arr = [];</span><br><span class="line"><span class="keyword">const</span> $fruit = [<span class="string">&quot;사과&quot;</span>, <span class="string">&quot;오렌지&quot;</span>, <span class="string">&quot;바나나&quot;</span>, <span class="string">&quot;포도&quot;</span>, <span class="string">&quot;자두&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">0</span>; i&lt;$fruit.length; i++) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log($fruit[i]);</span><br><span class="line">    $fav_arr.push($fruit[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log($fav_arr);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;$fruit.length; i++)&#123;</span><br><span class="line">    $fav_arr.push($fruit[i]);</span><br><span class="line">    <span class="built_in">console</span>.log($fav_arr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="데이터-변경"><a href="#데이터-변경" class="headerlink" title="데이터 변경"></a>데이터 변경</h2><p>다음과 같이 데이터를 변경하시오. (splice 메서드 활용)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;HTML&quot;, &quot;CSS&quot;, &quot;JAVASCRIPT&quot;, &quot;JQUERY&quot;];</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;HTML&quot;, &quot;WEB&quot;, &quot;JAVASCRIPT&quot;, &quot;JQUERY&quot;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ex_04 = [<span class="string">&quot;HTML&quot;</span>, <span class="string">&quot;CSS&quot;</span>, <span class="string">&quot;JAVASCRIPT&quot;</span>, <span class="string">&quot;JQUERY&quot;</span>];</span><br><span class="line">ex_04.splice(<span class="number">1</span>, <span class="number">1</span>, <span class="string">&#x27;WEB&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ex_04);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ex_04.splice(<span class="number">1</span>, <span class="number">1</span> , <span class="string">&quot;Bootstrap&quot;</span>, <span class="string">&quot;mySQL&quot;</span>, <span class="string">&quot;...&quot;</span>);  <span class="comment">//지정한 위치에 두개 이상의 데이터를 넣을 때</span></span><br><span class="line"><span class="built_in">console</span>.log(ex_04);</span><br></pre></td></tr></table></figure>
+
+<h2 id="데이터-삽입"><a href="#데이터-삽입" class="headerlink" title="데이터 삽입"></a>데이터 삽입</h2><p>다음과 같이 배열 사이에 새로운 데이터를 넣으세요. (splice 메서드 활용 - 힌트 : 개수는 0개)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;red&quot;, &quot;yellow&quot;, &quot;green&quot;, &quot;blue&quot;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;red&quot;, &quot;orange&quot;, &quot;yellow&quot;, &quot;green&quot;, &quot;blue&quot;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ex_05 = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;yellow&quot;</span>, <span class="string">&quot;green&quot;</span>, <span class="string">&quot;blue&quot;</span>];</span><br><span class="line">ex_05.splice(<span class="number">1</span>, <span class="number">0</span>, <span class="string">&#x27;orange&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ex_05);</span><br></pre></td></tr></table></figure>
+
+<h2 id="여러-데이터-삽입"><a href="#여러-데이터-삽입" class="headerlink" title="여러 데이터 삽입"></a>여러 데이터 삽입</h2><p>다음과 같이 배열 데이터를 변경하세요. (splice 메서드만 활용 - 힌트 : 개수는 0개)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;korea&quot;, &quot;USA&quot;, &quot;Brazil&quot;, &quot;France&quot;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;korea&quot;, &quot;Japan&quot;, &quot;USA&quot;, &quot;Brazil&quot;, &quot;France&quot;, &quot;China&quot;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ex_06 = [<span class="string">&quot;korea&quot;</span>, <span class="string">&quot;USA&quot;</span>, <span class="string">&quot;Brazil&quot;</span>, <span class="string">&quot;France&quot;</span>];</span><br><span class="line">ex_06.splice(<span class="number">1</span>, <span class="number">0</span>, <span class="string">&#x27;Japan&#x27;</span>);</span><br><span class="line">ex_06.splice(<span class="number">5</span>, <span class="number">0</span>, <span class="string">&#x27;China&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ex_06);</span><br></pre></td></tr></table></figure>
+
+<h2 id="배열-데이터-추출"><a href="#배열-데이터-추출" class="headerlink" title="배열 데이터 추출"></a>배열 데이터 추출</h2><p>다음과 같이 배열 데이터를 추출하시오 (slice 메서드 활용)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;red&quot;, &quot;yellow&quot;, &quot;green&quot;, &quot;blue&quot;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;yellow&quot;, &quot;green&quot;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ex_07 = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;yellow&quot;</span>, <span class="string">&quot;green&quot;</span>, <span class="string">&quot;blue&quot;</span>];</span><br><span class="line"><span class="keyword">const</span> result = ex_07.slice(<span class="number">1</span>, <span class="number">3</span>);</span><br><span class="line"><span class="built_in">console</span>.log(result);</span><br></pre></td></tr></table></figure>
+
+<h2 id="배열-데이터-추출2"><a href="#배열-데이터-추출2" class="headerlink" title="배열 데이터 추출2"></a>배열 데이터 추출2</h2><p>다음과 같이 배열 데이터를 추출하시오.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;red&quot;, &quot;yellow&quot;, &quot;green&quot;, &quot;blue&quot;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&quot;yellow&quot;, &quot;blue&quot;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> $color = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;yellow&quot;</span>, <span class="string">&quot;green&quot;</span>, <span class="string">&quot;blue&quot;</span>];</span><br><span class="line"><span class="keyword">const</span> ex_08 = [];</span><br><span class="line"><span class="keyword">const</span> result1 = $color.slice(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">const</span> result2 = $color.slice(<span class="number">3</span>, <span class="number">4</span>);</span><br><span class="line"></span><br><span class="line">ex_08.push(result1[<span class="number">0</span>]);</span><br><span class="line">ex_08.push(result2[<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(ex_08);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> $c_1 = $color.slice(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">const</span> $c_2 = $color.slice(<span class="number">3</span>, <span class="number">4</span>);</span><br><span class="line"><span class="keyword">const</span> ex_08 = ex_08.concat($c_1, $c_2);</span><br><span class="line"><span class="built_in">console</span>.log(ex_08);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;$color.length; i++)&#123;  <span class="comment">//0,1,2,3</span></span><br><span class="line">    <span class="keyword">if</span>(i % <span class="number">2</span> != <span class="number">0</span>)&#123;  <span class="comment">//1, 3</span></span><br><span class="line">        ex_08.push($color.slice(i, i+<span class="number">1</span>).join());</span><br><span class="line">        <span class="built_in">console</span>.log(ex_08);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(ex_08);</span><br></pre></td></tr></table></figure>
+
+<h2 id="문자-데이터-변경"><a href="#문자-데이터-변경" class="headerlink" title="문자 데이터 변경"></a>문자 데이터 변경</h2><p>문자 데이터 “2021-08-23”에서 “20210823”으로 변경하시오. (아래 방법 중에서 선택하여 적용하시오)</p>
+<ul>
+<li>방법1 : split() 메서드 활용하여 join() 메서드 적용하기</li>
+<li>방법2 : replace() 메서드 활용하기</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> $date_str = <span class="string">&quot;2021-08-23&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> date = $date_str.split(<span class="string">&quot;-&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> result = date.join(<span class="string">&quot;&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(result);</span><br></pre></td></tr></table></figure>
+<p><em><strong>방법2</strong></em></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> $replace_date = $date_str.replace(<span class="regexp">/-/g</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log($replace_date);  <span class="comment">//20210823</span></span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>뷰(Vue.js) 프로그래밍 과정 _ 하이미디어 아카데미</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2022/01/09/js-exercise019/" data-id="cm4wfoffj009jjp0ahrozhy4n"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exercise/" rel="tag">exercise</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2022/01/10/vue-array-function/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 배열 함수
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/01/08/python-exercise008/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">PYTHON 약수 찾기</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

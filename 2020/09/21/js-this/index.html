@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS this |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-this" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS this
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/09/21/js-this/" class="article-date">
+  <time datetime="2020-09-21T14:19:18.000Z" itemprop="datePublished">2020-09-21</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><code>this</code>는 객체 자신의 프로퍼티나 메소드를 참조하기 위한 자기 참조 변수(Self-referencing variable)이다. this 바인딩은 함수 호출 방식에 의해 동적으로 결정된다.</p>
+<blockquote>
+<p><strong>바인딩(Binding)</strong><br>식별자와 값을 연결하는 과정. (ex. 변수는 할당에 의해 값에 바인딩)</p>
+</blockquote>
+<a id="more"></a>
+
+<ul>
+<li>this는 코드 어디든지 참조가 가능하다.</li>
+<li>객체의 프로퍼티나 메소드를 참조하기 위한 자기 참조 변수이므로 일반적으로 객체의 메소드 또는 생성자 함수에서 의미가 있다.</li>
+<li> <code>strict mode</code>가 적용된 일반 함수 내부의 <code>this</code>에는 <code>undefined</code>가 바인딩된다.</li>
+</ul>
+<h2 id="함수-호출-방식과-this-바인딩"><a href="#함수-호출-방식과-this-바인딩" class="headerlink" title="함수 호출 방식과 this 바인딩"></a>함수 호출 방식과 this 바인딩</h2><p>this 바인딩(가리키는 값)은 함수가 어떻게 호출되었는지에 따라 동적으로 결정됨.</p>
+<table>
+<thead>
+<tr>
+<th>함수 호출 방식</th>
+<th>this 바인딩</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>일반 함수호출</td>
+<td>전역객체</td>
+</tr>
+<tr>
+<td>메소드 호출</td>
+<td>메소드를 호출한 객체</td>
+</tr>
+<tr>
+<td>생성자 함수 호출</td>
+<td>생성자 함수가 (미래에) 생성할 인스턴스</td>
+</tr>
+<tr>
+<td><code>Function.prototype.apply/call/bind</code> 메소드에 의한 간접 호출</td>
+<td><code>Function.prototype.apply/call/bind</code> 메소드에 인자로 전달한 객체</td>
+</tr>
+</tbody></table>
+<h2 id="일반-함수-호출"><a href="#일반-함수-호출" class="headerlink" title="일반 함수 호출"></a>일반 함수 호출</h2><ul>
+<li>기본적으로 <code>this</code>에는 전역 객체(Global object)가 바인딩된다.</li>
+<li>전역 함수 / 중첩 함수(메소드 내 정의한 중첩 함수 포함) / 콜백 함수를 일반 함수로 호출하면 함수 내부의 <code>this</code>에는 전역 객체가 바인딩된다.</li>
+<li>중첩 함수 또는 콜백 함수(보조 함수)는 외부 함수를 돕는 헬퍼 함수로서 역할하므로 외부 함수의 일부 로직을 대신하는 경우가 대부분이기 때문에 전역객체를 바인딩하게 되면 문제가 생긴다. 그러므로 메소드 내부의 중첩함수와 콜백 함수의 <code>this</code> 바인딩을 메소드의 <code>this</code> 바인딩과 일치시켜 주어야 한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&quot;foo&#x27;s this: &quot;</span>, <span class="built_in">this</span>);  <span class="comment">// window</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;bar&#x27;s this: &quot;</span>, <span class="built_in">this</span>); <span class="comment">// window</span></span><br><span class="line">  &#125;</span><br><span class="line">  bar();</span><br><span class="line">&#125;</span><br><span class="line">foo();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>setTimeout 함수</strong><br>두번째 매개변수에 전달한 시간(ms)만큼 대기한 다음, 첫번째 매개변수에 전달한 콜백 함수를 호출하는 타이머 함수</p>
+</blockquote>
+<p>메소드 내부의 중첩 함수나 콜백 함수의 <code>this</code> 바인딩을 메소드의 <code>this</code> 바인딩과 일치시키기 위한 방법</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> value = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  value: <span class="number">50</span>,</span><br><span class="line">  <span class="function"><span class="title">foo</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> that = <span class="built_in">this</span>;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(that.value); <span class="comment">// 50</span></span><br><span class="line">    &#125;, <span class="number">100</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">obj.foo();</span><br></pre></td></tr></table></figure>
+
+<h2 id="메소드-호출"><a href="#메소드-호출" class="headerlink" title="메소드 호출"></a>메소드 호출</h2><ul>
+<li>메소드 내부의 <code>this</code>는 메소드를 호출한 객체, 즉 메소드 이름 앞의 마침표(<code>.</code>) 연산자 앞에 기술한 객체에 바인딩된다.</li>
+<li>주의할 점: 메소드 내부의 <code>this</code>는 메소드를 소유한 객체가 아닌 메소드를 호출한 객체에 바인딩된다.</li>
+<li>프로토타입 메소드 내부에서 사용된 <code>this</code>도 일반 메소드와 마찬가지로 해당 메소드를 호출한 객체에 바인딩된다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  name: <span class="string">&#x27;Lee&#x27;</span>,</span><br><span class="line">  <span class="function"><span class="title">getName</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    name: <span class="string">&#x27;Kim&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.name;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.getName()); <span class="comment">// 호출한 객체는 person</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="생성자-함수-호출"><a href="#생성자-함수-호출" class="headerlink" title="생성자 함수 호출"></a>생성자 함수 호출</h2><ul>
+<li>생성자 함수 내부의 <code>this</code>에는 생성자 함수가 (미래에) 생성할 인스턴스가 바인딩된다.</li>
+<li>일반 함수와 동일한 방법으로 생성자 함수를 정의하고 <code>new</code> 연산자와 함께 호출하면 해당 함수는 생성자 함수로 동작한다.</li>
+<li><code>new</code> 연산자와 함께 생성자 함수를 호출하지 않으면 생성자 함수가 아니라 일반 함수로 동작한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Circle</span>(<span class="params">radius</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.radius = radius;</span><br><span class="line">  <span class="built_in">this</span>.getDiameter = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">2</span> * <span class="built_in">this</span>.radius;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> circle1 = <span class="keyword">new</span> Circle(<span class="number">5</span>);</span><br><span class="line"><span class="keyword">const</span> circle2 = <span class="keyword">new</span> Circle(<span class="number">10</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(circle1.getDiameter()); <span class="comment">// 10</span></span><br><span class="line"><span class="built_in">console</span>.log(circle2.getDiameter()); <span class="comment">// 20</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Function-prototype-apply-call-bind-메소드에-의한-간접-호출"><a href="#Function-prototype-apply-call-bind-메소드에-의한-간접-호출" class="headerlink" title="Function.prototype.apply/call/bind 메소드에 의한 간접 호출"></a>Function.prototype.apply/call/bind 메소드에 의한 간접 호출</h2><ul>
+<li>this를 명시적으로 바인딩한다.</li>
+<li><code>Function.prototype.apply</code>, <code>Function.prototype.call</code> 메소드는 인수로 <code>this</code>와 인수 리스트를 전달받아 함수를 호출한다.</li>
+<li><code>apply</code>와 <code>call</code> 메소드의 본질적인 기능은 함수를 호출하는 것이다. 호출할 함수에 인수를 전달하는 방식만 다를 뿐 동일하게 동작한다.<ul>
+<li><code>apply</code> 메소드: 호출할 함수의 인수를 배열로 묶어 전달.</li>
+<li><code>call</code> 메소드: 호출할 함수의 인수를 쉼표로 구분한 리스트 형식으로 전달.</li>
+<li>대표적인 용도: arguments 객체와 같은 유사 배열 객체에 배열 메소드를 사용하는 경우.(arguements 객체는 배열이 아니기 때문에 <code>Arry.prototype.slice</code>와 같은 배열 메소드를 사용할 수 없다.)</li>
+<li><code>Function</code> 생성자 함수를 <code>constructor</code> 프로퍼티로 가리키는 모든 함수가 상속받아 사용할 수 있다.</li>
+</ul>
+</li>
+<li><code>bind</code> 메소드는 <code>this</code>로 사용할 객체만을 전달한다.</li>
+</ul>
+<p><em>apply, call 메소드</em></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getThisBinding</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> thisArg = &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;; <span class="comment">// this로 사용할 객체</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(getThisBinding.apply(thisArg, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]));</span><br><span class="line"><span class="comment">// Arguments(3) [1, 2, 3, callee: ƒ, Symbol(Symbol.iterator): ƒ]</span></span><br><span class="line"><span class="comment">// &#123; a: 1 &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(getThisBinding.call(thisArg, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>));</span><br><span class="line"><span class="comment">// Arguments(3) [1, 2, 3, callee: ƒ, Symbol(Symbol.iterator): ƒ]</span></span><br><span class="line"><span class="comment">// &#123; a: 1 &#125;</span></span><br></pre></td></tr></table></figure>
+
+
+<p><em>bind 메소드</em></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Person.prototype.doSomething = <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  callback.bind(<span class="built_in">this</span>)();</span><br><span class="line">  <span class="comment">// callback.apply(this);</span></span><br><span class="line">  <span class="comment">// callback.call(this);</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> person = <span class="keyword">new</span> Person(<span class="string">&#x27;Lee&#x27;</span>);</span><br><span class="line">person.doSomething(foo); <span class="comment">// Lee</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/09/21/js-this/" data-id="cm4wfoffn00b9jp0aamumbzg0"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/this/" rel="tag">this</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/10/02/js-destructuring/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 디스트럭처링 할당
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/09/20/js-prototype/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 프로토타입</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

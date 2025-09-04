@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 객체 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-object" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 객체
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/17/js-object/" class="article-date">
+  <time datetime="2020-08-17T13:51:11.000Z" itemprop="datePublished">2020-08-17</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>자바스크립트는 객체 기반의 프로그래밍 언어이다. 원시 타입을 제외한 나머지 값들은 모두 객체이다.</p>
+<ul>
+<li><strong>프로퍼티</strong>: 객체의 상태를 나타내는 값(data).</li>
+<li><strong>메소드</strong>: 프로퍼티를 참조하고 조작할 수 있는 동작(behavior). 프로퍼티의 값이 함수일 경우에 일반 함수와 구분하기 위해 메소드라 부름.</li>
+</ul>
+<a id="more"></a>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;bunny&#x27;</span>, <span class="comment">// 프로퍼티</span></span><br><span class="line">  introduction: <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`My name is <span class="subst">$&#123;<span class="built_in">this</span>.name&#125;</span>.`</span>);</span><br><span class="line">  &#125; <span class="comment">//메소드</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="리터럴을-생성하는-방법"><a href="#리터럴을-생성하는-방법" class="headerlink" title="리터럴을 생성하는 방법"></a>리터럴을 생성하는 방법</h3><ul>
+<li>객체 리터럴</li>
+<li>Object 생성자 함수</li>
+<li>생성자 함수</li>
+<li>Object.create 메소드</li>
+<li>클래스 (ES6)</li>
+</ul>
+<h2 id="객체-리터럴에-의한-객체-생성"><a href="#객체-리터럴에-의한-객체-생성" class="headerlink" title="객체 리터럴에 의한 객체 생성"></a>객체 리터럴에 의한 객체 생성</h2><ul>
+<li>가장 일반적이고 간단한 방법</li>
+<li>다양한 타입의 값을 생성할 수 있다.</li>
+<li>중괄호 안에 0개 이상의 프로퍼티를 정의.</li>
+<li>객체 리터럴의 중괄호는 코드블록이 아니기 때문에 세미콜론을 붙인다. (표현식)</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;bunny&#x27;</span>,</span><br><span class="line">  introduction: <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`My name is <span class="subst">$&#123;<span class="built_in">this</span>.name&#125;</span>.`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> animal); <span class="comment">// object</span></span><br><span class="line"><span class="built_in">console</span>.log(animal); <span class="comment">// &#123;name: &quot;bunny&quot;, introduction: ƒ&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="프로퍼티"><a href="#프로퍼티" class="headerlink" title="프로퍼티"></a>프로퍼티</h2><ul>
+<li>객체는 프로퍼티(property)들의 집합</li>
+<li>프로퍼티는 키(key)와 값(value)로 구성되어 있으며 쉼표로 구분한다. (맨 마지막 프로퍼티에는 사용해도, 하지 않아도 괜찮다.)</li>
+<li>프로퍼티 키와 프로퍼티 값으로 사용할 수 있는 값<ul>
+<li><strong>프로퍼티 키</strong>: 빈 문자열을 포함한 모든 문자열(string) 또는 심볼값. 식별자 네이밍 규칙을 따르지 않는 이름에는 반드시 따옴표를 사용하여야 한다. 따옴표를 쓰지 않을 시 SyntaxError.<ol>
+<li>첫번째 글자는 반드시 문자, 밑줄(<code>_</code>), 달러 기호 (<code>$</code>)중 하나로 시작한다.</li>
+<li>띄어쓰기나 하이픈(<code>-</code>)을 사용하면 안 된다.</li>
+</ol>
+</li>
+<li><strong>프로퍼티 값</strong>: 자바스크립트에서 사용할 수 있는 모든 자료형이 들어갈 수 있다.</li>
+</ul>
+</li>
+<li><strong>프로퍼티 키에 문자열이나 심볼값 이외의 값을 사용하면 암묵적 타입 변환이 되어 <u>문자열</u></strong> 이 된다.</li>
+<li>프로퍼티 키를 중복 선언하면 나중에 선언한 프로퍼티가 먼저 선언한 프로퍼티를 덮어쓴다. 오류가 나지 않는다.</li>
+<li>빈문자열을 프로퍼티 키로 사용해도 에러가 발생하지는 않으나 키의 의미를 갖지 못하므로 사용하지 않는 것이 좋다.</li>
+<li>let, funtion 등의 예약어를 프로퍼티 키로 사용해도 에러가 발생하지는 않으나 에러가 발생할 여지가 있으므로 사용하지 않는 것이 좋다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  first_animal: <span class="string">&#x27;bunny&#x27;</span>, <span class="comment">// 유효한 이름</span></span><br><span class="line">  <span class="string">&#x27;2nd-animal&#x27;</span>: <span class="string">&#x27;rabbit&#x27;</span> <span class="comment">// 유효하지 않은 이름이기 때문에 따옴표 사용</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal);</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="계산된-프로퍼티-이름-Computed-Property-name"><a href="#계산된-프로퍼티-이름-Computed-Property-name" class="headerlink" title="계산된 프로퍼티 이름(Computed Property name)"></a>계산된 프로퍼티 이름(Computed Property name)</h3><p>문자열 또는 문자열로 변환 가능한 값을 반환하는 표현식을 사용해 프로퍼티 키를 동적으로 생성 가능하다. <u>프로퍼티 키로 사용할 표현식을 대괄호([ ])</u>로 묶어야 한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;&#125;;</span><br><span class="line"><span class="keyword">var</span> key = <span class="string">&#x27;bunny&#x27;</span>;</span><br><span class="line"></span><br><span class="line">animal[key] = <span class="string">&#x27;cute&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal); <span class="comment">// &#123;bunny: &quot;cute&quot;&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="메소드"><a href="#메소드" class="headerlink" title="메소드"></a>메소드</h2><p>객체에 제한되어 있는 함수. 연관성이 있는 함수를 한꺼번에 묶을 때에도 객체를 사용한다. 이런 함수를 객체의 메소드라고 한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;bunny&#x27;</span>,</span><br><span class="line">  introduction: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.name;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal.introduction());</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> gretings = &#123;</span><br><span class="line">  sayHello: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    consonle.log(<span class="string">&#x27;HELLO&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  sayBye: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    consonle.log(<span class="string">&#x27;BYE&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">greetings.sayHello(); <span class="comment">// HELLO</span></span><br><span class="line">greetings.sayHello(<span class="string">&#x27;bunny&#x27;</span>); <span class="comment">// HELLO bunny</span></span><br><span class="line">grettings[<span class="string">&#x27;sayHello&#x27;</span>](<span class="string">&#x27;bunny&#x27;</span>); <span class="comment">// HELLO bunny</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="프로퍼티-접근"><a href="#프로퍼티-접근" class="headerlink" title="프로퍼티 접근"></a>프로퍼티 접근</h2><ul>
+<li>객체에서 데이터 접근하는 방법<ul>
+<li>마침표 표기법(점표기법): 변수 삽입 불가능하다. ex) <code>animal.name</code></li>
+<li>대괄호 표기법: 변수를 삽입할 수 있다. <strong>대괄호 내부에 지정하는 프로퍼티키는 반드시 따옴표로 감싼 문자열</strong> 이어야 한다. 단 <strong>프로퍼티 키가 숫자로 이루져 있는 경우 따옴표 생략 가능.</strong> ex) <code>animal[&#39;name&#39;]</code> → 자바스크립트 엔진은 대괄호 안에 이름이 따옴표로 감싸져 있지 않으면 식별자로 취급하기 때문.</li>
+</ul>
+</li>
+<li>프로퍼티 키가 식별자 네이밍 규칙을 따르는 이름이면 마침표 / 대괄호 표기법 둘다 사용 가능하다.</li>
+<li><strong>마침표 또는 대괄호 좌측</strong>: 객체로 평가할 수 있는 표현식 / <strong>우측&amp;대괄호 내부</strong>: 프로퍼티 키를 지정한다.</li>
+<li>존재하지 않는 프로퍼티에 접근하면 <code>undeifned</code> 반환.</li>
+</ul>
+<h2 id="프로퍼티-값-갱신"><a href="#프로퍼티-값-갱신" class="headerlink" title="프로퍼티 값 갱신"></a>프로퍼티 값 갱신</h2><p>이미 존재하고 있는 프로퍼티에 값을 할당하면 갱신된다. (변수에 재할당하는 것과 비슷하다.)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;snowball&#x27;</span>,</span><br><span class="line">  animal: <span class="string">&#x27;bunny&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal.name); <span class="comment">// snowball</span></span><br><span class="line">animal.name = <span class="string">&#x27;cute&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(animal.name); <span class="comment">// cute</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="프로퍼티-동적-생성"><a href="#프로퍼티-동적-생성" class="headerlink" title="프로퍼티 동적 생성"></a>프로퍼티 동적 생성</h2><p>존재하고 있지 않은 프로퍼티에 값을 할당하면 동적으로 생성되어 추가된 후에 할당까지 된다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;snowball&#x27;</span>,</span><br><span class="line">  animal: <span class="string">&#x27;bunny&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal.like); <span class="comment">// undefined</span></span><br><span class="line">animal.like = <span class="string">&#x27;love&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(animal.name); <span class="comment">// love</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="프로퍼티-삭제"><a href="#프로퍼티-삭제" class="headerlink" title="프로퍼티 삭제"></a>프로퍼티 삭제</h2><ul>
+<li>delete 연산자가 객체의 연산자를 삭제한다. 이때 delete 연산자의 피연산자는 프로퍼티 값에 접근이 가능한 표현식이어야 한다.</li>
+<li>피연산자의 프로퍼티가 존재하지 않으면 무시됨.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;snowball&#x27;</span>,</span><br><span class="line">  animal: <span class="string">&#x27;bunny&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal.animal); <span class="comment">// bunny</span></span><br><span class="line"><span class="keyword">delete</span> animal.animal;</span><br><span class="line"><span class="built_in">console</span>.log(animal.animal); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>예시</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> myVoca = &#123;</span><br><span class="line">  addVoca: <span class="function"><span class="keyword">function</span> (<span class="params">key, value</span>) </span>&#123;</span><br><span class="line">    myVoca[key] = value;</span><br><span class="line">  &#125;,</span><br><span class="line">  deleteVoca: <span class="function"><span class="keyword">function</span> (<span class="params">key</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">delete</span> myVoca[key];</span><br><span class="line">  &#125;,</span><br><span class="line">  printVoca: <span class="function"><span class="keyword">function</span> (<span class="params">key</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`&quot;<span class="subst">$&#123;key&#125;</span>&quot;의 뜻은 &quot;<span class="subst">$&#123;myVoca[key]&#125;</span>&quot;입니다.`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="프로퍼티-존재-여부-확인"><a href="#프로퍼티-존재-여부-확인" class="headerlink" title="프로퍼티 존재 여부 확인"></a>프로퍼티 존재 여부 확인</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(animal.name !== <span class="literal">undefined</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;name&#x27;</span> <span class="keyword">in</span> animal);</span><br><span class="line"><span class="comment">// 프로퍼티 in 객체이름 → 불리언값 리턴</span></span><br><span class="line"><span class="comment">// 프로퍼티 값에 undefined가 할당될 수 있으므로 in 연산자를 사용하는 것이 좋다.</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h2><p>프로퍼티 이름에는 숫자형(양수)를 작성해서 사용할 수는 있지만 사용될 때 문자열로 형변환이 된다. 이럴 경우 접근시에 대괄호표기법으로만 접근 가능하다. 객체는 <strong>정수형 프로퍼티 네임을 오름차순으로 먼저 정렬하고 나머지 프로퍼티들은 추가한 순서대로 정렬한다.</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (변수 <span class="keyword">in</span> 객체) &#123;</span><br><span class="line">  동작부분</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> myObject = &#123;</span><br><span class="line">  <span class="string">&#x27;key1&#x27;</span>: <span class="string">&#x27;value1&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;key2&#x27;</span>: <span class="string">&#x27;value2&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;key3&#x27;</span>: <span class="string">&#x27;value3&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;key4&#x27;</span>: <span class="string">&#x27;value4&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> myObject) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(key); <span class="comment">// key1</span></span><br><span class="line">  <span class="built_in">console</span>.log(myObject[key]); <span class="comment">// value1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="ES6에서-추가된-객체-리터럴의-확장-기능"><a href="#ES6에서-추가된-객체-리터럴의-확장-기능" class="headerlink" title="ES6에서 추가된 객체 리터럴의 확장 기능"></a>ES6에서 추가된 객체 리터럴의 확장 기능</h2><h3 id="프로퍼티-축약-표현"><a href="#프로퍼티-축약-표현" class="headerlink" title="프로퍼티 축약 표현"></a>프로퍼티 축약 표현</h3><p>ES6에서는 프로퍼티 값으로 변수를 사용하는 경우 변수와 프로퍼티 키의 이름이 동일하면 프로퍼티 키 생략 가능하다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> bunny = <span class="string">&#x27;cute&#x27;</span>, puppy = <span class="string">&#x27;sweet&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> obj = &#123; bunny, puppy &#125;;</span><br><span class="line"><span class="comment">// bunny:bunny, puppy:puppy와 동일</span></span><br><span class="line"><span class="built_in">console</span>.log(obj); <span class="comment">// &#123;bunny: &#x27;cute&#x27;, puppy:&#x27;sweet&#x27;&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="프로퍼티-키-동적-생성"><a href="#프로퍼티-키-동적-생성" class="headerlink" title="프로퍼티 키 동적 생성"></a>프로퍼티 키 동적 생성</h3><p>ES5에서 프로퍼티키를 동적으로 생성하려면 객체 외부에서 대괄호 표기법을 사용해야 하지만 ES6에서는 객체 내부에서도 동적으로 프로퍼티 키를 생성할 수 있다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> animal = <span class="string">&#x27;bunny&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 객체 리터럴 내부에서 프로퍼티 키 동적 생성</span></span><br><span class="line"><span class="keyword">var</span> animal_family = &#123;</span><br><span class="line">  [<span class="string">`<span class="subst">$&#123;animal&#125;</span> <span class="subst">$&#123;++i&#125;</span>`</span>]: i,</span><br><span class="line">  [<span class="string">`<span class="subst">$&#123;animal&#125;</span> <span class="subst">$&#123;++i&#125;</span>`</span>]: i,</span><br><span class="line">  [<span class="string">`<span class="subst">$&#123;animal&#125;</span> <span class="subst">$&#123;++i&#125;</span>`</span>]: i</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(animal_family); <span class="comment">// &#123;bunny 1: 1, bunny 2: 2, bunny 3: 3&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="메소드-축약-표현"><a href="#메소드-축약-표현" class="headerlink" title="메소드 축약 표현"></a>메소드 축약 표현</h3><p>ES6에서는 메소드를 정의할 때 function 키워드를 생략하여 축약 표현을 사용할 수 있다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> animal = &#123;</span><br><span class="line">  name: <span class="string">&#x27;kitten&#x27;</span>,</span><br><span class="line">  <span class="function"><span class="title">sayHi</span>(<span class="params"></span>)</span> &#123;     <span class="comment">// sayHi: function() &#123;을 축약</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;mew mew &#x27;</span> + <span class="built_in">this</span>.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">animal.sayHi(); <span class="comment">// mew mew kitten</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="프로퍼티-정의"><a href="#프로퍼티-정의" class="headerlink" title="프로퍼티 정의"></a>프로퍼티 정의</h2><ul>
+<li>프로퍼티 어트리뷰트의 값을 정의하여 프로퍼티의 상태 관리한다.<ul>
+<li>프로퍼티를 갱신 / 열거 / 재정의 가능하게 할 것인지 명확하게 정의</li>
+</ul>
+</li>
+<li>프로퍼티를 생성할 때 프로퍼티의 상태를 나타내는 프로퍼티 어트리뷰트를 기본값으로 정의한다.</li>
+<li>프로퍼티 동적 생성과 프로퍼티 정의는 다르다.<ul>
+<li><strong>프로퍼티 동적 생성</strong>: 존재하지 않는 프로퍼티를 생성하여 추가</li>
+<li><strong>프로퍼티 정의</strong>: 프로퍼티 어트리뷰트를 정의 (프로퍼티 값, 값의 갱신 여부, 열거 가능 여부, 재정의 가능 여부)</li>
+</ul>
+</li>
+<li>Object.getOwnPropertyDescriptor 메소드를 사용해 참조 가능하다. 어트리뷰트 정보를 제공하는 객체인 프로퍼티 디스크립터(PropertyDescriptor) 반환</li>
+<li>존재하지 않는 프로퍼티나 상속 받은 프로퍼티에 대한 프로퍼티 디스크립터를 요구하면 undefined 반환</li>
+<li>인수는 객체의 참조와 데이터 프로퍼티의 키를 문자열로 전달</li>
+<li>프로퍼티가 동적 생성될 때 자바스크립트 엔진은 프로퍼티 어트리뷰트를 기본값으로 정의하지만 이미 정의된 어트리뷰트를 재정의할 수도 있다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;&#125;;</span><br><span class="line">obj.prop = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">Object</span>.getOwnPropertyDescriptor(obj, <span class="string">&#x27;prop&#x27;</span>);</span><br><span class="line"><span class="comment">// &#123;value: 1, writable: true, enumerable: true, configurable: true&#125;</span></span><br><span class="line"><span class="built_in">Object</span>.getOwnPropertyDescriptor(obj, <span class="string">&#x27;name&#x27;</span>); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li><strong>데이터 프로퍼티</strong>: 키와 값으로 구성된 일반적인 프로퍼티. <u>value, writable, enumerable, configurable 프로퍼티 어트리뷰트</u>를 갖는다.</li>
+<li><strong>접근자 프로퍼티</strong>: 자체적으로는 값을 갖고 있지 않지만 다른 데이터 프로퍼티 값을 읽거나 저장할 때 사용자는 접근자 함수로 구성되어 있는 프로퍼티. <u>get, set, enumerable, configurable 프로퍼티 어트리뷰트</u>를 갖는다.</li>
+</ul>
+<h2 id="내부-슬롯-메소드"><a href="#내부-슬롯-메소드" class="headerlink" title="내부 슬롯 / 메소드"></a>내부 슬롯 / 메소드</h2><p>자바스크립트 엔진이 코드를 실행하는 알고리즘을 설명하기 위해 ECMAScript 스펙에서 사용하는 의사 프로퍼티(Pseudo property)와 의사 메소드(Pseudo method). <strong>자바 스크립트 엔진의 내부 구현 사양 정의한 것</strong> 이라고 보면 됨. <strong>객체의 프로퍼티가 아니기 때문에 직접적으로 접근하거나 호출할 수 없다.</strong> 접근하고 싶다면 간접적으로 접근해야 한다.</p>
+<h3 id="접근자-프로퍼티와-데이터-프로퍼티-구별-방법"><a href="#접근자-프로퍼티와-데이터-프로퍼티-구별-방법" class="headerlink" title="접근자 프로퍼티와 데이터 프로퍼티 구별 방법"></a>접근자 프로퍼티와 데이터 프로퍼티 구별 방법</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 일반 객체의 __proto__는 접근자 프로퍼티</span></span><br><span class="line"><span class="built_in">Object</span>.getOwnPropertyDescriptor(<span class="built_in">Object</span>.prototype, <span class="string">&#x27;__proto__&#x27;</span>);</span><br><span class="line"><span class="comment">// &#123;get: ƒ, set: ƒ, enumerable: false, configurable: true&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 함수 객체의 prototype은 데이터 프로퍼티</span></span><br><span class="line"><span class="built_in">Object</span>.getOwnPropertyDescriptor(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;, <span class="string">&#x27;prototype&#x27;</span>);</span><br><span class="line"><span class="comment">// &#123;value: &#123;…&#125;, writable: true, enumerable: false, configurable: false&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="접근자-프로퍼티"><a href="#접근자-프로퍼티" class="headerlink" title="접근자 프로퍼티"></a>접근자 프로퍼티</h2><ul>
+<li>getter / setter 함수라고도 부른다. 둘다 정의해도 되고, 하나만 정의해도 된다.</li>
+<li>자체적으로 값(value 프로퍼티)를 가지지 않으며 읽거나 저장할 때만 관여한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  firstName: <span class="string">&#x27;Minjee&#x27;</span>,</span><br><span class="line">  lastName: <span class="string">&#x27;Kim&#x27;</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// getter 함수</span></span><br><span class="line">  <span class="keyword">get</span> <span class="title">fullName</span>() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.firstName + <span class="string">&#x27; &#x27;</span> + <span class="built_in">this</span>.lastName;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// setter 함수</span></span><br><span class="line">  <span class="keyword">set</span> <span class="title">fullName</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    [<span class="built_in">this</span>.firstName, <span class="built_in">this</span>.lastName] = name.split(<span class="string">&#x27; &#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 데이터 프로퍼티를 통한 프로퍼티 값의 참조.</span></span><br><span class="line"><span class="built_in">console</span>.log(person.firstName + <span class="string">&#x27; &#x27;</span> + person.lastName); <span class="comment">// Minjee Kim</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 접근자 프로퍼티를 통한 프로퍼티 값의 저장</span></span><br><span class="line"><span class="comment">// 접근자 프로퍼티 fullName에 값을 저장하면 setter 함수가 호출.</span></span><br><span class="line">person.fullName = <span class="string">&#x27;Mia Kim&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(person); <span class="comment">// &#123;firstName: &quot;Mia&quot;, lastName: &quot;Kim&quot;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 접근자 프로퍼티를 통한 프로퍼티 값의 참조</span></span><br><span class="line"><span class="comment">// 접근자 프로퍼티 fullName에 접근하면 getter 함수가 호출.</span></span><br><span class="line"><span class="built_in">console</span>.log(person.fullName); <span class="comment">// Mia Kim</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> descriptor = <span class="built_in">Object</span>.getOwnPropertyDescriptor(person, <span class="string">&#x27;firstName&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(descriptor);</span><br><span class="line"><span class="comment">// &#123;value: &quot;Mia&quot;, writable: true, enumerable: true, configurable: true&#125;</span></span><br><span class="line"></span><br><span class="line">descriptor = <span class="built_in">Object</span>.getOwnPropertyDescriptor(person, <span class="string">&#x27;fullName&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(descriptor);</span><br><span class="line"><span class="comment">// &#123;get: ƒ, set: ƒ, enumerable: true, configurable: true&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="프로퍼티-어트리뷰트"><a href="#프로퍼티-어트리뷰트" class="headerlink" title="프로퍼티 어트리뷰트"></a>프로퍼티 어트리뷰트</h2><ul>
+<li><strong>프로퍼티 어트리뷰트</strong>: 모든 데이터 프로퍼티와 접근자 프로퍼티는 자신의 상태와 동작을 정의한 내부 슬롯과 내부 메소드를 가지고 있는데 이것을 프로퍼티 어트리뷰트라고 함.</li>
+<li>자바 스크립트 엔진이 프로퍼티를 생성할 때 자동 정의됨.</li>
+<li>각각의 프로퍼티의 세부 동작을 제어할 수 있음.</li>
+</ul>
+<p><em>데이터 어트리뷰트</em></p>
+<table>
+<thead>
+<tr>
+<th>프로퍼티 어트리뷰트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[[Value]]</td>
+<td>프로퍼티 키로 프로퍼티 값에 접근하면 내부 메소드 [[Get]]에 의해 반환되는 값.</td>
+</tr>
+<tr>
+<td>[[Writable]]</td>
+<td>프로퍼티 값의 변경 가능 여부. <strong>불리언 값을 갖는다.</strong><br /><strong>값이 false인 경우, 해당 프로퍼티의 [[Value]]의 값을 변경할 수 없다.</strong></td>
+</tr>
+<tr>
+<td>[[Enumerable]]</td>
+<td>프로퍼티의 열거 가능 여부. <strong>불리언 값을 갖는다.</strong><br/>for…in 문 등으로 열거 불가.</td>
+</tr>
+<tr>
+<td>[[Configurable]]</td>
+<td>프로퍼티의 재정의 가능 여부. <strong>불리언 값을 갖는다.</strong> <br/> false인 경우, 해당 프로퍼티의 삭제, 프로퍼티 어트리뷰트 값의 변경이 금지된다.<br/>[[Writable]]이 true인 경우, [[Value]]의 변경과 [[Writable]]을 false로 변경하는 것은 가능.</td>
+</tr>
+</tbody></table>
+<p><em>접근자 프로퍼티</em></p>
+<table>
+<thead>
+<tr>
+<th>프로퍼티 어트리뷰트</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[[Get]]</td>
+<td>접근자 프로퍼티 키로 프로퍼티 값에 <u>접근</u>하면 getter 함수가 호출되고 그 결과가 프로퍼티 값으로 <strong>반환</strong> 된다.</td>
+</tr>
+<tr>
+<td>[[Set]]</td>
+<td>접근자 프로퍼티 키로 프로퍼티 값을 <u>저장</u>하면 setter 함수가 호출되고 그 결과가 프로퍼티 값으로 <strong>저장</strong> 된다.</td>
+</tr>
+<tr>
+<td>[[Enumerable]]</td>
+<td>데이터 프로퍼티의 [[Enumerable]]와 동일</td>
+</tr>
+<tr>
+<td>[[Configurable]]</td>
+<td>데이터 프로퍼티의 [[Configurable]]와 동일</td>
+</tr>
+</tbody></table>
+<p><em>Object.defineProperty 메소드로 정의할 때 프로퍼티 디스크립터 객체에서 누락된 어트리뷰트의 기본값</em></p>
+<table>
+<thead>
+<tr>
+<th>프로퍼티 디스크립터 객체의 프로퍼티</th>
+<th>디스크립터 객체의 프로퍼티 누락시 기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>value</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>get</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>set</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>writable</td>
+<td>false</td>
+</tr>
+<tr>
+<td>enumerable</td>
+<td>fasle</td>
+</tr>
+<tr>
+<td>configurable</td>
+<td>false</td>
+</tr>
+</tbody></table>
+<h2 id="전역-객체-Global-Object"><a href="#전역-객체-Global-Object" class="headerlink" title="전역 객체 (Global Object)"></a>전역 객체 (Global Object)</h2><p>코드가 실행되기 이전 단계에 자바스크립트 엔진에 의해 생성되는 특수한 객체. 클라이언트 측 자바스크립트에서 제일 중요.</p>
+<blockquote>
+<p><strong>브라우저 환경</strong>: window(self, this, frames)<br><strong>Node.js</strong>: global</p>
+</blockquote>
+<h3 id="전역-객체의-특징"><a href="#전역-객체의-특징" class="headerlink" title="전역 객체의 특징"></a>전역 객체의 특징</h3><ul>
+<li>개발자가 의도적으로 생성 불가.</li>
+<li>전역 객체의 프로퍼티를 참조할 때, window(global)을 생략할 수 있다.</li>
+<li>모든 표준 빌트인 객체를 프로퍼티로 가지고 있다.</li>
+<li>실행 환경에 따라 추가적으로 프로퍼티와 메소드를 가질 수 있다.</li>
+<li>var 키워드로 선언한 전역 변수 / 선언하지 않은 변수에 값을 할당한 암묵적 전역 변수 / 전역 함수는 전역 객체의 프로퍼티가 된다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/08/17/js-object/" data-id="cm4wfoffk009ujp0afis45pok"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/object/" rel="tag">object</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/08/17/js-scope/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 스코프
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/16/js-function/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 함수</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JAVA 객체 지향 프로그래밍 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-java-oop" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JAVA 객체 지향 프로그래밍
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/03/17/java-oop/" class="article-date">
+  <time datetime="2022-03-17T05:42:54.000Z" itemprop="datePublished">2022-03-17</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Java/">Java</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><strong>객체 지향 프로그래밍</strong></p>
+<ul>
+<li>컴퓨터 프로그래밍의 패러다임 중 하나이다. 객체 지향 프로그래밍은 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 “객체”들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. <sup>1</sup></li>
+<li>‘객체’는 ‘속성’들과 ‘동작’들의 묶음이라고 할 수 있는데 속성은 ‘변수’로 나타내고, 동작은 ‘메소드(함수)’로 나타낸다.<blockquote>
+<p>[ 1 ] : <a target="_blank" rel="noopener" href="https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">위키백과</a></p>
+</blockquote>
+</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="클래스"><a href="#클래스" class="headerlink" title="클래스"></a>클래스</h2><ul>
+<li>‘클래스’는 객체들에 대한 설계도, 또는 설명서이다.</li>
+<li>객체는 속성과 기능을 가지고 있으며 속성은 변수로, 기능은 메소드(함수)로 표현할 수 있다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">int</span> cashAmount;</span><br><span class="line">    BankAccount account;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BankAccount</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> balance;</span><br><span class="line">    Person owner;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="메소드"><a href="#메소드" class="headerlink" title="메소드"></a>메소드</h2><ul>
+<li>메소드는 클래스에 있는 함수이다.</li>
+<li>자바에서 모든 함수는 클래스에 있기 때문에 자바의 모든 함수는 메소드이다.</li>
+<li><code>return</code>값이 없으면 자료형 대신 <code>void</code>를 사용한다.<ul>
+<li><code>main</code> 함수도 리턴 값이 없기 때문에 <code>void</code>를 사용한다.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="인스턴스"><a href="#인스턴스" class="headerlink" title="인스턴스"></a>인스턴스</h2><ul>
+<li>클래스가 ‘설계도’라면 <strong>인스턴스는 그 설계도를 따른 ‘객체’</strong> 를 뜻한다.</li>
+<li><code>country</code>라는 클래스가 있다면 ‘한국’, ‘미국’, ‘캐나다’ 등은 <code>country</code> 클래스를 따르는 인스턴스라고 할 수 있다. (혹은 그냥 <code>country</code> 인스턴스)</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BankDriver</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 사람 생성</span></span><br><span class="line">        Person p1 = <span class="keyword">new</span> Person();</span><br><span class="line">        p1.name = <span class="string">&quot;엠제이&quot;</span>;</span><br><span class="line">        p1.age = <span class="number">30</span>;</span><br><span class="line">        p1.cashAmount = <span class="number">50000</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 은행 계좌 생성</span></span><br><span class="line">        BankAccount a1 = <span class="keyword">new</span> BankAccount();</span><br><span class="line">        a1.balance = <span class="number">100000</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 두 객체의 관계 설정</span></span><br><span class="line">        p1.account = a1;</span><br><span class="line">        a1.owner = p1;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 테스트</span></span><br><span class="line">        System.out.print(p1.name + <span class="string">&quot;의 계좌 잔액: &quot;</span> + p1.account.balance);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="접근-제어자"><a href="#접근-제어자" class="headerlink" title="접근 제어자"></a>접근 제어자</h2><ul>
+<li>객체에 대한 권한을 너무 쉽게 주면 문제가 생길 수 있기 때문에 권한을 제한해주는 <strong>접근 제어자(Access Modifier)</strong> 가 존재한다.</li>
+<li>인스턴스 변수 앞에 <code>private</code>이라는 접근 제어자를 사용하면 그 변수는 해당 클래스 내에서만 접근 가능하다.</li>
+<li>해당 클래스 내에서 사용이 가능하기 때문에 그 클래스에 해당 변수를 사용하는 메소드를 쓰면 사용 가능하다.</li>
+<li><code>setAge</code> 같은 메소드를 <code>setter</code>, <code>getAge</code> 같은 메소드를 <code>getter</code>라고 칭한다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> newAge)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (newAge &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            age = newAge;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="메소드-오버로딩"><a href="#메소드-오버로딩" class="headerlink" title="메소드 오버로딩"></a>메소드 오버로딩</h2><ul>
+<li>클래스 내에서 같은 이름의 메소드를 2개 이상 정의할 수 있게 해주는 기능.</li>
+<li>같은 이름의 메소드라도 파라미터 구성이 다르면 알아서 구분한다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Calculator</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a + b + c;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">double</span> <span class="title">add</span><span class="params">(<span class="keyword">double</span> a, <span class="keyword">double</span> b)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Calculator c = <span class="keyword">new</span> Calculator();</span><br><span class="line"></span><br><span class="line">        System.out.println(c.add(<span class="number">2</span>, <span class="number">4</span>));        <span class="comment">// 6</span></span><br><span class="line">        System.out.println(c.add(<span class="number">2</span>, <span class="number">4</span>, <span class="number">8</span>));     <span class="comment">// 14</span></span><br><span class="line">        System.out.println(c.add(<span class="number">3.14</span>, <span class="number">2.54</span>));  <span class="comment">// 5.68</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="생성자"><a href="#생성자" class="headerlink" title="생성자"></a>생성자</h2><ul>
+<li>인스턴스를 만들고, 인스턴스의 속성(인스턴스 변수)들을 초기화시킨다.</li>
+<li>생성자를 하나도 정의하지 않았을 경우 자동으로 기본 생성자를 제공한다.<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Person p1 = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure></li>
+<li>생성자를 하나라도 정의하면 기본 생성자는 사용할 수 없다.<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String pName, <span class="keyword">int</span> pAge)</span> </span>&#123;</span><br><span class="line">        name = pName;</span><br><span class="line">        age = pAge;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Person p1 = <span class="keyword">new</span> Person(<span class="string">&quot;엠제이&quot;</span>, <span class="number">27</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="오버로딩"><a href="#오버로딩" class="headerlink" title="오버로딩"></a>오버로딩</h3><ul>
+<li>파라미터의 구성을 다르게 하면 생성자 오버로딩도 가능하다.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String pName, <span class="keyword">int</span> pAge)</span> </span>&#123;</span><br><span class="line">    name = pName;</span><br><span class="line">    age = pAge;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String pName)</span> </span>&#123;</span><br><span class="line">    name = pName;</span><br><span class="line">    age = <span class="number">12</span>;    <span class="comment">// 12살을 기본 나이로 설정</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Person p1 = <span class="keyword">new</span> Person(<span class="string">&quot;엠제이&quot;</span>, <span class="number">27</span>);  <span class="comment">// 첫 번째 생성자</span></span><br><span class="line">    Person p2 = <span class="keyword">new</span> Person(<span class="string">&quot;mjaedot&quot;</span>);      <span class="comment">// 두 번째 생성자</span></span><br><span class="line"></span><br><span class="line">    System.out.println(p1.name); <span class="comment">// 엠제이</span></span><br><span class="line">    System.out.println(p1.age); <span class="comment">// 27</span></span><br><span class="line">    System.out.println(p2.name); <span class="comment">// mjaedot</span></span><br><span class="line">    System.out.println(p2.age); <span class="comment">// 12</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><ul>
+<li>메소드에서 현재 인스턴스를 가리키는 역할.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String pName)</span> </span>&#123;</span><br><span class="line">        name = pName;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayHello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hi. My name is &quot;</span> + <span class="keyword">this</span>.name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Person p1 = <span class="keyword">new</span> Person(<span class="string">&quot;엠제이&quot;</span>);</span><br><span class="line">        p1.sayHello(); <span class="comment">// Hi. My name is 엠제이.</span></span><br><span class="line">        </span><br><span class="line">        Person p2 = <span class="keyword">new</span> Person(<span class="string">&quot;mjaedot&quot;</span>);</span><br><span class="line">        p2.sayHello(); <span class="comment">// Hi. My name is mjaedot.</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="일반-메소드에서-사용"><a href="#일반-메소드에서-사용" class="headerlink" title="일반 메소드에서 사용"></a>일반 메소드에서 사용</h3><p>파라미터가 변수와 동일한 경우 클래스의 인스턴스 변수가 아닌 파라미터를 가리키게 된다. 인스턴스 변수 <code>name</code>보다 파라미터 변수 <code>name</code>이 더 가깝기 때문이다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>클래스로 생성된 인스턴스 변수 <code>name</code>을 가리키고 싶다면 <code>this</code>를 사용하면 된다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="생성자에서의-사용"><a href="#생성자에서의-사용" class="headerlink" title="생성자에서의 사용"></a>생성자에서의 사용</h3><p>생성자에서도 동일하게 적용 가능하다.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 자바 기초</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2022/03/17/java-oop/" data-id="cm4wfoffb005vjp0a52zqfxy7"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/object-oriented-programming/" rel="tag">object-oriented programming</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2022/05/24/react-overview/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            리액트 개요
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/03/15/java-array/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JAVA 배열</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

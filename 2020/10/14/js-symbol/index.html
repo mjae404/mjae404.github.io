@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 7번째 데이터 타입 symbol |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-symbol" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 7번째 데이터 타입 symbol
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/10/14/js-symbol/" class="article-date">
+  <time datetime="2020-10-13T15:30:57.000Z" itemprop="datePublished">2020-10-14</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>심볼(symbol)은 ES6에서 새롭게 추가된 7번째 타입으로 변경 불가능한 원시 타입의 값이다. 심볼 값은 다른 값과 중복되지 않는 유일무이한 값이다. 따라서 주로 이름의 충돌 위험이 없는 유일한 프로퍼티 키를 만들기 위해 사용한다. 심볼은 중복되지 않는 상수 값을 생성하는 것은 물론 기존에 작성된 코드에 영향을 주지 않고 새로운 프로퍼티를 추가하기 위해, 즉 하위 호환성을 보장하기 위해 도입되었다.</p>
+<a id="more"></a>
+
+<h2 id="Symbol의-생성"><a href="#Symbol의-생성" class="headerlink" title="Symbol의 생성"></a>Symbol의 생성</h2><p>심볼 값은 Symbol 함수를 호출하여 생성해야 한다. 이때 생성된 심볼 값은 노출되지 않으며 다른 값과 절대 중복되지 않는다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mySymbol = <span class="built_in">Symbol</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 심볼 값은 노출되지 않는다.</span></span><br><span class="line"><span class="built_in">console</span>.log(mySymbol);        <span class="comment">// Symbol()</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> mySymbol); <span class="comment">// symbol</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>new 연산자를 사용하지 않는다.</li>
+<li>변경 불가능한 원시 값이다.</li>
+<li>선택적으로 문자열을 인수로 전달할 수 있다.</li>
+<li>심볼 값에 대한 설명이 같더라도 생성된 심볼 값은 유일무이한 값이다.</li>
+<li>심볼 값은 암묵적으로 문자열이나 숫자 타입으로 변환되지 않는다.</li>
+<li>불리언 타입으로는 암묵적으로 타입 변환된다.</li>
+</ul>
+<h2 id="Symbol-for-메소드"><a href="#Symbol-for-메소드" class="headerlink" title="Symbol.for 메소드"></a>Symbol.for 메소드</h2><p>인수로 전달받은 문자열을 키로 사용하여 키와 심볼 값의 쌍들이 저장되어 있는 전역 심볼 레지스트리(global symbol registry)에서 해당 키와 일치하는 심볼 값을 검색한다.</p>
+<ul>
+<li>검색에 성공하면 새로운 심볼 값을 생성하지 않고 검색된 심볼 값을 반환한다.</li>
+<li>검색에 실패하면 새로운 심볼 값을 생성하여 Symbol.for 메소드의 인수로 전달된 키로 전역 Symbol 레지스트리에 저장한 후, 생성된 심볼 값을 반환한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> s1 = <span class="built_in">Symbol</span>.for(<span class="string">&#x27;mySymbol&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> s2 = <span class="built_in">Symbol</span>.for(<span class="string">&#x27;mySymbol&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(s1 === s2); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Symbol과-상수"><a href="#Symbol과-상수" class="headerlink" title="Symbol과 상수"></a>Symbol과 상수</h2><p>값에는 특별한 의미가 없고 상수 이름 자체에 의미가 있는 경우가 있다. 상수값이 다른 변수 값과 중복될 수 있기 때문에, 중복될 가능성이 있는 무의미한 상수 대신 중복될 가능성이 없는 유일무이한 심볼 값을 사용할 수 있다.</p>
+<h2 id="Symbol과-프로퍼티-키"><a href="#Symbol과-프로퍼티-키" class="headerlink" title="Symbol과 프로퍼티 키"></a>Symbol과 프로퍼티 키</h2><ul>
+<li>객체의 프로퍼티 키는 빈 문자열을 포함하는 모든 문자열 또는 심볼 값으로 만들 수 있다.</li>
+<li>동적으로 생성(Computed property name)할 수 있다.</li>
+<li>심볼 값으로 프로퍼티 키를 만들면 다른 프로퍼티 키와 절대 충돌하지 않는다.</li>
+</ul>
+<h2 id="Symbol과-프로퍼티-은닉"><a href="#Symbol과-프로퍼티-은닉" class="headerlink" title="Symbol과 프로퍼티 은닉"></a>Symbol과 프로퍼티 은닉</h2><ul>
+<li>심볼 값으로 동적 생성한 프로퍼티 키로 만든 프로퍼티는 for…in 문이나 Object.keys, Object.getOwnPropertyNames 메소드로 찾을 수 없다.</li>
+<li>심볼 값으로 동적 생성한 프로퍼티 키로 프로퍼티를 만들면 프로퍼티를 숨길 수 있다.</li>
+<li>단, Object.getOwnPropertySymbols 메소드를 사용하면 심볼 값으로 동적 생성한 프로퍼티 키로 만든 프로퍼티를 찾을 수 있다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  [<span class="built_in">Symbol</span>(<span class="string">&#x27;mySymbol&#x27;</span>)]: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(key); <span class="comment">// 아무것도 출력되지 않는다.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(obj)); <span class="comment">// []</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.getOwnPropertyNames(obj)); <span class="comment">// []</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Symbol과-표준-빌트인-객체-확장"><a href="#Symbol과-표준-빌트인-객체-확장" class="headerlink" title="Symbol과 표준 빌트인 객체 확장"></a>Symbol과 표준 빌트인 객체 확장</h2><p>표준 빌트인 객체에 사용자 정의 메소드를 직접 추가하여 확장하는 것은 권장하지 않는다. <strong>개발자가 직접 추가한 메소드와 미래에 표준 사양으로 추가될 메소드가 이름이 중복</strong> 될 수 있기 때문이다. 중복될 가능성이 없는 심볼 값으로 프로퍼티 키를 생성하여 표준 빌트인 객체를 확장하면 표준 빌트인 객체의 기존 프로퍼티 키와 충돌하지 않는 것은 물론, 버전이 올라감에 따라 추가될지 모르는 어떤 프로퍼티 키와도 충돌할 위험이 없어 안전하게 표준 빌트인 객체를 확장할 수 있다.</p>
+<h2 id="Well-known-Symbol"><a href="#Well-known-Symbol" class="headerlink" title="Well known Symbol"></a>Well known Symbol</h2><p><code>Well known Symbol</code>은 자바스크립트가 기본으로 제공하는 빌트인 심볼 값이다. 자바스크립트 엔진의 내부 알고리즘에 사용된다.</p>
+<blockquote>
+<p><strong>빌트인 이터러블</strong><br>이터러블은 for…of 문으로 순회할 수 있고 스프레드 문법의 피연산자가 될 수 있는 객체를 말한다.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>빌트인 이터러블</th>
+<th>프로퍼티 키가 Symbol.iterator인 메소드</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Array</td>
+<td>Array.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>String</td>
+<td>String.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Map.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>Set</td>
+<td>Set.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>TypedArray</td>
+<td>TypedArray.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>arguments</td>
+<td>arguments[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>DOM 컬렉션</td>
+<td>NodeList.prototype[Symbol.iterator], HTMLCollection.prototype[Symbol.iterator]</td>
+</tr>
+</tbody></table>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/10/14/js-symbol/" data-id="cm4wfoffn00b6jp0ahjn05xaz"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/" rel="tag">es6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/symbol/" rel="tag">symbol</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/10/18/js-closure/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 클로저
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/10/13/js-class/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 클래스</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

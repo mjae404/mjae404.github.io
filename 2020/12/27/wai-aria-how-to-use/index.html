@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    WAI-ARIA 사용법 및 주의점 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-wai-aria-how-to-use" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  WAI-ARIA 사용법 및 주의점
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/12/27/wai-aria-how-to-use/" class="article-date">
+  <time datetime="2020-12-27T13:29:56.000Z" itemprop="datePublished">2020-12-27</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/WAI-ARIA/">WAI-ARIA</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>WAI-ARIA를 사용하는 방법 및 주의사항은 아래와 같다.</p>
+<a id="more"></a>
+
+<h2 id="ARIA와-HTML5"><a href="#ARIA와-HTML5" class="headerlink" title="ARIA와 HTML5"></a>ARIA와 HTML5</h2><p>ARIA 역할(<code>role</code>)과 HTML5 섹션 요소 중복 사용하지 않는다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">role</span>=<span class="string">&quot;navigation&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="role-”application”"><a href="#role-”application”" class="headerlink" title="role=”application”"></a>role=”application”</h3><ul>
+<li>동일한 역할의 요소 없음.</li>
+<li>주로 <code>&lt;div&gt;</code> 요소와 같이 그룹 역할을 하는 요소로 대체할 수 있다.</li>
+</ul>
+<h3 id="role-”banner”"><a href="#role-”banner”" class="headerlink" title="role=”banner”"></a>role=”banner”</h3><ul>
+<li>동일한 역할의 요소 없음.</li>
+<li>비슷한 의미로 <code>&lt;header&gt;</code> 요소를 사용할 수 있으나 <code>&lt;header role=&quot;banner&quot;&gt;</code>로 사용하였다면 한 페이지에서 하나의 요소만 사용하길 권장한다.</li>
+</ul>
+<h3 id="role-”navigation”"><a href="#role-”navigation”" class="headerlink" title="role=”navigation”"></a>role=”navigation”</h3><ul>
+<li><code>&lt;nav&gt;</code> 요소</li>
+<li>다른 페이지 또는 페이지 내 특정 영역으로 이동하는 링크 콘텐츠 영역으로 주로 메인 메뉴 및 서브 메뉴 등에 사용할 수 있다.</li>
+</ul>
+<h3 id="role-”main”"><a href="#role-”main”" class="headerlink" title="role=”main”"></a>role=”main”</h3><ul>
+<li><code>&lt;main&gt;</code> 요소</li>
+<li>본문의 주요 콘텐츠 영역으로 한 페이지 내에 <strong>하나</strong> 만 사용이 가능하며, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code> 요소의 하위 요소로 사용할 수 없다.</li>
+</ul>
+<h3 id="role-”aside”"><a href="#role-”aside”" class="headerlink" title="role=”aside”"></a>role=”aside”</h3><ul>
+<li><code>&lt;aside&gt;</code> 요소</li>
+<li>주요 콘텐츠와 연관이 적은 의미있는 콘텐츠 영역으로 종종 사이드바로 표현할 수 있다.</li>
+<li><code>&lt;aside&gt;</code> 영역에는 현재 날씨, 관련된 기사 또는 주식 정보 등의 부가 콘텐츠를 포함할 수 있다.</li>
+</ul>
+<h3 id="role-”form”"><a href="#role-”form”" class="headerlink" title="role=”form”"></a>role=”form”</h3><ul>
+<li><code>&lt;form&gt;</code> 요소</li>
+<li>폼과 관련된 요소의 모임을 표현하는 영역으로 서버에 전송될 수 있는 콘텐츠를 포함할 수 있다.</li>
+</ul>
+<h3 id="role-”search”"><a href="#role-”search”" class="headerlink" title="role=”search”"></a>role=”search”</h3><ul>
+<li>동일한 역할의 요소 없음.</li>
+<li>검색의 역할을 담당하는 서식 영역임을 의미하며 <code>&lt;div&gt;</code> 또는 <code>&lt;form&gt;</code> 요소를 사용하는 것을 권장한다.</li>
+</ul>
+<h3 id="role-”contentinfo”"><a href="#role-”contentinfo”" class="headerlink" title="role=”contentinfo”"></a>role=”contentinfo”</h3><ul>
+<li>동일한 역할의 요소 없음.</li>
+<li>비슷한 의미로 <code>&lt;footer&gt;</code> 요소를 사용할 수 있으나 <code>&lt;footer role=&quot;contentinfo&quot;&gt;</code>로 사용하였다면 한 페이지에서 하나의 요소만 사용하길 권장한다.</li>
+</ul>
+<h2 id="HTML-요소의-기능-변경-제한"><a href="#HTML-요소의-기능-변경-제한" class="headerlink" title="HTML 요소의 기능 변경 제한"></a>HTML 요소의 기능 변경 제한</h2><p>html 요소에 네이티브 의미나 기능을 aria 규칙을 이용하여 변경하는 것은 바람직하지 않다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- X --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">role</span>=<span class="string">&quot;button&quot;</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- O --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;<span class="name">button</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">button</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">role</span>=<span class="string">&quot;button&quot;</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="키보드-사용-보장"><a href="#키보드-사용-보장" class="headerlink" title="키보드 사용 보장"></a>키보드 사용 보장</h2><ul>
+<li><strong>사용자와 상호작용이 필요한 대화용 UI(사용자가 클릭할 수 있는 정보나 탭, 드래그 앤 드롭, 슬라이드, 스크롤 등)</strong> 의 경우 키보드로도 접근 및 사용이 가능하도록 제공하여야 한다.</li>
+<li><code>tabindex</code> 속성에 <code>0</code>을 지정하면 콘텐츠의 선형화 순서대로 키보드 포커스가 진입하게 되고 <code>0보다 작은 값</code>을 지정하면 키포드 포커스를 받을 수 없는 상태가 된다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- X --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">role</span>=<span class="string">&quot;button&quot;</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- O --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">role</span>=<span class="string">&quot;button&quot;</span> <span class="attr">tabindex</span>=<span class="string">&quot;0&quot;</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="숨김-콘텐츠"><a href="#숨김-콘텐츠" class="headerlink" title="숨김 콘텐츠"></a>숨김 콘텐츠</h2><ul>
+<li>사용자에게 정보를 전달하되 단순히 화면에서만 보이지 않도록 처리된 콘텐츠에 <code>aria-hidden=&quot;true&quot;</code>를 지정해서는 안된다. 스크린 리더기에도 의미적으로 숨겨진 콘텐츠로 인식하기 때문이다.</li>
+<li>특정한 의미를 전달해야 하는 콘텐츠에 <code>role=&quot;presentation&quot;</code>을 지정해주어서는 안된다. 스크린 리더기에서는 보여주기 위한 가시적으로 전달하기 위한 요소로 인식하기 때문이다.</li>
+<li><code>aria-hidden=&quot;true&quot;</code>를 사용하여 숨김 콘텐츠에 대한 사용자의 접근을 차단하고자 할 경우 <code>display: none</code> 처리를 하여 스크린 리더기에서 접근할 수 없게 하고 <code>aria-hidden=&quot;true&quot;</code>를 명시하여야 한다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- X --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">role</span>=<span class="string">&quot;presentation&quot;</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- O --&gt;</span></span><br><span class="line">button &#123;display: none;&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="레이블-제공"><a href="#레이블-제공" class="headerlink" title="레이블 제공"></a>레이블 제공</h2><p>모든 대화형 UI의 경우 반드시 레이블을 제공하여야 한다. 레이블 제공을 위해 <code>&lt;label&gt;</code>를 사용하는 것을 권장하며 <code>aria-label</code>, <code>aria-labelledby</code> 등의 ARIA 관련 속성을 사용하여 레이블을 제공할 수도 있다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;user-name&quot;</span>&gt;</span>이름<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">aria-labelledby</span>=<span class="string">&quot;user-name&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="유효성-검사"><a href="#유효성-검사" class="headerlink" title="유효성 검사"></a>유효성 검사</h2><p>ARIA를 사용할 경우 의미를 가지는 시맨틱 요소와 충돌되지 않도록 하는 것이 필요하다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- X --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">role</span>=<span class="string">&quot;button&quot;</span>&gt;</span>버튼<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=08ha5EkByIo&amp;list=PLtaz5vK7MbK355QFGb4q8DfFPbh3NQDda">https://www.youtube.com/watch?v=08ha5EkByIo&amp;list=PLtaz5vK7MbK355QFGb4q8DfFPbh3NQDda</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/12/27/wai-aria-how-to-use/" data-id="cm4wfofgm00pejp0acj1656b6"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WAI-ARIA/" rel="tag">WAI-ARIA</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/01/02/git-reset/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            git 커밋 되돌리기 (reset / revert)
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/12/27/wai-aria-overview/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">WAI-ARIA 기본 개념</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

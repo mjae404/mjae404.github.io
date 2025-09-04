@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 전역 변수의 문제점 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-global-variable" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 전역 변수의 문제점
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/18/js-global-variable/" class="article-date">
+  <time datetime="2020-08-17T16:01:02.000Z" itemprop="datePublished">2020-08-18</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>전역 변수의 무분별한 사용은 위험하다. 전역 변수를 반드시 사용할 이유가 없다면 지역 변수를 사용하는 것이 좋다.</p>
+<a id="more"></a>
+
+<h2 id="전역-변수의-문제점"><a href="#전역-변수의-문제점" class="headerlink" title="전역 변수의 문제점"></a>전역 변수의 문제점</h2><h3 id="암묵적-결합"><a href="#암묵적-결합" class="headerlink" title="암묵적 결합"></a><em>암묵적 결합</em></h3><p>전역변수를 선언한 의도는 코드 어디에서든 전역 변수를 사용하겠다는 것이다. 모든 코드가 전역 변수를 참조하고 변경할 수 있는 <strong>암묵적 결합(implicit coupling)을 허용</strong> 한다.</p>
+<h3 id="긴-생명주기"><a href="#긴-생명주기" class="headerlink" title="긴 생명주기"></a><em>긴 생명주기</em></h3><p><strong>전역 변수는 생명 주기가 길다.</strong> 전역 변수의 상태를 변경할 수 있는 시간도 길고, 모든 함수가 참조할 수 있기 때문에 상태를 변경할 기회도 많다. 또한 메모리 리소스도 오랜 기간 소비한다.  변수의 중복 선언을 허용하므로 변수 이름이 중복될 가능성이 있다.</p>
+<h3 id="스코프-체인-상에서-종점에-존재"><a href="#스코프-체인-상에서-종점에-존재" class="headerlink" title="스코프 체인 상에서 종점에 존재"></a><em>스코프 체인 상에서 종점에 존재</em></h3><p><strong>스코프 체인 상에서 종점에 존재한다</strong>. 이는 변수를 검색할 때 전역 변수가 가장 마지막에 검색되어 전역 변수의 검색 속도가 가장 느리다.</p>
+<h3 id="네임-스페이스-오염"><a href="#네임-스페이스-오염" class="headerlink" title="네임 스페이스 오염"></a><em>네임 스페이스 오염</em></h3><p>파일이 분리되어 있다하여도 하나의 전역 스코프를 공유하기 때문에 다른 파일 내에서 동일한 이름으로 명명된 변수나 함수가 같은 스코프 내에 존재할 경우 예상치 못한 결과를 가져올 수 있다.</p>
+<h2 id="전역-변수-사용-억제-방법"><a href="#전역-변수-사용-억제-방법" class="headerlink" title="전역 변수 사용 억제 방법"></a>전역 변수 사용 억제 방법</h2><h3 id="즉시-실행-함수"><a href="#즉시-실행-함수" class="headerlink" title="즉시 실행 함수"></a><em>즉시 실행 함수</em></h3><p>모든 코드를 즉시 실행 함수로 감싸면 모든 변수는 즉시 실행 함수의 지역 변수가 된다.</p>
+<h3 id="네임-스페이스-객체"><a href="#네임-스페이스-객체" class="headerlink" title="네임 스페이스 객체"></a><em>네임 스페이스 객체</em></h3><p>전역에 네임 스페이스(Namespace) 역할을 담당할 객체를 생성하고 전역 변수처럼 사용하고 싶은 변수를 프로퍼티로 추가한다. 네임 스페이스 객체에 또 다른 네임 스페이스 객체를 프로퍼티로 추가하여 네임 스페이스를 계층적으로 구성할 수도 있다. <strong>네임 스페이스를 분리하여 식별자 충돌을 방지하는 효과는 있으나 네임 스페이스 객체 자체가 전역 변수에 할당</strong> 된다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MYAPP = &#123;&#125;; <span class="comment">// 전역 네임 스페이스 객체</span></span><br><span class="line"></span><br><span class="line">MYAPP.name = <span class="string">&#x27;kim&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(MYAPP.name); <span class="comment">// Kim</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="모듈-패턴"><a href="#모듈-패턴" class="headerlink" title="모듈 패턴"></a><em>모듈 패턴</em></h3><p>클래스를 모방하여 관련이 있는 변수와 함수를 모아 즉시 실행 함수로 감싸 하나의 모듈을 만든다. <strong>모듈 패턴은 자바스크립트의 강력한 기능인 클로저를 기반으로 동작한다.</strong> 모듈 패턴은 전역 변수의 억제는 물론 캡슐화까지 구현할 수 있다.</p>
+<h3 id="ES6-모듈"><a href="#ES6-모듈" class="headerlink" title="ES6 모듈"></a><em>ES6 모듈</em></h3><p>script 태그에 <code>type=&quot;module&quot;</code> 어트리뷰트를 추가하면 로드된 자바스크립트 파일은 모듈로서 동작한다. 모듈의 파일 확장자는 mjs를 권장한다. 하지만 ES6 모듈은 IE를 포함한 구형 브라우저는 동작하지 않으며, 브라우저의 ES6 모듈 기능을 사용하더라도 트랜스파일링이나 번들링이 필요하다.</p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/08/18/js-global-variable/" data-id="cm4wfoffl00a2jp0a321kevox"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/global-variable/" rel="tag">global variable</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/08/19/js-control-flow-statuement/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 제어문
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/18/js-block-level-scope/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS let, const와 블록 레벨 스코프</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

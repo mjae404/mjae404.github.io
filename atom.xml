@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>404 Not Found</title>
+  
+  <subtitle>FRONT-END DEVELOP LOG</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://mjae404.github.io/"/>
+  <updated>2025-03-26T02:44:31.204Z</updated>
+  <id>http://mjae404.github.io/</id>
+  
+  <author>
+    <name>Minjee Kim</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>브라우저는 어떻게 동작하는가</title>
+    <link href="http://mjae404.github.io/2025/03/25/web-guide-how-to-work/"/>
+    <id>http://mjae404.github.io/2025/03/25/web-guide-how-to-work/</id>
+    <published>2025-03-25T12:38:23.000Z</published>
+    <updated>2025-03-26T02:44:31.204Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;실제 성능 및 체감되는 성능을 향상시키는 방법을 이해하기 위해서 브라우저가 어떻게 동작하는지 이해해야 한다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="web" scheme="http://mjae404.github.io/categories/web/"/>
+    
+      <category term="performance" scheme="http://mjae404.github.io/categories/web/performance/"/>
+    
+    
+      <category term="web" scheme="http://mjae404.github.io/tags/web/"/>
+    
+      <category term="performance" scheme="http://mjae404.github.io/tags/performance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UI 개발 기본 지식</title>
+    <link href="http://mjae404.github.io/2024/05/11/html-basic/"/>
+    <id>http://mjae404.github.io/2024/05/11/html-basic/</id>
+    <published>2024-05-11T11:33:00.000Z</published>
+    <updated>2024-05-12T06:28:29.620Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;UI / Front-end develop info.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML &amp; CSS" scheme="http://mjae404.github.io/categories/HTML-CSS/"/>
+    
+      <category term="HTML" scheme="http://mjae404.github.io/categories/HTML-CSS/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://mjae404.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>장고 앱(App) 구조</title>
+    <link href="http://mjae404.github.io/2023/08/19/django-app-structure/"/>
+    <id>http://mjae404.github.io/2023/08/19/django-app-structure/</id>
+    <published>2023-08-19T09:17:06.000Z</published>
+    <updated>2023-08-19T09:39:00.163Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Project와-App의-차이&quot;&gt;&lt;a href=&quot;#Project와-App의-차이&quot; class=&quot;headerlink&quot; title=&quot;Project와 App의 차이&quot;&gt;&lt;/a&gt;Project와 App의 차이&lt;/h2&gt;&lt;p&gt;Django에서 웹 서비스 각각의 기능은 앱 단위로 구현한다. 실제로 하나의 프로젝트는 여러 개의 앱과 약간의 설정 파일들로 구성되어 있고 하나의 앱은 여러 개의 프로젝트에서 사용할 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+      <category term="django" scheme="http://mjae404.github.io/categories/Python/django/"/>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="django" scheme="http://mjae404.github.io/tags/django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>장고 개요</title>
+    <link href="http://mjae404.github.io/2023/08/03/django-overview/"/>
+    <id>http://mjae404.github.io/2023/08/03/django-overview/</id>
+    <published>2023-08-03T12:33:53.000Z</published>
+    <updated>2023-08-19T09:15:31.956Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;diango-개발환경-구성하기&quot;&gt;&lt;a href=&quot;#diango-개발환경-구성하기&quot; class=&quot;headerlink&quot; title=&quot;diango 개발환경 구성하기&quot;&gt;&lt;/a&gt;diango 개발환경 구성하기&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Homebrew&lt;/code&gt;를 설치후 버전을 확인한다.&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#x2F;bin&amp;#x2F;bash -c &amp;quot;$(curl -fsSL https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;Homebrew&amp;#x2F;install&amp;#x2F;HEAD&amp;#x2F;install.sh)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew --version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://mjae404.github.io/categories/Python/"/>
+    
+      <category term="django" scheme="http://mjae404.github.io/categories/Python/django/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="Python" scheme="http://mjae404.github.io/tags/Python/"/>
+    
+      <category term="django" scheme="http://mjae404.github.io/tags/django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>리액트 next.js 세팅</title>
+    <link href="http://mjae404.github.io/2022/08/21/react-nextjs/"/>
+    <id>http://mjae404.github.io/2022/08/21/react-nextjs/</id>
+    <published>2022-08-21T07:26:19.000Z</published>
+    <updated>2024-01-26T08:23:35.031Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Next-js를-사용하는-이유&quot;&gt;&lt;a href=&quot;#Next-js를-사용하는-이유&quot; class=&quot;headerlink&quot; title=&quot;Next.js를 사용하는 이유&quot;&gt;&lt;/a&gt;Next.js를 사용하는 이유&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;프리 렌더링&lt;/li&gt;
+&lt;li&gt;Vercel로 서버 호스팅&lt;/li&gt;
+&lt;li&gt;파일 시스템 기반 서버 호스팅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;npx create next app .&lt;/code&gt;으로 설치한다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;node.js&lt;/code&gt;를 설치한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm i next&lt;/code&gt; 명령어를 진행한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm i react react-dom&lt;/code&gt; 을 설치한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://thebook.io/&quot;&gt;https://thebook.io/&lt;/a&gt; 에서 참고할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="React" scheme="http://mjae404.github.io/categories/JavaScript/React/"/>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="react" scheme="http://mjae404.github.io/tags/react/"/>
+    
+      <category term="nextjs" scheme="http://mjae404.github.io/tags/nextjs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>리액트 개요</title>
+    <link href="http://mjae404.github.io/2022/05/24/react-overview/"/>
+    <id>http://mjae404.github.io/2022/05/24/react-overview/</id>
+    <published>2022-05-24T02:14:12.000Z</published>
+    <updated>2022-08-21T07:24:53.226Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;create-react-app&lt;/code&gt;으로 리액트 프로젝트 생성.&lt;br&gt;&lt;code&gt;npm init react-app &amp;lt;폴더 이름&amp;gt;&lt;/code&gt; 혹은 해당 폴더 안에 들어간 후  터미널에서 &lt;code&gt;npm init react-app .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;개발모드 실행: &lt;code&gt;npm run start&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;개발모드 종료: &lt;code&gt;Ctrl + C&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;리액트 개발자 도구: React Developer Tools (크롬 확장 프로그램)&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/categories/JavaScript/"/>
+    
+      <category term="React" scheme="http://mjae404.github.io/categories/JavaScript/React/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="JavaScript" scheme="http://mjae404.github.io/tags/JavaScript/"/>
+    
+      <category term="react" scheme="http://mjae404.github.io/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA 객체 지향 프로그래밍</title>
+    <link href="http://mjae404.github.io/2022/03/17/java-oop/"/>
+    <id>http://mjae404.github.io/2022/03/17/java-oop/</id>
+    <published>2022-03-17T05:42:54.000Z</published>
+    <updated>2022-03-18T12:32:12.788Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;객체 지향 프로그래밍&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;컴퓨터 프로그래밍의 패러다임 중 하나이다. 객체 지향 프로그래밍은 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 “객체”들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. &lt;sup&gt;1&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;‘객체’는 ‘속성’들과 ‘동작’들의 묶음이라고 할 수 있는데 속성은 ‘변수’로 나타내고, 동작은 ‘메소드(함수)’로 나타낸다.&lt;blockquote&gt;
+&lt;p&gt;[ 1 ] : &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D&quot;&gt;위키백과&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
+    
+      <category term="object-oriented programming" scheme="http://mjae404.github.io/tags/object-oriented-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA 배열</title>
+    <link href="http://mjae404.github.io/2022/03/15/java-array/"/>
+    <id>http://mjae404.github.io/2022/03/15/java-array/</id>
+    <published>2022-03-15T03:13:13.000Z</published>
+    <updated>2022-03-15T04:33:28.206Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;배열을 사용하면 변수 하나에 값을 여러개 담을 수 있다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
+    
+      <category term="array" scheme="http://mjae404.github.io/tags/array/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA 조건문과 반복문</title>
+    <link href="http://mjae404.github.io/2022/03/14/java-control-flow-statement/"/>
+    <id>http://mjae404.github.io/2022/03/14/java-control-flow-statement/</id>
+    <published>2022-03-14T06:10:25.000Z</published>
+    <updated>2022-03-14T08:45:10.853Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;if&quot;&gt;&lt;a href=&quot;#if&quot; class=&quot;headerlink&quot; title=&quot;if&quot;&gt;&lt;/a&gt;if&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (조건부분 &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 수행 부분 1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (조건 부분 &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 수행 부분 2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (조건 부분 &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 수행 부분 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 수행 부분 4&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
+    
+      <category term="control flow" scheme="http://mjae404.github.io/tags/control-flow/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA 변수와 연산</title>
+    <link href="http://mjae404.github.io/2022/03/13/java-variables-and-operation/"/>
+    <id>http://mjae404.github.io/2022/03/13/java-variables-and-operation/</id>
+    <published>2022-03-13T05:56:48.000Z</published>
+    <updated>2022-03-13T10:14:36.203Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;변수&quot;&gt;&lt;a href=&quot;#변수&quot; class=&quot;headerlink&quot; title=&quot;변수&quot;&gt;&lt;/a&gt;변수&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;변수의 이름과 변수의 자료형을 선언해주어야 한다.&lt;/li&gt;
+&lt;li&gt;[ 자료형(data type) ] [ 변수의 이름 ]&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt;: x가 어떤 자료형을 저장할지&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a; &lt;span class=&quot;comment&quot;&gt;// 정수형 변수&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;String s; &lt;span class=&quot;comment&quot;&gt;// 문자열 변수&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
+    
+      <category term="variable" scheme="http://mjae404.github.io/tags/variable/"/>
+    
+      <category term="operation" scheme="http://mjae404.github.io/tags/operation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA 개요</title>
+    <link href="http://mjae404.github.io/2022/03/13/java-overview/"/>
+    <id>http://mjae404.github.io/2022/03/13/java-overview/</id>
+    <published>2022-03-13T05:05:05.000Z</published>
+    <updated>2022-03-13T06:18:31.704Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;자바는 전세계적으로 많이 쓰이고 가장 인기있는 언어이다.&lt;/li&gt;
+&lt;li&gt;뿐만 아니라 오랜 인기 덕에 잘 되어 있는 커뮤니티와 정보도 활발하다.&lt;/li&gt;
+&lt;li&gt;개발자 수요가 제일 많은 언어이기도 하다.&lt;/li&gt;
+&lt;li&gt;자바는 객체지향언어이며, 객체지향언어는 코드의 구조가 명확하여 코드를 이해하기 쉽고 관리와 유지보수가 효율적이다.&lt;/li&gt;
+&lt;li&gt;자바 가상머신(Java Virtual Machine, JVM)을 설치하면 운영체제/디바이스 상관없이 동일하게 작동한다.&lt;/li&gt;
+&lt;li&gt;JRE(Java Runtime Environment): JVM을 사용하여 개발할 수 있는 환경&lt;/li&gt;
+&lt;li&gt;JDK(Java Development Kit): 내 컴퓨터에 JRE 환경을 만들기 위해 설치하는 것&lt;ul&gt;
+&lt;li&gt;자바는 오라클 소유이기 때문에 오라클 사이트에서 JDK 설치가 필요하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://mjae404.github.io/categories/Java/"/>
+    
+    
+      <category term="overview" scheme="http://mjae404.github.io/tags/overview/"/>
+    
+      <category term="Java" scheme="http://mjae404.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 애니메이션 06</title>
+    <link href="http://mjae404.github.io/2022/03/04/css-exercise006/"/>
+    <id>http://mjae404.github.io/2022/03/04/css-exercise006/</id>
+    <published>2022-03-04T05:25:34.000Z</published>
+    <updated>2025-09-04T01:31:09.273Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;좌우로 벌어지는 CSS 애니메이션.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 애니메이션 05</title>
+    <link href="http://mjae404.github.io/2022/03/04/css-exercise005/"/>
+    <id>http://mjae404.github.io/2022/03/04/css-exercise005/</id>
+    <published>2022-03-04T02:55:54.000Z</published>
+    <updated>2025-09-04T01:31:12.348Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;거울 반사 효과.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="CSS" scheme="http://mjae404.github.io/categories/exercise/CSS/"/>
+    
+    
+      <category term="CSS" scheme="http://mjae404.github.io/tags/CSS/"/>
+    
+      <category term="CSS3" scheme="http://mjae404.github.io/tags/CSS3/"/>
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mySQL 서브쿼리</title>
+    <link href="http://mjae404.github.io/2022/02/18/sql-sub-query/"/>
+    <id>http://mjae404.github.io/2022/02/18/sql-sub-query/</id>
+    <published>2022-02-18T12:32:59.000Z</published>
+    <updated>2022-03-12T12:47:43.507Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;서브쿼리&quot;&gt;&lt;a href=&quot;#서브쿼리&quot; class=&quot;headerlink&quot; title=&quot;서브쿼리&quot;&gt;&lt;/a&gt;서브쿼리&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;SQL문 안에 ‘부품’처럼 들어가는 SELECT문.&lt;/li&gt;
+&lt;li&gt;전체 SQL문에서 일부를 이루는 또다른 SQL문.&lt;/li&gt;
+&lt;li&gt;괄호로 서브쿼리를 감싸주어야 한다.&lt;/li&gt;
+&lt;li&gt;전체 SQL문을 outer query(외부쿼리), 서브쿼리를 inner query(내부쿼리)라고도 함.&lt;/li&gt;
+&lt;li&gt;HAVING절, SELECT절, WHERE절, FROM절 등에서도 사용 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
+    
+      <category term="Primary Key" scheme="http://mjae404.github.io/tags/Primary-Key/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL 데이터 분석</title>
+    <link href="http://mjae404.github.io/2022/02/17/sql-exercise004/"/>
+    <id>http://mjae404.github.io/2022/02/17/sql-exercise004/</id>
+    <published>2022-02-17T13:02:37.000Z</published>
+    <updated>2022-02-17T13:05:43.866Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(1) pizza_price_cost 테이블의 name, price, price/cost(원가 기준 가격의 비율) 컬럼을 조회하세요.&lt;br&gt;(2) 대신 마지막 price/cost 컬럼을 사용해서 그 값이&lt;br&gt;1 =&amp;lt; 값 &amp;lt; 1.5 인 경우, ‘C. 저효율 메뉴’&lt;br&gt;1.5 &amp;lt;= 값 &amp;lt; 1.7 인 경우, ‘B. 중효율 메뉴’&lt;br&gt;1.7 &amp;lt;= 값 인 경우, ‘A. 고효율 메뉴’&lt;br&gt;라고 그 값을 변환해서 표시하는 추가적인 컬럼도 함께 조회하고 대신 이 컬럼에는 efficiency라는 alias를 붙여주세요.&lt;br&gt;(3) 그리고 전체 row를 efficiency 컬럼을 기준으로 내림차순, 그 다음 기준으로 price 컬럼을 기준으로 오름차순 정렬하세요.&lt;br&gt;(4) 이 중에서 가장 첫 번째 row 부터 6개만 추리세요.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL 데이터 분석</title>
+    <link href="http://mjae404.github.io/2022/02/16/sql-exercise003/"/>
+    <id>http://mjae404.github.io/2022/02/16/sql-exercise003/</id>
+    <published>2022-02-16T12:40:35.000Z</published>
+    <updated>2023-08-13T02:00:35.881Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(1) 고객들이 남긴 리뷰 수와, (2) 별점 평균값을 구하려고 합니다.&lt;br&gt;(3) 댓글이 존재하는(comment 컬럼이 NULL이 아닌) 리뷰들의 개수와 그 별점들의 평균만 구하려고 하는데요.&lt;br&gt;(4) 그리고 별점의 평균값은 반올림을 해주려고 합니다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL 데이터 조회</title>
+    <link href="http://mjae404.github.io/2022/02/15/sql-exercise002/"/>
+    <id>http://mjae404.github.io/2022/02/15/sql-exercise002/</id>
+    <published>2022-02-15T08:32:42.000Z</published>
+    <updated>2022-02-15T08:36:19.682Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(1) star(별점) 컬럼을 기준으로 일단 오름차순 정렬하고,&lt;br&gt;(2) 같은 별점인 경우에는 registration_date(등록일자) 컬럼을 기준으로 내림차순 정렬하려고 합니다.&lt;br&gt;(3) 5번째 row까지만 일단 추려서 보고 싶습니다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL 데이터 조회</title>
+    <link href="http://mjae404.github.io/2022/02/14/sql-exercise001/"/>
+    <id>http://mjae404.github.io/2022/02/14/sql-exercise001/</id>
+    <published>2022-02-14T12:03:15.000Z</published>
+    <updated>2022-02-14T12:09:38.709Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(1) 나이가 20대이고, (2) 코드잇 피자 가게 사이트에 가입한 달이 7월인 회원들만 추려서 그 회원들에게 이메일로 할인 쿠폰을 발송하려고 합니다.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/categories/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/exercise/SQL/"/>
+    
+    
+      <category term="exercise" scheme="http://mjae404.github.io/tags/exercise/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mySQL 테이블 조인</title>
+    <link href="http://mjae404.github.io/2022/02/13/sql-table-join/"/>
+    <id>http://mjae404.github.io/2022/02/13/sql-table-join/</id>
+    <published>2022-02-13T09:19:47.000Z</published>
+    <updated>2022-02-18T12:12:46.240Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;조인(join): 여러 테이블을 합쳐서 하나의 테이블인 것처럼 보는 행위&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
+    
+      <category term="table join" scheme="http://mjae404.github.io/tags/table-join/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mySQL 데이터 분석</title>
+    <link href="http://mjae404.github.io/2022/02/07/sql-data-analysis/"/>
+    <id>http://mjae404.github.io/2022/02/07/sql-data-analysis/</id>
+    <published>2022-02-07T12:59:07.000Z</published>
+    <updated>2022-02-10T17:07:26.487Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;집계함수-Aggregate-Function&quot;&gt;&lt;a href=&quot;#집계함수-Aggregate-Function&quot; class=&quot;headerlink&quot; title=&quot;집계함수 (Aggregate Function)&quot;&gt;&lt;/a&gt;집계함수 (Aggregate Function)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;어떤 컬럼의 값들을 대상으로 원하는 특징값을 구해주는 함수.&lt;/li&gt;
+&lt;li&gt;특정 컬럼의 여러 row의 값들을 동시에 고려해서 실행되는 함수.&lt;/li&gt;
+&lt;li&gt;그루핑을 통해 생성된 각 그룹의 수치적인 특성을 구하는 함수.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/categories/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/categories/Data-Base/SQL/mySQL/"/>
+    
+    
+      <category term="Data Base" scheme="http://mjae404.github.io/tags/Data-Base/"/>
+    
+      <category term="SQL" scheme="http://mjae404.github.io/tags/SQL/"/>
+    
+      <category term="mySQL" scheme="http://mjae404.github.io/tags/mySQL/"/>
+    
+      <category term="data analysis" scheme="http://mjae404.github.io/tags/data-analysis/"/>
+    
+  </entry>
+  
+</feed>

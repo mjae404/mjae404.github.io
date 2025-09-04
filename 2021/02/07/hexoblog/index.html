@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    Hexo |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-hexoblog" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Hexo
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/02/07/hexoblog/" class="article-date">
+  <time datetime="2021-02-07T13:58:45.000Z" itemprop="datePublished">2021-02-07</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><a target="_blank" rel="noopener" href="https://hexo.io/ko/">Hexo</a>는 <code>마크다운</code> 또는 다른 언어를 사용하여 포스트를 작성할 수 있는 블로그 프레임워크이다.</p>
+<a id="more"></a>
+
+<h2 id="Hexo-블로그-생성"><a href="#Hexo-블로그-생성" class="headerlink" title="Hexo 블로그 생성"></a>Hexo 블로그 생성</h2><p><em><strong>요구사항</strong></em></p>
+<ul>
+<li>Node.js</li>
+<li>Git</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><p><code>_config.yml</code> 파일의 사이트 환경설정을 수정할 수 있다.</p>
+<h3 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h3><table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설멍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>웹 사이트의 제목</td>
+</tr>
+<tr>
+<td>subtitle</td>
+<td>웹 사이트의 부제</td>
+</tr>
+<tr>
+<td>description</td>
+<td>웹 사이트에 대한 설명</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>웹사이트의 키워드</td>
+</tr>
+<tr>
+<td>author</td>
+<td>작성자 이름</td>
+</tr>
+<tr>
+<td>language</td>
+<td>웹 사이트의 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">주 사용언어</a>. 기본값은 en.</td>
+</tr>
+<tr>
+<td>timezone</td>
+<td>웹 사이트에서 사용하는 timezone. Hexo는 기본적으로 PC의 시간값을 사용한다.</td>
+</tr>
+</tbody></table>
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><ul>
+<li>웹사이트를 초기화한다.</li>
+<li><code>folder</code>가 없을 경우 현재 디렉토리에서 세팅한다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init [folder]</span><br></pre></td></tr></table></figure>
+
+<h3 id="new"><a href="#new" class="headerlink" title="new"></a>new</h3><ul>
+<li>새 블로그 글을 생성한다.</li>
+<li><code>layout</code>을 공란으로 둘 경우 <code>_config.yml</code>에 정의된 <code>default_layout</code>을 사용한다.</li>
+<li><code>title</code>에 공백이 포함될 시 따옴표로 감싼다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>레이아웃</th>
+<th>경로</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>post</code></td>
+<td><code>source/_posts</code></td>
+</tr>
+<tr>
+<td><code>page</code></td>
+<td><code>source</code></td>
+</tr>
+<tr>
+<td><code>draft</code></td>
+<td><code>source/_drafts</code></td>
+</tr>
+</tbody></table>
+<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><p>정적 파일을 생성한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h3><p><code>draft</code>로 작성한 내용을 배포한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><p>웹사이트를 deploy한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><p>파일을 렌더링한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure>
+
+<h3 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h3><p>다른 블로그 시스템의 내용을 Hexo로 마이그레이션한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo migrate &lt;type&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><p>캐시파일(<code>db.json</code>) 및 생성된 파일들(<code>public</code>)을 삭제한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+
+<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><p>경로(route) 목록을 보여준다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo list &lt;type&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><p>버전 정보를 보여준다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo version</span><br></pre></td></tr></table></figure>
+
+<h3 id="안전모드"><a href="#안전모드" class="headerlink" title="안전모드"></a>안전모드</h3><p>플러그인과 스크립트를 불러오지 않는다. 새로운 플러그인을 설치후 문제가 발생할 경우 사용한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --safe</span><br></pre></td></tr></table></figure>
+
+<h3 id="디버그-모드"><a href="#디버그-모드" class="headerlink" title="디버그 모드"></a>디버그 모드</h3><p>터미널에 <code>verbose</code> 로그 메시지를 출력하고 <code>debug.log</code> 파일에 저장한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --debug</span><br></pre></td></tr></table></figure>
+
+<h3 id="Silent-모드"><a href="#Silent-모드" class="headerlink" title="Silent 모드"></a>Silent 모드</h3><p>터미널에 내용을 출력하지 않는다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --silent</span><br></pre></td></tr></table></figure>
+
+<h3 id="설정-파일의-변경-customizing"><a href="#설정-파일의-변경-customizing" class="headerlink" title="설정 파일의 변경(customizing)"></a>설정 파일의 변경(customizing)</h3><p><code>_config.yml</code> 대신 커스터미이징한 설정 파일을 사용할 수 있다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --config custom.yml</span><br></pre></td></tr></table></figure>
+
+<h3 id="Draft-포스트-표시"><a href="#Draft-포스트-표시" class="headerlink" title="Draft 포스트 표시"></a>Draft 포스트 표시</h3><p>Draft 포스트를 보여준다. (<code>source/_drafts</code> 폴더)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="현재-작업-디렉토리의-변경-customizing"><a href="#현재-작업-디렉토리의-변경-customizing" class="headerlink" title="현재 작업 디렉토리의 변경(customizing)"></a>현재 작업 디렉토리의 변경(customizing)</h3><p>현재 작업 디렉토리 경로를 변경할 수 있다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --cwd &#x2F;path&#x2F;to&#x2F;cwd</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://hexo.io/ko/">https://hexo.io/ko/</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/02/07/hexoblog/" data-id="cm4wfoff3003njp0abakqgpvo"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/02/22/js-exercise012/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 끝말잇기
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/02/05/js-exercise011/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 배열 요소의 합계</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    SCSS 기본 연산 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-scss-operations" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  SCSS 기본 연산
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/22/scss-operations/" class="article-date">
+  <time datetime="2020-08-22T09:41:08.000Z" itemprop="datePublished">2020-08-22</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/Sass-SCSS/">Sass & SCSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>Sass는 기본적으로 연산 기능을 지원하며, 레이아웃 작업시 상황에 맞게 크기를 계산하거나 정해진 값을 나눠서 작업할 경우 유용하게 사용할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="산술-연산자"><a href="#산술-연산자" class="headerlink" title="산술 연산자"></a>산술 연산자</h2><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>더하기</td>
+</tr>
+<tr>
+<td>-</td>
+<td>빼기</td>
+</tr>
+<tr>
+<td>*</td>
+<td>곱하기</td>
+</tr>
+<tr>
+<td>/</td>
+<td>나누기</td>
+</tr>
+<tr>
+<td>%</td>
+<td>나머지</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>하나 이상의 값이 반드시 숫자, 오른쪽값이 반드시 숫자.</p>
+</blockquote>
+<h3 id="비교-연산자"><a href="#비교-연산자" class="headerlink" title="비교 연산자"></a>비교 연산자</h3><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==</td>
+<td>같다</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>같지 않다</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>보다 작은</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>보다 큰</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>보다 작거나 같은</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>보다 크거나 같은</td>
+</tr>
+</tbody></table>
+<h3 id="논리-연산자"><a href="#논리-연산자" class="headerlink" title="논리 연산자"></a>논리 연산자</h3><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==</td>
+<td>같다</td>
+</tr>
+<tr>
+<td>and</td>
+<td>그리고</td>
+</tr>
+<tr>
+<td>or</td>
+<td>또는</td>
+</tr>
+<tr>
+<td>not</td>
+<td>부정</td>
+</tr>
+</tbody></table>
+<h2 id="숫자"><a href="#숫자" class="headerlink" title="숫자"></a>숫자</h2><ul>
+<li>상대적 단위 연산<ul>
+<li>일반적으로 절댓값을 나타내는 px 단위로 연산</li>
+<li>상대적 단위(%, em, vw 등)으로 연산할 경우 CSS <code>calc()</code>으로 연산해야 한다.</li>
+<li>CSS는 속성 값의 숫자를 분리하는 방법으로 <code>/</code>를 허용하기 때문에 <code>/</code>가 나누기 연산으로 사용되지 않을 수 있다.</li>
+<li><strong><code>/</code>를 나누기 연산 기능으로 사용하고 싶을 때 충족해야 하는 조건</strong><ul>
+<li>값 또는 그 일부가 변수에 저장되거나 함수에 의해 반환되는 경우</li>
+<li>값이 ()로 묶여있는 경우</li>
+<li>값이 다른 산술 표현식의 일부로 사용되는 경우</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="variable">$x</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">$x</span> / <span class="number">2</span>;  <span class="comment">// 변수에 저장된 값을 나누기</span></span><br><span class="line">  <span class="attribute">height</span>: (<span class="number">100px</span> / <span class="number">2</span>);  <span class="comment">// 괄호로 묶어서 나누기</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">10px</span> + <span class="number">12px</span> / <span class="number">3</span>;  <span class="comment">// 더하기 연산과 같이 사용</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="문자-Strings"><a href="#문자-Strings" class="headerlink" title="문자 (Strings)"></a>문자 (Strings)</h2><ul>
+<li>문자 연산에는 <code>+</code>가 사용.</li>
+<li>연산 결과는 첫번째 피연산자를 기준으로 함.</li>
+<li>첫번째 피연산자에 따옴표가 붙어 있다면 연산 결과를 따옴표로 묶는다. (반대의 경우 붙이지 않음.)</li>
+</ul>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;Hello &quot;</span> + World;</span><br><span class="line">  <span class="attribute">flex-flow</span>: row + <span class="string">&quot;-reverse&quot;</span> + <span class="string">&quot; &quot;</span> + wrap</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">  <span class="attribute">flex-flow</span>: row-reverse wrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="색상-Colors"><a href="#색상-Colors" class="headerlink" title="색상(Colors)"></a>색상(Colors)</h2><ul>
+<li>RGBA에서 Alpha 값은 연산되지 않는다.</li>
+<li>Alpha 값을 연산하기 위한 색상 함수(Color Functions)<ul>
+<li>opacify()</li>
+<li>transparentize()</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#123456</span> + <span class="number">#345678</span>;</span><br><span class="line">  <span class="attribute">background</span>: rgba(<span class="number">50</span>, <span class="number">100</span>, <span class="number">150</span>, .<span class="number">5</span>) + rgba(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, .<span class="number">5</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#468ace</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">60</span>, <span class="number">120</span>, <span class="number">180</span>, <span class="number">0.5</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="논리-Boolean"><a href="#논리-Boolean" class="headerlink" title="논리(Boolean)"></a>논리(Boolean)</h2><p>@if 조건문에서 사용되는 논리 연산. 그리고 / 또는 / 부정이 있다.</p>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td>그리고</td>
+</tr>
+<tr>
+<td>or</td>
+<td>또는</td>
+</tr>
+<tr>
+<td>not</td>
+<td>부정(반대)</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>SASS</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$width: 90px;</span><br><span class="line">div &#123;</span><br><span class="line">  @if not ($width &gt; 100px) &#123;</span><br><span class="line">    height: 300px;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Compiled to CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://heropy.blog/2018/01/31/sass/">https://heropy.blog/2018/01/31/sass/</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/08/22/scss-operations/" data-id="cm4wfofge00lxjp0afxhx09lv"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SASS/" rel="tag">SASS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SCSS/" rel="tag">SCSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/operation/" rel="tag">operation</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/08/25/scss-function/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            SCSS 함수
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/21/scss-overview/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">Sass &amp; SCSS 개요</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    CSS 미디어쿼리 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-css-mediaquery" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS 미디어쿼리
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/11/08/css-mediaquery/" class="article-date">
+  <time datetime="2020-11-08T06:23:57.000Z" itemprop="datePublished">2020-11-08</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/CSS/">CSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>다양한 미디어 유형이나 장치에 따라 서로 다른 스타일 규칙을 적용할 수 있다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">media 미디어타입 and (미디어특성) &#123;</span><br><span class="line">    CSS 코드</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="미디어-타입"><a href="#미디어-타입" class="headerlink" title="미디어 타입"></a>미디어 타입</h2><table>
+<thead>
+<tr>
+<th>타입</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>all</code></td>
+<td>모든 미디어 타입에 적용</td>
+<td>all</td>
+</tr>
+<tr>
+<td><code>screen</code></td>
+<td>컴퓨터 화면, 태블릿, 스마트폰 등</td>
+<td></td>
+</tr>
+<tr>
+<td><code>print</code></td>
+<td>인쇄 전용</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="미디어-특성"><a href="#미디어-특성" class="headerlink" title="미디어 특성"></a>미디어 특성</h2><table>
+<thead>
+<tr>
+<th>특성</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>width</code></td>
+<td>뷰포트 가로 너비</td>
+</tr>
+<tr>
+<td><code>max-width</code></td>
+<td>뷰포트 최대 가로 너비(이하)</td>
+</tr>
+<tr>
+<td><code>min-width</code></td>
+<td>뷰포트 최소 가로 너비(이상)</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>뷰포트 세로 너비</td>
+</tr>
+<tr>
+<td><code>max-height</code></td>
+<td>뷰포트 최대 세로 너비(이하)</td>
+</tr>
+<tr>
+<td><code>min-height</code></td>
+<td>뷰포트 최대 세로 너비(이상)</td>
+</tr>
+<tr>
+<td><code>orientation</code></td>
+<td>뷰포트 방향(<code>portrait</code>, <code>landscape</code>)</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>다른 특성들</td>
+</tr>
+</tbody></table>
+<h2 id="Miead-Grid-options"><a href="#Miead-Grid-options" class="headerlink" title="Miead(Grid) options"></a>Miead(Grid) options</h2><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>디바이스</th>
+<th>단위(px)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Large Devices</td>
+<td>Desktops</td>
+<td>1024px 이상</td>
+</tr>
+<tr>
+<td>Medium Devices</td>
+<td>Desktops + Tablets</td>
+<td>1024px 이하</td>
+</tr>
+<tr>
+<td>Small evices</td>
+<td>Tablets</td>
+<td>992px 이하</td>
+</tr>
+<tr>
+<td>Extra Small Devices</td>
+<td>Phones</td>
+<td>768px 이하</td>
+</tr>
+</tbody></table>
+<h2 id="미디어쿼리-파일-관리"><a href="#미디어쿼리-파일-관리" class="headerlink" title="미디어쿼리 파일 관리"></a>미디어쿼리 파일 관리</h2><p>미디어쿼리는 파일을 분리하여 관리할 수 있다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">media</span>=<span class="string">&quot;미디어타입 and (미디어특성)&quot;</span> <span class="attr">href</span>=<span class="string">&quot;파일명&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 HTML &amp; CSS _ 박영웅 강사님</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/11/08/css-mediaquery/" data-id="cm4wfofez001xjp0af3x3egms"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/media-query/" rel="tag">media query</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/responsive/" rel="tag">responsive</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/11/09/css-ben-methodology/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            CSS BEM 방법론
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/11/07/git-cherry-pick/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">Git cherry-pick</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

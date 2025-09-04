@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    UI 개발 기본 지식 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-html-basic" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  UI 개발 기본 지식
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2024/05/11/html-basic/" class="article-date">
+  <time datetime="2024-05-11T11:33:00.000Z" itemprop="datePublished">2024-05-11</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/HTML/">HTML</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>UI / Front-end develop info.</p>
+<a id="more"></a>
+<h2 id="Doctype"><a href="#Doctype" class="headerlink" title="Doctype"></a>Doctype</h2><ul>
+<li>선언된 페이지의 HTML 버전이 무엇인지를 웹 브라우저에 알려주는 역할을 하는 선언문. 브라우저는 선언된 <code>doctype</code>에 따라 렌더링할 모드를 선택한다.</li>
+<li>기재하지 않았을 경우 쿼크모드를 선택하여 렌더링한다.<ul>
+<li>쿼크모드: 오래된 웹브라우저를 위하여 디자인된 웹 페이지의 하위 호환성을 유지하기 위해 표준 모드 대신 쓰이는 모드. 브라우저별로 다른 결과물을 출력한다.</li>
+<li>표준모드: 브라우저별로 같은 결과물을 출력한다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="웹표준과-웹접근성"><a href="#웹표준과-웹접근성" class="headerlink" title="웹표준과 웹접근성"></a>웹표준과 웹접근성</h2><ul>
+<li><strong>웹접근성:</strong>  <strong>모두가 차별없이 웹에서 제공하는 정보를 이용할 수 있도록 하는 것.</strong> 정보통신 서비스 제공자는 장애인의 접근성 차별 금지와 의사소통의 편의 제공을 위해 표준 텍스트 파일, 동영상 자막 등 편의 제공 기술 방안을 마련해서 서비스를 제공해야 한다. 장애인과 비장애인이 동등하게 서비스에 접근할 수 있게 만들어줘야 한다. 이런 맥락에서 제시되는 개념이 ‘웹 접근성’(Web Accessibility)이다.</li>
+<li><strong>웹표준: 표준화된 언어를 사용함으로써 동일한 결과물을 보여주는 것.</strong> 브라우저 종류 및 버전에 따른 기능 차이에 대하여 호환이 가능하도록 제시된 표준으로, 다른 기종 혹은 플랫폼에 따라 달리 구현되는 기술을 동일하게 구현함과 동시에 어느 한쪽에 최적화되어 치우치지 않도록 공통요소를 사용하여 웹 페이지를 제작하는 기법을 의미한다. 표준화 단체인 W3C(World Wide Consortium)가 권고한 표준안에 따라 웹사이트를 작성할 때 이용하는 HTML, CSS, JavaScript 등에 대한 규정을 담고 있으며 웹 표준의 궁극적인 목적은 웹사이트에 접속한 사용자가 어떠한 운영체제나 브라우저를 사용하더라도 동일한 결과를 보이게 하는 것이다.</li>
+<li>다시 말해, 웹접근성과 웹표준의 차이는 어디에 초점이 맞춰져 있냐이다. <strong>웹접근성</strong>은 어느 유저든 간에 접근하는 방식을 보다 쉽게 만들어야 되는데에 초점이 잡혀있고, <strong>웹표준</strong>은 어느 브라우저에서나 동일한 디자인과 기능을 구현하는데에 초점이 잡혀있다.</li>
+</ul>
+<h2 id="시맨틱태그"><a href="#시맨틱태그" class="headerlink" title="시맨틱태그"></a>시맨틱태그</h2><ul>
+<li>의미가 있는 태그를 말한다. 검색엔진 최적화에 도움이 되며 장애가 있는 사용자가 스크린 리더를 사용하여 페이지를 탐색할 때 도움이 된다.</li>
+<li>seo: 검색 엔진 최적화라는 말. 태그를 기반으로 페이지 내 검색 키워드의 우선 순위를 판단한다. 검색 엔진 최적화란 웹 페이지 검색엔진이 자료를 수집하고 순위를 매기는 방식에 맞게 웹 페이지를 구성해서 검색 결과의 상위에 나올 수 있게 하는 작업을 말한다.</li>
+</ul>
+<h2 id="브라우저-렌더링-과정"><a href="#브라우저-렌더링-과정" class="headerlink" title="브라우저 렌더링 과정"></a>브라우저 렌더링 과정</h2><ul>
+<li>HTML 파일과 CSS 파일을 파싱해서 각각 Tree를 만든다. (Parsing)</li>
+<li>두 Tree를 결합하여 Rendering Tree를 만든다. (Style)</li>
+<li>Rendering Tree에서 각 노드의 위치와 크기를 계산한다. (Layout)</li>
+<li>계산된 값을 이용해 각 노드를 화면상의 실제 픽셀로 변환하고, 레이어를 만든다. (Paint)</li>
+<li>레이어를 합성하여 실제 화면에 나타낸다. (Composite)</li>
+</ul>
+<h2 id="CSS-방법론"><a href="#CSS-방법론" class="headerlink" title="CSS 방법론"></a>CSS 방법론</h2><ul>
+<li>OOCSS: CSS를 모듈화하여 코딩하여, 중복을 최소화한다. 가독성이 떨어지는 문제가 생길 수 있다.</li>
+<li>BEM: 블록 엘리먼트 모디파이어의 줄임말이다. 블록 단위로 구분한다.</li>
+<li>SMASS: 대규모 스타일 가이드를 만들기 위한 지침이며 스타일을 5가지로 분류하고 각 유형에 맞게 스타일을 선언한다. (기초, 레이아웃, 모듈, 상태, 테마 등이 있다.)</li>
+</ul>
+<h2 id="CSS-7대-단위"><a href="#CSS-7대-단위" class="headerlink" title="CSS 7대 단위"></a>CSS 7대 단위</h2><p>rem, vh, vw, vmin, vmax, ex, ch</p>
+<h2 id="브라우저-저장소의-차이"><a href="#브라우저-저장소의-차이" class="headerlink" title="브라우저 저장소의 차이"></a>브라우저 저장소의 차이</h2><ul>
+<li><strong>쿠키</strong>는 만료기간이 있는 키-값 저장소로, 클라이언트에 저장된다. 서버에 요청을 보낼 때마다 자동으로 전송되는 특징을 가지고 있다.</li>
+<li><strong>로컬스토리지와 세션스토리지</strong>는 사용자 정보를 키-값 형태로 클라이언트 브라우저에 저장된다.<ul>
+<li>로컬스토리지는 브라우저를 종료해도 유지되어 유저가 삭제하지 않는 이상 영구적으로 데이터를 보관할 수 있다.</li>
+<li>세션스토리지는 브라우저 종료시 데이터가 사라진다는 특성을 가지고 있다.</li>
+</ul>
+</li>
+<li>기본적으로 쿠키와 로컬 스토리지, 세션 스토리지는 모두 브라우저에서 데이터 저장소의 역할을 하는 것들이다. 웹에서 로그인을 하기 위해서는 토큰을 발급받아 API를 호출해야 한다. 하지만 반복되는 작업을 계속 하게 되는 것이 비효율적이고, 이를 보완하기 위해 쿠키를 서버와 클라이언트에 생성해서 토큰 발급 없이 쿠키만 가지고 서버에 요청을 할 수 있게 된다. 쿠키는 저장 공간이 4KB로 작은 편인데 이러한 단점을 보완하여 만든 것이 웹 스토리지이다. </li>
+<li>웹 스토리지는 서버에 클라이언트 데이터를 저장하지 않는다. 웹 스토리지에는 로컬 스토리지와 세션 스토리지가 있는데 로컬 스토리지는 브라우저에 정보가 계속해서 남아있는 반면, 세션 스토리지는 해당 세션이 끝나면, 즉 브라우저가 닫히면 데이터가 사라진다. 웹 스토리지는 데스크탑 기준 5~10MB의 저장 공간을 가지고 있어서 쿠키에 비해 훨씬 저장공간이 크다는 장점이 있다. 웹 스토리지는 반면 HTML5부터 지원하기 때문에 이전 브라우저에서는 지원이 되지 않는다는 단점이 있다.</li>
+</ul>
+<h2 id="자바스크립트의-비동기-처리-방식"><a href="#자바스크립트의-비동기-처리-방식" class="headerlink" title="자바스크립트의 비동기 처리 방식"></a>자바스크립트의 비동기 처리 방식</h2><ul>
+<li> 메인 스레드가 서버로부터 데이터를 받아올 때까지 기다리지 않고 먼저 함수를 반환하고 그 다음 작업을 수행한다. 서버에서 데이터가 수신되면 이를 처리하는 Callback이 비동기 환경에서 별도로 실행된다.</li>
+<li>자바스크립트는 단일 스레드로 동작하며, 비동기 환경이 별도로 존재한다. 비동기 환경은 엔진 외부에 위치하며 Event Loop, Task Queue, Job Queue 등으로 구성된다.  setTimeout, Fetch 등 기본으로 제공되는 API 함수나 Promise, Async로 비동기를 사용할 수 있다. <ul>
+<li>비동기 처리는 우선순위가 가장 높은 JobQueue에서 작동하며, 요청 처리 후 TaskQueue에 비동기 응답을 처리하는 Callback 함수를 넣는다. </li>
+<li>자바스크립트 엔진은 메인스레드의 CallStack이 비워지면 TaskQueue 내의 Callback 함수를 메인스레드에서 실행한다. </li>
+<li>비동기 처리를 받지 않더라도, 모든 Callback 함수는 비동기 환경의 TaskQueue에 넣어졌다가, CallStack이 비워지면 CallStack으로 이동되어 처리된다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="서버-사이드-렌더링과-클라이언트-사이드-렌더링의-차이"><a href="#서버-사이드-렌더링과-클라이언트-사이드-렌더링의-차이" class="headerlink" title="서버 사이드 렌더링과 클라이언트 사이드 렌더링의 차이"></a>서버 사이드 렌더링과 클라이언트 사이드 렌더링의 차이</h2><p>서버 사이드 렌더링은 전통적인 웹 방식을 의미하며 페이지가 새로고침 될 때마다 서버로부터 리소스를 전달받아 화면에 렌더링 하는 방식이다. 하지만 React, Vue 등의 라이브러리가 등장하면서 훨씬 더 좋은 성능의 SPA 방식의 개발 환경을 선호하기 시작하였다. CSR에서 서버는 단지 JSON 파일을 보내주는 역할만 할 뿐이며, html을 그리는 역할은 클라이언트에서 수행한다. 하지만, CSR은 자바스크립트가 모든 동작을 수행한 후에 화면에 내용이 나타나므로 초기 구동속도는 SSR에 비해 느리다는 단점이 있다. SEO를 할 수 없고 보안적으로 취약하다는 문제점도 나타난다.</p>
+<h2 id="data-속성"><a href="#data-속성" class="headerlink" title="data- 속성"></a>data- 속성</h2><p>표준이 아닌 속성이나 추가적인 DOM 속성과 같은 다른 조작을 하지 않고도, 의미론적 표준 HTML 요소에 추가 정보를 저장할 수 있게 도와준다.</p>
+<h2 id="프로그레시브-렌더링"><a href="#프로그레시브-렌더링" class="headerlink" title="프로그레시브 렌더링"></a>프로그레시브 렌더링</h2><p>프로그레시브 렌더링은 컨텐츠를 가능한 빨리 표시하기 위해 성능을 향상시키는 기술이다. 인터넷 속도가 느리거나 불안정한 모바일 환경이 아직 많이 남아있기 때문에 이럴 때 유용하게 사용한다. 대표적으로 레이지 로딩이 있다. 이미지를 한 번에 로드하는 것이 아니라, 자바스크립트를 통해 사용자가 표시하려는 부분만 스크롤 시에 이미지를 로드하는 것이다.</p>
+<h2 id="최적화-방법"><a href="#최적화-방법" class="headerlink" title="최적화 방법"></a>최적화 방법</h2><ul>
+<li>http 요청 수 줄이기<ul>
+<li>스크립트 파일 병합</li>
+<li>인라인 이미지</li>
+<li>이미지 스프라이트</li>
+</ul>
+</li>
+<li>콘텐츠 파일 크기 줄이기<ul>
+<li>스크립트 파일 압축 전달</li>
+<li>스크립트 파일 최소화</li>
+<li>이미지 파일 압축</li>
+<li>브라우저가 선호하는 이미지 포맷 사용</li>
+<li>큰 파일은 작게 나누어 전송</li>
+</ul>
+</li>
+<li>캐시 최적화하기<ul>
+<li>인터넷 캐시 사용</li>
+<li>브라우저 캐시 사용</li>
+</ul>
+</li>
+<li>CDN 활용</li>
+</ul>
+<h2 id="rem-em의-차이"><a href="#rem-em의-차이" class="headerlink" title="rem, em의 차이"></a>rem, em의 차이</h2><ul>
+<li>rem: 최상위 요소인 html의 font-size값이 기준이 된다. (root em)</li>
+<li>em: 해당 요소의 font-size값이 기준이 된다.</li>
+</ul>
+<h2 id="meta-tag"><a href="#meta-tag" class="headerlink" title="meta tag"></a>meta tag</h2><ul>
+<li>meta 태그에 대해서 조금 더 살펴보면, meta 태그는 head 부분에서 다른 태그들(script, style, link, title 등)로 나타낼 수 없는 메타데이터를 나타내는 태그를 의미한다. <meta name="keywords" content="ABC"> 와 같이 검색 엔진을 위한 키워드나 <meta name="description" content="OWEN">과 같이 문서에 대한 설명 등에 사용된다. 화면에는 별다르게 표시되는 내용이 없지만, 검색 엔진이나 브라우저에서 읽힌다.</li>
+<li><code>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</code><ul>
+<li>IE간의 버전 차이로 인해 똑같은 웹사이트라고 하더라도 다르게 보여지는 경우가 있어 이를 보완하기 위해 MS에서 “호환성 보기”라는 기능을 제공하고 있다. “호환성 보기”는 IE 버전이 상이하더라도 같은 화면을 볼 수 있도록 의미한다. 여기서 <code>content=&quot;IE=Edge&quot;</code>는 각 IE 버전 중 최신 표준 모드를 선택한다는 의미이다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="다국어-페이지-제공-방식"><a href="#다국어-페이지-제공-방식" class="headerlink" title="다국어 페이지 제공 방식"></a>다국어 페이지 제공 방식</h2><p>SSR의 경우 HTTP 요청 시 클라이언트에서 Accept-Language 헤더와 같이 기본 언어 설정에 대한 정보를 보낸다. 서버는 이 정보를 사용해 해당 언어로 된 문서 버전을 반환한다. 반환된 문서는 lang 속성을 선언한다. CSR 시 클라이언트 사이드에서 해당 언어 팩(JSON 등)을 가져와 출력한다.</p>
+<h2 id="크로스-브라우징"><a href="#크로스-브라우징" class="headerlink" title="크로스 브라우징"></a>크로스 브라우징</h2><p>크로스 브라우징은 웹 표준에 따라 서로 다른 OS 또는 플랫폼에 대응하는 것을 말한다. 브라우저별 렌더링 엔진이 다른 상황 등 어떠한 상황 속에서도 문제 없이 동작하게 하는 것을 목표로 한다. 프론트엔드 개발자는 여러가지 전략을 세울 수가 있는데, feature detection(기능 탐지)을 사용해서 해당 기능이 해당 브라우저에 있는지를 확인하는 방법을 사용할 수도 있다. 특히 한 쪽 환경에 최적화를 하는 것 보다, 전체적인 웹 표준을 지키는 데에 노력해야 한다.</p>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2024/05/11/html-basic/" data-id="cm4wfoff4003vjp0a2aqwhxf3"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2025/03/25/web-guide-how-to-work/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            브라우저는 어떻게 동작하는가
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2023/08/19/django-app-structure/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">장고 앱(App) 구조</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

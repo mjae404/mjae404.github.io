@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    PHP 함수, 지역변수, 정적변수, 전역변수 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-php-function-variable" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  PHP 함수, 지역변수, 정적변수, 전역변수
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/07/30/php-function-variable/" class="article-date">
+  <time datetime="2021-07-30T07:40:40.000Z" itemprop="datePublished">2021-07-30</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/php/">php</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>PHP 기본 문법에서 함수, 지역변수, 정적변수, 전역변수를 확인해본다.</p>
+<a id="more"></a>
+
+<h2 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 함수이름(<span class="params">매개변수<span class="number">1</span>, 매개변수<span class="number">2</span></span>) </span>&#123;</span><br><span class="line">    …할일…</span><br><span class="line">&#125;</span><br><span class="line">함수이름();</span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"><span class="variable">$x</span>, <span class="variable">$y</span></span>) </span>&#123;</span><br><span class="line">        <span class="variable">$result</span> = <span class="variable">$x</span> + <span class="variable">$y</span>; <span class="comment">// local variable 지역변수</span></span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$result</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="variable">$result</span> = sum (<span class="number">10</span>, <span class="number">20</span>); <span class="comment">// grobal variable 전역변수</span></span><br><span class="line">    <span class="comment">// 전역변수 주석하게 되면 에러가 난다</span></span><br><span class="line">    <span class="keyword">echo</span> <span class="variable">$result</span>; <span class="comment">// 30</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="배열"><a href="#배열" class="headerlink" title="배열"></a>배열</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$fruits</span> = [</span><br><span class="line">        <span class="string">&#x27;apple&#x27;</span>, <span class="string">&#x27;mango&#x27;</span>, <span class="string">&#x27;banana&#x27;</span>, <span class="string">&#x27;orange&#x27;</span></span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    print_r(<span class="variable">$fruits</span>);</span><br><span class="line">    <span class="comment">// Array ([0] =&gt; apple [1]=&gt;mango [2]=&gt; banana [3]=&gt;orange)</span></span><br><span class="line">    <span class="comment">// php 내장함수</span></span><br><span class="line">    <span class="comment">// 변수값의 정보를 출력해준다</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">output</span>(<span class="params"><span class="variable">$value</span></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;&lt;pre&gt;&#x27;</span>;</span><br><span class="line">        print_r(<span class="variable">$value</span>);</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;&lt;/pre&gt;&#x27;</span>;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    output(<span class="variable">$fruits</span>);</span><br><span class="line">    <span class="comment">// Array</span></span><br><span class="line">    <span class="comment">// (</span></span><br><span class="line">    <span class="comment">//     [0] =&gt; apple</span></span><br><span class="line">    <span class="comment">//     [1]=&gt;mango</span></span><br><span class="line">    <span class="comment">//     [2]=&gt; banana</span></span><br><span class="line">    <span class="comment">//     [3]=&gt;orange</span></span><br><span class="line">    <span class="comment">// )</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="지역변수와-전역변수"><a href="#지역변수와-전역변수" class="headerlink" title="지역변수와 전역변수"></a>지역변수와 전역변수</h2><h3 id="지역변수"><a href="#지역변수" class="headerlink" title="지역변수"></a>지역변수</h3><p>지역변수는 함수 외부에서 출력되지 않는다.</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">myfunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="variable">$var</span> = <span class="number">10</span>; <span class="comment">// 지역변수</span></span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;<span class="subst">&#123;$var&#125;</span>&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    myfunc();</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;<span class="subst">&#123;$var&#125;</span>&quot;</span>; <span class="comment">// 에러발생</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="전역변수"><a href="#전역변수" class="headerlink" title="전역변수"></a>전역변수</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$var</span> = <span class="number">10</span>; <span class="comment">// 전역 변수</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">myfunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">global</span> <span class="variable">$var</span>; <span class="comment">// 전역변수</span></span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;<span class="subst">&#123;$var&#125;</span>&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    myfunc(); <span class="comment">// 10</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$var</span> = <span class="number">10</span>; <span class="comment">// 전역 변수</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">myfunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;<span class="subst">&#123;$GLOBALS[&#x27;var&#x27;]&#125;</span>&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    myfunc(); <span class="comment">// 10</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="정적변수"><a href="#정적변수" class="headerlink" title="정적변수"></a>정적변수</h3><p>함수 내부에서 정적 변수를 출력하면 함수 호출이 종료되어도 메모리에 저장되어 출력이 가능하다.</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">increment</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">static</span> <span class="variable">$count</span> =  <span class="number">0</span>; <span class="comment">//정적 변수</span></span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;<span class="subst">&#123;$count&#125;</span>&quot;</span>;</span><br><span class="line">        <span class="variable">$count</span>++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    increment(); <span class="comment">// 0</span></span><br><span class="line">    increment(); <span class="comment">// 1</span></span><br><span class="line">    increment(); <span class="comment">// 2</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=qvainHwkc38&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=4">https://www.youtube.com/watch?v=qvainHwkc38&amp;list=PL-qMANrofLytZY15Agdi7wFc1seGO7Onb&amp;index=4</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/07/30/php-function-variable/" data-id="cm4wfoffr00csjp0a0hbx2zii"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/function/" rel="tag">function</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/variable/" rel="tag">variable</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/07/31/npm-gulp-file-include/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            npm gulp-file-include
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/07/29/php-conditions-array-loop/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">PHP 조건문, 배열, 반복문</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

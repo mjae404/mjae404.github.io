@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    CSS 레이아웃 배치 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-css-layout-arrange" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS 레이아웃 배치
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/10/css-layout-arrange/" class="article-date">
+  <time datetime="2021-12-10T06:34:43.000Z" itemprop="datePublished">2021-12-10</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/CSS/">CSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h2 id="display"><a href="#display" class="headerlink" title="display"></a>display</h2><blockquote>
+<p><strong>inline</strong>, <strong>block</strong>, list-item, <strong>inline-block</strong>, table, inline-table, table-row-group, table-header-group, table-footer-group, table-row, table-column-group, table-column, table-cell, tabel-caption, <strong>none</strong>, inherit</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Lv3에서-새로-추가된-값들"><a href="#Lv3에서-새로-추가된-값들" class="headerlink" title="Lv3에서 새로 추가된 값들"></a>Lv3에서 새로 추가된 값들</h3><blockquote>
+<p>run-in, flow, <strong>flow-root</strong>, <strong>flex</strong>, <strong>grid</strong>, ruby, ruby-base, ruby-text, ruby-base-container, ruby-text-container, <strong>contents</strong>, inline-table, inline-flex, inline-grid</p>
+</blockquote>
+<ul>
+<li><code>positin: absolute | fixed</code>나 <code>float: left | right</code>인 경우 강제적으로 <code>display: block</code>이 된다.</li>
+<li><code>hidden</code>이라는 속성을 사용할 수도 있다. (<code>&lt;p class=&quot;desc&quot; hidden&gt;</code>)</li>
+</ul>
+<h3 id="flow-root"><a href="#flow-root" class="headerlink" title="flow-root"></a>flow-root</h3><ul>
+<li>블록 컨테이너가 된다.</li>
+<li>포함 콘텐츠는 새 블록 문맥(block formatting context)가 된다.</li>
+<li>float, margin 속성을 다르게 처리</li>
+<li>블록이 된다.</li>
+<li>포함한 float 요소는 컨테이너 끝에서 clear가 된다.</li>
+<li>부모 자식 요소의 수직 마진을 병합하지 않는다.</li>
+</ul>
+<h3 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h3><ul>
+<li>flex 컨테이너 박스를 생성한다.</li>
+<li>flex 형식 문맥을 형성한다.</li>
+<li>포함 아이템을 1차원 기반으로 배치.</li>
+</ul>
+<h3 id="grid"><a href="#grid" class="headerlink" title="grid"></a>grid</h3><ul>
+<li>grid 컨테이너 박스를 생성한다.</li>
+<li>grid 형식 문맥을 설정한다.</li>
+<li>포함 아이템을 2차원 기반으로 배치.</li>
+</ul>
+<h2 id="position"><a href="#position" class="headerlink" title="position"></a>position</h2><h3 id="static"><a href="#static" class="headerlink" title="static"></a>static</h3><ul>
+<li>left, right, top, bottom, z-index (X)</li>
+<li>배치기준 없음. 흐름에 따라 배치.</li>
+</ul>
+<h3 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h3><ul>
+<li>left, right, top, bottom, z-index, inset (O)</li>
+<li>박스 현재 위치가 배치의 기준.</li>
+<li>배치를 변경할 때 다른 박스의 흐름을 깨지 않음.</li>
+<li>자식 또는 자손 요소의 absolute 배치 기준이 됨.</li>
+<li>inset: 4개의 값을 입력할 수 있다. 하나만 입력하면 네곳을 하나의 값으로 함.</li>
+</ul>
+<h3 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h3><ul>
+<li>left, right, top, bottom, z-index, inset (O)</li>
+<li>일반적인 흐름에서 완전히 이탈.</li>
+<li>부모, 형제의 크기나 위치에 전혀 영향을 미치지 않음.</li>
+<li>조상 박스가 relative, absolute, fixed, transform일 때 조상 기준으로 배치.</li>
+<li>inset:0, margin:auto를 이용하면 박스가 가운데에 온다.</li>
+</ul>
+<h3 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h3><ul>
+<li>left, right, top, bottom, z-index, inset (O)</li>
+<li>뷰포트가 배치 기준.</li>
+<li>조상 요소에 transform 속성이 있으면 transform 속성이 있는 요소가 배치 기준.</li>
+</ul>
+<h3 id="sticky"><a href="#sticky" class="headerlink" title="sticky"></a>sticky</h3><ul>
+<li>left, right, top, bottom, z-index, inset (O)</li>
+<li>스크롤 포트가 배치 기준</li>
+<li>부모 요소가 스크롤 포트에 보이는 동안 스크롤 포트 기준으로 고정</li>
+<li>부모 요소가 스크롤 밖으로 이탈하면 고정을 멈춤</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/10/css-layout-arrange/" data-id="cm4wfofey001ojp0aas9w4ym7"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-red/" rel="tag">the red</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/11/css-layout-space/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            CSS 레이아웃 여백
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/09/css-naming/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">CSS 네이밍</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    CSS Grid |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-css-grid" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS Grid
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/10/23/css-grid/" class="article-date">
+  <time datetime="2020-10-22T15:17:20.000Z" itemprop="datePublished">2020-10-23</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/CSS/">CSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>CSS 그리드는 더 복잡한 레이아웃을 위해 2치원 레이아웃 시스템을 제공한다. 다양한 레이아웃 대체 방식들을 해결하기 위해 만들어진 CSS 모듈이다. 효율적으로 학습하기 위해서는 파이어폭스 브라우저를 사용하는 것이 좋다.</p>
+<a id="more"></a>
+
+<h2 id="Grid-Properties"><a href="#Grid-Properties" class="headerlink" title="Grid Properties"></a>Grid Properties</h2><p><code>Container</code>(컨테이너)와 <code>Item</code>(아이템)이라는 두가지 개념으로 구분되어 있다. <code>Container</code>가 부모 요소이며 그 안에 각각 <code>Item</code>을 배치할 수 있다.</p>
+<h3 id="Grid-Container-Properties"><a href="#Grid-Container-Properties" class="headerlink" title="Grid Container Properties"></a>Grid Container Properties</h3><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>display</td>
+<td>그리드 컨테이너(Container)를 정의</td>
+</tr>
+<tr>
+<td>grid-template-rows</td>
+<td>명시적 행(Track)의 크기를 정의</td>
+</tr>
+<tr>
+<td>grid-template-columns</td>
+<td>명시적 열(Track)의 크기를 정의</td>
+</tr>
+<tr>
+<td>grid-template-areas</td>
+<td>영역(Area) 이름을 참조해 템플릿 생성</td>
+</tr>
+<tr>
+<td>grid-template</td>
+<td>grid-template-xxx의 단축 속성</td>
+</tr>
+<tr>
+<td>row-gap(grid-row-gap)</td>
+<td>행과 행 사이의 간격(Line)을 정의</td>
+</tr>
+<tr>
+<td>column-gap(grid-column-gap)</td>
+<td>열과 열 사이의 간격(Line)을 정의</td>
+</tr>
+<tr>
+<td>gap(grid-gap)</td>
+<td>xxx-gap의 단축 속성</td>
+</tr>
+<tr>
+<td>grid-auto-rows</td>
+<td>암시적인 행(Track)의 크기를 정의</td>
+</tr>
+<tr>
+<td>grid-auto-columns</td>
+<td>암시적인 열(Track)의 크기를 정의</td>
+</tr>
+<tr>
+<td>grid-auto-flow</td>
+<td>자동 배치 알고리즘 방식을 정의</td>
+</tr>
+<tr>
+<td>grid</td>
+<td>grid-template-xxx과 grid-auto-xxx의 단축 속성</td>
+</tr>
+<tr>
+<td>align-content</td>
+<td>그리드 콘텐츠(Grid Contents)를 수직(열 축) 정렬</td>
+</tr>
+<tr>
+<td>justify-content</td>
+<td>그리드 콘텐츠를 수평(행 축) 정렬</td>
+</tr>
+<tr>
+<td>place-content</td>
+<td>align-content와 justify-content의 단축 속성</td>
+</tr>
+<tr>
+<td>align-items</td>
+<td>그리드 아이템(Items)들을 수직(열 축) 정렬</td>
+</tr>
+<tr>
+<td>justify-items</td>
+<td>그리드 아이템들을 수평(행 축) 정렬</td>
+</tr>
+<tr>
+<td>place-items</td>
+<td>align-items와 justify-items의 단축 속성</td>
+</tr>
+</tbody></table>
+<h3 id="Grid-Item-Properties"><a href="#Grid-Item-Properties" class="headerlink" title="Grid Item Properties"></a>Grid Item Properties</h3><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>grid-row-start</td>
+<td>그리드 아이템(Item)의 행 시작 위치 지정</td>
+</tr>
+<tr>
+<td>grid-row-end</td>
+<td>그리드 아이템의 행 끝 위치 지정</td>
+</tr>
+<tr>
+<td>grid-row</td>
+<td>grid-row-xxx의 단축 속성(행 시작/끝 위치)</td>
+</tr>
+<tr>
+<td>grid-column-start</td>
+<td>그리드 아이템의 열 시작 위치 지정</td>
+</tr>
+<tr>
+<td>grid-column-end</td>
+<td>그리드 아이템의 열 끝 위치 지정</td>
+</tr>
+<tr>
+<td>grid-column</td>
+<td>grid-column-xxx의 단축 속성(열 시작/끝 위치)</td>
+</tr>
+<tr>
+<td>grid-area</td>
+<td>영역(Area) 이름을 설정하거나, grid-row와 grid-column의 단축 속성</td>
+</tr>
+<tr>
+<td>align-self</td>
+<td>단일 그리드 아이템을 수직(열 축) 정렬</td>
+</tr>
+<tr>
+<td>justify-self</td>
+<td>단일 그리드 아이템을 수평(행 축) 정렬</td>
+</tr>
+<tr>
+<td>place-self</td>
+<td>align-self와 justify-self의 단축 속성</td>
+</tr>
+<tr>
+<td>order</td>
+<td>그리드 아이템의 배치 순서를 지정</td>
+</tr>
+<tr>
+<td>z-index</td>
+<td>그리드 아이템의 쌓이는 순서를 지정</td>
+</tr>
+</tbody></table>
+<h2 id="Grid-Containers"><a href="#Grid-Containers" class="headerlink" title="Grid Containers"></a>Grid Containers</h2><h3 id="display"><a href="#display" class="headerlink" title="display"></a>display</h3><p><code>Grid Container</code>를 정의한다. 하위 요소들은 자동적으로 <code>Grid Items</code>로 정의된다. 그리드를 사용하기 위해서는 컨테이너에 필수적으로 작성해야 한다.</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>grid</td>
+<td>Block 특성의 Grid Container를 정의</td>
+</tr>
+<tr>
+<td>inline-grid</td>
+<td>Inline 특성의 Grid Container를 정의</td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="grid-template-rows"><a href="#grid-template-rows" class="headerlink" title="grid-template-rows"></a>grid-template-rows</h3><ul>
+<li>명시적 행(Track)의 크기를 정의한다.</li>
+<li>동시에 라인(Line)의 이름도 정의할 수 있다.</li>
+<li><code>fr</code>(fraction, 공간 비율) 단위를 사용할 수 있다.</li>
+<li> <code>repeat()</code> 함수를 사용할 수 있다.</li>
+<li>라인 이름은 자동으로 지정되어 있기 때문에 꼭 필요한 경우가 아니면 따로 정의할 필요가 없다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="number">1</span>행크기 <span class="number">2</span>행크기 ...;</span><br><span class="line">  grid-template-rows: [선이름] <span class="number">1</span>행크기 [선이름] <span class="number">2</span>행크기 [선이름] ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_template_rows.jpg" alt="grid-template-rows"></p>
+<h3 id="grid-template-columns"><a href="#grid-template-columns" class="headerlink" title="grid-template-columns"></a>grid-template-columns</h3><ul>
+<li>명시적 열(Track)의 크기를 정의한다.</li>
+<li>동시에 라인(Line)의 이름도 정의할 수 있다.</li>
+<li><code>fr</code>(fraction, 공간 비율) 단위를 사용할 수 있다. 각 컬럼은 비율에 맞게 출력되기 때문에 컨테이너의 너비가 가변해도 열 크기를 수정할 필요가 없다.</li>
+<li> <code>repeat()</code> 함수를 사용할 수 있다. 2번째 인수를 반복한다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="number">1</span>열크기 <span class="number">2</span>열크기 ...;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: [선이름] <span class="number">1</span>열크기 [선이름] <span class="number">2</span>열크기 [선이름] ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="grid-template-areas"><a href="#grid-template-areas" class="headerlink" title="grid-template-areas"></a>grid-template-areas</h3><p>지정된 그리드 영역 이름(<code>grid-area</code>)을 참조해 그리드 템플릿을 생성한다.</p>
+<ul>
+<li>Grid Item에 적용하는 속성이다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">100px</span>);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-areas:</span><br><span class="line">    <span class="string">&quot;header header header&quot;</span></span><br><span class="line">    <span class="string">&quot;main main aside&quot;</span></span><br><span class="line">    <span class="string">&quot;footer footer footer&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">header</span> &#123; grid-area: header; &#125;</span><br><span class="line"><span class="selector-tag">main</span>   &#123; grid-area: main;   &#125;</span><br><span class="line"><span class="selector-tag">aside</span>  &#123; grid-area: aside;  &#125;</span><br><span class="line"><span class="selector-tag">footer</span> &#123; grid-area: footer; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_template_areas.jpg" alt="grid-template-areas"></p>
+<ul>
+<li><code>.</code>(마침표)를 사용하거나 명시적으로 <code>none</code>을 입력해 빈 영역을 정의할 수 있다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">4</span>, <span class="number">100px</span>);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-areas:</span><br><span class="line">    <span class="string">&quot;header header header&quot;</span></span><br><span class="line">    <span class="string">&quot;main . .&quot;</span></span><br><span class="line">    <span class="string">&quot;main . aside&quot;</span></span><br><span class="line">    <span class="string">&quot;footer footer footer&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">header</span> &#123; grid-area: header; &#125;</span><br><span class="line"><span class="selector-tag">main</span>   &#123; grid-area: main;   &#125;</span><br><span class="line"><span class="selector-tag">aside</span>  &#123; grid-area: aside;  &#125;</span><br><span class="line"><span class="selector-tag">footer</span> &#123; grid-area: footer; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_template_areas2.jpg" alt="grid-template-areas"></p>
+<h3 id="grid-template"><a href="#grid-template" class="headerlink" title="grid-template"></a>grid-template</h3><p><code>grid-template-rows</code>, <code>grid-template-columns</code> 그리고 <code>grid-template-areas</code>의 단축 속성이다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template: &lt;grid-template-rows&gt; / &lt;grid-template-columns&gt;;</span><br><span class="line">  grid-template: &lt;grid-template-areas&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template:</span><br><span class="line">    [<span class="number">1</span>행시작선이름] <span class="string">&quot;AREAS&quot;</span> 행너비 [<span class="number">1</span>행끝선이름]</span><br><span class="line">    [<span class="number">2</span>행시작선이름] <span class="string">&quot;AREAS&quot;</span> 행너비 [<span class="number">2</span>행끝선이름]</span><br><span class="line">    / &lt;grid-template-columns&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    grid-template:</span><br><span class="line">    <span class="string">&quot;header header header&quot;</span> <span class="number">80px</span></span><br><span class="line">    <span class="string">&quot;main main aside&quot;</span> <span class="number">350px</span></span><br><span class="line">    <span class="string">&quot;footer footer footer&quot;</span> <span class="number">130px</span></span><br><span class="line">    / <span class="number">2</span>fr <span class="number">100px</span> <span class="number">1</span>fr;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">header</span> &#123; grid-area: header; &#125;</span><br><span class="line"><span class="selector-tag">main</span>   &#123; grid-area: main; &#125;</span><br><span class="line"><span class="selector-tag">aside</span>  &#123; grid-area: aside; &#125;</span><br><span class="line"><span class="selector-tag">footer</span> &#123; grid-area: footer; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 다음과 같이 해석 가능 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    grid-template-rows: <span class="number">80px</span> <span class="number">350px</span> <span class="number">130px</span>;</span><br><span class="line">    grid-template-<span class="attribute">columns</span>: <span class="number">2</span>fr <span class="number">100px</span> <span class="number">1</span>fr;</span><br><span class="line">    grid-template-areas:</span><br><span class="line">    <span class="string">&quot;header header header&quot;</span></span><br><span class="line">    <span class="string">&quot;main main aside&quot;</span></span><br><span class="line">    <span class="string">&quot;footer footer footer&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="row-gap-grid-row-gap"><a href="#row-gap-grid-row-gap" class="headerlink" title="row-gap(grid-row-gap)"></a>row-gap(grid-row-gap)</h3><p>각 행과 행 사이의 간격(Gutter)을 지정한다. 정확하게는 그리드 선(Grid Line)의 크기를 지정.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  row-gap: 크기;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="column-gap-grid-column-gap"><a href="#column-gap-grid-column-gap" class="headerlink" title="column-gap(grid-column-gap)"></a>column-gap(grid-column-gap)</h3><p>각 열과 열 사이의 간격(Gutter)을 지정한다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">column-gap</span>: 크기;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="gap-grid-gap"><a href="#gap-grid-gap" class="headerlink" title="gap(grid-gap)"></a>gap(grid-gap)</h3><p>각 행과 행, 열과 열 사이의 간격(Gutter)을 지정한다.</p>
+<blockquote>
+<p><code>grid-gap(grid-row-gap</code>, <code>grid-column-gap</code>)의 접두사 <code>grid-</code>는 더 이상 사용되지 않으며(Deprecated), <code>gap(row-gap, column-gap)</code>로 교체되었다.</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  gap: &lt;grid-row-gap&gt; &lt;grid-column-gap&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">2</span>, <span class="number">150px</span>);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  gap: <span class="number">20px</span> <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 하나의 값으로 통일할 수 있다. */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  gap: <span class="number">10px</span>;  <span class="comment">/* row-gap: 10px; + column-gap: 10px; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 하나의 값만 적용하고자 한다면 다음과 같이 사용할 수 있다. */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  gap: <span class="number">10px</span> <span class="number">0</span>; <span class="comment">/* row-gap */</span></span><br><span class="line">  gap: <span class="number">0</span> <span class="number">10px</span>; <span class="comment">/* column-gap */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_gap.jpg" alt="grid-gap"></p>
+<h3 id="grid-auto-rows"><a href="#grid-auto-rows" class="headerlink" title="grid-auto-rows"></a>grid-auto-rows</h3><p>암시적 행(Track)의 크기를 정의한다. 아이템(Item)이 <code>grid-template-rows</code>로 정의한 명시적 행 외부에 배치되는 경우 암시적 행의 크기가 적용된다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="number">100px</span> <span class="number">100px</span>; <span class="comment">/* 명시적 2개 행 정의 */</span></span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="number">150px</span> <span class="number">150px</span>; <span class="comment">/* 명시적 2개 열 정의 */</span></span><br><span class="line">  grid-<span class="attribute">auto</span>-rows: <span class="number">100px</span>; <span class="comment">/* 그 외(암시적) 행의 크기 정의 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123;</span><br><span class="line">  grid-row: <span class="number">3</span> / <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_auto_rows.jpg" alt="grid-auto-rows"></p>
+<h3 id="grid-auto-columns"><a href="#grid-auto-columns" class="headerlink" title="grid-auto-columns"></a>grid-auto-columns</h3><p>암시적 열(Track)의 크기를 정의한다. 아이템(Item)이 grid-template-columns로 정의한 명시적 열 외부에 배치되는 경우 암시적 열의 크기가 적용된다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="number">150px</span> <span class="number">150px</span>;</span><br><span class="line">  grid-<span class="attribute">auto</span>-rows: <span class="number">100px</span>;</span><br><span class="line">  grid-<span class="attribute">auto</span>-<span class="attribute">columns</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123;</span><br><span class="line">  grid-row: <span class="number">3</span> / <span class="number">4</span>;</span><br><span class="line">  grid-column: <span class="number">3</span> / <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_auto_columns.jpg" alt="grid-auto-columns"></p>
+<ul>
+<li>아이템이 배치되는 위치에 맞게 암시적 행과 열의 개수가 생성된다.</li>
+<li>암시적 크기가 적용된 행과 열은 양수 라인 번호만 사용할 수 있다. (음수 사용 불가)</li>
+</ul>
+<p><img src="/images/grid_auto_columns2.jpg" alt="grid-auto-columns"></p>
+<h3 id="grid-auto-flow"><a href="#grid-auto-flow" class="headerlink" title="grid-auto-flow"></a>grid-auto-flow</h3><p>배치하지 않은 아이템(Item)을 어떤 방식의 ‘자동 배치 알고리즘’으로 처리할지 정의한다. 배치한 아이템은 <code>grid-area</code>(이하 개별 속성 포함)를 사용한 아이템을 의미한다.</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>row</td>
+<td>각 행 축을 따라 차례로 배치</td>
+<td>row</td>
+</tr>
+<tr>
+<td>column</td>
+<td>각 열 축을 따라 차례로 배치</td>
+<td></td>
+</tr>
+<tr>
+<td>row dense(dense)</td>
+<td>각 행 축을 따라 차례로 배치, 빈 영역 메움!</td>
+<td></td>
+</tr>
+<tr>
+<td>column dense</td>
+<td>각 열 축을 따라 차례로 배치, 빈 영역 메움!</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><em><strong>row와 row dense</strong></em></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* For row &amp; row dense */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-<span class="attribute">auto</span>-flow: row || row dense || dense;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123;</span><br><span class="line">  grid-column: span <span class="number">3</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_auto_flow.jpg" alt="grid-auto-flow"></p>
+<p><em><strong>column와 column dense</strong></em></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* For column &amp; column dense */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-<span class="attribute">auto</span>-flow: column || column dense;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">  grid-column: <span class="number">2</span> / span <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123;</span><br><span class="line">  grid-column: span <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_auto_flow2.jpg" alt="grid-auto-flow"></p>
+<h3 id="grid"><a href="#grid" class="headerlink" title="grid"></a>grid</h3><p><code>grid-template-xxx</code>과 <code>grid-auto-xxx</code>의 단축 속성이다.</p>
+<ul>
+<li><code>auto-flow</code> 키워드를 사용합니다.</li>
+<li><code>/</code>로 구분해 작성하는 위치가 곧 <code>row</code>, <code>column</code> 값을 의미하기 때문에 작성할 필요가 없다.</li>
+<li><code>dense</code> 값은 <code>auto-flow</code> 뒤에 붙여준다.</li>
+</ul>
+<h3 id="align-content"><a href="#align-content" class="headerlink" title="align-content"></a>align-content</h3><p>그리드 콘텐츠(Contents)를 수직(열 축) 정렬한다. 그리드 콘텐츠의 세로 너비가 그리드 컨테이너(Container)보다 작아야 한다.</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>stretch와 같다.</td>
+<td>normal</td>
+</tr>
+<tr>
+<td>start</td>
+<td>시작점(위쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>center</td>
+<td>수직 가운데 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td>끝점(아래쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>space-around</td>
+<td>각 행 위아래에 여백을 고르게 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>space-between</td>
+<td>첫 행은 시작점에, 끝 행은 끝점에 정렬되고 나머지 여백으로 고르게 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>space-evenly</td>
+<td>모든 여백을 고르게 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>stretch</td>
+<td>열 축을 채우기 위해 그리드 콘텐츠를 늘림</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">450px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">450px</span>;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">100px</span>);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">100px</span>);</span><br><span class="line">  <span class="attribute">align-content</span>: &lt;align-content&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_align_content.jpg" alt="grid-align-content"></p>
+<h3 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a>justify-content</h3><p>그리드 콘텐츠(Contents)를 수평(행 축) 정렬한다. 그리드 콘텐츠의 가로 너비가 그리드 컨테이너(Container)보다 작아야 한다.</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>stretch와 같다.</td>
+<td>normal</td>
+</tr>
+<tr>
+<td>start</td>
+<td>시작점(왼쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>center</td>
+<td>수평 가운데 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td>끝점(오른쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>space-around</td>
+<td>각 열 좌우에 여백을 고르게 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>space-between</td>
+<td>첫 열은 시작점에, 끝 열은 끝점에 정렬되고 나머지 여백으로 고르게 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>space-evenly</td>
+<td>모든 여백을 고르게 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>stretch</td>
+<td>행 축을 채우기 위해 그리드 콘텐츠를 늘림</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">450px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">450px</span>;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">100px</span>);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">100px</span>);</span><br><span class="line">  <span class="attribute">justify-content</span>: &lt;justify-content&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_justify_content.jpg" alt="grid-justify-content"></p>
+<h3 id="place-content"><a href="#place-content" class="headerlink" title="place-content"></a>place-content</h3><p><code>align-content</code>와 <code>justify-content</code>의 단축 속성이다.</p>
+<ul>
+<li>하나의 값만 입력하면 두 속성에 모두 적용된다.</li>
+<li><strong>Edge(IE) 브라우저에서 지원하지 않는 속성</strong></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  place-<span class="attribute">content</span>: &lt;align-content&gt; &lt;justify-content&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 01 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  place-<span class="attribute">content</span>: center space-evenly;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">align-content</span>: center;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-evenly;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 02 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    place-<span class="attribute">content</span>: end;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">align-content</span>: end;</span><br><span class="line">    <span class="attribute">justify-content</span>: end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a>align-items</h3><p>그리드 아이템(Items)들을 수직(열 축) 정렬한다. 그리드 아이템의 세로 너비가 자신이 속한 그리드 행(Track)의 크기보다 작아야 한다.</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>stretch와 같다.</td>
+<td>normal</td>
+</tr>
+<tr>
+<td>start</td>
+<td>시작점(위쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>center</td>
+<td>수직 가운데 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td>끝점(아래쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>stretch</td>
+<td>열 축을 채우기 위해 그리드 아이템을 늘림</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">450px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">450px</span>;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  <span class="attribute">align-items</span>: &lt;align-items&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_align_items.jpg" alt="grid-align-items"></p>
+<h3 id="justify-items"><a href="#justify-items" class="headerlink" title="justify-items"></a>justify-items</h3><p>그리드 아이템(Items)들을 수평(행 축) 정렬한다. 그리드 아이템의 가로 너비가 자신이 속한 그리드 열(Track)의 크기보다 작아야 한다.</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>stretch와 같다.</td>
+<td>normal</td>
+</tr>
+<tr>
+<td>start</td>
+<td>시작점(왼쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>center</td>
+<td>수평 가운데 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td>끝점(오른쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>stretch</td>
+<td>행 축을 채우기 위해 그리드 아이템을 늘림</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">450px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">450px</span>;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  justify-items: &lt;justify-items&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_justify_items.jpg" alt="grid-justify-items"></p>
+<h3 id="place-items"><a href="#place-items" class="headerlink" title="place-items"></a>place-items</h3><p><code>align-items</code>와 <code>justify-items</code>의 단축 속성이다.</p>
+<ul>
+<li>하나의 값만 입력하면 두 속성에 모두 적용된다.</li>
+<li><strong>Edge(IE) 브라우저에서 지원하지 않는 속성</strong></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  place-items: &lt;align-items&gt; &lt;justify-items&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 01 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    place-items: start stretch;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">align-items</span>: start;</span><br><span class="line">    justify-items: stretch;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 02 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    place-items: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">    justify-items: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Grid-Items"><a href="#Grid-Items" class="headerlink" title="Grid Items"></a>Grid Items</h2><p>정의된 컨테이너의 자식 요소들은 자동으로 Grid Items(아이템)로 정의된다.</p>
+<h3 id="grid-row-start-grid-row-end-grid-column-start-grid-column-end"><a href="#grid-row-start-grid-row-end-grid-column-start-grid-column-end" class="headerlink" title="grid-row-start, grid-row-end, grid-column-start, grid-column-end"></a>grid-row-start, grid-row-end, grid-column-start, grid-column-end</h3><ul>
+<li>그리드 아이템(Item)을 배치하기 위해 그리드 선(Line)의 ‘시작 위치’와 ‘끝 위치’를 지정한다.</li>
+<li>‘숫자’를 지정하거나, ‘선 이름’을 지정하거나, <code>span</code> 키워드를 사용한다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">2</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">  grid-row-start: <span class="number">1</span>;</span><br><span class="line">  grid-row-end: <span class="number">3</span>;</span><br><span class="line">  grid-column-start: <span class="number">2</span>;</span><br><span class="line">  grid-column-end: <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_row_column.jpg" alt="grid-row-column"></p>
+<ul>
+<li>선의 이름을 지정할 수도 있다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: [row-<span class="number">1s</span>t] <span class="number">1</span>fr [row-<span class="number">2</span>nd] <span class="number">1</span>fr [row-<span class="number">3</span>rd];</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: [col-<span class="number">1s</span>t] <span class="number">1</span>fr [col-<span class="number">2</span>nd] <span class="number">1</span>fr [col-<span class="number">3</span>rd] <span class="number">1</span>fr [col-<span class="number">4</span>th];</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">  grid-row-start: row-<span class="number">2</span>nd;</span><br><span class="line">  grid-row-end: row-<span class="number">3</span>rd;</span><br><span class="line">  grid-column-start: col-<span class="number">2</span>nd;</span><br><span class="line">  grid-column-end: col-<span class="number">4</span>th;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_row_column2.jpg" alt="grid-row-column"></p>
+<ul>
+<li><code>span</code> 키워드를 사용하면 좀 더 쉽게 배치할 수 있다.</li>
+<li><code>span</code> 키워드와 ‘숫자’를 조합하면 ‘숫자’만큼 라인을 확장하는(<code>+</code>) 개념이다.</li>
+<li>명시하지 않으면 <code>span</code> 1이 기본값.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">  <span class="comment">/* Row 1번에서 3번(1+2=3)까지 */</span></span><br><span class="line">  grid-row-start: <span class="number">1</span>;</span><br><span class="line">  grid-row-end: span <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* Column 2번에서 3번(2+1=3)까지 */</span></span><br><span class="line">  grid-column-start: <span class="number">2</span>;</span><br><span class="line">  <span class="comment">/* grid-column-end: span 1; (생략) */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_row_column3.jpg" alt="grid-row-column"></p>
+<ul>
+<li><code>span</code> 키워드를 ‘시작 위치’에 작성하고, ‘끝 위치’를 명시해서 확장할(<code>-</code>) 수도 있다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">  <span class="comment">/* Column 3번에서 2번(3-1=2)까지 */</span></span><br><span class="line">  <span class="comment">/* grid-row-start: span 1; (생략) */</span></span><br><span class="line">  grid-row-end: <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* Column 4번에서 2번(4-2=2)까지 */</span></span><br><span class="line">  grid-column-start: span <span class="number">2</span>;</span><br><span class="line">  grid-column-end: <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_row_column4.jpg" alt="grid-row-column"></p>
+<h3 id="grid-row"><a href="#grid-row" class="headerlink" title="grid-row"></a>grid-row</h3><p><code>grid-row-start</code>과 <code>grid-row-end</code>의 단축 속성이다. 각 속성을 <code>/</code>로 구분하는 것에 주의.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  grid-row: &lt;grid-row-start&gt; / &lt;grid-row-end&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 01 */</span></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-row-start: <span class="number">1</span>;</span><br><span class="line">    grid-row-end: <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-row: <span class="number">1</span> / <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 02 */</span></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-row-start: <span class="number">2</span>;</span><br><span class="line">    grid-row-end: span <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-row: <span class="number">2</span> / span <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-row: <span class="number">2</span> / <span class="number">5</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 03 */</span></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-row-start: span <span class="number">3</span>;</span><br><span class="line">    grid-row-end: <span class="number">4</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-row: span <span class="number">3</span> / <span class="number">4</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-row: <span class="number">1</span> / <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="grid-column"><a href="#grid-column" class="headerlink" title="grid-column"></a>grid-column</h3><ul>
+<li><code>grid-column-start</code>과 <code>grid-column-end</code>의 단축 속성이다. 각 속성을 <code>/</code>로 구분하는 것에 주의.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-column: &lt;grid-column-start&gt; / &lt;grid-column-end&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>음수 결과를 위해 <code>span</code> 키워드를 ‘시작 위치’에 작성함에 주의.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 01 */</span></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  grid-column-start: -<span class="number">1</span>;</span><br><span class="line">  grid-column-end: -<span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  grid-column: -<span class="number">1</span> / -<span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="comment">/* Column -1번에서 -3번(-1-2=-3)까지 */</span></span><br><span class="line">  grid-column: span <span class="number">2</span> / -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 02 */</span></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    grid-column-start: <span class="number">2</span>;</span><br><span class="line">    grid-column-end: -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    <span class="comment">/* Column 2번에서 끝(-1번)까지 */</span></span><br><span class="line">    grid-column: <span class="number">2</span> / -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="grid-area"><a href="#grid-area" class="headerlink" title="grid-area"></a>grid-area</h3><p><code>grid-row-start</code>, <code>grid-column-start</code>, <code>grid-row-end</code> 그리고 <code>grid-column-end</code>의 단축 속성이다.</p>
+<ul>
+<li><code>grid-template-areas</code>가 참조할 영역(Area) 이름을 설정할 수 있다.</li>
+<li>영역 이름을 설정할 경우 <code>grid-row</code>와 <code>grid-column</code> 개념은 무시된다.</li>
+<li>영역 이름을 지정해 <code>grid-template-areas</code>에서 참조할 수 있다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  grid-area: &lt;grid-row-start&gt; / &lt;grid-column-start&gt; / &lt;grid-row-end&gt; / &lt;grid-column-end&gt;;</span><br><span class="line">  grid-area: 영역이름;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  grid-row: <span class="number">2</span> / <span class="number">3</span>;</span><br><span class="line">  grid-column: span <span class="number">2</span> / -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="comment">/* &#x27;시작 / 시작 / 끝 / 끝&#x27;임에 주의합시다! */</span></span><br><span class="line">  grid-area: <span class="number">2</span> / span <span class="number">2</span> / <span class="number">3</span> / -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>다음과 같이 영역 이름을 지정해 <code>grid-template-areas</code>에서 참조할 수 있다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">header</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>HEADER<span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>MAIN<span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">aside</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>ASIDE<span class="tag">&lt;/<span class="name">aside</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">footer</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>FOOTER<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    grid-template-rows: <span class="built_in">repeat</span>(<span class="number">4</span>, <span class="number">90px</span>);</span><br><span class="line">    grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">    grid-template-areas:</span><br><span class="line">    <span class="string">&quot;header header header&quot;</span></span><br><span class="line">    <span class="string">&quot;main main aside&quot;</span></span><br><span class="line">    <span class="string">&quot;main main .&quot;</span></span><br><span class="line">    <span class="string">&quot;footer footer footer&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">header</span><span class="selector-class">.item</span> &#123; grid-area: header; &#125;</span><br><span class="line"><span class="selector-tag">main</span><span class="selector-class">.item</span>   &#123; grid-area: main;   &#125;</span><br><span class="line"><span class="selector-tag">aside</span><span class="selector-class">.item</span>  &#123; grid-area: aside;  &#125;</span><br><span class="line"><span class="selector-tag">footer</span><span class="selector-class">.item</span> &#123; grid-area: footer; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_area.jpg" alt="grid-area"></p>
+<h3 id="align-self"><a href="#align-self" class="headerlink" title="align-self"></a>align-self</h3><p>단일 그리드 아이템(Item)을 수직(열 축) 정렬한다. 그리드 아이템의 세로 너비가 자신이 속한 그리드 행(Track)의 크기보다 작아야 한다.</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>stretch와 같다.</td>
+<td>normal</td>
+</tr>
+<tr>
+<td>start</td>
+<td>시작점(위쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>center</td>
+<td>수직 가운데 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td>끝점(아래쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>stretch</td>
+<td>열 축을 채우기 위해 그리드 아이템을 늘림</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">2</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">2</span>, <span class="number">1</span>fr);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123; <span class="attribute">align-self</span>: start; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123; <span class="attribute">align-self</span>: center; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123; <span class="attribute">align-self</span>: end; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">4</span>) &#123; <span class="attribute">align-self</span>: stretch; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_align_self.jpg" alt="grid-align-self"></p>
+<h3 id="justify-self"><a href="#justify-self" class="headerlink" title="justify-self"></a>justify-self</h3><p>단일 그리드 아이템(Item)을 수평(행 축) 정렬한다. 그리드 아이템의 가로 너비가 자신이 속한 그리드 열(Track)의 크기보다 작아야 한다.</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>stretch와 같다.</td>
+<td>normal</td>
+</tr>
+<tr>
+<td>start</td>
+<td>시작점(왼쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>center</td>
+<td>수평 가운데 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td>끝점(오른쪽) 정렬</td>
+<td></td>
+</tr>
+<tr>
+<td>stretch</td>
+<td>행 축을 채우기 위해 그리드 아이템을 늘림</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">2</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">2</span>, <span class="number">1</span>fr);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123; justify-self: start; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123; justify-self: center; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123; justify-self: end; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">4</span>) &#123; justify-self: stretch; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_justify_self.jpg" alt="grid-justify-self"></p>
+<h3 id="place-self"><a href="#place-self" class="headerlink" title="place-self"></a>place-self</h3><p><code>align-self</code>와 <code>justify-self</code>의 단축 속성이다.</p>
+<ul>
+<li>하나의 값만 입력하면 두 속성에 모두 적용된다.</li>
+<li><strong>Edge(IE) 브라우저에서 지원하지 않는 속성</strong></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  place-self: &lt;align-self&gt; &lt;justify-self&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 01 */</span></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  place-self: start end;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">align-self</span>: start;</span><br><span class="line">  justify-self: end;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 02 */</span></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    place-self: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">    <span class="attribute">align-self</span>: center;</span><br><span class="line">    justify-self: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="order"><a href="#order" class="headerlink" title="order"></a>order</h3><p>그리드 아이템이 자동 배치되는 순서를 변경할 수 있다. 숫자가 작을수록 앞서 배치된다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">2</span>, <span class="number">1</span>fr);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123; <span class="attribute">order</span>: <span class="number">1</span>; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123; <span class="attribute">order</span>: <span class="number">5</span>; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">5</span>) &#123; <span class="attribute">order</span>: -<span class="number">1</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_order.jpg" alt="grid-order"></p>
+<h3 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h3><p><code>z-index</code> 속성을 이용해 아이템이 쌓이는 순서를 변경할 수 있다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">  grid-area: <span class="number">1</span> / <span class="number">1</span> / <span class="number">2</span> / <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123;</span><br><span class="line">  grid-area: <span class="number">1</span> / <span class="number">2</span> / <span class="number">3</span> / <span class="number">3</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123;</span><br><span class="line">  grid-area: <span class="number">2</span> / <span class="number">2</span> / <span class="number">3</span> / <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_zindex.jpg" alt="grid-zindex"></p>
+<h2 id="Grid-Functions"><a href="#Grid-Functions" class="headerlink" title="Grid Functions"></a>Grid Functions</h2><h3 id="repeat"><a href="#repeat" class="headerlink" title="repeat"></a>repeat</h3><ul>
+<li><code>repeat()</code> 함수는 행/열(Track)의 크기 정의를 반복한다.</li>
+<li>‘반복되는 횟수’와 ‘행/열의 크기 정의’를 인수로 사용한다.</li>
+<li><code>grid-template-rows</code>와 <code>grid-template-columns</code>에서 사용한다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 9컬럼 그리드 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">9</span>, <span class="number">100px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-rows: [row-start] <span class="number">200px</span> [row-end row-start] <span class="number">200px</span> [row-end];</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: [col-start] <span class="number">100px</span> [col-end col-start] <span class="number">100px</span> [col-end col-start] <span class="number">100px</span> [col-end];</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-rows: <span class="built_in">repeat</span>(<span class="number">2</span>, [row-start] <span class="number">200px</span> [row-end]);</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, [col-start] <span class="number">100px</span> [col-end]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template: <span class="built_in">repeat</span>(<span class="number">2</span>, [row-start] <span class="number">200px</span> [row-end]) / <span class="built_in">repeat</span>(<span class="number">3</span>, [col-start] <span class="number">100px</span> [col-end]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="comment">/* 12컬럼 그리드 */</span></span><br><span class="line">    grid-template-<span class="attribute">columns</span>: <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">1</span>fr <span class="number">2</span>fr;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">6</span>, <span class="number">1</span>fr <span class="number">2</span>fr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="minmax"><a href="#minmax" class="headerlink" title="minmax"></a>minmax</h3><ul>
+<li><code>minmax()</code> 함수는 행/열(Track)의 ‘최소/최대 크기’를 정의한다.</li>
+<li>첫 번째 인수는 ‘최솟값’이고 두 번째 인수는 ‘최댓값’이다.</li>
+<li><code>grid-template-rows</code>, <code>grid-template-columns</code>, <code>grid-auto-rows</code> 그리고 <code>grid-auto-columns</code>에서 사용한다.</li>
+<li>일반 요소에 <code>min-width</code>와 <code>max-width</code> 속성을 동시 지정하는 것과 유사하다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">  grid-template-columns: minmax(100px, 1fr) minmax(200px, 1fr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_minmax.jpg" alt="grid-minmax"></p>
+<ul>
+<li><code>minmax()</code>를 통해 암시적 행/열(Track) 크기를 좀 더 유연하게 사용할 수 있다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-<span class="attribute">auto</span>-rows: <span class="built_in">minmax</span>(<span class="number">200px</span>, auto);</span><br><span class="line">  grid-<span class="attribute">auto</span>-<span class="attribute">columns</span>: <span class="built_in">minmax</span>(<span class="number">300px</span>, auto);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="fit-content"><a href="#fit-content" class="headerlink" title="fit-content"></a>fit-content</h3><ul>
+<li><code>fit-content()</code> 함수는 행/열(Track)의 크기를 그리드 아이템(Item)이 포함하는 내용(Contents) 크기에 맞춘다.</li>
+<li>‘내용의 최대 크기’를 인수로 사용한다.</li>
+<li><code>minmax(auto, max-content)</code>와 유사하다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">fit-content</span>(<span class="number">300px</span>) <span class="built_in">fit-content</span>(<span class="number">300px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_fit_content.jpg" alt="grid-fit-content"></p>
+<h2 id="Grid-Units"><a href="#Grid-Units" class="headerlink" title="Grid Units"></a>Grid Units</h2><h3 id="fr"><a href="#fr" class="headerlink" title="fr"></a>fr</h3><p><code>fr</code>(fractional unit)은 사용 가능한 공간에 대한 비율을 의미한다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 3번째 컬럼에 100px, 4번째 컬럼에 25%를 사용하고 */</span></span><br><span class="line"><span class="comment">/* 남은 공간을 1번째 컬럼에 ‘1/3’, 2번째 컬럼에 ‘2/3’ 만큼 사용 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">100px</span> <span class="number">25%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_fr.jpg" alt="grid-fr"></p>
+<h3 id="min-content"><a href="#min-content" class="headerlink" title="min-content"></a>min-content</h3><p>그리드 아이템이 포함하는 내용(Contents)의 최소 크기를 의미한다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>lorem ipsum<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- ... --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: min-content <span class="number">1</span>fr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_min_content.jpg" alt="grid-min-content"></p>
+<ul>
+<li>한글을 사용하는 경우 <code>word-break: keep-all;</code>를 설정하면 정상적으로 동작한다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>내용의 최소 크기<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- ... --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_min_content2.jpg" alt="grid-min-content"></p>
+<h3 id="max-content"><a href="#max-content" class="headerlink" title="max-content"></a>max-content</h3><p>그리드 아이템이 포함하는 내용(Contents)의 최대 크기를 의미한다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>Hello HEROPY~<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- ... --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: max-content <span class="number">1</span>fr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_max_content.jpg" alt="grid-max-content"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">4</span>, <span class="built_in">minmax</span>(max-content, <span class="number">1</span>fr));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>그리드 함수들과 같이 더 유용하게 활용할 수 있다.</li>
+<li>총 4컬럼 그리드를 생성하며 각 열(Track)은 최대 1fr 크기를 가지지만, <code>max-content</code>를 통해 포함된 그리드 아이템의 내용보다 작아질 수 없다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">4</span>, <span class="built_in">minmax</span>(max-content, <span class="number">1</span>fr));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="auto-fill-auto-fit"><a href="#auto-fill-auto-fit" class="headerlink" title="auto-fill, auto-fit"></a>auto-fill, auto-fit</h3><p>행/열(Track)의 개수를 그리드 컨테이너(Container) 및 행/열 크기에 맞게 자동으로(암시적) 조정한다.<br><code>repeat()</code> 함수와 같이 사용하며, 행/열과 아이템(Item) 개수가 명확할 필요가 없거나 명확하지 않은 경우 유용하다. (반응형 그리드)<br><code>auto-fill</code>과 <code>auto-fit</code>은 간단한 차이점을 제외하면 동일하게 동작한다.</p>
+<p><em><strong>예제01</strong></em></p>
+<ul>
+<li>다음 4컬럼 그리드 예제에서 컨테이너의 크기가 아이템들을 수용하기 충분하지 않은 경우 아이템은 넘치기 시작한다.</li>
+<li>아이템의 최소 크기가 120px이다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(<span class="number">4</span>, <span class="built_in">minmax</span>(<span class="number">120px</span>, <span class="number">1</span>fr));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_fill_fit.jpg" alt="grid-fill-fit"></p>
+<p><em><strong>예제02</strong></em></p>
+<ul>
+<li>만약 4컬럼 그리드를 고집할 필요가 없다면, 다음과 같이 ‘반복횟수’(<code>repeat()</code> 함수의 첫 번째 인수)를 <code>auto-fill</code>이나 <code>auto-fit</code>으로 수정할 수 있다.</li>
+<li>컨테이너의 크기가 아이템들을 수용하기 충분하지 않을 경우 아이템을 자동으로 줄 바꿈 처리하며, 그에 맞게 암시적 행/열도 자동으로 수정한다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(auto-fill, <span class="built_in">minmax</span>(<span class="number">120px</span>, <span class="number">1</span>fr));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_fill_fit2.jpg" alt="grid-fill-fit"></p>
+<p><em><strong>auto-fill과 auto-fit의 차이</strong></em></p>
+<ul>
+<li><code>auto-fill</code>과 <code>auto-fit</code>은 차이점은 그리드 컨테이너가 하나의 행/열(Track)에 모든 아이템을 수용하고 남는 공간이 있을 때 발생한다.</li>
+<li><code>auto-fill</code>은 남는 공간(빈 트랙)을 그대로 유지하고, <code>auto-fit</code>은 남는 공간을 축소한다.</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span><span class="selector-class">.auto-fill</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(auto-fill, <span class="built_in">minmax</span>(<span class="number">120px</span>, <span class="number">1</span>fr));</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span><span class="selector-class">.auto-fit</span> &#123;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(auto-fit, <span class="built_in">minmax</span>(<span class="number">120px</span>, <span class="number">1</span>fr));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/grid_fill_fit3.jpg" alt="grid-fill-fit"></p>
+<h2 id="주요-용어-정리"><a href="#주요-용어-정리" class="headerlink" title="주요 용어 정리"></a>주요 용어 정리</h2><h3 id="Track"><a href="#Track" class="headerlink" title="Track"></a>Track</h3><p>트랙(Track)은 하나의 행(Row) 혹은 열(Column)을 의미한다.</p>
+<p><img src="/images/grid_track.jpg" alt="grid-fill-fit"></p>
+<h3 id="Line"><a href="#Line" class="headerlink" title="Line"></a>Line</h3><p>선(Line)은 일반적으로 거터(Gutter)라고 하는 트랙과 트랙 사이의 간격을 의미한다.</p>
+<p><img src="/images/grid_line.jpg" alt="grid-fill-fit"></p>
+<h3 id="Cell-Area"><a href="#Cell-Area" class="headerlink" title="Cell, Area"></a>Cell, Area</h3><ul>
+<li>셀(Cell)은 아이템(Item)이 배치되는 최소 단위의 영역(Area)이다.</li>
+<li>영역(Area)은 아이템이 배치되는, 하나 이상의 셀(Cell)로 이루어진 영역이다.</li>
+</ul>
+<p><img src="/images/grid_cell_area.jpg" alt="grid-fill-fit"></p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://heropy.blog/2019/08/17/css-grid/">https://heropy.blog/2019/08/17/css-grid/</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/10/23/css-grid/" data-id="cm4wfofex001ajp0agzap425b"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/grid/" rel="tag">grid</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/10/24/html-content-model/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            HTML 콘텐츠 모델
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/10/23/js-exercise003-factorial/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 팩토리얼</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

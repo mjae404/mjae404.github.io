@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    CSS 트랜지션 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-css-transition" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS 트랜지션
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/12/11/css-transition/" class="article-date">
+  <time datetime="2020-12-11T13:43:18.000Z" itemprop="datePublished">2020-12-11</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/CSS/">CSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>CSS 트랜지션은 CSS 속성을 변경할 때 애니메이션 속도를 조절하는 방법을 제공한다. 속성 변경이 즉시 일어나는 것이 아니라 그 속성의 변화가 일정 기간에 걸쳐 일어나도록 할 수 있다. 명시적으로 리스트를 작성해서 어떤 속성을 움직이게 할지, 딜레이를 설정해서 언제 애니메이션이 시작할지, 지속 시간을 설정해서 트랜지션을 얼마나 지속할지, 타이밍 함수를 사용해서 어떻게 트랜지션을 실행하는지 결정하게 한다.</p>
+<a id="more"></a>
+
+<h2 id="애니메이션-가능한-CSS-속성"><a href="#애니메이션-가능한-CSS-속성" class="headerlink" title="애니메이션 가능한 CSS 속성"></a>애니메이션 가능한 CSS 속성</h2><p>어떤 속성을 어떤 방식으로 움직일지를 정의할 수 있다. 애니메이션 가능한 속성의 집합은 유한한 집합으로 제한된다. <strong>애니메이션 가능한 속성의 집합은 변할 수 있기</strong> 때문에 주의하여 진행하여야 한다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">border-style</span>: solid;</span><br><span class="line">    <span class="attribute">border-width</span>: <span class="number">1px</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#0000FF</span>;</span><br><span class="line">    -webkit-<span class="attribute">transition</span>:width <span class="number">2s</span>, height <span class="number">2s</span>, background-color <span class="number">2s</span>, -webkit-transform <span class="number">2s</span>;</span><br><span class="line">    <span class="attribute">transition</span>:width <span class="number">2s</span>, height <span class="number">2s</span>, background-color <span class="number">2s</span>, transform <span class="number">2s</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#FFCCCC</span>;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">200px</span>;</span><br><span class="line">    -webkit-<span class="attribute">transform</span>:<span class="built_in">rotate</span>(<span class="number">180deg</span>);</span><br><span class="line">    <span class="attribute">transform</span>:<span class="built_in">rotate</span>(<span class="number">180deg</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="트랜지션-정의에-사용한-CSS-속성"><a href="#트랜지션-정의에-사용한-CSS-속성" class="headerlink" title="트랜지션 정의에 사용한 CSS 속성"></a>트랜지션 정의에 사용한 CSS 속성</h2><p>CSS 트랜지션은 단축(shorthand) 속성 <code>transition</code>을 사용하여 제어한다. 트랜지션을 설정하는 가장 좋은 방법이며, 파라미터 목록의 길이가 싱크가 맞지 않는 것을 피하기가 더 쉬워지기 때문이다.</p>
+<p><em><strong>transition-property</strong></em><br>트랜지션을 적용해야 하는 CSS 속성의 이름(들)을 명시한다. 나열된 속성만 트랜지션하는 동안 움직인다. 나머지 속성 변화들은 보통 때와 같이 즉시 발생한다.</p>
+<p><em><strong>transition-duration</strong></em><br>트랜지션이 일어나는 지속 시간을 명시한다. 트랜지션동안 모든 속성에 적용하는 단일 지속시간을 명시하거나, 다른 주기로 각 속성이 트랜지션하게 하는 여러 지속 시간을 명시할 수 있다.</p>
+<p><em><strong>transition-timing-function</strong></em><br>속성의 중간값을 계산한느 방법을 정의하는 함수를 명시한다. 트랜지션의 중간값을 계산하는 방법을 결정하며, 대부분의 타이밍 함수는 큐빅 베이지어(cubic bezier)를 정의하는 네 점에 의해 정의되기 때문에 상응하는 함수의 그래프로 제공하여 명시할 수 있다.</p>
+<p><em><strong>transition-delay</strong></em><br>속성이 변한 시점과 트랜지션이 실제로 시작하는 사이에 기다리는 시간을 정의한다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 단축문법</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">transition</span>: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="트랜지션-완료-감지하기"><a href="#트랜지션-완료-감지하기" class="headerlink" title="트랜지션 완료 감지하기"></a>트랜지션 완료 감지하기</h2><p><code>element.addEventListener()</code> 메소드를 사용하여 이 이벤트를 모니터링할 수 있다.</p>
+<p><em><strong>propertyName</strong></em><br>트랜지션을 완료한 CSS 속성의 이름을 나타내는 문자열.</p>
+<p><em><strong>elapsedTime</strong></em><br>이벤트가 발생한 시점에 해당 트랜지션이 진행된 시간을 초로 나타내는 실수. 이 값은 <code>transition-delay</code> 값에 영향을 받지 않는다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">el.addEventListener(<span class="string">&quot;transitionend&quot;</span>, updateTransition, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/12/11/css-transition/" data-id="cm4wfoff0002gjp0a9k449pcp"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transition/" rel="tag">transition</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/12/12/css-exercise003/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            CSS 애니메이션 03
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/12/10/css-box-shadow/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">CSS box shadow</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

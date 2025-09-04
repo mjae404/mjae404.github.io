@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    HTML을 어떻게 공부해야 하는가 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-html-how-to-learn" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  HTML을 어떻게 공부해야 하는가
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/04/html-how-to-learn/" class="article-date">
+  <time datetime="2021-12-04T13:10:44.000Z" itemprop="datePublished">2021-12-04</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/HTML/">HTML</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h2 id="Flow-content-플로우-콘텐츠"><a href="#Flow-content-플로우-콘텐츠" class="headerlink" title="Flow content (플로우 콘텐츠)"></a>Flow content (플로우 콘텐츠)</h2><ul>
+<li><code>body</code>에 포함할 수 있는 요소.</li>
+<li><code>base</code>, <code>style</code>, <code>title</code> 요소를 제외한 나머지 모든 요소.</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="Metadata-content-메타-데이터-콘텐츠"><a href="#Metadata-content-메타-데이터-콘텐츠" class="headerlink" title="Metadata content (메타 데이터 콘텐츠)"></a>Metadata content (메타 데이터 콘텐츠)</h2><ul>
+<li>콘텐츠와 문서를 구조화하는 요소를 의미</li>
+<li>다른 콘텐츠의 표시, 동작, 관계 등을 설정</li>
+<li>일부 요소는 경우에 따라 플로우 콘텐츠 (<code>link</code>, <code>meta</code>, <code>noscript</code>, <code>script</code>, <code>template</code>)</li>
+<li><code>display: none</code></li>
+</ul>
+<h2 id="Heading-content-헤딩-콘텐츠"><a href="#Heading-content-헤딩-콘텐츠" class="headerlink" title="Heading content (헤딩 콘텐츠)"></a>Heading content (헤딩 콘텐츠)</h2><ul>
+<li>섹셔닝 콘텐츠의 헤더.</li>
+<li>섹셔닝 콘텐츠가 없어도 헤딩 콘텐츠가 있으면 암시적으로 섹션(==문서의 개요)이 형성된다.</li>
+<li><code>display: block</code></li>
+</ul>
+<h2 id="Sectioning-content-섹셔닝-콘텐츠"><a href="#Sectioning-content-섹셔닝-콘텐츠" class="headerlink" title="Sectioning content (섹셔닝 콘텐츠)"></a>Sectioning content (섹셔닝 콘텐츠)</h2><ul>
+<li><code>article</code>, <code>aside</code>, <code>nav</code>, <code>section</code></li>
+<li>문서의 개요를 형성. 헤딩, 헤더, 푸터의 범위가 된다.</li>
+<li>각 섹셔닝 콘텐츠는 암시적인 개요를 형성.</li>
+<li>섹셔닝 콘텐츠와 헤딩 콘텐츠를 함께 사용하면 명시적인 개요를 형성.</li>
+<li><code>display: block</code></li>
+</ul>
+<h2 id="Phrasing-content-프레이징-콘텐츠"><a href="#Phrasing-content-프레이징-콘텐츠" class="headerlink" title="Phrasing content (프레이징 콘텐츠)"></a>Phrasing content (프레이징 콘텐츠)</h2><ul>
+<li>구문 콘텐츠. 단락을 형성하는 콘텐츠.</li>
+<li><code>display: inline | inline-block | none</code></li>
+<li><code>none</code> = <code>link</code>, <code>meta</code>, <code>noscript</code>, <code>script</code>, <code>template</code></li>
+</ul>
+<h2 id="Embedded-content-임베디드-콘텐츠"><a href="#Embedded-content-임베디드-콘텐츠" class="headerlink" title="Embedded content (임베디드 콘텐츠)"></a>Embedded content (임베디드 콘텐츠)</h2><ul>
+<li>모든 임베디드 콘텐츠는 구문 콘텐츠이다.</li>
+<li>외부 자원을 지원하지 않는 겿우 대체 자원을 명시할 수 있다.</li>
+<li><code>display: inline | inline-block</code></li>
+</ul>
+<h2 id="Interactive-content-인터렉티브-콘텐츠"><a href="#Interactive-content-인터렉티브-콘텐츠" class="headerlink" title="Interactive content (인터렉티브 콘텐츠)"></a>Interactive content (인터렉티브 콘텐츠)</h2><ul>
+<li>사용자와 상호작용할 수 있는 콘텐츠.</li>
+<li>입력장치(키보드, 마우스)로 조작할 수 있다.</li>
+<li><code>display: inline | inline-block</code></li>
+</ul>
+<h2 id="Palpable-content-팰퍼블-콘텐츠"><a href="#Palpable-content-팰퍼블-콘텐츠" class="headerlink" title="Palpable content (팰퍼블 콘텐츠)"></a>Palpable content (팰퍼블 콘텐츠)</h2><ul>
+<li>비어있지 않은, 볼 수 있는 콘텐츠.</li>
+<li>클릭하거나 드래그하거나 영역 지정을 할 수 있음.</li>
+<li><code>hidden</code> 속성이 없는</li>
+</ul>
+<h2 id="Script-supporting-element-스크립트-지원-요소"><a href="#Script-supporting-element-스크립트-지원-요소" class="headerlink" title="Script-supporting element (스크립트 지원 요소)"></a>Script-supporting element (스크립트 지원 요소)</h2><ul>
+<li>렌더링하지 않지만 사용자에게 기능을 제공</li>
+<li>script, templeate</li>
+</ul>
+<h2 id="Transparent-content-models-투명-콘텐츠-모델"><a href="#Transparent-content-models-투명-콘텐츠-모델" class="headerlink" title="Transparent content models (투명 콘텐츠 모델)"></a>Transparent content models (투명 콘텐츠 모델)</h2><ul>
+<li>투명 콘텐츠 모델. 부모의 콘텐츠 모델을 따른다.</li>
+<li>투명한 요소를 제거해도 부모와 자식 관계가 문법적으로 유효해야 한다.<br><code>a</code>, <code>ins</code>, <code>del</code>, <code>object</code>, <code>video</code>, <code>audio</code>, <code>map</code>, <code>noscript</code>, <code>canvas</code></li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/04/html-how-to-learn/" data-id="cm4wfoff5004ajp0a1lwb85jc"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-red/" rel="tag">the red</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/04/html-seo/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            HTML 검색엔진
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/03/svg-animation/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">SVG 애니메이션</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

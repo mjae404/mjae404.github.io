@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    Git 브랜치 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-git-branch" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Git 브랜치
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/28/git-branch/" class="article-date">
+  <time datetime="2020-08-28T11:33:09.000Z" itemprop="datePublished">2020-08-28</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/git/">git</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>똑같은 코드를 동시에 고칠 가능성이 있기 때문에, 브랜치를 분기를 나누어 작업을 진행한다. 분기를 나누어 작업한 후에, 추후에 합친다. 충돌이 일어난다고 하더라도 명시적으로 충돌을 해결할 수 있다.</p>
+<a id="more"></a>
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://ko.atlassian.com/software/sourcetree">소스트리</a>(sourceTree): 버튼 클릭으로 Git 명령을 실행하는 도구.</p>
+</blockquote>
+<h2 id="브랜치-Branch-생성"><a href="#브랜치-Branch-생성" class="headerlink" title="브랜치(Branch) 생성"></a>브랜치(Branch) 생성</h2><p><em>브랜치 만들기</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch develop</span><br></pre></td></tr></table></figure>
+
+<p><em>만든 브랜치로 이동하기</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout develop</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>master 브랜치</strong>: 기본 브랜치.</p>
+</blockquote>
+<blockquote>
+<p><strong>HEAD</strong>: 내가 지금 작업하고 있는 로컬 브랜치를 가르키고 있다.</p>
+</blockquote>
+<h2 id="머지-Merge-로-브랜치-합치기"><a href="#머지-Merge-로-브랜치-합치기" class="headerlink" title="머지(Merge)로 브랜치 합치기"></a>머지(Merge)로 브랜치 합치기</h2><ol>
+<li>master 브랜치의 최신 커밋(base)에 develop 브랜치의 최신 커밋(compare)을 합치려고 한다.</li>
+<li>base가 될 master 브랜치로 이동한다.</li>
+<li>compare 브랜치인 develop와 합치라는 명령을 내린다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge develop</span><br></pre></td></tr></table></figure></li>
+<li>합쳐진 결과는 develop 커밋이 된다.</li>
+</ol>
+<ul>
+<li>develop은 master +a가 되어 둘이 합쳐진 결과물은 develop이 된다. 그래서 develop과 master 브랜치 모두 develop을 가르키게 된다.</li>
+</ul>
+<h2 id="브랜치-충돌-Conflict-시에-해결-방법"><a href="#브랜치-충돌-Conflict-시에-해결-방법" class="headerlink" title="브랜치 충돌(Conflict)시에 해결 방법"></a>브랜치 충돌(Conflict)시에 해결 방법</h2><p>머지(Merge)할 때 두 버전이 같은 곳을 수정했다면 충돌이 난다. 충돌이 났을 경우 이를 직접 수정하여 고쳐주어야 한다. 위가 기존 버전, 아래가 본인이 수정했던 버전이다.</p>
+<p><em>충돌시 나오는 코드</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br><span class="line"></span><br><span class="line">&lt;&lt;&lt;&lt; HEAD</span><br><span class="line">Lorem Ipsum has been the industry&#39;s standard dummy text.</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">It was popularised in the 1960s.</span><br><span class="line">&gt;&gt;&gt;&gt; develop</span><br></pre></td></tr></table></figure>
+
+<p><em>코드 수정</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br><span class="line"></span><br><span class="line">It was popularised in the 1960s.</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="다른-사람의-저장소를-통째로-복사하여-포크-Fork-하기"><a href="#다른-사람의-저장소를-통째로-복사하여-포크-Fork-하기" class="headerlink" title="다른 사람의 저장소를 통째로 복사하여 포크(Fork)하기"></a>다른 사람의 저장소를 통째로 복사하여 포크(Fork)하기</h2><p><strong><u>다른 사람의 저장소를 통째로 본인의 계정으로 복제해온 후, 복제해온 본인의 저장소에 자유롭게 커밋, 푸시를 한다.</u></strong> 포크를 했을 경우 소스코드를 망치더라도 원본 코드에는 아무런 영향이 가지 않는다. GitHub의 세팅에서 <strong>Collaborators</strong> 을 설정하여 오픈소스에 기여할 수 있다.</p>
+<p><em>포크(Fork)하는 방법</em></p>
+<ol>
+<li>원본 저장소의 주소를 복사한다.</li>
+<li>본인의 로컬에 폴더를 만들어 해당 저장소를 clone한다.</li>
+<li>새 계정을 추가하고 디폴트 계정으로 설정한다.</li>
+<li>작업후 커밋 및 푸시를 진행한다.</li>
+<li>GitHub에서 커밋이 제대로 되었는지 확인한다.</li>
+</ol>
+<h2 id="병합-요청-Pull-Request-보내기"><a href="#병합-요청-Pull-Request-보내기" class="headerlink" title="병합 요청(Pull Request) 보내기"></a>병합 요청(Pull Request) 보내기</h2><ol>
+<li>포크한 저장소에서 기능 개발을 끝낸다.</li>
+<li>그 후 머지하고 싶은 두 브랜치를 선택하고 어떤 변경을 진행했는지 제목과 내용에 기재한다.</li>
+<li>단일 저장소에서 보낼 수도 있고, 포크한 저장소에서도 보낼 수 있다.</li>
+</ol>
+<h2 id="브랜치-관리하기"><a href="#브랜치-관리하기" class="headerlink" title="브랜치 관리하기"></a>브랜치 관리하기</h2><ol>
+<li>한 사람이 개발하는 기능 브랜치를 생성한다.</li>
+<li>작업이 끝나면 master 브랜치로 Pull Request를 보낸다.</li>
+<li>master 브랜치에서 대략적인 작업이 전부 머지되면 release 브랜치로 머지시키고 실서버에 배포한다.</li>
+<li>직접 커밋은 본인이 개발하는 기능 브랜치에만 진행한다.</li>
+<li>master, release 브랜치에는 직접 커밋하지 않고 머지만 진행한다.</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 처음 배우는 Git &amp; GitHub _ 진유림 강사님</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/08/28/git-branch/" data-id="cm4wfoff2002vjp0ad3w75ky6"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/09/02/git-process/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            GitHub 버전 생성
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/27/git-overview/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">Git &amp; GitHub 개요</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

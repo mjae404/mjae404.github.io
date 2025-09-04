@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    GitHub 버전 생성 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-git-process" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  GitHub 버전 생성
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/09/02/git-process/" class="article-date">
+  <time datetime="2020-09-01T16:13:53.000Z" itemprop="datePublished">2020-09-02</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/git/">git</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>는 오픈 소스에서 비즈니스에 이르기까지 4천만 명의 개발자와 함께 코드를 호스트하고 검토하고 프로젝트를 관리하며 소프트웨어를 구축할 수 있는 개발 플랫폼이다.</p>
+<a id="more"></a>
+
+<h2 id="GitHub-버전-생성"><a href="#GitHub-버전-생성" class="headerlink" title="GitHub 버전 생성"></a>GitHub 버전 생성</h2><p><em>Git 초기화와 로컬 저장소</em></p>
+<ol>
+<li><strong>원하는 폴더에서 Git 초기화를 하면 버전 관리를 할 수 있다.</strong><ul>
+<li>Git 초기화를 하면 .git이라는 숨겨진 폴더(로컬 저장소)가 만들어진다.</li>
+<li>로컬 저장소에 내가 만든 버전 정보, 원격 저장소 주소 등이 저장된다.</li>
+<li>원격 저장소에서 내 컴퓨터로 코드를 받아오면 로컬 저장소가 자동으로 생긴다.</li>
+<li>한 폴더 하나의 로컬 저장소만 유지해야 한다.</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p><em>첫번째 버전 만들기</em></p>
+<ol start="2">
+<li><strong>코딩을 진행한 후, 내가 변경한 파일중에 올리기를 원하는 것만 선택한다.</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>선택한 파일들을 하나의 버전으로 만들고 설명을 라벨링한다.</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m&quot;설명 라벨링&quot;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><strong>생성한 커밋을 확인한다.</strong><ul>
+<li>커밋은 ‘의미 있는 변동사항’을 묶어야 한다.</li>
+<li>추후 수정할 때 어떤 파일을 수정했는지 쉽게 파악이 가능하다.</li>
+<li>커밋 메시지는 바로 어떤 내용을 작업했는지 파악할 수 있도록 최소한이라도 기재해준다.</li>
+<li>Git에서 커밋이란 변경 사항이 아니라 최종 코드의 모음이다.</li>
+<li>변경되지 않은 파일은 ‘변경되지 않았다’라고만 저장되어 용량을 크게 차지하지 않는다.</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+
+<p><em>만든 버전 GitHub에 올리기</em></p>
+<ol start="5">
+<li><strong>GitHub 사이트에서 프로젝트 저장소를 생성한다.</strong></li>
+</ol>
+<ul>
+<li><strong>New repository</strong>: 새로운 저장소 만들기</li>
+<li><strong>Import repository</strong>: 저장소 가져오기</li>
+<li><strong>New gist</strong>: 코드 조각을 올리고 싶을 때 사용</li>
+<li><strong>New organization</strong>: 팀프로젝트를 할 때 진행</li>
+<li><strong>New project</strong></li>
+</ul>
+<ol start="6">
+<li><strong>내 컴퓨터 프로젝트 폴더에 GitHub 저장소 주소를 알려준다.</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https:&#x2F;&#x2F;github.com&#x2F;&#x2F;아이디&#x2F;이름.git</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li><strong>내컴퓨터에 만들었던 커밋을 GitHub에 올린다.</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push master</span><br></pre></td></tr></table></figure>
+
+<h2 id="타인의-저장소-활용"><a href="#타인의-저장소-활용" class="headerlink" title="타인의 저장소 활용"></a>타인의 저장소 활용</h2><p><em>Clone</em></p>
+<ul>
+<li>내 컴퓨터에 폴더를 생성하고 GitHub의 저장소를 받아온다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;아이디&#x2F;이름.git</span><br></pre></td></tr></table></figure></li>
+<li>app.js 파일 생성 후 add → commit → push</li>
+<li>GitHub에서 새 커밋을 확인한다.</li>
+</ul>
+<p><em>pull</em></p>
+<ul>
+<li>원격 저장소의 데이터를 가져온다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="깃-명령어"><a href="#깃-명령어" class="headerlink" title="깃 명령어"></a>깃 명령어</h2><ul>
+<li><strong>git init</strong>: 이제부터 깃을 시작하겠다 선언</li>
+<li><strong>git status</strong>: 현재 깃 상태</li>
+<li><strong>git add</strong>: 깃에 파일 추가<ul>
+<li>ex) git add 파일명 : 파일추가</li>
+<li>ex) git add . : 폴더+파일 추가</li>
+</ul>
+</li>
+<li><strong>git remote (주소)</strong>: 데이터 전송</li>
+<li><strong>git remote</strong>: 전송되었는지 확인 가능</li>
+<li><strong>git commit</strong>: 라벨링<ul>
+<li>첫줄이 제목, 다다음줄이 내용</li>
+<li>제목은 현재형으로, 구나 절로 적용(문장말고)</li>
+<li>git commit -m “docs: edit” → vim 열지 않고 내용 넣을 수 있음</li>
+</ul>
+</li>
+<li><strong>git push { } master</strong>: 보내기</li>
+<li><strong>git push -u { } master</strong>:맨처음 보낼 때 -u master 넣어주어야 함</li>
+<li><strong>git remote remove { }</strong>: 리모트 삭제</li>
+<li><strong>git clone</strong>: 서버에서 로컬로 가져오기</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 온라인 강의 처음 배우는 Git &amp; GitHub _ 진유림 강사님</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/09/02/git-process/" data-id="cm4wfoff3003djp0a92h52cd8"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/09/03/js-array-method/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 배열 메소드
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/28/git-branch/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">Git 브랜치</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

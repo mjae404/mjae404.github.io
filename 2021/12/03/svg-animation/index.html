@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    SVG 애니메이션 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-svg-animation" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  SVG 애니메이션
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/03/svg-animation/" class="article-date">
+  <time datetime="2021-12-03T12:04:23.000Z" itemprop="datePublished">2021-12-03</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/SVG/">SVG</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><code>SVG</code>는 <code>CSS</code>와 <code>SMIL</code>로 애니메이션을 구현할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="STROKE-애니메이션"><a href="#STROKE-애니메이션" class="headerlink" title="STROKE 애니메이션"></a>STROKE 애니메이션</h2><ul>
+<li><strong>stroke-dasharray</strong>: 길이를 설정한다.</li>
+<li><strong>stroke-dashoffset</strong>: 밀린 위치를 설정한다.</li>
+</ul>
+<p><em><strong>원</strong></em></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> dash-ani &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;stroke-dashoffset: <span class="number">700</span>;&#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;stroke-dashoffset: <span class="number">0</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">circle &#123;</span><br><span class="line">    stroke: black;</span><br><span class="line">    stroke-<span class="attribute">width</span>: <span class="number">5</span>;</span><br><span class="line">    stroke-dasharray: <span class="number">700</span>; // 길이를 설정</span><br><span class="line">    stroke-dashoffset: <span class="number">0</span>; // 밀린 위치</span><br><span class="line">    fill: transparent;</span><br><span class="line">    <span class="attribute">animation</span>: dash-ani <span class="number">2s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">viewBox</span>=<span class="string">&quot;0 0 800 500&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">circle</span> <span class="attr">cx</span>=<span class="string">&quot;400&quot;</span> <span class="attr">cy</span>=<span class="string">&quot;250&quot;</span> <span class="attr">r</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">circle</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><em><strong>path</strong></em></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> dash-ani &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;stroke-dashoffset: <span class="number">700</span>;&#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;stroke-dashoffset: <span class="number">0</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">path &#123;</span><br><span class="line">    stroke: black;</span><br><span class="line">    stroke-<span class="attribute">width</span>: <span class="number">5</span>;</span><br><span class="line">    stroke-dasharray: <span class="number">727</span>;</span><br><span class="line">    fill: transparent;</span><br><span class="line">    <span class="attribute">animation</span>: dash-ani <span class="number">2s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">viewBox</span>=<span class="string">&quot;0 0 800 500&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span>=<span class="string">&quot;M 50 400 C 50 400, 300 500, 400 400 C 400 400, 600 170, 700 300&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">path</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 길이를 알 수 있다</span></span><br><span class="line"><span class="built_in">console</span>.log (<span class="built_in">document</span>.querySelector(<span class="string">&#x27;path&#x27;</span>).getTotalLength());</span><br></pre></td></tr></table></figure>
+
+<h2 id="SMIL-애니메이션의-기본-사용법"><a href="#SMIL-애니메이션의-기본-사용법" class="headerlink" title="SMIL 애니메이션의 기본 사용법"></a>SMIL 애니메이션의 기본 사용법</h2><blockquote>
+<p><strong><a target="_blank" rel="noopener" href="https://www.w3.org/TR/REC-smil/">SMIL</a> 이란?</strong><br>Synchronized Multimedia Integration Language (SMIL 3.0)<br>CSS 애니메이션이 아직 처리하지 못하는 것들을 처리할 수 있기 때문에 사용한다.</p>
+</blockquote>
+<ul>
+<li><strong>attributeName</strong> : 바꿀 속성이 어떤 것인지 기술한다.</li>
+<li><strong>dur</strong> : 얼마만큼의 시간동안 재생을 시킬 것인지 설정한다.</li>
+<li><strong>to</strong> : 목적 위치를 기술한다.</li>
+<li><strong>repeatCount</strong> : 얼마나 반복할지를 설정한다. (무한반복은 <code>indefinite</code>)</li>
+<li><strong>fill</strong> : <code>default</code>값을 지정한다. 설정하지 않으면 맨처음으로 돌아간다.</li>
+<li><strong>begin</strong> : 언제 시작할지 설정한다. (<code>indefinite</code>를 입력할 경우 시작하지 않는다.)</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">viewBox</span>=<span class="string">&quot;0 0 1000 1000&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">rect</span> <span class="attr">class</span>=<span class="string">&quot;rect&quot;</span> <span class="attr">x</span>=<span class="string">&quot;10&quot;</span> <span class="attr">y</span>=<span class="string">&quot;10&quot;</span> <span class="attr">width</span>=<span class="string">&quot;20%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;20%&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">animate</span> <span class="attr">class</span>=<span class="string">&quot;ani&quot;</span> <span class="attr">attributeName</span>=<span class="string">&quot;x&quot;</span> <span class="attr">dur</span>=<span class="string">&quot;1s&quot;</span> <span class="attr">to</span>=<span class="string">&quot;700&quot;</span> <span class="attr">repeatCont</span>=<span class="string">&quot;3&quot;</span> <span class="attr">fill</span>=<span class="string">&quot;freeze&quot;</span> <span class="attr">begin</span>=<span class="string">&quot;indefinite&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">animate</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 클릭시 움직이게 한다</span></span><br><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&#x27;DOMContentLoaded&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> rect = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.rect&#x27;</span>);</span><br><span class="line">    <span class="keyword">const</span> ani = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.ani&#x27;</span>);</span><br><span class="line"></span><br><span class="line">    rect.addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        ani.beginElement();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>인프런 SVG 마스터<br><a target="_blank" rel="noopener" href="https://www.inflearn.com/course/mastering-svg">https://www.inflearn.com/course/mastering-svg</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/03/svg-animation/" data-id="cm4wfofgg00mojp0a1sogf5qr"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SVG/" rel="tag">SVG</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/animation/" rel="tag">animation</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/04/html-how-to-learn/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            HTML을 어떻게 공부해야 하는가
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/03/svg-effect/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">SVG 효과</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    SCSS 함수 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-scss-function" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  SCSS 함수
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/25/scss-function/" class="article-date">
+  <time datetime="2020-08-25T12:24:41.000Z" itemprop="datePublished">2020-08-25</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/Sass-SCSS/">Sass & SCSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>자신의 함수를 정의하여 사용할 수 있다. 함수와 Mixins는 거의 유사하지만, 반환되는 내용이 다르다.</p>
+<a id="more"></a>
+
+<h2 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h2><p>함수는 <code>@include</code> 같은 별도의 지시어 없이 사용하기 때문에 내가 지정한 함수와 내장 함수(Built-in Functions)의 이름이 충돌할 수 있기 때문에 내가 지정한 함수에는 별도의 접두어를 붙여주는 것이 좋다.</p>
+<blockquote>
+<p><strong>내장함수</strong><br>응용 프로그램에 내장되어 있으며 최종 사용자가 액세스 할 수 있는 기능. 이미 색의 빨강 성분을 가져오는 내장 함수로 <code>red( )</code>가 있다. 같은 이름을 사용하면 충돌하기 때문에 별도의 접두어를 붙여서 <code>extract-red( )</code>같은 이름을 사용할 수 있다.</p>
+</blockquote>
+<br/>
+
+<p><u><em>Mixin과 함수의 차이</em></u></p>
+<ul>
+<li><strong>Mixin</strong><ul>
+<li>지정한 스타일(속성값)을 반환</li>
+<li><code>@include</code> 지시어 사용</li>
+</ul>
+</li>
+<li><strong>함수</strong><ul>
+<li>연산된 특정 값을 <code>@return</code> 지시어를 통해 반환</li>
+<li>함수 이름으로 바로 사용</li>
+<li>인수가 없더라도 소괄호를 열고 닫아 주어야 함</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Mixins</span></span><br><span class="line"><span class="keyword">@mixin</span> 믹스인이름($매개변수) &#123;</span><br><span class="line">  스타일;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Functions</span></span><br><span class="line"><span class="keyword">@function</span> 함수이름($매개변수) &#123;</span><br><span class="line">  <span class="keyword">@return</span> 값</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Mixin</span></span><br><span class="line"><span class="keyword">@include</span> 믹스인이름(인수);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Functions</span></span><br><span class="line">함수이름(인수)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>SCSS</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> columns(<span class="variable">$number</span>: <span class="number">1</span>, <span class="variable">$columns</span>: <span class="number">12</span>, <span class="variable">$width</span>: <span class="number">1200px</span>)&#123;</span><br><span class="line">  <span class="keyword">@return</span> <span class="variable">$width</span> * (<span class="variable">$number</span>/<span class="variable">$columns</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// columns와 width는 똑같은 인수로 넣을 것이기 때문에</span></span><br><span class="line"><span class="comment">// 굳이 인수로 집어넣지 않는다.</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="variable">$width</span>: <span class="number">1200px</span>;</span><br><span class="line">  <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>)&#123;</span><br><span class="line">    <span class="attribute">width</span>: columns();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>)&#123;</span><br><span class="line">    <span class="attribute">width</span>: columns(<span class="number">8</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>)&#123;</span><br><span class="line">    <span class="attribute">width</span>: columns(<span class="number">3</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Compiled CSS</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="comment">/* 총 너비 */</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1200px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>)&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="조건과-반복-Control-Directives-Expressions"><a href="#조건과-반복-Control-Directives-Expressions" class="headerlink" title="조건과 반복(Control Directives / Expressions)"></a>조건과 반복(Control Directives / Expressions)</h2><h3 id="if-함수"><a href="#if-함수" class="headerlink" title="if(함수)"></a>if(함수)</h3><p><strong>조건의 값</strong>(<code>true</code>, <code>false</code>)<strong>에 따라 두 개의 표현식 중 하나만 반환</strong>. 조건부 삼항 연산자(conditional ternary operator)와 비슷하다.</p>
+<blockquote>
+<p>조건의 값이 <code>true</code>면 <code>표현식1</code>을, 조건이 값이 <code>false</code>면 <code>표현식2</code>를 실행한다.</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if(조건, 표현식<span class="number">1</span>, 표현식<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="if-지시어"><a href="#if-지시어" class="headerlink" title="if (지시어)"></a>if (지시어)</h3><p><code>@if</code> 지시어는 조건에 따른 분기 처리가 가능하며 <strong>if문 (if statements)</strong> 과 유사하다.</p>
+<ul>
+<li>같이 사용할 수 있는 지시어는 <code>@else</code>, <code>if</code>가 있다.</li>
+<li>추가 지시어를 사용하면 더 복잡한 조건문을 작성할 수 있다.</li>
+<li>조건에 <code>( )</code>는 생략 가능하다.</li>
+<li>조건에는 논리 연산자 and, or, not을 사용할 수 있다.</li>
+</ul>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// @if</span></span><br><span class="line"><span class="keyword">@if</span> (조건) &#123;</span><br><span class="line">  <span class="comment">/* 조건이 참일 때 구문 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// @if @else</span></span><br><span class="line"><span class="keyword">@if</span> (조건) &#123;</span><br><span class="line">  <span class="comment">/* 조건이 참일 때 구문 */</span></span><br><span class="line">&#125; <span class="keyword">@else</span> &#123;</span><br><span class="line">  <span class="comment">/* 조건이 거짓일 때 구문 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// @if @else if</span></span><br><span class="line"><span class="keyword">@if</span> (조건<span class="number">1</span>) &#123;</span><br><span class="line">  <span class="comment">/* 조건1이 참일 때 구문 */</span></span><br><span class="line">&#125; <span class="keyword">@else</span> if (조건<span class="number">2</span>) &#123;</span><br><span class="line">  <span class="comment">/* 조건2가 참일 때 구문 */</span></span><br><span class="line">&#125; <span class="keyword">@else</span> &#123;</span><br><span class="line">  <span class="comment">/* 모두 거짓일 때 구문 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><p><code>@for</code>는 스타일을 <strong>반복적으로 출력</strong> 한다. <strong>for문과 유사</strong> 하다. <code>:nth-child()</code>에서 유용하게 사용되는 <code>@for</code>는 <code>through</code>를 사용하기를 권장한다.</p>
+<ol>
+<li><strong>through를 사용하는 형식</strong>: 1부터 해당 숫자까지 반복</li>
+<li><strong>to를 사용하는 형식</strong>: 1부터 해당 숫자 직전까지 반복</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// through</span></span><br><span class="line"><span class="comment">// 종료 만큼 반복</span></span><br><span class="line"><span class="keyword">@for</span> $변수 from 시작 through 종료 &#123;</span><br><span class="line">  <span class="comment">// 반복 내용</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// to</span></span><br><span class="line"><span class="comment">// 종료 직전까지 반복</span></span><br><span class="line"><span class="keyword">@for</span> $변수 from 시작 to 종료 &#123;</span><br><span class="line">  <span class="comment">// 반복 내용</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="each"><a href="#each" class="headerlink" title="each"></a>each</h3><p><code>@each</code>는 <strong>List와 Map 데이터를 반복</strong> 할 때 사용한다. <strong>for in 문과 유사</strong> 하다.</p>
+<ol>
+<li>매번 반복마다 Index 값이 필요하다면 <code>index( )</code> 내장 함수를 사용할 수 있다.</li>
+<li>동시에 여러개의 List 데이터를 반복 처리할 수도 있다. (단, 각 데이터의 Length가 동일해야 함)</li>
+<li>Map 데이터를 반복할 겨우 하나의 데이터에 두 개의 변수가 필요하다.</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@each</span> $변수 in 데이터 &#123;</span><br><span class="line">  <span class="comment">// 반복 내용</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="while"><a href="#while" class="headerlink" title="while"></a>while</h3><p><code>@while</code>은 <strong>조건이</strong> <code>false</code><strong>가 평가될 때까지 내용을 반복</strong> 한다. while문과 유사하게 잘못된 조건으로 인해 컴파일 중 무한 루프에 빠질 수 있기 때문에 사용을 권장하지 않음.</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@while</span> 조건 &#123;</span><br><span class="line">  <span class="comment">// 반복 내용</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://heropy.blog/2018/01/31/sass/">https://heropy.blog/2018/01/31/sass/</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/08/25/scss-function/" data-id="cm4wfofgd00lbjp0ag8gpfvmk"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SASS/" rel="tag">SASS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SCSS/" rel="tag">SCSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/function/" rel="tag">function</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/08/26/scss-mixins/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            SCSS Mixins
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/22/scss-operations/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">SCSS 기본 연산</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

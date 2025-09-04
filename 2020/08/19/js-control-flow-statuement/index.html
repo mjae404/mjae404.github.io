@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 제어문 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-control-flow-statuement" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 제어문
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/19/js-control-flow-statuement/" class="article-date">
+  <time datetime="2020-08-19T12:21:30.000Z" itemprop="datePublished">2020-08-19</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>순차적으로 진행되는 실행 흐름을 변화시키는 문장을 제어문이라고 하며, 주어진 조건에 따라 코드 블록을 실행하거나 반복할 때 사용된다. 조건문과 반복문, 점프문이 있다.</p>
+<a id="more"></a>
+
+<h2 id="블록문"><a href="#블록문" class="headerlink" title="블록문"></a>블록문</h2><ul>
+<li>0개 이상의 문을 중괄호로 묶은 것</li>
+<li>코드 블록(블록)</li>
+<li>하나의 실행 단위로 취급</li>
+<li>세미콜론(;)을 붙이지 않는다.</li>
+</ul>
+<h2 id="조건문"><a href="#조건문" class="headerlink" title="조건문"></a>조건문</h2><ul>
+<li>if문의 경우 반드시 등호 3개로 일치비교를 해야 한다.</li>
+</ul>
+<h3 id="if…else문"><a href="#if…else문" class="headerlink" title="if…else문"></a>if…else문</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(조건식<span class="number">1</span>)&#123;</span><br><span class="line">  <span class="comment">// 조건식1이 참일 경우 실행될 코드 블록</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (조건식<span class="number">2</span>)&#123;</span><br><span class="line">  <span class="comment">// 조건식2가 참일 경우 실행될 코드 블록. 여러번 사용할 수 있다.</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="comment">// 거짓일 경우 실행될 코드 블록</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 코드 블록 내의 문이 하나라면 중괄호 생략 가능하다.</span></span><br><span class="line"><span class="keyword">if</span> (조건식<span class="number">1</span>) 실행될 문;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (조건식<span class="number">2</span>) 실행될 문;</span><br><span class="line"><span class="keyword">else</span> 실행될 문;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="switch문"><a href="#switch문" class="headerlink" title="switch문"></a>switch문</h3><ul>
+<li>암시적 형 변환을 허용하지 않는다.</li>
+<li>값들을 비교할 때 자료형을 엄격하게 구분한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(표현식)&#123;</span><br><span class="line">  <span class="keyword">case</span> 표현식<span class="number">1</span>:</span><br><span class="line">  <span class="keyword">switch</span> 실행될 문;</span><br><span class="line">  <span class="keyword">break</span>;</span><br><span class="line">  <span class="keyword">case</span> 표현식<span class="number">2</span>:</span><br><span class="line">  <span class="keyword">switch</span> 실행될 문;</span><br><span class="line">  <span class="keyword">break</span>;</span><br><span class="line">  <span class="keyword">default</span>:</span><br><span class="line">  일치하는 <span class="keyword">case</span>문이 없을 때 실행되는 문;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="반복문"><a href="#반복문" class="headerlink" title="반복문"></a>반복문</h2><h3 id="for문"><a href="#for문" class="headerlink" title="for문"></a>for문</h3><ul>
+<li>증감식을 꼭 채울 필요는 없다.</li>
+<li>초기화 부분에서 생성한 변수는 for문의 지역변수이다. (for문 밖에서 변수를 사용하면 오류가 발생한다.)</li>
+<li>초기화 부분도 반드시 채울 필요는 없다. 단, for문의 가장 첫번째 세미콜론은 생략할 수 없다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (변수 선언문 또는 할당문; 조건식; 증감식) &#123;</span><br><span class="line">  조건식이 참인 경우 반복 실행될 문;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 아무 식도 선언하지 않으면 무한루프</span></span><br><span class="line"><span class="keyword">for</span> (;;) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>주어진 높이(height)에 맞게 *로 삼각형을 그려주는 함수</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">printTriangle</span>(<span class="params">height</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> message = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; height; i++) &#123;</span><br><span class="line">    message += <span class="string">&#x27;*&#x27;</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(message);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>구구단</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">1</span>; j &lt; <span class="number">10</span>; j++) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;i&#125;</span> * <span class="subst">$&#123;j&#125;</span> = <span class="subst">$&#123;i * j&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="for…in문"><a href="#for…in문" class="headerlink" title="for…in문"></a>for…in문</h3><p>객체 안의 프로퍼티를 순회하는 문.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (변수 <span class="keyword">in</span> 객체 표현식) 실행할 문</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="while문"><a href="#while문" class="headerlink" title="while문"></a>while문</h3><p>주어진 조건식의 평가 결과가 참이면 코드 블록을 계속해서 반복 실행한다. 조건문의 평가 결과가 거짓이 되면 실행을 종료한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (불리언 표현식) &#123;</span><br><span class="line">  실행될 문;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 무한루프</span></span><br><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123; … &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>홀수만 출력하는 함수</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 방법1</span></span><br><span class="line"><span class="keyword">let</span> i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (i &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (i % <span class="number">2</span> === <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">  i++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 방법2</span></span><br><span class="line"><span class="keyword">let</span> i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (i &lt;= <span class="number">50</span>) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(i * <span class="number">2</span> - <span class="number">1</span>);</span><br><span class="line">  i++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 방법3</span></span><br><span class="line"><span class="keyword">let</span> i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (i &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">  i += <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>정수의 약수를 모두 출력하고 총 몇 개의 약수가 있는지 출력</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> N = <span class="number">180</span>;</span><br><span class="line"><span class="comment">// 여기에 코드를 작성해 주세요.</span></span><br><span class="line"><span class="keyword">let</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (i &lt;= N) &#123;</span><br><span class="line">  <span class="keyword">if</span> (N % i == <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">    count++;</span><br><span class="line">  &#125;</span><br><span class="line">  i += <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;N&#125;</span>의 약수는 총 <span class="subst">$&#123;count&#125;</span>개입니다.`</span>);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>구구단</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span> (i &lt;= <span class="number">9</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> j = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (j &lt;= <span class="number">9</span>) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;i&#125;</span> * <span class="subst">$&#123;j&#125;</span> = <span class="subst">$&#123;i * j&#125;</span>`</span>);</span><br><span class="line">        j++;</span><br><span class="line">    &#125;</span><br><span class="line">    i++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="do…while문"><a href="#do…while문" class="headerlink" title="do…while문"></a>do…while문</h3><p>코드블록을 한번 이상 실행하고 조건식을 평가한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">  실행될 문;</span><br><span class="line">&#125; <span class="keyword">while</span> (불리언 표현식);</span><br></pre></td></tr></table></figure>
+
+<h2 id="점프문"><a href="#점프문" class="headerlink" title="점프문"></a>점프문</h2><h3 id="라벨문"><a href="#라벨문" class="headerlink" title="라벨문"></a>라벨문</h3><p>문장에 라벨을 붙이면 break문이나 continue문을 실행한 후에 점프할 수 있는 위치가 된다. 실질적으로 사용할 수 있는 곳은 switch문과 반복문.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">라벨 이름: 실행될 문;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="break문"><a href="#break문" class="headerlink" title="break문"></a>break문</h3><ul>
+<li>레이블문, 반복문, switch문의 코드블록을 탈출한다. 그 이외에 사용하면 문법 에러 발생.</li>
+<li>라벨을 지정한 break문 실행시 break문과 라벨 사이에 줄바꿈이 있으면 안된다.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">break</span> 라벨 이름;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="continue문"><a href="#continue문" class="headerlink" title="continue문"></a>continue문</h3><ul>
+<li>코드 블록 실행을 현지점에서 중단후 반복문의 증감식으로 이동한다.</li>
+<li>라벨 지정 여부와 관계 없이 반복문 안에서만 사용 가능.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">continue</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">continue</span> 라벨 이름;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="throw문"><a href="#throw문" class="headerlink" title="throw문"></a>throw문</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">throw</span> 표현식;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="return문"><a href="#return문" class="headerlink" title="return문"></a>return문</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span>;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/08/19/js-control-flow-statuement/" data-id="cm4wfoffd006rjp0a9su43kke"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/control-flow/" rel="tag">control flow</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/08/20/js-array/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 배열
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/08/18/js-global-variable/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 전역 변수의 문제점</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

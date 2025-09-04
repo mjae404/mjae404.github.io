@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 수학 상수와 함수를 위한 Math 객체 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-math-object" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 수학 상수와 함수를 위한 Math 객체
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/10/05/js-math-object/" class="article-date">
+  <time datetime="2020-10-04T15:51:17.000Z" itemprop="datePublished">2020-10-05</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>Math 객체는 수학 상수와 함수를 위한 프로퍼티와 메소드를 제공하는 빌트인 객체이다. Math 객체는 생성자 함수가 아니다. 따라서 Math 객체는 정적(static) 프로퍼티와 메소드만을 제공한다.</p>
+<a id="more"></a>
+
+<h2 id="Math-Property"><a href="#Math-Property" class="headerlink" title="Math Property"></a>Math Property</h2><h3 id="Math-PI"><a href="#Math-PI" class="headerlink" title="Math.PI"></a>Math.PI</h3><p>PI 값(π ≈ 3.141592653589793)을 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.PI; <span class="comment">// 3.141592653589793</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Math-Method"><a href="#Math-Method" class="headerlink" title="Math Method"></a>Math Method</h2><h3 id="Math-abs-x-number-number-ES1"><a href="#Math-abs-x-number-number-ES1" class="headerlink" title="Math.abs(x: number): number ES1"></a>Math.abs(x: number): number <sup>ES1</sup></h3><p>인수의 절댓값(absolute value)을 반환한다. 절댓값은 반드시 0 또는 양수이어야 한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.abs(-<span class="number">1</span>);       <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="string">&#x27;-1&#x27;</span>);     <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="string">&#x27;&#x27;</span>);       <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Math</span>.abs([]);       <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="literal">null</span>);     <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="literal">undefined</span>);<span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.abs(&#123;&#125;);       <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.abs(<span class="string">&#x27;string&#x27;</span>); <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.abs();         <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-round-x-number-number-ES1"><a href="#Math-round-x-number-number-ES1" class="headerlink" title="Math.round(x: number): number ES1"></a>Math.round(x: number): number <sup>ES1</sup></h3><p>인수의 소수점 이하를 반올림한 정수를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.round(<span class="number">1.4</span>);  <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.round(<span class="number">1.6</span>);  <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">Math</span>.round(-<span class="number">1.4</span>); <span class="comment">// -1</span></span><br><span class="line"><span class="built_in">Math</span>.round(-<span class="number">1.6</span>); <span class="comment">// -2</span></span><br><span class="line"><span class="built_in">Math</span>.round(<span class="number">1</span>);    <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.round();     <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-ceil-x-number-number-ES1"><a href="#Math-ceil-x-number-number-ES1" class="headerlink" title="Math.ceil(x: number): number ES1"></a>Math.ceil(x: number): number <sup>ES1</sup></h3><p>인수의 소수점 이하를 올림한 정수를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.ceil(<span class="number">1.4</span>);  <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(<span class="number">1.6</span>);  <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(-<span class="number">1.4</span>); <span class="comment">// -1</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(-<span class="number">1.6</span>); <span class="comment">// -1</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(<span class="number">1</span>);    <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.ceil();     <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-floor-x-number-number-ES1"><a href="#Math-floor-x-number-number-ES1" class="headerlink" title="Math.floor(x: number): number ES1"></a>Math.floor(x: number): number <sup>ES1</sup></h3><p>인수의 소수점 이하를 내림한 정수를 반환한다. Math.ceil의 반대 개념이다.</p>
+<ul>
+<li>양수인 경우, 소수점 이하를 떼어 버린 다음 정수를 반환한다.</li>
+<li>음수인 경우, 소수점 이하를 떼어 버린 다음 -1을 한 정수를 반환한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.floor(<span class="number">1.9</span>);  <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.floor(<span class="number">9.1</span>);  <span class="comment">// 9</span></span><br><span class="line"><span class="built_in">Math</span>.floor(-<span class="number">1.9</span>); <span class="comment">// -2</span></span><br><span class="line"><span class="built_in">Math</span>.floor(-<span class="number">9.1</span>); <span class="comment">// -10</span></span><br><span class="line"><span class="built_in">Math</span>.floor(<span class="number">1</span>);    <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.floor();     <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-sqrt-x-number-number-ES1"><a href="#Math-sqrt-x-number-number-ES1" class="headerlink" title="Math.sqrt(x: number): number ES1"></a>Math.sqrt(x: number): number <sup>ES1</sup></h3><p>인수의 제곱근을 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">9</span>);  <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt(-<span class="number">9</span>); <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">2</span>);  <span class="comment">// 1.414213562373095</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">1</span>);  <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt(<span class="number">0</span>);  <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Math</span>.sqrt();   <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-random-number-ES1"><a href="#Math-random-number-ES1" class="headerlink" title="Math.random(): number ES1"></a>Math.random(): number <sup>ES1</sup></h3><p>임의의 부동 소수점을 반환한다. 반환된 부동 소수점은 0부터 1 미만이다. 즉, 0은 포함되지만 1은 포함되지 않는다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.random(); <span class="comment">// 0 ~ 1 미만의 부동 소수점 (0.8208720231391746)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> random = <span class="built_in">Math</span>.floor((<span class="built_in">Math</span>.random() * <span class="number">10</span>) + <span class="number">1</span>);</span><br><span class="line"><span class="built_in">console</span>.log(random); <span class="comment">// 1 ~ 10까지의 정수</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-pow-x-number-y-number-number-ES1"><a href="#Math-pow-x-number-y-number-number-ES1" class="headerlink" title="Math.pow(x: number, y: number): number ES1"></a>Math.pow(x: number, y: number): number <sup>ES1</sup></h3><p>첫번째 인수를 밑(base), 두번째 인수를 지수(exponent)로하여 거듭제곱을 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.pow(<span class="number">2</span>, <span class="number">8</span>);  <span class="comment">// 256</span></span><br><span class="line"><span class="built_in">Math</span>.pow(<span class="number">2</span>, -<span class="number">1</span>); <span class="comment">// 0.5</span></span><br><span class="line"><span class="built_in">Math</span>.pow(<span class="number">2</span>);     <span class="comment">// NaN</span></span><br><span class="line"></span><br><span class="line"><span class="number">2</span> ** <span class="number">8</span>; <span class="comment">// 256</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-max-…values-number-number-ES1"><a href="#Math-max-…values-number-number-ES1" class="headerlink" title="Math.max(…values: number[]): number ES1"></a>Math.max(…values: number[]): number <sup>ES1</sup></h3><p>인수 중에서 가장 큰 수를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.max(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 배열 요소 중에서 최대값 취득</span></span><br><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">const</span> max = <span class="built_in">Math</span>.max.apply(<span class="literal">null</span>, arr); <span class="comment">// 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 Spread operator</span></span><br><span class="line"><span class="built_in">Math</span>.max(...arr); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-min-…values-number-number-ES1"><a href="#Math-min-…values-number-number-ES1" class="headerlink" title="Math.min(…values: number[]): number ES1"></a>Math.min(…values: number[]): number <sup>ES1</sup></h3><p>인수 중에서 가장 작은 수를 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.min(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 배열 요소 중에서 최소값 취득</span></span><br><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">const</span> min = <span class="built_in">Math</span>.min.apply(<span class="literal">null</span>, arr); <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 Spread operator</span></span><br><span class="line"><span class="built_in">Math</span>.min(...arr); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/10/05/js-math-object/" data-id="cm4wfoffk009rjp0a5dej3e4o"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/built-in-object/" rel="tag">built-in object</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/math-object/" rel="tag">math object</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/object/" rel="tag">object</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wrapper-object/" rel="tag">wrapper object</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/10/06/js-number-wrapper-object/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS number 래퍼 객체
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/10/04/js-spread-syntax/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 스프레드 문법</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

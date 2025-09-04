@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    PYTHON 추상화 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-python-abstraction" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  PYTHON 추상화
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/19/python-abstraction/" class="article-date">
+  <time datetime="2021-12-19T08:51:58.000Z" itemprop="datePublished">2021-12-19</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><strong>추상화 (Abstraction)</strong><br>복잡한 세부 사항은 숨기면서 주요한 기능에만 집중할 수  있게 해주는 개념이다.</p>
+<ul>
+<li>변수 (Variable): 값을 저장</li>
+<li>함수 (Function): 명령을 저장</li>
+<li>객체 (Class)</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h2><p>변수가 추상화인 이유는 한번 변수를 정의하고 나면 세부적인 값은 알 필요가 없이 이름만 알면 되기 때문이다.</p>
+<p><em>지정 연산자 (Assignment Operator)</em></p>
+<p><code>=</code>는 수학적으로는 값이 같다는 의미이지만, Python에서는 <strong>오른쪽에 있는 값을 왼쪽에 있는 변수에 지정해주는 역할</strong> 을 해준다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">2</span> + <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(x) <span class="comment"># 3</span></span><br><span class="line"></span><br><span class="line">x = x + <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(x) <span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h2><ul>
+<li><strong>내장함수(Built-in Function)</strong>: print, int, str 등 이미 만들어진 함수이다.</li>
+<li>`def은 define(정의)라는 줄임말로 함수의 정의를 시작한다는 의미이다.</li>
+<li><code>:</code>는 HEADER 부분이다.</li>
+<li><code>:</code> 뒤로 오는 내용은 BODY이며 들여쓰기를 해줘야 한다.</li>
+<li>처음으로 들여쓰기가 된 곳이 BODY의 시작이다.</li>
+<li>처음으로 들여쓰기가 되지 않는 곳이 BODY의 끝이다.</li>
+</ul>
+<p><em>기본 구조</em></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> 함수이름(<span class="params">파라미터</span>):</span></span><br><span class="line">    실행할 문장 <span class="number">1</span></span><br><span class="line">    실행할 문장 <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span>():</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Welcome to Python&quot;</span>)</span><br><span class="line"></span><br><span class="line">hello()</span><br><span class="line"><span class="comment"># Hello, world!</span></span><br><span class="line"><span class="comment"># Welcome to Python</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="파라미터"><a href="#파라미터" class="headerlink" title="파라미터"></a>파라미터</h2><p>언제 어떻게 쓰든 똑같은 것이 나오는 것이 아니라 매번 다른 것을 넣어 함수가 출력되게 하고 싶을 때, 함수에게 정보를 주어야 한다. 정보를 주는 방법중 하나가 파라미터(Parameter)이다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span>(<span class="params">name</span>):</span> <span class="comment"># name이 파라미터</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, %s!&quot;</span> % (name))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Welcome to Python&quot;</span>)</span><br><span class="line"></span><br><span class="line">hello(<span class="string">&quot;JUDY&quot;</span>)</span><br><span class="line"><span class="comment"># Hello, JUDY!</span></span><br><span class="line"><span class="comment"># Welcome to Python</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_sum</span>(<span class="params">a, b</span>):</span></span><br><span class="line">    pirnt(a + b)</span><br><span class="line"></span><br><span class="line">print_sum(<span class="number">4</span>, <span class="number">2</span>) <span class="comment"># 6</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="들여쓰기"><a href="#들여쓰기" class="headerlink" title="들여쓰기"></a>들여쓰기</h2><ul>
+<li>블록: 들여쓰기 정도가 같은 명령들의 집합</li>
+<li>들여쓰기의 단계에 따라 논리의 층위가 나뉜다.</li>
+<li>들여쓰기를 잘못 진행하면 오류가 발생한다.</li>
+<li>들여쓰기를 진행할 때 일반적으로  <code>Tab</code>키나 공백 4칸을 사용한다.</li>
+</ul>
+<h2 id="Syntactic-Sugar"><a href="#Syntactic-Sugar" class="headerlink" title="Syntactic Sugar"></a>Syntactic Sugar</h2><p>자주 쓰이는 표현을 더 간략하게 쓸 수 있게 해주는 문법. <code>+=</code>, <code>*=</code>, <code>-=</code>, <code>/=</code>, <code>%=</code>가 있다.</p>
+<h2 id="Optional-Parameters"><a href="#Optional-Parameters" class="headerlink" title="Optional Parameters"></a>Optional Parameters</h2><p>파라미터에 기본값을 설정해주면 해당 파라미터에 값을 넘겨주지 않아도 기본값이 출력된다. 단, Optional Parameter는 모두 마지막에 위치하여야 한다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myself</span>(<span class="params">name, nationality = <span class="string">&quot;한국&quot;</span></span>):</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;내 이름은 %s&quot;</span> % name)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;국적은 %s&quot;</span>% nationality)</span><br><span class="line"></span><br><span class="line">myself(<span class="string">&quot;Python&quot;</span>) <span class="comment"># 기본값이 설정된 파라미터를 변경하지 않음</span></span><br><span class="line"><span class="comment"># 내 이름은 Python</span></span><br><span class="line"><span class="comment"># 국적은 한국</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="return문"><a href="#return문" class="headerlink" title="return문"></a>return문</h2><ol>
+<li>함수 호출 부분을 return을 따르는 값으로 대체한다.</li>
+<li>현재 실행중인 함수를 멈추고 호출이 끝나는 지점부터 다시 실행한다.</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">X</span>):</span></span><br><span class="line">    <span class="keyword">return</span> x + <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;f 끝&quot;</span>) <span class="comment"># 실행되지 않는다. Dead Code.</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">g</span>(<span class="params">x</span>):</span></span><br><span class="line">    rueturn x * x - <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;g 끝&quot;</span>) <span class="comment"># Dead Code</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(f(<span class="number">2</span>)) <span class="comment"># = print(3)</span></span><br><span class="line"><span class="built_in">print</span>(g(<span class="number">3</span>)) <span class="comment"># = print(8)</span></span><br><span class="line"><span class="built_in">print</span>(f(<span class="number">2</span>) + g(<span class="number">3</span>)) <span class="comment"># = print(3+8)</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="return과-print의-차이"><a href="#return과-print의-차이" class="headerlink" title="return과 print의 차이"></a>return과 print의 차이</h2><ul>
+<li>return은 출력하지 않는다.</li>
+<li>return을 따로 해주지 않으면 None이 출력된다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_square</span>(<span class="params">x</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(x * x)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_square</span>(<span class="params">x</span>):</span></span><br><span class="line">    <span class="keyword">return</span> x * x</span><br><span class="line"></span><br><span class="line">print_square(<span class="number">3</span>) <span class="comment"># 9출력</span></span><br><span class="line">get_square(<span class="number">3</span>)</span><br><span class="line"><span class="comment"># get_square(3)을 9로 대체할 뿐, 출력하지 않는다</span></span><br><span class="line"><span class="built_in">print</span>(get_square(<span class="number">3</span>)) <span class="comment"># 9 출력</span></span><br><span class="line"><span class="built_in">print</span>(print_square(<span class="number">3</span>)) <span class="comment"># None</span></span><br><span class="line"><span class="comment"># 코드 내에 return이 없으므로 return값으로 None이 설정된다</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="global-변수와-local-변수"><a href="#global-변수와-local-변수" class="headerlink" title="global 변수와 local 변수"></a>global 변수와 local 변수</h2><ul>
+<li><strong>local 변수</strong>: 함수 내에 정의된 변수. 한 부분에서만 유효하고 그 부분을 벗어나면 사용하지 못한다.</li>
+<li><strong>global 변수</strong>: 함수 바깥에서 정의한 변수. 모든 범위에서 사용할 수 있다.</li>
+<li>하나의 변수를 다른 여러 함수 안에서 사용하고 싶다면 함수 내부에서 <code>global 변수명</code>으로 지정하여 global 변수로 사용할 수 있다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">x_is_one</span>():</span></span><br><span class="line">    <span class="keyword">global</span> x <span class="comment"># 글로벌 변수로 설정</span></span><br><span class="line">    x = <span class="number">1</span> <span class="comment"># local 변수</span></span><br><span class="line"></span><br><span class="line">x = <span class="number">5</span> <span class="comment"># global 변수</span></span><br><span class="line">x_is_one()</span><br><span class="line"><span class="built_in">print</span>(x) <span class="comment"># 5</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="상수-Constant"><a href="#상수-Constant" class="headerlink" title="상수 (Constant)"></a>상수 (Constant)</h2><p>처음부터 끝까지 변하지 않는 값. 이름은 대문자로 기재하여야 한다. 새로 할당한다고 해도 오류가 나지 않지만 상수는 처음 설정하고 나서 변경하지 않는 것이 좋다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PI = <span class="number">3.14</span></span><br><span class="line"><span class="built_in">print</span>(PI) <span class="comment"># 3.14</span></span><br><span class="line">PI = <span class="number">0</span></span><br><span class="line"><span class="built_in">print</span>(PI) <span class="comment"># 0</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="스타일"><a href="#스타일" class="headerlink" title="스타일"></a>스타일</h2><p>올바르게 작동한다고 해도 간결하고 예쁘게 쓰는 것이 좋다.</p>
+<h3 id="이름-규칙"><a href="#이름-규칙" class="headerlink" title="이름 규칙"></a>이름 규칙</h3><ol>
+<li>모든 변수와 함수 이름은 소문자로 기재하고 단어가 여러개인 경우 <code>_</code>로 나눈다.</li>
+<li>모든 상수 이름은 대문자로 기재하고 단어가 여러개인 경우 <code>_</code>로 나눈다.</li>
+<li>의미있는 변수 및 함수 이름을 사용한다.</li>
+<li>적당한 화이트 스페이스는 가독성을 높인다.</li>
+<li>적당한 추상화 및 주석(코멘트)를 사용한다.</li>
+<li>한 줄에 80자를 넘기지 않는 것이 좋다.</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 프로그래밍 기초</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/19/python-abstraction/" data-id="cm4wfofg900jejp0a0lsd73ys"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/data-type/" rel="tag">data type</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/20/python-module/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            PYTHON 모듈
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/19/python-datatype/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">PYTHON 데이터 타입</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

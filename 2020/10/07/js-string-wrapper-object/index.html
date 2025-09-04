@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS String 래퍼 객체 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-string-wrapper-object" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS String 래퍼 객체
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/10/07/js-string-wrapper-object/" class="article-date">
+  <time datetime="2020-10-07T12:13:53.000Z" itemprop="datePublished">2020-10-07</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>String 객체는 원시 타입인 문자열을 다룰 때 유용한 프로퍼티와 메소드를 제공하는 래퍼(wrapper) 객체이다. 변수 또는 객체 프로퍼티가 문자열을 값으로 가지고 있다면 String 객체의 별도 생성없이 String 객체의 프로퍼티와 메소드를 사용할 수 있다.</p>
+<a id="more"></a>
+
+<blockquote>
+<p><strong>원시 타입이 wrapper 객체의 메소드를 사용할 수 있는 이유</strong><br>원시 타입으로 프로퍼티나 메소드를 호출할 때 원시 타입과 연관된 wrapper 객체로 일시적으로 변환되어 프로토타입 객체를 공유하게 되기 때문이다.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;Hello world!&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.toUpperCase()); <span class="comment">// &#x27;HELLO WORLD!&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="String-Constructor"><a href="#String-Constructor" class="headerlink" title="String Constructor"></a>String Constructor</h2><ul>
+<li>String 객체는 String 생성자 함수를 통해 생성할 수 있다. 전달된 인자는 모두 문자열로 변환된다.</li>
+<li>new 연산자를 사용하지 않고 String 생성자 함수를 호출하면 String 객체가 아닌 문자열 리터럴을 반환한다. 이때 형 변환이 발생할 수 있다.</li>
+<li>일반적으로 문자열을 사용할 때는 원시 타입 문자열을 사용한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="built_in">String</span>(value);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> strObj = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&#x27;Lee&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(strObj);</span><br><span class="line"><span class="comment">// String &#123;0: &#x27;L&#x27;, 1: &#x27;e&#x27;, 2: &#x27;e&#x27;, length: 3,</span></span><br><span class="line"><span class="comment">// [[PrimitiveValue]]: &#x27;Lee&#x27;&#125;</span></span><br><span class="line"></span><br><span class="line">strObj = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="number">1</span>);</span><br><span class="line"><span class="built_in">console</span>.log(strObj);</span><br><span class="line"><span class="comment">// String &#123;0: &#x27;1&#x27;, length: 1, [[PrimitiveValue]]: &#x27;1&#x27;&#125;</span></span><br><span class="line"></span><br><span class="line">strObj = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="literal">undefined</span>);</span><br><span class="line"><span class="built_in">console</span>.log(strObj);</span><br><span class="line"><span class="comment">// String &#123;0: &#x27;u&#x27;, 1: &#x27;n&#x27;, 2: &#x27;d&#x27;, 3: &#x27;e&#x27;,</span></span><br><span class="line"><span class="comment">// 4: &#x27;f&#x27;, 5: &#x27;i&#x27;, 6: &#x27;n&#x27;, 7: &#x27;e&#x27;, 8: &#x27;d&#x27;,</span></span><br><span class="line"><span class="comment">// length: 9, [[PrimitiveValue]]: &#x27;undefined&#x27;&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="String-Property"><a href="#String-Property" class="headerlink" title="String Property"></a>String Property</h2><h3 id="String-length"><a href="#String-length" class="headerlink" title="String.length"></a>String.length</h3><p>문자열 내의 문자 갯수를 반환한다. String 객체는 <code>length</code> 프로퍼티를 소유하고 있으므로 유사 배열 객체이다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str1 = <span class="string">&#x27;Hello&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str1.length); <span class="comment">// 5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> str2 = <span class="string">&#x27;안녕하세요!&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str2.length); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="String-Method"><a href="#String-Method" class="headerlink" title="String Method"></a>String Method</h2><p>문자열은 변경 불가능(immutable)한 원시 값이기 때문에 String 객체의 모든 메소드는 언제나 새로운 문자열을 반환한다.</p>
+<h3 id="String-prototype-charAt-pos-number-string-ES1"><a href="#String-prototype-charAt-pos-number-string-ES1" class="headerlink" title="String.prototype.charAt(pos: number): string ES1"></a>String.prototype.charAt(pos: number): string <sup>ES1</sup></h3><ul>
+<li>인수로 전달한 index를 사용하여 index에 해당하는 위치의 문자를 반환한다. index는 0 ~ (문자열 길이 - 1) 사이의 정수이다.</li>
+<li>지정한 index가 문자열의 범위(0 ~ (문자열 길이 - 1))를 벗어난 경우 빈문자열을 반환한다.</li>
+</ul>
+<p><img src="/images/string_object_charAt.jpg" alt="문자열의 범위"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;Hello&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(str.charAt(<span class="number">0</span>)); <span class="comment">// H</span></span><br><span class="line"><span class="built_in">console</span>.log(str.charAt(<span class="number">1</span>)); <span class="comment">// e</span></span><br><span class="line"><span class="built_in">console</span>.log(str.charAt(<span class="number">2</span>)); <span class="comment">// l</span></span><br><span class="line"><span class="built_in">console</span>.log(str.charAt(<span class="number">3</span>)); <span class="comment">// l</span></span><br><span class="line"><span class="built_in">console</span>.log(str.charAt(<span class="number">4</span>)); <span class="comment">// o</span></span><br><span class="line"><span class="comment">// 지정한 index가 범위(0 ~ str.length-1)를 벗어난 경우 빈문자열을 반환한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.charAt(<span class="number">5</span>)); <span class="comment">// &#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 문자열 순회. 문자열은 length 프로퍼티를 갖는다.</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; str.length; i++) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(str.charAt(i));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// String 객체는 유사 배열 객체이므로 배열과 유사하게 접근할 수 있다.</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; str.length; i++) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(str[i]); <span class="comment">// str[&#x27;0&#x27;]</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="String-prototype-concat-…strings-string-string-ES3"><a href="#String-prototype-concat-…strings-string-string-ES3" class="headerlink" title="String.prototype.concat(…strings: string[]): string ES3"></a>String.prototype.concat(…strings: string[]): string <sup>ES3</sup></h3><p>인수로 전달한 1개 이상의 문자열과 연결하여 새로운 문자열을 반환한다. <code>concat</code> 메소드를 사용하는 것보다는 <code>+</code>, <code>+=</code> 할당 연산자를 사용하는 것이 성능상 유리하다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;...string&#125;</span> <span class="variable">str</span></span> - 연결할 문자열</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;string&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">str.concat(str1[,str2,...,strN])</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;Hello &#x27;</span>.concat(<span class="string">&#x27;Lee&#x27;</span>)); <span class="comment">// Hello Lee</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String-prototype-indexOf-searchString-string-fromIndex-0-number-ES1"><a href="#String-prototype-indexOf-searchString-string-fromIndex-0-number-ES1" class="headerlink" title="String.prototype.indexOf(searchString: string, fromIndex=0): number ES1"></a>String.prototype.indexOf(searchString: string, fromIndex=0): number <sup>ES1</sup></h3><ul>
+<li>인수로 전달한 문자 또는 문자열을 대상 문자열에서 검색하여 처음 발견된 곳의 <code>index</code>를 반환한다.</li>
+<li>발견하지 못한 경우 <code>-1</code>을 반환한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> <span class="variable">searchString</span></span> - 검색할 문자 또는 문자열</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>[fromIndex=0] - 검색 시작 index (생략할 경우, 0)</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">str.indexOf(searchString[, fromIndex])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;Hello World&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(str.indexOf(<span class="string">&#x27;l&#x27;</span>));  <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(str.indexOf(<span class="string">&#x27;or&#x27;</span>)); <span class="comment">// 7</span></span><br><span class="line"><span class="built_in">console</span>.log(str.indexOf(<span class="string">&#x27;or&#x27;</span> , <span class="number">8</span>)); <span class="comment">// -1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (str.indexOf(<span class="string">&#x27;Hello&#x27;</span>) !== -<span class="number">1</span>) &#123;</span><br><span class="line">  <span class="comment">// 문자열 str에 &#x27;hello&#x27;가 포함되어 있는 경우에 처리할 내용</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6: String.prototype.includes</span></span><br><span class="line"><span class="keyword">if</span> (str.includes(<span class="string">&#x27;Hello&#x27;</span>)) &#123;</span><br><span class="line">  <span class="comment">// 문자열 str에 &#x27;hello&#x27;가 포함되어 있는 경우에 처리할 내용</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="String-prototype-lastIndexOf-searchString-string-fromIndex-this-length-1-number-ES1"><a href="#String-prototype-lastIndexOf-searchString-string-fromIndex-this-length-1-number-ES1" class="headerlink" title="String.prototype.lastIndexOf(searchString: string, fromIndex=this.length-1): number ES1"></a>String.prototype.lastIndexOf(searchString: string, fromIndex=this.length-1): number <sup>ES1</sup></h3><ul>
+<li>인수로 전달한 문자 또는 문자열을 대상 문자열에서 검색하여 마지막으로 발견된 곳의 index를 반환한다.</li>
+<li>인수로 전달한 문자 또는 문자열을 발견하지 못한 경우 <code>-1</code>을 반환한다.</li>
+<li>2번째 인수(fromIndex)가 전달되면 검색 시작 위치를 fromIndex으로 이동하여 역방향으로 검색을 시작한다.<ul>
+<li>검색 범위는 0 ~ fromIndex</li>
+<li>반환값은 indexOf 메소드와 동일하게 발견된 곳의 index</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> <span class="variable">searchString</span></span> - 검색할 문자 또는 문자열</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> </span>[fromIndex=this.length-1]</span></span><br><span class="line"><span class="comment"> * - 검색 시작 index (생략할 경우, 문자열 길이 - 1)</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">str.lastIndexOf(searchString[, fromIndex])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;Hello World&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(str.lastIndexOf(<span class="string">&#x27;World&#x27;</span>)); <span class="comment">// 6</span></span><br><span class="line"><span class="built_in">console</span>.log(str.lastIndexOf(<span class="string">&#x27;l&#x27;</span>));     <span class="comment">// 9</span></span><br><span class="line"><span class="built_in">console</span>.log(str.lastIndexOf(<span class="string">&#x27;o&#x27;</span>, <span class="number">5</span>));  <span class="comment">// 4</span></span><br><span class="line"><span class="built_in">console</span>.log(str.lastIndexOf(<span class="string">&#x27;o&#x27;</span>, <span class="number">8</span>));  <span class="comment">// 7</span></span><br><span class="line"><span class="built_in">console</span>.log(str.lastIndexOf(<span class="string">&#x27;l&#x27;</span>, <span class="number">10</span>)); <span class="comment">// 9</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(str.lastIndexOf(<span class="string">&#x27;H&#x27;</span>, <span class="number">0</span>));  <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">console</span>.log(str.lastIndexOf(<span class="string">&#x27;W&#x27;</span>, <span class="number">5</span>));  <span class="comment">// -1</span></span><br><span class="line"><span class="built_in">console</span>.log(str.lastIndexOf(<span class="string">&#x27;x&#x27;</span>, <span class="number">8</span>));  <span class="comment">// -1</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/string_object_lastIndexOf.jpg" alt="lastIndexOf"></p>
+<h3 id="String-prototype-replace-searchValue-string-RegExp-replaceValue-string-replacer-substring-string-…args-any-gt-string-string-string-ES3"><a href="#String-prototype-replace-searchValue-string-RegExp-replaceValue-string-replacer-substring-string-…args-any-gt-string-string-string-ES3" class="headerlink" title="String.prototype.replace(searchValue: string | RegExp, replaceValue: string | replacer: (substring: string, …args: any[]) =&gt; string): string): string ES3"></a>String.prototype.replace(searchValue: string | RegExp, replaceValue: string | replacer: (substring: string, …args: any[]) =&gt; string): string): string <sup>ES3</sup></h3><ul>
+<li>첫번째 인수로 전달한 문자열 또는 정규표현식을 대상 문자열에서 검색하여 <strong>두번째 인수로 전달한 문자열로 대체</strong> 한다.</li>
+<li>원본 문자열은 변경되지 않고 결과가 반영된 <strong>새로운 문자열을 반환</strong> 한다.</li>
+<li>검색된 문자열이 여럿 존재할 경우 <strong>첫번째로 검색된 문자열만 대체</strong> 된다.</li>
+<li>문자열의 경우 첫번째 검색 결과만이 대체되지만 <strong>정규표현식을 사용하면 다양한 방식으로 검색</strong> 할 수 있다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string | RegExp&#125;</span> <span class="variable">searchValue</span></span> - 검색 대상 문자열 또는 정규표현식</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string | Function&#125;</span> <span class="variable">replacer</span></span> - 치환 문자열 또는 치환 함수</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;string&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">str.replace(searchValue, replacer)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;Hello world&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 첫번째로 검색된 문자열만 대체하여 새로운 문자열을 반환한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.replace(<span class="string">&#x27;world&#x27;</span>, <span class="string">&#x27;Lee&#x27;</span>)); <span class="comment">// Hello Lee</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 특수한 교체 패턴을 사용할 수 있다. ($&amp; =&gt; 검색된 문자열)</span></span><br><span class="line"><span class="built_in">console</span>.log(str.replace(<span class="string">&#x27;world&#x27;</span>, <span class="string">&#x27;&lt;strong&gt;$&amp;&lt;/strong&gt;&#x27;</span>));</span><br><span class="line"><span class="comment">// Hello &lt;strong&gt;world&lt;/strong&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 정규표현식</span></span><br><span class="line"><span class="comment">g(Global): 문자열 내의 모든 패턴을 검색한다.</span></span><br><span class="line"><span class="comment">i(Ignore case): 대소문자를 구별하지 않고 검색한다.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">console</span>.log(str.replace(<span class="regexp">/hello/gi</span>, <span class="string">&#x27;Lee&#x27;</span>)); <span class="comment">// Lee Lee</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 두번째 인수로 치환 함수를 전달할 수 있다.</span></span><br><span class="line"><span class="comment">// camelCase =&gt; snake_case</span></span><br><span class="line"><span class="keyword">const</span> camelCase = <span class="string">&#x27;helloWorld&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// /.[A-Z]/g =&gt; 1문자와 대문자의 조합을 문자열 전체에서 검색한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(camelCase.replace(<span class="regexp">/.[A-Z]/g</span>, <span class="function"><span class="keyword">function</span> (<span class="params">match</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// match : oW =&gt; match[0] : o, match[1] : W</span></span><br><span class="line">  <span class="keyword">return</span> match[<span class="number">0</span>] + <span class="string">&#x27;_&#x27;</span> + match[<span class="number">1</span>].toLowerCase();</span><br><span class="line">&#125;)); <span class="comment">// hello_world</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// /(.)([A-Z])/g =&gt; 1문자와 대문자의 조합</span></span><br><span class="line"><span class="comment">// $1 =&gt; (.)</span></span><br><span class="line"><span class="comment">// $2 =&gt; ([A-Z])</span></span><br><span class="line"><span class="built_in">console</span>.log(camelCase.replace(<span class="regexp">/(.)([A-Z])/g</span>, <span class="string">&#x27;$1_$2&#x27;</span>).toLowerCase());</span><br><span class="line"><span class="comment">// hello_world</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// snake_case =&gt; camelCase</span></span><br><span class="line"><span class="keyword">const</span> snakeCase = <span class="string">&#x27;hello_world&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// /_./g =&gt; _와 1문자의 조합을 문자열 전체에서 검색한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(snakeCase.replace(<span class="regexp">/_./g</span>, <span class="function"><span class="keyword">function</span> (<span class="params">match</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// match : _w =&gt; match[1] : w</span></span><br><span class="line">  <span class="keyword">return</span> match[<span class="number">1</span>].toUpperCase();</span><br><span class="line">&#125;)); <span class="comment">// helloWorld</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String-prototype-split-separator-string-RegExp-limit-number-string-ES3"><a href="#String-prototype-split-separator-string-RegExp-limit-number-string-ES3" class="headerlink" title="String.prototype.split(separator: string | RegExp, limit?: number): string[] ES3"></a>String.prototype.split(separator: string | RegExp, limit?: number): string[] <sup>ES3</sup></h3><ul>
+<li>첫번째 인수로 전달한 문자열 또는 정규표현식을 대상 문자열에서 검색하여 문자열을 구분한 후 <strong>분리된 각 문자열로 이루어진 배열을 반환</strong> 한다.</li>
+<li>원본 문자열은 변경되지 않는다.</li>
+<li>인수가 없는 경우, 대상 문자열 전체를 단일 요소로 하는 배열을 반환한다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string | RegExp&#125;</span> </span>[separator] - 구분 대상 문자열 또는 정규표현식</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> </span>[limit] - 구분 대상수의 한계를 나타내는 정수</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;string[]&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">str.split([separator[, limit]])</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;How are you doing?&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 공백으로 구분(단어로 구분)하여 배열로 반환한다</span></span><br><span class="line"><span class="built_in">console</span>.log(str.split(<span class="string">&#x27; &#x27;</span>));</span><br><span class="line"><span class="comment">// [ &#x27;How&#x27;, &#x27;are&#x27;, &#x27;you&#x27;, &#x27;doing?&#x27; ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 정규 표현식</span></span><br><span class="line"><span class="built_in">console</span>.log(str.split(<span class="regexp">/\s/</span>));</span><br><span class="line"><span class="comment">// [ &#x27;How&#x27;, &#x27;are&#x27;, &#x27;you&#x27;, &#x27;doing?&#x27; ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 인수가 없는 경우, 대상 문자열 전체를 단일 요소로 하는 배열을 반환한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.split());</span><br><span class="line"><span class="comment">// [ &#x27;How are you doing?&#x27; ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 각 문자를 모두 분리한다</span></span><br><span class="line"><span class="built_in">console</span>.log(str.split(<span class="string">&#x27;&#x27;</span>));</span><br><span class="line"><span class="comment">// [ &#x27;H&#x27;,&#x27;o&#x27;,&#x27;w&#x27;,&#x27; &#x27;,&#x27;a&#x27;,&#x27;r&#x27;,&#x27;e&#x27;,&#x27; &#x27;,</span></span><br><span class="line"><span class="comment">// &#x27;y&#x27;,&#x27;o&#x27;,&#x27;u&#x27;,&#x27; &#x27;,&#x27;d&#x27;,&#x27;o&#x27;,&#x27;i&#x27;,&#x27;n&#x27;,&#x27;g&#x27;,&#x27;?&#x27; ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 공백으로 구분하여 배열로 반환한다. 단 요소수는 3개까지만 허용한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.split(<span class="string">&#x27; &#x27;</span>, <span class="number">3</span>));</span><br><span class="line"><span class="comment">// [ &#x27;How&#x27;, &#x27;are&#x27;, &#x27;you&#x27; ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// &#x27;o&#x27;으로 구분하여 배열로 반환한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.split(<span class="string">&#x27;o&#x27;</span>));</span><br><span class="line"><span class="comment">// [ &#x27;H&#x27;, &#x27;w are y&#x27;, &#x27;u d&#x27;, &#x27;ing?&#x27; ]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String-prototype-substring-start-number-end-this-length-string-ES3"><a href="#String-prototype-substring-start-number-end-this-length-string-ES3" class="headerlink" title="String.prototype.substring(start: number, end=this.length): string ES3"></a>String.prototype.substring(start: number, end=this.length): string <sup>ES3</sup></h3><ul>
+<li>첫번째 인수로 전달한 start 인덱스에 해당하는 문자부터 두번째 인자에 전달된 end 인덱스에 해당하는 문자의 <strong>바로 이전 문자까지</strong> 를 모두 반환한다. 이때 첫번째 인수 &lt; 두번째 인수의 관계가 성립된다.</li>
+<li>첫번째 인수 &gt; 두번째 인수 : 두 인수는 교환된다.</li>
+<li>두번째 인수가 생략된 경우 : 해당 문자열의 끝까지 반환한다.</li>
+<li>인수 &lt; 0 또는 NaN인 경우 : 0으로 취급된다.</li>
+<li>인수 &gt; 문자열의 길이(str.length) : 인수는 문자열의 길이(str.length)으로 취급된다.</li>
+</ul>
+<p><img src="/images/string_object_substring.jpg" alt="lastIndexOf"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">start</span></span> - 0 ~ 해당문자열 길이 -1 까지의 정수</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> </span>[end=this.length] - 0 ~ 해당문자열 길이까지의 정수</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;string&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">str.substring(start[, end])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;Hello World&#x27;</span>; <span class="comment">// str.length == 11</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">1</span>, <span class="number">4</span>)); <span class="comment">// ell</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 첫번째 인수 &gt; 두번째 인수 : 두 인수는 교환된다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">4</span>, <span class="number">1</span>)); <span class="comment">// ell</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 두번째 인수가 생략된 경우 : 해당 문자열의 끝까지 반환한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">4</span>)); <span class="comment">// o World</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 인수 &lt; 0 또는 NaN인 경우 : 0으로 취급된다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(-<span class="number">2</span>)); <span class="comment">// Hello World</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 인수 &gt; 문자열의 길이(str.length) :</span></span><br><span class="line"><span class="comment">// 인수는 문자열의 길이(str.length)으로 취급된다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">1</span>, <span class="number">12</span>)); <span class="comment">// ello World</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">11</span>)); <span class="comment">// &#x27;&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">20</span>)); <span class="comment">// &#x27;&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">0</span>, str.indexOf(<span class="string">&#x27; &#x27;</span>))); <span class="comment">// &#x27;Hello&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(str.indexOf(<span class="string">&#x27; &#x27;</span>) + <span class="number">1</span>, str.length)); <span class="comment">// &#x27;World&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="String-prototype-slice-start-number-end-number-string-ES3"><a href="#String-prototype-slice-start-number-end-number-string-ES3" class="headerlink" title="String.prototype.slice(start?: number, end?: number): string ES3"></a>String.prototype.slice(start?: number, end?: number): string <sup>ES3</sup></h3><p><code>String.prototype.substring</code>과 동일하다. 단, <code>String.prototype.slice</code>는 <strong>음수의 인수를 전달할 수 있다.</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;hello world&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 인수 &lt; 0 또는 NaN인 경우 : 0으로 취급된다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(-<span class="number">5</span>));</span><br><span class="line"><span class="comment">// &#x27;hello world&#x27;</span></span><br><span class="line"><span class="comment">// 뒤에서 5자리를 잘라내어 반환한다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.slice(-<span class="number">5</span>)); <span class="comment">// &#x27;world&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2번째부터 마지막 문자까지 잘라내어 반환</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">2</span>)); <span class="comment">// llo world</span></span><br><span class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">2</span>)); <span class="comment">// llo world</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 0번째부터 5번째 이전 문자까지 잘라내어 반환</span></span><br><span class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">0</span>, <span class="number">5</span>)); <span class="comment">// hello</span></span><br><span class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">0</span>, <span class="number">5</span>)); <span class="comment">// hello</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String-prototype-toLowerCase-string-ES1"><a href="#String-prototype-toLowerCase-string-ES1" class="headerlink" title="String.prototype.toLowerCase(): string ES1"></a>String.prototype.toLowerCase(): string <sup>ES1</sup></h3><p>대상 문자열의 모든 문자를 소문자로 변경한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;Hello World!&#x27;</span>.toLowerCase()); <span class="comment">// hello world!</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String-prototype-toUpperCase-string-ES1"><a href="#String-prototype-toUpperCase-string-ES1" class="headerlink" title="String.prototype.toUpperCase(): string ES1"></a>String.prototype.toUpperCase(): string <sup>ES1</sup></h3><p>대상 문자열의 모든 문자를 대문자로 변경한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;Hello World!&#x27;</span>.toUpperCase()); <span class="comment">// HELLO WORLD!</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String-prototype-trim-string-ES5"><a href="#String-prototype-trim-string-ES5" class="headerlink" title="String.prototype.trim(): string ES5"></a>String.prototype.trim(): string <sup>ES5</sup></h3><p>대상 문자열 양쪽 끝에 있는 공백 문자를 제거한 문자열을 반환한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;   foo  &#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(str.trim()); <span class="comment">// &#x27;foo&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// String.prototype.replace</span></span><br><span class="line"><span class="built_in">console</span>.log(str.replace(<span class="regexp">/\s/g</span>, <span class="string">&#x27;&#x27;</span>));   <span class="comment">// &#x27;foo&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(str.replace(<span class="regexp">/^\s+/g</span>, <span class="string">&#x27;&#x27;</span>)); <span class="comment">// &#x27;foo  &#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(str.replace(<span class="regexp">/\s+$/g</span>, <span class="string">&#x27;&#x27;</span>)); <span class="comment">// &#x27;   foo&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// String.prototype.&#123;trimStart,trimEnd&#125; : Proposal stage 3</span></span><br><span class="line"><span class="built_in">console</span>.log(str.trimStart()); <span class="comment">// &#x27;foo  &#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(str.trimEnd());   <span class="comment">// &#x27;   foo&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="String-prototype-repeat-count-number-string-ES6"><a href="#String-prototype-repeat-count-number-string-ES6" class="headerlink" title="String.prototype.repeat(count: number): string ES6"></a>String.prototype.repeat(count: number): string <sup>ES6</sup></h3><ul>
+<li>인수로 전달한 숫자만큼 반복해 연결한 새로운 문자열을 반환한다.</li>
+<li><code>count</code>가 0이면 빈 문자열을 반환하고 음수이면 <code>RangeError</code>를 발생시킨다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;abc&#x27;</span>.repeat(<span class="number">0</span>));   <span class="comment">// &#x27;&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;abc&#x27;</span>.repeat(<span class="number">1</span>));   <span class="comment">// &#x27;abc&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;abc&#x27;</span>.repeat(<span class="number">2</span>));   <span class="comment">// &#x27;abcabc&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;abc&#x27;</span>.repeat(<span class="number">2.5</span>)); <span class="comment">// &#x27;abcabc&#x27; (2.5 → 2)</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;abc&#x27;</span>.repeat(-<span class="number">1</span>));  <span class="comment">// RangeError: Invalid count value</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String​-prototype​-includes-searchString-string-position-number-boolean-ES6"><a href="#String​-prototype​-includes-searchString-string-position-number-boolean-ES6" class="headerlink" title="String​.prototype​.includes(searchString: string, position?: number): boolean ES6"></a>String​.prototype​.includes(searchString: string, position?: number): boolean <sup>ES6</sup></h3><ul>
+<li>인수로 전달한 문자열이 포함되어 있는지를 검사하고 결과를 불리언 값으로 반환한다.</li>
+<li>두번째 인수는 옵션으로 검색할 위치를 나타내는 정수이다.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">&#x27;hello world&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&#x27;hello&#x27;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&#x27; &#x27;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&#x27;wo&#x27;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&#x27;wow&#x27;</span>)); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes(<span class="string">&#x27;&#x27;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(str.includes()); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// String​.prototype​.indexOf 메소드로 대체할 수 있다.</span></span><br><span class="line"><span class="built_in">console</span>.log(str.indexOf(<span class="string">&#x27;hello&#x27;</span>)); <span class="comment">// 0</span></span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/10/07/js-string-wrapper-object/" data-id="cm4wfoffn00b2jp0a87ctgt9o"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/object/" rel="tag">object</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/string-wrapper-object/" rel="tag">string wrapper object</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wrapper-object/" rel="tag">wrapper object</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/10/09/js-date-object/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 날짜와 시간을 위한 Date 객체
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/10/06/js-number-wrapper-object/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS number 래퍼 객체</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

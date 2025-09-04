@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 이터러블 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-iterable" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 이터러블
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/09/15/js-iterable/" class="article-date">
+  <time datetime="2020-09-15T12:05:03.000Z" itemprop="datePublished">2020-09-15</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>이터러블 프로토콜을 준수한 객체를 이터러블(iterable)라 한다. 이터러블은 for…of 문으로 순회할 수 있으며 스프레드 문법과 디스트럭처링 할당의 대상으로 사용할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="이터레이션-프로토콜"><a href="#이터레이션-프로토콜" class="headerlink" title="이터레이션 프로토콜"></a>이터레이션 프로토콜</h2><blockquote>
+<p>이터레이션 프로토콜(iteration protocol)은 순회 가능한(iterable) 데이터 컬렉션(자료 구조)을 만들기 위해 ECMAScript 사양에 정의하여 미리 약속한 규칙이다.</p>
+</blockquote>
+<p>Well-known Symbol인 Symbol.iterator를 프로퍼티 키로 사용한 메소드를 직접 구현하거나 프로토타입 체인에 의한 상속을 통해 소유하고, Symbol.iterator 메소드를 호출하면 이터레이터 프로토콜을 준수한 이터레이터(iterator)를 반환한다. 이러한 규약을 이터러블 프로토콜이라 한다.</p>
+<ul>
+<li>이터러블 프로토콜<ul>
+<li>Well-known Symbol인 Symbol.iterator를 프로퍼티 키로 사용한 메소드를 직접 구현하거나 프로토타입 체인에 의한 상속을 통해 소유한다.</li>
+<li>Symbol.iterator 메소드를 호출하면 이터레이터 프로토콜을 준수한 이터레이터(iterator)를 반환한다.</li>
+</ul>
+</li>
+<li>이터레이터 프로토콜<ul>
+<li>이터러블의 Symbol.iterator 메소드를 호출하면 이터레이터 프로토콜을 준수한 이터레이터(iterator)를 반환한다.</li>
+<li>이터레이터는 next 메소드를 소유하며 next 메소드를 호출하면 이터러블을 순회하며 value와 done 프로퍼티를 갖는 이터레이터 리절트 객체를 반환한다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="이터러블"><a href="#이터러블" class="headerlink" title="이터러블"></a>이터러블</h3><p>이터러블 프로토콜을 준수한 객체를 이터러블(iterable)이라 한다. 즉, 이터러블은 Symbol.iterator을 프로퍼티 키로 사용한 메소드를 직접 구현하거나 프로토타입 체인에 의해 상속한 객체를 말한다.</p>
+<ul>
+<li>배열은 Array.prototype의 Symbol.iterator 메소드를 상속받는 이터러블이다.</li>
+<li>Symbol.iterator 메소드를 직접 구현하지 않거나 상속받지 않은 일반 객체는 이터러블 프로토콜을 준수한 이터러블이 아니다.</li>
+<li>일반 객체도 이터러블 프로토콜을 준수하도록 구현하면 이터러블이 된다.</li>
+</ul>
+<h3 id="이터레이터"><a href="#이터레이터" class="headerlink" title="이터레이터"></a>이터레이터</h3><ul>
+<li>이터러블의 <strong>Symbol.iterator 메소드</strong> 를 호출하면 이터레이터 프로토콜을 준수한 이터레이터(iterator)를 반환한다.</li>
+<li>이터러블의 Symbol.iterator 메소드가 반환한 이터레이터는 next 메소드를 갖는다.</li>
+<li>next 메소드를 호출하면 이터러블을 순차적으로 한 단계씩 순회하며 순회 결과를 나타내는 이터레이터 리절트 객체(Iterator result object)를 반환한다.<ul>
+<li>이터레이터 리절트 객체의 <strong>value 프로퍼티</strong> 는 현재 순회 중인 이터러블의 값을 나타낸다.</li>
+<li>이터레이터 리절트 객체의 <strong>done 프로퍼티</strong> 는 이터러블의 순회 완료 여부를 나타낸다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="빌트인-이터러블"><a href="#빌트인-이터러블" class="headerlink" title="빌트인 이터러블"></a>빌트인 이터러블</h2><p>자바스크립트는 이터레이션 프로토콜을 준수한 객체인 빌트인 이터러블을 제공한다.</p>
+<table>
+<thead>
+<tr>
+<th>빌트인 이터러블</th>
+<th>프로퍼티 키가 Symbol.iterator인 메소드</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Array</td>
+<td>Array.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>String</td>
+<td>String.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Map.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>Set</td>
+<td>Set.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>TypedArray</td>
+<td>TypedArray.prototype[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>arguments</td>
+<td>arguments[Symbol.iterator]</td>
+</tr>
+<tr>
+<td>DOM 컬렉션</td>
+<td>NodeList.prototype[Symbol.iterator], HTMLCollection.prototype[Symbol.iterator]</td>
+</tr>
+</tbody></table>
+<h2 id="for…of문"><a href="#for…of문" class="headerlink" title="for…of문"></a>for…of문</h2><p>for…of 문은 이터러블을 순회하면서 이터러블의 요소를 변수에 할당한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (변수선언문 <span class="keyword">of</span> 이터러블) &#123; … &#125;</span><br></pre></td></tr></table></figure>
+
+<p>내부적으로 이터레이터의 next 메소드를 호출하여 이터러블을 순회하며 next 메소드가 반환한 이터레이터 리절트 객체의 value 프로퍼티 값을 for…of 문의 변수에 할당한다. 그리고 <strong>이터레이터 리절트 객체의 done 프로퍼티 값이 false이면 이터러블의 순회를 계속하고 true이면 이터러블의 순회를 중단한다.</strong></p>
+<p><em>for…in 문</em><br> 객체의 프로토타입 체인 상에 존재하는 모든 프로토타입의 프로퍼티 중에서 프로퍼티 어트리뷰트 [[Enumerable]]의 값이 true인 프로퍼티를 순회하며 열거(enumeration)한다. 이때 프로퍼티 키가 심볼인 프로퍼티는 열거하지 않으며 순서를 보장하지 않는다.</p>
+<p>for…of 문은 for…in 문의 형식과 매우 유사하다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (변수선언문 <span class="keyword">in</span> 객체) &#123; … &#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="이터러블과-유사배열-객체"><a href="#이터러블과-유사배열-객체" class="headerlink" title="이터러블과 유사배열 객체"></a>이터러블과 유사배열 객체</h2><p><strong>유사배열객체</strong> 는 마치 배열처럼 인덱스로 프로퍼티 값에 접근할 수 있고 length 프로퍼티를 갖는 객체를 말한다. length 프로퍼티를 갖기 때문에 for 문으로 순회할 수 있다.</p>
+<blockquote>
+<p>arguments, NodeList, HTMLCollection은 유사 배열 객체이면서 이터러블이다. 하지만 모든 유사 배열 객체가 이터러블인 것은 아니다.</p>
+</blockquote>
+<h2 id="이터레이션-프로토콜의-필요성"><a href="#이터레이션-프로토콜의-필요성" class="headerlink" title="이터레이션 프로토콜의 필요성"></a>이터레이션 프로토콜의 필요성</h2><p>이터레이션 프로토콜은 다양한 데이터 소스가 하나의 순회 방식을 갖도록 규정하여 데이터 소비자가 효율적으로 다양한 데이터 소스를 사용할 수 있도록 <strong>데이터 소비자와 데이터 소스를 연결하는 인터페이스의 역할을 한다.</strong></p>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/09/15/js-iterable/" data-id="cm4wfoffj009mjp0ae5u76krw"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iterable/" rel="tag">iterable</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/09/16/js-type-casting/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 타입변환과 단축평가
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/09/14/js-array-higher-order-function/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 배열 고차 함수</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

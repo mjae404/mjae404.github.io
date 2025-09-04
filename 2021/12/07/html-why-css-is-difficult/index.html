@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    CSS가 어려운 이유 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-html-why-css-is-difficult" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS가 어려운 이유
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/12/07/html-why-css-is-difficult/" class="article-date">
+  <time datetime="2021-12-07T01:27:53.000Z" itemprop="datePublished">2021-12-07</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/CSS/">CSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>값 정의 구문: css 속성의 유효한 값과 순서<br><code>|</code> : 파이프라인, only. 양쪽에서 하나만 사용할 수 있다.</p>
+<a id="more"></a>
+
+<h2 id="유효한-값-형식"><a href="#유효한-값-형식" class="headerlink" title="유효한 값 형식"></a>유효한 값 형식</h2><h3 id="keywords"><a href="#keywords" class="headerlink" title="keywords"></a>keywords</h3><p>예약한 단어. 따옴표 없이 사용. 대소문자 구별 안함.</p>
+<blockquote>
+<p>ex) initial, inherit, unset, block, inline, inline-block, auto, disc, collapse, separate …</p>
+</blockquote>
+<h3 id="기본-자료형-lt-gt"><a href="#기본-자료형-lt-gt" class="headerlink" title="기본 자료형 &lt;*&gt;"></a>기본 자료형 &lt;*&gt;</h3><ul>
+<li><code>&lt;string&gt;</code>: 문자열, 따옴표로 구성</li>
+<li><code>&lt;url&gt;</code>: url() 함수</li>
+<li><code>&lt;integer&gt;</code>: 정수</li>
+<li><code>&lt;number&gt;</code>: 실수</li>
+<li><code>&lt;percentage&gt;</code>: 백분율 (%)</li>
+<li><code>&lt;length&gt;</code>: 길이</li>
+<li><code>&lt;position&gt;</code>: 위치 (left, center, right, top, bottom, px, % …)</li>
+<li><code>&lt;color&gt;</code>: 색상</li>
+<li><code>&lt;image&gt;</code>: 이미지</li>
+<li><code>&lt;angle&gt;</code>: 각도(deg ★…)</li>
+<li><code>&lt;time&gt;</code>: 시간(s ★, ms…)</li>
+<li><code>&lt;custom-ident&gt;</code>: 작성자 정의 임의 식별자. 대소문자 구별</li>
+<li><code>&lt;ratio&gt;</code>: 비율 (너비/높이)</li>
+<li><code>&lt;frequency&gt;</code>: 빈도 (Hz, kHz)</li>
+<li><code>&lt;resolution&gt;</code>: 해상도 (dpi, dpcm, dppx)</li>
+</ul>
+<blockquote>
+<p>따옴표가 없으면 기본 자료형, 따옴표가 있으면 그 이름의 속성값을 참조</p>
+</blockquote>
+<h2 id="조합자와-증가기호"><a href="#조합자와-증가기호" class="headerlink" title="조합자와 증가기호"></a>조합자와 증가기호</h2><ul>
+<li>결합기호: <code>|</code>, <code>&amp;&amp;</code>, and 조건인지, or 조건인지, only 조건인지</li>
+<li>증가기호: <code>/</code>,<code>?</code>, 한번만 사용할 수 있는지, 몇회 사용할 수 있는지</li>
+</ul>
+<h3 id="결합기호"><a href="#결합기호" class="headerlink" title="결합기호"></a>결합기호</h3><ol>
+<li>공백(and): 둘 이상의 값이 필수. 순서 유지 필수.</li>
+<li><code>&amp;&amp;</code>(and): 둘 이상의 값이 필수. 순서 변경 가능.</li>
+<li><code>||*</code>(or): 두 값 중 하나 이상 필수. 순서 변경 가능.</li>
+<li><code>|</code>(only): 두 값중 하나만.</li>
+<li><code>[]</code>(group): 그룹.</li>
+</ol>
+<blockquote>
+<p>1~4는 우선 순위. 순위가 높은 기호를 먼저 해석해야 한다.</p>
+</blockquote>
+<h3 id="증가기호"><a href="#증가기호" class="headerlink" title="증가기호"></a>증가기호</h3><ol>
+<li><code>*</code>: 횟수 제한 없음 / 0 ~ : 이만큼 가능.</li>
+<li><code>+</code>: 1회 이상</li>
+<li><code>?</code>: 0회 또는 1회.</li>
+<li><code>&#123;A&#125;</code>: 정확히 A회. </li>
+<li><code>&#123;A, B&#125;</code>: 최소 A회, 최대 B회</li>
+<li><code>&#123;A,&#125;</code>: 최소 A회 필요, 최댓값 무제한.</li>
+<li><code>#</code>: 1회 이상. 값을 콤마(<code>,</code>)로 분리. 횟수 제한 가능. (예) <code>&lt;length&gt;#&#123;1, 4&#125;</code></li>
+<li><code>[]!</code>: 그룹에서 적어도 1회 이상.</li>
+</ol>
+<blockquote>
+<p>반복 제한 횟수보다 많은 값을 선언하면 무시됨.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>패스트 캠퍼스 The RED : 견고한 UI 설계를 위한 마크업 가이드 _ 정찬명 강사님</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2021/12/07/html-why-css-is-difficult/" data-id="cm4wfoff7005bjp0a5ztpb5y9"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/the-red/" rel="tag">the red</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2021/12/08/css-reset/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            CSS의 절대 권력, 초기화
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/12/07/html-img-markup/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">HTML 이미지 마크업 최적화</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

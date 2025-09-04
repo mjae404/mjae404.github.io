@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    mySQL 데이터 조회 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-sql-data-query" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  mySQL 데이터 조회
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/02/06/sql-data-query/" class="article-date">
+  <time datetime="2022-02-06T06:23:39.000Z" itemprop="datePublished">2022-02-06</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Data-Base/">Data Base</a> / <a class="article-category-link" href="/categories/Data-Base/SQL/">SQL</a> / <a class="article-category-link" href="/categories/Data-Base/SQL/mySQL/">mySQL</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p><code>SELECT</code> : <strong>테이블데이터</strong> 를 <strong>조회</strong> 할 때 사용하는 구문.<br><code>*</code> : asterisk. 각 row의 모든 컬럼들을 보여달라는 의미.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="SELECT와-WHERE"><a href="#SELECT와-WHERE" class="headerlink" title="SELECT와 WHERE"></a>SELECT와 WHERE</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>특정 컬럼의 내용을 보고 싶을 때 조회 가능하다.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, age, address <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><ul>
+<li>그냥 <code>member</code>이라고도 사용해도 된다.</li>
+<li>다른 데이터 베이스의 같은 테이블 이름을 가질 수 있으므로 데이터 베이스의 이름도 함께 적어두는 것이 좋다.</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> <span class="keyword">member</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p><code>WHERE</code> : 이메일 값이 해당 주소여야 하는 조건을 추가하는 것이다.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> <span class="keyword">member</span> <span class="keyword">WHERE</span> email <span class="operator">=</span> <span class="string">&#x27;mjaedot@gmail.com&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="SQL-작성-형식"><a href="#SQL-작성-형식" class="headerlink" title="SQL 작성 형식"></a>SQL 작성 형식</h2><h3 id="SQL문-끝에는-세미콜론이-반드시-존재하여야-한다"><a href="#SQL문-끝에는-세미콜론이-반드시-존재하여야-한다" class="headerlink" title="SQL문 끝에는 세미콜론이 반드시 존재하여야 한다."></a>SQL문 끝에는 세미콜론이 반드시 존재하여야 한다.</h3><ul>
+<li>문법상 세미콜론이 하나의 SQL문을 종결하는 단위.</li>
+</ul>
+<h3 id="SQL문-안에는-공백이나-개행-등을-자유롭게-넣을-수-있다"><a href="#SQL문-안에는-공백이나-개행-등을-자유롭게-넣을-수-있다" class="headerlink" title="SQL문 안에는 공백이나 개행 등을 자유롭게 넣을 수 있다."></a>SQL문 안에는 공백이나 개행 등을 자유롭게 넣을 수 있다.</h3><ul>
+<li>어떤 방법으로 하든 구분되어야 할 키워드들이 최소한 하나의 공백으로 구분되어 있고 세미콜론으로 마무리되어 있으면 실행에 문제가 없다.</li>
+<li>많은 공백을 주는 행위<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member        <span class="keyword">WHERE</span> email <span class="operator">=</span> <span class="string">&#x27;mjaedot@gmail.com&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+<li>SQL문의 일부분을 한줄 내리고 탭을 입력한후에 쓰는 행위<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line">    <span class="keyword">WHERE</span> email <span class="operator">=</span> <span class="string">&#x27;mjaedot@gmail.com&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="SQL문의-대소문자-구분-문자"><a href="#SQL문의-대소문자-구분-문자" class="headerlink" title="SQL문의 대소문자 구분 문자"></a>SQL문의 대소문자 구분 문자</h3><ul>
+<li><strong>예약어(mySQL에 기본적으로 내장된 키워드)</strong> 는 <strong>대문자로 적는 것이 관례</strong> 이자 보기에도 좋음.<ul>
+<li>대문자로 쓰는 것이 필수는 아니기 때문에 소문자로 작성하여도 실행이 된다.</li>
+<li>가독성을 위해 대문자로 사용하는 것이 좋다.</li>
+</ul>
+</li>
+<li>데이터 베이스의 이름, 테이블 이름, 컬럼 이름 등은 대소문자를 가리지 않고 실제 존재하는 것의 이름을 기재한다.</li>
+</ul>
+<h3 id="데이터-베이스-이름과-테이블-이름"><a href="#데이터-베이스-이름과-테이블-이름" class="headerlink" title="데이터 베이스 이름과 테이블 이름"></a>데이터 베이스 이름과 테이블 이름</h3><ul>
+<li>서로 다른 데이터 베이스에 같은 이름의 테이블이 존재할 수도 있기 때문에 데이터 베이스 이름 뒤에 점(.)을 붙이고 테이블 이름을 기재한다.</li>
+<li><strong>SCHEMAS</strong> 패널 부분의 데이터 베이스를 클릭하여 활성하면 해당 데이터베이스를 사용할 것이라고 지정한 것과 같으므로 이럴 경우 테이블 이름만 기재해도 된다.</li>
+<li>해당 데이터 베이스를 사용하겠다고 확실하게 선언하면 그 뒤로는 테이블 이름만 기재해도 된다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">USE main;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> <span class="keyword">member</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="조건을-나타내는-다양한-방법"><a href="#조건을-나타내는-다양한-방법" class="headerlink" title="조건을 나타내는 다양한 방법"></a>조건을 나타내는 다양한 방법</h2><ul>
+<li>나이가 27살 이상인 데이터를 조회하고 싶을 때<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> age <span class="operator">&gt;=</span> <span class="number">27</span>;</span><br></pre></td></tr></table></figure></li>
+<li>나이가 30대인 데이터를 조회하고 싶을 때<blockquote>
+<p><code>BETWEEN A AND B</code> : A부터 B까지</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> age <span class="keyword">BETWEEN</span> <span class="number">30</span> <span class="keyword">AND</span> <span class="number">39</span>;</span><br></pre></td></tr></table></figure></li>
+<li>나이가 30대가 아닌 데이터를 조회하고 싶을 때<blockquote>
+<p><code>NOT BETWEEN A AND B</code> : A부터 B를 제외한 데이터</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> age <span class="keyword">NOT</span> <span class="keyword">BETWEEN</span> <span class="number">30</span> <span class="keyword">AND</span> <span class="number">39</span>;</span><br></pre></td></tr></table></figure></li>
+<li>특정 날짜 이후의 데이터를 조회하고 싶을 때<blockquote>
+<p><code>date</code> 타입 컬럼에도 부등호를 사용 가능하다.</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> sign_up_day <span class="operator">&gt;</span> <span class="string">&#x27;2019-01-01&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+<li>특정 날짜 사이의 데이터를 조회하고 싶을 때<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> sign_up_day <span class="keyword">BETWEEN</span> <span class="string">&#x27;2018-01-01&#x27;</span> <span class="keyword">AND</span> <span class="string">&#x27;2018-12-31&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="문자열-패턴-매칭-조건"><a href="#문자열-패턴-매칭-조건" class="headerlink" title="문자열 패턴 매칭 조건"></a>문자열 패턴 매칭 조건</h2><h3 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE"></a>LIKE</h3><ul>
+<li>문자열이 특정 문자로 시작하고 임의의 길이를 가진 문자열을 출력한다.</li>
+<li>뒤에 문자열이 없어도 되고 100자가 있어도 무방하다.</li>
+</ul>
+<p><em><strong>예시</strong></em></p>
+<ul>
+<li>‘서울’로 시작하는 데이터를 조회한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> <span class="keyword">member</span> <span class="keyword">WHERE</span> address <span class="keyword">LIKE</span> <span class="string">&#x27;서울%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">서울 송파구...</span><br><span class="line">서울 강남구...</span><br><span class="line">서울 양천구...</span><br></pre></td></tr></table></figure></li>
+<li>‘고양시’라는 단어가 포함된 모든 데이터를 조회한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> <span class="keyword">member</span> <span class="keyword">WHERE</span> address <span class="keyword">LIKE</span> <span class="string">&#x27;%고양시%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">경기 고양시...</span><br><span class="line">경기도 고양시...</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="그-밖에-알아야할-조건-표현식"><a href="#그-밖에-알아야할-조건-표현식" class="headerlink" title="그 밖에 알아야할 조건 표현식"></a>그 밖에 알아야할 조건 표현식</h2><h3 id="같지-않음-lt-gt"><a href="#같지-않음-lt-gt" class="headerlink" title="같지 않음 (!=, &lt;&gt;)"></a>같지 않음 (!=, &lt;&gt;)</h3><ul>
+<li>같지 않음을 표현할 때 <code>!=</code>나 <code>&lt;&gt;</code>을 사용한다.</li>
+</ul>
+<h3 id="이-중에-있는-IN"><a href="#이-중에-있는-IN" class="headerlink" title="이 중에 있는~ (IN)"></a>이 중에 있는~ (IN)</h3><ul>
+<li>연속된 범위가 아닌 여러 값들 중 해당하는 값이 있는 row를 추려야 할 때</li>
+<li>정확히 20살, 혹은 30살 회원들을 조회할 때<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> AGE <span class="keyword">IN</span>(<span class="number">20</span>, <span class="number">30</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="한글자를-나타내는"><a href="#한글자를-나타내는" class="headerlink" title="한글자를 나타내는 _"></a>한글자를 나타내는 _</h3><ul>
+<li>LIKE 뒤의 <code>%</code>는 임의의 길이를 가진 문자열(0자 포함)을 나타낸다.</li>
+<li>LIKE 뒤의 <code>_</code>는 문자 하나를 나타낸다.</li>
+<li>c로 시작하되 c 뒤에 5글자인 이메일을 찾고 싶을 때 <code>_</code>를 5번 적용한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> email <span class="keyword">LIKE</span> <span class="string">&#x27;c_____@%&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="DATE-데이터-타입-관련-함수"><a href="#DATE-데이터-타입-관련-함수" class="headerlink" title="DATE 데이터 타입 관련 함수"></a>DATE 데이터 타입 관련 함수</h2><h3 id="연도-월-일-추출하기"><a href="#연도-월-일-추출하기" class="headerlink" title="연도, 월, 일 추출하기"></a>연도, 월, 일 추출하기</h3><ul>
+<li><code>YEAR</code> 함수를 적용하여 1992년에 태어난 회원들만 조회하기<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> <span class="keyword">YEAR</span>(birthday) <span class="operator">=</span> <span class="string">&#x27;1992&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+<li><code>MONTH</code> 함수를 적용하여 여름(6, 7, 8월)에 가입한 회원들만 조회하기<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> <span class="keyword">MONTH</span>(sign_up_day) <span class="keyword">IN</span> (<span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>);</span><br></pre></td></tr></table></figure></li>
+<li>각 달의 후반부(15일~30일)에 가입했던 회원들만 조회하기<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> DAYOFMONTH(sign_up_day) <span class="keyword">BETWEEN</span> <span class="number">15</span> <span class="keyword">AND</span> <span class="number">31</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="날짜-간의-차이-구하기"><a href="#날짜-간의-차이-구하기" class="headerlink" title="날짜 간의 차이 구하기"></a>날짜 간의 차이 구하기</h3><ul>
+<li><code>DATEDIFF(날찌a, 날짜b)</code>: ‘날짜 a - 날짜 b’를 해서 그 차이 일수를 알려준다.</li>
+<li>예를 들어 <code>DATEDIFF(&#39;2018-01-05&#39;, &#39;2018-01-03&#39;)</code>의 값은 2이다.</li>
+</ul>
+<p><em><strong>예시</strong></em></p>
+<ul>
+<li>member 테이블에서 각 회원이 가입한 일자가 2019년 1월 1일 기준으로 몇일 이후인지 확인하고 싶을 때<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, sign_up_day, DATEDIFF(sign_up_day, <span class="string">&#x27;2019-01-01&#x27;</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>꼭 테이블에 원래 있는 컬럼이 아니더라도 조회할 때에는 새로운 컬럼을 붙여서 확인할 수도 있다.</p>
+</blockquote>
+</li>
+<li>오늘 날짜 기준으로 살펴보고 싶을 때 (<code>CURDATE()</code> 오늘 날짜를 구하는 함수이다.)<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, sign_up_day, CURDATE(), DATEDIFF(sign_up_day, CURDATE()) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+<li>몇살이었을 때 가입하였는지 확인하고 싶을 때<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, sign_up_day, DATEDIFF(sign_up_day, birthday) <span class="operator">/</span> <span class="number">365</span> <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="날짜-더하기-빼기"><a href="#날짜-더하기-빼기" class="headerlink" title="날짜 더하기 빼기"></a>날짜 더하기 빼기</h3><ul>
+<li><code>DATE_ADD()</code> : 더하기 함수<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, sign_up_day, DATE_ADD(sign_up_day, <span class="type">INTERVAL</span> <span class="number">300</span> <span class="keyword">DAY</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+<li><code>DATE_SUB()</code> : 빼기 함수<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, sign_up_day, DATE_SUB(sign_up_day, <span class="type">INTERVAL</span> <span class="number">300</span> <span class="keyword">DAY</span>) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="UNIX-Timestamp-값"><a href="#UNIX-Timestamp-값" class="headerlink" title="UNIX Timestamp 값"></a>UNIX Timestamp 값</h3><ul>
+<li>특정 날짜의 특정 시간을, 1970년 1월 1일을 기준으로, 총 몇 초가 지났는지로 나타낸 값 (ex. 1553526000)</li>
+<li><code>UNIX_TIMESTAMP</code>: Unix Timestamp로 바꿔주는 함수<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, sign_up_day, UNIX_TIMESTAMP(sign_up_day) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1553526000</span><br><span class="line">1453935000</span><br><span class="line">1459435400</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li><code>FROM_UNIXTIME</code> : Unix timestamp를 이걸 사람이 읽을 수 있는 날짜 형태로 변경<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> email, sign_up_day, FROM_UNIXTIME(UNIX_TIMESTAMP(sign_up_day)) <span class="keyword">FROM</span> main.member;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2019-03-26 00:00:00</span><br><span class="line">2019-02-27 00:00:00</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/date-and-time-types.html">날짜, 시간 관련 데이터 타입</a></li>
+<li><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html">날짜, 시간 관련 함수</a></li>
+</ul>
+<h2 id="여러개의-조건-걸기"><a href="#여러개의-조건-걸기" class="headerlink" title="여러개의 조건 걸기"></a>여러개의 조건 걸기</h2><ul>
+<li><code>AND</code>: 동시에 조건을 충족시키는 데이터를 조회<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">WHERE</span> gender <span class="operator">=</span> <span class="string">&#x27;m&#x27;</span></span><br><span class="line">  <span class="keyword">AND</span> address <span class="keyword">LIKE</span> <span class="string">&#x27;서울%&#x27;</span></span><br><span class="line">  <span class="keyword">AND</span> age <span class="keyword">BETWEEN</span> <span class="number">25</span> <span class="keyword">and</span> <span class="number">29</span>;</span><br></pre></td></tr></table></figure></li>
+<li><code>OR</code> : 조건1 or 조건2 하나라도 해당하는 데이터를 조회<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">MONTH</span>(sign_up_day) <span class="keyword">BETWEEN</span> <span class="number">3</span> <span class="keyword">AND</span> <span class="number">5</span></span><br><span class="line">  <span class="keyword">OR</span> <span class="keyword">MONTH</span>(sign_up_date_ <span class="keyword">BETWEEN</span> <span class="number">9</span> <span class="keyword">AND</span> <span class="number">11</span>;</span><br></pre></td></tr></table></figure></li>
+<li><code>AND</code>와 <code>OR</code> 조건을 혼합할 경우<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">WHERE</span> (gender <span class="operator">=</span> <span class="string">&#x27;m&#x27;</span> <span class="keyword">AND</span> height <span class="operator">&gt;=</span> <span class="number">180</span>)</span><br><span class="line">  <span class="keyword">OR</span> (gender <span class="operator">=</span> <span class="string">&#x27;f&#x27;</span> <span class="keyword">AND</span> height <span class="operator">&gt;=</span> <span class="number">170</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="여러-조건을-걸-때-주의할-점"><a href="#여러-조건을-걸-때-주의할-점" class="headerlink" title="여러 조건을 걸 때 주의할 점"></a>여러 조건을 걸 때 주의할 점</h2><h3 id="or을-사용할-때-주의사항"><a href="#or을-사용할-때-주의사항" class="headerlink" title="or을 사용할 때 주의사항"></a>or을 사용할 때 주의사항</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">1</span> <span class="keyword">OR</span> id <span class="operator">=</span> <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">1</span> <span class="keyword">OR</span> <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<p>위 두 코드는 같지 않다.<br><code>WHERE id = 1 OR 2</code>을 분리해서 보면 (1) id=1이 true, (2) 2로 나눌 수 있다.<br>MySQL에서는 0을 False, 0 이외의 숫자는 모두 True로 간주하기 때문에 <code>WHERE id = 1 OR TRUE</code>가 되어버린다.</p>
+<h3 id="AND와-OR간의-우선순위"><a href="#AND와-OR간의-우선순위" class="headerlink" title="AND와 OR간의 우선순위"></a>AND와 OR간의 우선순위</h3><ul>
+<li><strong>AND가 OR보다 우선 순위가 더 높기 때문에</strong> 첫번째 코드는  틀린 코드이고 두번째 코드가 올바른 코드이다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">WHERE</span> gender <span class="operator">=</span> <span class="string">&#x27;f&#x27;</span> <span class="keyword">OR</span> age <span class="operator">&lt;</span> <span class="number">30</span> <span class="keyword">AND</span> height <span class="operator">&gt;</span> <span class="number">180</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">WHERE</span> (gender <span class="operator">=</span> <span class="string">&#x27;f&#x27;</span> <span class="keyword">OR</span> age <span class="operator">&lt;</span> <span class="number">30</span>) <span class="keyword">AND</span> height <span class="operator">&gt;</span> <span class="number">180</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="문자열-패턴-매칭-조건을-사용할-때-주의사항"><a href="#문자열-패턴-매칭-조건을-사용할-때-주의사항" class="headerlink" title="문자열 패턴 매칭 조건을 사용할 때 주의사항"></a>문자열 패턴 매칭 조건을 사용할 때 주의사항</h2><h3 id="이스케이핑-escaping-문제"><a href="#이스케이핑-escaping-문제" class="headerlink" title="이스케이핑(escaping) 문제"></a>이스케이핑(escaping) 문제</h3><ul>
+<li><strong>이스케이핑(escaping)</strong> : 원래 특정 의미(‘임의의 길이를 가진 문자열’)를 나타내던 문자(%)를 그 특정 의미가 아니라, 일반적인 문자처럼 취급하는 행위<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.text <span class="keyword">WHERE</span> sentence <span class="keyword">LIKE</span> <span class="string">&#x27;%%%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+우리가 원하는 ‘문자로서의 %’가 아니라 ‘LIKE에서 쓰이는 표현식’으로 간주되어, ‘임의의 길이를 가진 문자열’을 나타내는 것으로 해석된다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.text <span class="keyword">WHERE</span> sentence <span class="keyword">LIKE</span> <span class="string">&#x27;%\%%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+이는 역슬래시(백슬래시) 기호를 붙여주면 해결된다.</li>
+<li>작은 따옴표(<code>&#39;</code>) 이스케이핑<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.test <span class="keyword">WHERE</span> sentence <span class="keyword">LIKE</span> <span class="string">&#x27;%\&#x27;</span><span class="operator">%</span><span class="string">&#x27;;</span></span><br></pre></td></tr></table></figure></li>
+<li>언더바(<code>_</code>) 이스케이핑<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.test <span class="keyword">WHERE</span> sentence <span class="keyword">LIKE</span> <span class="string">&#x27;%\_%&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+<li>큰 따옴표(<code>&quot;</code>) 이스케이핑<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.test <span class="keyword">WHERE</span> sentence <span class="keyword">LIKE</span> <span class="string">&#x27;%\&quot;%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="대소문자-구분-문제"><a href="#대소문자-구분-문제" class="headerlink" title="대소문자 구분 문제"></a>대소문자 구분 문제</h3></li>
+<li>소문자 g를 검색해도 대소문자 구분 없이 g, G 모두 조회된다. 이는 MySQL의 기본 설정때문이다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.test <span class="keyword">WHERE</span> sentence <span class="keyword">LIKE</span> <span class="string">&#x27;%g%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Table collation 항목에서 utf8mb4_0900_ai_ci 값의 ci는  case-insensitive의 약자로 문자열이 동일한지 확인할 때, 대소문자를 구별하지 않겠다는 의미이다.</p>
+</blockquote>
+</li>
+<li><code>BINARY</code>는  해당 0과 1이 정확히 일치하는 것을 찾으라는 의미로 0과 1을 보는 수준까지 문자열을 비교하라는 의미이다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.test <span class="keyword">WHERE</span> sentence <span class="keyword">LIKE</span> <span class="type">BINARY</span> <span class="string">&#x27;%G%&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="데이터-정렬해서-보기"><a href="#데이터-정렬해서-보기" class="headerlink" title="데이터 정렬해서 보기"></a>데이터 정렬해서 보기</h2><ul>
+<li>정렬: ‘row’들을 ‘특정 컬럼’ 기준으로 순서대로 출력. <blockquote>
+<p>NULL은 가장 작은 수로 취급되지만 DBMS마다 다르고, 표시하지 않고 작업하는 것이 좋다.</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> height;</span><br></pre></td></tr></table></figure></li>
+<li>오름차순: ASC (기본적으로 오름차순)<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> height <span class="keyword">ASC</span>;</span><br></pre></td></tr></table></figure></li>
+<li>내림차순: DESC<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> height <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure></li>
+<li>조건 추가<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line">   <span class="keyword">AND</span> weight <span class="operator">&gt;=</span> <span class="number">70</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> height <span class="keyword">ASC</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sign_up_day, email <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">YEAR</span>(sign_up_day) <span class="keyword">DESC</span>, email <span class="keyword">ASC</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="ORDER-BY"><a href="#ORDER-BY" class="headerlink" title="ORDER BY"></a>ORDER BY</h3><ul>
+<li>이름을 먼저 쓴 컬럼을 우선으로 해서 정렬이 차례대로 수행된다.</li>
+<li>SQL 문법상 WHERE는 ORDER BY 앞에 나와야 한다.</li>
+</ul>
+<h3 id="정렬시-주의할-점"><a href="#정렬시-주의할-점" class="headerlink" title="정렬시 주의할 점"></a>정렬시 주의할 점</h3><ul>
+<li>숫자형(INT 등)인 경우와 문자열형(TEXT 등)인지에 따라 정렬결과가 달라진다.</li>
+<li>INT 타입의 값은 숫자의 대소(크고 작음)을 기준으로 정렬</li>
+<li>TEXT 타입의 값은 한 문자 씩 문자 순서를 비교하여 정렬</li>
+<li>숫자값이 담긴 컬럼을 정렬 기준으로 할 때는 그 컬럼의 데이터 타입이 숫자형인지, 문자열형인지를 잘 살펴봐야 한다.</li>
+<li>TEXT 타입을 숫자형으로 정렬하고 싶을 경우 <strong>CAST</strong> 라는 함수를 사용한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.test <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="built_in">CAST</span>(data <span class="keyword">AS</span> signed) <span class="keyword">ASC</span>; </span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>CAST(data AS signed)</strong>: 일시적으로 signed라는 데이터 타입으로 변환하라.<br><strong>signed</strong>: 양수와 음수를 포함한 모든 정수를 나타낼 수 있는 데이터 타입</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="데이터-일부만-추려보기"><a href="#데이터-일부만-추려보기" class="headerlink" title="데이터 일부만 추려보기"></a>데이터 일부만 추려보기</h2><ul>
+<li><code>LIMIT</code>: 몇개만 추려서 조회하고 싶을 때 사용한다.<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> main.member</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> sign_up_day <span class="keyword">DESC</span></span><br><span class="line">LIMIT <span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>LIMIT 8, 2</code>: 8번째부터 시작하여 2개만 추려라.<br>row는 0번째부터 시작한다.</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2022/02/06/sql-data-query/" data-id="cm4wfofge00lqjp0a9i52dtuj"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Base/" rel="tag">Data Base</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/" rel="tag">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/data-query/" rel="tag">data query</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mySQL/" rel="tag">mySQL</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2022/02/07/sql-data-analysis/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            mySQL 데이터 분석
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/02/04/sql-primary-key/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">mySQL Primary Key (기본키)</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

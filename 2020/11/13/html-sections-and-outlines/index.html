@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    HTML5 섹션 요소 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-html-sections-and-outlines" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  HTML5 섹션 요소
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/11/13/html-sections-and-outlines/" class="article-date">
+  <time datetime="2020-11-13T14:24:38.000Z" itemprop="datePublished">2020-11-13</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/HTML/">HTML</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>HTML5 규격에는 문서를 구성하는 데 도움이 되는 몇 가지 의미 요소가 포함되어 있다. 의미 요소는 특히 브라우저, 개발자, 판독기 및 문서를 해석하는 다른 기술(예: 음성 보조자)에 의미를 전달하도록 설계된다. 예를 들어 <code>&lt;div&gt;</code>는 그 내용에 대한 어떤 의미도 담고 있지 않지만 <code>&lt;figcaption&gt;</code>은 그 내용을 명확하게 기술하고 있다.</p>
+<p>HTML5에 새로운 의미 요소를 추가하여 웹 사이트의 구획을 개선하였다. 개발자는 이러한 의미적 요소를 명시적 목적 이외의 목적으로 사용하지 않는 것이 중요하다. 많은 접근성 도구는 의미론적 HTML5 요소에 의존한다.</p>
+<a id="more"></a>
+
+<h2 id="HTML5의-섹션-요소"><a href="#HTML5의-섹션-요소" class="headerlink" title="HTML5의 섹션 요소"></a>HTML5의 섹션 요소</h2><ul>
+<li><code>&lt;nav&gt;</code>는 사이트에 자주 나타나는 탐색 링크를 포함하는 섹션을 정의한다. 기본 및 보조 메뉴를 사용할 수 있지만, 중첩하거나 삽입할 수 없다. <code>&lt;nav&gt;</code> 요소 안에 <code>&lt;nav&gt;</code> 요소를 넣지 않는다.</li>
+<li><code>&lt;article&gt;</code>는 자체 콘텐츠의 한 부분을 정의한다. 주요 내용만을 언급하지는 않으며, 코멘트나 위젯에 사용할 수 있다.</li>
+<li><code>&lt;section&gt;</code>는 의미적 의미의 관련 그룹을 나타내는 문서의 섹션을 정의한다. 상위 요소로부터 추가 컨텍스트를 제공하는 단면 요소를 활용하는 것이 좋다.</li>
+<li><code>&lt;aside&gt;</code>는 설명 상자나 광고처럼 기본 흐름에 속하지 않는 부분을 정의한다. 그것은 그 자체의 윤곽을 가지고 있지만, 주요한 것에 속하지는 않는다.</li>
+<li><code>&lt;body&gt;</code>는 문서의 모든 내용을 정의한다. 모든 컨텐츠와 HTML태그를 포함하고 있다.</li>
+<li><code>&lt;header&gt;</code>는 일반적으로 로고, 제목 및 내비게이션을 포함하는 페이지를 정의한다. <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>는 그들만의 <code>&lt;header&gt;</code>를 가질 수 있다. 이름에도 불구하고 반드시 페이지나 섹션의 시작 부분에 위치하지 않는다.</li>
+<li><code>&lt;footer&gt;</code>는 일반적으로 저작권, 법적 고지 및 때로는 섹션 바닥글을 포함하는 페이지 바닥글을 정의하고 있으며, 여기에는 섹션의 출판 날짜, 라이센스 정보 등이 포함될 수 있다. <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>는 그들 자신의 <code>&lt;footer&gt;</code>를 가질 수 있다. 반드시 페이지 끝이나 섹션에 위치하지 않는다.</li>
+</ul>
+<h2 id="모던-브라우저-이외에서-HTML5요소-사용"><a href="#모던-브라우저-이외에서-HTML5요소-사용" class="headerlink" title="모던 브라우저 이외에서 HTML5요소 사용"></a>모던 브라우저 이외에서 HTML5요소 사용</h2><p>특정 대상 중 상당한 비율이 InternetExplorer8 이하를 사용하는 경우 다음 지침에 따라 예상대로 작동하도록 할 수 있다. HTML5의미 요소에는 특별한 DOM인터페이스가 필요하지 않지만 명시적으로 지원하지 않는 이전 브라우저에서 특정 CSS스타일이 필요하다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">article</span>, <span class="selector-tag">aside</span>, <span class="selector-tag">footer</span>, <span class="selector-tag">header</span>, <span class="selector-tag">nav</span>, <span class="selector-tag">section</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>DOM에서 지원되지 않는 요소의 인스턴스를 만들지 않는 한 이전 IE버전에서는 지원되지 않는 요소의 스타일 지정을 허용하지 않는다. 다음과 같이 특정 스크립트를 추가하여 이를 허용할 수 있다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;article&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;aside&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;footer&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;header&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;nav&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;section&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&quot;time&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><code>[head]</code>요소에 명시적인<code>&lt;noscript&gt;</code>요소를 추가하여 JavaScript가 비활성화된 사용자에게 페이지가 JavaScript에 의존함을 경고할 수 있다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">noscript</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>This web page requires JavaScript to be enabled.<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>JavaScript is an object-oriented computer programming language </span><br><span class="line">    commonly used to create interactive effects within web browsers.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://goo.gl/koeeaJ&quot;</span>&gt;</span>How to enable JavaScript?<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/11/13/html-sections-and-outlines/" data-id="cm4wfoff6004pjp0agx20ga56"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sections/" rel="tag">sections</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/11/14/css-overflow/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            CSS overflow
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/11/11/css-smacss-methodology/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">CSS SMACSS 방법론</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

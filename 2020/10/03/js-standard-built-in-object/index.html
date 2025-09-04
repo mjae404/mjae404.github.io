@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    JS 표준 빌트인 객체와 래퍼 객체 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-js-standard-built-in-object" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS 표준 빌트인 객체와 래퍼 객체
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/10/03/js-standard-built-in-object/" class="article-date">
+  <time datetime="2020-10-03T14:11:27.000Z" itemprop="datePublished">2020-10-03</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>자바스크립트는 크게 3가지 객체로 분류할 수 있다.</p>
+<ul>
+<li>표준 빌트인 객체</li>
+<li>호스트 객체</li>
+<li>사용자 정의 객체</li>
+</ul>
+<a id="more"></a>
+
+
+<h2 id="자바스크립트-객체의-분류"><a href="#자바스크립트-객체의-분류" class="headerlink" title="자바스크립트 객체의 분류"></a>자바스크립트 객체의 분류</h2><ul>
+<li><strong>표준 빌트인 객체(standard built-in objects / native objects / global objects)</strong><ul>
+<li>ECMAScript 사양에 정의된 객체를 말한다.</li>
+<li>애플리케이션 전역의 공통 기능을 제공한다.</li>
+<li>자바스크립트 실행 환경(브라우저 또는 Node.js 환경)과 관계없이 언제나 사용할 수 있다.</li>
+<li>표준 빌트인 객체는 전역 객체의 프로퍼티로서 제공된다.</li>
+<li>별도의 선언없이 전역 변수처럼 언제나 참조할 수 있다.</li>
+</ul>
+</li>
+<li><strong>호스트 객체(host objects)</strong><ul>
+<li>ECMAScript 사양에 정의되어 있지 않지만 자바스크립트 실행 환경에서 추가적으로 제공하는 객체를 말한다.</li>
+<li>브라우저 환경: DOM, BOM, Canvas, XMLHttpRequest, fetch, requestAnimationFrame, SVG, Web Storage, Web Component, Web worker와 같은 클라이언트 사이드 Web API를 호스트 객체로 제공</li>
+<li>Node.js 환경: Node.js 고유의 API를 호스트 객체로 제공</li>
+</ul>
+</li>
+<li><strong>사용자 정의 객체(user-defined objects)</strong><ul>
+<li>표준 빌트인 객체와 호스트 객체처럼 기본 제공되는 객체가 아닌 사용자가 직접 정의한 객체를 말한다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="표준-빌트인-객체"><a href="#표준-빌트인-객체" class="headerlink" title="표준 빌트인 객체"></a>표준 빌트인 객체</h2><p>자바스크립트는 Object, String, Number, Boolean, Symbol, Date, Math, RegExp, Array, Map/Set, WeakMap/WeakSet, Function, Promise, Reflect, Proxy, JSON, Error 등 40여개의 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects">표준 빌트인 객체</a>를 제공한다.</p>
+<ul>
+<li>Math, Reflect, JSON을 제외한 표준 빌트인 객체는 모두 인스턴스를 생성할 수 있는 생성자 함수 객체.</li>
+<li><strong>생성자 함수 객체인 표준 빌트인 객체</strong> 는 프로토타입 메소드와 정적 메소드를 제공<ul>
+<li>생성자 함수로 호출하여 인스턴스를 생성할 수 있다.</li>
+<li>표준 빌트인 객체의 prototype 프로퍼티에 바인딩된 객체는 다양한 기능의 메소드를 제공한다.</li>
+<li>인스턴스 없이도 호출 가능한 정적 메소드도 제공한다.</li>
+<li>표준 빌트인 객체인 Number는 인스턴스 없이 정적으로 호출할 수 있는 정적 메소드도 제공한다.</li>
+</ul>
+</li>
+<li><strong>생성자 함수 객체가 아닌 표준 빌트인 객체</strong> 는 정적 메소드만을 제공</li>
+</ul>
+<h2 id="원시값과-래퍼-객체"><a href="#원시값과-래퍼-객체" class="headerlink" title="원시값과 래퍼 객체"></a>원시값과 래퍼 객체</h2><p>원시값을 객체처럼 사용하면 자바스크립트 엔진은 암묵적으로 연관된 객체를 생성하고 생성된 객체로 프로퍼티에 접근하거나 메소드를 호출하고 다시 원시값으로 되돌린다.</p>
+<ul>
+<li>문자열, 숫자, 불리언 값 이외의 원시값은 레퍼 객체를 생성하지 않는다.</li>
+<li>일반적으로 표준 빌트인 객체가 제공하는 프로토타입 메소드를 사용하려면 반드시 인스턴스를 생성하고 인스턴스로 프로토타입 메소드를 호출해야 한다.</li>
+</ul>
+<blockquote>
+<p><strong>래퍼 객체</strong><br>문자열, 숫자, 불리언 값에 대해 객체처럼 접근하면 생성되는 임시 객체</p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://poiemaweb.com/">https://poiemaweb.com</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/10/03/js-standard-built-in-object/" data-id="cm4wfoffm00aujp0a76fd6l3o"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/built-in-object/" rel="tag">built-in object</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/standard-built-in-object/" rel="tag">standard built-in object</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/10/04/js-spread-syntax/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            JS 스프레드 문법
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/10/02/js-destructuring/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">JS 디스트럭처링 할당</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

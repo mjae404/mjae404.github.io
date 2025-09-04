@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    제이쿼리 선택자 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-jquery-selector" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  제이쿼리 선택자
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/12/07/jquery-selector/" class="article-date">
+  <time datetime="2020-12-06T16:25:00.000Z" itemprop="datePublished">2020-12-07</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a> / <a class="article-category-link" href="/categories/JavaScript/jQuery/">jQuery</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>jQuery는 CSS 스타일의 선택자를 이용하여 요소를 선택할 수 있다.</p>
+<a id="more"></a>
+
+<h3 id="전체-선택자"><a href="#전체-선택자" class="headerlink" title="전체 선택자"></a>전체 선택자</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(*).method().method();</span><br></pre></td></tr></table></figure>
+
+<h3 id="태그-선택자"><a href="#태그-선택자" class="headerlink" title="태그 선택자"></a>태그 선택자</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(태그, 태그).method().method();</span><br></pre></td></tr></table></figure>
+
+<h3 id="아이디-선택자"><a href="#아이디-선택자" class="headerlink" title="아이디 선택자"></a>아이디 선택자</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(아이디).method().method();</span><br></pre></td></tr></table></figure>
+
+<h3 id="클래스-선택자"><a href="#클래스-선택자" class="headerlink" title="클래스 선택자"></a>클래스 선택자</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(클래스).method().method();</span><br></pre></td></tr></table></figure>
+
+<h3 id="자손-선택자"><a href="#자손-선택자" class="headerlink" title="자손 선택자"></a>자손 선택자</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(요소A &gt; 요소B).method().method();</span><br></pre></td></tr></table></figure>
+
+<h3 id="후손-선택자"><a href="#후손-선택자" class="headerlink" title="후손 선택자"></a>후손 선택자</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(요소A 요소B).method().method();</span><br></pre></td></tr></table></figure>
+
+<h3 id="속성-선택자"><a href="#속성-선택자" class="headerlink" title="속성 선택자"></a>속성 선택자</h3><table>
+<thead>
+<tr>
+<th>선택자 형태</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>요소[속성=값]</td>
+<td>속성과 값이 같은 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소[속성│=값]</td>
+<td>속성 안의 값이 특정 값과 같은 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소[속성~=값]</td>
+<td>속성 안의 값이 특정 값을 단어로 시작하는 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소[속성^=값]</td>
+<td>속성 안의 값이 특정 값으로 시작하는 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소[속성$=값]</td>
+<td>속성 안의 값이 특정 값으로 끝나는 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소[속성*=값]</td>
+<td>속성 안의 값이 특정 값을 포함하는 문서 객체를 선택</td>
+</tr>
+</tbody></table>
+<h3 id="필터-선택자"><a href="#필터-선택자" class="headerlink" title="필터 선택자"></a>필터 선택자</h3><p><em><strong>입력 양식 필터 선택자</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>선택자 형태</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>요소:button</td>
+<td>input 태그 중 type 속성이 button인 문서 객체와 button 태그를 선택</td>
+</tr>
+<tr>
+<td>요소:checkbox</td>
+<td>input 태그 중 type 속성이 check인 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:file</td>
+<td>input 태그 중 type 속성이 file인 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:image</td>
+<td>input 태그 중 type 속성이 image인 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:password</td>
+<td>input 태그 중 type 속성이 password인 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:radio</td>
+<td>input 태그 중 type 속성이 radio인 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:reset</td>
+<td>input 태그 중 type 속성이 reset인 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:submit</td>
+<td>input 태그 중 type 속성이 submit인 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:text</td>
+<td>input 태그 중 type 속성이 text인 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:checked</td>
+<td>체크되어 있는 입력 양식 선택</td>
+</tr>
+<tr>
+<td>요소:disabled</td>
+<td>비활성화된 입력 양식 선택</td>
+</tr>
+<tr>
+<td>요소:enabled</td>
+<td>활성화된 입력 양식 선택</td>
+</tr>
+<tr>
+<td>요소:focus</td>
+<td>초점이 맞추어져 있는 입력 양식 선택</td>
+</tr>
+<tr>
+<td>요소:input</td>
+<td>모든 입력 양식 선택 (input, textarea, select, button 태그)</td>
+</tr>
+<tr>
+<td>요소:selected</td>
+<td>option 객체 중 선택된 태그를 선택</td>
+</tr>
+</tbody></table>
+<p><em><strong>위치 필터 선택자</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>선택자 형태</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>요소:odd</td>
+<td>홀수 번째에 위치한 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:even</td>
+<td>짝수 번째에 위치한 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:first</td>
+<td>첫 번째에 위치한 문서 객체를 선택</td>
+</tr>
+<tr>
+<td>요소:last</td>
+<td>마지막에 위치한 문서 객체를 선택</td>
+</tr>
+</tbody></table>
+<p><em><strong>함수 필터 선택자</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>선택자 형태</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>요소:contains(문자열)</td>
+<td>특정 문자열을 포함하는 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소:eq(n)</td>
+<td>n번째에 위치하는 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소:gt(n)</td>
+<td>n번째 초과에 위치하는 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소:has(h1)</td>
+<td>h1 태그가 있는 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소:It(n)</td>
+<td>n번째 미만에 위치하는 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소:not(선택자)</td>
+<td>선택자와 일치하지 않는 문서 객체 선택</td>
+</tr>
+<tr>
+<td>요소:nth-child(3n+1)</td>
+<td>3n+1번째에 위치하는 문서 객체 선택</td>
+</tr>
+</tbody></table>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://www.opentutorials.org/course/53">https://www.opentutorials.org/course/53</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/12/07/jquery-selector/" data-id="cm4wfoffb005zjp0ad2zzemxp"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/" rel="tag">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/selecotr/" rel="tag">selecotr</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/12/09/css-pointer-events/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            CSS 이벤트 제어 속성
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/12/06/css-exercise002/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">CSS 애니메이션 02</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

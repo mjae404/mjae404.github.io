@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    mySQL 테이블 조인 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-sql-table-join" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  mySQL 테이블 조인
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/02/13/sql-table-join/" class="article-date">
+  <time datetime="2022-02-13T09:19:47.000Z" itemprop="datePublished">2022-02-13</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Data-Base/">Data Base</a> / <a class="article-category-link" href="/categories/Data-Base/SQL/">SQL</a> / <a class="article-category-link" href="/categories/Data-Base/SQL/mySQL/">mySQL</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>조인(join): 여러 테이블을 합쳐서 하나의 테이블인 것처럼 보는 행위</p>
+<a id="more"></a>
+
+<h2 id="Foreign-Key-외래키"><a href="#Foreign-Key-외래키" class="headerlink" title="Foreign Key (외래키)"></a>Foreign Key (외래키)</h2><ul>
+<li>다른 테이블의 특정 row를 식별할 수 있게 해주는 컬럼.</li>
+<li>Foreign Key는 다른 테이블의 특정 row를 식별할 수 있어야 하기 때문에 주로 다른 테이블의 Primary Key를 참조할 때가 많다.</li>
+<li><code>foreign key</code>를 지정해주는 이유: 지정했을 때 이상한 id값 추가를 시도하면 mySQL에서 에러를 발생시킨다.</li>
+<li>자식 테이블: 참조를 하는 테이블</li>
+<li>부모 테이블: 참조를 당하는 테이블</li>
+</ul>
+<h2 id="다른-종류의-테이블-조인하기"><a href="#다른-종류의-테이블-조인하기" class="headerlink" title="다른 종류의 테이블 조인하기"></a>다른 종류의 테이블 조인하기</h2><ul>
+<li>연결하다, 합치다라는 의미.</li>
+<li>보통 Foreign Key를 기준으로 하는 것이 맞지만, 서로 같은 의미를 나타내는 컬럼들을 기준으로 조인하기도 한다.</li>
+</ul>
+<h3 id="LEFT-OUTER-JOIN-RIGHT-OUTER-JOIN"><a href="#LEFT-OUTER-JOIN-RIGHT-OUTER-JOIN" class="headerlink" title="LEFT OUTER JOIN / RIGHT OUTER JOIN"></a>LEFT OUTER JOIN / RIGHT OUTER JOIN</h3><ul>
+<li><code>LEFT OUTER JOIN</code>: 왼쪽에 있는 테이블을 기준으로 오른쪽에 있는 테이블을 합치라는 의미.</li>
+<li><code>RIGHT OUTER JOIN</code>: 오른쪽에 있는 테이블을 기준으로 왼쪽에 있는 테이블을 합치라는 의미.</li>
+<li><code>ON</code>으로 시작하는 구문: 두 테이블을 합칠 때 item.id의 값과 stock.item_id의 값을 비교하여 같은 값끼리 가로 방향으로 연결하라.</li>
+<li>item row에는 있지만 stock row에는 없을 경우 합쳐질 때 null로 표시된다.</li>
+</ul>
+<p><em><strong>예시</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    item.id,</span><br><span class="line">    item.name,</span><br><span class="line">    stock.item_id,</span><br><span class="line">    stock.inventory_count</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> stock</span><br><span class="line"><span class="keyword">ON</span> item.id <span class="operator">=</span> stock.item_id</span><br></pre></td></tr></table></figure>
+
+<h3 id="INNER-JOIN"><a href="#INNER-JOIN" class="headerlink" title="INNER JOIN"></a>INNER JOIN</h3><ul>
+<li><code>INNER JOIN</code>: 테이블의 일치하는 값이 있는 컬럼들로만 합쳐 연결된다. 기준이 되는 테이블이 따로 없으며 기준 테이블이 없으므로 null이 되는 경우는 없다.</li>
+</ul>
+<h3 id="alias-붙이기"><a href="#alias-붙이기" class="headerlink" title="alias 붙이기"></a>alias 붙이기</h3><ul>
+<li><code>AS</code>로 alias를 붙여준다.</li>
+<li>스페이스로 구분하여 이름을 붙여줘도 괜찮다.</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    i.id,</span><br><span class="line">    i.name,</span><br><span class="line">    s.item_id,</span><br><span class="line">    s.inventory_count</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> i <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> stock <span class="keyword">AS</span> s</span><br><span class="line"><span class="keyword">ON</span> i.id <span class="operator">=</span> s.item_id</span><br></pre></td></tr></table></figure>
+
+<h3 id="컬럼의-alias와-테이블의-alias"><a href="#컬럼의-alias와-테이블의-alias" class="headerlink" title="컬럼의 alias와 테이블의 alias"></a>컬럼의 alias와 테이블의 alias</h3><ul>
+<li>컬럼의 alias: 각 컬럼이 실제로 우리에게 그 alias로 변환되어서 보여지게 하기 위한 용도</li>
+<li>테이블의 alias: SQL 문의 전체 길이를 줄여서 가독성을 높이기 위해 사용. 한번 alias를 붙였으면 그 테이블은 해당 alias로만 나타내야 한다.</li>
+</ul>
+<h2 id="결합-연산과-집합-연산"><a href="#결합-연산과-집합-연산" class="headerlink" title="결합 연산과 집합 연산"></a>결합 연산과 집합 연산</h2><ul>
+<li>연산: 테이블을 합치는 작업</li>
+<li>결합 연산: 테이블을 가로 방향으로 합치는 것에 관한 연산</li>
+<li>집합 연산: 테이블을 세로 방향으로 합치는 것에 관한 연산</li>
+<li>합집합을 나타낼 때 두 집합이 공통적으로 갖고 있는 원소는 중복을 제거하고 하나만 표시된다.</li>
+<li>mySQL에서는 8.0 기준으로 UNION 연산자만 지원한다.</li>
+<li><code>INTERSECT</code>: A ∩ B 일 때 사용</li>
+<li><code>MINUS</code>/<code>EXCEPT</code>: A - B, B - A 일 때 사용</li>
+<li><code>UNION</code>: A U B일 때 사용</li>
+</ul>
+<h2 id="같은-종류의-테이블을-조인하기"><a href="#같은-종류의-테이블을-조인하기" class="headerlink" title="같은 종류의 테이블을 조인하기"></a>같은 종류의 테이블을 조인하기</h2><p><em><strong>특정 테이블에 있는 값만 확인하고 싶은 경우</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    old.id <span class="keyword">AS</span> old_id,</span><br><span class="line">    old.name <span class="keyword">AS</span> old_name,</span><br><span class="line">    new.id <span class="keyword">AS</span> new_id,</span><br><span class="line">    new.name <span class="keyword">AS</span> new_name</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> <span class="keyword">old</span> <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> item_mew <span class="keyword">AS</span> <span class="keyword">new</span></span><br><span class="line"><span class="keyword">ON</span> old.id <span class="operator">=</span> new.id;</span><br></pre></td></tr></table></figure>
+<p><em><strong>신상중 null값만 확인하고 싶은 경우</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    old.id <span class="keyword">AS</span> old_id,</span><br><span class="line">    old.name <span class="keyword">AS</span> old_name,</span><br><span class="line">    new.id <span class="keyword">AS</span> new_id,</span><br><span class="line">    new.name <span class="keyword">AS</span> new_name</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> <span class="keyword">old</span> <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> item_mew <span class="keyword">AS</span> <span class="keyword">new</span></span><br><span class="line"><span class="keyword">ON</span> old.id <span class="operator">=</span> new.id</span><br><span class="line"><span class="keyword">WHERE</span> old.id <span class="keyword">IS</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure>
+<p><em><strong>둘다 같이 있는 종류를 보고 싶은 경우</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    old.id <span class="keyword">AS</span> old_id,</span><br><span class="line">    old.name <span class="keyword">AS</span> old_name,</span><br><span class="line">    new.id <span class="keyword">AS</span> new_id,</span><br><span class="line">    new.name <span class="keyword">AS</span> new_name</span><br><span class="line"><span class="keyword">FROM</span> item <span class="keyword">AS</span> <span class="keyword">old</span> <span class="keyword">INNER</span> <span class="keyword">JOIN</span> item_mew <span class="keyword">AS</span> <span class="keyword">new</span></span><br><span class="line"><span class="keyword">ON</span> old.id <span class="operator">=</span> new.id;</span><br></pre></td></tr></table></figure>
+<p><em><strong>둘다 합쳐보고 싶은 경우</strong></em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> item</span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> item_new;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ON-대신-USING-사용"><a href="#ON-대신-USING-사용" class="headerlink" title="ON 대신 USING 사용"></a>ON 대신 USING 사용</h3><ul>
+<li>join의 조건을 설정할 때 ON 절을 사용했지만 만약 조인 조건으로 쓰인 두 컬럼의 이름이 같으면 ON 대신 USING을 쓰는 경우도 있다.</li>
+<li>두 테이블에서 조인 조건으로 사용되는 컬럼들의 이름이 같으면 그냥 USING이라고 쓰고 그 안에 컬럼 이름을 쓰는 것도 허용</li>
+<li><strong>ON old.id = new.id와 USING(id)</strong> 는 같다.</li>
+</ul>
+<h2 id="UNION"><a href="#UNION" class="headerlink" title="UNION"></a>UNION</h2><ul>
+<li>서로 다른 종류의 테이블도, 조회하는 컬럼을 일치시키면 집합 연산이 가능하다.</li>
+<li>테이블의 원래 컬럼 구조가 달랃고 두 테이블이 공통적으로 갖고 있는 컬럼들만 조회한 경우 UNION같은 집합 연산을 수행할 수 있다.</li>
+<li>총 컬럼수와 컬럼 데이터 타입만 일치하면 UNION 연산이 가능하다.</li>
+<li>교집합에 해당하는 영역의 row들은 중복을 제거하고 하나의 row만 보여준다.</li>
+<li><code>UNION ALL</code>: 중복 제거 작업 없이 두 테이블을 합친 결과를 그대로 보여준다.</li>
+</ul>
+<h2 id="서로-다른-3개의-테이블-조인하기"><a href="#서로-다른-3개의-테이블-조인하기" class="headerlink" title="서로 다른 3개의 테이블 조인하기"></a>서로 다른 3개의 테이블 조인하기</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    i.name, i.id,</span><br><span class="line">    r.item_id, r.star, r.comment, r.mem_id,</span><br><span class="line">    m.id, m.email</span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">    item <span class="keyword">AS</span> i <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> review <span class="keyword">AS</span> r</span><br><span class="line">        <span class="keyword">ON</span> r.item_id <span class="operator">=</span> i.id</span><br><span class="line">    <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> <span class="keyword">member</span> <span class="keyword">AS</span> m</span><br><span class="line">        <span class="keyword">ON</span> r.mem_id <span class="operator">=</span> m.id;</span><br></pre></td></tr></table></figure>
+
+<h2 id="의미있는-데이터-추출하기"><a href="#의미있는-데이터-추출하기" class="headerlink" title="의미있는 데이터 추출하기"></a>의미있는 데이터 추출하기</h2><h3 id="각-상품별로-여성-회원들이-남긴-별점들의-평균값"><a href="#각-상품별로-여성-회원들이-남긴-별점들의-평균값" class="headerlink" title="각 상품별로 여성 회원들이 남긴 별점들의 평균값"></a>각 상품별로 여성 회원들이 남긴 별점들의 평균값</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> i.id, i.name, <span class="built_in">AVG</span>(star), <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">    item <span class="keyword">AS</span> i <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> review <span class="keyword">AS</span> r</span><br><span class="line">        <span class="keyword">ON</span> r.item_id <span class="operator">=</span> i.id</span><br><span class="line">    <span class="keyword">LEFT</span> <span class="keyword">OUTER</span> <span class="keyword">JOIN</span> <span class="keyword">member</span> <span class="keyword">AS</span> m</span><br><span class="line">        <span class="keyword">ON</span> r.mem_id <span class="operator">=</span> m.id</span><br><span class="line">    <span class="keyword">WHERE</span> m.gender <span class="operator">=</span> <span class="string">&#x27;f&#x27;</span></span><br><span class="line">    <span class="keyword">GROUP</span> <span class="keyword">BY</span> i.id, i.name</span><br><span class="line">    <span class="keyword">HAVING</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="operator">&gt;</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="built_in">AVG</span>(star) <span class="keyword">DESC</span>,</span><br><span class="line">    <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="리뷰-내용-확인하기"><a href="#리뷰-내용-확인하기" class="headerlink" title="리뷰 내용 확인하기"></a>리뷰 내용 확인하기</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> review <span class="keyword">WHERE</span> item_id <span class="operator">=</span> <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="그-외의-조인들"><a href="#그-외의-조인들" class="headerlink" title="그 외의 조인들"></a>그 외의 조인들</h2><h3 id="NATURAL-JOIN-자연조인"><a href="#NATURAL-JOIN-자연조인" class="headerlink" title="NATURAL JOIN (자연조인)"></a>NATURAL JOIN (자연조인)</h3><ul>
+<li>두 테이블에서 같은 이름의 컬럼을 찾아서 자동으로 그것들을 조인 조건을 설정하고, INNER JOIN을 해주는 조인</li>
+<li>조인 조건을 자동으로 설정해주기 때문에 ON절을 쓸 필요가 없다.</li>
+</ul>
+<h3 id="CROSS-JOIN"><a href="#CROSS-JOIN" class="headerlink" title="CROSS JOIN"></a>CROSS JOIN</h3><ul>
+<li>한 테이블의 하나의 row에 다른 테이블의 모든 row들을 매칭하고, 그 다음 row에서도 또, 다른 테이블의 모든 row들을 매칭하는 것을 반복함으로써 두 테이블의 row들의 모든 조합을 보여주는 조인</li>
+<li>두 테이블의 Cartesian Product를 구하는 조인</li>
+<li><strong>카르테시안 곱(Cartesian Product)</strong>: 두 집합의 모든 원소들의 조합을 나타내는 것을 수학의 집합 이론</li>
+</ul>
+<h3 id="SELF-JOIN"><a href="#SELF-JOIN" class="headerlink" title="SELF JOIN"></a>SELF JOIN</h3><ul>
+<li>테이블이 자기 자신과 조인을 하는 경우</li>
+</ul>
+<h3 id="FULL-OUTER-JOIN"><a href="#FULL-OUTER-JOIN" class="headerlink" title="FULL OUTER JOIN"></a>FULL OUTER JOIN</h3><ul>
+<li>두 테이블의 LEFT OUTER JOIN 결과와 RIGHT OUTER JOIN 결과를 합치는 조인</li>
+<li>두 결과에 모두 존재하는 row들(두 테이블에 공통으로 존재하던 row들)은 한번만 표현</li>
+</ul>
+<h3 id="Non-Equi-조인"><a href="#Non-Equi-조인" class="headerlink" title="Non-Equi 조인"></a>Non-Equi 조인</h3><ul>
+<li>ON절에서 등호(=)가 없는 조건 표현식</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br>코드잇 온라인 강의 개발자를 위한 SQL 데이터베이스</p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2022/02/13/sql-table-join/" data-id="cm4wfofgf00mkjp0a3v450fs4"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Base/" rel="tag">Data Base</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQL/" rel="tag">SQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mySQL/" rel="tag">mySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/table-join/" rel="tag">table join</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2022/02/14/sql-exercise001/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            SQL 데이터 조회
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/02/07/sql-data-analysis/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">mySQL 데이터 분석</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>

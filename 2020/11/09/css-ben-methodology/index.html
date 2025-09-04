@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="minjeekim, front-end, develop, frontend, blog" />
+   
+  <meta name="description" content="MINJEE KIM&#39;S FRONT-END DEVELOP LOG" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MJAEDOT">
+  <meta property="og:description" content="FRONT-END DEVELOP LOG">
+  <meta property="og:image" content="http://mjae404.github.io/images/open_graph_image.jpg">
+  <meta property="og:url" content="http://mjae404.github.io">
+  <!-- <meta name="naver-site-verification" content="22bb573d69cc09bdcc7adf4f44a7eeb4e77bb3f3"/> -->
+  <title>
+    CSS BEM 방법론 |  404 Not Found
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="404 Not Found" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    <div class="content" role="main">
+      <section class="outer">
+  <article id="post-css-ben-methodology" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS BEM 방법론
+</h1>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/11/09/css-ben-methodology/" class="article-date">
+  <time datetime="2020-11-08T17:21:00.000Z" itemprop="datePublished">2020-11-09</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML & CSS</a> / <a class="article-category-link" href="/categories/HTML-CSS/CSS/">CSS</a>
+  </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>CSS 구조를 개선시키기 위한 CSS 개발 방법론은 여러가지가 있다. OOCSS, SMACSS, BEM 등이 있으며 BEM은 Block Element Modifier의 약자이다. BEM 방법론은 <strong>ID에는 사용할 수 없고, 오직 클래스명에만 활용할 수 있다</strong>. 필요하다면 클래스명은 BEM 방식의 이름을 여러번 반복하여 재사용할 수 있도록 한다.</p>
+<a id="more"></a>
+
+<h2 id="Block-전체를-감싸고-있는-블럭-요소"><a href="#Block-전체를-감싸고-있는-블럭-요소" class="headerlink" title="Block (전체를 감싸고 있는 블럭 요소)"></a>Block (전체를 감싸고 있는 블럭 요소)</h2><p>블럭(Block)은 문단 전체에 적용된 요소 또는 요소를 담고 있는 컨테이너를 말한다. 블럭 요소는 클래스의 어근을 형성하고 항상 맨 앞에 위치하도록 한다. 일단 블럭을 정의하고 블럭이 형성한 클래스의 어근을 맨 앞에 붙여 그 블럭이 포함하는 요소들의 클래스명을 지으면 된다.</p>
+<h2 id="Element"><a href="#Element" class="headerlink" title="Element"></a>Element</h2><p>요소(Element)는 블럭이 포함하고 있는 조각 하나이다. 블럭은 전체를 말하고, 요소들은 그 조각들을 일컫는다. <strong>각 요소는 두 개의 밑줄표시(underscore)로 연결하여 블럭 다음에 위치</strong> 시킨다. 두개의 밑줄 표시는 시각적으로 쉽고 빠르게 코드를 찾고 조작할 수 있도록 도와준다. 스타일시트와 HTML 역시 DRY(don’t repeat yourself)로 유지되어야 하기 때문에 클래스명은 간단하고 명확하며 정확하게 유지한다라는 것으로 너무 고민하지 않도록 한다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.block__element</span> &#123;property:value;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="modifiers"><a href="#modifiers" class="headerlink" title="modifiers"></a>modifiers</h2><p><code>modifier</code>은 블럭 또는 요소의 속성이다. 이 속성은 <strong>블럭 또는 요소의 외관이나 상태를 변화</strong> 시킨다. 클래스명을 지을 때의 목적은 해당 요소를 반복하여 재사용할 수 있게 하기 위함이다. 요소의 스타일이 같다면 사이트의 다른 영역이라고 할지라도 새로운 클래스를 정의할 필요가 없다. 특정 요소의 스타일을 수정할 필요가 있다면 <code>modifier</code>을 활용하면 된다. <strong>요소 또는 블럭 다음에 두개의 하이픈(<code>--</code>)을 추가하여 modifier을 표시</strong> 한다.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.block--modifier</span> &#123;…&#125;</span><br><span class="line"><span class="selector-class">.blcok__element--modifier</span> &#123;…&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>모든 이름은 간단명료해야 하며 절대적으로 필요하지 않는 이상 추가적인 클래스를 만들거나 똑같은 스타일을 반복해서는 안 된다.</p>
+</blockquote>
+<h2 id="요점"><a href="#요점" class="headerlink" title="요점"></a>요점</h2><ul>
+<li>HTML 마크업 모듈화 </li>
+<li>block요소를 독립적이고, 재사용 가능한 모듈이라는 개념으로 접근 </li>
+<li>prefix 붙여 일종의 네임스페이스개념으로 사용 </li>
+<li>실제 서비스를 하면 HTML의 구조가 바뀌는 일이 다반사 </li>
+<li>탐색레벨은 낮고 단순하게 유지하는 것이 유지보수하기 좋음 </li>
+<li>쿼리를 단순하게 하기 위해 길고 유니크한 클래스명을 사용하는 것이 좋음</li>
+</ul>
+<h2 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h2><ul>
+<li>class name 중복을 방지한다.</li>
+<li>직관적이다.</li>
+<li>전제 DOM tree 구조를 다시 볼 필요가 없다.</li>
+<li>가독성이 좋고 어느 속성을 어느 위치에 넣을 것인지 고민할  필요가 없어진다.</li>
+<li>diff할 때 가독성이 뛰어나다.</li>
+<li>빌드시에 minify하는 전략에 효과적이다.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>REFERENCE</strong><br><a target="_blank" rel="noopener" href="https://webclub.tistory.com/263">https://webclub.tistory.com/263</a></p>
+</blockquote>
+
+      
+      <!-- reward -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mjae404.github.io/2020/11/09/css-ben-methodology/" data-id="cm4wfofer0003jp0a3g9c5bc9"
+        class="article-share-link">share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BEM/" rel="tag">BEM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/methodology/" rel="tag">methodology</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/11/10/css-oocss-methodology/" class="article-nav-link">
+        <strong class="article-nav-caption">next</strong>
+        <div class="article-nav-title">
+          
+            CSS OOCSS 방법론
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/11/08/css-mediaquery/" class="article-nav-link">
+        <strong class="article-nav-caption">prev</strong>
+        <div class="article-nav-title">CSS 미디어쿼리</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2020-2025
+        404 Not Found
+      </li>
+      <li>
+        
+          Powered by
+        
+        
+        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+    <div class="to_top">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+      </div>
+    </div>
+    
+      <aside class="sidebar">
+        
+        <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="404 Not Found"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">HOME</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">ABOUT</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">ARCHIVES</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">CATEGORY</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">TAGS</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="검색">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+      </aside>
+      <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+      
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script>
+  var ayerConfig = {
+    mathjax: false
+  }
+</script>
+
+
+<script src="/js/ayer.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+  
+  
+
+  </div>
+</body>
+
+</html>
